@@ -1,0 +1,54 @@
+[
+  {
+    "productId": "ordinary-ha",
+    "sourceURL": "https://theordinary.com/en-us/multi-peptide-ha-serum-100613.html",
+    "checkedAt": "2026-10-19",
+    "sku": "769915231885",
+    "volumeEvidence": "\"variant\":\"30ml \"",
+    "price": 19.9,
+    "currency": "USD",
+    "imageURL": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw68423659/Images/products/The%20Ordinary/rdn-multi-peptide-ha-serum-30ml.png?sw=900&sh=900&sm=fit",
+    "localImage": "/images/products/ordinary-ha-30ml.png",
+    "imageReuseRights": "Unverified; local preview only. Resolve before public release.",
+    "method": "Official page Product JSON-LD, visible label text and exact size context. Stock not independently checked."
+  },
+  {
+    "productId": "ordinary-matrixyl",
+    "sourceURL": "https://theordinary.com/en-us/matrixyl-10-ha-serum-100431.html",
+    "checkedAt": "2026-10-19",
+    "sku": "rdn-matrixyl-10pct-ha-30ml",
+    "volumeEvidence": "rdn-matrixyl-10pct-ha-30ml",
+    "price": 10.9,
+    "currency": "USD",
+    "imageURL": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwe106ffc9/Images/products/The%20Ordinary/rdn-matrixyl-10pct-ha-30ml.png?sw=900&sh=900&sm=fit",
+    "localImage": "/images/products/ordinary-matrixyl-30ml.png",
+    "imageReuseRights": "Unverified; local preview only. Resolve before public release.",
+    "method": "Official page Product JSON-LD, visible label text and exact size context. Stock not independently checked."
+  },
+  {
+    "productId": "ordinary-argireline",
+    "sourceURL": "https://theordinary.com/en-us/argireline-solution-10-serum-100403.html",
+    "checkedAt": "2026-10-19",
+    "sku": "rdn-argireline-solution-10pct-30ml",
+    "volumeEvidence": "rdn-argireline-solution-10pct-30ml",
+    "price": 9.7,
+    "currency": "USD",
+    "imageURL": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw2cc2fd64/Images/products/The%20Ordinary/FY25-D41247-ORD-Web-Argl-10pct-1x1-EN-1.jpg?sw=900&sh=900&sm=fit",
+    "localImage": "/images/products/ordinary-argireline-30ml.jpg",
+    "imageReuseRights": "Unverified; local preview only. Resolve before public release.",
+    "method": "Official page Product JSON-LD, visible label text and exact size context. Stock not independently checked."
+  },
+  {
+    "productId": "geek-power-peptides",
+    "sourceURL": "https://geekandgorgeous.us/products/power-peptides",
+    "checkedAt": "2026-10-19",
+    "sku": "TGA15003010",
+    "volumeEvidence": "1 fl.oz. (30 ml)",
+    "price": 18.8,
+    "currency": "USD",
+    "imageURL": "https://geekandgorgeous.us/cdn/shop/files/Peptide-web.jpg?v=1713954985&width=2200",
+    "localImage": "/images/products/geek-power-peptides-30ml.jpg",
+    "imageReuseRights": "Unverified; local preview only. Resolve before public release.",
+    "method": "Official page Product JSON-LD, visible label text and exact size context. Stock not independently checked."
+  }
+]

@@ -1,0 +1,226 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum EditorialStatus {
+  draft
+  published
+  demo
+  archived
+}
+
+enum EntityKind {
+  cosmeticProduct
+  cosmeticIngredient
+  compound
+  pharmaceuticalProduct
+  therapeuticIndication
+  clinicalTrial
+  regulatoryEvent
+  comparison
+}
+
+model Brand {
+  id          String            @id @default(cuid())
+  name        String
+  slug        String            @unique
+  website     String
+  description String?
+  updatedAt   DateTime          @updatedAt
+  products    CosmeticProduct[]
+}
+
+model CosmeticProduct {
+  id               String              @id @default(cuid())
+  brandId          String
+  brand            Brand               @relation(fields: [brandId], references: [id])
+  name             String
+  slug             String              @unique
+  category         String
+  description      String
+  volume           Decimal             @db.Decimal(12, 4)
+  volumeUnit       String
+  formulationNotes String?
+  ingredientList   String[]
+  imageUrl         String?
+  sourceId         String
+  source           Source              @relation(fields: [sourceId], references: [id])
+  lastVerifiedAt   DateTime?
+  editorialStatus  EditorialStatus     @default(draft)
+  ingredients      ProductIngredient[]
+  prices           PriceObservation[]
+  comparisons      ComparisonProduct[]
+
+  @@index([editorialStatus, lastVerifiedAt])
+}
+
+model CosmeticIngredient {
+  id                 String              @id @default(cuid())
+  name               String
+  inciName           String
+  slug               String              @unique
+  ingredientCategory String
+  description        String
+  knownLimitations   String
+  sourceIds          String[]
+  compoundId         String?
+  compound           Compound?           @relation(fields: [compoundId], references: [id])
+  editorialStatus    EditorialStatus     @default(draft)
+  updatedAt          DateTime            @updatedAt
+  products           ProductIngredient[]
+}
+
+model ProductIngredient {
+  productId                     String
+  ingredientId                  String
+  product                       CosmeticProduct    @relation(fields: [productId], references: [id])
+  ingredient                    CosmeticIngredient @relation(fields: [ingredientId], references: [id])
+  concentrationValue            Decimal?           @db.Decimal(12, 6)
+  concentrationUnit             String?
+  concentrationDisclosureStatus String
+  sourceId                      String
+  source                        Source             @relation(fields: [sourceId], references: [id])
+
+  @@id([productId, ingredientId])
+}
+
+model Retailer {
+  id               String             @id @default(cuid())
+  name             String
+  website          String
+  affiliateProgram String?
+  status           String
+  prices           PriceObservation[]
+}
+
+model PriceObservation {
+  id                 String          @id @default(cuid())
+  productId          String
+  product            CosmeticProduct @relation(fields: [productId], references: [id])
+  retailerId         String
+  retailer           Retailer        @relation(fields: [retailerId], references: [id])
+  currency           String          @default("USD")
+  price              Decimal         @db.Decimal(12, 4)
+  size               Decimal         @db.Decimal(12, 4)
+  sizeUnit           String
+  sourceId           String
+  source             Source          @relation(fields: [sourceId], references: [id])
+  observedAt         DateTime
+  verifiedAt         DateTime?
+  availabilityStatus String
+
+  @@index([productId, verifiedAt])
+}
+
+model Comparison {
+  id                    String              @id @default(cuid())
+  slug                  String              @unique
+  title                 String
+  editorialSummary      String
+  documentedDifferences String
+  limitations           String
+  sourceIds             String[]
+  reviewedAt            DateTime?
+  publicationStatus     EditorialStatus     @default(draft)
+  products              ComparisonProduct[]
+}
+
+model ComparisonProduct {
+  comparisonId String
+  productId    String
+  comparison   Comparison      @relation(fields: [comparisonId], references: [id])
+  product      CosmeticProduct @relation(fields: [productId], references: [id])
+
+  @@id([comparisonId, productId])
+}
+
+model Source {
+  id                 String              @id @default(cuid())
+  title              String
+  publisher          String
+  url                String
+  publicationDate    DateTime?
+  accessedAt         DateTime
+  sourceType         String
+  products           CosmeticProduct[]
+  productIngredients ProductIngredient[]
+  prices             PriceObservation[]
+}
+
+model EditorialReview {
+  id            String     @id @default(cuid())
+  contentId     String
+  entityKind    EntityKind
+  reviewerId    String
+  status        String
+  reviewedAt    DateTime
+  revisionNotes String
+
+  @@index([entityKind, contentId])
+}
+
+model ChangeLog {
+  id         String     @id @default(cuid())
+  entityKind EntityKind
+  entityId   String
+  changeType String
+  summary    String
+  sourceId   String?
+  createdAt  DateTime   @default(now())
+
+  @@index([entityKind, entityId, createdAt])
+}
+
+// Reserved models have no public routes or seeded medical content.
+model Compound {
+  id              String                  @id @default(cuid())
+  name            String
+  identifiers     Json
+  cosmetics       CosmeticIngredient[]
+  pharmaceuticals PharmaceuticalProduct[]
+  trials          ClinicalTrial[]
+  events          RegulatoryEvent[]
+}
+
+model PharmaceuticalProduct {
+  id                 String   @id @default(cuid())
+  compoundId         String
+  compound           Compound @relation(fields: [compoundId], references: [id])
+  name               String
+  jurisdiction       String
+  approvalIdentifier String?
+  indicationIds      String[]
+}
+
+model TherapeuticIndication {
+  id             String  @id @default(cuid())
+  name           String
+  vocabularyCode String?
+}
+
+model ClinicalTrial {
+  id          String   @id @default(cuid())
+  registryId  String   @unique
+  compoundId  String
+  compound    Compound @relation(fields: [compoundId], references: [id])
+  registryUrl String
+  phase       String
+  status      String
+  retrievedAt DateTime
+}
+
+model RegulatoryEvent {
+  id           String   @id @default(cuid())
+  compoundId   String
+  compound     Compound @relation(fields: [compoundId], references: [id])
+  jurisdiction String
+  authority    String
+  eventType    String
+  sourceUrl    String
+  effectiveAt  DateTime
+}

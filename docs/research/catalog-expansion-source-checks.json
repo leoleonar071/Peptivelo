@@ -1,0 +1,280 @@
+{
+  "checkedAt": "2026-10-19",
+  "market": "US",
+  "pricing": "One-time listed price, excluding tax, shipping, coupon codes and subscription discounts.",
+  "records": [
+    {
+      "brand": "naturium",
+      "checkedAt": "2026-10-19",
+      "handle": "multi-peptide-advanced-serum",
+      "variant": {
+        "id": 41568455426103,
+        "title": "Standard - 1.0 fl oz",
+        "option1": "Standard - 1.0 fl oz",
+        "option2": null,
+        "option3": null,
+        "sku": "NATR-10102",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Multi-Peptide Advanced Serum - Standard - 1.0 fl oz",
+        "public_title": "Standard - 1.0 fl oz",
+        "options": [
+          "Standard - 1.0 fl oz"
+        ],
+        "price": 2500,
+        "weight": 156,
+        "compare_at_price": 2500,
+        "inventory_management": "shopify",
+        "barcode": "810120260921",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": [
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 2250
+              }
+            ],
+            "price": 2250,
+            "compare_at_price": 2500,
+            "per_delivery_price": 2250,
+            "selling_plan_id": 419266615,
+            "selling_plan_group_id": "bc6478a662ffae32b3be35b3fe566fa707984433"
+          },
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 2250
+              }
+            ],
+            "price": 2250,
+            "compare_at_price": 2500,
+            "per_delivery_price": 2250,
+            "selling_plan_id": 419299383,
+            "selling_plan_group_id": "bc6478a662ffae32b3be35b3fe566fa707984433"
+          },
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 2250
+              }
+            ],
+            "price": 2250,
+            "compare_at_price": 2500,
+            "per_delivery_price": 2250,
+            "selling_plan_id": 419332151,
+            "selling_plan_group_id": "bc6478a662ffae32b3be35b3fe566fa707984433"
+          }
+        ]
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0105/2265/6823/files/NATR-Multi-Peptide_Serum_Front_capoff_primary_bone.webp?v=1774292955",
+      "sizeEvidence": "US page explicitly associates Standard 1.0 fl oz / 30 mL with variant NATR-10102.",
+      "imageRights": "Local preview only; public reuse permission pending."
+    },
+    {
+      "brand": "timeless",
+      "checkedAt": "2026-10-19",
+      "handle": "matrixyl-synthe6-serum-1-oz",
+      "variant": {
+        "id": 31848203583599,
+        "title": "1 oz",
+        "option1": "1 oz",
+        "option2": null,
+        "option3": null,
+        "sku": "MS6-1",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "name": "Matrixyl® Synthe’6® Serum - 1 oz",
+        "public_title": "1 oz",
+        "options": [
+          "1 oz"
+        ],
+        "price": 2895,
+        "weight": 181,
+        "compare_at_price": null,
+        "inventory_quantity": 1250,
+        "inventory_management": "shopify",
+        "inventory_policy": "continue",
+        "barcode": "858588004787",
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": [
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 2316
+              }
+            ],
+            "price": 2316,
+            "compare_at_price": 2895,
+            "per_delivery_price": 2316,
+            "selling_plan_id": 4292542575,
+            "selling_plan_group_id": "4df3c7af8c9f2bd51829adf2797c75ccbae1a8a1"
+          },
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 2316
+              }
+            ],
+            "price": 2316,
+            "compare_at_price": 2895,
+            "per_delivery_price": 2316,
+            "selling_plan_id": 4292575343,
+            "selling_plan_group_id": "5c9f825645544c99fa6615b29136eb92aee2445b"
+          },
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 2316
+              }
+            ],
+            "price": 2316,
+            "compare_at_price": 2895,
+            "per_delivery_price": 2316,
+            "selling_plan_id": 4292608111,
+            "selling_plan_group_id": "f0baf23a4792392e0d41afa8d94efb2f38688d1c"
+          },
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 2316
+              }
+            ],
+            "price": 2316,
+            "compare_at_price": 2895,
+            "per_delivery_price": 2316,
+            "selling_plan_id": 4292640879,
+            "selling_plan_group_id": "667dd571154cfa6953f1338c8b1e9edd42b7b286"
+          }
+        ]
+      },
+      "image": "https://cdn.shopify.com/s/files/1/1670/9243/files/MS61_MAIN_IMAGE_BADGE_1_fef08f2e-9d09-4c8f-a6e7-72c45557ad6a.png?v=1778342798",
+      "sizeEvidence": "Variant MS6-1 is 1 oz; inspected bottle image prints 1 fl oz (30 mL). Record uses US fl oz and exact conversion for unit cost.",
+      "imageRights": "Local preview only; public reuse permission pending."
+    },
+    {
+      "brand": "medik8",
+      "checkedAt": "2026-10-19",
+      "handle": "liquid-peptides",
+      "variant": {
+        "id": 44820927283386,
+        "title": "Liquid Peptides",
+        "option1": "Liquid Peptides",
+        "option2": null,
+        "option3": null,
+        "sku": "P12434",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 41669772509370,
+          "product_id": 7950940733626,
+          "position": 1,
+          "created_at": "2026-05-20T13:34:43-04:00",
+          "updated_at": "2026-05-20T13:34:45-04:00",
+          "alt": null,
+          "width": 2000,
+          "height": 2000,
+          "src": "https://cdn.shopify.com/s/files/1/0496/2900/3927/files/2026_-_PDP_Asset_-_Liquid_Peptides_-_NAR.jpg?v=1779298485",
+          "variant_ids": [
+            44820927283386
+          ]
+        },
+        "available": true,
+        "name": "Liquid Peptides™ - Liquid Peptides",
+        "public_title": "Liquid Peptides",
+        "options": [
+          "Liquid Peptides"
+        ],
+        "price": 6800,
+        "weight": 0,
+        "compare_at_price": null,
+        "inventory_management": "shopify",
+        "barcode": "818625029227",
+        "featured_media": {
+          "alt": null,
+          "id": 32403810943162,
+          "position": 1,
+          "preview_image": {
+            "aspect_ratio": 1,
+            "height": 2000,
+            "width": 2000,
+            "src": "https://cdn.shopify.com/s/files/1/0496/2900/3927/files/2026_-_PDP_Asset_-_Liquid_Peptides_-_NAR.jpg?v=1779298485"
+          }
+        },
+        "quantity_rule": {
+          "min": 1,
+          "max": null,
+          "increment": 1
+        },
+        "quantity_price_breaks": [],
+        "requires_selling_plan": false,
+        "selling_plan_allocations": [
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 6120
+              }
+            ],
+            "price": 6120,
+            "compare_at_price": 6800,
+            "per_delivery_price": 6120,
+            "selling_plan_id": 4477026490,
+            "selling_plan_group_id": "4fc0568a4e55f09c20432a92b8f1a742734c7fcb"
+          },
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 6120
+              }
+            ],
+            "price": 6120,
+            "compare_at_price": 6800,
+            "per_delivery_price": 6120,
+            "selling_plan_id": 4477059258,
+            "selling_plan_group_id": "4fc0568a4e55f09c20432a92b8f1a742734c7fcb"
+          },
+          {
+            "price_adjustments": [
+              {
+                "position": 1,
+                "price": 6120
+              }
+            ],
+            "price": 6120,
+            "compare_at_price": 6800,
+            "per_delivery_price": 6120,
+            "selling_plan_id": 4477092026,
+            "selling_plan_group_id": "4fc0568a4e55f09c20432a92b8f1a742734c7fcb"
+          }
+        ]
+      },
+      "image": "https://cdn.shopify.com/s/files/1/0496/2900/3927/files/2026_-_PDP_Asset_-_Liquid_Peptides_-_NAR.jpg?v=1779298485",
+      "sizeEvidence": "Manufacturer image prints 30 mL and product tags include 30ml; single variant P12434, barcode 818625029227.",
+      "imageRights": "Local preview only; public reuse permission pending."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "createdAt": "2026-10-20T23:08:22.575Z",
+  "snapshotSha256": "b5a37696e2089ea5c19aff80bc9a0337a5c7d46faa6ab7f4260edbcce7dd3395",
+  "pageCount": 13,
+  "claimCount": 132,
+  "decisions": "All pending",
+  "warning": "Exporter refuses to overwrite existing packet files. Preserve completed responses and choose a new output directory for another version."
+}

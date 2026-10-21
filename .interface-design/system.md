@@ -1,0 +1,23 @@
+# Peptivelo interface identity
+
+Audience: a shopper comparing two serum labels, without chemistry training. Task: recognize two products, see documented differences, then inspect sources. Feel: calm, considered and legible, with uncertainty visible at the point of decision.
+
+Domain: formulation, exact ingredient identity, volume, label disclosures, source trail, observation date. Color world: paper white, petroleum ink, mineral gray, muted verification green and restrained copper. Signature: a paired label notebook where every difference is accompanied by its limit and source, rather than a product score.
+
+Defaults replaced: native select plus a second search field → visual search dialog; submit-and-wait comparison → automatic results after two selections; wide mobile matrix → paired facts within each question. Do not introduce benefits ratings or fabricate missing prices.
+
+Shared component checkpoint: the user-supplied October 2026 manual supersedes the prior DM Sans/Georgia palette. Use src/styles/peptivelo-tokens.css and JSON: ivory/white light theme and petroleum dark theme, semantic pv-* variables plus legacy aliases. Locally hosted Manrope for headings and provisional name, Inter for body/controls/tables, tabular numerals for prices. Controls 12px, cards 18px, large blocks 24px; spacing remains a 4px grid. Original supplied isotype only; no invented reverse/vector. See docs/PEPTIVELO_DESIGN_SYSTEM.md and BRAND_IMPLEMENTATION_REPORT.md. Theme defaults light and persists the user's explicit choice.
+
+Selector intent: recognizable product cards, native modal focus containment, search and normal buttons with keyboard navigation. Thumbnails use the exact 30 mL manufacturer photographs, with descriptive alt text and uncropped containment. Local provenance is in public/images/products/SOURCES.md; reuse rights remain unverified for public release. Main trigger has a 44px minimum touch target. Escape/backdrop/close restore focus. Body scrolling is locked only while open.
+
+Comparison intent: two equal product columns with aligned rows for volume, format, price, unit cost, selected names, disclosures, unknowns and sources. Show only differences hides matching recorded facts; missing data, concentration context and source trails remain visible. Detailed explanations use native disclosures below the table. No efficacy summary or winner is invented.
+
+Mobile: full-height search sheet and responsive table rows with a full-width characteristic label followed by two aligned A/B values. Preserve native table/header semantics and avoid horizontal page scrolling at 320px. Desktop: centered 760px picker and a three-column comparison table (characteristic plus two products). Product column controls remain sticky inside the table; disable stickiness below 600px viewport height. Compact the page introduction and action toolbar after both products are selected.
+
+Readability: body 17px, main copy 16–18px, controls 14–16px, supporting text at least 13px. Prices use tabular numerals. Primary controls target 44–48px height. Preserve the visible label in each accessible name.
+
+Home: search is the primary interaction, with real catalog product and ingredient suggestions and keyboard selection. Two secondary links open comparison and question-led selection. A paired label preview remains visible on mobile in compact form; exact product names and volumes are retained. The three numbered dimensions explain ingredients, evidence scope and price/unknowns, without scores or implied efficacy. Keep beta and pending scientific review visible. Hero styles are scoped in src/styles/home-hero.css to avoid legacy .hero rules.
+
+Ingredient learning: every compared name has a visible one-sentence explanation and a native modal with identity, intended use, evidence scope, precautions and an interpretation. Per-section source links are required. Study, supplier, label and safety-review support remain distinct and neutral. Dialogs are fixed within the viewport; mobile sheets occupy the full viewport. Escape/close/backdrop restores trigger focus and body scrolling. Direct guides retain valid comparison product IDs for a return link. Never infer a safety or efficacy ranking from a peptide name or its number.
+
+All editorial comparison readers: three cited buying answers followed by mutually exclusive overview / ingredients and price / evidence tabs. Label-only mode must say that label information is not a clinical review; label paragraphs may cite manufacturers, scientific paragraphs may not. Source types are neutral text, not scores. Technical tables render only with pair-specific records. Keep missing size prices, unverified individual amounts and different study preparations explicit at the affected passage.

@@ -1,0 +1,54 @@
+/* Transcribed from the user-supplied manual; semantic extensions are identified in JSON. */
+:root {
+  --pv-petroleum: #0E3D36;
+  --pv-blue-gray: #4E6B72;
+  --pv-sage: #9BB7A7;
+  --pv-aqua: #C7E0D9;
+  --pv-ivory: #F8F7F2;
+  --pv-bg: #F8F7F2;
+  --pv-surface: #FFFFFF;
+  --pv-surface-secondary: #EFF4F0;
+  --pv-text: #13332F;
+  --pv-text-secondary: #4E6B72;
+  --pv-border: #D9E4DD;
+  --pv-primary: #0E3D36;
+  --pv-primary-text: #FFFFFF;
+  --pv-primary-hover: #15554B;
+  --pv-accent: #C7E0D9;
+  --pv-accent-text: #0E3D36;
+  --pv-focus: #276D63;
+  color-scheme: light;
+  --pv-radius-control: 12px;
+  --pv-radius-card: 18px;
+  --pv-radius-block: 24px;
+  --pv-photo-surface: #FFFFFF;
+  --pv-backdrop: color-mix(in srgb, var(--pv-petroleum) 68%, transparent);
+  --pv-shadow: color-mix(in srgb, var(--pv-petroleum) 12%, transparent);
+  --ink: var(--pv-text);
+  --secondary: var(--pv-text-secondary);
+  --muted: var(--pv-text-secondary);
+  --paper: var(--pv-surface);
+  --canvas: var(--pv-bg);
+  --mineral: var(--pv-surface-secondary);
+  --line: var(--pv-border);
+  --copper: var(--pv-text-secondary);
+  --verified: var(--pv-text);
+  --control: var(--pv-surface-secondary);
+  --focus: var(--pv-focus);
+  --radius: var(--pv-radius-control);
+}
+:root[data-theme="dark"] {
+  --pv-bg: #0A2925;
+  --pv-surface: #0E3D36;
+  --pv-surface-secondary: #164B43;
+  --pv-text: #F8F7F2;
+  --pv-text-secondary: #C7E0D9;
+  --pv-border: #35655B;
+  --pv-primary: #C7E0D9;
+  --pv-primary-text: #0E3D36;
+  --pv-primary-hover: #F8F7F2;
+  --pv-accent: #1D5149;
+  --pv-accent-text: #F8F7F2;
+  --pv-focus: #B7E1D6;
+  color-scheme: dark;
+}

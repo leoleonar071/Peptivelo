@@ -1,0 +1,724 @@
+[
+  {
+    "title": "The 6 Peptide Skin Booster Serum Mini (50ml)",
+    "handle": "the-6-peptide-skin-booster-serum-mini-50ml",
+    "images": [
+      {
+        "id": 51058645106904,
+        "created_at": "2026-07-23T20:41:29-05:00",
+        "position": 1,
+        "updated_at": "2026-07-23T20:41:31-05:00",
+        "product_id": 9429539520728,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/Peptide_Serum_50ml_97fb9dc5-4937-4073-a862-c030bc637fd0.jpg?v=1784857291",
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "variants": [
+      {
+        "id": 52315242266840,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": "113021347",
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "14.00",
+        "grams": 19,
+        "compare_at_price": "14.00",
+        "position": 1,
+        "product_id": 9429539520728,
+        "created_at": "2026-08-28T03:46:08-05:00",
+        "updated_at": "2026-10-20T14:54:11-05:00"
+      }
+    ]
+  },
+  {
+    "title": "The 6 Peptide Brightening Boost Duo",
+    "handle": "the-6-peptide-brightening-boost-duo",
+    "images": [
+      {
+        "id": 39494606094552,
+        "created_at": "2023-08-01T20:14:19-05:00",
+        "position": 1,
+        "updated_at": "2026-03-06T03:27:32-05:00",
+        "product_id": 9435746304216,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/products/4____23.webp?v=1772785652",
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "variants": [
+      {
+        "id": 52329301901528,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "42.50",
+        "grams": 0,
+        "compare_at_price": "50.00",
+        "position": 1,
+        "product_id": 9435746304216,
+        "created_at": "2026-08-30T20:44:09-05:00",
+        "updated_at": "2026-10-20T14:54:11-05:00"
+      }
+    ]
+  },
+  {
+    "title": "The 6 Peptide & Retinol 0.3 Wrinkle Care Duo",
+    "handle": "deep-wrinkle-care-boost-번들",
+    "images": [
+      {
+        "id": 40063426625752,
+        "created_at": "2023-12-05T02:01:26-05:00",
+        "position": 1,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/Peptide_retinol_0.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843354935512,
+        "created_at": "2023-10-29T20:22:12-05:00",
+        "position": 2,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_01.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843355427032,
+        "created_at": "2023-10-29T20:22:21-05:00",
+        "position": 3,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_02.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843356541144,
+        "created_at": "2023-10-29T20:22:30-05:00",
+        "position": 4,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_03.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39844321099992,
+        "created_at": "2023-10-29T23:56:40-05:00",
+        "position": 5,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_04__1.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361620184,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 6,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_05.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361554648,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 7,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_06.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361423576,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 8,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_07.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361652952,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 9,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_08.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361390808,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 10,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_09.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39844322050264,
+        "created_at": "2023-10-29T23:57:19-05:00",
+        "position": 11,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_10__1.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361521880,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 12,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_11.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361456344,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 13,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_12.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361325272,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 14,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_14.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361259736,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 15,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_13.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361587416,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 16,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_15.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361685720,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 17,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_16.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 39843361358040,
+        "created_at": "2023-10-29T20:23:17-05:00",
+        "position": 18,
+        "updated_at": "2025-12-11T01:09:52-05:00",
+        "product_id": 9416644886744,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/TheRetinol03Cream_17.webp?v=1765433392",
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "variants": [
+      {
+        "id": 52278796353752,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "45.90",
+        "grams": 0,
+        "compare_at_price": "54.00",
+        "position": 1,
+        "product_id": 9416644886744,
+        "created_at": "2026-08-20T23:17:12-05:00",
+        "updated_at": "2026-10-20T14:54:11-05:00"
+      }
+    ]
+  },
+  {
+    "title": "The 6 Peptide Skin Barrier Boost Duo",
+    "handle": "the-6-peptide-skin-barrier-boost-duo",
+    "images": [
+      {
+        "id": 39895003988184,
+        "created_at": "2023-11-08T04:45:49-05:00",
+        "position": 1,
+        "updated_at": "2026-03-06T03:27:32-05:00",
+        "product_id": 9416537309400,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/dff5c594087fa4f61d10102ee9f0024a.webp?v=1772785652",
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "variants": [
+      {
+        "id": 52278058516696,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "42.50",
+        "grams": 0,
+        "compare_at_price": "50.00",
+        "position": 1,
+        "product_id": 9416537309400,
+        "created_at": "2026-08-20T20:05:35-05:00",
+        "updated_at": "2026-10-20T14:54:11-05:00"
+      }
+    ]
+  },
+  {
+    "title": "The 6 Peptide & Retinol 0.1 Wrinkle Care Duo",
+    "handle": "the-6-peptide-wrinkle-care-boost-duo",
+    "images": [
+      {
+        "id": 39494606782680,
+        "created_at": "2023-08-01T20:15:26-05:00",
+        "position": 1,
+        "updated_at": "2026-03-06T03:27:32-05:00",
+        "product_id": 9435697414360,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/products/5_a90928b5-107d-4a3a-a243-44a952a59a4c.webp?v=1772785652",
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "variants": [
+      {
+        "id": 52329247113432,
+        "title": "Default Title",
+        "option1": "Default Title",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": null,
+        "available": true,
+        "price": "44.20",
+        "grams": 0,
+        "compare_at_price": "52.00",
+        "position": 1,
+        "product_id": 9435697414360,
+        "created_at": "2026-08-30T20:28:31-05:00",
+        "updated_at": "2026-10-20T14:54:11-05:00"
+      }
+    ]
+  },
+  {
+    "title": "The 6 Peptide Skin Booster Serum",
+    "handle": "the-6-peptide-skin-booster-serum-bundle",
+    "images": [
+      {
+        "id": 50878357668056,
+        "created_at": "2026-07-15T01:38:54-05:00",
+        "position": 1,
+        "updated_at": "2026-07-15T01:38:56-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [
+          52315200258264,
+          52315200291032,
+          52315200323800
+        ],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/THE_6_PEPTIDE_SKIN_BOOSTER_SERUM___800x1067_1.webp?v=1784097536",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570611224792,
+        "created_at": "2026-08-06T21:38:15-05:00",
+        "position": 2,
+        "updated_at": "2026-08-06T21:38:17-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_1.jpg?v=1786070297",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610766040,
+        "created_at": "2026-08-06T21:38:13-05:00",
+        "position": 3,
+        "updated_at": "2026-08-06T21:38:15-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_10.jpg?v=1786070295",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610700504,
+        "created_at": "2026-08-06T21:38:13-05:00",
+        "position": 4,
+        "updated_at": "2026-08-06T21:38:15-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_11.jpg?v=1786070295",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610634968,
+        "created_at": "2026-08-06T21:38:13-05:00",
+        "position": 5,
+        "updated_at": "2026-08-06T21:38:15-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_12.jpg?v=1786070295",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610831576,
+        "created_at": "2026-08-06T21:38:14-05:00",
+        "position": 6,
+        "updated_at": "2026-08-06T21:38:16-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_13.jpg?v=1786070296",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610995416,
+        "created_at": "2026-08-06T21:38:14-05:00",
+        "position": 7,
+        "updated_at": "2026-08-06T21:38:16-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_15.jpg?v=1786070296",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610897112,
+        "created_at": "2026-08-06T21:38:14-05:00",
+        "position": 8,
+        "updated_at": "2026-08-06T21:38:16-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_16_4be8a8b1-52aa-4fbb-b496-6464d3ae19f2.jpg?v=1786070296",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610864344,
+        "created_at": "2026-08-06T21:38:14-05:00",
+        "position": 9,
+        "updated_at": "2026-08-06T21:38:15-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_17.jpg?v=1786070295",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610962648,
+        "created_at": "2026-08-06T21:38:14-05:00",
+        "position": 10,
+        "updated_at": "2026-08-06T21:38:16-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_18.jpg?v=1786070296",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610929880,
+        "created_at": "2026-08-06T21:38:14-05:00",
+        "position": 11,
+        "updated_at": "2026-08-06T21:38:16-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_19.jpg?v=1786070296",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570611028184,
+        "created_at": "2026-08-06T21:38:15-05:00",
+        "position": 12,
+        "updated_at": "2026-08-06T21:38:16-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_20.jpg?v=1786070296",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570611093720,
+        "created_at": "2026-08-06T21:38:15-05:00",
+        "position": 13,
+        "updated_at": "2026-08-06T21:38:17-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_21.jpg?v=1786070297",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570611192024,
+        "created_at": "2026-08-06T21:38:15-05:00",
+        "position": 14,
+        "updated_at": "2026-08-06T21:38:16-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_3.jpg?v=1786070296",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610733272,
+        "created_at": "2026-08-06T21:38:13-05:00",
+        "position": 15,
+        "updated_at": "2026-08-06T21:38:15-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_6.jpg?v=1786070295",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610667736,
+        "created_at": "2026-08-06T21:38:13-05:00",
+        "position": 16,
+        "updated_at": "2026-08-06T21:38:15-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_7.jpg?v=1786070295",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570610602200,
+        "created_at": "2026-08-06T21:38:13-05:00",
+        "position": 17,
+        "updated_at": "2026-08-06T21:38:15-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_9.jpg?v=1786070295",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570611126488,
+        "created_at": "2026-08-06T21:38:15-05:00",
+        "position": 18,
+        "updated_at": "2026-08-06T21:38:17-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/800x800_The6_Peptide_Serum.jpg?v=1786070297",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "id": 51570611257560,
+        "created_at": "2026-08-06T21:38:15-05:00",
+        "position": 19,
+        "updated_at": "2026-08-06T21:38:17-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_2.jpg?v=1786070297",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570611290328,
+        "created_at": "2026-08-06T21:38:16-05:00",
+        "position": 20,
+        "updated_at": "2026-08-06T21:38:17-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_4.jpg?v=1786070297",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "id": 51570611323096,
+        "created_at": "2026-08-06T21:38:16-05:00",
+        "position": 21,
+        "updated_at": "2026-08-06T21:38:17-05:00",
+        "product_id": 9394648187096,
+        "variant_ids": [],
+        "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/The6_Peptide_Serum_5_2.jpg?v=1786070297",
+        "width": 800,
+        "height": 1067
+      }
+    ],
+    "variants": [
+      {
+        "id": 52315200258264,
+        "title": "Single",
+        "option1": "Single",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 50878357668056,
+          "product_id": 9394648187096,
+          "position": 1,
+          "created_at": "2026-07-15T01:38:54-05:00",
+          "updated_at": "2026-07-15T01:38:56-05:00",
+          "alt": null,
+          "width": 800,
+          "height": 1067,
+          "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/THE_6_PEPTIDE_SKIN_BOOSTER_SERUM___800x1067_1.webp?v=1784097536",
+          "variant_ids": [
+            52315200258264,
+            52315200291032,
+            52315200323800
+          ]
+        },
+        "available": true,
+        "price": "25.00",
+        "grams": 0,
+        "compare_at_price": "25.00",
+        "position": 1,
+        "product_id": 9394648187096,
+        "created_at": "2026-08-28T02:56:57-05:00",
+        "updated_at": "2026-10-20T14:54:11-05:00"
+      },
+      {
+        "id": 52315200291032,
+        "title": "2-Pack",
+        "option1": "2-Pack",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 50878357668056,
+          "product_id": 9394648187096,
+          "position": 1,
+          "created_at": "2026-07-15T01:38:54-05:00",
+          "updated_at": "2026-07-15T01:38:56-05:00",
+          "alt": null,
+          "width": 800,
+          "height": 1067,
+          "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/THE_6_PEPTIDE_SKIN_BOOSTER_SERUM___800x1067_1.webp?v=1784097536",
+          "variant_ids": [
+            52315200258264,
+            52315200291032,
+            52315200323800
+          ]
+        },
+        "available": true,
+        "price": "45.00",
+        "grams": 0,
+        "compare_at_price": "50.00",
+        "position": 2,
+        "product_id": 9394648187096,
+        "created_at": "2026-08-28T02:56:57-05:00",
+        "updated_at": "2026-10-20T14:54:11-05:00"
+      },
+      {
+        "id": 52315200323800,
+        "title": "3-Pack",
+        "option1": "3-Pack",
+        "option2": null,
+        "option3": null,
+        "sku": null,
+        "requires_shipping": true,
+        "taxable": true,
+        "featured_image": {
+          "id": 50878357668056,
+          "product_id": 9394648187096,
+          "position": 1,
+          "created_at": "2026-07-15T01:38:54-05:00",
+          "updated_at": "2026-07-15T01:38:56-05:00",
+          "alt": null,
+          "width": 800,
+          "height": 1067,
+          "src": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/THE_6_PEPTIDE_SKIN_BOOSTER_SERUM___800x1067_1.webp?v=1784097536",
+          "variant_ids": [
+            52315200258264,
+            52315200291032,
+            52315200323800
+          ]
+        },
+        "available": true,
+        "price": "63.75",
+        "grams": 0,
+        "compare_at_price": "75.00",
+        "position": 3,
+        "product_id": 9394648187096,
+        "created_at": "2026-08-28T02:56:57-05:00",
+        "updated_at": "2026-10-20T14:54:11-05:00"
+      }
+    ]
+  }
+]

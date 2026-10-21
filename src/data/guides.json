@@ -1,0 +1,300 @@
+[
+  {
+    "slug": "matrixyl-3000-vs-synthe6",
+    "title": "Matrixyl 3000 vs Matrixyl synthe’6: what the names mean",
+    "description": "Compare the peptide names behind Matrixyl 3000 and synthe’6, learn how to read a serum label, and understand what the names cannot tell you.",
+    "answer": "Matrixyl 3000 and Matrixyl synthe’6 are different commercial ingredient systems. Croda lists Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7 in Matrixyl 3000, and Palmitoyl Tripeptide-38 in synthe’6. These names help identify ingredients; they do not establish which finished serum works better.",
+    "status": "draft",
+    "updatedAt": "2026-10-19",
+    "scope": "Source-based label explainer. Manufacturer and supplier descriptions; not independent product testing or clinical review.",
+    "sections": [
+      {
+        "id": "name-vs-ingredient",
+        "title": "Start with the commercial name and the ingredient name",
+        "paragraphs": [
+          {
+            "text": "Matrixyl is a commercial family name. An INCI name is the name you look for in an ingredient list. Seeing “Matrixyl” on the front of a bottle is not enough to identify the particular ingredient system. Check the brand’s full description and exact ingredient list, then distinguish the system from the whole serum. Matching names can help you research a purchase, but they do not establish the supplier, grade or amount used in every product.",
+            "sourceIds": ["croda-matrixyl", "croda-synthe6"]
+          }
+        ]
+      },
+      {
+        "id": "mixed-systems",
+        "title": "Can one serum contain both systems?",
+        "paragraphs": [
+          {
+            "text": "Yes. Geek & Gorgeous identifies both systems in Power Peptides. The Ordinary Matrixyl 10% + HA lists the three peptide names associated with the two systems. These examples explain why a product called Matrixyl may list more than one peptide. Our catalog records only selected names: always check the complete current package, especially when comparing markets or reformulations.",
+            "sourceIds": ["geek-power-peptides", "ordinary-matrixyl"]
+          }
+        ]
+      },
+      {
+        "id": "percentages",
+        "title": "Why 3%, 2% and 10% do not form a strength ranking",
+        "paragraphs": [
+          {
+            "text": "A commercial system contains ingredients beyond the named peptide. A percentage describing that system is not automatically a percentage of pure peptide. To compare amounts fairly, you would need to know exactly what each percentage refers to and whether the basis is comparable. Individual amounts are often not disclosed. Do not add commercial numbers together and treat the total as a pure-peptide concentration.",
+            "sourceIds": [
+              "croda-matrixyl",
+              "croda-synthe6",
+              "geek-power-peptides",
+              "ordinary-matrixyl"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "evidence",
+        "title": "What the supplier information establishes",
+        "paragraphs": [
+          {
+            "text": "The supplier pages identify the ingredient systems and describe their intended cosmetic use. Their promotional statements are not an independent head-to-head test of the finished products in our catalog. This guide does not review the underlying studies or assign an efficacy winner. A blend description should not become a promise that any serum containing a related name will produce a particular result.",
+            "sourceIds": ["croda-matrixyl", "croda-synthe6"]
+          }
+        ]
+      },
+      {
+        "id": "buying",
+        "title": "Use the names to make a clearer comparison",
+        "paragraphs": [
+          {
+            "text": "First identify the exact 30 mL product or other presentation you intend to buy. Then check its full label, directions, disclosed information and dated cost per mL. Shared peptide names may explain overlap, but they cannot show that two products are interchangeable. Use the linked product comparisons to inspect the specific records rather than choosing solely by the larger number or longer ingredient selection.",
+            "sourceIds": [
+              "ordinary-matrixyl",
+              "ordinary-ha",
+              "geek-power-peptides"
+            ],
+            "kind": "editorial"
+          }
+        ]
+      }
+    ],
+    "table": {
+      "caption": "Commercial systems and the peptide names to recognize",
+      "headers": ["Label detail", "Matrixyl 3000", "Matrixyl synthe’6"],
+      "rows": [
+        {
+          "cells": [
+            "Selected peptide names",
+            "Palmitoyl Tripeptide-1 + Palmitoyl Tetrapeptide-7",
+            "Palmitoyl Tripeptide-38"
+          ],
+          "sourceIds": ["croda-matrixyl", "croda-synthe6"]
+        },
+        {
+          "cells": [
+            "Other components in the supplier INCI",
+            "The listed system also includes carriers and formulation components.",
+            "The listed system also includes carriers and formulation components."
+          ],
+          "sourceIds": ["croda-matrixyl", "croda-synthe6"]
+        },
+        {
+          "cells": [
+            "Can the name rank two finished serums?",
+            "No comparative product result is established by the name.",
+            "No comparative product result is established by the name."
+          ],
+          "sourceIds": ["croda-matrixyl", "croda-synthe6"]
+        }
+      ]
+    },
+    "questions": [
+      {
+        "question": "Is Matrixyl 3000 the same as Palmitoyl Tripeptide-38?",
+        "answer": "No. Croda’s Matrixyl 3000 listing names Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7. Its synthe’6 listing names Palmitoyl Tripeptide-38. Keep those identities separate.",
+        "sourceIds": ["croda-matrixyl", "croda-synthe6"]
+      },
+      {
+        "question": "Does Matrixyl 10% + HA contain 10% of every peptide?",
+        "answer": "The product name does not establish that each listed peptide is present at 10%. The current recorded page does not disclose the separate amount of each peptide.",
+        "sourceIds": ["ordinary-matrixyl"]
+      },
+      {
+        "question": "Should I buy separate products for the two systems?",
+        "answer": "The names alone cannot answer that. One formula may already list related peptides. Check the complete formula and what you are trying to compare before assuming that adding another product provides an extra benefit.",
+        "sourceIds": ["ordinary-matrixyl", "geek-power-peptides"]
+      }
+    ],
+    "takeaway": [
+      "Match the exact peptide names rather than the word Matrixyl alone.",
+      "Keep commercial-system percentages separate from individual peptide amounts.",
+      "Choose a product comparison to inspect cost, directions and remaining unknowns."
+    ],
+    "sourceIds": [
+      "croda-matrixyl",
+      "croda-synthe6",
+      "ordinary-matrixyl",
+      "ordinary-ha",
+      "geek-power-peptides"
+    ],
+    "productIds": ["ordinary-matrixyl", "ordinary-ha", "geek-power-peptides"],
+    "comparisonIds": ["matrixyl-vs-ha", "geek-vs-ha"],
+    "relatedGuideSlugs": ["peptide-percentages-explained"],
+    "answerSourceIds": ["croda-matrixyl", "croda-synthe6"]
+  },
+  {
+    "slug": "peptide-percentages-explained",
+    "title": "What peptide percentages on serum labels actually tell you",
+    "description": "Learn the difference between a peptide, a commercial blend and a finished serum, with examples and a clearly hypothetical concentration calculation.",
+    "answer": "A percentage is useful only when you know what it measures. It may describe a named solution or commercial ingredient system rather than pure peptide. Compare disclosures on the same basis; when individual amounts are not given, mark them as unknown instead of ranking products by the largest number.",
+    "status": "draft",
+    "updatedAt": "2026-10-19",
+    "scope": "Label-reading and arithmetic explainer. Examples of brand disclosures are not independent concentration measurements.",
+    "sections": [
+      {
+        "id": "three-layers",
+        "title": "Three layers: peptide, ingredient system, serum",
+        "paragraphs": [
+          {
+            "text": "A peptide is one named ingredient. A commercial system can combine that ingredient with water, glycerin or other components. A serum is the complete formula that uses ingredients and systems. Croda’s supplier listings make this distinction visible: their INCI lists contain more than the peptide names. A percentage at one layer does not automatically describe the amount at another layer.",
+            "sourceIds": ["croda-matrixyl", "croda-synthe6"]
+          }
+        ]
+      },
+      {
+        "id": "read-number",
+        "title": "Ask what the number refers to",
+        "paragraphs": [
+          {
+            "text": "Read the full product name and the brand’s explanation together. Look for wording such as solution, complex or blend. Then ask whether an individual peptide amount is disclosed, whether the percentage refers to a finished formula, and whether the same basis is used by the other product. If the page does not answer those questions, record the uncertainty. Ingredient presence is still a useful fact; its amount may remain unknown.",
+            "sourceIds": [
+              "ordinary-argireline",
+              "ordinary-matrixyl",
+              "geek-power-peptides"
+            ],
+            "kind": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "worked-example",
+        "title": "A hypothetical example: 5% of a blend is not 5% pure peptide",
+        "paragraphs": [
+          {
+            "text": "Illustrative arithmetic only, not a disclosure about any product: suppose a serum contains 5% of a blend, and that blend contains 2% of one peptide. If both percentages use the same mass basis, the peptide would be 0.05 × 0.02 = 0.001 of the serum, or 0.1%. The numbers here are invented solely to explain the calculation. Do not use this example to estimate an undisclosed amount in a real serum.",
+            "sourceIds": [],
+            "kind": "illustration"
+          }
+        ]
+      },
+      {
+        "id": "real-disclosures",
+        "title": "How this applies to the products we record",
+        "paragraphs": [
+          {
+            "text": "Power Peptides discloses percentages for named commercial systems. Matrixyl 10% + HA and Argireline Solution 10% include numbers in their product names. Our records preserve these disclosures without turning them into separately assayed pure-peptide amounts. These are different pieces of information; comparing the largest printed numbers would ignore their meaning. Consult the original page and your purchased package for current details.",
+            "sourceIds": [
+              "geek-power-peptides",
+              "ordinary-matrixyl",
+              "ordinary-argireline"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "comparison",
+        "title": "Separate quantity, cost and expected results",
+        "paragraphs": [
+          {
+            "text": "A verified price and exact bottle volume let us calculate cost per mL. That is an arithmetic comparison of cost, not an effectiveness test. An undisclosed peptide amount cannot be reconstructed from the bottle price or from another product’s percentage. Use our table to inspect dates and missing values, then follow the manufacturer’s current directions rather than using a percentage as personalized advice.",
+            "sourceIds": [
+              "ordinary-ha",
+              "ordinary-matrixyl",
+              "ordinary-argireline"
+            ],
+            "kind": "editorial"
+          }
+        ]
+      },
+      {
+        "id": "research-context",
+        "title": "A study is about a specific treatment, not a headline number",
+        "paragraphs": [
+          {
+            "text": "Wang and colleagues studied Argireline versus placebo in 60 Chinese participants over four weeks and reported improvements in eye-area wrinkle measures. This is ingredient research with a defined setting; the abstract does not identify our catalog products as the tested treatment. It cannot validate the concentration or results of every serum using a related name.",
+            "sourceIds": ["argireline-trial"]
+          }
+        ]
+      }
+    ],
+    "table": {
+      "caption": "What a label statement lets you conclude",
+      "headers": ["Statement", "What is recorded", "What remains unknown"],
+      "rows": [
+        {
+          "cells": [
+            "A percentage of a named commercial system",
+            "The brand’s stated amount for that system.",
+            "The separate pure amount of each peptide, unless explicitly disclosed."
+          ],
+          "sourceIds": ["geek-power-peptides", "croda-matrixyl"]
+        },
+        {
+          "cells": [
+            "10% in a product name",
+            "The exact wording of the named product.",
+            "A separately measured 10% of every listed peptide."
+          ],
+          "sourceIds": ["ordinary-matrixyl", "ordinary-argireline"]
+        },
+        {
+          "cells": [
+            "A peptide appears in the INCI",
+            "The manufacturer lists that ingredient.",
+            "Its exact concentration if no individual amount is disclosed."
+          ],
+          "sourceIds": ["ordinary-matrixyl", "ordinary-ha"]
+        }
+      ]
+    },
+    "questions": [
+      {
+        "question": "Does a bigger percentage mean a stronger serum?",
+        "answer": "Not from these labels alone. First check what each percentage measures. Even comparable concentrations would not be an independent test of two complete formulas.",
+        "sourceIds": [
+          "ordinary-matrixyl",
+          "ordinary-argireline",
+          "geek-power-peptides"
+        ]
+      },
+      {
+        "question": "Can I calculate pure-peptide content from an undisclosed blend?",
+        "answer": "No. The worked example requires both the blend amount and its internal peptide amount on the same basis. If either value is unknown, the calculation cannot establish the actual concentration.",
+        "sourceIds": ["croda-matrixyl", "croda-synthe6"]
+      },
+      {
+        "question": "Does an unknown amount mean the product is bad?",
+        "answer": "No. It means this catalog cannot compare that amount reliably. The label fact and its limitation should both remain visible, without inventing a positive or negative product score.",
+        "sourceIds": ["ordinary-ha", "ordinary-matrixyl"]
+      }
+    ],
+    "takeaway": [
+      "Identify what each percentage describes before comparing numbers.",
+      "Do not fill missing concentrations with estimates from price or ingredient names.",
+      "Compare dated unit costs separately from ingredient evidence and product claims."
+    ],
+    "sourceIds": [
+      "croda-matrixyl",
+      "croda-synthe6",
+      "ordinary-matrixyl",
+      "ordinary-argireline",
+      "ordinary-ha",
+      "geek-power-peptides",
+      "argireline-trial"
+    ],
+    "productIds": [
+      "ordinary-matrixyl",
+      "ordinary-argireline",
+      "geek-power-peptides"
+    ],
+    "comparisonIds": [
+      "ordinary-ha-vs-copper",
+      "matrixyl-vs-ha",
+      "argireline-vs-ha",
+      "geek-vs-ha"
+    ],
+    "relatedGuideSlugs": ["matrixyl-3000-vs-synthe6"],
+    "answerSourceIds": ["croda-matrixyl", "croda-synthe6"]
+  }
+]

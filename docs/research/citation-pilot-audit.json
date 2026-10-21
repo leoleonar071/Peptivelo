@@ -1,0 +1,448 @@
+{
+  "checkedAt": "2026-10-19",
+  "reviewStatus": "Agent-assisted source check only; human editorial and qualified scientific review pending.",
+  "scope": "Two label guides and NIOD vs The Ordinary copper comparison. Not a systematic review; no clinical winner or product safety rating.",
+  "searchNotes": [
+    "Revisited Croda INCI pages, US manufacturer labels and publisher article/abstract/acknowledgments.",
+    "Scoped searches for DOI with correction/retraction and PubMed copper-serum comparisons did not establish a direct product comparison. No claim of exhaustive absence.",
+    "Publisher abstract was inspected; paid full methods were not accessed."
+  ],
+  "guides": [
+    {
+      "slug": "matrixyl-3000-vs-synthe6",
+      "answerSources": [
+        "croda-matrixyl",
+        "croda-synthe6"
+      ],
+      "paragraphs": [
+        {
+          "section": "name-vs-ingredient",
+          "index": 0,
+          "classification": "source",
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6"
+          ],
+          "text": "Matrixyl is a commercial family name. An INCI name is the name you look for in an ingredient list. Seeing “Matrixyl” on the front of a bottle is not enough to identify the particular ingredient system. Check the brand’s full description and exact ingredient list, then distinguish the system from the whole serum. Matching names can help you research a purchase, but they do not establish the supplier, grade or amount used in every product."
+        },
+        {
+          "section": "mixed-systems",
+          "index": 0,
+          "classification": "source",
+          "sourceIds": [
+            "geek-power-peptides",
+            "ordinary-matrixyl"
+          ],
+          "text": "Yes. Geek & Gorgeous identifies both systems in Power Peptides. The Ordinary Matrixyl 10% + HA lists the three peptide names associated with the two systems. These examples explain why a product called Matrixyl may list more than one peptide. Our catalog records only selected names: always check the complete current package, especially when comparing markets or reformulations."
+        },
+        {
+          "section": "percentages",
+          "index": 0,
+          "classification": "source",
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6",
+            "geek-power-peptides",
+            "ordinary-matrixyl"
+          ],
+          "text": "A commercial system contains ingredients beyond the named peptide. A percentage describing that system is not automatically a percentage of pure peptide. To compare amounts fairly, you would need to know exactly what each percentage refers to and whether the basis is comparable. Individual amounts are often not disclosed. Do not add commercial numbers together and treat the total as a pure-peptide concentration."
+        },
+        {
+          "section": "evidence",
+          "index": 0,
+          "classification": "source",
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6"
+          ],
+          "text": "The supplier pages identify the ingredient systems and describe their intended cosmetic use. Their promotional statements are not an independent head-to-head test of the finished products in our catalog. This guide does not review the underlying studies or assign an efficacy winner. A blend description should not become a promise that any serum containing a related name will produce a particular result."
+        },
+        {
+          "section": "buying",
+          "index": 0,
+          "classification": "editorial",
+          "sourceIds": [
+            "ordinary-matrixyl",
+            "ordinary-ha",
+            "geek-power-peptides"
+          ],
+          "text": "First identify the exact 30 mL product or other presentation you intend to buy. Then check its full label, directions, disclosed information and dated cost per mL. Shared peptide names may explain overlap, but they cannot show that two products are interchangeable. Use the linked product comparisons to inspect the specific records rather than choosing solely by the larger number or longer ingredient selection."
+        }
+      ],
+      "tableRows": [
+        {
+          "cells": [
+            "Selected peptide names",
+            "Palmitoyl Tripeptide-1 + Palmitoyl Tetrapeptide-7",
+            "Palmitoyl Tripeptide-38"
+          ],
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6"
+          ]
+        },
+        {
+          "cells": [
+            "Other components in the supplier INCI",
+            "The listed system also includes carriers and formulation components.",
+            "The listed system also includes carriers and formulation components."
+          ],
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6"
+          ]
+        },
+        {
+          "cells": [
+            "Can the name rank two finished serums?",
+            "No comparative product result is established by the name.",
+            "No comparative product result is established by the name."
+          ],
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6"
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Is Matrixyl 3000 the same as Palmitoyl Tripeptide-38?",
+          "answer": "No. Croda’s Matrixyl 3000 listing names Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7. Its synthe’6 listing names Palmitoyl Tripeptide-38. Keep those identities separate.",
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6"
+          ]
+        },
+        {
+          "question": "Does Matrixyl 10% + HA contain 10% of every peptide?",
+          "answer": "The product name does not establish that each listed peptide is present at 10%. The current recorded page does not disclose the separate amount of each peptide.",
+          "sourceIds": [
+            "ordinary-matrixyl"
+          ]
+        },
+        {
+          "question": "Should I buy separate products for the two systems?",
+          "answer": "The names alone cannot answer that. One formula may already list related peptides. Check the complete formula and what you are trying to compare before assuming that adding another product provides an extra benefit.",
+          "sourceIds": [
+            "ordinary-matrixyl",
+            "geek-power-peptides"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "peptide-percentages-explained",
+      "answerSources": [
+        "croda-matrixyl",
+        "croda-synthe6"
+      ],
+      "paragraphs": [
+        {
+          "section": "three-layers",
+          "index": 0,
+          "classification": "source",
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6"
+          ],
+          "text": "A peptide is one named ingredient. A commercial system can combine that ingredient with water, glycerin or other components. A serum is the complete formula that uses ingredients and systems. Croda’s supplier listings make this distinction visible: their INCI lists contain more than the peptide names. A percentage at one layer does not automatically describe the amount at another layer."
+        },
+        {
+          "section": "read-number",
+          "index": 0,
+          "classification": "editorial",
+          "sourceIds": [
+            "ordinary-argireline",
+            "ordinary-matrixyl",
+            "geek-power-peptides"
+          ],
+          "text": "Read the full product name and the brand’s explanation together. Look for wording such as solution, complex or blend. Then ask whether an individual peptide amount is disclosed, whether the percentage refers to a finished formula, and whether the same basis is used by the other product. If the page does not answer those questions, record the uncertainty. Ingredient presence is still a useful fact; its amount may remain unknown."
+        },
+        {
+          "section": "worked-example",
+          "index": 0,
+          "classification": "illustration",
+          "sourceIds": [],
+          "text": "Illustrative arithmetic only, not a disclosure about any product: suppose a serum contains 5% of a blend, and that blend contains 2% of one peptide. If both percentages use the same mass basis, the peptide would be 0.05 × 0.02 = 0.001 of the serum, or 0.1%. The numbers here are invented solely to explain the calculation. Do not use this example to estimate an undisclosed amount in a real serum."
+        },
+        {
+          "section": "real-disclosures",
+          "index": 0,
+          "classification": "source",
+          "sourceIds": [
+            "geek-power-peptides",
+            "ordinary-matrixyl",
+            "ordinary-argireline"
+          ],
+          "text": "Power Peptides discloses percentages for named commercial systems. Matrixyl 10% + HA and Argireline Solution 10% include numbers in their product names. Our records preserve these disclosures without turning them into separately assayed pure-peptide amounts. These are different pieces of information; comparing the largest printed numbers would ignore their meaning. Consult the original page and your purchased package for current details."
+        },
+        {
+          "section": "comparison",
+          "index": 0,
+          "classification": "editorial",
+          "sourceIds": [
+            "ordinary-ha",
+            "ordinary-matrixyl",
+            "ordinary-argireline"
+          ],
+          "text": "A verified price and exact bottle volume let us calculate cost per mL. That is an arithmetic comparison of cost, not an effectiveness test. An undisclosed peptide amount cannot be reconstructed from the bottle price or from another product’s percentage. Use our table to inspect dates and missing values, then follow the manufacturer’s current directions rather than using a percentage as personalized advice."
+        },
+        {
+          "section": "research-context",
+          "index": 0,
+          "classification": "source",
+          "sourceIds": [
+            "argireline-trial"
+          ],
+          "text": "Wang and colleagues studied Argireline versus placebo in 60 Chinese participants over four weeks and reported improvements in eye-area wrinkle measures. This is ingredient research with a defined setting; the abstract does not identify our catalog products as the tested treatment. It cannot validate the concentration or results of every serum using a related name."
+        }
+      ],
+      "tableRows": [
+        {
+          "cells": [
+            "A percentage of a named commercial system",
+            "The brand’s stated amount for that system.",
+            "The separate pure amount of each peptide, unless explicitly disclosed."
+          ],
+          "sourceIds": [
+            "geek-power-peptides",
+            "croda-matrixyl"
+          ]
+        },
+        {
+          "cells": [
+            "10% in a product name",
+            "The exact wording of the named product.",
+            "A separately measured 10% of every listed peptide."
+          ],
+          "sourceIds": [
+            "ordinary-matrixyl",
+            "ordinary-argireline"
+          ]
+        },
+        {
+          "cells": [
+            "A peptide appears in the INCI",
+            "The manufacturer lists that ingredient.",
+            "Its exact concentration if no individual amount is disclosed."
+          ],
+          "sourceIds": [
+            "ordinary-matrixyl",
+            "ordinary-ha"
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "question": "Does a bigger percentage mean a stronger serum?",
+          "answer": "Not from these labels alone. First check what each percentage measures. Even comparable concentrations would not be an independent test of two complete formulas.",
+          "sourceIds": [
+            "ordinary-matrixyl",
+            "ordinary-argireline",
+            "geek-power-peptides"
+          ]
+        },
+        {
+          "question": "Can I calculate pure-peptide content from an undisclosed blend?",
+          "answer": "No. The worked example requires both the blend amount and its internal peptide amount on the same basis. If either value is unknown, the calculation cannot establish the actual concentration.",
+          "sourceIds": [
+            "croda-matrixyl",
+            "croda-synthe6"
+          ]
+        },
+        {
+          "question": "Does an unknown amount mean the product is bad?",
+          "answer": "No. It means this catalog cannot compare that amount reliably. The label fact and its limitation should both remain visible, without inventing a positive or negative product score.",
+          "sourceIds": [
+            "ordinary-ha",
+            "ordinary-matrixyl"
+          ]
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "id": "niod-vs-ordinary",
+    "slug": "niod-cais3-vs-the-ordinary",
+    "title": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+    "comparedProductIds": [
+      "niod-cais3",
+      "ordinary-copper"
+    ],
+    "editorialSummary": "Both records describe 30 mL serums, but their selected copper-peptide names differ. The catalog has a size-specific price for The Ordinary and none for NIOD, so it cannot yet compare their costs fairly.",
+    "documentedDifferences": "NIOD lists Tripeptide-1 Copper Acetate; The Ordinary lists Copper Tripeptide-1. These exact label names are retained without asserting molecular or clinical equivalence. The Ordinary also lists Acetyl Hexapeptide-8; NIOD lists Tripeptide-29. The ingredient selections shown here are incomplete.",
+    "limitations": "A complete formula comparison, independent concentration testing and head-to-head clinical outcomes are unavailable. NIOD’s price needs size-specific verification. This editorial comparison remains a draft pending human review.",
+    "sourceIds": [
+      "niod",
+      "ordinary",
+      "argireline-trial"
+    ],
+    "publicationStatus": "draft",
+    "buyerQuestion": "Are these copper serums interchangeable, and what differences can I actually verify?",
+    "practicalDifferences": [
+      {
+        "title": "Start with the exact copper name",
+        "text": "NIOD lists Tripeptide-1 Copper Acetate; The Ordinary lists Copper Tripeptide-1. The word copper alone does not establish identical ingredients or performance.",
+        "sourceIds": [
+          "niod",
+          "ordinary"
+        ],
+        "interpretation": false
+      },
+      {
+        "title": "Other selected peptides also differ",
+        "text": "NIOD lists Tripeptide-29 and Acetyl Tetrapeptide-2; The Ordinary lists Acetyl Hexapeptide-8 and palmitoyl peptides. Open the explanations to understand the names; do not treat the count as a quality score.",
+        "sourceIds": [
+          "niod",
+          "ordinary"
+        ],
+        "interpretation": false
+      },
+      {
+        "title": "Leave the cost question open",
+        "text": "The NIOD record is for 30 mL. A price for a different size would produce a misleading comparison, so no NIOD price per mL or cost winner is shown.",
+        "sourceIds": [],
+        "interpretation": true
+      }
+    ],
+    "decisionNotes": [
+      {
+        "title": "If your question is whether the copper names are equivalent",
+        "text": "The exact names differ in the recorded labels. This comparison preserves them separately rather than treating both as the same ingredient.",
+        "sourceIds": [
+          "niod",
+          "ordinary"
+        ],
+        "interpretation": true
+      },
+      {
+        "title": "If you are comparing value",
+        "text": "The NIOD record describes 30 mL, but the catalog has no verified price for that variant. Use a current size-specific retailer price in the calculator; do not substitute a 15 mL price.",
+        "sourceIds": [],
+        "interpretation": true
+      }
+    ],
+    "questions": [
+      {
+        "question": "Does NIOD’s 1:1 mean the same as The Ordinary’s 1%?",
+        "answer": "NIOD describes two components in its technology; The Ordinary’s name includes a copper-peptide percentage. These different disclosures do not establish identical individual ingredient amounts.",
+        "sourceIds": [
+          "niod",
+          "ordinary"
+        ]
+      },
+      {
+        "question": "Can this page tell me which copper serum works better?",
+        "answer": "No. It compares selected label facts and cost information where verified. It does not establish comparative results, individual tolerance or equivalent copper forms.",
+        "sourceIds": [
+          "niod",
+          "ordinary"
+        ]
+      }
+    ],
+    "relatedGuideSlugs": [
+      "peptide-percentages-explained"
+    ],
+    "updatedAt": "2026-10-19",
+    "citationPilot": true,
+    "researchContext": {
+      "text": "An Argireline trial in 60 Chinese participants over four weeks reported improvements in eye-area wrinkle measures relative to placebo. The Ordinary lists Acetyl Hexapeptide-8, but that label entry does not make its complete serum the studied treatment. The abstract does not identify either compared copper serum as the tested product. We use this study to explain the limits of transferring ingredient research, not to select a winner.",
+      "sourceIds": [
+        "argireline-trial",
+        "ordinary"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "sourceId": "croda-matrixyl",
+      "kind": "Supplier information",
+      "supports": "Identifies the peptide names and other components in the supplier’s Matrixyl 3000 system.",
+      "limits": "Commercial supplier information. It does not identify the grade or amount in every serum and is not an independent comparison of finished products.",
+      "commercialContext": "Published by the ingredient supplier.",
+      "checkedAt": "2026-10-19",
+      "access": "Public supplier page"
+    },
+    {
+      "sourceId": "croda-synthe6",
+      "kind": "Supplier information",
+      "supports": "Identifies Palmitoyl Tripeptide-38 alongside other components in the supplier system.",
+      "limits": "The system’s name and INCI do not establish the pure-peptide concentration in a finished serum or prove superiority over another formula.",
+      "commercialContext": "Published by the ingredient supplier.",
+      "checkedAt": "2026-10-19",
+      "access": "Public supplier page"
+    },
+    {
+      "sourceId": "ordinary-matrixyl",
+      "kind": "Manufacturer label",
+      "supports": "Supports the product name, selected ingredient identities and brand disclosures used here.",
+      "limits": "A label and a headline percentage are not an independent assay or a comparative clinical trial.",
+      "commercialContext": "Published by the seller and manufacturer.",
+      "checkedAt": "2026-10-19",
+      "access": "Public US product page"
+    },
+    {
+      "sourceId": "ordinary-ha",
+      "kind": "Manufacturer label",
+      "supports": "Supports the selected ingredient names and identity of Multi-Peptide + HA.",
+      "limits": "The checked label does not supply a separate amount for every peptide or independent comparative outcomes.",
+      "commercialContext": "Published by the seller and manufacturer.",
+      "checkedAt": "2026-10-19",
+      "access": "Public US product page"
+    },
+    {
+      "sourceId": "ordinary-argireline",
+      "kind": "Manufacturer label",
+      "supports": "Supports the wording Argireline Solution 10% and the brand’s ingredient disclosure.",
+      "limits": "This product name is not evidence that the product is the formulation used in a particular academic study.",
+      "commercialContext": "Published by the seller and manufacturer.",
+      "checkedAt": "2026-10-19",
+      "access": "Public US product page"
+    },
+    {
+      "sourceId": "geek-power-peptides",
+      "kind": "Manufacturer label",
+      "supports": "Supports the named commercial systems and their disclosed percentages in Power Peptides.",
+      "limits": "Commercial-system percentages do not establish the separate pure amount of each peptide or comparative product performance.",
+      "commercialContext": "Published by the seller and manufacturer.",
+      "checkedAt": "2026-10-19",
+      "access": "Public US product page"
+    },
+    {
+      "sourceId": "niod",
+      "kind": "Manufacturer label",
+      "supports": "Supports the exact selected peptide names and the brand’s description of its two-component disclosure.",
+      "limits": "This source check does not establish equivalent copper forms, a verified 30 mL price in our record, or comparative clinical results.",
+      "commercialContext": "NIOD and The Ordinary are both DECIEM brands; these are commercial sources, not independent corroboration.",
+      "checkedAt": "2026-10-19",
+      "access": "Public US product page"
+    },
+    {
+      "sourceId": "ordinary",
+      "kind": "Manufacturer label",
+      "supports": "Supports the selected peptide names, product name and 30 mL presentation.",
+      "limits": "Manufacturer claims and label checks do not establish clinical superiority over NIOD. Price observation dates are separate from this reference check.",
+      "commercialContext": "NIOD and The Ordinary are both DECIEM brands; these are commercial sources, not independent corroboration.",
+      "checkedAt": "2026-10-19",
+      "access": "Public US product page"
+    },
+    {
+      "sourceId": "argireline-trial",
+      "kind": "Human ingredient study",
+      "supports": "An example of ingredient research with a defined population and duration, rather than a test of either compared copper serum.",
+      "limits": "Four weeks in one population. Neither CAIS3 nor The Ordinary’s copper serum is the tested product identified in the abstract. No product winner or long-term safety conclusion follows.",
+      "commercialContext": "The publisher reports no funding and no declared conflicts. These are author declarations, not an independent audit.",
+      "checkedAt": "2026-10-19",
+      "access": "Publisher abstract and acknowledgments inspected; full methods behind subscription were not reviewed.",
+      "authors": "Wang Y, Wang M, Xiao S, Pan P, Li P, Huo J.",
+      "journal": "American Journal of Clinical Dermatology, 14(2), 147–153",
+      "year": 2013,
+      "doi": "10.1007/s40257-013-0009-9",
+      "publicationUrl": "https://link.springer.com/article/10.1007/s40257-013-0009-9",
+      "design": "Randomized, placebo-controlled; 60 Chinese participants, 3:1 allocation, four weeks.",
+      "finding": "The abstract reports improved eye-area wrinkle measures with Argireline relative to placebo.",
+      "integrity": "No correction or retraction notice was seen on the inspected publisher page. This is not a comprehensive integrity clearance.",
+      "publicationTitle": "The Anti-Wrinkle Efficacy of Argireline, a Synthetic Hexapeptide, in Chinese Subjects: A Randomized, Placebo-Controlled Study"
+    }
+  ]
+}

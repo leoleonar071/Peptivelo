@@ -1,0 +1,217 @@
+{
+  "checkedAt": "2026-10-19",
+  "status": "Draft; agent-assisted source check, not qualified clinical review.",
+  "scope": "Normal topical cosmetic use; no injection/ingestion/microneedling extrapolation. Not a systematic review.",
+  "evaluation": {
+    "comparisonId": "niod-vs-ordinary",
+    "title": "Before you buy: benefits, risks and the evidence gaps",
+    "summary": "The research inspected does not establish that either finished serum works better or is safer. There is short-term ingredient evidence, documented preservative reactions in other cosmetics, and safety assessments with defined limits. These are reasons to ask better questions, not to declare either formula harmful.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "Benefits: ingredient evidence is not a product promise",
+        "conclusion": "A benefit signal exists for Argireline; superiority of either copper serum is not established here.",
+        "paragraphs": [
+          {
+            "text": "A randomized placebo-controlled Argireline study in 60 Chinese participants reported improvement in eye-area wrinkle measures after four weeks. It did not identify these two retail serums as the tested treatment.",
+            "sourceIds": [
+              "argireline-trial"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "A separate laboratory study on human cadaver and guinea-pig skin found limited penetration of acetyl hexapeptide-8 from its tested emulsion. This was a 24-hour experiment, not a clinical wrinkle trial; it cannot prove these serums work or do not work.",
+            "sourceIds": [
+              "kraeling-penetration"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "For this purchase, ingredient research is a starting point. We have not established a head-to-head clinical result for NIOD versus The Ordinary. Do not pay extra on the assumption that a more expensive copper serum has proven superior results.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Risks: look beyond the peptide",
+        "conclusion": "Preservative reactions are documented, but their likelihood in these serums is unknown.",
+        "paragraphs": [
+          {
+            "text": "A 2024 clinical report describes two cases of contact urticaria—hives after skin contact—from phenoxyethanol in other cosmetics. A case report documents a possible reaction, not how frequently it occurs or that either serum caused it.",
+            "sourceIds": [
+              "phenoxyethanol-cases"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "The EU Scientific Committee on Consumer Safety concluded that phenoxyethanol is safe as a cosmetic preservative up to 1.0% under its assessment. That is not a guarantee of individual tolerance or an assay of these US products.",
+            "sourceIds": [
+              "sccs-phenoxyethanol"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "The label check below identifies phenoxyethanol in both formulas. If you have a confirmed allergy to it, that is a concrete reason to discuss alternatives with your clinician. Ingredient presence alone cannot diagnose an allergy or establish that one of these products is riskier.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "Long-term use: a safety assessment has boundaries",
+        "conclusion": "Neither a short trial nor an ingredient assessment establishes years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "The CIR assessment includes Copper Tripeptide-1 and specified related peptides and concludes safe use under the practices and concentrations it reviewed. Its scope does not automatically cover every copper-named ingredient or either complete serum.",
+            "sourceIds": [
+              "cir-peptides"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "The inspected CIR report notes gaps in reproductive/developmental toxicity and carcinogenicity data for its reviewed group, while still reaching its scoped safe-use conclusion. A missing dataset is not evidence that these products cause those harms.",
+            "sourceIds": [
+              "cir-peptides"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "This review does not establish long-term harm or long-term safety for either finished serum. We have not performed an exhaustive search or a clinical safety review. We also do not transfer injection, ingestion or microneedling findings to normal cosmetic application on intact skin.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value: what would justify paying more?",
+        "conclusion": "A price premium is not evidence of a health or performance advantage.",
+        "paragraphs": [
+          {
+            "text": "The inspected studies and safety assessments do not compare the two finished products. They cannot establish that paying more buys better wrinkle reduction, lower allergy risk or greater long-term safety.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          },
+          {
+            "text": "Our catalog still lacks a verified price for NIOD’s 30 mL variant, so we cannot calculate a fair cost difference yet. Compare the exact size and current price separately from the scientific evidence. Personal format preferences may matter, but we have not tested texture or wear.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The current US ingredient lists for both products name Phenoxyethanol and Chlorphenesin. These are additional label checks, not additions to our selected-peptide list. Individual preservative concentrations are not given in the inspected lists. The academic phenoxyethanol case report concerns different cosmetics; it is not an adverse-event report for these two serums. NIOD also advertises product tests with 31–32 people over 4–12 weeks. We have not assessed their full protocols or an independently published head-to-head result; these brand-reported claims are separate from the academic evidence above.",
+    "labelSourceIds": [
+      "ordinary",
+      "niod"
+    ],
+    "checkedAt": "2026-10-19",
+    "status": "draft"
+  },
+  "research": [
+    {
+      "sourceId": "argireline-trial",
+      "kind": "Human ingredient study",
+      "supports": "An example of ingredient research with a defined population and duration, rather than a test of either compared copper serum.",
+      "limits": "Four weeks in one population. Neither CAIS3 nor The Ordinary’s copper serum is the tested product identified in the abstract. No product winner or long-term safety conclusion follows.",
+      "commercialContext": "The publisher reports no funding and no declared conflicts. These are author declarations, not an independent audit.",
+      "checkedAt": "2026-10-19",
+      "access": "Publisher abstract and acknowledgments inspected; full methods behind subscription were not reviewed.",
+      "authors": "Wang Y, Wang M, Xiao S, Pan P, Li P, Huo J.",
+      "journal": "American Journal of Clinical Dermatology, 14(2), 147–153",
+      "year": 2013,
+      "doi": "10.1007/s40257-013-0009-9",
+      "publicationUrl": "https://link.springer.com/article/10.1007/s40257-013-0009-9",
+      "design": "Randomized, placebo-controlled; 60 Chinese participants, 3:1 allocation, four weeks.",
+      "finding": "The abstract reports improved eye-area wrinkle measures with Argireline relative to placebo.",
+      "integrity": "No correction or retraction notice was seen on the inspected publisher page. This is not a comprehensive integrity clearance.",
+      "publicationTitle": "The Anti-Wrinkle Efficacy of Argireline, a Synthetic Hexapeptide, in Chinese Subjects: A Randomized, Placebo-Controlled Study"
+    },
+    {
+      "sourceId": "kraeling-penetration",
+      "kind": "Laboratory study",
+      "supports": "Shows that the tested emulsion and skin model matter when interpreting peptide-delivery claims.",
+      "limits": "Not a living-person efficacy or long-term safety trial. Neither retail serum was tested.",
+      "commercialContext": "Authors have an FDA research affiliation. Funding and conflict declarations were not verified from the abstract; affiliation is not FDA product approval.",
+      "checkedAt": "2026-10-19",
+      "access": "PubMed abstract and bibliographic metadata via Europe PMC; full methods not reviewed.",
+      "authors": "Kraeling ME, Zhou W, Wang P, Ogunsola OA.",
+      "journal": "Cutaneous and Ocular Toxicology, 34(1), 46–52",
+      "year": 2015,
+      "doi": "10.3109/15569527.2014.894521",
+      "design": "24-hour in vitro diffusion experiment using human cadaver and hairless guinea-pig skin, not a human participant trial.",
+      "finding": "The abstract reports mostly surface-retained peptide and no detected peptide in the dermis under the tested conditions."
+    },
+    {
+      "sourceId": "phenoxyethanol-cases",
+      "kind": "Human case report",
+      "supports": "Documents individual contact-urticaria reactions involving phenoxyethanol in other cosmetics.",
+      "limits": "Two cases cannot estimate incidence, establish the risk of either compared serum, or prove chronic systemic toxicity.",
+      "commercialContext": "Funding and conflict declarations were not verified in the accessible material.",
+      "checkedAt": "2026-10-19",
+      "access": "University repository summary and PubMed/Europe PMC bibliographic metadata; full clinical report not reviewed.",
+      "authors": "Marzola E, Melloni L, Caligiure A, Gianessi F, Bianchi A, Borghi A, Corazza M.",
+      "journal": "Contact Dermatitis, 91(5)",
+      "year": 2024,
+      "doi": "10.1111/cod.14637",
+      "design": "Two clinical cases involving other cosmetics.",
+      "finding": "The repository summary describes contact urticaria associated with phenoxyethanol, with reactions at the face rather than other tested sites."
+    },
+    {
+      "sourceId": "sccs-phenoxyethanol",
+      "kind": "Regulatory safety opinion",
+      "supports": "Provides the EU committee’s 1.0% preservative safety conclusion under its assessed conditions.",
+      "limits": "Not a US product approval, a measurement of either formula, or a guarantee against an individual reaction. The opinion excludes non-cosmetic exposure.",
+      "commercialContext": "European Commission scientific advisory opinion; not published by a retailer.",
+      "checkedAt": "2026-10-19",
+      "access": "Official SCCS conclusion and scope on the European Commission page; the underlying toxicology dossier was not independently reanalysed.",
+      "authors": "Scientific Committee on Consumer Safety (SCCS).",
+      "journal": "SCCS/1575/16, final version 6 October 2016",
+      "year": 2016
+    },
+    {
+      "sourceId": "cir-peptides",
+      "kind": "Expert safety assessment",
+      "supports": "Provides a scoped safe-use conclusion for specified peptide identities, practices and concentrations.",
+      "limits": "Does not test these finished products or establish their safety over years. NIOD’s exact label name is not silently equated with a different name in the report.",
+      "commercialContext": "CIR is funded by the Personal Care Products Council and describes its panel/review process as independent. Industry-submitted data are included; this is not a government approval.",
+      "contextUrl": "https://ftp.cir-safety.org/about",
+      "checkedAt": "2026-10-19",
+      "access": "2014 final CIR report, including scope, data gaps and discussion, plus 2018 journal publication abstract/bibliography. Not a new independent toxicology analysis.",
+      "authors": "Johnson W Jr, Bergfeld WF, Belsito DV, et al.",
+      "journal": "International Journal of Toxicology",
+      "year": 2018,
+      "doi": "10.1177/1091581818807863",
+      "publicationTitle": "Safety Assessment of Tripeptide-1, Hexapeptide-12, Their Metal Salts and Fatty Acyl Derivatives, and Palmitoyl Tetrapeptide-7 as Used in Cosmetics",
+      "publicationUrl": "https://journals.sagepub.com/doi/10.1177/1091581818807863",
+      "design": "Expert assessment of specified cosmetic peptide ingredients; underlying final report released June 30, 2014.",
+      "finding": "The panel’s favorable conclusion is conditional on the reviewed uses, concentrations and peptide identities."
+    }
+  ],
+  "primaryLabelCheck": {
+    "sourceIds": [
+      "ordinary",
+      "niod"
+    ],
+    "foundInBoth": [
+      "Phenoxyethanol",
+      "Chlorphenesin"
+    ],
+    "concentrations": "Not disclosed in the inspected ingredient lists."
+  },
+  "searches": [
+    "PubMed: copper peptide facial randomized serum wrinkles; no direct comparison established in scoped search.",
+    "Acetyl hexapeptide-8 clinical and in vitro penetration; retrieved PMID 24754410 abstract through Europe PMC.",
+    "Phenoxyethanol case reports, DOI 10.1111/cod.14637; University of Ferrara summary and PubMed metadata.",
+    "CIR peptide safety assessment: 2014 final report and 2018 journal publication.",
+    "SCCS phenoxyethanol final opinion SCCS/1575/16."
+  ],
+  "notReviewed": [
+    "Full clinical methods for the Argireline trial, full Kraeling article and full Marzola clinical case report.",
+    "Full protocols and datasets behind brand-advertised product tests.",
+    "An exhaustive ingredient-by-ingredient toxicology review, complete systematic search or a professional clinical safety review."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-20T23:12:37.885Z",
+  "scope": "Versioned JSON reference IDs and local product image presence. Does not verify remote availability, claim support, image rights or scientific review; TypeScript-authored library briefs are outside this command.",
+  "pass": true,
+  "references": 544,
+  "issues": [],
+  "missingImages": [],
+  "inventory": {
+    "facialProducts": 11,
+    "scalpProducts": 1,
+    "comparisons": 10,
+    "sources": 34
+  }
+}

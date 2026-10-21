@@ -1,0 +1,48 @@
+/* Shared brand layer: existing structures, routes and interactive behavior remain. */
+body, body:has(.editorial-pilot) { background: var(--pv-bg); color: var(--pv-text); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); color: var(--pv-text); font-weight: 700; letter-spacing: -.035em; }
+h1 { font-size: clamp(2.15rem, 4.5vw, 3.5rem); line-height: 1.15; }
+h2 { font-size: clamp(1.65rem, 2.8vw, 2.3rem); line-height: 1.2; }
+h3 { font-size: clamp(1.2rem, 1.8vw, 1.5rem); line-height: 1.3; }
+.hero h1 { font-family: var(--font-heading); font-size: clamp(2.15rem, 4.5vw, 3.5rem); }
+.hero h1 em { font-family: inherit; color: var(--pv-text-secondary); }
+p, small { color: var(--pv-text-secondary); }
+.utility { background: var(--pv-petroleum); color: var(--pv-ivory); }
+.utility a:hover { color: var(--pv-aqua); }
+.header { gap: 16px; flex-wrap: wrap; background: var(--pv-surface); }
+.header .brand { order: 1; }
+.header nav { order: 2; margin-left: auto; }
+.theme-toggle { order: 3; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; min-width: 44px; padding: 8px 12px; border: 1px solid var(--pv-text-secondary); border-radius: var(--pv-radius-control); background: var(--pv-surface); color: var(--pv-text); font: inherit; font-size: 14px; }
+.theme-toggle:hover { background: var(--pv-surface-secondary); }
+.header .nav-more { display: block; }
+.nav-menu { z-index: 100; background: var(--pv-surface); border-color: var(--pv-border); box-shadow: 0 8px 24px var(--pv-shadow); max-height: min(70vh, 640px); overflow-y: auto; }
+.brand .brand-mark { background: var(--pv-ivory); border-radius: var(--pv-radius-control); width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+.brand-wordmark { color: var(--pv-text); }
+.button, .editorial-reader .button { background: var(--pv-primary); color: var(--pv-primary-text); border-radius: var(--pv-radius-control); min-height: 44px; }
+.button:hover { background: var(--pv-primary-hover); color: var(--pv-primary-text); }
+.button.secondary { background: var(--pv-surface); color: var(--pv-text); border: 1px solid var(--pv-text-secondary); }
+.button.secondary:hover { background: var(--pv-surface-secondary); color: var(--pv-text); }
+.reader-buy-options .retailer-product-link span { color: inherit; }
+.reader-segments button[aria-selected="true"], .reader-segments a:first-child { background: var(--pv-primary); color: var(--pv-primary-text); }
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea { background: var(--pv-surface); color: var(--pv-text); border-color: var(--pv-text-secondary); border-radius: var(--pv-radius-control); font-family: var(--font-body); min-height: 44px; }
+input::placeholder, textarea::placeholder { color: var(--pv-text-secondary); opacity: 1; }
+input[type="checkbox"], input[type="radio"] { accent-color: var(--pv-primary); }
+.search-bar, .picker-search, .identify-input { border-color: var(--pv-text-secondary); background: var(--pv-surface); border-radius: var(--pv-radius-control); }
+.panel, .product-card, .question-card, .ingredient-tile, .compare-slot, .insight-card, .reader-product, .identify-result { border-radius: var(--pv-radius-card); border-color: var(--pv-border); background: var(--pv-surface); }
+.reader-overview, .reader-buy, .choose-limit, .library-answer, .hair-start { border-radius: var(--pv-radius-block); }
+.badge { background: var(--pv-surface-secondary); border-color: var(--pv-border); color: var(--pv-text-secondary); border-radius: 999px; }
+dialog { color: var(--pv-text); background: var(--pv-surface); border-color: var(--pv-border); border-radius: var(--pv-radius-block); }
+dialog::backdrop { background: var(--pv-backdrop); }
+dialog h2, dialog h3 { color: var(--pv-text); }
+.product-photo, .hair-photo { background: var(--pv-photo-surface); }
+.evidence-support, .reference-kind, .education-kind { color: var(--pv-text-secondary); }
+.error-text { color: var(--pv-text); font-weight: 600; }
+.visual-comparison, .study-table { font-variant-numeric: tabular-nums; }
+button:disabled { opacity: .65; }
+button[aria-busy="true"] { cursor: progress; }
+button, a, input, select, textarea, summary { scroll-margin: 96px 16px; }
+:focus-visible { outline: 3px solid var(--pv-focus); outline-offset: 4px; }
+@media(max-width: 1023px) { .header .nav-secondary { display: none; } .header nav { gap: 20px; } }
+@media(max-width: 639px) { .header .theme-toggle { order: 2; margin-left: auto; } .header nav { order: 3; width: 100%; margin-left: 0; } .theme-toggle span { display: none; } .brand { min-width: 0; } }
+@media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+.bottle-scene.product-photo, .reader-photo .product-photo { background: var(--pv-photo-surface); }

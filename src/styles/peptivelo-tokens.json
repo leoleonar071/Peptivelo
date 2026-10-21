@@ -1,0 +1,59 @@
+{
+  "provenance": "Values transcribed from the manual supplied in chat on 2026-10-20. Interface themes are the manual's proposed extensions, not independently verified original brand assets.",
+  "palette": {
+    "petroleum": "#0E3D36",
+    "blue-gray": "#4E6B72",
+    "sage": "#9BB7A7",
+    "aqua": "#C7E0D9",
+    "ivory": "#F8F7F2"
+  },
+  "themes": {
+    "light": {
+      "bg": "#F8F7F2",
+      "surface": "#FFFFFF",
+      "surface-secondary": "#EFF4F0",
+      "text": "#13332F",
+      "text-secondary": "#4E6B72",
+      "border": "#D9E4DD",
+      "primary": "#0E3D36",
+      "primary-text": "#FFFFFF",
+      "primary-hover": "#15554B",
+      "accent": "#C7E0D9",
+      "accent-text": "#0E3D36",
+      "focus": "#276D63"
+    },
+    "dark": {
+      "bg": "#0A2925",
+      "surface": "#0E3D36",
+      "surface-secondary": "#164B43",
+      "text": "#F8F7F2",
+      "text-secondary": "#C7E0D9",
+      "border": "#35655B",
+      "primary": "#C7E0D9",
+      "primary-text": "#0E3D36",
+      "primary-hover": "#F8F7F2",
+      "accent": "#1D5149",
+      "accent-text": "#F8F7F2",
+      "focus": "#B7E1D6"
+    }
+  },
+  "typography": {
+    "heading": "Manrope",
+    "body": "Inter"
+  },
+  "radius": {
+    "control": "12px",
+    "card": "18px",
+    "block": "24px"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ]
+}

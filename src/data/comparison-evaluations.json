@@ -1,0 +1,1095 @@
+[
+  {
+    "comparisonId": "niod-vs-ordinary",
+    "title": "Before you buy: benefits, risks and the evidence gaps",
+    "summary": "The research inspected does not establish that either finished serum works better or is safer. There is short-term ingredient evidence, documented preservative reactions in other cosmetics, and safety assessments with defined limits. These are reasons to ask better questions, not to declare either formula harmful.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "Benefits: ingredient evidence is not a product promise",
+        "conclusion": "A benefit signal exists for Argireline; superiority of either copper serum is not established here.",
+        "paragraphs": [
+          {
+            "text": "A randomized placebo-controlled Argireline study in 60 Chinese participants reported improvement in eye-area wrinkle measures after four weeks. It did not identify these two retail serums as the tested treatment.",
+            "sourceIds": [
+              "argireline-trial"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "A separate laboratory study on human cadaver and guinea-pig skin found limited penetration of acetyl hexapeptide-8 from its tested emulsion. This was a 24-hour experiment, not a clinical wrinkle trial; it cannot prove these serums work or do not work.",
+            "sourceIds": [
+              "kraeling-penetration"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "For this purchase, ingredient research is a starting point. We have not established a head-to-head clinical result for NIOD versus The Ordinary. Do not pay extra on the assumption that a more expensive copper serum has proven superior results.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Risks: look beyond the peptide",
+        "conclusion": "Preservative reactions are documented, but their likelihood in these serums is unknown.",
+        "paragraphs": [
+          {
+            "text": "A 2024 clinical report describes two cases of contact urticaria—hives after skin contact—from phenoxyethanol in other cosmetics. A case report documents a possible reaction, not how frequently it occurs or that either serum caused it.",
+            "sourceIds": [
+              "phenoxyethanol-cases"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "The EU Scientific Committee on Consumer Safety concluded that phenoxyethanol is safe as a cosmetic preservative up to 1.0% under its assessment. That is not a guarantee of individual tolerance or an assay of these US products.",
+            "sourceIds": [
+              "sccs-phenoxyethanol"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "The label check below identifies phenoxyethanol in both formulas. If you have a confirmed allergy to it, that is a concrete reason to discuss alternatives with your clinician. Ingredient presence alone cannot diagnose an allergy or establish that one of these products is riskier.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          },
+          {
+            "text": "The 2025 Acetyl Hexapeptide-8 safety assessment reaches a favorable conclusion up to 0.005%, with insufficient data above that amount. This does not establish harm above it or certify a serum with an unverified pure-peptide concentration.",
+            "sourceIds": [
+              "cir-acetyl"
+            ],
+            "kind": "evidence"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "Long-term use: a safety assessment has boundaries",
+        "conclusion": "Neither a short trial nor an ingredient assessment establishes years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "The CIR assessment includes Copper Tripeptide-1 and specified related peptides and concludes safe use under the practices and concentrations it reviewed. Its scope does not automatically cover every copper-named ingredient or either complete serum.",
+            "sourceIds": [
+              "cir-peptides"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "The inspected CIR report notes gaps in reproductive/developmental toxicity and carcinogenicity data for its reviewed group, while still reaching its scoped safe-use conclusion. A missing dataset is not evidence that these products cause those harms.",
+            "sourceIds": [
+              "cir-peptides"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "This review does not establish long-term harm or long-term safety for either finished serum. We have not performed an exhaustive search or a clinical safety review. We also do not transfer injection, ingestion or microneedling findings to normal cosmetic application on intact skin.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value: what would justify paying more?",
+        "conclusion": "A price premium is not evidence of a health or performance advantage.",
+        "paragraphs": [
+          {
+            "text": "The inspected studies and safety assessments do not compare the two finished products. They cannot establish that paying more buys better wrinkle reduction, lower allergy risk or greater long-term safety.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          },
+          {
+            "text": "NIOD’s exact 30 mL price is now recorded at USD 93 on 2026-10-20. Compare that dated observation with The Ordinary’s own recorded price and date. Neither the price difference nor ingredient research establishes an extra clinical benefit; texture and wear have not been tested by Peptivelo.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The current US ingredient lists for both products name Phenoxyethanol and Chlorphenesin. These are additional label checks, not additions to our selected-peptide list. Individual preservative concentrations are not given in the inspected lists. The academic phenoxyethanol case report concerns different cosmetics; it is not an adverse-event report for these two serums. NIOD also advertises product tests with 31–32 people over 4–12 weeks. We have not assessed their full protocols or an independently published head-to-head result; these brand-reported claims are separate from the academic evidence above.",
+    "labelSourceIds": [
+      "ordinary",
+      "niod"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "The labels use different copper-peptide names. Their other selected peptides also differ; the names alone do not establish chemical equivalence.",
+        "sourceIds": [
+          "niod",
+          "ordinary"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Compare the recorded 30 mL prices and cost per mL below. The price difference measures cost, not an established extra benefit from NIOD.",
+        "sourceIds": [
+          "niod",
+          "ordinary"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "The selected research does not establish which finished serum works better or is safer. Ingredient studies and scoped safety assessments cannot answer that comparison by themselves.",
+        "sourceIds": [
+          "argireline-trial",
+          "cir-peptides",
+          "cir-acetyl"
+        ],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "ptiox-vs-ha",
+    "title": "What the P-TIOX evidence can tell you",
+    "summary": "Published formula research exists, with important commercial and study-context limits.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "Benefits",
+        "conclusion": "Formula studies report improvements, but no winner against The Ordinary is established.",
+        "paragraphs": [
+          {
+            "text": "The 2026 Zhu paper includes two separate clinical groups (50 and 42 participants). Its abstract reports improved appearance measures for a formula with several active ingredients.",
+            "sourceIds": [
+              "ptiox-zhu-2026"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "This does not isolate the peptide effect or establish superiority to another serum.",
+            "sourceIds": [
+              "ptiox-zhu-2026"
+            ],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Precautions",
+        "conclusion": "A post-injection trial is a specific setting, not a blanket safety guarantee.",
+        "paragraphs": [
+          {
+            "text": "The adjunct study used randomized split-face vehicle comparison around botulinum toxin treatment. Its findings should stay within that context.",
+            "sourceIds": [
+              "ptiox-adjunct-2026"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "Detailed adverse-event tables were not reviewed. This comparison cannot assign personal tolerance or recommend post-procedure use.",
+            "sourceIds": [
+              "ptiox-adjunct-2026"
+            ],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "What remains unknown",
+        "conclusion": "Short observations do not settle long-term use or the contribution of each ingredient.",
+        "paragraphs": [
+          {
+            "text": "Multiple ingredients, distinct study designs and limited observation prevent conclusions about years of use or which ingredient caused an improvement.",
+            "sourceIds": [
+              "ptiox-zhu-2026",
+              "ptiox-adjunct-2026"
+            ],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "conclusion": "A higher price does not establish greater clinical benefit.",
+        "paragraphs": [
+          {
+            "text": "Neither selected publication is a P-TIOX-versus-The-Ordinary trial. Keep the unit-cost calculation separate from comparative efficacy.",
+            "sourceIds": [
+              "ptiox-zhu-2026",
+              "ptiox-adjunct-2026"
+            ],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The US page identifies the 30 mL serum and offer. Selected peptide names come from the UK brand label, with that market limitation preserved. The manufacturer’s publication index links the formula research to P-TIOX.",
+    "labelSourceIds": [
+      "ptiox-us",
+      "ptiox-uk-label",
+      "ptiox-study-map",
+      "ordinary-ha"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "Both records are 30 mL serums. P-TIOX’s selected peptide names come from a UK label; a complete US ingredient list was not retrieved.",
+        "sourceIds": [
+          "ptiox-us",
+          "ordinary-ha",
+          "ptiox-uk-label"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Compare the dated unit costs and check your regional packaging. The P-TIOX studies concern different settings and do not establish an advantage over this Ordinary serum.",
+        "sourceIds": [
+          "ptiox-us",
+          "ordinary-ha",
+          "ptiox-uk-label"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "The selected formula studies do not establish that P-TIOX outperforms Multi-Peptide + HA or replaces injections. Scientific review is still pending.",
+        "sourceIds": [
+          "ptiox-zhu-2026",
+          "ptiox-adjunct-2026"
+        ],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "ordinary-ha-vs-copper",
+    "title": "Before you buy: does adding copper justify the difference?",
+    "summary": "The labels and recorded prices show a purchasing difference. The selected research does not establish extra benefit or better tolerance from the copper version. Both full formulas need to be considered, not just their peptide names.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "Benefits: neither bottle inherits an ingredient result",
+        "conclusion": "A short ingredient trial does not establish which complete serum works better.",
+        "paragraphs": [
+          {
+            "text": "A four-week randomized placebo-controlled Argireline trial enrolled 60 Chinese participants. It reported improvements in eye-area wrinkle measures; the abstract does not identify either compared retail serum as its treatment.",
+            "sourceIds": [
+              "argireline-trial"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "Both recorded labels include Acetyl Hexapeptide-8. That shared name does not transfer the trial result to either formula or demonstrate an advantage from adding copper.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Precautions: ingredient assessments have concentration limits",
+        "conclusion": "The safety assessment cannot certify either finished serum or predict your tolerance.",
+        "paragraphs": [
+          {
+            "text": "The 2025 Acetyl Hexapeptide-8 safety assessment reaches a favorable conclusion up to 0.005%, with insufficient data above that amount. This does not establish harm above it or certify a serum with an unverified pure-peptide concentration.",
+            "sourceIds": [
+              "cir-acetyl"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "Neither label check establishes the separate pure amount of Acetyl Hexapeptide-8. Do not compare a commercial blend’s headline percentage directly with the assessment’s pure-ingredient concentration.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "Long-term evidence: keep the reviewed scope visible",
+        "conclusion": "A scoped cosmetic assessment is not years of testing these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "The 2018 safety assessment covers specified peptide identities, uses and concentrations, including Copper Tripeptide-1 and the selected palmitoyl peptides it names. Its favorable conclusion applies within that reviewed scope.",
+            "sourceIds": [
+              "cir-peptides"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "This selected-source review does not establish comparative long-term safety, nor does a missing finished-product study demonstrate that either serum causes harm.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value: price answers the cost question",
+        "conclusion": "The lower recorded cost is not a clinical performance ranking.",
+        "paragraphs": [
+          {
+            "text": "Use the dated, equal-size prices in Ingredients & price. The lower recorded cost of Multi-Peptide + HA does not measure the additional benefit, if any, of the copper version. Texture and wear have not been tested by Peptivelo.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The recorded US labels name Acetyl Hexapeptide-8 in both serums and Copper Tripeptide-1 in the copper version. The selected lists are incomplete; they do not establish that the full formulas differ only by copper. Individual peptide amounts are not independently assayed. Directions may vary by product and reformulation.",
+    "labelSourceIds": [
+      "ordinary-ha",
+      "ordinary"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "The copper version lists Copper Tripeptide-1. Both selected lists include other shared peptides; these incomplete lists do not show every formula difference.",
+        "sourceIds": [
+          "ordinary-ha",
+          "ordinary"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Multi-Peptide + HA has the lower recorded 30 mL price. Paying more for the copper version does not establish an extra visible benefit.",
+        "sourceIds": [
+          "ordinary-ha",
+          "ordinary"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "The selected research does not establish which finished serum works better or is safer. Ingredient studies and scoped safety assessments cannot answer that comparison by themselves.",
+        "sourceIds": [
+          "argireline-trial",
+          "cir-peptides",
+          "cir-acetyl"
+        ],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "matrixyl-vs-ha",
+    "mode": "label",
+    "title": "Label facts and buying limits",
+    "summary": "The three selected Matrixyl peptides also appear in the recorded Multi-Peptide + HA list, which additionally includes Acetyl Hexapeptide-8. Matrixyl has the lower recorded cost for the same bottle size. Shared names do not establish the same amounts or results.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "What the labels document",
+        "conclusion": "The three selected Matrixyl peptide names also appear in Multi-Peptide + HA, whose selection additionally includes Acetyl Hexapeptide-8.",
+        "paragraphs": [
+          {
+            "text": "The shared selected names are Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7 and Palmitoyl Tripeptide-38. Matrixyl is a commercial ingredient-family name; it is not a single ingredient called peptide 10.",
+            "sourceIds": [
+              "ordinary-matrixyl",
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Amounts: disclosure is not measurement",
+        "conclusion": "Headline disclosures do not give verified individual amounts for every selected peptide.",
+        "paragraphs": [
+          {
+            "text": "The Ordinary: 10% is the brand’s Matrixyl disclosure, not a separate 10% amount of every peptide. The individual peptide amounts are not recorded.",
+            "sourceIds": [
+              "ordinary-matrixyl"
+            ],
+            "kind": "label"
+          },
+          {
+            "text": "The Ordinary: Several peptides are listed, but their separate amounts are not disclosed. HA means hyaluronic acid; it is not another peptide.",
+            "sourceIds": [
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "What these sources cannot establish",
+        "conclusion": "Recorded labels do not establish a clinical winner or years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "This is a comparison of selected label information, not a complete clinical efficacy or safety review. Missing product-level evidence here is not evidence that either product is harmful or ineffective.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Cost and the exact presentation",
+        "conclusion": "Matrixyl has the lower recorded price for the same 30 mL size. Extra names do not establish an extra benefit.",
+        "paragraphs": [
+          {
+            "text": "The catalog shows selected label peptides, not complete formulas. Individual concentrations may be undisclosed. No independent head-to-head effectiveness or individual tolerance is established here. This editorial draft awaits human review.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The paired manufacturer sources document the recorded product names and selected ingredients. These lists are incomplete, formulas may change, and manufacturer information is not independent clinical corroboration.",
+    "labelSourceIds": [
+      "ordinary-matrixyl",
+      "ordinary-ha"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "The three selected Matrixyl peptide names also appear in Multi-Peptide + HA, whose selection additionally includes Acetyl Hexapeptide-8.",
+        "sourceIds": [
+          "ordinary-matrixyl",
+          "ordinary-ha"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Matrixyl has the lower recorded price for the same 30 mL size. Extra names do not establish an extra benefit.",
+        "sourceIds": [
+          "ordinary-matrixyl",
+          "ordinary-ha"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "This label comparison does not establish which finished serum works better or is safer. Individual tolerance and additional benefit cannot be predicted from the selected names.",
+        "sourceIds": [],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "argireline-vs-ha",
+    "mode": "label",
+    "title": "Label facts and buying limits",
+    "summary": "Both labels list Acetyl Hexapeptide-8. The Argireline solution has a narrower selected peptide list and the lower recorded price for 30 mL. Multi-Peptide + HA lists additional peptides; that does not establish a greater benefit.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "What the labels document",
+        "conclusion": "Both labels list Acetyl Hexapeptide-8. Multi-Peptide + HA records additional selected peptides.",
+        "paragraphs": [
+          {
+            "text": "Acetyl Hexapeptide-8 is the exact shared label name. Argireline is a commercial name associated with this peptide. The record does not establish equivalent individual concentrations across these serums.",
+            "sourceIds": [
+              "ordinary-argireline",
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Amounts: disclosure is not measurement",
+        "conclusion": "Headline disclosures do not give verified individual amounts for every selected peptide.",
+        "paragraphs": [
+          {
+            "text": "The Ordinary: The product name describes an Argireline solution at 10%. Do not read it as 10% pure Acetyl Hexapeptide-8 or compare it directly with another brand’s blend percentage.",
+            "sourceIds": [
+              "ordinary-argireline"
+            ],
+            "kind": "label"
+          },
+          {
+            "text": "The Ordinary: Several peptides are listed, but their separate amounts are not disclosed. HA means hyaluronic acid; it is not another peptide.",
+            "sourceIds": [
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "What these sources cannot establish",
+        "conclusion": "Recorded labels do not establish a clinical winner or years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "This is a comparison of selected label information, not a complete clinical efficacy or safety review. Missing product-level evidence here is not evidence that either product is harmful or ineffective.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Cost and the exact presentation",
+        "conclusion": "Argireline has the lower recorded 30 mL price. Shared ingredients do not establish that buying both adds a benefit.",
+        "paragraphs": [
+          {
+            "text": "The catalog shows selected label peptides, not complete formulas. Individual concentrations may be undisclosed. No independent head-to-head effectiveness or individual tolerance is established here. This editorial draft awaits human review.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The paired manufacturer sources document the recorded product names and selected ingredients. These lists are incomplete, formulas may change, and manufacturer information is not independent clinical corroboration.",
+    "labelSourceIds": [
+      "ordinary-argireline",
+      "ordinary-ha"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "Both labels list Acetyl Hexapeptide-8. Multi-Peptide + HA records additional selected peptides.",
+        "sourceIds": [
+          "ordinary-argireline",
+          "ordinary-ha"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Argireline has the lower recorded 30 mL price. Shared ingredients do not establish that buying both adds a benefit.",
+        "sourceIds": [
+          "ordinary-argireline",
+          "ordinary-ha"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "This label comparison does not establish which finished serum works better or is safer. Individual tolerance and additional benefit cannot be predicted from the selected names.",
+        "sourceIds": [],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "geek-vs-ha",
+    "mode": "label",
+    "title": "Label facts and buying limits",
+    "summary": "These 30 mL serums share several selected palmitoyl peptides. Power Peptides is described by its brand as milky and lists a different copper-containing peptide among its selected ingredients. Neither the ingredient count nor the disclosed complex percentages establish which will work better.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "What the labels document",
+        "conclusion": "The brands describe different formats and peptide systems: Power Peptides is described as milky; Multi-Peptide + HA as water-based.",
+        "paragraphs": [
+          {
+            "text": "Both selected lists include Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7 and Palmitoyl Tripeptide-38. Power Peptides additionally lists Tetrapeptide-21, Copper Palmitoyl Heptapeptide-14 and Heptapeptide-15 Palmitate. Its copper name is distinct from Copper Tripeptide-1.",
+            "sourceIds": [
+              "geek-power-peptides",
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Amounts: disclosure is not measurement",
+        "conclusion": "Headline disclosures do not give verified individual amounts for every selected peptide.",
+        "paragraphs": [
+          {
+            "text": "Geek & Gorgeous: The disclosed percentages refer to named ingredient complexes. They do not state the pure amount of every peptide and cannot rank the serum’s strength.",
+            "sourceIds": [
+              "geek-power-peptides"
+            ],
+            "kind": "label"
+          },
+          {
+            "text": "The Ordinary: Several peptides are listed, but their separate amounts are not disclosed. HA means hyaluronic acid; it is not another peptide.",
+            "sourceIds": [
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "What these sources cannot establish",
+        "conclusion": "Recorded labels do not establish a clinical winner or years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "This is a comparison of selected label information, not a complete clinical efficacy or safety review. Missing product-level evidence here is not evidence that either product is harmful or ineffective.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Cost and the exact presentation",
+        "conclusion": "Compare recorded 30 mL costs and brand-described formats. Texture preferences may matter, but Peptivelo has not tested wear or layering.",
+        "paragraphs": [
+          {
+            "text": "The catalog shows selected label peptides, not complete formulas. Individual concentrations may be undisclosed. No independent head-to-head effectiveness or individual tolerance is established here. This editorial draft awaits human review.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The paired manufacturer sources document the recorded product names and selected ingredients. These lists are incomplete, formulas may change, and manufacturer information is not independent clinical corroboration.",
+    "labelSourceIds": [
+      "geek-power-peptides",
+      "ordinary-ha"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "The brands describe different formats and peptide systems: Power Peptides is described as milky; Multi-Peptide + HA as water-based.",
+        "sourceIds": [
+          "geek-power-peptides",
+          "ordinary-ha"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Compare recorded 30 mL costs and brand-described formats. Texture preferences may matter, but Peptivelo has not tested wear or layering.",
+        "sourceIds": [
+          "geek-power-peptides",
+          "ordinary-ha"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "This label comparison does not establish which finished serum works better or is safer. Individual tolerance and additional benefit cannot be predicted from the selected names.",
+        "sourceIds": [],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "naturium-vs-ha",
+    "mode": "label",
+    "title": "Label facts and buying limits",
+    "summary": "Both are 30 mL facial serums. Their selected peptide lists differ, so compare the exact names and dated cost before treating them as substitutes.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "What the labels document",
+        "conclusion": "Both records are 30 mL serums with different selected peptide lists. Naturium lists Copper Palmitoyl Heptapeptide-14.",
+        "paragraphs": [
+          {
+            "text": "Naturium’s selected list includes a copper-containing name distinct from Copper Tripeptide-1. Sharing Acetyl Hexapeptide-8 does not make the whole formulas identical.",
+            "sourceIds": [
+              "naturium-multi-peptide",
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Amounts: disclosure is not measurement",
+        "conclusion": "Headline disclosures do not give verified individual amounts for every selected peptide.",
+        "paragraphs": [
+          {
+            "text": "Naturium: The label names a peptide blend without giving a separate percentage for each peptide. Its strength cannot be calculated from ingredient order.",
+            "sourceIds": [
+              "naturium-multi-peptide"
+            ],
+            "kind": "label"
+          },
+          {
+            "text": "The Ordinary: Several peptides are listed, but their separate amounts are not disclosed. HA means hyaluronic acid; it is not another peptide.",
+            "sourceIds": [
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "What these sources cannot establish",
+        "conclusion": "Recorded labels do not establish a clinical winner or years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "This is a comparison of selected label information, not a complete clinical efficacy or safety review. Missing product-level evidence here is not evidence that either product is harmful or ineffective.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Cost and the exact presentation",
+        "conclusion": "Compare exact ingredient names, the complete labels and dated cost. A copper name alone does not establish equivalence to another formula.",
+        "paragraphs": [
+          {
+            "text": "Selected ingredients only. Individual peptide amounts, personal tolerance and independent comparative effectiveness are not established. Editorial draft awaiting human review.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The paired manufacturer sources document the recorded product names and selected ingredients. These lists are incomplete, formulas may change, and manufacturer information is not independent clinical corroboration.",
+    "labelSourceIds": [
+      "naturium-multi-peptide",
+      "ordinary-ha"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "Both records are 30 mL serums with different selected peptide lists. Naturium lists Copper Palmitoyl Heptapeptide-14.",
+        "sourceIds": [
+          "naturium-multi-peptide",
+          "ordinary-ha"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Compare exact ingredient names, the complete labels and dated cost. A copper name alone does not establish equivalence to another formula.",
+        "sourceIds": [
+          "naturium-multi-peptide",
+          "ordinary-ha"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "This label comparison does not establish which finished serum works better or is safer. Individual tolerance and additional benefit cannot be predicted from the selected names.",
+        "sourceIds": [],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "timeless-vs-matrixyl",
+    "mode": "label",
+    "title": "Label facts and buying limits",
+    "summary": "The named systems need context: neither percentage establishes a directly comparable pure-peptide dose. Timeless is recorded as 1 US fl oz; The Ordinary as 30 mL.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "What the labels document",
+        "conclusion": "Timeless is recorded as 1 US fl oz; The Ordinary as 30 mL. Their named peptide systems and percentage disclosures differ.",
+        "paragraphs": [
+          {
+            "text": "Timeless identifies Synthe’6 with Palmitoyl Tripeptide-38. The Ordinary’s selected record also includes Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7.",
+            "sourceIds": [
+              "timeless-synthe6",
+              "ordinary-matrixyl"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Amounts: disclosure is not measurement",
+        "conclusion": "Headline disclosures do not give verified individual amounts for every selected peptide.",
+        "paragraphs": [
+          {
+            "text": "Timeless Skin Care: The stated 2% refers to Matrixyl Synthe’6. It does not establish 2% pure Palmitoyl Tripeptide-38 or a strength ranking against other blends.",
+            "sourceIds": [
+              "timeless-synthe6"
+            ],
+            "kind": "label"
+          },
+          {
+            "text": "The Ordinary: 10% is the brand’s Matrixyl disclosure, not a separate 10% amount of every peptide. The individual peptide amounts are not recorded.",
+            "sourceIds": [
+              "ordinary-matrixyl"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "What these sources cannot establish",
+        "conclusion": "Recorded labels do not establish a clinical winner or years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "This is a comparison of selected label information, not a complete clinical efficacy or safety review. Missing product-level evidence here is not evidence that either product is harmful or ineffective.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Cost and the exact presentation",
+        "conclusion": "Compare cost per mL after converting US fl oz. A blend percentage is not a directly comparable pure-peptide dose.",
+        "paragraphs": [
+          {
+            "text": "Selected ingredients only. Individual peptide amounts, personal tolerance and independent comparative effectiveness are not established. Editorial draft awaiting human review.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The paired manufacturer sources document the recorded product names and selected ingredients. These lists are incomplete, formulas may change, and manufacturer information is not independent clinical corroboration.",
+    "labelSourceIds": [
+      "timeless-synthe6",
+      "ordinary-matrixyl"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "Timeless is recorded as 1 US fl oz; The Ordinary as 30 mL. Their named peptide systems and percentage disclosures differ.",
+        "sourceIds": [
+          "timeless-synthe6",
+          "ordinary-matrixyl"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Compare cost per mL after converting US fl oz. A blend percentage is not a directly comparable pure-peptide dose.",
+        "sourceIds": [
+          "timeless-synthe6",
+          "ordinary-matrixyl"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "This label comparison does not establish which finished serum works better or is safer. Individual tolerance and additional benefit cannot be predicted from the selected names.",
+        "sourceIds": [],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "medik8-vs-ha",
+    "mode": "label",
+    "title": "Label facts and buying limits",
+    "summary": "These 30 mL profiles support a dated cost comparison. A higher price or a larger disclosed blend percentage does not establish better results.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "What the labels document",
+        "conclusion": "These are two 30 mL records. Medik8 describes a 30% peptide complex, rather than verified separate pure-peptide amounts.",
+        "paragraphs": [
+          {
+            "text": "This profile covers original Liquid Peptides, not Advanced MP. Its selected list includes multiple peptide names, including a distinct copper-containing ingredient.",
+            "sourceIds": [
+              "medik8-liquid-peptides",
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Amounts: disclosure is not measurement",
+        "conclusion": "Headline disclosures do not give verified individual amounts for every selected peptide.",
+        "paragraphs": [
+          {
+            "text": "Medik8: The stated 30% describes a complex. It does not mean 30% pure peptides and cannot be compared directly with another brand’s blend percentage.",
+            "sourceIds": [
+              "medik8-liquid-peptides"
+            ],
+            "kind": "label"
+          },
+          {
+            "text": "The Ordinary: Several peptides are listed, but their separate amounts are not disclosed. HA means hyaluronic acid; it is not another peptide.",
+            "sourceIds": [
+              "ordinary-ha"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "What these sources cannot establish",
+        "conclusion": "Recorded labels do not establish a clinical winner or years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "This is a comparison of selected label information, not a complete clinical efficacy or safety review. Missing product-level evidence here is not evidence that either product is harmful or ineffective.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Cost and the exact presentation",
+        "conclusion": "Compare dated unit prices separately from blend disclosures. A higher price or headline percentage does not demonstrate better results.",
+        "paragraphs": [
+          {
+            "text": "Selected ingredients only. Individual peptide amounts, personal tolerance and independent comparative effectiveness are not established. Editorial draft awaiting human review.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The paired manufacturer sources document the recorded product names and selected ingredients. These lists are incomplete, formulas may change, and manufacturer information is not independent clinical corroboration.",
+    "labelSourceIds": [
+      "medik8-liquid-peptides",
+      "ordinary-ha"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "These are two 30 mL records. Medik8 describes a 30% peptide complex, rather than verified separate pure-peptide amounts.",
+        "sourceIds": [
+          "medik8-liquid-peptides",
+          "ordinary-ha"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "Compare dated unit prices separately from blend disclosures. A higher price or headline percentage does not demonstrate better results.",
+        "sourceIds": [
+          "medik8-liquid-peptides",
+          "ordinary-ha"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "This label comparison does not establish which finished serum works better or is safer. Individual tolerance and additional benefit cannot be predicted from the selected names.",
+        "sourceIds": [],
+        "basis": "interpretation"
+      }
+    ]
+  },
+  {
+    "comparisonId": "cosrx-vs-ordinary",
+    "mode": "label",
+    "title": "Label facts and buying limits",
+    "summary": "A comparison of selected label facts, with different sizes and disclosure limits. No clinical winner is established.",
+    "sections": [
+      {
+        "id": "benefits",
+        "title": "What the labels document",
+        "conclusion": "This COSRX record is the 50 mL mini; The Ordinary record is 30 mL. Their selected peptide names and disclosures differ.",
+        "paragraphs": [
+          {
+            "text": "The recorded COSRX mini is 50 mL; The Ordinary record is 30 mL. Both selected lists include Copper Tripeptide-1 and Acetyl Hexapeptide-8.",
+            "sourceIds": [
+              "cosrx-six",
+              "ordinary"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "risks",
+        "title": "Amounts: disclosure is not measurement",
+        "conclusion": "Headline disclosures do not give verified individual amounts for every selected peptide.",
+        "paragraphs": [
+          {
+            "text": "COSRX: Six describes the named peptide blend, not a percentage or an efficacy score.",
+            "sourceIds": [
+              "cosrx-six"
+            ],
+            "kind": "label"
+          },
+          {
+            "text": "The Ordinary: The product name states 1% copper peptides. Amounts of the other selected peptides are not recorded.",
+            "sourceIds": [
+              "ordinary"
+            ],
+            "kind": "label"
+          }
+        ]
+      },
+      {
+        "id": "long-term",
+        "title": "What these sources cannot establish",
+        "conclusion": "Recorded labels do not establish a clinical winner or years of safety for these complete formulas.",
+        "paragraphs": [
+          {
+            "text": "The Argireline trial concerns a preparation, not either retail product in this pair. CIR addresses specified cosmetic safety uses, not a comparative benefit trial.",
+            "sourceIds": [
+              "argireline-trial",
+              "cir-peptides"
+            ],
+            "kind": "evidence"
+          },
+          {
+            "text": "This is a comparison of selected label information, not a complete clinical efficacy or safety review. Missing product-level evidence here is not evidence that either product is harmful or ineffective.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Cost and the exact presentation",
+        "conclusion": "COSRX has no verified price in this record, so a fair unit-cost comparison remains unavailable. Do not substitute a 150 mL offer.",
+        "paragraphs": [
+          {
+            "text": "Selected names, no verified COSRX availability or comparable cost, and no finished-product head-to-head clinical evaluation. Scientific review pending.",
+            "sourceIds": [],
+            "kind": "interpretation"
+          }
+        ]
+      }
+    ],
+    "labelContext": "The paired manufacturer sources document the recorded product names and selected ingredients. These lists are incomplete, formulas may change, and manufacturer information is not independent clinical corroboration.",
+    "labelSourceIds": [
+      "cosrx-six",
+      "ordinary"
+    ],
+    "checkedAt": "2026-10-20",
+    "status": "draft",
+    "decisionSummary": [
+      {
+        "label": "What is documented?",
+        "text": "This COSRX record is the 50 mL mini; The Ordinary record is 30 mL. Their selected peptide names and disclosures differ.",
+        "sourceIds": [
+          "cosrx-six",
+          "ordinary"
+        ],
+        "basis": "label"
+      },
+      {
+        "label": "What does it mean for your purchase?",
+        "text": "COSRX has no verified price in this record, so a fair unit-cost comparison remains unavailable. Do not substitute a 150 mL offer.",
+        "sourceIds": [
+          "cosrx-six",
+          "ordinary"
+        ],
+        "basis": "catalog"
+      },
+      {
+        "label": "What has not been demonstrated?",
+        "text": "This label comparison does not establish which finished serum works better or is safer. Individual tolerance and additional benefit cannot be predicted from the selected names.",
+        "sourceIds": [],
+        "basis": "interpretation"
+      }
+    ]
+  }
+]

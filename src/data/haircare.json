@@ -1,0 +1,38 @@
+{
+  "product": {
+    "id": "ordinary-hair-density",
+    "slug": "the-ordinary-hair-density",
+    "brand": "The Ordinary",
+    "name": "Multi-Peptide Serum for Hair Density",
+    "volumeMl": 60,
+    "priceUsd": 24,
+    "checkedAt": "2026-10-20",
+    "image": "/images/products/ordinary-hair-density-60ml.jpg",
+    "sourceId": "ordinary-hair-density",
+    "status": "draft"
+  },
+  "ingredients": [
+    {
+      "slug": "biotinoyl-tripeptide-1",
+      "name": "Biotinoyl Tripeptide-1",
+      "summary": "A peptide listed in the brand’s Procapil blend.",
+      "identity": "The manufacturer lists this peptide alongside apigenin and oleanolic acid in Procapil.",
+      "identitySourceIds": ["ordinary-hair-density"],
+      "evidence": "This entry documents label identity. An academic efficacy review for this ingredient has not been completed here.",
+      "evidenceSourceIds": ["ordinary-hair-density"],
+      "support": "Label information",
+      "limit": "The blend name does not disclose a verified pure-peptide amount or prove the finished serum works."
+    },
+    {
+      "slug": "acetyl-tetrapeptide-3",
+      "name": "Acetyl Tetrapeptide-3",
+      "summary": "A peptide listed with red clover extract in the brand’s Capixyl blend.",
+      "identity": "The manufacturer identifies this peptide in Capixyl, a multi-ingredient system.",
+      "identitySourceIds": ["ordinary-hair-density"],
+      "evidence": "A 32-person, 24-week trial examined another combination containing this peptide, not The Ordinary serum or the peptide alone.",
+      "evidenceSourceIds": ["hair-combination-trial"],
+      "support": "Human formulation study — different product",
+      "limit": "Results cannot be transferred directly to this bottle or interpreted as proof of equivalence to minoxidil."
+    }
+  ]
+}

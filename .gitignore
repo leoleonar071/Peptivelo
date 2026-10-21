@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+.migration-backup/
+.wrangler/
+.dev.vars*
+dist/
+.vinext/
+.cloudflare/
