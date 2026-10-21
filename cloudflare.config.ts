@@ -2,11 +2,11 @@ import { bindings, defineConfig, defineWorker } from "cf/config";
 
 export default defineConfig({
   worker: defineWorker({
-    name: "peptide-atlas",
+    name: "peptivelo",
     entrypoint: "vinext/server/fetch-handler",
     compatibilityDate: "2026-10-19",
     compatibilityFlags: ["nodejs_compat"],
-    workersDev: false,
+    workersDev: true,
     previewUrls: false,
     observability: {
       enabled: true,
