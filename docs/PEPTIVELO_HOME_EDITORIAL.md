@@ -30,6 +30,8 @@ Las pruebas automáticas no sustituyen un estudio de comprensión con usuarios n
 
 ## Refinamiento del hero — 22 de octubre de 2026
 
+Segundo ajuste: menor espacio vertical (36/32 px en escritorio, 24/28 px en móvil), separaciones más compactas y textos inferiores de 13–14 px. Se preservan título, buscador, controles y temas. Compilación aprobada y 15 pruebas de navegador aprobadas, con 3 omisiones previstas; incluye matriz responsive y accesibilidad. Captura móvil revisada visualmente.
+
 Se añade una textura CSS de puntos de 1 px, separados 24 px, con tinta al 4% (crema al 4% en oscuro). Una máscara la desvanece hasta desaparecer a 640 px desde el inicio del hero; no continúa sobre las tarjetas inferiores. La capa es decorativa y no intercepta clics. Se conservan los dos resplandores asimétricos existentes.
 
 El buscador usa una sombra principal de 12 px verticales y 24 px de desenfoque, al 6% en claro y adaptada al tema oscuro. “Compare products” destaca mediante relleno contrastado, sin atributos que lo presenten como página actual o selección activa. Se conservan los enlaces y sus estados de foco y hover.

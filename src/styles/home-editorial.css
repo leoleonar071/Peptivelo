@@ -64,6 +64,7 @@
 }
 
 .home-editorial .home-hero.wrap {
+  padding-block: 36px 32px;
   background:
     radial-gradient(
       ellipse 48% 40% at 28% 22%,
@@ -80,6 +81,34 @@
 .home-editorial .home-hero h1 {
   color: var(--pv-text);
   font-weight: 800;
+}
+
+.home-editorial .home-hero-eyebrow {
+  margin-bottom: 16px;
+}
+
+.home-editorial .hero-start {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.home-editorial .home-hero-trust {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.home-editorial .home-hero-review {
+  font-size: 13px;
+}
+
+.home-editorial .knowledge-preview {
+  margin-top: 24px;
+}
+
+@media (max-width: 540px) {
+  .home-editorial .home-hero.wrap {
+    padding-block: 24px 28px;
+  }
 }
 
 /* Decorative laboratory-paper texture fades above the reading preview. */
