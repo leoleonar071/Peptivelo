@@ -14,15 +14,14 @@
   --pv-accent-text: #294c40;
   --pv-focus: #276d63;
   --pv-shadow: rgb(33 30 26 / 10%);
-  --pv-search-shadow: rgb(33 30 26 / 8%);
+  --pv-search-shadow: rgb(33 30 26 / 6%);
+  --editorial-dot: rgb(33 30 26 / 4%);
   --editorial-mesh-warm: rgb(220 195 151 / 24%);
   --editorial-mesh-mineral: rgb(160 191 172 / 24%);
   --editorial-card-shadow:
-    0 2px 6px rgb(33 30 26 / 2%),
-    0 20px 48px -20px rgb(33 30 26 / 16%);
+    0 2px 6px rgb(33 30 26 / 2%), 0 20px 48px -20px rgb(33 30 26 / 16%);
   --editorial-card-hover-shadow:
-    0 4px 12px rgb(33 30 26 / 4%),
-    0 24px 56px -20px rgb(33 30 26 / 23%);
+    0 4px 12px rgb(33 30 26 / 4%), 0 24px 56px -20px rgb(33 30 26 / 23%);
   /* Rebind legacy aliases in this scope, rather than inheriting root values. */
   --ink: var(--pv-text);
   --secondary: var(--pv-text-secondary);
@@ -55,14 +54,13 @@
   --pv-focus: #b7e1d6;
   --pv-shadow: rgb(0 0 0 / 24%);
   --pv-search-shadow: rgb(0 0 0 / 20%);
+  --editorial-dot: rgb(246 243 236 / 4%);
   --editorial-mesh-warm: rgb(135 111 68 / 12%);
   --editorial-mesh-mineral: rgb(103 150 124 / 13%);
   --editorial-card-shadow:
-    0 2px 6px rgb(0 0 0 / 8%),
-    0 20px 48px -20px rgb(0 0 0 / 36%);
+    0 2px 6px rgb(0 0 0 / 8%), 0 20px 48px -20px rgb(0 0 0 / 36%);
   --editorial-card-hover-shadow:
-    0 4px 12px rgb(0 0 0 / 12%),
-    0 24px 56px -20px rgb(0 0 0 / 50%);
+    0 4px 12px rgb(0 0 0 / 12%), 0 24px 56px -20px rgb(0 0 0 / 50%);
 }
 
 .home-editorial .home-hero.wrap {
@@ -84,6 +82,23 @@
   font-weight: 800;
 }
 
+/* Decorative laboratory-paper texture fades above the reading preview. */
+.home-editorial .home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: min(640px, 100%);
+  z-index: -1;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    var(--editorial-dot) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+  mask-image: linear-gradient(to bottom, #000 40%, transparent 100%);
+}
+
 .home-editorial .home-hero h1 span {
   color: var(--pv-text-secondary);
   font-weight: 500;
@@ -102,7 +117,7 @@
 .home-editorial .hero-search form {
   border-color: transparent;
   box-shadow:
-    0 2px 6px var(--pv-search-shadow),
+    0 12px 24px var(--pv-search-shadow),
     0 20px 64px -20px var(--pv-shadow);
 }
 
@@ -116,11 +131,16 @@
   font-weight: 600;
 }
 
+.home-editorial .hero-shortcuts a.hero-shortcut-featured,
 .home-editorial .hero-shortcuts a:hover,
 .home-editorial .hero-shortcuts a:focus-visible {
   background: var(--pv-primary);
   color: var(--pv-primary-text);
   border-color: var(--pv-primary);
+}
+
+.home-editorial .hero-shortcuts a.hero-shortcut-featured:hover {
+  background: var(--pv-primary-hover);
 }
 
 .home-editorial .knowledge-preview,

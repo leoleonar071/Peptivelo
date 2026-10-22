@@ -43,6 +43,7 @@ export function HomeHero() {
               name: "Compare products",
               href: "/skincare/compare/",
               icon: Columns2,
+              featured: true,
             },
             {
               name: "Peptide library",
@@ -55,7 +56,11 @@ export function HomeHero() {
               icon: Calculator,
             },
           ].map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={item.featured ? "hero-shortcut-featured" : undefined}
+            >
               <item.icon size={17} aria-hidden="true" />
               {item.name}
             </Link>
