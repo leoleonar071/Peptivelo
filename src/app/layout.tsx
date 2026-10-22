@@ -11,6 +11,7 @@ import "../styles/peptivelo-tokens.css";
 import "../styles/peptivelo-components.css";
 import "../styles/home-hero.css";
 import "../styles/product-offers.css";
+import "../styles/home-editorial.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {

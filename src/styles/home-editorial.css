@@ -1,0 +1,162 @@
+/* Home only: warm paper, graphite ink, quiet white cards, mineral accents.
+   Keep the global brand and the data-heavy comparison surfaces unchanged. */
+.home-editorial {
+  --pv-bg: #f6f5f0;
+  --pv-surface: #ffffff;
+  --pv-surface-secondary: #eeece5;
+  --pv-text: #211e1a;
+  --pv-text-secondary: #625d55;
+  --pv-border: #ded9cf;
+  --pv-primary: #211e1a;
+  --pv-primary-text: #f6f5f0;
+  --pv-primary-hover: #3c3731;
+  --pv-accent: #e0eae1;
+  --pv-accent-text: #294c40;
+  --pv-focus: #276d63;
+  --pv-shadow: rgb(33 30 26 / 10%);
+  --pv-search-shadow: rgb(33 30 26 / 8%);
+  --editorial-mesh-warm: rgb(220 195 151 / 24%);
+  --editorial-mesh-mineral: rgb(160 191 172 / 24%);
+  --editorial-card-shadow:
+    0 2px 6px rgb(33 30 26 / 2%),
+    0 20px 48px -20px rgb(33 30 26 / 16%);
+  --editorial-card-hover-shadow:
+    0 4px 12px rgb(33 30 26 / 4%),
+    0 24px 56px -20px rgb(33 30 26 / 23%);
+  /* Rebind legacy aliases in this scope, rather than inheriting root values. */
+  --ink: var(--pv-text);
+  --secondary: var(--pv-text-secondary);
+  --muted: var(--pv-text-secondary);
+  --paper: var(--pv-surface);
+  --canvas: var(--pv-bg);
+  --mineral: var(--pv-surface-secondary);
+  --line: var(--pv-border);
+  --copper: var(--pv-text-secondary);
+  --verified: var(--pv-text);
+  --control: var(--pv-surface-secondary);
+  --focus: var(--pv-focus);
+  display: flow-root;
+  background: var(--pv-bg);
+  color: var(--pv-text);
+}
+
+:root[data-theme="dark"] .home-editorial {
+  --pv-bg: #1c211e;
+  --pv-surface: #272e29;
+  --pv-surface-secondary: #303931;
+  --pv-text: #f6f3ec;
+  --pv-text-secondary: #c5c9bf;
+  --pv-border: #485349;
+  --pv-primary: #f6f3ec;
+  --pv-primary-text: #211e1a;
+  --pv-primary-hover: #e0e7d9;
+  --pv-accent: #31483b;
+  --pv-accent-text: #d6e9d8;
+  --pv-focus: #b7e1d6;
+  --pv-shadow: rgb(0 0 0 / 24%);
+  --pv-search-shadow: rgb(0 0 0 / 20%);
+  --editorial-mesh-warm: rgb(135 111 68 / 12%);
+  --editorial-mesh-mineral: rgb(103 150 124 / 13%);
+  --editorial-card-shadow:
+    0 2px 6px rgb(0 0 0 / 8%),
+    0 20px 48px -20px rgb(0 0 0 / 36%);
+  --editorial-card-hover-shadow:
+    0 4px 12px rgb(0 0 0 / 12%),
+    0 24px 56px -20px rgb(0 0 0 / 50%);
+}
+
+.home-editorial .home-hero.wrap {
+  background:
+    radial-gradient(
+      ellipse 48% 40% at 28% 22%,
+      var(--editorial-mesh-warm),
+      transparent 75%
+    ),
+    radial-gradient(
+      ellipse 45% 43% at 75% 32%,
+      var(--editorial-mesh-mineral),
+      transparent 76%
+    );
+}
+
+.home-editorial .home-hero h1 {
+  color: var(--pv-text);
+  font-weight: 800;
+}
+
+.home-editorial .home-hero h1 span {
+  color: var(--pv-text-secondary);
+  font-weight: 500;
+}
+
+.home-editorial .home-hero-eyebrow {
+  border-color: transparent;
+  background: var(--pv-accent);
+  color: var(--pv-accent-text);
+}
+
+.home-editorial .home-hero-eyebrow > span {
+  background: currentColor;
+}
+
+.home-editorial .hero-search form {
+  border-color: transparent;
+  box-shadow:
+    0 2px 6px var(--pv-search-shadow),
+    0 20px 64px -20px var(--pv-shadow);
+}
+
+.home-editorial .hero-search form:focus-within {
+  border-color: var(--pv-focus);
+}
+
+.home-editorial .hero-shortcuts a {
+  border-color: transparent;
+  box-shadow: 0 2px 8px rgb(33 30 26 / 4%);
+  font-weight: 600;
+}
+
+.home-editorial .hero-shortcuts a:hover,
+.home-editorial .hero-shortcuts a:focus-visible {
+  background: var(--pv-primary);
+  color: var(--pv-primary-text);
+  border-color: var(--pv-primary);
+}
+
+.home-editorial .knowledge-preview,
+.home-editorial .knowledge-card,
+.home-editorial .product-card,
+.home-editorial .question-card {
+  border: 0;
+  background: var(--pv-surface);
+  box-shadow: var(--editorial-card-shadow);
+}
+
+.home-editorial .knowledge-card,
+.home-editorial .product-card,
+.home-editorial .question-card {
+  transition: box-shadow 180ms ease;
+}
+
+.home-editorial .knowledge-card:hover,
+.home-editorial .product-card:hover,
+.home-editorial .question-card:hover {
+  background: var(--pv-surface);
+  box-shadow: var(--editorial-card-hover-shadow);
+}
+
+.home-editorial .catalog-section {
+  background: transparent;
+}
+
+.home-editorial .home-hero-trust svg {
+  color: var(--pv-focus);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-editorial .knowledge-card,
+  .home-editorial .product-card,
+  .home-editorial .question-card {
+    transition: none;
+  }
+}

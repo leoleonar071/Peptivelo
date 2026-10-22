@@ -17,7 +17,7 @@ const starterComparison = "/skincare/compare/?a=ordinary-copper&b=niod-cais3";
 
 export default function Home() {
   return (
-    <>
+    <div className="home-editorial">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -60,8 +60,8 @@ export default function Home() {
             </Link>
           </div>
           <p className="photo-credit">
-            Product photography: the respective manufacturers. Packaging may
-            change; check the product you purchase.
+            Product records show documented names and sizes, not packaging
+            photographs. Check the current package before buying.
           </p>
         </div>
       </section>
@@ -137,6 +137,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-    </>
+    </div>
   );
 }
