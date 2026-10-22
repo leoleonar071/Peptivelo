@@ -1,0 +1,39 @@
+[
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "cache": "public, max-age=0, must-revalidate",
+    "type": "text/plain",
+    "bytes": 83,
+    "body": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://peptivelo.com/sitemap.xml\n"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "cache": "public, max-age=0, must-revalidate",
+    "type": "application/xml",
+    "bytes": 110,
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n</urlset>\n"
+  },
+  {
+    "path": "/brand/peptivelo-isotype.png",
+    "status": 200,
+    "cache": "public, max-age=0, must-revalidate",
+    "type": "image/png",
+    "bytes": 802223
+  },
+  {
+    "path": "/fonts/manrope-latin.woff2",
+    "status": 200,
+    "cache": "public, max-age=0, must-revalidate",
+    "type": "font/woff2",
+    "bytes": 24836
+  },
+  {
+    "path": "/images/products/geek-power-peptides-30ml.jpg",
+    "status": 200,
+    "cache": "public, max-age=0, must-revalidate",
+    "type": "image/jpeg",
+    "bytes": 133327
+  }
+]

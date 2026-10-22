@@ -1,0 +1,40 @@
+[WebServer] (node:8808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 21 tests using 2 workers
+
+(node:5496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop] › e2e\seo-navigation.spec.ts:3:1 › client navigation preserves product detail, canonical and source links (3.2s)
+  ok  3 [desktop] › e2e\seo-navigation.spec.ts:38:1 › SEO routes and response headers retain prelaunch protections (358ms)
+  ok  4 [desktop] › e2e\trust-foundation.spec.ts:4:1 › the header serves the small approved artwork directly (740ms)
+  ok  5 [desktop] › e2e\trust-foundation.spec.ts:25:3 › the standalone methodology link has a sufficient target in light mode (2.2s)
+  ok  6 [desktop] › e2e\trust-foundation.spec.ts:25:3 › the standalone methodology link has a sufficient target in dark mode (1.9s)
+  ok  7 [desktop] › e2e\trust-foundation.spec.ts:40:1 › privacy reflects the public host and keeps beta pages non-indexable (536ms)
+  ok  2 [desktop] › e2e\brand-foundation.spec.ts:4:1 › requested typography and supplied isotype preserve the existing light UI (9.6s)
+(node:31376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3020) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [tablet] › e2e\seo-navigation.spec.ts:3:1 › client navigation preserves product detail, canonical and source links (1.8s)
+  ok 10 [tablet] › e2e\seo-navigation.spec.ts:38:1 › SEO routes and response headers retain prelaunch protections (342ms)
+  ok 11 [tablet] › e2e\trust-foundation.spec.ts:4:1 › the header serves the small approved artwork directly (697ms)
+  ok 12 [tablet] › e2e\trust-foundation.spec.ts:25:3 › the standalone methodology link has a sufficient target in light mode (1.8s)
+  ok 13 [tablet] › e2e\trust-foundation.spec.ts:25:3 › the standalone methodology link has a sufficient target in dark mode (1.4s)
+  ok 14 [tablet] › e2e\trust-foundation.spec.ts:40:1 › privacy reflects the public host and keeps beta pages non-indexable (481ms)
+  ok  9 [tablet] › e2e\brand-foundation.spec.ts:4:1 › requested typography and supplied isotype preserve the existing light UI (7.1s)
+(node:18212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 15 [mobile] › e2e\seo-navigation.spec.ts:3:1 › client navigation preserves product detail, canonical and source links (1.5s)
+  ok 17 [mobile] › e2e\seo-navigation.spec.ts:38:1 › SEO routes and response headers retain prelaunch protections (334ms)
+  ok 18 [mobile] › e2e\trust-foundation.spec.ts:4:1 › the header serves the small approved artwork directly (615ms)
+  ok 19 [mobile] › e2e\trust-foundation.spec.ts:25:3 › the standalone methodology link has a sufficient target in light mode (1.8s)
+  ok 20 [mobile] › e2e\trust-foundation.spec.ts:25:3 › the standalone methodology link has a sufficient target in dark mode (1.8s)
+  ok 21 [mobile] › e2e\trust-foundation.spec.ts:40:1 › privacy reflects the public host and keeps beta pages non-indexable (397ms)
+  ok 16 [mobile] › e2e\brand-foundation.spec.ts:4:1 › requested typography and supplied isotype preserve the existing light UI (7.7s)
+
+  21 passed (34.3s)

@@ -1,5 +1,9 @@
 # Product photography
 
+## Current public assets
+
+The previously borrowed photographs have been removed from public assets and replaced by Peptivelo-owned SVG text records in `records/`. These records identify a product and size; they do not depict packaging or imply manufacturer endorsement. `scripts/create-product-records.mjs` reproduces them. Original files are retained only in the local ignored `.migration-backup/product-photographs/` directory, outside the deployed assets. The source history below describes the removed photographs and does not grant permission to republish them.
+
 Retrieved 2026-10-19 for this local UI preview from the official manufacturer product pages. Both front photographs represent the 30 mL variants.
 
 public/images/products/ordinary-copper-30ml.png

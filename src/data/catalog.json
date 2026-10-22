@@ -1316,7 +1316,7 @@
       "formulationNotes": "Labels may vary by market and reformulation. Check the package you purchase.",
       "tone": "ivory",
       "concentrationExplanation": "The product name states 1% copper peptides. Amounts of the other selected peptides are not recorded.",
-      "image": "/images/products/ordinary-copper-30ml.png"
+      "image": "/images/products/records/ordinary-copper.svg"
     },
     {
       "id": "niod-cais3",
@@ -1347,7 +1347,7 @@
       "formulationNotes": "Official US 30 mL price observed after selecting 30 mL on 2026-10-20: USD 93. Excludes tax and shipping; dated observation, not a live price or performance ranking.",
       "tone": "copper",
       "concentrationExplanation": "The brand describes two peptide components at 1% each. This does not reveal the amount of every named ingredient.",
-      "image": "/images/products/niod-cais3-30ml.png"
+      "image": "/images/products/records/niod-cais3.svg"
     },
     {
       "id": "ordinary-ha",
@@ -1378,7 +1378,7 @@
       "editorialStatus": "published",
       "formulationNotes": "Label facts only; no independent comparative effectiveness is established. Formulas may change by market and purchase date.",
       "tone": "ivory",
-      "image": "/images/products/ordinary-ha-30ml.png",
+      "image": "/images/products/records/ordinary-ha.svg",
       "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products."
     },
     {
@@ -1408,7 +1408,7 @@
       "editorialStatus": "published",
       "formulationNotes": "Label facts only; no independent comparative effectiveness is established. Formulas may change by market and purchase date.",
       "tone": "ivory",
-      "image": "/images/products/ordinary-matrixyl-30ml.png",
+      "image": "/images/products/records/ordinary-matrixyl.svg",
       "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products."
     },
     {
@@ -1434,7 +1434,7 @@
       "editorialStatus": "published",
       "formulationNotes": "Label facts only; no independent comparative effectiveness is established. Formulas may change by market and purchase date.",
       "tone": "ivory",
-      "image": "/images/products/ordinary-argireline-30ml.jpg",
+      "image": "/images/products/records/ordinary-argireline.svg",
       "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products."
     },
     {
@@ -1470,7 +1470,7 @@
       "editorialStatus": "published",
       "formulationNotes": "Label facts only; no independent comparative effectiveness is established. Formulas may change by market and purchase date.",
       "tone": "ivory",
-      "image": "/images/products/geek-power-peptides-30ml.jpg",
+      "image": "/images/products/records/geek-power-peptides.svg",
       "usageSummary": "The brand directs use of 3–5 drops after cleansing and liquid or gel products, before creams, in the morning and/or evening. Follow its full current directions."
     },
     {
@@ -1500,7 +1500,7 @@
       "editorialStatus": "published",
       "formulationNotes": "Manufacturer label facts only; no independent head-to-head effectiveness is established. Formulas can change. Check the packaging for the purchased version.",
       "tone": "ivory",
-      "image": "/images/products/naturium-verified.jpg",
+      "image": "/images/products/records/naturium-multi-peptide.svg",
       "usageSummary": "Naturium directs application after cleansing and toning, before moisturizer and sunscreen. Follow the current product directions."
     },
     {
@@ -1526,7 +1526,7 @@
       "editorialStatus": "published",
       "formulationNotes": "Manufacturer label facts only; no independent head-to-head effectiveness is established. Formulas can change. Check the packaging for the purchased version. Price records the one-time 1 US fl oz offer, excluding coupon and subscription discounts. Packaging also prints 30 mL; unit-cost calculations use the recorded US fl oz size.",
       "tone": "ivory",
-      "image": "/images/products/timeless-verified.jpg",
+      "image": "/images/products/records/timeless-synthe6.svg",
       "usageSummary": "Timeless directs use on clean skin and allowing absorption before the next layer. Check its current directions, including its eye-area restrictions."
     },
     {
@@ -1572,7 +1572,7 @@
       "editorialStatus": "published",
       "formulationNotes": "Manufacturer label facts only; no independent head-to-head effectiveness is established. Formulas can change. Check the packaging for the purchased version.",
       "tone": "ivory",
-      "image": "/images/products/medik8-verified.jpg",
+      "image": "/images/products/records/medik8-liquid-peptides.svg",
       "usageSummary": "Medik8 directs application after cleansing, morning and evening, before moisturizer. The brand recommends a patch test before first use."
     },
     {
@@ -1608,7 +1608,7 @@
       "editorialStatus": "published",
       "formulationNotes": "The brand positions it after cleansing. Product efficacy review and barcode verification remain pending. Exact 50 mL label profile only; no 150 mL price inferred.",
       "tone": "copper",
-      "image": "/images/products/cosrx-six-mini-50ml.jpg",
+      "image": "/images/products/records/cosrx-six-mini.svg",
       "usageSummary": "The manufacturer describes use after cleansing, as a first step. Follow current package directions."
     },
     {
@@ -1636,7 +1636,7 @@
       "editorialStatus": "published",
       "formulationNotes": "UK selected-label names and US presentation are separate source checks. Brand-linked clinical publications exist; this is not a direct comparison with The Ordinary.",
       "tone": "copper",
-      "image": "/images/products/skinceuticals-ptiox-30ml.jpg",
+      "image": "/images/products/records/skinceuticals-ptiox.svg",
       "usageSummary": "The US brand describes twice-daily use. Follow current package directions and your clinician’s instructions around procedures."
     }
   ],

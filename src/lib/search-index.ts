@@ -14,6 +14,11 @@ export const searchIndex: SearchEntry[] = [
       category: "Peptides & ingredients",
       terms: `${i.inciName} ${i.description} ${i.inciName === "Copper Tripeptide-1" ? "GHK-Cu copper peptides" : ""}`,
       href: ingredientPath(i.slug),
+      identity: {
+        id: i.id,
+        name: i.inciName,
+        aliases: i.id === "copper-tripeptide-1" ? ["GHK-Cu", "GHKCu"] : [],
+      },
     })),
   ...haircare.ingredients.map((i): SearchEntry => ({
     name: i.name,
@@ -21,13 +26,18 @@ export const searchIndex: SearchEntry[] = [
     terms: i.identity,
     href: `/haircare/ingredients/${i.slug}/`,
     category: "Peptides & ingredients",
+    identity: { id: `haircare:${i.slug}`, name: i.name, aliases: [] },
   })),
   ...products.map((p): SearchEntry => ({
     name: p.name,
     detail: `${brandName(p)} · ${p.volume} ${p.volumeUnit === "ml" ? "mL" : "fl oz"} · US label profile`,
-    terms: `${brandName(p)} ${p.ingredientList.join(" ")} ${p.description}`,
+    terms: `${brandName(p)} ${p.ingredientList.join(" ")} ${p.description} serum ingredients label`,
     href: productPath(p.slug),
     category: "Products",
+    relations: p.ingredientIds.map((entityId) => ({
+      entityId,
+      reason: `Recorded label lists ${catalog.ingredients.find((item) => item.id === entityId)!.inciName}`,
+    })),
   })),
   {
     name: haircare.product.name,
@@ -35,18 +45,32 @@ export const searchIndex: SearchEntry[] = [
     terms: "hair scalp serum density",
     href: `/haircare/products/${haircare.product.slug}/`,
     category: "Products",
+    relations: haircare.ingredients.map((item) => ({
+      entityId: `haircare:${item.slug}`,
+      reason: `Scalp product label lists ${item.name}`,
+    })),
   },
   ...guides.map((g): SearchEntry => ({
     name: g.title,
     detail: `${g.description}${g.status === "draft" ? " · Draft" : ""}`,
-    terms: `${g.answer} ${g.questions.map((q) => q.question).join(" ")}`,
+    terms: `${g.answer} ${g.scope} ${g.questions.map((q) => q.question).join(" ")} ${g.sections.flatMap((section) => section.paragraphs.map((paragraph) => paragraph.text)).join(" ")}`,
     href: `/skincare/guides/${g.slug}/`,
     category: "Guides & articles",
+    relations: [
+      ...new Set(
+        g.productIds.flatMap(
+          (id) => products.find((item) => item.id === id)?.ingredientIds ?? [],
+        ),
+      ),
+    ].map((entityId) => ({
+      entityId,
+      reason: `Guide links to a product listing ${catalog.ingredients.find((item) => item.id === entityId)!.inciName}; inspect its scope`,
+    })),
   })),
   ...libraryArticles.map((a): SearchEntry => ({
     name: a.title,
     detail: `${a.description} · Draft research context`,
-    terms: `${a.category} ${a.answer} ${a.sections.map((s) => s.title).join(" ")}`,
+    terms: `${a.slug} ${a.category} ${a.answer} ${a.sections.map((s) => s.title).join(" ")}`,
     href: `/library/${a.slug}/`,
     category: "Guides & articles",
   })),
@@ -68,5 +92,28 @@ export const searchIndex: SearchEntry[] = [
       .join(" ")}`,
     href: `/skincare/compare/${c.slug}/`,
     category: "Comparisons",
+    relations: [
+      ...new Set(
+        c.comparedProductIds.flatMap(
+          (id) => products.find((item) => item.id === id)?.ingredientIds ?? [],
+        ),
+      ),
+    ].map((entityId) => ({
+      entityId,
+      reason: `Includes a product listing ${catalog.ingredients.find((item) => item.id === entityId)!.inciName}; not an ingredient-equivalence claim`,
+    })),
+  })),
+  ...catalog.sources.map((source): SearchEntry => ({
+    name: source.title,
+    detail: `${source.publisher} · ${source.sourceType === "research" ? "Research reference" : source.sourceType === "regulator" ? "Regulatory guidance" : "Manufacturer / supplier source"} · Checked ${source.accessedAt}`,
+    terms: `${source.publisher} ${source.sourceType} ${source.sourceType === "research" ? "study research evidence" : ""}`,
+    href: `/sources/#source-${source.id}`,
+    category: "Sources",
+    relations: catalog.ingredients
+      .filter((item) => item.sourceIds.includes(source.id))
+      .map((item) => ({
+        entityId: item.id,
+        reason: `Cited by the ${item.inciName} profile; check what this source supports`,
+      })),
   })),
 ];

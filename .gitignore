@@ -11,3 +11,5 @@ playwright-report/
 dist/
 .vinext/
 .cloudflare/
+# Historical audit photos remain local; only owned-artwork captures are published.
+docs/audit-evidence/screenshots/

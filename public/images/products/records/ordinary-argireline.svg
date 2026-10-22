@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-labelledby="title description">
+  <title id="title">The Ordinary Argireline Solution 10% — 30 mL</title>
+  <desc id="description">Peptivelo product record. Text identifies the product and size. This is not a packaging photograph or manufacturer artwork.</desc>
+  <rect width="720" height="720" rx="24" fill="#F7F7F2"/>
+  <path d="M56 116H664M56 570H664" stroke="#D5E0D8" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" fill="#123D35">
+    <text x="56" y="77" font-size="16" letter-spacing="3">PEPTIVELO / PRODUCT RECORD</text>
+    <text x="56" y="172" font-size="22">The Ordinary</text>
+    <text x="56" y="268" font-size="36" font-weight="600">Argireline Solution 10%</text>
+    <text x="56" y="538" font-size="28">30 mL</text>
+    <text x="56" y="623" font-size="19">Name and size for identification</text>
+    <text x="56" y="658" font-size="16">Not a packaging photograph</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "sephora-ordinary-copper-30ml-us-2026-10-22",
+    "productId": "ordinary-copper",
+    "retailerId": "sephora-us",
+    "retailerName": "Sephora US",
+    "market": "US",
+    "currency": "USD",
+    "price": 32,
+    "size": 30,
+    "sizeUnit": "ml",
+    "listedSize": "1 oz / 30 ml",
+    "url": "https://www.sephora.com/product/buffet-copper-peptides-1-P442752",
+    "sourceUrl": "https://www.sephora.com/product/buffet-copper-peptides-1-P442752",
+    "observedAt": "2026-10-22",
+    "availability": "not_checked",
+    "affiliateUrl": null,
+    "shipping": {
+      "destination": "US",
+      "cost": 6.95,
+      "transitBusinessDays": { "min": 1, "max": 3 },
+      "processingBusinessDays": null,
+      "sourceUrl": "https://www.sephora.com/beauty/shipping-information",
+      "checkedAt": "2026-10-22",
+      "scenario": "One item, guest checkout, order under $50, standard shipping to the contiguous US. Membership and larger baskets can change shipping charges. Address and item eligibility must be confirmed at checkout."
+    }
+  }
+]

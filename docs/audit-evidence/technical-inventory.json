@@ -1,0 +1,79 @@
+{
+  "ingredientIdSlugMismatch": [],
+  "images": [
+    {
+      "id": "ordinary-copper",
+      "path": "/images/products/ordinary-copper-30ml.png",
+      "bytes": 113346
+    },
+    {
+      "id": "niod-cais3",
+      "path": "/images/products/niod-cais3-30ml.png",
+      "bytes": 81471
+    },
+    {
+      "id": "ordinary-ha",
+      "path": "/images/products/ordinary-ha-30ml.png",
+      "bytes": 125474
+    },
+    {
+      "id": "ordinary-matrixyl",
+      "path": "/images/products/ordinary-matrixyl-30ml.png",
+      "bytes": 127329
+    },
+    {
+      "id": "ordinary-argireline",
+      "path": "/images/products/ordinary-argireline-30ml.jpg",
+      "bytes": 25521
+    },
+    {
+      "id": "geek-power-peptides",
+      "path": "/images/products/geek-power-peptides-30ml.jpg",
+      "bytes": 133327
+    },
+    {
+      "id": "naturium-multi-peptide",
+      "path": "/images/products/naturium-verified.jpg",
+      "bytes": 27257
+    },
+    {
+      "id": "timeless-synthe6",
+      "path": "/images/products/timeless-verified.jpg",
+      "bytes": 31209
+    },
+    {
+      "id": "medik8-liquid-peptides",
+      "path": "/images/products/medik8-verified.jpg",
+      "bytes": 38519
+    },
+    {
+      "id": "cosrx-six-mini",
+      "path": "/images/products/cosrx-six-mini-50ml.jpg",
+      "bytes": 26485
+    },
+    {
+      "id": "skinceuticals-ptiox",
+      "path": "/images/products/skinceuticals-ptiox-30ml.jpg",
+      "bytes": 10818
+    }
+  ],
+  "versions": {
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "vinext": "1.2.1",
+    "@vinext/cloudflare": "1.1.1",
+    "@cloudflare/vite-plugin": "2.0.0-beta.v.2",
+    "vite": "8.3.0",
+    "cf": "1.0.0-beta.18",
+    "typescript": "6.0.3",
+    "@playwright/test": "1.64.1",
+    "@prisma/client": "7.10.1"
+  },
+  "publicApiRouteFiles": [],
+  "databaseImports": "no runtime PrismaClient import found by rg",
+  "sourceTypes": {
+    "manufacturer": 18,
+    "research": 11,
+    "regulator": 5
+  }
+}

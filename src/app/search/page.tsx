@@ -20,8 +20,9 @@ export default async function SearchPage({
       <span className="eyebrow">EXPLORE PEPTIVELO</span>
       <h1>Follow the question.</h1>
       <p>
-        Find documented ingredients, products, guides and comparisons. Search
-        retrieves existing pages; it does not generate scientific answers.
+        Find documented ingredients, products, guides, comparisons and sources.
+        Search retrieves existing pages; it does not generate scientific
+        answers.
       </p>
       <HeroSearch entries={searchIndex} initialQuery={query} />
       <p className="search-result-count">
@@ -62,6 +63,9 @@ export default async function SearchPage({
                 <div>
                   <h3>{entry.name}</h3>
                   <p>{entry.detail}</p>
+                  {entry.matchReason && (
+                    <p className="search-match-reason">{entry.matchReason}</p>
+                  )}
                 </div>
                 <ArrowUpRight size={18} aria-hidden="true" />
               </Link>

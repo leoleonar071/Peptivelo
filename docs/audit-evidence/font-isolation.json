@@ -1,0 +1,6 @@
+{
+  "diagnostic": "Only in test browser: abort the two local webfont requests, use fallback fonts throughout; not a production configuration change; sum of observed shifts over 1.8s.",
+  "clsSum": 0.00005096989666069427,
+  "bodyFont": "Inter, Arial, sans-serif",
+  "headingFont": "Manrope, Inter, Arial, sans-serif"
+}

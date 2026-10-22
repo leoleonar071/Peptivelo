@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-test("new brand product has its own photo, verified size price and related draft", async ({
+test("new brand product has its own record, verified size price and related draft", async ({
   page,
 }) => {
   await page.goto("/skincare/products/?q=Geek");
@@ -9,7 +9,7 @@ test("new brand product has its own photo, verified size price and related draft
   await expect(card).toHaveCount(1);
   await expect(card.locator("img")).toHaveAttribute(
     "src",
-    "/images/products/geek-power-peptides-30ml.jpg",
+    "/images/products/records/geek-power-peptides.svg",
   );
   await card
     .getByRole("heading", { name: "Power Peptides", exact: true })
@@ -20,8 +20,8 @@ test("new brand product has its own photo, verified size price and related draft
   );
   await expect(page.locator(".detail-price")).toContainText("$18.80");
   await expect(
-    page.getByRole("link", { name: "View full-size product photo" }),
-  ).toHaveAttribute("href", "/images/products/geek-power-peptides-30ml.jpg");
+    page.getByRole("link", { name: "View product identification record" }),
+  ).toHaveAttribute("href", "/images/products/records/geek-power-peptides.svg");
   await expect(
     page.getByRole("link", { name: /Geek & Gorgeous Power Peptides vs/ }),
   ).toBeVisible();
@@ -33,20 +33,12 @@ test("editorial guide explains the choice, sources and new ingredient without lo
   await page.goto(
     "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
   );
-  await expect(
-    page.getByText("Draft editorial analysis — human review pending", {
-      exact: true,
-    }),
-  ).toBeVisible();
+  await expect(page.locator(".reader-status")).toContainText("Scientific review pending");
+  await page.getByRole("tab", { name: "Ingredients & price", exact: true }).click();
+  await page.locator("#buying-notes summary").click();
   await expect(
     page.getByRole("heading", {
       name: "Do not turn 10% into a potency score",
-      exact: true,
-    }),
-  ).toBeVisible();
-  await expect(
-    page.getByRole("heading", {
-      name: "What we cannot tell from the label",
       exact: true,
     }),
   ).toBeVisible();
@@ -82,6 +74,8 @@ test("editorial guide explains the choice, sources and new ingredient without lo
     /palmitoyl-tripeptide-38\/\?a=ordinary-matrixyl&b=ordinary-ha/,
   );
   await page.getByRole("link", { name: "Back to your comparison" }).click();
+  await expect(page).toHaveURL(/the-ordinary-matrixyl-vs-multi-peptide-ha\/#comparison-peptides$/);
+  await page.getByRole("link", { name: "Change products", exact: true }).click();
   await expect(page).toHaveURL(/compare\/\?a=ordinary-matrixyl&b=ordinary-ha/);
   const price = page.locator('[data-comparison-row="price"]');
   await expect(price.locator("td").first()).toContainText("$10.90");

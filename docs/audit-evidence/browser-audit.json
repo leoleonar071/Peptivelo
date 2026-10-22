@@ -1,0 +1,5560 @@
+{
+  "snapshotUTC": "2026-10-22T03:04:44.554Z",
+  "environment": {
+    "browser": "156.0.8078.4",
+    "cpuThrottle": "none",
+    "networkThrottle": "none",
+    "viewportEmulationOnly": true,
+    "fieldINP": "not measured"
+  },
+  "results": [
+    {
+      "route": "/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Understand peptides. Look beyond the claims."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 8344,
+        "visibleTextWords": 824,
+        "allTextWords": 678,
+        "brokenImages": [],
+        "ttfbMs": 175,
+        "domContentLoadedMs": 3776,
+        "loadMs": 4171.800000071526,
+        "fcpMs": 3796,
+        "lcp": {
+          "ms": 3796,
+          "tag": "SPAN",
+          "text": "Look beyond the claims."
+        },
+        "cls": 0.005168087594303084,
+        "session": 0.005168087594303084,
+        "start": 4144.700000047684,
+        "last": 4200.600000023842,
+        "longTasks": [],
+        "resources": {
+          "count": 46,
+          "transferBytes": 1807935,
+          "encodedBytes": 1794435,
+          "js": 239525,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/00-desktop-light.png"
+    },
+    {
+      "route": "/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Understand peptides. Look beyond the claims."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 8344,
+        "visibleTextWords": 824,
+        "allTextWords": 678,
+        "brokenImages": [],
+        "ttfbMs": 294.89999997615814,
+        "domContentLoadedMs": 353.2999999523163,
+        "loadMs": 679.6999999284744,
+        "fcpMs": 392,
+        "lcp": {
+          "ms": 392,
+          "tag": "SPAN",
+          "text": "Look beyond the claims."
+        },
+        "cls": 0.003804458932130916,
+        "session": 0.003804458932130916,
+        "start": 0,
+        "last": 534.2999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 47,
+          "transferBytes": 56775,
+          "encodedBytes": 1118673,
+          "js": 239525,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/00-desktop-dark.png"
+    },
+    {
+      "route": "/search/?q=GHK-Cu",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Follow the question."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 1422,
+        "visibleTextWords": 81,
+        "allTextWords": 89,
+        "brokenImages": [],
+        "ttfbMs": 224.5,
+        "domContentLoadedMs": 260.3000000715256,
+        "loadMs": 556.3999999761581,
+        "fcpMs": 288,
+        "lcp": {
+          "ms": 288,
+          "tag": "H1",
+          "text": "Follow the question."
+        },
+        "cls": 0.0017964854299286268,
+        "session": 0.0017964854299286268,
+        "start": 0,
+        "last": 427.39999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 38,
+          "transferBytes": 53534,
+          "encodedBytes": 1109404,
+          "js": 231697,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/01-desktop-light.png"
+    },
+    {
+      "route": "/search/?q=GHK-Cu",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Follow the question."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 1422,
+        "visibleTextWords": 81,
+        "allTextWords": 89,
+        "brokenImages": [],
+        "ttfbMs": 219.29999995231628,
+        "domContentLoadedMs": 244.60000002384186,
+        "loadMs": 547.5,
+        "fcpMs": 264,
+        "lcp": {
+          "ms": 264,
+          "tag": "H1",
+          "text": "Follow the question."
+        },
+        "cls": 0.0009024561187367379,
+        "session": 0.0009024561187367379,
+        "start": 0,
+        "last": 417.5,
+        "longTasks": [],
+        "resources": {
+          "count": 38,
+          "transferBytes": 53657,
+          "encodedBytes": 1109527,
+          "js": 231697,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/01-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The peptide skincare atlas"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 6727,
+        "visibleTextWords": 633,
+        "allTextWords": 518,
+        "brokenImages": [],
+        "ttfbMs": 189.80000007152557,
+        "domContentLoadedMs": 219.30000007152557,
+        "loadMs": 514.2000000476837,
+        "fcpMs": 252,
+        "lcp": {
+          "ms": 400,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.001715517303090037,
+        "session": 0.001715517303090037,
+        "start": 0,
+        "last": 511,
+        "longTasks": [],
+        "resources": {
+          "count": 51,
+          "transferBytes": 208812,
+          "encodedBytes": 1265343,
+          "js": 235958,
+          "css": 26450
+        },
+        "smallTargets": 4
+      },
+      "errors": [],
+      "violations": [
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "url": "https://dequeuniversity.com/rules/axe/4.14/target-size?application=playwright",
+          "nodes": [
+            {
+              "target": [
+                "p:nth-child(4) > a[href$=\"methodology/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Target has insufficient size (142px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.2px instead of at least 24px."
+            }
+          ]
+        }
+      ],
+      "screenshot": "screenshots/02-desktop-light.png"
+    },
+    {
+      "route": "/skincare/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The peptide skincare atlas"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 6727,
+        "visibleTextWords": 633,
+        "allTextWords": 518,
+        "brokenImages": [],
+        "ttfbMs": 191.59999990463257,
+        "domContentLoadedMs": 219.89999997615814,
+        "loadMs": 511.39999997615814,
+        "fcpMs": 244,
+        "lcp": {
+          "ms": 408,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0023007258662471066,
+        "session": 0.0023007258662471066,
+        "start": 0,
+        "last": 390.3000000715256,
+        "longTasks": [],
+        "resources": {
+          "count": 51,
+          "transferBytes": 74454,
+          "encodedBytes": 1130985,
+          "js": 235958,
+          "css": 26450
+        },
+        "smallTargets": 4
+      },
+      "errors": [],
+      "violations": [
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "url": "https://dequeuniversity.com/rules/axe/4.14/target-size?application=playwright",
+          "nodes": [
+            {
+              "target": [
+                "p:nth-child(4) > a[href$=\"methodology/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Target has insufficient size (142px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.2px instead of at least 24px."
+            }
+          ]
+        }
+      ],
+      "screenshot": "screenshots/02-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/products/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Explore peptide skincare products"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 4867,
+        "visibleTextWords": 266,
+        "allTextWords": 251,
+        "brokenImages": [],
+        "ttfbMs": 165.90000009536743,
+        "domContentLoadedMs": 202.20000004768372,
+        "loadMs": 502.2000000476837,
+        "fcpMs": 236,
+        "lcp": {
+          "ms": 372,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0019765675234696503,
+        "session": 0.0019765675234696503,
+        "start": 0,
+        "last": 377,
+        "longTasks": [],
+        "resources": {
+          "count": 52,
+          "transferBytes": 88054,
+          "encodedBytes": 1147621,
+          "js": 238994,
+          "css": 26450
+        },
+        "smallTargets": 5
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/03-desktop-light.png"
+    },
+    {
+      "route": "/skincare/products/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Explore peptide skincare products"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 4867,
+        "visibleTextWords": 266,
+        "allTextWords": 251,
+        "brokenImages": [],
+        "ttfbMs": 221.5,
+        "domContentLoadedMs": 260.6999999284744,
+        "loadMs": 549.8999999761581,
+        "fcpMs": 296,
+        "lcp": {
+          "ms": 448,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0019765675234696503,
+        "session": 0.0019765675234696503,
+        "start": 0,
+        "last": 431.1999999284744,
+        "longTasks": [],
+        "resources": {
+          "count": 52,
+          "transferBytes": 88253,
+          "encodedBytes": 1147820,
+          "js": 238994,
+          "css": 26450
+        },
+        "smallTargets": 5
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/03-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/products/the-ordinary-multi-peptide-copper/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The Ordinary Multi-Peptide + Copper Peptides 1% Serum"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 3250,
+        "visibleTextWords": 389,
+        "allTextWords": 343,
+        "brokenImages": [],
+        "ttfbMs": 207.69999992847443,
+        "domContentLoadedMs": 304.1999999284744,
+        "loadMs": 613.8999999761581,
+        "fcpMs": 368,
+        "lcp": {
+          "ms": 468,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0015382373637132683,
+        "session": 0.0015382373637132683,
+        "start": 0,
+        "last": 501.5,
+        "longTasks": [],
+        "resources": {
+          "count": 41,
+          "transferBytes": 65943,
+          "encodedBytes": 1134541,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 6
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/04-desktop-light.png"
+    },
+    {
+      "route": "/skincare/products/the-ordinary-multi-peptide-copper/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The Ordinary Multi-Peptide + Copper Peptides 1% Serum"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 3250,
+        "visibleTextWords": 389,
+        "allTextWords": 343,
+        "brokenImages": [],
+        "ttfbMs": 164.69999992847443,
+        "domContentLoadedMs": 199.80000007152557,
+        "loadMs": 491.8000000715256,
+        "fcpMs": 224,
+        "lcp": {
+          "ms": 352,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0030912947164150914,
+        "session": 0.0030912947164150914,
+        "start": 0,
+        "last": 361.8000000715256,
+        "longTasks": [],
+        "resources": {
+          "count": 41,
+          "transferBytes": 65951,
+          "encodedBytes": 1134549,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 6
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/04-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/ingredients/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Cosmetic peptide ingredients"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 3376,
+        "visibleTextWords": 483,
+        "allTextWords": 415,
+        "brokenImages": [],
+        "ttfbMs": 185.10000002384186,
+        "domContentLoadedMs": 215.10000002384186,
+        "loadMs": 510.89999997615814,
+        "fcpMs": 244,
+        "lcp": {
+          "ms": 244,
+          "tag": "H1",
+          "text": "Cosmetic peptide ingredients"
+        },
+        "cls": 0.0014747972213682325,
+        "session": 0.0014747972213682325,
+        "start": 0,
+        "last": 382.5,
+        "longTasks": [],
+        "resources": {
+          "count": 39,
+          "transferBytes": 87522,
+          "encodedBytes": 1143092,
+          "js": 231697,
+          "css": 26450
+        },
+        "smallTargets": 4
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/05-desktop-light.png"
+    },
+    {
+      "route": "/skincare/ingredients/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Cosmetic peptide ingredients"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 3376,
+        "visibleTextWords": 483,
+        "allTextWords": 415,
+        "brokenImages": [],
+        "ttfbMs": 163.39999997615814,
+        "domContentLoadedMs": 201.89999997615814,
+        "loadMs": 495.5,
+        "fcpMs": 248,
+        "lcp": {
+          "ms": 248,
+          "tag": "H1",
+          "text": "Cosmetic peptide ingredients"
+        },
+        "cls": 0.002963397304707594,
+        "session": 0.002963397304707594,
+        "start": 0,
+        "last": 387.6999999284744,
+        "longTasks": [],
+        "resources": {
+          "count": 39,
+          "transferBytes": 87432,
+          "encodedBytes": 1143002,
+          "js": 231697,
+          "css": 26450
+        },
+        "smallTargets": 4
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/05-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/ingredients/copper-tripeptide-1/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Copper Tripeptide-1"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 3729,
+        "visibleTextWords": 422,
+        "allTextWords": 382,
+        "brokenImages": [],
+        "ttfbMs": 210,
+        "domContentLoadedMs": 247.70000004768372,
+        "loadMs": 534,
+        "fcpMs": 280,
+        "lcp": {
+          "ms": 280,
+          "tag": "P",
+          "text": "The ingredient is one part of a product. The formula is the whole mixture. A number such as 29 or 1 "
+        },
+        "cls": 0.002443982599203479,
+        "session": 0.002443982599203479,
+        "start": 0,
+        "last": 413,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 50286,
+          "encodedBytes": 1119184,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 9
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/06-desktop-light.png"
+    },
+    {
+      "route": "/skincare/ingredients/copper-tripeptide-1/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Copper Tripeptide-1"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 3729,
+        "visibleTextWords": 422,
+        "allTextWords": 382,
+        "brokenImages": [],
+        "ttfbMs": 182.20000004768372,
+        "domContentLoadedMs": 214,
+        "loadMs": 510.7999999523163,
+        "fcpMs": 240,
+        "lcp": {
+          "ms": 240,
+          "tag": "P",
+          "text": "The ingredient is one part of a product. The formula is the whole mixture. A number such as 29 or 1 "
+        },
+        "cls": 0.002443982599203479,
+        "session": 0.002443982599203479,
+        "start": 0,
+        "last": 382.2999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 50135,
+          "encodedBytes": 1119033,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 9
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/06-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/compare/?a=ordinary-copper&b=niod-cais3",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Compare peptide serums"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 4363,
+        "visibleTextWords": 785,
+        "allTextWords": 4967,
+        "brokenImages": [],
+        "ttfbMs": 213.29999995231628,
+        "domContentLoadedMs": 330.89999997615814,
+        "loadMs": 556.3999999761581,
+        "fcpMs": 352,
+        "lcp": {
+          "ms": 352,
+          "tag": "H1",
+          "text": "Compare peptide serums"
+        },
+        "cls": 0.0015607555373705955,
+        "session": 0.0015607555373705955,
+        "start": 0,
+        "last": 479.39999997615814,
+        "longTasks": [
+          {
+            "start": 265.39999997615814,
+            "duration": 61
+          }
+        ],
+        "resources": {
+          "count": 41,
+          "transferBytes": 53782,
+          "encodedBytes": 1203851,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 7
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/07-desktop-light.png"
+    },
+    {
+      "route": "/skincare/compare/?a=ordinary-copper&b=niod-cais3",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Compare peptide serums"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 4363,
+        "visibleTextWords": 785,
+        "allTextWords": 4967,
+        "brokenImages": [],
+        "ttfbMs": 264.40000009536743,
+        "domContentLoadedMs": 366.89999997615814,
+        "loadMs": 619.2999999523163,
+        "fcpMs": 392,
+        "lcp": {
+          "ms": 392,
+          "tag": "H1",
+          "text": "Compare peptide serums"
+        },
+        "cls": 0.0014758934680326485,
+        "session": 0.0014758934680326485,
+        "start": 0,
+        "last": 528.5999999046326,
+        "longTasks": [],
+        "resources": {
+          "count": 41,
+          "transferBytes": 53758,
+          "encodedBytes": 1122356,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 7
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/07-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/compare/niod-cais3-vs-the-ordinary/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "NIOD CAIS3 vs. The Ordinary copper peptide serum"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 2593,
+        "visibleTextWords": 384,
+        "allTextWords": 5189,
+        "brokenImages": [],
+        "ttfbMs": 200.80000007152557,
+        "domContentLoadedMs": 353.7999999523163,
+        "loadMs": 553,
+        "fcpMs": 372,
+        "lcp": {
+          "ms": 372,
+          "tag": "H1",
+          "text": "NIOD CAIS3 vs. The Ordinary copper peptide serum"
+        },
+        "cls": 0.00281252700114937,
+        "session": 0.00281252700114937,
+        "start": 0,
+        "last": 487.2999999523163,
+        "longTasks": [
+          {
+            "start": 269.7999999523163,
+            "duration": 81
+          }
+        ],
+        "resources": {
+          "count": 41,
+          "transferBytes": 56094,
+          "encodedBytes": 1124692,
+          "js": 246598,
+          "css": 26450
+        },
+        "smallTargets": 8
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/08-desktop-light.png"
+    },
+    {
+      "route": "/skincare/compare/niod-cais3-vs-the-ordinary/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "NIOD CAIS3 vs. The Ordinary copper peptide serum"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 2593,
+        "visibleTextWords": 384,
+        "allTextWords": 5189,
+        "brokenImages": [],
+        "ttfbMs": 305.2999999523163,
+        "domContentLoadedMs": 403.39999997615814,
+        "loadMs": 668.3999999761581,
+        "fcpMs": 420,
+        "lcp": {
+          "ms": 420,
+          "tag": "H1",
+          "text": "NIOD CAIS3 vs. The Ordinary copper peptide serum"
+        },
+        "cls": 0.002816095862368988,
+        "session": 0.002816095862368988,
+        "start": 0,
+        "last": 558.8999999761581,
+        "longTasks": [],
+        "resources": {
+          "count": 43,
+          "transferBytes": 61791,
+          "encodedBytes": 1132262,
+          "js": 246598,
+          "css": 26450
+        },
+        "smallTargets": 8
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/08-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The Ordinary Matrixyl vs. Multi-Peptide + HA"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 2544,
+        "visibleTextWords": 372,
+        "allTextWords": 3602,
+        "brokenImages": [],
+        "ttfbMs": 254.60000002384186,
+        "domContentLoadedMs": 376.09999990463257,
+        "loadMs": 648.5,
+        "fcpMs": 396,
+        "lcp": {
+          "ms": 396,
+          "tag": "H1",
+          "text": "The Ordinary Matrixyl vs. Multi-Peptide + HA"
+        },
+        "cls": 0.0060816581317917305,
+        "session": 0.0060816581317917305,
+        "start": 0,
+        "last": 532,
+        "longTasks": [],
+        "resources": {
+          "count": 41,
+          "transferBytes": 54182,
+          "encodedBytes": 1378056,
+          "js": 246598,
+          "css": 26450
+        },
+        "smallTargets": 8
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/09-desktop-light.png"
+    },
+    {
+      "route": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The Ordinary Matrixyl vs. Multi-Peptide + HA"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 2544,
+        "visibleTextWords": 372,
+        "allTextWords": 3602,
+        "brokenImages": [],
+        "ttfbMs": 217.40000009536743,
+        "domContentLoadedMs": 323.10000002384186,
+        "loadMs": 726.7000000476837,
+        "fcpMs": 464,
+        "lcp": {
+          "ms": 464,
+          "tag": "H1",
+          "text": "The Ordinary Matrixyl vs. Multi-Peptide + HA"
+        },
+        "cls": 0.022156154569774992,
+        "session": 0.022156154569774992,
+        "start": 0,
+        "last": 502.90000009536743,
+        "longTasks": [],
+        "resources": {
+          "count": 43,
+          "transferBytes": 62302,
+          "encodedBytes": 1132773,
+          "js": 246598,
+          "css": 26450
+        },
+        "smallTargets": 8
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/09-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/guides/peptide-percentages-explained/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "What peptide percentages on serum labels actually tell you"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 8474,
+        "visibleTextWords": 1336,
+        "allTextWords": 1599,
+        "brokenImages": [],
+        "ttfbMs": 194.10000002384186,
+        "domContentLoadedMs": 264,
+        "loadMs": 572.5,
+        "fcpMs": 352,
+        "lcp": {
+          "ms": 352,
+          "tag": "H1",
+          "text": "What peptide percentages on serum labels actually tell you"
+        },
+        "cls": 0.00973517974413962,
+        "session": 0.00973517974413962,
+        "start": 0,
+        "last": 523.6000000238419,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 57935,
+          "encodedBytes": 1126833,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 29
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/10-desktop-light.png"
+    },
+    {
+      "route": "/skincare/guides/peptide-percentages-explained/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "What peptide percentages on serum labels actually tell you"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 8474,
+        "visibleTextWords": 1336,
+        "allTextWords": 1599,
+        "brokenImages": [],
+        "ttfbMs": 226.5,
+        "domContentLoadedMs": 256.5,
+        "loadMs": 545.6000000238419,
+        "fcpMs": 284,
+        "lcp": {
+          "ms": 284,
+          "tag": "H1",
+          "text": "What peptide percentages on serum labels actually tell you"
+        },
+        "cls": 0.012097457760155444,
+        "session": 0.012097457760155444,
+        "start": 0,
+        "last": 426.89999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 58068,
+          "encodedBytes": 1126966,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 29
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/10-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/choose/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "What are you looking for?"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 1571,
+        "visibleTextWords": 100,
+        "allTextWords": 310,
+        "brokenImages": [],
+        "ttfbMs": 161.89999997615814,
+        "domContentLoadedMs": 192.30000007152557,
+        "loadMs": 482.7000000476837,
+        "fcpMs": 216,
+        "lcp": {
+          "ms": 216,
+          "tag": "H1",
+          "text": "What are you looking for?"
+        },
+        "cls": 0.0017007395426432291,
+        "session": 0.0017007395426432291,
+        "start": 0,
+        "last": 358.8000000715256,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 59771,
+          "encodedBytes": 1119602,
+          "js": 235958,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/11-desktop-light.png"
+    },
+    {
+      "route": "/skincare/choose/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "What are you looking for?"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 1571,
+        "visibleTextWords": 100,
+        "allTextWords": 310,
+        "brokenImages": [],
+        "ttfbMs": 204.5,
+        "domContentLoadedMs": 227.19999992847443,
+        "loadMs": 521.6000000238419,
+        "fcpMs": 248,
+        "lcp": {
+          "ms": 248,
+          "tag": "H1",
+          "text": "What are you looking for?"
+        },
+        "cls": 0.0017727062398023566,
+        "session": 0.0017727062398023566,
+        "start": 0,
+        "last": 386.60000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 39,
+          "transferBytes": 52159,
+          "encodedBytes": 1112290,
+          "js": 235958,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/11-desktop-dark.png"
+    },
+    {
+      "route": "/library/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Start with the right question."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 2127,
+        "visibleTextWords": 156,
+        "allTextWords": 136,
+        "brokenImages": [],
+        "ttfbMs": 158.70000004768372,
+        "domContentLoadedMs": 187.20000004768372,
+        "loadMs": 477.5,
+        "fcpMs": 208,
+        "lcp": {
+          "ms": 208,
+          "tag": "H1",
+          "text": "Start with the right question."
+        },
+        "cls": 0.0046222742339711125,
+        "session": 0.0046222742339711125,
+        "start": 0,
+        "last": 357.10000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 53918,
+          "encodedBytes": 1123647,
+          "js": 244956,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/12-desktop-light.png"
+    },
+    {
+      "route": "/library/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Start with the right question."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 2127,
+        "visibleTextWords": 156,
+        "allTextWords": 136,
+        "brokenImages": [],
+        "ttfbMs": 163.29999995231628,
+        "domContentLoadedMs": 191.39999997615814,
+        "loadMs": 485.59999990463257,
+        "fcpMs": 212,
+        "lcp": {
+          "ms": 212,
+          "tag": "H1",
+          "text": "Start with the right question."
+        },
+        "cls": 0.0046222742339711125,
+        "session": 0.0046222742339711125,
+        "start": 0,
+        "last": 359.2999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 54067,
+          "encodedBytes": 1123796,
+          "js": 244956,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/12-desktop-dark.png"
+    },
+    {
+      "route": "/library/retatrutide/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Retatrutide: human research and US status"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 1907,
+        "visibleTextWords": 130,
+        "allTextWords": 403,
+        "brokenImages": [],
+        "ttfbMs": 203.5,
+        "domContentLoadedMs": 254.79999995231628,
+        "loadMs": 562.2999999523163,
+        "fcpMs": 292,
+        "lcp": {
+          "ms": 292,
+          "tag": "H1",
+          "text": "Retatrutide: human research and US status"
+        },
+        "cls": 0.003963746129730601,
+        "session": 0.003963746129730601,
+        "start": 0,
+        "last": 454,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 36114,
+          "encodedBytes": 1106743,
+          "js": 244956,
+          "css": 26450
+        },
+        "smallTargets": 4
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/13-desktop-light.png"
+    },
+    {
+      "route": "/library/retatrutide/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Retatrutide: human research and US status"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 1907,
+        "visibleTextWords": 130,
+        "allTextWords": 403,
+        "brokenImages": [],
+        "ttfbMs": 159.10000002384186,
+        "domContentLoadedMs": 193.80000007152557,
+        "loadMs": 522.5,
+        "fcpMs": 216,
+        "lcp": {
+          "ms": 216,
+          "tag": "H1",
+          "text": "Retatrutide: human research and US status"
+        },
+        "cls": 0.010449641993016373,
+        "session": 0.010449641993016373,
+        "start": 0,
+        "last": 354.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 36051,
+          "encodedBytes": 1106680,
+          "js": 244956,
+          "css": 26450
+        },
+        "smallTargets": 4
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/13-desktop-dark.png"
+    },
+    {
+      "route": "/skincare/identify/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Know what’s on your shelf."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 2241,
+        "visibleTextWords": 186,
+        "allTextWords": 155,
+        "brokenImages": [],
+        "ttfbMs": 174.89999997615814,
+        "domContentLoadedMs": 203.5,
+        "loadMs": 498.10000002384186,
+        "fcpMs": 236,
+        "lcp": {
+          "ms": 236,
+          "tag": "P",
+          "text": "Find your facial peptide serum. Understand the ingredients, the evidence and its limits."
+        },
+        "cls": 0.0012286399558738427,
+        "session": 0.0012286399558738427,
+        "start": 0,
+        "last": 372.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 47,
+          "transferBytes": 44151,
+          "encodedBytes": 1851705,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/14-desktop-light.png"
+    },
+    {
+      "route": "/skincare/identify/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Know what’s on your shelf."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 2241,
+        "visibleTextWords": 186,
+        "allTextWords": 155,
+        "brokenImages": [],
+        "ttfbMs": 192.80000007152557,
+        "domContentLoadedMs": 225.5,
+        "loadMs": 527.7999999523163,
+        "fcpMs": 252,
+        "lcp": {
+          "ms": 252,
+          "tag": "P",
+          "text": "Find your facial peptide serum. Understand the ingredients, the evidence and its limits."
+        },
+        "cls": 0.0012286399558738427,
+        "session": 0.0012286399558738427,
+        "start": 0,
+        "last": 390.2999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 47,
+          "transferBytes": 44223,
+          "encodedBytes": 1111021,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/14-desktop-dark.png"
+    },
+    {
+      "route": "/tools/price-per-ml/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Price per mL & US fl oz calculator"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 1819,
+        "visibleTextWords": 111,
+        "allTextWords": 89,
+        "brokenImages": [],
+        "ttfbMs": 158.69999992847443,
+        "domContentLoadedMs": 190.39999997615814,
+        "loadMs": 481.5,
+        "fcpMs": 216,
+        "lcp": {
+          "ms": 216,
+          "tag": "H1",
+          "text": "Price per mL & US fl oz calculator"
+        },
+        "cls": 0.011808411853303636,
+        "session": 0.011808411853303636,
+        "start": 0,
+        "last": 352.60000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 36198,
+          "encodedBytes": 1106296,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/15-desktop-light.png"
+    },
+    {
+      "route": "/tools/price-per-ml/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Price per mL & US fl oz calculator"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 1819,
+        "visibleTextWords": 111,
+        "allTextWords": 89,
+        "brokenImages": [],
+        "ttfbMs": 158.40000009536743,
+        "domContentLoadedMs": 183.89999997615814,
+        "loadMs": 480.7999999523163,
+        "fcpMs": 204,
+        "lcp": {
+          "ms": 204,
+          "tag": "H1",
+          "text": "Price per mL & US fl oz calculator"
+        },
+        "cls": 0.011060265348771964,
+        "session": 0.011060265348771964,
+        "start": 0,
+        "last": 349.7999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 36097,
+          "encodedBytes": 1106195,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/15-desktop-dark.png"
+    },
+    {
+      "route": "/haircare/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Look closer at your scalp serum."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 1874,
+        "visibleTextWords": 127,
+        "allTextWords": 111,
+        "brokenImages": [],
+        "ttfbMs": 168,
+        "domContentLoadedMs": 199.80000007152557,
+        "loadMs": 512,
+        "fcpMs": 220,
+        "lcp": {
+          "ms": 524,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.044092647960647144,
+        "session": 0.044092647960647144,
+        "start": 0,
+        "last": 373.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 41,
+          "transferBytes": 81176,
+          "encodedBytes": 1150605,
+          "js": 244956,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/16-desktop-light.png"
+    },
+    {
+      "route": "/haircare/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Look closer at your scalp serum."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 1874,
+        "visibleTextWords": 127,
+        "allTextWords": 111,
+        "brokenImages": [],
+        "ttfbMs": 168.39999997615814,
+        "domContentLoadedMs": 205.09999990463257,
+        "loadMs": 494.6999999284744,
+        "fcpMs": 236,
+        "lcp": {
+          "ms": 348,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0027771046328446502,
+        "session": 0.0027771046328446502,
+        "start": 0,
+        "last": 368.89999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 41,
+          "transferBytes": 53956,
+          "encodedBytes": 1123385,
+          "js": 244956,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/16-desktop-dark.png"
+    },
+    {
+      "route": "/haircare/products/the-ordinary-hair-density/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Multi-Peptide Serum for Hair Density"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 2110,
+        "visibleTextWords": 156,
+        "allTextWords": 463,
+        "brokenImages": [],
+        "ttfbMs": 163.60000002384186,
+        "domContentLoadedMs": 193.70000004768372,
+        "loadMs": 485.10000002384186,
+        "fcpMs": 216,
+        "lcp": {
+          "ms": 332,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0019065195091467336,
+        "session": 0.0019065195091467336,
+        "start": 0,
+        "last": 360.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 39,
+          "transferBytes": 40461,
+          "encodedBytes": 1110490,
+          "js": 244956,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/17-desktop-light.png"
+    },
+    {
+      "route": "/haircare/products/the-ordinary-hair-density/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Multi-Peptide Serum for Hair Density"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 2110,
+        "visibleTextWords": 156,
+        "allTextWords": 463,
+        "brokenImages": [],
+        "ttfbMs": 160.40000009536743,
+        "domContentLoadedMs": 188.60000002384186,
+        "loadMs": 480.2000000476837,
+        "fcpMs": 208,
+        "lcp": {
+          "ms": 332,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0014614044315039865,
+        "session": 0.0014614044315039865,
+        "start": 0,
+        "last": 356.60000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 39,
+          "transferBytes": 40413,
+          "encodedBytes": 1110442,
+          "js": 244956,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/17-desktop-dark.png"
+    },
+    {
+      "route": "/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Biotinoyl Tripeptide-1"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 1556,
+        "visibleTextWords": 74,
+        "allTextWords": 175,
+        "brokenImages": [],
+        "ttfbMs": 163.60000002384186,
+        "domContentLoadedMs": 193.10000002384186,
+        "loadMs": 491.10000002384186,
+        "fcpMs": 212,
+        "lcp": {
+          "ms": 212,
+          "tag": "H1",
+          "text": "Biotinoyl Tripeptide-1"
+        },
+        "cls": 0.0014984113198739512,
+        "session": 0.0014984113198739512,
+        "start": 0,
+        "last": 360.39999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 42,
+          "transferBytes": 55356,
+          "encodedBytes": 1121149,
+          "js": 241920,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/18-desktop-light.png"
+    },
+    {
+      "route": "/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Biotinoyl Tripeptide-1"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 1556,
+        "visibleTextWords": 74,
+        "allTextWords": 175,
+        "brokenImages": [],
+        "ttfbMs": 247.89999997615814,
+        "domContentLoadedMs": 271.09999990463257,
+        "loadMs": 567.3999999761581,
+        "fcpMs": 288,
+        "lcp": {
+          "ms": 288,
+          "tag": "H1",
+          "text": "Biotinoyl Tripeptide-1"
+        },
+        "cls": 0.0014984113198739512,
+        "session": 0.0014984113198739512,
+        "start": 0,
+        "last": 436.7999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 42,
+          "transferBytes": 55032,
+          "encodedBytes": 1120825,
+          "js": 241920,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/18-desktop-dark.png"
+    },
+    {
+      "route": "/methodology/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Our methodology"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 2533,
+        "visibleTextWords": 440,
+        "allTextWords": 420,
+        "brokenImages": [],
+        "ttfbMs": 226.79999995231628,
+        "domContentLoadedMs": 251.70000004768372,
+        "loadMs": 550.3000000715256,
+        "fcpMs": 268,
+        "lcp": {
+          "ms": 268,
+          "tag": "P",
+          "text": "Missing prices, undisclosed concentrations, incomplete labels and absent head-to-head outcomes are e"
+        },
+        "cls": 0.0032641333434807423,
+        "session": 0.0032641333434807423,
+        "start": 0,
+        "last": 415.89999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 36007,
+          "encodedBytes": 1106105,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/19-desktop-light.png"
+    },
+    {
+      "route": "/methodology/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Our methodology"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 2533,
+        "visibleTextWords": 440,
+        "allTextWords": 420,
+        "brokenImages": [],
+        "ttfbMs": 158.40000009536743,
+        "domContentLoadedMs": 184.79999995231628,
+        "loadMs": 482.09999990463257,
+        "fcpMs": 204,
+        "lcp": {
+          "ms": 204,
+          "tag": "P",
+          "text": "Missing prices, undisclosed concentrations, incomplete labels and absent head-to-head outcomes are e"
+        },
+        "cls": 0.0011795848642357093,
+        "session": 0.0011795848642357093,
+        "start": 0,
+        "last": 354,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 35926,
+          "encodedBytes": 1106024,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/19-desktop-dark.png"
+    },
+    {
+      "route": "/sources/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Our sources"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 3956,
+        "visibleTextWords": 765,
+        "allTextWords": 725,
+        "brokenImages": [],
+        "ttfbMs": 180.59999990463257,
+        "domContentLoadedMs": 208.09999990463257,
+        "loadMs": 518.2999999523163,
+        "fcpMs": 240,
+        "lcp": {
+          "ms": 240,
+          "tag": "H1",
+          "text": "Our sources"
+        },
+        "cls": 0.016189814657831387,
+        "session": 0.016189814657831387,
+        "start": 0,
+        "last": 390.6999999284744,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 35948,
+          "encodedBytes": 1106046,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 37
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/20-desktop-light.png"
+    },
+    {
+      "route": "/sources/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Our sources"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 3956,
+        "visibleTextWords": 765,
+        "allTextWords": 725,
+        "brokenImages": [],
+        "ttfbMs": 220.10000002384186,
+        "domContentLoadedMs": 251.30000007152557,
+        "loadMs": 550.3999999761581,
+        "fcpMs": 276,
+        "lcp": {
+          "ms": 276,
+          "tag": "H1",
+          "text": "Our sources"
+        },
+        "cls": 0.017510260507403088,
+        "session": 0.017510260507403088,
+        "start": 0,
+        "last": 422.2000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 35995,
+          "encodedBytes": 1106093,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 37
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/20-desktop-dark.png"
+    },
+    {
+      "route": "/contact/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Contact & corrections"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 1429,
+        "visibleTextWords": 67,
+        "allTextWords": 59,
+        "brokenImages": [],
+        "ttfbMs": 167,
+        "domContentLoadedMs": 193.70000004768372,
+        "loadMs": 484.39999997615814,
+        "fcpMs": 208,
+        "lcp": {
+          "ms": 208,
+          "tag": "P",
+          "text": "Identify the product, market, exact package size, the field that needs changing, and a primary sourc"
+        },
+        "cls": 0.000919836821379485,
+        "session": 0.000919836821379485,
+        "start": 0,
+        "last": 357.7999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 42,
+          "transferBytes": 61657,
+          "encodedBytes": 1126619,
+          "js": 241389,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/21-desktop-light.png"
+    },
+    {
+      "route": "/contact/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Contact & corrections"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 1429,
+        "visibleTextWords": 67,
+        "allTextWords": 59,
+        "brokenImages": [],
+        "ttfbMs": 160.70000004768372,
+        "domContentLoadedMs": 198.20000004768372,
+        "loadMs": 489,
+        "fcpMs": 220,
+        "lcp": {
+          "ms": 220,
+          "tag": "P",
+          "text": "Identify the product, market, exact package size, the field that needs changing, and a primary sourc"
+        },
+        "cls": 0.0022877590038158277,
+        "session": 0.0022877590038158277,
+        "start": 0,
+        "last": 363.10000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 53620,
+          "encodedBytes": 1119182,
+          "js": 241389,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/21-desktop-dark.png"
+    },
+    {
+      "route": "/privacy/",
+      "device": "desktop",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Privacy policy"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "light",
+        "documentHeight": 1826,
+        "visibleTextWords": 185,
+        "allTextWords": 171,
+        "brokenImages": [],
+        "ttfbMs": 158.10000002384186,
+        "domContentLoadedMs": 184.60000002384186,
+        "loadMs": 472,
+        "fcpMs": 204,
+        "lcp": {
+          "ms": 204,
+          "tag": "P",
+          "text": "Calculations and filter selections are processed in your browser. Shared calculation URLs include th"
+        },
+        "cls": 0.004108581040621785,
+        "session": 0.004108581040621785,
+        "start": 0,
+        "last": 345.10000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 36021,
+          "encodedBytes": 1106119,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/22-desktop-light.png"
+    },
+    {
+      "route": "/privacy/",
+      "device": "desktop",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Privacy policy"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "theme": "dark",
+        "documentHeight": 1826,
+        "visibleTextWords": 185,
+        "allTextWords": 171,
+        "brokenImages": [],
+        "ttfbMs": 205.29999995231628,
+        "domContentLoadedMs": 236.5,
+        "loadMs": 534.2999999523163,
+        "fcpMs": 260,
+        "lcp": {
+          "ms": 260,
+          "tag": "P",
+          "text": "Calculations and filter selections are processed in your browser. Shared calculation URLs include th"
+        },
+        "cls": 0.004108581040621785,
+        "session": 0.004108581040621785,
+        "start": 0,
+        "last": 411.60000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 36103,
+          "encodedBytes": 1106201,
+          "js": 244425,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/22-desktop-dark.png"
+    },
+    {
+      "route": "/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Understand peptides. Look beyond the claims."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 14280,
+        "visibleTextWords": 791,
+        "allTextWords": 678,
+        "brokenImages": [],
+        "ttfbMs": 653.7000000476837,
+        "domContentLoadedMs": 1519.5,
+        "loadMs": 1978.7000000476837,
+        "fcpMs": 1324,
+        "lcp": {
+          "ms": 1324,
+          "tag": "P",
+          "text": "Explore peptide ingredients, research, and products in one place. Clear explanations, verifiable sou"
+        },
+        "cls": 0.03286770619563931,
+        "session": 0.03286770619563931,
+        "start": 1556.6000000238419,
+        "last": 1680.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 44,
+          "transferBytes": 1318928,
+          "encodedBytes": 1306028,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/00-mobile-light.png"
+    },
+    {
+      "route": "/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Understand peptides. Look beyond the claims."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 14280,
+        "visibleTextWords": 791,
+        "allTextWords": 678,
+        "brokenImages": [],
+        "ttfbMs": 168.60000002384186,
+        "domContentLoadedMs": 195.69999992847443,
+        "loadMs": 701.3999999761581,
+        "fcpMs": 220,
+        "lcp": {
+          "ms": 220,
+          "tag": "P",
+          "text": "Explore peptide ingredients, research, and products in one place. Clear explanations, verifiable sou"
+        },
+        "cls": 0.031384723767637165,
+        "session": 0.031384723767637165,
+        "start": 0,
+        "last": 707.3999999761581,
+        "longTasks": [],
+        "resources": {
+          "count": 45,
+          "transferBytes": 57289,
+          "encodedBytes": 1125517,
+          "js": 244955,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/00-mobile-dark.png"
+    },
+    {
+      "route": "/search/?q=GHK-Cu",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Follow the question."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 1908,
+        "visibleTextWords": 81,
+        "allTextWords": 89,
+        "brokenImages": [],
+        "ttfbMs": 379.89999997615814,
+        "domContentLoadedMs": 416.3000000715256,
+        "loadMs": 862.8999999761581,
+        "fcpMs": 440,
+        "lcp": {
+          "ms": 440,
+          "tag": "P",
+          "text": "Find documented ingredients, products, guides and comparisons. Search retrieves existing pages; it d"
+        },
+        "cls": 0.017750050537948384,
+        "session": 0.017750050537948384,
+        "start": 0,
+        "last": 582,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 52942,
+          "encodedBytes": 1117008,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/01-mobile-light.png"
+    },
+    {
+      "route": "/search/?q=GHK-Cu",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Follow the question."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 1908,
+        "visibleTextWords": 81,
+        "allTextWords": 89,
+        "brokenImages": [],
+        "ttfbMs": 182.19999992847443,
+        "domContentLoadedMs": 212.60000002384186,
+        "loadMs": 519.6000000238419,
+        "fcpMs": 232,
+        "lcp": {
+          "ms": 232,
+          "tag": "P",
+          "text": "Find documented ingredients, products, guides and comparisons. Search retrieves existing pages; it d"
+        },
+        "cls": 0.018116904209422347,
+        "session": 0.018116904209422347,
+        "start": 0,
+        "last": 395.2000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 53201,
+          "encodedBytes": 1117267,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/01-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The peptide skincare atlas"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 12474,
+        "visibleTextWords": 633,
+        "allTextWords": 518,
+        "brokenImages": [],
+        "ttfbMs": 312.1999999284744,
+        "domContentLoadedMs": 361.3000000715256,
+        "loadMs": 872.3000000715256,
+        "fcpMs": 416,
+        "lcp": {
+          "ms": 560,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.09100935050133357,
+        "session": 0.09100935050133357,
+        "start": 0,
+        "last": 565.8000000715256,
+        "longTasks": [],
+        "resources": {
+          "count": 44,
+          "transferBytes": 554561,
+          "encodedBytes": 1616527,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "url": "https://dequeuniversity.com/rules/axe/4.14/target-size?application=playwright",
+          "nodes": [
+            {
+              "target": [
+                "p:nth-child(4) > a[href$=\"methodology/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Target has insufficient size (142px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.2px instead of at least 24px."
+            }
+          ]
+        }
+      ],
+      "screenshot": "screenshots/02-mobile-light.png"
+    },
+    {
+      "route": "/skincare/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The peptide skincare atlas"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 12474,
+        "visibleTextWords": 633,
+        "allTextWords": 518,
+        "brokenImages": [],
+        "ttfbMs": 289.5,
+        "domContentLoadedMs": 327.1999999284744,
+        "loadMs": 627.3999999761581,
+        "fcpMs": 356,
+        "lcp": {
+          "ms": 508,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.11683253525489845,
+        "session": 0.11683253525489845,
+        "start": 0,
+        "last": 501.5,
+        "longTasks": [],
+        "resources": {
+          "count": 44,
+          "transferBytes": 61382,
+          "encodedBytes": 1123348,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "url": "https://dequeuniversity.com/rules/axe/4.14/target-size?application=playwright",
+          "nodes": [
+            {
+              "target": [
+                "p:nth-child(4) > a[href$=\"methodology/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Target has insufficient size (142px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.2px instead of at least 24px."
+            }
+          ]
+        }
+      ],
+      "screenshot": "screenshots/02-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/products/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Explore peptide skincare products"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 8491,
+        "visibleTextWords": 266,
+        "allTextWords": 251,
+        "brokenImages": [],
+        "ttfbMs": 265.6999999284744,
+        "domContentLoadedMs": 298.5,
+        "loadMs": 592.5,
+        "fcpMs": 320,
+        "lcp": {
+          "ms": 484,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0011260531618901826,
+        "session": 0.0011260531618901826,
+        "start": 0,
+        "last": 474.8000000715256,
+        "longTasks": [],
+        "resources": {
+          "count": 42,
+          "transferBytes": 55879,
+          "encodedBytes": 1118445,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 4
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/03-mobile-light.png"
+    },
+    {
+      "route": "/skincare/products/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Explore peptide skincare products"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 8491,
+        "visibleTextWords": 266,
+        "allTextWords": 251,
+        "brokenImages": [],
+        "ttfbMs": 199.19999992847443,
+        "domContentLoadedMs": 245.5,
+        "loadMs": 631.1999999284744,
+        "fcpMs": 276,
+        "lcp": {
+          "ms": 632,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0008656976878960606,
+        "session": 0.0008656976878960606,
+        "start": 0,
+        "last": 643.0999999046326,
+        "longTasks": [],
+        "resources": {
+          "count": 42,
+          "transferBytes": 55691,
+          "encodedBytes": 1118257,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 4
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/03-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/products/the-ordinary-multi-peptide-copper/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The Ordinary Multi-Peptide + Copper Peptides 1% Serum"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 5381,
+        "visibleTextWords": 389,
+        "allTextWords": 343,
+        "brokenImages": [],
+        "ttfbMs": 175.59999990463257,
+        "domContentLoadedMs": 225,
+        "loadMs": 516.6000000238419,
+        "fcpMs": 260,
+        "lcp": {
+          "ms": 380,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.004333633123435268,
+        "session": 0.004333633123435268,
+        "start": 0,
+        "last": 401.60000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 35,
+          "transferBytes": 36889,
+          "encodedBytes": 1101555,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 5
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/04-mobile-light.png"
+    },
+    {
+      "route": "/skincare/products/the-ordinary-multi-peptide-copper/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The Ordinary Multi-Peptide + Copper Peptides 1% Serum"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 5381,
+        "visibleTextWords": 389,
+        "allTextWords": 343,
+        "brokenImages": [],
+        "ttfbMs": 264.2000000476837,
+        "domContentLoadedMs": 307.60000002384186,
+        "loadMs": 610,
+        "fcpMs": 328,
+        "lcp": {
+          "ms": 472,
+          "tag": "IMG",
+          "text": ""
+        },
+        "cls": 0.0014284580132236644,
+        "session": 0.0014284580132236644,
+        "start": 0,
+        "last": 499.89999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 35,
+          "transferBytes": 36930,
+          "encodedBytes": 1101596,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 5
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/04-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/ingredients/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Cosmetic peptide ingredients"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 7771,
+        "visibleTextWords": 483,
+        "allTextWords": 415,
+        "brokenImages": [],
+        "ttfbMs": 284.7000000476837,
+        "domContentLoadedMs": 319.8000000715256,
+        "loadMs": 626,
+        "fcpMs": 344,
+        "lcp": {
+          "ms": 344,
+          "tag": "H1",
+          "text": "Cosmetic peptide ingredients"
+        },
+        "cls": 0.0011930861350938394,
+        "session": 0.0011930861350938394,
+        "start": 0,
+        "last": 502.90000009536743,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 57220,
+          "encodedBytes": 1121286,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/05-mobile-light.png"
+    },
+    {
+      "route": "/skincare/ingredients/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Cosmetic peptide ingredients"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 7771,
+        "visibleTextWords": 483,
+        "allTextWords": 415,
+        "brokenImages": [],
+        "ttfbMs": 257.89999997615814,
+        "domContentLoadedMs": 287,
+        "loadMs": 595.5999999046326,
+        "fcpMs": 304,
+        "lcp": {
+          "ms": 304,
+          "tag": "H1",
+          "text": "Cosmetic peptide ingredients"
+        },
+        "cls": 0.004346534203608324,
+        "session": 0.004346534203608324,
+        "start": 0,
+        "last": 455.2999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 57407,
+          "encodedBytes": 1121473,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 3
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/05-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/ingredients/copper-tripeptide-1/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Copper Tripeptide-1"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 5507,
+        "visibleTextWords": 422,
+        "allTextWords": 382,
+        "brokenImages": [],
+        "ttfbMs": 280.09999990463257,
+        "domContentLoadedMs": 315.5,
+        "loadMs": 606.2000000476837,
+        "fcpMs": 340,
+        "lcp": {
+          "ms": 340,
+          "tag": "DIV",
+          "text": "Reading the nameThe ingredient is one part of a product. The formula is the whole mixture. A number "
+        },
+        "cls": 0.005022660141584007,
+        "session": 0.005022660141584007,
+        "start": 0,
+        "last": 522.5,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 69415,
+          "encodedBytes": 1133481,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 5
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/06-mobile-light.png"
+    },
+    {
+      "route": "/skincare/ingredients/copper-tripeptide-1/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Copper Tripeptide-1"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 5507,
+        "visibleTextWords": 422,
+        "allTextWords": 382,
+        "brokenImages": [],
+        "ttfbMs": 180,
+        "domContentLoadedMs": 237.19999992847443,
+        "loadMs": 534.7999999523163,
+        "fcpMs": 260,
+        "lcp": {
+          "ms": 260,
+          "tag": "DIV",
+          "text": "Reading the nameThe ingredient is one part of a product. The formula is the whole mixture. A number "
+        },
+        "cls": 0.0054214779855401,
+        "session": 0.0054214779855401,
+        "start": 0,
+        "last": 412,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 42927,
+          "encodedBytes": 1106993,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 5
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/06-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/compare/?a=ordinary-copper&b=niod-cais3",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Compare peptide serums"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 7310,
+        "visibleTextWords": 818,
+        "allTextWords": 4967,
+        "brokenImages": [],
+        "ttfbMs": 282.89999997615814,
+        "domContentLoadedMs": 408,
+        "loadMs": 636.1000000238419,
+        "fcpMs": 416,
+        "lcp": {
+          "ms": 416,
+          "tag": "H1",
+          "text": "Compare peptide serums"
+        },
+        "cls": 0.22023088545410222,
+        "session": 0.22023088545410222,
+        "start": 0,
+        "last": 544.7000000476837,
+        "longTasks": [
+          {
+            "start": 343.5,
+            "duration": 61
+          }
+        ],
+        "resources": {
+          "count": 39,
+          "transferBytes": 50883,
+          "encodedBytes": 1195820,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 6
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/07-mobile-light.png"
+    },
+    {
+      "route": "/skincare/compare/?a=ordinary-copper&b=niod-cais3",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Compare peptide serums"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 7310,
+        "visibleTextWords": 818,
+        "allTextWords": 4967,
+        "brokenImages": [],
+        "ttfbMs": 236.20000004768372,
+        "domContentLoadedMs": 318.7000000476837,
+        "loadMs": 590.3999999761581,
+        "fcpMs": 324,
+        "lcp": {
+          "ms": 324,
+          "tag": "H1",
+          "text": "Compare peptide serums"
+        },
+        "cls": 0.20113467339841856,
+        "session": 0.20113467339841856,
+        "start": 0,
+        "last": 480.5,
+        "longTasks": [],
+        "resources": {
+          "count": 39,
+          "transferBytes": 50788,
+          "encodedBytes": 1114254,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 6
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/07-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/compare/niod-cais3-vs-the-ordinary/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "NIOD CAIS3 vs. The Ordinary copper peptide serum"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 4277,
+        "visibleTextWords": 379,
+        "allTextWords": 5189,
+        "brokenImages": [],
+        "ttfbMs": 375.89999997615814,
+        "domContentLoadedMs": 552.7000000476837,
+        "loadMs": 737.1000000238419,
+        "fcpMs": 568,
+        "lcp": {
+          "ms": 568,
+          "tag": "H1",
+          "text": "NIOD CAIS3 vs. The Ordinary copper peptide serum"
+        },
+        "cls": 0.20589926137384604,
+        "session": 0.20589926137384604,
+        "start": 0,
+        "last": 675,
+        "longTasks": [
+          {
+            "start": 448.60000002384186,
+            "duration": 100
+          }
+        ],
+        "resources": {
+          "count": 39,
+          "transferBytes": 52977,
+          "encodedBytes": 1116443,
+          "js": 241166,
+          "css": 26450
+        },
+        "smallTargets": 7
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/08-mobile-light.png"
+    },
+    {
+      "route": "/skincare/compare/niod-cais3-vs-the-ordinary/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "NIOD CAIS3 vs. The Ordinary copper peptide serum"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 4277,
+        "visibleTextWords": 379,
+        "allTextWords": 5189,
+        "brokenImages": [],
+        "ttfbMs": 256.2999999523163,
+        "domContentLoadedMs": 293.2999999523163,
+        "loadMs": 580.6000000238419,
+        "fcpMs": 324,
+        "lcp": {
+          "ms": 324,
+          "tag": "H1",
+          "text": "NIOD CAIS3 vs. The Ordinary copper peptide serum"
+        },
+        "cls": 0.23081129308252113,
+        "session": 0.23081129308252113,
+        "start": 0,
+        "last": 478.39999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 54250,
+          "encodedBytes": 1119889,
+          "js": 241166,
+          "css": 26450
+        },
+        "smallTargets": 7
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/08-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The Ordinary Matrixyl vs. Multi-Peptide + HA"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 4200,
+        "visibleTextWords": 367,
+        "allTextWords": 3602,
+        "brokenImages": [],
+        "ttfbMs": 191.69999992847443,
+        "domContentLoadedMs": 232.89999997615814,
+        "loadMs": 541.6000000238419,
+        "fcpMs": 272,
+        "lcp": {
+          "ms": 272,
+          "tag": "H1",
+          "text": "The Ordinary Matrixyl vs. Multi-Peptide + HA"
+        },
+        "cls": 0.15503572455219922,
+        "session": 0.15503572455219922,
+        "start": 0,
+        "last": 417.60000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 54926,
+          "encodedBytes": 1373368,
+          "js": 241166,
+          "css": 26450
+        },
+        "smallTargets": 8
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/09-mobile-light.png"
+    },
+    {
+      "route": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "The Ordinary Matrixyl vs. Multi-Peptide + HA"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 4200,
+        "visibleTextWords": 367,
+        "allTextWords": 3602,
+        "brokenImages": [],
+        "ttfbMs": 186,
+        "domContentLoadedMs": 248.29999995231628,
+        "loadMs": 553.6999999284744,
+        "fcpMs": 304,
+        "lcp": {
+          "ms": 304,
+          "tag": "H1",
+          "text": "The Ordinary Matrixyl vs. Multi-Peptide + HA"
+        },
+        "cls": 0.18028758819303942,
+        "session": 0.18028758819303942,
+        "start": 0,
+        "last": 422,
+        "longTasks": [],
+        "resources": {
+          "count": 40,
+          "transferBytes": 55050,
+          "encodedBytes": 1120689,
+          "js": 241166,
+          "css": 26450
+        },
+        "smallTargets": 8
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/09-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/guides/peptide-percentages-explained/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "What peptide percentages on serum labels actually tell you"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [
+          {
+            "tag": "TABLE",
+            "class": "guide-table"
+          },
+          {
+            "tag": "CAPTION",
+            "class": ""
+          },
+          {
+            "tag": "THEAD",
+            "class": ""
+          },
+          {
+            "tag": "TR",
+            "class": ""
+          },
+          {
+            "tag": "TH",
+            "class": ""
+          },
+          {
+            "tag": "TH",
+            "class": ""
+          },
+          {
+            "tag": "TBODY",
+            "class": ""
+          },
+          {
+            "tag": "TR",
+            "class": ""
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 12161,
+        "visibleTextWords": 1336,
+        "allTextWords": 1599,
+        "brokenImages": [],
+        "ttfbMs": 264,
+        "domContentLoadedMs": 302.7999999523163,
+        "loadMs": 596.1000000238419,
+        "fcpMs": 344,
+        "lcp": {
+          "ms": 344,
+          "tag": "H1",
+          "text": "What peptide percentages on serum labels actually tell you"
+        },
+        "cls": 0.13630992602921754,
+        "session": 0.13630992602921754,
+        "start": 0,
+        "last": 492.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 35,
+          "transferBytes": 41149,
+          "encodedBytes": 1105815,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 15
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/10-mobile-light.png"
+    },
+    {
+      "route": "/skincare/guides/peptide-percentages-explained/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "What peptide percentages on serum labels actually tell you"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [
+          {
+            "tag": "TABLE",
+            "class": "guide-table"
+          },
+          {
+            "tag": "CAPTION",
+            "class": ""
+          },
+          {
+            "tag": "THEAD",
+            "class": ""
+          },
+          {
+            "tag": "TR",
+            "class": ""
+          },
+          {
+            "tag": "TH",
+            "class": ""
+          },
+          {
+            "tag": "TH",
+            "class": ""
+          },
+          {
+            "tag": "TBODY",
+            "class": ""
+          },
+          {
+            "tag": "TR",
+            "class": ""
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 12161,
+        "visibleTextWords": 1336,
+        "allTextWords": 1599,
+        "brokenImages": [],
+        "ttfbMs": 178.79999995231628,
+        "domContentLoadedMs": 215.10000002384186,
+        "loadMs": 513.8000000715256,
+        "fcpMs": 240,
+        "lcp": {
+          "ms": 240,
+          "tag": "H1",
+          "text": "What peptide percentages on serum labels actually tell you"
+        },
+        "cls": 0.13630992602921754,
+        "session": 0.13630992602921754,
+        "start": 0,
+        "last": 399.3000000715256,
+        "longTasks": [],
+        "resources": {
+          "count": 35,
+          "transferBytes": 41247,
+          "encodedBytes": 1105913,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 15
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/10-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/choose/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "What are you looking for?"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 2260,
+        "visibleTextWords": 100,
+        "allTextWords": 310,
+        "brokenImages": [],
+        "ttfbMs": 182.29999995231628,
+        "domContentLoadedMs": 209.69999992847443,
+        "loadMs": 514.1999999284744,
+        "fcpMs": 232,
+        "lcp": {
+          "ms": 232,
+          "tag": "P",
+          "text": "These are reading paths, not personalized product recommendations. Editorial drafts · Scientific rev"
+        },
+        "cls": 0.0005591066503332626,
+        "session": 0.0005591066503332626,
+        "start": 0,
+        "last": 384.10000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 36103,
+          "encodedBytes": 1106200,
+          "js": 244424,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/11-mobile-light.png"
+    },
+    {
+      "route": "/skincare/choose/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "What are you looking for?"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 2260,
+        "visibleTextWords": 100,
+        "allTextWords": 310,
+        "brokenImages": [],
+        "ttfbMs": 181,
+        "domContentLoadedMs": 207.20000004768372,
+        "loadMs": 506,
+        "fcpMs": 220,
+        "lcp": {
+          "ms": 220,
+          "tag": "P",
+          "text": "These are reading paths, not personalized product recommendations. Editorial drafts · Scientific rev"
+        },
+        "cls": 0.0005596177891274588,
+        "session": 0.0005596177891274588,
+        "start": 0,
+        "last": 369.5,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 35905,
+          "encodedBytes": 1106002,
+          "js": 244424,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/11-mobile-dark.png"
+    },
+    {
+      "route": "/library/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Start with the right question."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 3305,
+        "visibleTextWords": 156,
+        "allTextWords": 136,
+        "brokenImages": [],
+        "ttfbMs": 182.89999997615814,
+        "domContentLoadedMs": 207.20000004768372,
+        "loadMs": 514,
+        "fcpMs": 224,
+        "lcp": {
+          "ms": 224,
+          "tag": "P",
+          "text": "A skincare label, a medicine and an experimental compound need different kinds of evidence."
+        },
+        "cls": 0.00032261165044052966,
+        "session": 0.00032261165044052966,
+        "start": 0,
+        "last": 374.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 37609,
+          "encodedBytes": 1108237,
+          "js": 244955,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/12-mobile-light.png"
+    },
+    {
+      "route": "/library/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Start with the right question."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 3305,
+        "visibleTextWords": 156,
+        "allTextWords": 136,
+        "brokenImages": [],
+        "ttfbMs": 162.5,
+        "domContentLoadedMs": 192.89999997615814,
+        "loadMs": 484.09999990463257,
+        "fcpMs": 212,
+        "lcp": {
+          "ms": 212,
+          "tag": "P",
+          "text": "A skincare label, a medicine and an experimental compound need different kinds of evidence."
+        },
+        "cls": 0.0010790394727473755,
+        "session": 0.0010790394727473755,
+        "start": 0,
+        "last": 366.7999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 37,
+          "transferBytes": 37535,
+          "encodedBytes": 1108163,
+          "js": 244955,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/12-mobile-dark.png"
+    },
+    {
+      "route": "/library/retatrutide/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Retatrutide: human research and US status"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 2599,
+        "visibleTextWords": 130,
+        "allTextWords": 403,
+        "brokenImages": [],
+        "ttfbMs": 185.10000002384186,
+        "domContentLoadedMs": 216.89999997615814,
+        "loadMs": 511.39999997615814,
+        "fcpMs": 236,
+        "lcp": {
+          "ms": 236,
+          "tag": "P",
+          "text": "Retatrutide has published human trial evidence. That does not make an online vial an approved medici"
+        },
+        "cls": 0.0005324554416555944,
+        "session": 0.0005324554416555944,
+        "start": 0,
+        "last": 388.1999999284744,
+        "longTasks": [],
+        "resources": {
+          "count": 35,
+          "transferBytes": 32814,
+          "encodedBytes": 1098311,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/13-mobile-light.png"
+    },
+    {
+      "route": "/library/retatrutide/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Retatrutide: human research and US status"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 2599,
+        "visibleTextWords": 130,
+        "allTextWords": 403,
+        "brokenImages": [],
+        "ttfbMs": 331,
+        "domContentLoadedMs": 372.59999990463257,
+        "loadMs": 677,
+        "fcpMs": 392,
+        "lcp": {
+          "ms": 392,
+          "tag": "P",
+          "text": "Retatrutide has published human trial evidence. That does not make an online vial an approved medici"
+        },
+        "cls": 0.0005324554416555944,
+        "session": 0.0005324554416555944,
+        "start": 0,
+        "last": 554.0999999046326,
+        "longTasks": [],
+        "resources": {
+          "count": 35,
+          "transferBytes": 32810,
+          "encodedBytes": 1098307,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 1
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/13-mobile-dark.png"
+    },
+    {
+      "route": "/skincare/identify/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Know what’s on your shelf."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 3473,
+        "visibleTextWords": 186,
+        "allTextWords": 155,
+        "brokenImages": [],
+        "ttfbMs": 302,
+        "domContentLoadedMs": 324.7000000476837,
+        "loadMs": 612.8000000715256,
+        "fcpMs": 344,
+        "lcp": {
+          "ms": 344,
+          "tag": "P",
+          "text": "Find your facial peptide serum. Understand the ingredients, the evidence and its limits."
+        },
+        "cls": 0.01430684706590494,
+        "session": 0.01430684706590494,
+        "start": 0,
+        "last": 499.5,
+        "longTasks": [],
+        "resources": {
+          "count": 46,
+          "transferBytes": 147698,
+          "encodedBytes": 1847748,
+          "js": 244424,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/14-mobile-light.png"
+    },
+    {
+      "route": "/skincare/identify/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Know what’s on your shelf."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 3473,
+        "visibleTextWords": 186,
+        "allTextWords": 155,
+        "brokenImages": [],
+        "ttfbMs": 175.70000004768372,
+        "domContentLoadedMs": 207.10000002384186,
+        "loadMs": 508.7999999523163,
+        "fcpMs": 224,
+        "lcp": {
+          "ms": 224,
+          "tag": "P",
+          "text": "Find your facial peptide serum. Understand the ingredients, the evidence and its limits."
+        },
+        "cls": 0.01430684706590494,
+        "session": 0.01430684706590494,
+        "start": 0,
+        "last": 402.2000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 46,
+          "transferBytes": 39986,
+          "encodedBytes": 1107083,
+          "js": 244424,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/14-mobile-dark.png"
+    },
+    {
+      "route": "/tools/price-per-ml/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Price per mL & US fl oz calculator"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 2832,
+        "visibleTextWords": 111,
+        "allTextWords": 89,
+        "brokenImages": [],
+        "ttfbMs": 173.29999995231628,
+        "domContentLoadedMs": 200.39999997615814,
+        "loadMs": 489.89999997615814,
+        "fcpMs": 216,
+        "lcp": {
+          "ms": 216,
+          "tag": "H1",
+          "text": "Price per mL & US fl oz calculator"
+        },
+        "cls": 0.0007831366240880852,
+        "session": 0.0007831366240880852,
+        "start": 0,
+        "last": 380.89999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 33,
+          "transferBytes": 28740,
+          "encodedBytes": 1094006,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/15-mobile-light.png"
+    },
+    {
+      "route": "/tools/price-per-ml/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Price per mL & US fl oz calculator"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 2832,
+        "visibleTextWords": 111,
+        "allTextWords": 89,
+        "brokenImages": [],
+        "ttfbMs": 172.30000007152557,
+        "domContentLoadedMs": 202.39999997615814,
+        "loadMs": 503.39999997615814,
+        "fcpMs": 216,
+        "lcp": {
+          "ms": 216,
+          "tag": "H1",
+          "text": "Price per mL & US fl oz calculator"
+        },
+        "cls": 0.0007831366240880852,
+        "session": 0.0007831366240880852,
+        "start": 0,
+        "last": 390.2999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 33,
+          "transferBytes": 28666,
+          "encodedBytes": 1093932,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/15-mobile-dark.png"
+    },
+    {
+      "route": "/haircare/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Look closer at your scalp serum."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 2752,
+        "visibleTextWords": 127,
+        "allTextWords": 111,
+        "brokenImages": [],
+        "ttfbMs": 157.60000002384186,
+        "domContentLoadedMs": 186.70000004768372,
+        "loadMs": 502,
+        "fcpMs": 200,
+        "lcp": {
+          "ms": 200,
+          "tag": "P",
+          "text": "Understand the label, explore the research and see what remains unanswered."
+        },
+        "cls": 0.026176508095214646,
+        "session": 0.026176508095214646,
+        "start": 0,
+        "last": 373.10000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 38,
+          "transferBytes": 72091,
+          "encodedBytes": 1136688,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/16-mobile-light.png"
+    },
+    {
+      "route": "/haircare/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Look closer at your scalp serum."
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 2752,
+        "visibleTextWords": 127,
+        "allTextWords": 111,
+        "brokenImages": [],
+        "ttfbMs": 177.10000002384186,
+        "domContentLoadedMs": 210.79999995231628,
+        "loadMs": 552,
+        "fcpMs": 228,
+        "lcp": {
+          "ms": 228,
+          "tag": "P",
+          "text": "Understand the label, explore the research and see what remains unanswered."
+        },
+        "cls": 0.026176508095214646,
+        "session": 0.026176508095214646,
+        "start": 0,
+        "last": 389.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 38,
+          "transferBytes": 45021,
+          "encodedBytes": 1109618,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/16-mobile-dark.png"
+    },
+    {
+      "route": "/haircare/products/the-ordinary-hair-density/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Multi-Peptide Serum for Hair Density"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 2802,
+        "visibleTextWords": 156,
+        "allTextWords": 463,
+        "brokenImages": [],
+        "ttfbMs": 206.39999997615814,
+        "domContentLoadedMs": 238.29999995231628,
+        "loadMs": 536.5,
+        "fcpMs": 260,
+        "lcp": {
+          "ms": 260,
+          "tag": "P",
+          "text": "The brand positions this as a cosmetic for fuller-looking hair. The selected peptides are Biotinoyl "
+        },
+        "cls": 0.11707210816747958,
+        "session": 0.11707210816747958,
+        "start": 0,
+        "last": 415.89999997615814,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 33080,
+          "encodedBytes": 1098277,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/17-mobile-light.png"
+    },
+    {
+      "route": "/haircare/products/the-ordinary-hair-density/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Multi-Peptide Serum for Hair Density"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 2802,
+        "visibleTextWords": 156,
+        "allTextWords": 463,
+        "brokenImages": [],
+        "ttfbMs": 188.10000002384186,
+        "domContentLoadedMs": 222.20000004768372,
+        "loadMs": 519,
+        "fcpMs": 240,
+        "lcp": {
+          "ms": 240,
+          "tag": "P",
+          "text": "The brand positions this as a cosmetic for fuller-looking hair. The selected peptides are Biotinoyl "
+        },
+        "cls": 0.10392285807378282,
+        "session": 0.10392285807378282,
+        "start": 0,
+        "last": 383.60000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 33126,
+          "encodedBytes": 1098323,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/17-mobile-dark.png"
+    },
+    {
+      "route": "/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Biotinoyl Tripeptide-1"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 2125,
+        "visibleTextWords": 74,
+        "allTextWords": 175,
+        "brokenImages": [],
+        "ttfbMs": 206.89999997615814,
+        "domContentLoadedMs": 264.5,
+        "loadMs": 556.7999999523163,
+        "fcpMs": 268,
+        "lcp": {
+          "ms": 268,
+          "tag": "P",
+          "text": "The manufacturer lists this peptide alongside apigenin and oleanolic acid in Procapil.[1]"
+        },
+        "cls": 0.0014040080534596466,
+        "session": 0.0014040080534596466,
+        "start": 0,
+        "last": 422,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 39757,
+          "encodedBytes": 1104954,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/18-mobile-light.png"
+    },
+    {
+      "route": "/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Biotinoyl Tripeptide-1"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 2125,
+        "visibleTextWords": 74,
+        "allTextWords": 175,
+        "brokenImages": [],
+        "ttfbMs": 170.20000004768372,
+        "domContentLoadedMs": 210.20000004768372,
+        "loadMs": 516.2999999523163,
+        "fcpMs": 228,
+        "lcp": {
+          "ms": 228,
+          "tag": "P",
+          "text": "The manufacturer lists this peptide alongside apigenin and oleanolic acid in Procapil.[1]"
+        },
+        "cls": 0.0012830625359596941,
+        "session": 0.0012830625359596941,
+        "start": 0,
+        "last": 384.2000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 36,
+          "transferBytes": 39569,
+          "encodedBytes": 1104766,
+          "js": 239524,
+          "css": 26450
+        },
+        "smallTargets": 0
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/18-mobile-dark.png"
+    },
+    {
+      "route": "/methodology/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Our methodology"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 3730,
+        "visibleTextWords": 440,
+        "allTextWords": 420,
+        "brokenImages": [],
+        "ttfbMs": 173,
+        "domContentLoadedMs": 202.80000007152557,
+        "loadMs": 498.60000002384186,
+        "fcpMs": 220,
+        "lcp": {
+          "ms": 220,
+          "tag": "P",
+          "text": "Selected label ingredients are compared by exact name, ignoring letter case. We do not merge synonym"
+        },
+        "cls": 0.00027516545058828474,
+        "session": 0.00027516545058828474,
+        "start": 0,
+        "last": 381.90000009536743,
+        "longTasks": [],
+        "resources": {
+          "count": 33,
+          "transferBytes": 28574,
+          "encodedBytes": 1093840,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/19-mobile-light.png"
+    },
+    {
+      "route": "/methodology/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Our methodology"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 3730,
+        "visibleTextWords": 440,
+        "allTextWords": 420,
+        "brokenImages": [],
+        "ttfbMs": 170.69999992847443,
+        "domContentLoadedMs": 194.89999997615814,
+        "loadMs": 497.39999997615814,
+        "fcpMs": 208,
+        "lcp": {
+          "ms": 208,
+          "tag": "P",
+          "text": "Selected label ingredients are compared by exact name, ignoring letter case. We do not merge synonym"
+        },
+        "cls": 0.001490343940255218,
+        "session": 0.001490343940255218,
+        "start": 0,
+        "last": 367.60000002384186,
+        "longTasks": [],
+        "resources": {
+          "count": 33,
+          "transferBytes": 28619,
+          "encodedBytes": 1093885,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/19-mobile-dark.png"
+    },
+    {
+      "route": "/sources/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Our sources"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 5696,
+        "visibleTextWords": 765,
+        "allTextWords": 725,
+        "brokenImages": [],
+        "ttfbMs": 211.5,
+        "domContentLoadedMs": 240,
+        "loadMs": 553.7000000476837,
+        "fcpMs": 264,
+        "lcp": {
+          "ms": 264,
+          "tag": "SMALL",
+          "text": "Cosmetic Ingredient Review / International Journal of Toxicology · Research / ingredient reference ·"
+        },
+        "cls": 0.05112115111138132,
+        "session": 0.05112115111138132,
+        "start": 0,
+        "last": 416,
+        "longTasks": [],
+        "resources": {
+          "count": 33,
+          "transferBytes": 28685,
+          "encodedBytes": 1093951,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 10
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/20-mobile-light.png"
+    },
+    {
+      "route": "/sources/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Our sources"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 5696,
+        "visibleTextWords": 765,
+        "allTextWords": 725,
+        "brokenImages": [],
+        "ttfbMs": 200.70000004768372,
+        "domContentLoadedMs": 225.89999997615814,
+        "loadMs": 534.2999999523163,
+        "fcpMs": 240,
+        "lcp": {
+          "ms": 240,
+          "tag": "SMALL",
+          "text": "Cosmetic Ingredient Review / International Journal of Toxicology · Research / ingredient reference ·"
+        },
+        "cls": 0.050893514369515336,
+        "session": 0.050893514369515336,
+        "start": 0,
+        "last": 390,
+        "longTasks": [],
+        "resources": {
+          "count": 33,
+          "transferBytes": 28652,
+          "encodedBytes": 1093918,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 10
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/20-mobile-dark.png"
+    },
+    {
+      "route": "/contact/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Contact & corrections"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 1860,
+        "visibleTextWords": 67,
+        "allTextWords": 59,
+        "brokenImages": [],
+        "ttfbMs": 254,
+        "domContentLoadedMs": 281.2999999523163,
+        "loadMs": 582.7000000476837,
+        "fcpMs": 296,
+        "lcp": {
+          "ms": 296,
+          "tag": "P",
+          "text": "Identify the product, market, exact package size, the field that needs changing, and a primary sourc"
+        },
+        "cls": 0.001570380356374606,
+        "session": 0.001570380356374606,
+        "start": 0,
+        "last": 450.2999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 38,
+          "transferBytes": 58042,
+          "encodedBytes": 1121808,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/21-mobile-light.png"
+    },
+    {
+      "route": "/contact/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Contact & corrections"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 1860,
+        "visibleTextWords": 67,
+        "allTextWords": 59,
+        "brokenImages": [],
+        "ttfbMs": 177.39999997615814,
+        "domContentLoadedMs": 197.79999995231628,
+        "loadMs": 488.59999990463257,
+        "fcpMs": 208,
+        "lcp": {
+          "ms": 208,
+          "tag": "P",
+          "text": "Identify the product, market, exact package size, the field that needs changing, and a primary sourc"
+        },
+        "cls": 0.001570380356374606,
+        "session": 0.001570380356374606,
+        "start": 0,
+        "last": 360.2999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 38,
+          "transferBytes": 57911,
+          "encodedBytes": 1121677,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/21-mobile-dark.png"
+    },
+    {
+      "route": "/privacy/",
+      "device": "mobile",
+      "theme": "light",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Privacy policy"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "light",
+        "documentHeight": 2469,
+        "visibleTextWords": 185,
+        "allTextWords": 171,
+        "brokenImages": [],
+        "ttfbMs": 246.19999992847443,
+        "domContentLoadedMs": 281.60000002384186,
+        "loadMs": 578.7999999523163,
+        "fcpMs": 296,
+        "lcp": {
+          "ms": 296,
+          "tag": "P",
+          "text": "No third-party analytics provider, advertising cookie, or tracking identifier is enabled. The event "
+        },
+        "cls": 0.00027516545058828474,
+        "session": 0.00027516545058828474,
+        "start": 0,
+        "last": 446.7000000476837,
+        "longTasks": [],
+        "resources": {
+          "count": 33,
+          "transferBytes": 28737,
+          "encodedBytes": 1094003,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/22-mobile-light.png"
+    },
+    {
+      "route": "/privacy/",
+      "device": "mobile",
+      "theme": "dark",
+      "status": 200,
+      "metrics": {
+        "h1": [
+          "Privacy policy"
+        ],
+        "horizontalOverflow": false,
+        "overflowElements": [],
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "theme": "dark",
+        "documentHeight": 2469,
+        "visibleTextWords": 185,
+        "allTextWords": 171,
+        "brokenImages": [],
+        "ttfbMs": 166.20000004768372,
+        "domContentLoadedMs": 191.39999997615814,
+        "loadMs": 488.7999999523163,
+        "fcpMs": 204,
+        "lcp": {
+          "ms": 204,
+          "tag": "P",
+          "text": "No third-party analytics provider, advertising cookie, or tracking identifier is enabled. The event "
+        },
+        "cls": 0.00027516545058828474,
+        "session": 0.00027516545058828474,
+        "start": 0,
+        "last": 356.7999999523163,
+        "longTasks": [],
+        "resources": {
+          "count": 33,
+          "transferBytes": 28608,
+          "encodedBytes": 1093874,
+          "js": 238993,
+          "css": 26450
+        },
+        "smallTargets": 2
+      },
+      "errors": [],
+      "violations": [],
+      "screenshot": "screenshots/22-mobile-dark.png"
+    }
+  ],
+  "journeys": [
+    {
+      "name": "universal keyboard search GHK-Cu",
+      "passed": true
+    },
+    {
+      "name": "catalog brand filter",
+      "passed": false,
+      "error": "locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Brand', { exact: true })\u001b[22m\n"
+    },
+    {
+      "name": "calculator valid and invalid input",
+      "passed": true
+    },
+    {
+      "name": "identify manual match and confirmation",
+      "passed": true
+    },
+    {
+      "name": "scanner local QR lookup and focus return",
+      "passed": true
+    },
+    {
+      "name": "comparison preselected pair and reader evidence tab",
+      "passed": true
+    },
+    {
+      "name": "citation dialog closes and restores focus",
+      "passed": true
+    }
+  ],
+  "queries": [
+    {
+      "query": "GHK-Cu",
+      "results": [
+        {
+          "category": "Peptides & ingredients 1",
+          "entries": [
+            {
+              "title": "Copper Tripeptide-1",
+              "href": "/skincare/ingredients/copper-tripeptide-1/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "copper peptides",
+      "results": [
+        {
+          "category": "Peptides & ingredients 20",
+          "entries": [
+            {
+              "title": "Copper Palmitoyl Heptapeptide-14",
+              "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/"
+            },
+            {
+              "title": "Copper Tripeptide-1",
+              "href": "/skincare/ingredients/copper-tripeptide-1/"
+            },
+            {
+              "title": "Tripeptide-1 Copper Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-copper-acetate/"
+            },
+            {
+              "title": "Heptapeptide-15 Palmitate",
+              "href": "/skincare/ingredients/heptapeptide-15-palmitate/"
+            },
+            {
+              "title": "Acetyl Hexapeptide-8",
+              "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-2",
+              "href": "/skincare/ingredients/acetyl-tetrapeptide-2/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-3",
+              "href": "/haircare/ingredients/acetyl-tetrapeptide-3/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-5",
+              "href": "/skincare/ingredients/acetyl-tetrapeptide-5/"
+            },
+            {
+              "title": "Biotinoyl Tripeptide-1",
+              "href": "/haircare/ingredients/biotinoyl-tripeptide-1/"
+            },
+            {
+              "title": "Carnosine",
+              "href": "/skincare/ingredients/carnosine/"
+            },
+            {
+              "title": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+              "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/"
+            },
+            {
+              "title": "Palmitoyl Pentapeptide-4",
+              "href": "/skincare/ingredients/palmitoyl-pentapeptide-4/"
+            },
+            {
+              "title": "Palmitoyl sh-Hexapeptide-13 Serine SP Amide",
+              "href": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/"
+            },
+            {
+              "title": "Palmitoyl Tetrapeptide-7",
+              "href": "/skincare/ingredients/palmitoyl-tetrapeptide-7/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-1",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-1/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-38",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-38/"
+            },
+            {
+              "title": "Pentapeptide-18",
+              "href": "/skincare/ingredients/pentapeptide-18/"
+            },
+            {
+              "title": "Tetrapeptide-21",
+              "href": "/skincare/ingredients/tetrapeptide-21/"
+            },
+            {
+              "title": "Tripeptide-1 Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-acetate/"
+            },
+            {
+              "title": "Tripeptide-29",
+              "href": "/skincare/ingredients/tripeptide-29/"
+            }
+          ]
+        },
+        {
+          "category": "Products 11",
+          "entries": [
+            {
+              "title": "Multi-Peptide + Copper Peptides 1% Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+            },
+            {
+              "title": "Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+              "href": "/skincare/products/niod-cais3/"
+            },
+            {
+              "title": "Liquid Peptides",
+              "href": "/skincare/products/medik8-liquid-peptides/"
+            },
+            {
+              "title": "Power Peptides",
+              "href": "/skincare/products/geek-and-gorgeous-power-peptides/"
+            },
+            {
+              "title": "Multi-Peptide Advanced Serum",
+              "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+            },
+            {
+              "title": "The 6 Peptide Skin Booster Serum Mini",
+              "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+            },
+            {
+              "title": "Argireline Solution 10%",
+              "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+            },
+            {
+              "title": "Matrixyl 10% + HA",
+              "href": "/skincare/products/the-ordinary-matrixyl-10-ha/"
+            },
+            {
+              "title": "Multi-Peptide + HA Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+            },
+            {
+              "title": "Multi-Peptide Serum for Hair Density",
+              "href": "/haircare/products/the-ordinary-hair-density/"
+            },
+            {
+              "title": "P-TIOX Anti-Wrinkle Serum",
+              "href": "/skincare/products/skinceuticals-ptiox/"
+            }
+          ]
+        },
+        {
+          "category": "Guides & articles 3",
+          "entries": [
+            {
+              "title": "Cosmetic, prescription or experimental?",
+              "href": "/library/peptide-categories/"
+            },
+            {
+              "title": "Matrixyl 3000 vs Matrixyl synthe’6: what the names mean",
+              "href": "/skincare/guides/matrixyl-3000-vs-synthe6/"
+            },
+            {
+              "title": "What peptide percentages on serum labels actually tell you",
+              "href": "/skincare/guides/peptide-percentages-explained/"
+            }
+          ]
+        },
+        {
+          "category": "Comparisons 10",
+          "entries": [
+            {
+              "title": "COSRX 6 Peptide Mini vs The Ordinary Copper Peptides",
+              "href": "/skincare/compare/cosrx-six-peptide-vs-the-ordinary-copper/"
+            },
+            {
+              "title": "The Ordinary Multi-Peptide + HA vs. Copper Peptides",
+              "href": "/skincare/compare/the-ordinary-multi-peptide-ha-vs-copper/"
+            },
+            {
+              "title": "Geek & Gorgeous Power Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+              "href": "/skincare/compare/niod-cais3-vs-the-ordinary/"
+            },
+            {
+              "title": "Medik8 Liquid Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/medik8-liquid-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "Naturium Multi-Peptide Advanced Serum vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/naturium-multi-peptide-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "SkinCeuticals P-TIOX vs The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/skinceuticals-ptiox-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "The Ordinary Argireline vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-argireline-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "The Ordinary Matrixyl vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "Timeless Matrixyl Synthe’6 vs. The Ordinary Matrixyl 10% + HA",
+              "href": "/skincare/compare/timeless-synthe6-vs-the-ordinary-matrixyl/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "GHKCu",
+      "results": []
+    },
+    {
+      "query": "coper peptides",
+      "results": [
+        {
+          "category": "Peptides & ingredients 20",
+          "entries": [
+            {
+              "title": "Acetyl Hexapeptide-8",
+              "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-2",
+              "href": "/skincare/ingredients/acetyl-tetrapeptide-2/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-3",
+              "href": "/haircare/ingredients/acetyl-tetrapeptide-3/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-5",
+              "href": "/skincare/ingredients/acetyl-tetrapeptide-5/"
+            },
+            {
+              "title": "Biotinoyl Tripeptide-1",
+              "href": "/haircare/ingredients/biotinoyl-tripeptide-1/"
+            },
+            {
+              "title": "Carnosine",
+              "href": "/skincare/ingredients/carnosine/"
+            },
+            {
+              "title": "Copper Palmitoyl Heptapeptide-14",
+              "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/"
+            },
+            {
+              "title": "Copper Tripeptide-1",
+              "href": "/skincare/ingredients/copper-tripeptide-1/"
+            },
+            {
+              "title": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+              "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/"
+            },
+            {
+              "title": "Heptapeptide-15 Palmitate",
+              "href": "/skincare/ingredients/heptapeptide-15-palmitate/"
+            },
+            {
+              "title": "Palmitoyl Pentapeptide-4",
+              "href": "/skincare/ingredients/palmitoyl-pentapeptide-4/"
+            },
+            {
+              "title": "Palmitoyl sh-Hexapeptide-13 Serine SP Amide",
+              "href": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/"
+            },
+            {
+              "title": "Palmitoyl Tetrapeptide-7",
+              "href": "/skincare/ingredients/palmitoyl-tetrapeptide-7/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-1",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-1/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-38",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-38/"
+            },
+            {
+              "title": "Pentapeptide-18",
+              "href": "/skincare/ingredients/pentapeptide-18/"
+            },
+            {
+              "title": "Tetrapeptide-21",
+              "href": "/skincare/ingredients/tetrapeptide-21/"
+            },
+            {
+              "title": "Tripeptide-1 Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-acetate/"
+            },
+            {
+              "title": "Tripeptide-1 Copper Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-copper-acetate/"
+            },
+            {
+              "title": "Tripeptide-29",
+              "href": "/skincare/ingredients/tripeptide-29/"
+            }
+          ]
+        },
+        {
+          "category": "Products 11",
+          "entries": [
+            {
+              "title": "Liquid Peptides",
+              "href": "/skincare/products/medik8-liquid-peptides/"
+            },
+            {
+              "title": "Multi-Peptide + Copper Peptides 1% Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+            },
+            {
+              "title": "Power Peptides",
+              "href": "/skincare/products/geek-and-gorgeous-power-peptides/"
+            },
+            {
+              "title": "Argireline Solution 10%",
+              "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+            },
+            {
+              "title": "Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+              "href": "/skincare/products/niod-cais3/"
+            },
+            {
+              "title": "Matrixyl 10% + HA",
+              "href": "/skincare/products/the-ordinary-matrixyl-10-ha/"
+            },
+            {
+              "title": "Multi-Peptide + HA Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+            },
+            {
+              "title": "Multi-Peptide Advanced Serum",
+              "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+            },
+            {
+              "title": "Multi-Peptide Serum for Hair Density",
+              "href": "/haircare/products/the-ordinary-hair-density/"
+            },
+            {
+              "title": "P-TIOX Anti-Wrinkle Serum",
+              "href": "/skincare/products/skinceuticals-ptiox/"
+            },
+            {
+              "title": "The 6 Peptide Skin Booster Serum Mini",
+              "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+            }
+          ]
+        },
+        {
+          "category": "Guides & articles 3",
+          "entries": [
+            {
+              "title": "Cosmetic, prescription or experimental?",
+              "href": "/library/peptide-categories/"
+            },
+            {
+              "title": "Matrixyl 3000 vs Matrixyl synthe’6: what the names mean",
+              "href": "/skincare/guides/matrixyl-3000-vs-synthe6/"
+            },
+            {
+              "title": "What peptide percentages on serum labels actually tell you",
+              "href": "/skincare/guides/peptide-percentages-explained/"
+            }
+          ]
+        },
+        {
+          "category": "Comparisons 10",
+          "entries": [
+            {
+              "title": "COSRX 6 Peptide Mini vs The Ordinary Copper Peptides",
+              "href": "/skincare/compare/cosrx-six-peptide-vs-the-ordinary-copper/"
+            },
+            {
+              "title": "Geek & Gorgeous Power Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "Medik8 Liquid Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/medik8-liquid-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "The Ordinary Multi-Peptide + HA vs. Copper Peptides",
+              "href": "/skincare/compare/the-ordinary-multi-peptide-ha-vs-copper/"
+            },
+            {
+              "title": "Naturium Multi-Peptide Advanced Serum vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/naturium-multi-peptide-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+              "href": "/skincare/compare/niod-cais3-vs-the-ordinary/"
+            },
+            {
+              "title": "SkinCeuticals P-TIOX vs The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/skinceuticals-ptiox-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "The Ordinary Argireline vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-argireline-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "The Ordinary Matrixyl vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "Timeless Matrixyl Synthe’6 vs. The Ordinary Matrixyl 10% + HA",
+              "href": "/skincare/compare/timeless-synthe6-vs-the-ordinary-matrixyl/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "What does 10% peptide mean?",
+      "results": [
+        {
+          "category": "Peptides & ingredients 20",
+          "entries": [
+            {
+              "title": "Acetyl Hexapeptide-8",
+              "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-2",
+              "href": "/skincare/ingredients/acetyl-tetrapeptide-2/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-3",
+              "href": "/haircare/ingredients/acetyl-tetrapeptide-3/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-5",
+              "href": "/skincare/ingredients/acetyl-tetrapeptide-5/"
+            },
+            {
+              "title": "Biotinoyl Tripeptide-1",
+              "href": "/haircare/ingredients/biotinoyl-tripeptide-1/"
+            },
+            {
+              "title": "Copper Palmitoyl Heptapeptide-14",
+              "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/"
+            },
+            {
+              "title": "Copper Tripeptide-1",
+              "href": "/skincare/ingredients/copper-tripeptide-1/"
+            },
+            {
+              "title": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+              "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/"
+            },
+            {
+              "title": "Heptapeptide-15 Palmitate",
+              "href": "/skincare/ingredients/heptapeptide-15-palmitate/"
+            },
+            {
+              "title": "Palmitoyl Pentapeptide-4",
+              "href": "/skincare/ingredients/palmitoyl-pentapeptide-4/"
+            },
+            {
+              "title": "Palmitoyl sh-Hexapeptide-13 Serine SP Amide",
+              "href": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/"
+            },
+            {
+              "title": "Palmitoyl Tetrapeptide-7",
+              "href": "/skincare/ingredients/palmitoyl-tetrapeptide-7/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-1",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-1/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-38",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-38/"
+            },
+            {
+              "title": "Pentapeptide-18",
+              "href": "/skincare/ingredients/pentapeptide-18/"
+            },
+            {
+              "title": "Tetrapeptide-21",
+              "href": "/skincare/ingredients/tetrapeptide-21/"
+            },
+            {
+              "title": "Tripeptide-1 Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-acetate/"
+            },
+            {
+              "title": "Tripeptide-1 Copper Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-copper-acetate/"
+            },
+            {
+              "title": "Tripeptide-29",
+              "href": "/skincare/ingredients/tripeptide-29/"
+            },
+            {
+              "title": "Carnosine",
+              "href": "/skincare/ingredients/carnosine/"
+            }
+          ]
+        },
+        {
+          "category": "Products 11",
+          "entries": [
+            {
+              "title": "Argireline Solution 10%",
+              "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+            },
+            {
+              "title": "Matrixyl 10% + HA",
+              "href": "/skincare/products/the-ordinary-matrixyl-10-ha/"
+            },
+            {
+              "title": "Liquid Peptides",
+              "href": "/skincare/products/medik8-liquid-peptides/"
+            },
+            {
+              "title": "Multi-Peptide + Copper Peptides 1% Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+            },
+            {
+              "title": "Multi-Peptide + HA Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+            },
+            {
+              "title": "Multi-Peptide Advanced Serum",
+              "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+            },
+            {
+              "title": "Multi-Peptide Serum for Hair Density",
+              "href": "/haircare/products/the-ordinary-hair-density/"
+            },
+            {
+              "title": "Power Peptides",
+              "href": "/skincare/products/geek-and-gorgeous-power-peptides/"
+            },
+            {
+              "title": "The 6 Peptide Skin Booster Serum Mini",
+              "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+            },
+            {
+              "title": "Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+              "href": "/skincare/products/niod-cais3/"
+            },
+            {
+              "title": "P-TIOX Anti-Wrinkle Serum",
+              "href": "/skincare/products/skinceuticals-ptiox/"
+            }
+          ]
+        },
+        {
+          "category": "Guides & articles 3",
+          "entries": [
+            {
+              "title": "Matrixyl 3000 vs Matrixyl synthe’6: what the names mean",
+              "href": "/skincare/guides/matrixyl-3000-vs-synthe6/"
+            },
+            {
+              "title": "What peptide percentages on serum labels actually tell you",
+              "href": "/skincare/guides/peptide-percentages-explained/"
+            },
+            {
+              "title": "Cosmetic, prescription or experimental?",
+              "href": "/library/peptide-categories/"
+            }
+          ]
+        },
+        {
+          "category": "Comparisons 10",
+          "entries": [
+            {
+              "title": "The Ordinary Argireline vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-argireline-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "The Ordinary Matrixyl vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "Timeless Matrixyl Synthe’6 vs. The Ordinary Matrixyl 10% + HA",
+              "href": "/skincare/compare/timeless-synthe6-vs-the-ordinary-matrixyl/"
+            },
+            {
+              "title": "COSRX 6 Peptide Mini vs The Ordinary Copper Peptides",
+              "href": "/skincare/compare/cosrx-six-peptide-vs-the-ordinary-copper/"
+            },
+            {
+              "title": "Geek & Gorgeous Power Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "Medik8 Liquid Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/medik8-liquid-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "Naturium Multi-Peptide Advanced Serum vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/naturium-multi-peptide-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+              "href": "/skincare/compare/niod-cais3-vs-the-ordinary/"
+            },
+            {
+              "title": "SkinCeuticals P-TIOX vs The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/skinceuticals-ptiox-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "The Ordinary Multi-Peptide + HA vs. Copper Peptides",
+              "href": "/skincare/compare/the-ordinary-multi-peptide-ha-vs-copper/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "The Ordinary",
+      "results": [
+        {
+          "category": "Products 5",
+          "entries": [
+            {
+              "title": "Argireline Solution 10%",
+              "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+            },
+            {
+              "title": "Matrixyl 10% + HA",
+              "href": "/skincare/products/the-ordinary-matrixyl-10-ha/"
+            },
+            {
+              "title": "Multi-Peptide + Copper Peptides 1% Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+            },
+            {
+              "title": "Multi-Peptide + HA Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+            },
+            {
+              "title": "Multi-Peptide Serum for Hair Density",
+              "href": "/haircare/products/the-ordinary-hair-density/"
+            }
+          ]
+        },
+        {
+          "category": "Comparisons 10",
+          "entries": [
+            {
+              "title": "COSRX 6 Peptide Mini vs The Ordinary Copper Peptides",
+              "href": "/skincare/compare/cosrx-six-peptide-vs-the-ordinary-copper/"
+            },
+            {
+              "title": "Geek & Gorgeous Power Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "Medik8 Liquid Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/medik8-liquid-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "Naturium Multi-Peptide Advanced Serum vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/naturium-multi-peptide-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+              "href": "/skincare/compare/niod-cais3-vs-the-ordinary/"
+            },
+            {
+              "title": "SkinCeuticals P-TIOX vs The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/skinceuticals-ptiox-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "The Ordinary Argireline vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-argireline-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "The Ordinary Matrixyl vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "The Ordinary Multi-Peptide + HA vs. Copper Peptides",
+              "href": "/skincare/compare/the-ordinary-multi-peptide-ha-vs-copper/"
+            },
+            {
+              "title": "Timeless Matrixyl Synthe’6 vs. The Ordinary Matrixyl 10% + HA",
+              "href": "/skincare/compare/timeless-synthe6-vs-the-ordinary-matrixyl/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Peptide serums",
+      "results": [
+        {
+          "category": "Peptides & ingredients 20",
+          "entries": [
+            {
+              "title": "Acetyl Hexapeptide-8",
+              "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-2",
+              "href": "/skincare/ingredients/acetyl-tetrapeptide-2/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-3",
+              "href": "/haircare/ingredients/acetyl-tetrapeptide-3/"
+            },
+            {
+              "title": "Acetyl Tetrapeptide-5",
+              "href": "/skincare/ingredients/acetyl-tetrapeptide-5/"
+            },
+            {
+              "title": "Biotinoyl Tripeptide-1",
+              "href": "/haircare/ingredients/biotinoyl-tripeptide-1/"
+            },
+            {
+              "title": "Copper Palmitoyl Heptapeptide-14",
+              "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/"
+            },
+            {
+              "title": "Copper Tripeptide-1",
+              "href": "/skincare/ingredients/copper-tripeptide-1/"
+            },
+            {
+              "title": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+              "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/"
+            },
+            {
+              "title": "Heptapeptide-15 Palmitate",
+              "href": "/skincare/ingredients/heptapeptide-15-palmitate/"
+            },
+            {
+              "title": "Palmitoyl Pentapeptide-4",
+              "href": "/skincare/ingredients/palmitoyl-pentapeptide-4/"
+            },
+            {
+              "title": "Palmitoyl sh-Hexapeptide-13 Serine SP Amide",
+              "href": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/"
+            },
+            {
+              "title": "Palmitoyl Tetrapeptide-7",
+              "href": "/skincare/ingredients/palmitoyl-tetrapeptide-7/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-1",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-1/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-38",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-38/"
+            },
+            {
+              "title": "Pentapeptide-18",
+              "href": "/skincare/ingredients/pentapeptide-18/"
+            },
+            {
+              "title": "Tetrapeptide-21",
+              "href": "/skincare/ingredients/tetrapeptide-21/"
+            },
+            {
+              "title": "Tripeptide-1 Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-acetate/"
+            },
+            {
+              "title": "Tripeptide-1 Copper Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-copper-acetate/"
+            },
+            {
+              "title": "Tripeptide-29",
+              "href": "/skincare/ingredients/tripeptide-29/"
+            },
+            {
+              "title": "Carnosine",
+              "href": "/skincare/ingredients/carnosine/"
+            }
+          ]
+        },
+        {
+          "category": "Products 12",
+          "entries": [
+            {
+              "title": "Liquid Peptides",
+              "href": "/skincare/products/medik8-liquid-peptides/"
+            },
+            {
+              "title": "Multi-Peptide + Copper Peptides 1% Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+            },
+            {
+              "title": "Multi-Peptide + HA Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+            },
+            {
+              "title": "Multi-Peptide Advanced Serum",
+              "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+            },
+            {
+              "title": "Multi-Peptide Serum for Hair Density",
+              "href": "/haircare/products/the-ordinary-hair-density/"
+            },
+            {
+              "title": "Power Peptides",
+              "href": "/skincare/products/geek-and-gorgeous-power-peptides/"
+            },
+            {
+              "title": "The 6 Peptide Skin Booster Serum Mini",
+              "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+            },
+            {
+              "title": "Argireline Solution 10%",
+              "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+            },
+            {
+              "title": "Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+              "href": "/skincare/products/niod-cais3/"
+            },
+            {
+              "title": "Matrixyl 10% + HA",
+              "href": "/skincare/products/the-ordinary-matrixyl-10-ha/"
+            },
+            {
+              "title": "P-TIOX Anti-Wrinkle Serum",
+              "href": "/skincare/products/skinceuticals-ptiox/"
+            },
+            {
+              "title": "Matrixyl Synthe’6 Serum",
+              "href": "/skincare/products/timeless-matrixyl-synthe6-serum/"
+            }
+          ]
+        },
+        {
+          "category": "Guides & articles 3",
+          "entries": [
+            {
+              "title": "What peptide percentages on serum labels actually tell you",
+              "href": "/skincare/guides/peptide-percentages-explained/"
+            },
+            {
+              "title": "Matrixyl 3000 vs Matrixyl synthe’6: what the names mean",
+              "href": "/skincare/guides/matrixyl-3000-vs-synthe6/"
+            },
+            {
+              "title": "Cosmetic, prescription or experimental?",
+              "href": "/library/peptide-categories/"
+            }
+          ]
+        },
+        {
+          "category": "Comparisons 10",
+          "entries": [
+            {
+              "title": "COSRX 6 Peptide Mini vs The Ordinary Copper Peptides",
+              "href": "/skincare/compare/cosrx-six-peptide-vs-the-ordinary-copper/"
+            },
+            {
+              "title": "Geek & Gorgeous Power Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "Medik8 Liquid Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/medik8-liquid-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "Naturium Multi-Peptide Advanced Serum vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/naturium-multi-peptide-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+              "href": "/skincare/compare/niod-cais3-vs-the-ordinary/"
+            },
+            {
+              "title": "SkinCeuticals P-TIOX vs The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/skinceuticals-ptiox-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "The Ordinary Argireline vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-argireline-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "The Ordinary Matrixyl vs. Multi-Peptide + HA",
+              "href": "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/"
+            },
+            {
+              "title": "The Ordinary Multi-Peptide + HA vs. Copper Peptides",
+              "href": "/skincare/compare/the-ordinary-multi-peptide-ha-vs-copper/"
+            },
+            {
+              "title": "Timeless Matrixyl Synthe’6 vs. The Ordinary Matrixyl 10% + HA",
+              "href": "/skincare/compare/timeless-synthe6-vs-the-ordinary-matrixyl/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Products with copper peptides",
+      "results": [
+        {
+          "category": "Peptides & ingredients 4",
+          "entries": [
+            {
+              "title": "Copper Palmitoyl Heptapeptide-14",
+              "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/"
+            },
+            {
+              "title": "Copper Tripeptide-1",
+              "href": "/skincare/ingredients/copper-tripeptide-1/"
+            },
+            {
+              "title": "Tripeptide-1 Copper Acetate",
+              "href": "/skincare/ingredients/tripeptide-1-copper-acetate/"
+            },
+            {
+              "title": "Heptapeptide-15 Palmitate",
+              "href": "/skincare/ingredients/heptapeptide-15-palmitate/"
+            }
+          ]
+        },
+        {
+          "category": "Products 6",
+          "entries": [
+            {
+              "title": "Multi-Peptide + Copper Peptides 1% Serum",
+              "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+            },
+            {
+              "title": "Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+              "href": "/skincare/products/niod-cais3/"
+            },
+            {
+              "title": "Liquid Peptides",
+              "href": "/skincare/products/medik8-liquid-peptides/"
+            },
+            {
+              "title": "Power Peptides",
+              "href": "/skincare/products/geek-and-gorgeous-power-peptides/"
+            },
+            {
+              "title": "Multi-Peptide Advanced Serum",
+              "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+            },
+            {
+              "title": "The 6 Peptide Skin Booster Serum Mini",
+              "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+            }
+          ]
+        },
+        {
+          "category": "Guides & articles 3",
+          "entries": [
+            {
+              "title": "Cosmetic, prescription or experimental?",
+              "href": "/library/peptide-categories/"
+            },
+            {
+              "title": "Matrixyl 3000 vs Matrixyl synthe’6: what the names mean",
+              "href": "/skincare/guides/matrixyl-3000-vs-synthe6/"
+            },
+            {
+              "title": "What peptide percentages on serum labels actually tell you",
+              "href": "/skincare/guides/peptide-percentages-explained/"
+            }
+          ]
+        },
+        {
+          "category": "Comparisons 4",
+          "entries": [
+            {
+              "title": "COSRX 6 Peptide Mini vs The Ordinary Copper Peptides",
+              "href": "/skincare/compare/cosrx-six-peptide-vs-the-ordinary-copper/"
+            },
+            {
+              "title": "The Ordinary Multi-Peptide + HA vs. Copper Peptides",
+              "href": "/skincare/compare/the-ordinary-multi-peptide-ha-vs-copper/"
+            },
+            {
+              "title": "Geek & Gorgeous Power Peptides vs. The Ordinary Multi-Peptide + HA",
+              "href": "/skincare/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/"
+            },
+            {
+              "title": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+              "href": "/skincare/compare/niod-cais3-vs-the-ordinary/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "What did the research actually test?",
+      "results": [
+        {
+          "category": "Peptides & ingredients 4",
+          "entries": [
+            {
+              "title": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+              "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/"
+            },
+            {
+              "title": "Oligopeptide-68",
+              "href": "/skincare/ingredients/oligopeptide-68/"
+            },
+            {
+              "title": "Palmitoyl Tripeptide-8",
+              "href": "/skincare/ingredients/palmitoyl-tripeptide-8/"
+            },
+            {
+              "title": "sh-Polypeptide-121",
+              "href": "/skincare/ingredients/sh-polypeptide-121/"
+            }
+          ]
+        },
+        {
+          "category": "Guides & articles 4",
+          "entries": [
+            {
+              "title": "Our methodology",
+              "href": "/methodology/"
+            },
+            {
+              "title": "Retatrutide: human research and US status",
+              "href": "/library/retatrutide/"
+            },
+            {
+              "title": "BPC-157: what a small human pilot can tell us",
+              "href": "/library/bpc-157/"
+            },
+            {
+              "title": "Cosmetic, prescription or experimental?",
+              "href": "/library/peptide-categories/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "zzzzzzzzzz",
+      "results": []
+    }
+  ]
+}

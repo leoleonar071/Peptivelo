@@ -3,9 +3,11 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ||
     (process.env.NODE_ENV === "production" ? "https://peptivelo.com" : "http://localhost:3000"),
   indexable: process.env.SITE_INDEXABLE === "true",
-  contact: process.env.CONTACT_EMAIL?.trim() || undefined,
+  contact: process.env.CONTACT_EMAIL?.trim() || "suppor@peptivelo.com",
   operator: process.env.SITE_OPERATOR_NAME?.trim() || undefined,
-  hostingProvider: process.env.HOSTING_PROVIDER?.trim() || undefined,
+  hostingProvider: process.env.HOSTING_PROVIDER?.trim() || "Cloudflare Workers",
+  operatingJurisdiction: process.env.SITE_OPERATING_JURISDICTION?.trim() || undefined,
+  hostingLogRetention: process.env.HOSTING_LOG_RETENTION?.trim() || undefined,
 };
 export const date = "2026-10-18";
 export const productPath = (slug: string) => `/skincare/products/${slug}/`;

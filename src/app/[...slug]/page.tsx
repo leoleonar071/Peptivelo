@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { catalog, products, brandName, priceFor } from "@/lib/data";
 import { site, ingredientPath } from "@/lib/config";
+import { ProductOffers } from "@/components/product-offers";
 import { parseRows } from "@/lib/calculator";
 import { pages } from "@/lib/pages";
 import { normalize, money } from "@/lib/math";
@@ -218,7 +219,7 @@ export default async function Page({ params, searchParams }: Props) {
             Compare these products <ArrowRight size={16} />
           </Link>
           <p>
-            <Link href="/methodology/">See our methodology</Link>
+            <Link className="standalone-text-link" href="/methodology/">See our methodology</Link>
           </p>
         </section>
         <ComparisonGuides />
@@ -238,7 +239,7 @@ export default async function Page({ params, searchParams }: Props) {
   else if (path === "sources")
     body = (
       <>
-        <SourceList ids={catalog.sources.map((s) => s.id)} />
+        <SourceList ids={catalog.sources.map((s) => s.id)} anchors />
         <div className="prose">
           <h2>What these sources establish</h2>
           <p>
@@ -296,7 +297,7 @@ export default async function Page({ params, searchParams }: Props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View full-size product photo <ArrowUpRight size={16} />
+              View product identification record <ArrowUpRight size={16} />
             </a>
             <p className="photo-credit">
               Photograph: {brandName(p)}. Packaging may change.
@@ -341,6 +342,7 @@ export default async function Page({ params, searchParams }: Props) {
             <AffiliateDisclosure />
           </div>
         </div>
+        <ProductOffers product={p} market={get("market")} sort={get("offerSort")} />
         <div className="two-col section">
           <section className="panel">
             <h2>Selected label ingredients</h2>
@@ -374,7 +376,7 @@ export default async function Page({ params, searchParams }: Props) {
         <div className="button-row">
           <Link
             className="button"
-            href={`/skincare/compare/?a=${p.id}&b=${products.find((x) => x.id !== p.id)!.id}`}
+            href={`/skincare/compare/?a=${p.id}`}
           >
             Choose a comparison
           </Link>

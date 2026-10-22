@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 const productCount = JSON.parse(readFileSync(new URL("../src/data/catalog.json", import.meta.url), "utf8")).products.filter((p: { editorialStatus: string }) => p.editorialStatus === "published").length;
 
-test("home product photos lead to a preselected comparison", async ({
+test("home product records lead to a preselected comparison", async ({
   page,
 }, testInfo) => {
   await page.goto("/");
@@ -12,7 +12,7 @@ test("home product photos lead to a preselected comparison", async ({
     await photo.scrollIntoViewIfNeeded();
     await expect(photo).toHaveAttribute(
       "alt",
-      /(?:\d+ mL|1 US fl oz).*manufacturer product photograph/,
+      /(?:\d+ mL|1 US fl oz).*product record, not a packaging photograph/,
     );
     await expect
       .poll(() =>

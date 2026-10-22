@@ -1,0 +1,1025 @@
+{
+  "method": "Fresh browser context per sample; 390x844, Chromium, no CPU/network throttling; 1.2s observation after load/fonts. Lab only, not field Core Web Vitals or Lighthouse.",
+  "samples": [
+    {
+      "route": "/",
+      "run": 1,
+      "metrics": {
+        "lcp": 1468,
+        "cls": 0.031384723767637165,
+        "session": 0.031384723767637165,
+        "start": 1698.3999999761581,
+        "last": 1732.5,
+        "shifts": [
+          {
+            "value": 0.03086817572116644,
+            "time": 1698.3999999761581,
+            "sources": [
+              {
+                "tag": "DIV",
+                "class": "hero-search",
+                "text": "Search existing documents. Use arrow keys to choose a suggestion, Ente",
+                "previous": {
+                  "x": 0,
+                  "y": 450.578125,
+                  "width": 390,
+                  "height": 184
+                },
+                "current": {
+                  "x": 0,
+                  "y": 490.578125,
+                  "width": 390,
+                  "height": 184
+                }
+              },
+              {
+                "tag": "DIV",
+                "class": "hero-start",
+                "text": "Suggested searchesGHK-CuCopper peptidesSerum ingredientsPeptide concen",
+                "previous": {
+                  "x": 18,
+                  "y": 690.578125,
+                  "width": 354,
+                  "height": 124.796875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 730.578125,
+                  "width": 354,
+                  "height": 113.421875
+                }
+              },
+              {
+                "tag": "P",
+                "class": "home-hero-description",
+                "text": "Explore peptide ingredients, research, and products in one place. Clea",
+                "previous": {
+                  "x": 18,
+                  "y": 375.390625,
+                  "width": 354,
+                  "height": 99.1875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 415.390625,
+                  "width": 354,
+                  "height": 99.1875
+                }
+              },
+              {
+                "tag": "NAV",
+                "class": "hero-shortcuts",
+                "text": "Identify a productCompare productsPeptide libraryPrice calculator",
+                "previous": {
+                  "x": 18,
+                  "y": 578.578125,
+                  "width": 354,
+                  "height": 96
+                },
+                "current": {
+                  "x": 18,
+                  "y": 618.578125,
+                  "width": 354,
+                  "height": 96
+                }
+              },
+              {
+                "text": "Look beyond the claims.",
+                "previous": {
+                  "x": 18,
+                  "y": 274.390625,
+                  "width": 354,
+                  "height": 85
+                },
+                "current": {
+                  "x": 18,
+                  "y": 312.390625,
+                  "width": 354,
+                  "height": 85
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.0005165480464707235,
+            "time": 1732.5,
+            "sources": [
+              {
+                "text": "Look beyond the claims.",
+                "previous": {
+                  "x": 18,
+                  "y": 312.390625,
+                  "width": 354,
+                  "height": 90
+                },
+                "current": {
+                  "x": 18,
+                  "y": 310.390625,
+                  "width": 354,
+                  "height": 90
+                }
+              }
+            ]
+          }
+        ],
+        "fonts": "loaded",
+        "ttfb": 663.1000000238419
+      }
+    },
+    {
+      "route": "/",
+      "run": 2,
+      "metrics": {
+        "lcp": 1432,
+        "cls": 0.03286770619563931,
+        "session": 0.03286770619563931,
+        "start": 1728.5,
+        "last": 1818.1000000238419,
+        "shifts": [
+          {
+            "value": 0.030811734479666467,
+            "time": 1728.5,
+            "sources": [
+              {
+                "tag": "DIV",
+                "class": "hero-search",
+                "text": "Search existing documents. Use arrow keys to choose a suggestion, Ente",
+                "previous": {
+                  "x": 0,
+                  "y": 450.578125,
+                  "width": 390,
+                  "height": 184
+                },
+                "current": {
+                  "x": 0,
+                  "y": 490.578125,
+                  "width": 390,
+                  "height": 184
+                }
+              },
+              {
+                "tag": "DIV",
+                "class": "hero-start",
+                "text": "Suggested searchesGHK-CuCopper peptidesSerum ingredientsPeptide concen",
+                "previous": {
+                  "x": 18,
+                  "y": 690.578125,
+                  "width": 354,
+                  "height": 124.796875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 730.578125,
+                  "width": 354,
+                  "height": 113.421875
+                }
+              },
+              {
+                "tag": "P",
+                "class": "home-hero-description",
+                "text": "Explore peptide ingredients, research, and products in one place. Clea",
+                "previous": {
+                  "x": 18,
+                  "y": 375.390625,
+                  "width": 354,
+                  "height": 99.1875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 415.390625,
+                  "width": 354,
+                  "height": 99.1875
+                }
+              },
+              {
+                "tag": "NAV",
+                "class": "hero-shortcuts",
+                "text": "Identify a productCompare productsPeptide libraryPrice calculator",
+                "previous": {
+                  "x": 18,
+                  "y": 578.578125,
+                  "width": 354,
+                  "height": 96
+                },
+                "current": {
+                  "x": 18,
+                  "y": 618.578125,
+                  "width": 354,
+                  "height": 96
+                }
+              },
+              {
+                "text": "Look beyond the claims.",
+                "previous": {
+                  "x": 18,
+                  "y": 274.390625,
+                  "width": 354,
+                  "height": 90
+                },
+                "current": {
+                  "x": 18,
+                  "y": 310.390625,
+                  "width": 354,
+                  "height": 90
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.0020559717159728424,
+            "time": 1818.1000000238419,
+            "sources": [
+              {
+                "text": "Explore peptide ingredients, research, and products in one place. Clea",
+                "previous": {
+                  "x": 18,
+                  "y": 418.390625,
+                  "width": 354,
+                  "height": 94.390625
+                },
+                "current": {
+                  "x": 18,
+                  "y": 417.390625,
+                  "width": 354,
+                  "height": 94.390625
+                }
+              },
+              {
+                "text": "Suggested searches",
+                "previous": {
+                  "x": 18,
+                  "y": 740.578125,
+                  "width": 354,
+                  "height": 16
+                },
+                "current": {
+                  "x": 18,
+                  "y": 740.578125,
+                  "width": 354,
+                  "height": 16
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Copper peptides",
+                "previous": {
+                  "x": 111.609375,
+                  "y": 767.375,
+                  "width": 110.40625,
+                  "height": 44
+                },
+                "current": {
+                  "x": 105.109375,
+                  "y": 767.375,
+                  "width": 117.65625,
+                  "height": 44
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Peptide concentrations",
+                "previous": {
+                  "x": 121.359375,
+                  "y": 811.375,
+                  "width": 147.265625,
+                  "height": 32.625
+                },
+                "current": {
+                  "x": 116.421875,
+                  "y": 811.375,
+                  "width": 157.15625,
+                  "height": 32.625
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Independent by design ",
+                "previous": {
+                  "x": 127.609375,
+                  "y": 4,
+                  "width": 134.78125,
+                  "height": 32
+                },
+                "current": {
+                  "x": 123.640625,
+                  "y": 4,
+                  "width": 142.71875,
+                  "height": 32
+                }
+              }
+            ]
+          }
+        ],
+        "fonts": "loaded",
+        "ttfb": 666.7999999523163
+      }
+    },
+    {
+      "route": "/",
+      "run": 3,
+      "metrics": {
+        "lcp": 1008,
+        "cls": 0.03286770619563931,
+        "session": 0.03286770619563931,
+        "start": 1244.7999999523163,
+        "last": 1348.7999999523163,
+        "shifts": [
+          {
+            "value": 0.030811734479666467,
+            "time": 1244.7999999523163,
+            "sources": [
+              {
+                "tag": "DIV",
+                "class": "hero-search",
+                "text": "Search existing documents. Use arrow keys to choose a suggestion, Ente",
+                "previous": {
+                  "x": 0,
+                  "y": 450.578125,
+                  "width": 390,
+                  "height": 184
+                },
+                "current": {
+                  "x": 0,
+                  "y": 490.578125,
+                  "width": 390,
+                  "height": 184
+                }
+              },
+              {
+                "tag": "DIV",
+                "class": "hero-start",
+                "text": "Suggested searchesGHK-CuCopper peptidesSerum ingredientsPeptide concen",
+                "previous": {
+                  "x": 18,
+                  "y": 690.578125,
+                  "width": 354,
+                  "height": 124.796875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 730.578125,
+                  "width": 354,
+                  "height": 113.421875
+                }
+              },
+              {
+                "tag": "P",
+                "class": "home-hero-description",
+                "text": "Explore peptide ingredients, research, and products in one place. Clea",
+                "previous": {
+                  "x": 18,
+                  "y": 375.390625,
+                  "width": 354,
+                  "height": 99.1875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 415.390625,
+                  "width": 354,
+                  "height": 99.1875
+                }
+              },
+              {
+                "tag": "NAV",
+                "class": "hero-shortcuts",
+                "text": "Identify a productCompare productsPeptide libraryPrice calculator",
+                "previous": {
+                  "x": 18,
+                  "y": 578.578125,
+                  "width": 354,
+                  "height": 96
+                },
+                "current": {
+                  "x": 18,
+                  "y": 618.578125,
+                  "width": 354,
+                  "height": 96
+                }
+              },
+              {
+                "text": "Look beyond the claims.",
+                "previous": {
+                  "x": 18,
+                  "y": 274.390625,
+                  "width": 354,
+                  "height": 90
+                },
+                "current": {
+                  "x": 18,
+                  "y": 310.390625,
+                  "width": 354,
+                  "height": 90
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.0020559717159728424,
+            "time": 1348.7999999523163,
+            "sources": [
+              {
+                "text": "Explore peptide ingredients, research, and products in one place. Clea",
+                "previous": {
+                  "x": 18,
+                  "y": 418.390625,
+                  "width": 354,
+                  "height": 94.390625
+                },
+                "current": {
+                  "x": 18,
+                  "y": 417.390625,
+                  "width": 354,
+                  "height": 94.390625
+                }
+              },
+              {
+                "text": "Suggested searches",
+                "previous": {
+                  "x": 18,
+                  "y": 740.578125,
+                  "width": 354,
+                  "height": 16
+                },
+                "current": {
+                  "x": 18,
+                  "y": 740.578125,
+                  "width": 354,
+                  "height": 16
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Copper peptides",
+                "previous": {
+                  "x": 111.609375,
+                  "y": 767.375,
+                  "width": 110.40625,
+                  "height": 44
+                },
+                "current": {
+                  "x": 105.109375,
+                  "y": 767.375,
+                  "width": 117.65625,
+                  "height": 44
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Peptide concentrations",
+                "previous": {
+                  "x": 121.359375,
+                  "y": 811.375,
+                  "width": 147.265625,
+                  "height": 32.625
+                },
+                "current": {
+                  "x": 116.421875,
+                  "y": 811.375,
+                  "width": 157.15625,
+                  "height": 32.625
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Independent by design ",
+                "previous": {
+                  "x": 127.609375,
+                  "y": 4,
+                  "width": 134.78125,
+                  "height": 32
+                },
+                "current": {
+                  "x": 123.640625,
+                  "y": 4,
+                  "width": 142.71875,
+                  "height": 32
+                }
+              }
+            ]
+          }
+        ],
+        "fonts": "loaded",
+        "ttfb": 294
+      }
+    },
+    {
+      "route": "/skincare/compare/niod-cais3-vs-the-ordinary/",
+      "run": 1,
+      "metrics": {
+        "lcp": 1020,
+        "cls": 0.23076032318586043,
+        "session": 0.23076032318586043,
+        "start": 1216.7000000476837,
+        "last": 1286.3999999761581,
+        "shifts": [
+          {
+            "value": 0.027901945959383043,
+            "time": 1216.7000000476837,
+            "sources": [
+              {
+                "tag": "ARTICLE",
+                "class": "editorial-reader",
+                "text": " Editorial draft · Scientific review pending Updated 2026-10-20NIODCop",
+                "previous": {
+                  "x": 17,
+                  "y": 322.359375,
+                  "width": 355,
+                  "height": 521.640625
+                },
+                "current": {
+                  "x": 17,
+                  "y": 290.171875,
+                  "width": 355,
+                  "height": 553.828125
+                }
+              },
+              {
+                "text": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+                "previous": {
+                  "x": 18,
+                  "y": 205.796875,
+                  "width": 354,
+                  "height": 70.1875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 202.796875,
+                  "width": 355,
+                  "height": 70.1875
+                }
+              },
+              {
+                "text": "Peptivelo",
+                "previous": {
+                  "x": 72,
+                  "y": 58.59375,
+                  "width": 92,
+                  "height": 32
+                },
+                "current": {
+                  "x": 72,
+                  "y": 55.59375,
+                  "width": 95,
+                  "height": 32
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "eyebrow",
+                "text": "THE SHORT VERSION",
+                "previous": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "current": {
+                  "x": 39,
+                  "y": 831.09375,
+                  "width": 152.71875,
+                  "height": 12.90625
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "beta",
+                "text": "BETA",
+                "previous": {
+                  "x": 171.84375,
+                  "y": 62.5,
+                  "width": 42.453125,
+                  "height": 19
+                },
+                "current": {
+                  "x": 174.9375,
+                  "y": 62.5,
+                  "width": 41.390625,
+                  "height": 19
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.2028583772264774,
+            "time": 1286.3999999761581,
+            "sources": [
+              {
+                "tag": "ARTICLE",
+                "class": "editorial-reader",
+                "text": " Editorial draft · Scientific review pending Updated 2026-10-20NIODCop",
+                "previous": {
+                  "x": 17,
+                  "y": 290.171875,
+                  "width": 355,
+                  "height": 553.828125
+                },
+                "current": {
+                  "x": 17,
+                  "y": 316.96875,
+                  "width": 355,
+                  "height": 527.03125
+                }
+              },
+              {
+                "tag": "DIV",
+                "class": "page-heading",
+                "text": "PEPTIVELO / THE SKINCARE EDITIONNIOD CAIS3 vs. The Ordinary copper pep",
+                "previous": {
+                  "x": 18,
+                  "y": 202.796875,
+                  "width": 355,
+                  "height": 87.375
+                },
+                "current": {
+                  "x": 18,
+                  "y": 229.59375,
+                  "width": 355,
+                  "height": 87.375
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "",
+                "text": "/ niod cais3 vs the ordinary",
+                "previous": {
+                  "x": 188.203125,
+                  "y": 169,
+                  "width": 171.234375,
+                  "height": 20.796875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 195.796875,
+                  "width": 179.34375,
+                  "height": 20.796875
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Independent by design ",
+                "previous": {
+                  "x": 127.609375,
+                  "y": 4,
+                  "width": 134.78125,
+                  "height": 32
+                },
+                "current": {
+                  "x": 123.640625,
+                  "y": 4,
+                  "width": 142.71875,
+                  "height": 32
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "eyebrow",
+                "text": "THE SHORT VERSION",
+                "previous": {
+                  "x": 39,
+                  "y": 831.09375,
+                  "width": 152.71875,
+                  "height": 12.90625
+                },
+                "current": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                }
+              }
+            ]
+          }
+        ],
+        "fonts": "loaded",
+        "ttfb": 212.80000007152557
+      }
+    },
+    {
+      "route": "/skincare/compare/niod-cais3-vs-the-ordinary/",
+      "run": 2,
+      "metrics": {
+        "lcp": 924,
+        "cls": 0.20589926137384604,
+        "session": 0.20589926137384604,
+        "start": 1277.6000000238419,
+        "last": 1277.6000000238419,
+        "shifts": [
+          {
+            "value": 0.20589926137384604,
+            "time": 1277.6000000238419,
+            "sources": [
+              {
+                "tag": "ARTICLE",
+                "class": "editorial-reader",
+                "text": " Editorial draft · Scientific review pending Updated 2026-10-20NIODCop",
+                "previous": {
+                  "x": 17,
+                  "y": 322.359375,
+                  "width": 355,
+                  "height": 521.640625
+                },
+                "current": {
+                  "x": 17,
+                  "y": 316.96875,
+                  "width": 355,
+                  "height": 527.03125
+                }
+              },
+              {
+                "tag": "DIV",
+                "class": "page-heading",
+                "text": "PEPTIVELO / THE SKINCARE EDITIONNIOD CAIS3 vs. The Ordinary copper pep",
+                "previous": {
+                  "x": 18,
+                  "y": 205.796875,
+                  "width": 354,
+                  "height": 116.5625
+                },
+                "current": {
+                  "x": 18,
+                  "y": 229.59375,
+                  "width": 355,
+                  "height": 87.375
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "",
+                "text": "/ niod cais3 vs the ordinary",
+                "previous": {
+                  "x": 188.203125,
+                  "y": 169,
+                  "width": 171.234375,
+                  "height": 20.796875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 195.796875,
+                  "width": 179.34375,
+                  "height": 20.796875
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Independent by design ",
+                "previous": {
+                  "x": 127.609375,
+                  "y": 4,
+                  "width": 134.78125,
+                  "height": 32
+                },
+                "current": {
+                  "x": 123.640625,
+                  "y": 4,
+                  "width": 142.71875,
+                  "height": 32
+                }
+              },
+              {
+                "text": "Peptivelo",
+                "previous": {
+                  "x": 72,
+                  "y": 58.59375,
+                  "width": 92,
+                  "height": 32
+                },
+                "current": {
+                  "x": 72,
+                  "y": 55.59375,
+                  "width": 95,
+                  "height": 32
+                }
+              }
+            ]
+          }
+        ],
+        "fonts": "loaded",
+        "ttfb": 315.2999999523163
+      }
+    },
+    {
+      "route": "/skincare/compare/niod-cais3-vs-the-ordinary/",
+      "run": 3,
+      "metrics": {
+        "lcp": 1036,
+        "cls": 0.23081129308252113,
+        "session": 0.23081129308252113,
+        "start": 1304.6999999284744,
+        "last": 1492,
+        "shifts": [
+          {
+            "value": 0.00005096989666069427,
+            "time": 1304.6999999284744,
+            "sources": [
+              {
+                "tag": "DIV",
+                "class": "",
+                "text": "THE SHORT VERSIONWhat matters in 30 seconds.The key findings, without ",
+                "previous": {
+                  "x": 18,
+                  "y": 834.28125,
+                  "width": 354,
+                  "height": 9.71875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 838.28125,
+                  "width": 354,
+                  "height": 5.71875
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.027901945959383043,
+            "time": 1457.8999999761581,
+            "sources": [
+              {
+                "tag": "ARTICLE",
+                "class": "editorial-reader",
+                "text": " Editorial draft · Scientific review pending Updated 2026-10-20NIODCop",
+                "previous": {
+                  "x": 17,
+                  "y": 322.359375,
+                  "width": 355,
+                  "height": 521.640625
+                },
+                "current": {
+                  "x": 17,
+                  "y": 290.171875,
+                  "width": 355,
+                  "height": 553.828125
+                }
+              },
+              {
+                "text": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
+                "previous": {
+                  "x": 18,
+                  "y": 205.796875,
+                  "width": 354,
+                  "height": 70.1875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 202.796875,
+                  "width": 355,
+                  "height": 70.1875
+                }
+              },
+              {
+                "text": "Peptivelo",
+                "previous": {
+                  "x": 72,
+                  "y": 58.59375,
+                  "width": 92,
+                  "height": 32
+                },
+                "current": {
+                  "x": 72,
+                  "y": 55.59375,
+                  "width": 95,
+                  "height": 32
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "eyebrow",
+                "text": "THE SHORT VERSION",
+                "previous": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0
+                },
+                "current": {
+                  "x": 39,
+                  "y": 835.09375,
+                  "width": 152.71875,
+                  "height": 8.90625
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "beta",
+                "text": "BETA",
+                "previous": {
+                  "x": 171.84375,
+                  "y": 62.5,
+                  "width": 42.453125,
+                  "height": 19
+                },
+                "current": {
+                  "x": 174.9375,
+                  "y": 62.5,
+                  "width": 41.390625,
+                  "height": 19
+                }
+              }
+            ]
+          },
+          {
+            "value": 0.2028583772264774,
+            "time": 1492,
+            "sources": [
+              {
+                "tag": "ARTICLE",
+                "class": "editorial-reader",
+                "text": " Editorial draft · Scientific review pending Updated 2026-10-20NIODCop",
+                "previous": {
+                  "x": 17,
+                  "y": 290.171875,
+                  "width": 355,
+                  "height": 553.828125
+                },
+                "current": {
+                  "x": 18,
+                  "y": 316.96875,
+                  "width": 354,
+                  "height": 527.03125
+                }
+              },
+              {
+                "tag": "DIV",
+                "class": "page-heading",
+                "text": "PEPTIVELO / THE SKINCARE EDITIONNIOD CAIS3 vs. The Ordinary copper pep",
+                "previous": {
+                  "x": 18,
+                  "y": 202.796875,
+                  "width": 355,
+                  "height": 87.375
+                },
+                "current": {
+                  "x": 18,
+                  "y": 229.59375,
+                  "width": 355,
+                  "height": 87.375
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "",
+                "text": "/ niod cais3 vs the ordinary",
+                "previous": {
+                  "x": 188.203125,
+                  "y": 169,
+                  "width": 171.234375,
+                  "height": 20.796875
+                },
+                "current": {
+                  "x": 18,
+                  "y": 195.796875,
+                  "width": 179.34375,
+                  "height": 20.796875
+                }
+              },
+              {
+                "tag": "A",
+                "class": "",
+                "text": "Independent by design ",
+                "previous": {
+                  "x": 127.609375,
+                  "y": 4,
+                  "width": 134.78125,
+                  "height": 32
+                },
+                "current": {
+                  "x": 123.640625,
+                  "y": 4,
+                  "width": 142.71875,
+                  "height": 32
+                }
+              },
+              {
+                "tag": "SPAN",
+                "class": "",
+                "text": "/ compare",
+                "previous": {
+                  "x": 121.5,
+                  "y": 169,
+                  "width": 61.703125,
+                  "height": 20.796875
+                },
+                "current": {
+                  "x": 128.203125,
+                  "y": 169,
+                  "width": 65.34375,
+                  "height": 20.796875
+                }
+              }
+            ]
+          }
+        ],
+        "fonts": "loaded",
+        "ttfb": 260.39999997615814
+      }
+    }
+  ]
+}

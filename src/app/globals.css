@@ -60,6 +60,14 @@ button {
 a:hover {
   color: var(--focus);
 }
+.standalone-text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 8px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 :focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 4px;

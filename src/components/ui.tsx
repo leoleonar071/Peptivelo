@@ -24,7 +24,7 @@ export function Bottle({
         height={720}
         unoptimized
         priority={priority}
-        alt={`${brandName(product)} ${product.name}, ${volumeLabel(product)} — manufacturer product photograph`}
+        alt={`${brandName(product)} ${product.name}, ${volumeLabel(product)} — product record, not a packaging photograph`}
       />
     </div>
   );
@@ -96,13 +96,13 @@ export function ProductCard({ product: p }: { product: Product }) {
     </article>
   );
 }
-export function SourceList({ ids }: { ids: string[] }) {
+export function SourceList({ ids, anchors = false }: { ids: string[]; anchors?: boolean }) {
   return (
     <div className="source-list">
       {catalog.sources
         .filter((s) => ids.includes(s.id))
         .map((s) => (
-          <div key={s.id}>
+          <div key={s.id} id={anchors ? `source-${s.id}` : undefined}>
             <a href={s.url} target="_blank" rel="noopener noreferrer">
               {s.title} <ArrowUpRight size={14} />
             </a>
@@ -180,7 +180,7 @@ export function LoadingState() {
 export function AffiliateDisclosure() {
   return (
     <p className="disclosure">
-      No affiliate partnerships are active. Manufacturer links are ordinary
+      No affiliate partnerships are active. Manufacturer and store links are ordinary
       links; we do not earn commissions from them. Recorded prices exclude tax
       and shipping and may have changed.
     </p>

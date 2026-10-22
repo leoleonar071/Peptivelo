@@ -71,13 +71,13 @@ export const pages: Record<
       },
       {
         title: "A considered beginning",
-        text: "This is an early product with a deliberately small catalog. It is not a medical service, store, or testing laboratory. The provisional brand name has not been cleared for domain or trademark availability.",
+        text: "This is a public beta with a deliberately small catalog. It is not a medical service, store, or testing laboratory. Source checks document what a source says; they do not establish clinical approval or independent product testing.",
       },
       {
         title: "Who operates this site",
         text: site.operator
           ? `This site is operated by ${site.operator}. Use the contact page for questions or corrections.`
-          : "Operator details have not yet been supplied for this preview. A public contact and operator identity are required before launch.",
+          : "The operator has not yet supplied a public name. Operator identity and a working contact channel remain outstanding for this public beta.",
       },
     ],
   },
@@ -86,8 +86,8 @@ export const pages: Record<
     intro: `There are currently no active affiliate relationships on ${site.name}.`,
     sections: [
       {
-        title: "Manufacturer links",
-        text: "Links in the current catalog go directly to manufacturer pages. We receive no commission from these links. A recorded price is not a guaranteed offer or statement of current stock.",
+        title: "Manufacturer and store links",
+        text: "Current catalog and offer links go to manufacturers and stores. We receive no commission from these ordinary links. A recorded price is not a guaranteed offer or statement of current stock. Stores handle purchases, delivery and order support; Peptivelo does not fulfil orders.",
       },
       {
         title: "Future compensated links",
@@ -102,25 +102,31 @@ export const pages: Record<
     sections: [
       {
         title: "Data used by the tools",
-        text: "Calculations and filter selections are processed in your browser. Shared calculation URLs include the product names, prices and volumes you enter. Do not put personal or sensitive information in those fields. The browser clipboard is used only when you choose to share.",
+        text: "Calculations and filter interactions are processed in your browser. Searches and other shared page URLs can be sent to the hosting provider when you load or navigate to them. Shared calculation URLs contain the product names, prices and volumes you enter. Do not put personal or sensitive information in search or calculator fields. The share action uses the browser clipboard only when you request it.",
       },
       {
-        title: "Analytics and hosting",
-        text: "No third-party analytics provider, advertising cookie, or tracking identifier is enabled. The event adapter dispatches browser-local events for future consent-aware integration. A future hosting provider may process technical request logs; its identity, retention and applicable privacy terms must be documented before public launch.",
+        title: "Theme preference",
+        text: "When you change the theme, your browser stores the light or dark preference in local storage under pv-theme. This is a display preference, not an analytics identifier. You can remove it through your browser's site-data controls.",
+      },
+      {
+        title: "Camera and code scanning",
+        text: "Camera access starts only after you choose to enable it and grant browser permission. QR and barcode decoding, including images selected for scanning, runs in your browser; the application does not upload those images or camera frames. A match still requires you to confirm the product and size. A decoded code does not authenticate a product.",
+      },
+      {
+        title: "Analytics",
+        text: "No third-party analytics provider, advertising cookie, or analytics tracking identifier is enabled. The event adapter dispatches browser-local events without a remote analytics receiver. Hosting request logs are separate from these local events.",
       },
       {
         title: "Hosting provider",
-        text: site.hostingProvider
-          ? `Requests are handled by ${site.hostingProvider}. Technical log retention and processing details still need to be documented and reviewed before public launch.`
-          : "A public hosting provider has not yet been selected. Hosting, technical log retention and processing details must be documented before public launch.",
+        text: `The public site is hosted on ${site.hostingProvider}. Requests pass through the hosting provider, which processes technical request data. The deployed Worker configuration enables request logs and sampled traces and requests query-string redaction. This is not a guarantee that URLs are absent from every infrastructure log. ${site.hostingLogRetention ? `Owner-supplied retention information: ${site.hostingLogRetention}` : "The operator has not yet confirmed the retention periods and complete processing details for those logs."}`,
       },
       {
         title: "External websites",
         text: "Manufacturer links open external sites with their own policies. No personal data is sent by this application’s analytics adapter.",
       },
       {
-        title: "Launch review",
-        text: "The site owner must supply a privacy contact, identify the operating entity and hosting provider, and review applicable requirements before public deployment.",
+        title: "Operator and privacy contact",
+        text: `${site.operator ? `Operator: ${site.operator}.` : "A public operator identity is still outstanding."} ${site.contact ? `Privacy questions and correction requests can be sent to ${site.contact}. Do not include personal medical information.` : "A working privacy contact has not yet been supplied; this page does not provide a monitored request channel."} These outstanding details and applicable requirements need review before a full editorial or commercial launch.`,
       },
     ],
   },
@@ -155,7 +161,7 @@ export const pages: Record<
         title: "Contact availability",
         text: site.contact
           ? "Use the email address below for questions and source-backed corrections. Do not send personal medical information."
-          : "A public contact channel has not yet been configured for this preview. No message form is available.",
+          : "A public contact channel has not yet been configured for this beta. No monitored message form is available; entering a search or calculator value does not send a correction request.",
       },
     ],
   },

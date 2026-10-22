@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 
 const extraLinks = [
+  ["/search/", "Search Peptivelo"],
   ["/library/", "Peptide library"],
   ["/skincare/identify/", "Know your serum"],
   ["/skincare/guides/", "Label guides"],

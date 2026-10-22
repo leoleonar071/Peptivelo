@@ -1,0 +1,1100 @@
+{
+  "snapshotUTC": "2026-10-22T02:57:23.395Z",
+  "repoCommit": "80fa15e1d2e8f8d9f2491fc37026418175e6a925",
+  "counts": {
+    "sources": 34,
+    "brands": 8,
+    "ingredients": 21,
+    "products": 11,
+    "retailers": 8,
+    "prices": 10,
+    "comparisons": 10
+  },
+  "statuses": {
+    "products": {
+      "published": 11
+    },
+    "ingredients": {
+      "published": 21
+    },
+    "comparisons": {
+      "draft": 10
+    },
+    "guides": {
+      "draft": 2
+    },
+    "evaluations": {
+      "missing": 3,
+      "label": 7
+    }
+  },
+  "guides": [
+    {
+      "slug": "matrixyl-3000-vs-synthe6",
+      "title": "Matrixyl 3000 vs Matrixyl synthe’6: what the names mean",
+      "status": "draft",
+      "productIds": [
+        "ordinary-matrixyl",
+        "ordinary-ha",
+        "geek-power-peptides"
+      ],
+      "comparisonIds": [
+        "matrixyl-vs-ha",
+        "geek-vs-ha"
+      ],
+      "sourceCount": 5,
+      "checked": "2026-10-19"
+    },
+    {
+      "slug": "peptide-percentages-explained",
+      "title": "What peptide percentages on serum labels actually tell you",
+      "status": "draft",
+      "productIds": [
+        "ordinary-matrixyl",
+        "ordinary-argireline",
+        "geek-power-peptides"
+      ],
+      "comparisonIds": [
+        "ordinary-ha-vs-copper",
+        "matrixyl-vs-ha",
+        "argireline-vs-ha",
+        "geek-vs-ha"
+      ],
+      "sourceCount": 7,
+      "checked": "2026-10-19"
+    }
+  ],
+  "librarySlugs": [
+    "peptide-categories",
+    "retatrutide",
+    "bpc-157"
+  ],
+  "hair": {
+    "keys": [
+      "product",
+      "ingredients"
+    ],
+    "product": "Multi-Peptide Serum for Hair Density",
+    "ingredients": 2
+  },
+  "evidence": {
+    "count": 30,
+    "kinds": {
+      "Supplier information": 2,
+      "Manufacturer label": 13,
+      "Human ingredient study": 1,
+      "Laboratory study": 1,
+      "Human case report": 1,
+      "Regulatory safety opinion": 1,
+      "Expert safety assessment": 2,
+      "Regulatory guidance": 3,
+      "Human clinical trial": 2,
+      "Human pilot study": 1,
+      "Manufacturer study summary": 1,
+      "Human formulation study": 2
+    },
+    "withDOI": 8,
+    "withDesign": 9,
+    "withAuthors": 11,
+    "missingNotes": [
+      "pubchem-29",
+      "lubrizol-uplevity",
+      "lubrizol-formulation",
+      "fda-cosmetic-reactions"
+    ],
+    "records": [
+      {
+        "sourceId": "croda-matrixyl",
+        "kind": "Supplier information",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public supplier page",
+        "checkedAt": "2026-10-19",
+        "integrity": null
+      },
+      {
+        "sourceId": "croda-synthe6",
+        "kind": "Supplier information",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public supplier page",
+        "checkedAt": "2026-10-19",
+        "integrity": null
+      },
+      {
+        "sourceId": "ordinary-matrixyl",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public US product page",
+        "checkedAt": "2026-10-19",
+        "integrity": null
+      },
+      {
+        "sourceId": "ordinary-ha",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public US product page",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "ordinary-argireline",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public US product page",
+        "checkedAt": "2026-10-19",
+        "integrity": null
+      },
+      {
+        "sourceId": "geek-power-peptides",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public US product page",
+        "checkedAt": "2026-10-19",
+        "integrity": null
+      },
+      {
+        "sourceId": "niod",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "US product page and browser-rendered size selection. Exact 30 mL / USD 93 screen captured in docs/research/niod-30ml-price-2026-10-20.png.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "ordinary",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public US product page",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "argireline-trial",
+        "kind": "Human ingredient study",
+        "doi": "10.1007/s40257-013-0009-9",
+        "authors": true,
+        "year": 2013,
+        "design": true,
+        "access": "Publisher abstract and acknowledgments inspected; full methods behind subscription were not reviewed.",
+        "checkedAt": "2026-10-20",
+        "integrity": "No correction or retraction notice was seen on the inspected publisher page. This is not a comprehensive integrity clearance."
+      },
+      {
+        "sourceId": "kraeling-penetration",
+        "kind": "Laboratory study",
+        "doi": "10.3109/15569527.2014.894521",
+        "authors": true,
+        "year": 2015,
+        "design": true,
+        "access": "PubMed abstract and bibliographic metadata via Europe PMC; full methods not reviewed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "phenoxyethanol-cases",
+        "kind": "Human case report",
+        "doi": "10.1111/cod.14637",
+        "authors": true,
+        "year": 2024,
+        "design": true,
+        "access": "University of Ferrara IRIS repository abstract retrieved 2026-10-20 at iris.unife.it. Linked full-text PDF returned 403; complete methods and declarations remain unverified.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "sccs-phenoxyethanol",
+        "kind": "Regulatory safety opinion",
+        "doi": null,
+        "authors": true,
+        "year": 2016,
+        "design": false,
+        "access": "Official SCCS conclusion and scope on the European Commission page; the underlying toxicology dossier was not independently reanalysed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "cir-peptides",
+        "kind": "Expert safety assessment",
+        "doi": "10.1177/1091581818807863",
+        "authors": true,
+        "year": 2018,
+        "design": true,
+        "access": "2018 publisher full-text abstract, ingredient scope and introduction revisited; prior 2014 final-report discussion check retained. Not an independent toxicology reanalysis.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "cosrx-six",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public source text inspected; underlying clinical dossiers not independently reanalysed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "fda-cosmetic-drug",
+        "kind": "Regulatory guidance",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public source text inspected; underlying clinical dossiers not independently reanalysed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "fda-glp1",
+        "kind": "Regulatory guidance",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public source text inspected; underlying clinical dossiers not independently reanalysed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "fda-research-peptides",
+        "kind": "Regulatory guidance",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public source text inspected; underlying clinical dossiers not independently reanalysed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "retatrutide-phase2",
+        "kind": "Human clinical trial",
+        "doi": "10.1056/NEJMoa2301972",
+        "authors": true,
+        "year": 2023,
+        "design": true,
+        "access": "PubMed abstract and metadata inspected. Publisher full text unavailable; detailed protocols not reviewed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "bpc-human-pilot",
+        "kind": "Human pilot study",
+        "doi": null,
+        "authors": true,
+        "year": 2025,
+        "design": true,
+        "access": "PubMed abstract inspected; full article not inspected.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "ptiox-us",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public page text inspected. US full-INCI popup was not retrieved.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "ptiox-uk-label",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public page text inspected. US full-INCI popup was not retrieved.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "ptiox-study-map",
+        "kind": "Manufacturer study summary",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Public page text inspected. US full-INCI popup was not retrieved.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "ptiox-zhu-2026",
+        "kind": "Human formulation study",
+        "doi": "10.1111/ics.70087",
+        "authors": true,
+        "year": 2026,
+        "design": true,
+        "access": "PubMed abstract, affiliations, figure captions and conflict statement inspected. Detailed full-text methods were not verified.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "ptiox-adjunct-2026",
+        "kind": "Human clinical trial",
+        "doi": "10.2147/CCID.S581831",
+        "authors": true,
+        "year": 2026,
+        "design": true,
+        "access": "PubMed abstract and indexed publisher disclosure inspected; complete protocol and adverse-event tables not reviewed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "ordinary-hair-density",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "US product page, selected INCI names, offer and directions inspected. No finished-product clinical dossier reviewed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "hair-combination-trial",
+        "kind": "Human formulation study",
+        "doi": null,
+        "authors": true,
+        "year": 2020,
+        "design": true,
+        "access": "PMC full text: abstract, methods, results and disclosures inspected.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "cir-acetyl",
+        "kind": "Expert safety assessment",
+        "doi": "10.1177/10915818251340391",
+        "authors": true,
+        "year": 2025,
+        "design": false,
+        "access": "Publisher full-text introduction, abstract, composition and use-concentration sections inspected. Underlying toxicology datasets not independently reanalyzed.",
+        "checkedAt": "2026-10-20",
+        "integrity": null
+      },
+      {
+        "sourceId": "naturium-multi-peptide",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Existing manufacturer-source catalog record reused; no new remote source inspection in this interface extension.",
+        "checkedAt": "2026-10-19",
+        "integrity": null
+      },
+      {
+        "sourceId": "timeless-synthe6",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Existing manufacturer-source catalog record reused; no new remote source inspection in this interface extension.",
+        "checkedAt": "2026-10-19",
+        "integrity": null
+      },
+      {
+        "sourceId": "medik8-liquid-peptides",
+        "kind": "Manufacturer label",
+        "doi": null,
+        "authors": false,
+        "year": null,
+        "design": false,
+        "access": "Existing manufacturer-source catalog record reused; no new remote source inspection in this interface extension.",
+        "checkedAt": "2026-10-19",
+        "integrity": null
+      }
+    ]
+  },
+  "prices": [
+    {
+      "id": "ordinary-2026-10-18",
+      "productId": "ordinary-copper",
+      "retailerId": "ordinary",
+      "currency": "USD",
+      "price": 32,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "ordinary",
+      "observedAt": "2026-10-18",
+      "verifiedAt": "2026-10-18",
+      "availabilityStatus": "not-verified"
+    },
+    {
+      "id": "ordinary-ha-2026-10-19",
+      "productId": "ordinary-ha",
+      "retailerId": "ordinary",
+      "currency": "USD",
+      "price": 19.9,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "ordinary-ha",
+      "observedAt": "2026-10-19",
+      "verifiedAt": "2026-10-19",
+      "availabilityStatus": "not_checked"
+    },
+    {
+      "id": "ordinary-matrixyl-2026-10-19",
+      "productId": "ordinary-matrixyl",
+      "retailerId": "ordinary",
+      "currency": "USD",
+      "price": 10.9,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "ordinary-matrixyl",
+      "observedAt": "2026-10-19",
+      "verifiedAt": "2026-10-19",
+      "availabilityStatus": "not_checked"
+    },
+    {
+      "id": "ordinary-argireline-2026-10-19",
+      "productId": "ordinary-argireline",
+      "retailerId": "ordinary",
+      "currency": "USD",
+      "price": 9.7,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "ordinary-argireline",
+      "observedAt": "2026-10-19",
+      "verifiedAt": "2026-10-19",
+      "availabilityStatus": "not_checked"
+    },
+    {
+      "id": "geek-power-peptides-2026-10-19",
+      "productId": "geek-power-peptides",
+      "retailerId": "geek-gorgeous",
+      "currency": "USD",
+      "price": 18.8,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "geek-power-peptides",
+      "observedAt": "2026-10-19",
+      "verifiedAt": "2026-10-19",
+      "availabilityStatus": "not_checked"
+    },
+    {
+      "id": "naturium-multi-peptide-2026-10-19",
+      "productId": "naturium-multi-peptide",
+      "retailerId": "naturium",
+      "currency": "USD",
+      "price": 25,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "naturium-multi-peptide",
+      "observedAt": "2026-10-19",
+      "verifiedAt": "2026-10-19",
+      "availabilityStatus": "In stock when checked; one-time purchase, excluding coupon and subscription discounts"
+    },
+    {
+      "id": "timeless-synthe6-2026-10-19",
+      "productId": "timeless-synthe6",
+      "retailerId": "timeless",
+      "currency": "USD",
+      "price": 28.95,
+      "size": 1,
+      "sizeUnit": "oz",
+      "sourceId": "timeless-synthe6",
+      "observedAt": "2026-10-19",
+      "verifiedAt": "2026-10-19",
+      "availabilityStatus": "In stock when checked; one-time purchase, excluding coupon and subscription discounts"
+    },
+    {
+      "id": "medik8-liquid-peptides-2026-10-19",
+      "productId": "medik8-liquid-peptides",
+      "retailerId": "medik8",
+      "currency": "USD",
+      "price": 68,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "medik8-liquid-peptides",
+      "observedAt": "2026-10-19",
+      "verifiedAt": "2026-10-19",
+      "availabilityStatus": "In stock when checked; one-time purchase, excluding coupon and subscription discounts"
+    },
+    {
+      "id": "ptiox-30ml-2026-10-20",
+      "productId": "skinceuticals-ptiox",
+      "retailerId": "skinceuticals",
+      "currency": "USD",
+      "price": 150,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "ptiox-us",
+      "observedAt": "2026-10-20",
+      "verifiedAt": "2026-10-20",
+      "availabilityStatus": "One-time price displayed; stock and shipping not independently confirmed"
+    },
+    {
+      "id": "niod-30ml-2026-10-20",
+      "productId": "niod-cais3",
+      "retailerId": "niod",
+      "currency": "USD",
+      "price": 93,
+      "size": 30,
+      "sizeUnit": "ml",
+      "sourceId": "niod",
+      "observedAt": "2026-10-20",
+      "verifiedAt": "2026-10-20",
+      "availabilityStatus": "not_checked"
+    }
+  ],
+  "products": [
+    {
+      "id": "ordinary-copper",
+      "name": "Multi-Peptide + Copper Peptides 1% Serum",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected label ingredients, not the complete INCI list. See the manufacturer for the full formula.",
+      "selectedCount": 4,
+      "linkedIngredients": 4,
+      "source": "ordinary",
+      "checked": "2026-10-20",
+      "comparisons": 3,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "niod-cais3",
+      "name": "Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected label ingredients, not the complete INCI list. Exact names are preserved without assuming chemical equivalence.",
+      "selectedCount": 4,
+      "linkedIngredients": 4,
+      "source": "niod",
+      "checked": "2026-10-20",
+      "comparisons": 1,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "ordinary-ha",
+      "name": "Multi-Peptide + HA Serum",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula.",
+      "selectedCount": 4,
+      "linkedIngredients": 4,
+      "source": "ordinary-ha",
+      "checked": "2026-10-20",
+      "comparisons": 7,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "ordinary-matrixyl",
+      "name": "Matrixyl 10% + HA",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula.",
+      "selectedCount": 3,
+      "linkedIngredients": 3,
+      "source": "ordinary-matrixyl",
+      "checked": "2026-10-19",
+      "comparisons": 2,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "ordinary-argireline",
+      "name": "Argireline Solution 10%",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula.",
+      "selectedCount": 1,
+      "linkedIngredients": 1,
+      "source": "ordinary-argireline",
+      "checked": "2026-10-19",
+      "comparisons": 1,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "geek-power-peptides",
+      "name": "Power Peptides",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula.",
+      "selectedCount": 6,
+      "linkedIngredients": 6,
+      "source": "geek-power-peptides",
+      "checked": "2026-10-19",
+      "comparisons": 1,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "naturium-multi-peptide",
+      "name": "Multi-Peptide Advanced Serum",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula.",
+      "selectedCount": 3,
+      "linkedIngredients": 3,
+      "source": "naturium-multi-peptide",
+      "checked": "2026-10-19",
+      "comparisons": 1,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "timeless-synthe6",
+      "name": "Matrixyl Synthe’6 Serum",
+      "status": "published",
+      "volume": 1,
+      "unit": "oz",
+      "scope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula. Palmitoyl Tripeptide-38 is identified in the brand’s explanation of Matrixyl Synthe’6; its displayed list uses that system name.",
+      "selectedCount": 1,
+      "linkedIngredients": 1,
+      "source": "timeless-synthe6",
+      "checked": "2026-10-19",
+      "comparisons": 1,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "medik8-liquid-peptides",
+      "name": "Liquid Peptides",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula.",
+      "selectedCount": 11,
+      "linkedIngredients": 11,
+      "source": "medik8-liquid-peptides",
+      "checked": "2026-10-19",
+      "comparisons": 1,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "cosrx-six-mini",
+      "name": "The 6 Peptide Skin Booster Serum Mini",
+      "status": "published",
+      "volume": 50,
+      "unit": "ml",
+      "scope": "Selected peptide names from the official mini label, not the full INCI list. Check your package for changes.",
+      "selectedCount": 6,
+      "linkedIngredients": 6,
+      "source": "cosrx-six",
+      "checked": "2026-10-20",
+      "comparisons": 1,
+      "prices": 0,
+      "exactSizePrices": 0,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    },
+    {
+      "id": "skinceuticals-ptiox",
+      "name": "P-TIOX Anti-Wrinkle Serum",
+      "status": "published",
+      "volume": 30,
+      "unit": "ml",
+      "scope": "Selected peptide names from the brand’s UK P-TIOX label. The complete US INCI was not retrieved; regional equivalence is not assumed. Confirm your current package.",
+      "selectedCount": 2,
+      "linkedIngredients": 2,
+      "source": "ptiox-us",
+      "checked": "2026-10-20",
+      "comparisons": 1,
+      "prices": 1,
+      "exactSizePrices": 1,
+      "hasExplicitMarket": false,
+      "hasVariantId": false,
+      "hasFullINCI": false,
+      "hasImage": true
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "copper-tripeptide-1",
+      "name": "Copper Tripeptide-1",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 4,
+      "sourceKinds": [
+        "Manufacturer label",
+        "Expert safety assessment",
+        "no evidence notes",
+        "Regulatory guidance"
+      ],
+      "productCount": 2,
+      "aliases": null,
+      "checked": "2026-10-20"
+    },
+    {
+      "id": "acetyl-hexapeptide-8",
+      "name": "Acetyl Hexapeptide-8",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 5,
+      "sourceKinds": [
+        "Manufacturer label",
+        "Human ingredient study",
+        "Expert safety assessment",
+        "no evidence notes",
+        "Laboratory study"
+      ],
+      "productCount": 7,
+      "aliases": null,
+      "checked": "2026-10-20"
+    },
+    {
+      "id": "tripeptide-29",
+      "name": "Tripeptide-29",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 3,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "palmitoyl-tripeptide-1",
+      "name": "Palmitoyl Tripeptide-1",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 4,
+      "sourceKinds": [
+        "Manufacturer label",
+        "Expert safety assessment",
+        "Supplier information",
+        "no evidence notes"
+      ],
+      "productCount": 5,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "palmitoyl-tetrapeptide-7",
+      "name": "Palmitoyl Tetrapeptide-7",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 4,
+      "sourceKinds": [
+        "Manufacturer label",
+        "Expert safety assessment",
+        "Supplier information",
+        "no evidence notes"
+      ],
+      "productCount": 5,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "tripeptide-1-copper-acetate",
+      "name": "Tripeptide-1 Copper Acetate",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "tripeptide-1-acetate",
+      "name": "Tripeptide-1 Acetate",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "acetyl-tetrapeptide-2",
+      "name": "Acetyl Tetrapeptide-2",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 4,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes",
+        "no evidence notes",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "palmitoyl-tripeptide-38",
+      "name": "Palmitoyl Tripeptide-38",
+      "status": "published",
+      "pendingReview": true,
+      "sourceCount": 4,
+      "sourceKinds": [
+        "Manufacturer label",
+        "Manufacturer label",
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 5,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "tetrapeptide-21",
+      "name": "Tetrapeptide-21",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 2,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "copper-palmitoyl-heptapeptide-14",
+      "name": "Copper Palmitoyl Heptapeptide-14",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 3,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "heptapeptide-15-palmitate",
+      "name": "Heptapeptide-15 Palmitate",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "palmitoyl-sh-hexapeptide-13-serine-sp-amide",
+      "name": "Palmitoyl sh-Hexapeptide-13 Serine SP Amide",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 3,
+      "sourceKinds": [
+        "Manufacturer label",
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 2,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "carnosine",
+      "name": "Carnosine",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "palmitoyl-pentapeptide-4",
+      "name": "Palmitoyl Pentapeptide-4",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "pentapeptide-18",
+      "name": "Pentapeptide-18",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "acetyl-tetrapeptide-5",
+      "name": "Acetyl Tetrapeptide-5",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 2,
+      "sourceKinds": [
+        "Manufacturer label",
+        "no evidence notes"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-19"
+    },
+    {
+      "id": "sh-polypeptide-121",
+      "name": "sh-Polypeptide-121",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 1,
+      "sourceKinds": [
+        "Manufacturer label"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-20"
+    },
+    {
+      "id": "dipeptide-diaminobutyroyl-benzylamide-diacetate",
+      "name": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 3,
+      "sourceKinds": [
+        "Manufacturer label",
+        "Human formulation study",
+        "Manufacturer label"
+      ],
+      "productCount": 2,
+      "aliases": null,
+      "checked": "2026-10-20"
+    },
+    {
+      "id": "oligopeptide-68",
+      "name": "Oligopeptide-68",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 1,
+      "sourceKinds": [
+        "Manufacturer label"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-20"
+    },
+    {
+      "id": "palmitoyl-tripeptide-8",
+      "name": "Palmitoyl Tripeptide-8",
+      "status": "published",
+      "pendingReview": false,
+      "sourceCount": 1,
+      "sourceKinds": [
+        "Manufacturer label"
+      ],
+      "productCount": 1,
+      "aliases": null,
+      "checked": "2026-10-20"
+    }
+  ],
+  "infoPages": [
+    "methodology",
+    "editorial-policy",
+    "about",
+    "affiliate-disclosure",
+    "privacy",
+    "terms",
+    "contact"
+  ],
+  "initialRouteCount": 70
+}

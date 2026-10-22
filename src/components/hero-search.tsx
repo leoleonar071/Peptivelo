@@ -23,7 +23,7 @@ import {
   searchCategories,
   type SearchEntry,
 } from "@/lib/search";
-const icons = [FlaskConical, Package, BookOpen, Columns3];
+const icons = [FlaskConical, Package, BookOpen, Columns3, BookOpen];
 const narrowQuery = "(max-width: 540px)";
 function subscribeViewport(listener: () => void) {
   const media = window.matchMedia(narrowQuery);
@@ -232,6 +232,7 @@ export function HeroSearch({
                       <span>
                         <strong>{entry.name}</strong>
                         <small>{entry.detail}</small>
+                        {entry.matchReason && <small>{entry.matchReason}</small>}
                       </span>
                       <ArrowRight size={16} aria-hidden="true" />
                     </div>

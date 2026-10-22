@@ -1,0 +1,15 @@
+
+> peptide-atlas@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/Public/WebsitePeptido
+
+
+ Test Files  21 passed (21)
+      Tests  56 passed (56)
+   Start at  22:01:44
+   Duration  5.38s (import 76%, tests 13%, transform 9%, worker 1%)
+
+    Isolate  21 workers spawned · ~968ms startup each (spawn + environment, per file)
+             at least ~880ms faster with isolate: false — reuses workers across files instead of one per file

@@ -10,6 +10,7 @@ import "./brand-typography.css";
 import "../styles/peptivelo-tokens.css";
 import "../styles/peptivelo-components.css";
 import "../styles/home-hero.css";
+import "../styles/product-offers.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     "Compare peptide skincare labels, check sources, and calculate prices per mL with transparent tools.",
   robots: { index: site.indexable, follow: true },
   openGraph: { siteName: site.name, type: "website", locale: "en_US" },
-  icons: { icon: [{ url: "/brand/peptivelo-isotype.png", type: "image/png" }] },
+  icons: { icon: [{ url: "/brand/peptivelo-isotype-icon.png", type: "image/png", sizes: "64x64" }] },
 };
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
