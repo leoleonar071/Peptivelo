@@ -1,6 +1,7 @@
 export const site = {
   name: process.env.NEXT_PUBLIC_SITE_NAME?.trim() || "Peptivelo",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.NODE_ENV === "production" ? "https://peptivelo.com" : "http://localhost:3000"),
   indexable: process.env.SITE_INDEXABLE === "true",
   contact: process.env.CONTACT_EMAIL?.trim() || undefined,
   operator: process.env.SITE_OPERATOR_NAME?.trim() || undefined,

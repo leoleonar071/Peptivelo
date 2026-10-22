@@ -24,6 +24,8 @@
   --pv-photo-surface: #FFFFFF;
   --pv-backdrop: color-mix(in srgb, var(--pv-petroleum) 68%, transparent);
   --pv-shadow: color-mix(in srgb, var(--pv-petroleum) 12%, transparent);
+  --pv-hero-halo: color-mix(in srgb, var(--pv-aqua) 26%, transparent);
+  --pv-search-shadow: color-mix(in srgb, var(--pv-petroleum) 7%, transparent);
   --ink: var(--pv-text);
   --secondary: var(--pv-text-secondary);
   --muted: var(--pv-text-secondary);
@@ -50,5 +52,7 @@
   --pv-accent: #1D5149;
   --pv-accent-text: #F8F7F2;
   --pv-focus: #B7E1D6;
+  --pv-hero-halo: color-mix(in srgb, var(--pv-sage) 7%, transparent);
+  --pv-search-shadow: color-mix(in srgb, var(--pv-bg) 45%, transparent);
   color-scheme: dark;
 }

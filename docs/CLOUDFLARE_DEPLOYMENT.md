@@ -3,6 +3,12 @@
 The Worker is named `peptivelo` and enables its public workers.dev address.
 Preview URLs remain disabled. Indexing remains disabled with SITE_INDEXABLE=false.
 
+Production origin: `https://peptivelo.com`. The versioned site configuration now
+uses this domain by default when NODE_ENV is production. An explicit
+NEXT_PUBLIC_SITE_URL still overrides it; use that override for preview origins.
+Development continues to default to localhost. The premium hero/search release
+was validated with 56 unit tests, 15 Worker browser checks and production builds.
+
 ## GitHub build settings
 
 - Repository: leoleonar071/Peptivelo

@@ -5,6 +5,23 @@ afterEach(() => {
   vi.resetModules();
 });
 
+it("uses the live domain in production while preserving explicit origins", async () => {
+  vi.stubEnv("NODE_ENV", "production");
+  vi.stubEnv("NEXT_PUBLIC_SITE_URL", "");
+  vi.resetModules();
+  expect((await import("../src/lib/config")).site.url).toBe("https://peptivelo.com");
+  vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://preview.example");
+  vi.resetModules();
+  expect((await import("../src/lib/config")).site.url).toBe("https://preview.example");
+});
+
+it("keeps the local origin outside production", async () => {
+  vi.stubEnv("NODE_ENV", "development");
+  vi.stubEnv("NEXT_PUBLIC_SITE_URL", "");
+  vi.resetModules();
+  expect((await import("../src/lib/config")).site.url).toBe("http://localhost:3000");
+});
+
 it("uses the configured brand across informational pages and metadata settings", async () => {
   vi.stubEnv("NEXT_PUBLIC_SITE_NAME", "Selected Brand");
   vi.resetModules();

@@ -20,7 +20,9 @@
       "primary-hover": "#15554B",
       "accent": "#C7E0D9",
       "accent-text": "#0E3D36",
-      "focus": "#276D63"
+      "focus": "#276D63",
+      "hero-halo": "color-mix(in srgb, var(--pv-aqua) 26%, transparent)",
+      "search-shadow": "color-mix(in srgb, var(--pv-petroleum) 7%, transparent)"
     },
     "dark": {
       "bg": "#0A2925",
@@ -34,7 +36,9 @@
       "primary-hover": "#F8F7F2",
       "accent": "#1D5149",
       "accent-text": "#F8F7F2",
-      "focus": "#B7E1D6"
+      "focus": "#B7E1D6",
+      "hero-halo": "color-mix(in srgb, var(--pv-sage) 7%, transparent)",
+      "search-shadow": "color-mix(in srgb, var(--pv-bg) 45%, transparent)"
     }
   },
   "typography": {
