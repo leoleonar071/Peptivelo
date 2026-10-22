@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   ArrowLeft,
   ArrowRight,
@@ -22,6 +23,7 @@ import { ProductScanner } from "./product-scanner";
 // paper reuse the reader palette; quiet borders, inset search and 4px spacing
 // keep the source trail legible without adding dashboard decoration.
 export function ProductIdentify() {
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<Product | null>(null);
   const [confirmed, setConfirmed] = useState(false);
@@ -36,11 +38,13 @@ export function ProductIdentify() {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .trim();
-  const matches = products.filter((p) =>
-    `${brandName(p)} ${p.name} ${p.ingredientList.join(" ")}`
-      .toLowerCase()
-      .includes(normalized),
-  );
+  const matches = products.filter((p) => {
+    const text = `${brandName(p)} ${p.name} ${p.ingredientList.join(" ")}`
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+    return normalized.split(/\s+/).every((term) => text.includes(term));
+  });
   const reset = () => {
     setSelected(null);
     setConfirmed(false);
@@ -48,37 +52,25 @@ export function ProductIdentify() {
   };
   return (
     <div className="identify-page wrap">
-      <Link className="identify-back" href="/skincare/">
-        Skincare atlas <ArrowRight size={14} /> Know your serum
-      </Link>
-      <ol className="identify-steps" aria-label="Your progress">
-        {["Find", "Confirm", "Understand"].map((step, i) => (
-          <li
-            key={step}
-            aria-current={
-              i === (confirmed ? 2 : selected ? 1 : 0) ? "step" : undefined
-            }
-          >
-            <span>{i + 1}</span>
-            {step}
-          </li>
-        ))}
-      </ol>
       <header className="identify-intro">
-        <span className="eyebrow">YOUR LABEL, EXPLAINED</span>
+        <span className="eyebrow">IDENTIFY YOUR SERUM</span>
         <h1 ref={heading} tabIndex={-1}>
-          {confirmed
-            ? "A little clarity for your serum."
-            : selected
-              ? "Is this your serum?"
-              : "Know what’s on your shelf."}
+          {confirmed ? (
+            "A little clarity for your serum."
+          ) : selected ? (
+            "Is this your serum?"
+          ) : (
+            <>
+              Find your serum. <span>Understand what&apos;s inside.</span>
+            </>
+          )}
         </h1>
         <p>
           {confirmed
             ? "Start with the label. Explore the research when you need more."
             : selected
               ? "Match the brand, product name and size with your bottle before continuing."
-              : "Find your facial peptide serum. Understand the ingredients, the evidence and its limits."}
+              : "Scan a barcode or search by name to explore documented ingredients, product information, and evidence limitations."}
         </p>
       </header>
       {!selected ? (
@@ -86,76 +78,118 @@ export function ProductIdentify() {
           className="identify-search-section"
           aria-label="Find your serum"
         >
-          <label htmlFor="serum-search">
-            Search by brand, product or ingredient
-          </label>
-          <div className="identify-input">
-            <Search size={20} aria-hidden="true" />
-            <input
-              ref={search}
-              id="serum-search"
-              type="search"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="Try The Ordinary or copper"
-              autoComplete="off"
-            />
-          </div>
-          <div className="identify-result-meta">
-            <span role="status">
-              {matches.length} {matches.length === 1 ? "product" : "products"}
-              {query ? " found" : " in our starter catalog"}
-            </span>
-            <button
-              className="identify-scan-trigger"
-              ref={scanTrigger}
-              onClick={() => setScanning(true)}
+          <div className="identify-methods">
+            <section
+              className="identify-scan-card"
+              aria-labelledby="scan-method-title"
             >
-              <ScanLine size={17} /> Scan a code
-            </button>
+              <ScanLine size={36} aria-hidden="true" />
+              <h2 id="scan-method-title">Scan your product</h2>
+              <p>Have the bottle? Use its code to find a match.</p>
+              <button
+                className="button"
+                ref={scanTrigger}
+                onClick={() => setScanning(true)}
+              >
+                <ScanLine size={20} aria-hidden="true" /> Scan barcode
+              </button>
+              <small>
+                Peptivelo product QR links supported. Manufacturer barcode
+                coverage is not available yet.
+              </small>
+            </section>
+            <span className="identify-method-divider">or search manually</span>
+            <section
+              className="identify-name-card"
+              aria-labelledby="name-method-title"
+            >
+              <Search size={28} aria-hidden="true" />
+              <h2 id="name-method-title">Search by name</h2>
+              <p>Enter a brand, product name, or ingredient.</p>
+              <label className="sr-only" htmlFor="serum-search">
+                Search by brand, product or ingredient
+              </label>
+              <div className="identify-input">
+                <Search size={20} aria-hidden="true" />
+                <input
+                  ref={search}
+                  id="serum-search"
+                  type="search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="e.g. The Ordinary..."
+                  autoComplete="off"
+                />
+              </div>
+
+              <p className="identify-coverage">
+                Matches are limited to products documented in Peptivelo.
+              </p>
+            </section>
           </div>
-          {matches.length ? (
-            <div className="identify-results">
-              {matches.map((p) => (
+          <section
+            className="identify-catalog"
+            aria-labelledby="identify-catalog-title"
+          >
+            <h2 id="identify-catalog-title">
+              {query ? "Matching serums" : "Browse documented serums"}
+            </h2>
+            <p role="status">
+              {query ? matches.length : products.length} products{" "}
+              {query ? "found" : "in the Peptivelo catalog"}.
+            </p>
+            {matches.length ? (
+              <div
+                className={
+                  query ? "identify-results" : "identify-results is-preview"
+                }
+              >
+                {(query ? matches : matches.slice(0, 6)).map((p) => (
+                  <button
+                    type="button"
+                    className="identify-result"
+                    key={p.id}
+                    onClick={() => {
+                      setSelected(p);
+                      focusHeading();
+                    }}
+                  >
+                    <Bottle product={p} />
+                    <span className="identify-result-copy">
+                      <span>{brandName(p)}</span>
+                      <strong>{p.name}</strong>
+                      <small>{volumeLabel(p)} · Facial serum</small>
+                    </span>
+                    <ArrowRight size={20} aria-hidden="true" />
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <div className="identify-empty">
+                <h2>No matching product yet.</h2>
+                <p>
+                  Try a shorter product name or brand. This catalog covers
+                  selected cosmetic serums; it does not identify unknown
+                  bottles.
+                </p>
                 <button
-                  type="button"
-                  className="identify-result"
-                  key={p.id}
+                  className="button secondary"
                   onClick={() => {
-                    setSelected(p);
-                    focusHeading();
+                    setQuery("");
+                    search.current?.focus();
                   }}
                 >
-                  <Bottle product={p} />
-                  <span className="identify-result-copy">
-                    <span>{brandName(p)}</span>
-                    <strong>{p.name}</strong>
-                    <small>{volumeLabel(p)} · Facial serum</small>
-                  </span>
-                  <ArrowRight size={20} aria-hidden="true" />
+                  Show all products
                 </button>
-              ))}
-            </div>
-          ) : (
-            <div className="identify-empty">
-              <h2>No matching product yet.</h2>
-              <p>
-                Try a shorter product name or brand. This catalog covers
-                selected cosmetic serums; it does not identify unknown bottles.
-              </p>
-              <button
-                className="button secondary"
-                onClick={() => {
-                  setQuery("");
-                  search.current?.focus();
-                }}
-              >
-                Show all products
-              </button>
-            </div>
-          )}
+              </div>
+            )}
+            <Link className="identify-all-products" href="/skincare/products/">
+              View all products →
+            </Link>
+          </section>
           <p className="identify-footnote">
-            No photo or camera access needed. Your search stays in this browser.
+            Manual search stays in this browser. Product records are not
+            packaging photographs.
           </p>
           <Link className="text-link" href="/haircare/">
             Looking for a scalp serum? Explore haircare <ArrowRight size={16} />
@@ -317,9 +351,7 @@ export function ProductIdentify() {
         <ProductScanner
           onMatch={(product) => {
             setScanning(false);
-            setSelected(product);
-            setConfirmed(false);
-            focusHeading();
+            router.push(productPath(product.slug));
           }}
           onSearch={() => {
             setScanning(false);

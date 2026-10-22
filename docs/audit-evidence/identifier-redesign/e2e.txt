@@ -1,0 +1,36 @@
+[WebServer] (node:16232) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 18 tests using 2 workers
+
+(node:26548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35900) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop] › e2e\identify.spec.ts:4:1 › find, confirm and understand a serum without implying bottle verification (4.7s)
+  ok  3 [desktop] › e2e\scanner.spec.ts:5:1 › scanner handles unknown codes and camera denial with accessible manual exits (1.7s)
+  ok  4 [desktop] › e2e\scanner.spec.ts:48:1 › a real QR image decodes locally and opens the exact product profile (935ms)
+  ok  5 [desktop] › e2e\scanner.spec.ts:67:1 › closing during camera permission stops a stream that arrives late (951ms)
+  ok  6 [desktop] › e2e\scanner.spec.ts:120:1 › an active camera stream stops on Stop and Escape (928ms)
+(node:37144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -   7 [tablet] › e2e\identifier-redesign.spec.ts:3:1 › identifier responsive methods, search and scanner states
+  ok  8 [tablet] › e2e\identify.spec.ts:4:1 › find, confirm and understand a serum without implying bottle verification (3.4s)
+  ok  9 [tablet] › e2e\scanner.spec.ts:5:1 › scanner handles unknown codes and camera denial with accessible manual exits (1.9s)
+  ok 10 [tablet] › e2e\scanner.spec.ts:48:1 › a real QR image decodes locally and opens the exact product profile (1.1s)
+  ok 11 [tablet] › e2e\scanner.spec.ts:67:1 › closing during camera permission stops a stream that arrives late (900ms)
+  ok 12 [tablet] › e2e\scanner.spec.ts:120:1 › an active camera stream stops on Stop and Escape (1.1s)
+(node:24332) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  13 [mobile] › e2e\identifier-redesign.spec.ts:3:1 › identifier responsive methods, search and scanner states
+  ok 14 [mobile] › e2e\identify.spec.ts:4:1 › find, confirm and understand a serum without implying bottle verification (5.1s)
+  ok  2 [desktop] › e2e\identifier-redesign.spec.ts:3:1 › identifier responsive methods, search and scanner states (28.6s)
+(node:32636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 15 [mobile] › e2e\scanner.spec.ts:5:1 › scanner handles unknown codes and camera denial with accessible manual exits (1.7s)
+  ok 16 [mobile] › e2e\scanner.spec.ts:67:1 › closing during camera permission stops a stream that arrives late (963ms)
+  ok 17 [mobile] › e2e\scanner.spec.ts:48:1 › a real QR image decodes locally and opens the exact product profile (1.6s)
+  ok 18 [mobile] › e2e\scanner.spec.ts:120:1 › an active camera stream stops on Stop and Escape (1.2s)
+
+  2 skipped
+  16 passed (38.4s)

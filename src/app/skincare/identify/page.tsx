@@ -1,9 +1,10 @@
+import "@/styles/product-identifier.css";
 import { ProductIdentify } from "@/components/product-identify";
 
 export const metadata = {
-  title: "Know your serum",
+  title: "Identify your serum — search products and ingredients",
   description:
-    "Find your peptide serum, confirm the label and understand the evidence one ingredient at a time.",
+    "Find a documented skincare serum by name, brand or ingredient. Scan supported product QR codes and explore label information, sources and evidence limits.",
   alternates: { canonical: "/skincare/identify/" },
   robots: { index: false, follow: true },
 };

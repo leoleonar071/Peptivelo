@@ -42,7 +42,7 @@ test("find, confirm and understand a serum without implying bottle verification"
     ),
   ).toBeVisible();
   await page.screenshot({
-    path: `docs/identify-profile-${testInfo.project.name}.png`,
+    path: testInfo.outputPath("identify-profile.png"),
     fullPage: true,
   });
   const scan = await new AxeBuilder({ page })
@@ -60,7 +60,7 @@ test("find, confirm and understand a serum without implying bottle verification"
     ),
   ).toBe(true);
   await page.screenshot({
-    path: `docs/identify-search-${testInfo.project.name}.png`,
+    path: testInfo.outputPath("identify-search.png"),
     fullPage: true,
   });
 });

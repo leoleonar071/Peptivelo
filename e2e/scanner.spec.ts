@@ -17,7 +17,7 @@ test("scanner handles unknown codes and camera denial with accessible manual exi
   });
   await page.goto("/skincare/identify/");
   const trigger = page.getByRole("button", {
-    name: "Scan a code",
+    name: "Scan barcode",
     exact: true,
   });
   await trigger.click();
@@ -37,7 +37,7 @@ test("scanner handles unknown codes and camera denial with accessible manual exi
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
     .analyze();
   expect(scan.violations).toEqual([]);
-  await page.screenshot({ path: `docs/scanner-${testInfo.project.name}.png` });
+  await page.screenshot({ path: testInfo.outputPath("scanner.png") });
   await page.keyboard.press("Escape");
   await expect(trigger).toBeFocused();
   await trigger.click();
@@ -45,13 +45,13 @@ test("scanner handles unknown codes and camera denial with accessible manual exi
   await expect(page.getByRole("searchbox")).toBeFocused();
 });
 
-test("a real QR image decodes locally and still requires product confirmation", async ({
+test("a real QR image decodes locally and opens the exact product profile", async ({
   page,
 }) => {
   await page.goto("/skincare/identify/");
-  await page.getByRole("button", { name: "Scan a code", exact: true }).click();
+  await page.getByRole("button", { name: "Scan barcode", exact: true }).click();
   const png = await QRCode.toBuffer(
-    "http://localhost:3100/skincare/products/the-ordinary-multi-peptide-copper/",
+    "https://peptivelo.com/skincare/products/the-ordinary-multi-peptide-copper/",
     { width: 360, margin: 4 },
   );
   await page.locator(".scanner-upload input").setInputFiles({
@@ -59,14 +59,9 @@ test("a real QR image decodes locally and still requires product confirmation", 
     mimeType: "image/png",
     buffer: png,
   });
-  await expect(
-    page.getByRole("heading", { name: "Is this your serum?" }),
-  ).toBeVisible({ timeout: 15000 });
-  await expect(page.locator(".identify-product")).toContainText("The Ordinary");
-  await expect(page.getByRole("heading", { level: 1 })).toBeFocused();
-  await expect(
-    page.getByText("Contents & batch unverified", { exact: true }),
-  ).not.toBeVisible();
+  await expect(page).toHaveURL(
+    /\/skincare\/products\/the-ordinary-multi-peptide-copper\//,
+  );
 });
 
 test("closing during camera permission stops a stream that arrives late", async ({
@@ -98,7 +93,7 @@ test("closing during camera permission stops a stream that arrives late", async 
     });
   });
   await page.goto("/skincare/identify/");
-  await page.getByRole("button", { name: "Scan a code", exact: true }).click();
+  await page.getByRole("button", { name: "Scan barcode", exact: true }).click();
   await page.getByRole("button", { name: "Start camera" }).click();
   await expect
     .poll(() =>
@@ -150,7 +145,7 @@ test("an active camera stream stops on Stop and Escape", async ({ page }) => {
     });
   });
   await page.goto("/skincare/identify/");
-  await page.getByRole("button", { name: "Scan a code", exact: true }).click();
+  await page.getByRole("button", { name: "Scan barcode", exact: true }).click();
   await page.getByRole("button", { name: "Start camera" }).click();
   await expect(
     page.getByRole("button", { name: "Stop camera", exact: true }),
