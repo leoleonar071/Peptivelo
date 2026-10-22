@@ -32,6 +32,9 @@
   font-size: 14px;
   max-width: 100%;
 }
+.offer-market-select { position: relative; min-width: 0; }
+.offer-market-select img { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); object-fit: contain; pointer-events: none; border: 1px solid var(--pv-border); border-radius: 2px; }
+.offer-controls .offer-market-select select { padding-left: 48px; }
 .offer-controls .button {
   font-size: 14px;
   padding: 12px 20px;

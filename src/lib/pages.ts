@@ -114,7 +114,7 @@ export const pages: Record<
       },
       {
         title: "Analytics",
-        text: "No third-party analytics provider, advertising cookie, or analytics tracking identifier is enabled. The event adapter dispatches browser-local events without a remote analytics receiver. Hosting request logs are separate from these local events.",
+        text: "The buying block sends a first-visible event and outbound store clicks to our own server. Events contain catalog product, offer, retailer and market identifiers, timestamp and affiliation status. No visitor identifier or advertising cookie is created. Do Not Track and Global Privacy Control disable this collection. Events are recorded in hosting logs with the retention limitations described below. They count interactions, not unique visitors, customers or confirmed sales. Other interface events remain browser-local.",
       },
       {
         title: "Hosting provider",
@@ -122,7 +122,7 @@ export const pages: Record<
       },
       {
         title: "External websites",
-        text: "Manufacturer links open external sites with their own policies. No personal data is sent by this application’s analytics adapter.",
+        text: "Store links open external sites with their own policies. Buying-block event payloads exclude personal identifiers, search terms and full URLs. The hosting provider still processes technical request data.",
       },
       {
         title: "Operator and privacy contact",

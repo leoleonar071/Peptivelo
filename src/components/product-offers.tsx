@@ -1,3 +1,5 @@
+import { OfferLink, OfferViewEvent } from "./offer-tracking";
+import { MarketSelect } from "./market-select";
 import { ArrowUpRight } from "lucide-react";
 import { type Product } from "@/lib/data";
 import { productPath } from "@/lib/config";
@@ -43,9 +45,10 @@ export function ProductOffers({
       aria-labelledby="offer-heading"
       id="offers"
     >
+      {rows.length > 0 && <OfferViewEvent offerId={rows[0].id} />}
       <header className="offer-intro">
         <span className="eyebrow">SAME PRODUCT · DIFFERENT STORES</span>
-        <h2 id="offer-heading">Compare stores & delivery</h2>
+        <h2 id="offer-heading">Where to buy</h2>
         <p>
           Compare recorded offers for this {volumeLabel(product)} presentation.
           Stores handle payment, order support and fulfilment. Peptivelo does
@@ -57,16 +60,7 @@ export function ProductOffers({
         action={`${productPath(product.slug)}#offers`}
         method="get"
       >
-        <div className="offer-field">
-          <label htmlFor="offer-market">Delivery destination</label>
-          <select id="offer-market" name="market" defaultValue={market}>
-            {Object.entries(markets).map(([id, item]) => (
-              <option key={id} value={id}>
-                {item.label}
-              </option>
-            ))}
-          </select>
-        </div>
+        <MarketSelect key={market} initialMarket={market} />
         <div className="offer-field">
           <label htmlFor="offer-sort">Sort offers</label>
           <select id="offer-sort" name="offerSort" defaultValue={sort}>
@@ -224,19 +218,12 @@ export function ProductOffers({
                   </div>
                 </div>
                 <div className="offer-action">
-                  <a
-                    className="button secondary"
+                  <OfferLink
+                    offerId={offer.id}
                     href={offer.affiliateUrl ?? offer.url}
-                    target="_blank"
-                    rel={
-                      offer.affiliateUrl
-                        ? "sponsored noopener noreferrer"
-                        : "noopener noreferrer"
-                    }
-                  >
-                    Visit {offer.retailerName}{" "}
-                    <ArrowUpRight size={16} aria-hidden="true" />
-                  </a>
+                    retailer={offer.retailerName}
+                    affiliate={Boolean(offer.affiliateUrl)}
+                  />
                   <small>
                     {offer.affiliateUrl
                       ? offer.affiliateDisclosure

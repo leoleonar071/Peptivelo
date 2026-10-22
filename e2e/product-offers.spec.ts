@@ -18,13 +18,13 @@ test("compares two real stores for the same variant and keeps checkout unknowns 
   await expect(sephora).toContainText("1–3 business days");
   await expect(sephora).toContainText("Processing time not confirmed");
   await expect(
-    sephora.getByRole("link", { name: "Visit Sephora US" }),
+    sephora.getByRole("link", { name: "Check price at Sephora US" }),
   ).toHaveAttribute(
     "href",
     "https://www.sephora.com/product/buffet-copper-peptides-1-P442752",
   );
   await expect(
-    sephora.getByRole("link", { name: "Visit Sephora US" }),
+    sephora.getByRole("link", { name: "Check price at Sephora US" }),
   ).not.toHaveAttribute("rel", /sponsored/);
   await page.getByLabel("Sort offers", { exact: true }).selectOption("total");
   await page.getByRole("button", { name: "Update offers" }).click();
@@ -79,7 +79,7 @@ test("missing variant prices and one-store coverage remain explicit", async ({
   await page.goto("/skincare/products/cosrx-six-peptide-skin-booster-mini/");
   await expect(page.locator("#offers .offer-card")).toHaveCount(0);
   await expect(page.locator("#offers")).toContainText("No offers recorded");
-  await page.goto("/skincare/products/niod-cais3/");
+  await page.goto("/skincare/products/geek-and-gorgeous-power-peptides/");
   await expect(page.locator("#offers .offer-card")).toHaveCount(1);
   await expect(page.locator("#offers")).toContainText(
     "Only one store is documented",
