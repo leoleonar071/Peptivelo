@@ -1,0 +1,11 @@
+[WebServer] (node:29088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:15008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [desktop] › e2e\premium-hero.spec.ts:4:1 › premium hero at all requested widths and themes (33.4s)
+  ok 2 [desktop] › e2e\premium-hero.spec.ts:148:1 › desktop shortcut respects forms and open dialogs (788ms)
+
+  2 passed (41.2s)

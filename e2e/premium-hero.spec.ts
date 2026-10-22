@@ -9,10 +9,10 @@ test("premium hero at all requested widths and themes", async ({
     info.project.name !== "desktop",
     "One matrix covers the five explicit widths.",
   );
-  test.setTimeout(90000);
+  test.setTimeout(150000);
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
-  for (const width of [1440, 1024, 768, 390, 320]) {
+  for (const width of [1440, 1280, 1024, 768, 390, 375, 320]) {
     await page.setViewportSize({ width, height: 960 });
     await page.goto("/");
     for (const theme of ["light", "dark"]) {
@@ -61,6 +61,21 @@ test("premium hero at all requested widths and themes", async ({
       expect(shape.radius).toBe("50%");
       expect(shape.text).toBe("");
       await expect(page.locator(".preview-document")).toHaveCount(3);
+      await expect(page.locator(".home-hero .knowledge-preview")).toHaveCount(
+        0,
+      );
+      await expect(page.locator(".hero-shortcuts a")).toHaveCount(3);
+      await expect(page.locator(".hero-start a")).toHaveCount(2);
+      expect(
+        await page
+          .locator("h1")
+          .evaluate((el) => getComputedStyle(el).fontWeight),
+      ).toBe("500");
+      expect(
+        await page
+          .locator("h1")
+          .evaluate((el) => getComputedStyle(el).fontFamily),
+      ).toContain("Instrument Sans");
       if (width <= 540) {
         await expect(page.getByRole("combobox")).toHaveAttribute(
           "placeholder",
@@ -71,7 +86,46 @@ test("premium hero at all requested widths and themes", async ({
       }
       await page
         .locator(".home-hero")
-        .screenshot({ path: `docs/premium-hero-${theme}-${width}.png` });
+        .screenshot({
+          animations: "disabled",
+          path: info.outputPath(`premium-hero-${theme}-${width}.png`),
+        });
+      if (width === 1440 || width === 390)
+        await page
+          .locator(".connected-preview-section")
+          .screenshot({
+            animations: "disabled",
+            path: info.outputPath(`connected-${width}-${theme}.png`),
+          });
+      const input = page.getByRole("combobox");
+      await input.focus();
+      await page
+        .locator(".home-hero")
+        .screenshot({
+          animations: "disabled",
+          path: info.outputPath(`focus-${width}-${theme}.png`),
+        });
+      await input.fill("GHK-Cu");
+      await expect(page.getByRole("option").first()).toBeVisible();
+      await page
+        .locator(".home-hero")
+        .screenshot({
+          animations: "disabled",
+          path: info.outputPath(`results-${width}-${theme}.png`),
+        });
+      await input.fill("zzzzzz-no-entry");
+      await expect(
+        page.getByText("No matching documents.", { exact: false }),
+      ).toBeVisible();
+      await page
+        .locator(".home-hero")
+        .screenshot({
+          animations: "disabled",
+          path: info.outputPath(`empty-${width}-${theme}.png`),
+        });
+      await input.fill("");
+      await input.press("Escape");
+      await input.blur();
       expect(
         (
           await new AxeBuilder({ page })

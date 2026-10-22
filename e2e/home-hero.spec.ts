@@ -16,7 +16,7 @@ for (const theme of ["light", "dark"]) {
       page
         .getByRole("navigation", { name: "Peptivelo tools" })
         .getByRole("link"),
-    ).toHaveCount(4);
+    ).toHaveCount(3);
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,
@@ -34,11 +34,11 @@ for (const theme of ["light", "dark"]) {
       ),
     );
     await page.screenshot({
-      path: `docs/search-hero-${theme}-${info.project.name}.png`,
+      path: info.outputPath(`search-hero-${theme}.png`),
       fullPage: false,
     });
     await page.locator(".knowledge-section").screenshot({
-      path: `docs/search-discovery-${theme}-${info.project.name}.png`,
+      path: info.outputPath(`search-discovery-${theme}.png`),
     });
     const search = page.getByRole("combobox");
     await search.fill("peptide");
@@ -86,7 +86,7 @@ test("all results, starter suggestions and narrow viewport work", async ({
   await page.goto("/");
   await page.setViewportSize({ width: 320, height: 740 });
   await expect(
-    page.getByRole("link", { name: "Identify a product", exact: true }),
+    page.getByRole("link", { name: /Identify (a )?product/, exact: true }),
   ).toBeVisible();
   expect(
     await page.evaluate(

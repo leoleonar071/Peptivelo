@@ -4,8 +4,6 @@ import {
   BookOpen,
   Columns2,
   ScanLine,
-  Calculator,
-  Check,
   ArrowRight,
 } from "lucide-react";
 import { catalog } from "@/lib/data";
@@ -27,9 +25,8 @@ export function HomeHero() {
           Understand peptides. <span>Look beyond the claims.</span>
         </h1>
         <p className="home-hero-description">
-          Explore peptide ingredients, research, and products in one place.
-          Clear explanations, verifiable sources, and honest limits to what we
-          know.
+          Explore ingredients, research, and products with clear explanations
+          and sources you can check.
         </p>
         <HeroSearch entries={searchIndex} />
         <nav className="hero-shortcuts" aria-label="Peptivelo tools">
@@ -43,62 +40,62 @@ export function HomeHero() {
               name: "Compare products",
               href: "/skincare/compare/",
               icon: Columns2,
-              featured: true,
             },
             {
               name: "Peptide library",
               href: "/library/",
               icon: BookOpen,
             },
-            {
-              name: "Price calculator",
-              href: "/tools/price-per-ml/",
-              icon: Calculator,
-            },
           ].map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={item.featured ? "hero-shortcut-featured" : undefined}
+              className={
+                item.name === "Peptide library"
+                  ? "hero-library-link"
+                  : undefined
+              }
             >
               <item.icon size={17} aria-hidden="true" />
-              {item.name}
+              <span className="shortcut-desktop">{item.name}</span>
+              <span className="shortcut-mobile">
+                {item.name === "Identify a product"
+                  ? "Identify product"
+                  : item.name === "Compare products"
+                    ? "Compare"
+                    : "Explore peptide library →"}
+              </span>
             </Link>
           ))}
         </nav>
         <div className="hero-start">
-          <span>Suggested searches</span>
-          {[
-            "GHK-Cu",
-            "Copper peptides",
-            "Serum ingredients",
-            "Peptide concentrations",
-          ].map((query) => (
+          <span>Try searching:</span>
+          {["GHK-Cu", "Peptide concentrations"].map((query) => (
             <Link key={query} href={`/search/?q=${encodeURIComponent(query)}`}>
               {query}
               <ArrowUpRight size={12} aria-hidden="true" />
             </Link>
           ))}
         </div>
-        <ul className="home-hero-trust">
-          {[
-            "Independent information",
-            "Sources you can check",
-            "Evidence limitations explained",
-          ].map((text) => (
-            <li key={text}>
-              <Check size={14} aria-hidden="true" />
-              {text}
-            </li>
-          ))}
-        </ul>
+        <p className="home-transparency">
+          Independent information <span aria-hidden="true">·</span> Linked
+          sources <span aria-hidden="true">·</span>{" "}
+          <Link href="/methodology/">Our methodology</Link>
+        </p>
+      </section>
+      <section
+        className="connected-preview-section wrap"
+        aria-labelledby="connected-title"
+      >
+        <div className="connected-heading">
+          <h2 id="connected-title">One question. Connected answers.</h2>
+          <p>See how Peptivelo connects ingredients, research, and products.</p>
+        </div>
+        <KnowledgePreview />
         <p className="home-hero-review">
           Scientific interpretations pending qualified review.{" "}
-          <Link href="/methodology/">
-            Our methodology <ArrowUpRight size={12} aria-hidden="true" />
-          </Link>
+          <Link href="/methodology/">Our methodology</Link>
         </p>
-        <KnowledgePreview />
       </section>
       <section
         className="knowledge-section wrap"

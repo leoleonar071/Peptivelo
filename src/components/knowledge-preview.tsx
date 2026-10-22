@@ -6,7 +6,6 @@ import {
   Package,
   ArrowRight,
 } from "lucide-react";
-import { libraryArticles } from "@/lib/library";
 import { searchIndex } from "@/lib/search-index";
 import { searchEntries } from "@/lib/search";
 
@@ -18,17 +17,20 @@ export function KnowledgePreview() {
     (entry) => entry.href === "/skincare/ingredients/copper-tripeptide-1/",
   );
   const product = results.find((entry) => entry.category === "Products");
-  const introduction = libraryArticles.find(
-    (article) => article.slug === "peptide-categories",
+  const introduction = searchEntries(searchIndex, "GHK-Cu").find(
+    (entry) =>
+      entry.category === "Sources" &&
+      entry.href === "/sources/#source-cir-peptides",
   );
   const cards = [
     ...(introduction
       ? [
           {
-            title: introduction.title,
-            detail: introduction.description,
-            href: `/library/${introduction.slug}/`,
-            label: "LIBRARY / THE CONTEXT",
+            title: introduction.name,
+            detail:
+              "Cosmetic safety assessment cited by this profile; not a finished-serum efficacy trial.",
+            href: introduction.href,
+            label: "SOURCE / SAFETY CONTEXT",
             icon: BookOpen,
           },
         ]
@@ -57,10 +59,13 @@ export function KnowledgePreview() {
       : []),
   ];
   return (
-    <section className="knowledge-preview" aria-labelledby="preview-title">
+    <section
+      className="knowledge-preview"
+      aria-label="Connected exploration: Copper peptides"
+    >
       <div className="preview-heading">
-        <h2 id="preview-title">A LOOK INSIDE PEPTIVELO</h2>
-        <span>Explore · Understand · Compare</span>
+        <span>ONE CONNECTED EXPLORATION</span>
+        <span>Ingredient · Source · Product</span>
       </div>
       <div className="preview-query">
         <div>
@@ -72,19 +77,27 @@ export function KnowledgePreview() {
         </Link>
       </div>
       <div className="preview-documents">
-        {cards.map((card) => (
-          <Link key={card.href} href={card.href} className="preview-document">
-            <span className="preview-category">
-              <card.icon size={16} aria-hidden="true" />
-              {card.label}
-            </span>
-            <h3>{card.title}</h3>
-            <p>{card.detail}</p>
-            <span className="preview-open">
-              Read the page <ArrowUpRight size={16} aria-hidden="true" />
-            </span>
-          </Link>
-        ))}
+        {cards
+          .sort((a, b) =>
+            a.label.startsWith("INGREDIENT")
+              ? -1
+              : b.label.startsWith("INGREDIENT")
+                ? 1
+                : 0,
+          )
+          .map((card) => (
+            <Link key={card.href} href={card.href} className="preview-document">
+              <span className="preview-category">
+                <card.icon size={16} aria-hidden="true" />
+                {card.label}
+              </span>
+              <h3>{card.title}</h3>
+              <p>{card.detail}</p>
+              <span className="preview-open">
+                Read the page <ArrowUpRight size={16} aria-hidden="true" />
+              </span>
+            </Link>
+          ))}
       </div>
       <p className="preview-footnote">
         A starting point, with sources and limits on every page. Product

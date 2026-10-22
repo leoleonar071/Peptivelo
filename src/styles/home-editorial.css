@@ -1,15 +1,15 @@
-/* Home only: warm paper, graphite ink, quiet white cards, mineral accents.
+/* Home only: ivory paper, petroleum ink, quiet white cards, mineral accents.
    Keep the global brand and the data-heavy comparison surfaces unchanged. */
 .home-editorial {
-  --pv-bg: #f6f5f0;
+  --pv-bg: #f8f7f2;
   --pv-surface: #ffffff;
   --pv-surface-secondary: #eeece5;
-  --pv-text: #211e1a;
-  --pv-text-secondary: #625d55;
+  --pv-text: #0e3d36;
+  --pv-text-secondary: #4e6b72;
   --pv-border: #ded9cf;
-  --pv-primary: #211e1a;
+  --pv-primary: #0e3d36;
   --pv-primary-text: #f6f5f0;
-  --pv-primary-hover: #3c3731;
+  --pv-primary-hover: #1b554b;
   --pv-accent: #e0eae1;
   --pv-accent-text: #294c40;
   --pv-focus: #276d63;
@@ -40,16 +40,16 @@
 }
 
 :root[data-theme="dark"] .home-editorial {
-  --pv-bg: #1c211e;
-  --pv-surface: #272e29;
-  --pv-surface-secondary: #303931;
+  --pv-bg: #0c2420;
+  --pv-surface: #14352e;
+  --pv-surface-secondary: #1d4039;
   --pv-text: #f6f3ec;
   --pv-text-secondary: #c5c9bf;
-  --pv-border: #485349;
+  --pv-border: #3f6257;
   --pv-primary: #f6f3ec;
   --pv-primary-text: #211e1a;
   --pv-primary-hover: #e0e7d9;
-  --pv-accent: #31483b;
+  --pv-accent: #24483c;
   --pv-accent-text: #d6e9d8;
   --pv-focus: #b7e1d6;
   --pv-shadow: rgb(0 0 0 / 24%);
@@ -80,7 +80,7 @@
 
 .home-editorial .home-hero h1 {
   color: var(--pv-text);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .home-editorial .home-hero-eyebrow {
@@ -160,16 +160,11 @@
   font-weight: 600;
 }
 
-.home-editorial .hero-shortcuts a.hero-shortcut-featured,
 .home-editorial .hero-shortcuts a:hover,
 .home-editorial .hero-shortcuts a:focus-visible {
   background: var(--pv-primary);
   color: var(--pv-primary-text);
   border-color: var(--pv-primary);
-}
-
-.home-editorial .hero-shortcuts a.hero-shortcut-featured:hover {
-  background: var(--pv-primary-hover);
 }
 
 .home-editorial .knowledge-preview,
@@ -206,6 +201,192 @@
   .home-editorial .knowledge-card,
   .home-editorial .product-card,
   .home-editorial .question-card {
+    transition: none;
+  }
+}
+
+/* V2: one search-led introduction, then a separate connected reading path. */
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/instrument-sans-latin.woff2") format("woff2");
+}
+.home-editorial .home-hero h1 {
+  font-family: "Instrument Sans", "Inter", Arial, sans-serif;
+  font-size: clamp(48px, 5vw, 72px);
+  max-width: 1000px;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+.home-editorial .home-hero h1 span {
+  font-weight: 400;
+}
+.home-editorial .home-hero-eyebrow {
+  font-size: 11px;
+  padding: 8px 14px;
+  letter-spacing: 0.1em;
+}
+.home-editorial .home-hero-description {
+  max-width: 650px;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.55;
+}
+.home-editorial .home-hero.wrap {
+  padding-block: 44px 32px;
+  background:
+    radial-gradient(
+      ellipse 52% 40% at 60% 62%,
+      var(--editorial-mesh-mineral),
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 38% 45% at 30% 48%,
+      var(--editorial-mesh-warm),
+      transparent 80%
+    );
+}
+.home-editorial .hero-search form {
+  border-color: var(--pv-border);
+}
+.home-editorial .hero-search form:focus-within {
+  border-color: var(--pv-focus);
+  outline: 2px solid var(--pv-focus);
+  outline-offset: 3px;
+}
+.home-editorial .hero-shortcuts a {
+  border: 1px solid var(--pv-border);
+  background: var(--pv-surface);
+  box-shadow: none;
+  font-weight: 500;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+.home-editorial .hero-shortcuts a:hover,
+.home-editorial .hero-shortcuts a:focus-visible {
+  background: var(--pv-accent);
+  color: var(--pv-accent-text);
+  border-color: var(--pv-focus);
+}
+.shortcut-mobile {
+  display: none;
+}
+@media (min-width: 541px) and (max-width: 800px) {
+  .home-editorial .hero-shortcuts {
+    display: flex;
+    width: auto;
+    max-width: 100%;
+  }
+}
+.home-transparency {
+  color: var(--pv-text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 12px 0 0;
+}
+.home-transparency > span {
+  margin-inline: 6px;
+}
+.home-transparency a {
+  text-underline-offset: 4px;
+}
+.connected-preview-section {
+  padding-block: 32px 40px;
+}
+.connected-heading {
+  max-width: 1000px;
+  margin: 0 auto 24px;
+}
+.connected-heading h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin: 0 0 12px;
+}
+.connected-heading p {
+  color: var(--pv-text-secondary);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+.home-editorial .knowledge-preview {
+  margin: 0 auto;
+}
+.connected-preview-section .home-hero-review {
+  max-width: 1000px;
+  margin: 16px auto 0;
+}
+.preview-heading > span:first-child {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+@media (max-width: 540px) {
+  .home-editorial .home-hero.wrap {
+    padding: 28px 20px 24px;
+    text-align: left;
+    align-items: stretch;
+  }
+  .home-editorial .home-hero-eyebrow {
+    align-self: flex-start;
+    font-size: 10px;
+  }
+  .home-editorial .home-hero h1 {
+    font-size: clamp(36px, 9.5vw, 42px);
+    line-height: 1.08;
+  }
+  .home-editorial .home-hero-description {
+    font-size: 16px;
+  }
+  .home-editorial .hero-shortcuts {
+    width: 100%;
+  }
+  .shortcut-desktop {
+    display: none;
+  }
+  .shortcut-mobile {
+    display: inline;
+  }
+  .home-editorial .hero-shortcuts a {
+    border-radius: 14px;
+    padding: 12px 8px;
+    font-size: 13px;
+    justify-content: center;
+  }
+  .home-editorial .hero-shortcuts .hero-library-link {
+    grid-column: 1 / -1;
+    justify-self: start;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    padding-inline: 0;
+  }
+  .hero-library-link svg {
+    display: none;
+  }
+  .home-editorial .hero-start {
+    justify-content: flex-start;
+    gap: 0 12px;
+  }
+  .home-editorial .hero-start > span {
+    width: auto;
+    margin: 0;
+  }
+  .home-transparency {
+    margin-top: 12px;
+  }
+  .connected-preview-section {
+    padding: 28px 20px 32px;
+  }
+  .preview-heading > span:last-child {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-editorial .hero-shortcuts a {
     transition: none;
   }
 }

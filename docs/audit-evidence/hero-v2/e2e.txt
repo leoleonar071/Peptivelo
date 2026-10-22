@@ -1,0 +1,45 @@
+[WebServer] (node:11552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 27 tests using 2 workers
+
+(node:4612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:11308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop] › e2e\connected-search.spec.ts:42:1 › spelling fallback is disclosed and retains the query in the URL (592ms)
+  ok  3 [desktop] › e2e\connected-search.spec.ts:58:1 › the exact requested email is published without a false verified badge (258ms)
+  ok  2 [desktop] › e2e\connected-search.spec.ts:4:1 › a compact ingredient alias connects documented products, comparisons and source anchors (2.3s)
+  ok  4 [desktop] › e2e\home-hero.spec.ts:5:3 › universal hero works in light (3.0s)
+  ok  5 [desktop] › e2e\home-hero.spec.ts:5:3 › universal hero works in dark (3.0s)
+  ok  6 [desktop] › e2e\home-hero.spec.ts:78:1 › all results, starter suggestions and narrow viewport work (1.5s)
+  ok  7 [desktop] › e2e\home-hero.spec.ts:104:1 › search document links resolve (3.8s)
+  ok  9 [desktop] › e2e\premium-hero.spec.ts:137:1 › desktop shortcut respects forms and open dialogs (706ms)
+(node:26664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 [tablet] › e2e\connected-search.spec.ts:4:1 › a compact ingredient alias connects documented products, comparisons and source anchors (1.4s)
+  ok 11 [tablet] › e2e\connected-search.spec.ts:42:1 › spelling fallback is disclosed and retains the query in the URL (364ms)
+  ok 12 [tablet] › e2e\connected-search.spec.ts:58:1 › the exact requested email is published without a false verified badge (312ms)
+  ok 13 [tablet] › e2e\home-hero.spec.ts:5:3 › universal hero works in light (2.4s)
+  ok 14 [tablet] › e2e\home-hero.spec.ts:5:3 › universal hero works in dark (2.7s)
+  ok 15 [tablet] › e2e\home-hero.spec.ts:78:1 › all results, starter suggestions and narrow viewport work (1.3s)
+  ok 16 [tablet] › e2e\home-hero.spec.ts:104:1 › search document links resolve (3.8s)
+  -  17 [tablet] › e2e\premium-hero.spec.ts:4:1 › premium hero at all requested widths and themes
+  ok 18 [tablet] › e2e\premium-hero.spec.ts:137:1 › desktop shortcut respects forms and open dialogs (815ms)
+(node:25964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 19 [mobile] › e2e\connected-search.spec.ts:4:1 › a compact ingredient alias connects documented products, comparisons and source anchors (1.2s)
+  ok 20 [mobile] › e2e\connected-search.spec.ts:42:1 › spelling fallback is disclosed and retains the query in the URL (358ms)
+  ok 21 [mobile] › e2e\connected-search.spec.ts:58:1 › the exact requested email is published without a false verified badge (276ms)
+  ok 22 [mobile] › e2e\home-hero.spec.ts:5:3 › universal hero works in light (4.3s)
+  ok 23 [mobile] › e2e\home-hero.spec.ts:5:3 › universal hero works in dark (4.2s)
+  ok 24 [mobile] › e2e\home-hero.spec.ts:78:1 › all results, starter suggestions and narrow viewport work (1.7s)
+  ok  8 [desktop] › e2e\premium-hero.spec.ts:4:1 › premium hero at all requested widths and themes (35.7s)
+  ok 25 [mobile] › e2e\home-hero.spec.ts:104:1 › search document links resolve (4.1s)
+  -  26 [mobile] › e2e\premium-hero.spec.ts:137:1 › desktop shortcut respects forms and open dialogs
+(node:38232) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  27 [mobile] › e2e\premium-hero.spec.ts:4:1 › premium hero at all requested widths and themes
+
+  3 skipped
+  24 passed (47.9s)
