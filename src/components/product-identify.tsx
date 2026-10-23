@@ -1,4 +1,5 @@
 "use client";
+import { comparisonPath } from "@/lib/config";
 
 import { useRef, useState } from "react";
 import Link from "next/link";
@@ -351,7 +352,7 @@ export function ProductIdentify() {
               <div className="identify-next">
                 <Link
                   className="button"
-                  href={`/skincare/compare/?a=${selected.id}`}
+                  href={`${comparisonPath()}?a=${selected.id}`}
                 >
                   Compare with another serum <ArrowRight size={17} />
                 </Link>

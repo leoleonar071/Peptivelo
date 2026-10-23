@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 test("requested typography and supplied isotype preserve the existing light UI", async ({ page }, info) => {
-  for (const route of ["/", "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/", "/skincare/identify/", "/library/", "/haircare/"]) {
+  for (const route of ["/", "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/", "/skincare/identify/", "/library/", "/haircare/"]) {
     await page.goto(route);
     await page.evaluate(() => document.fonts.ready);
     await expect(page.locator("header .brand-mark img")).toHaveAttribute("src", /peptivelo-isotype/);

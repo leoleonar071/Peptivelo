@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 test("HA versus copper exposes scoped academic safety evidence", async ({ page }, info) => {
-  await page.goto("/skincare/compare/the-ordinary-multi-peptide-ha-vs-copper/");
+  await page.goto("/compare/the-ordinary-multi-peptide-ha-vs-copper/");
   await expect(page.locator(".reader-status")).toContainText("Scientific review");
   await page.getByRole("tab", { name: "Evidence", exact: true }).click();
   const data = page.locator("#study-data");

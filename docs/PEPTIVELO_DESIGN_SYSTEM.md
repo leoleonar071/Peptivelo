@@ -49,10 +49,20 @@ No se convierte la falta de datos en ineficacia, ni una etiqueta comercial en ev
 
 ## Comparador V2
 
-El comparador raíz usa dos estados: selección A/B con tarjetas completas y análisis automático con identidades compactas. Un único H1 de 56px en escritorio y 36px en móvil presenta las dos frases solicitadas; se reduce al completar la pareja. Ancho máximo 1200px, bordes sólidos, radios de 20–24px y controles de al menos 44px.
+El comparador raíz usa dos estados: selección A/B con tarjetas completas y análisis automático con identidades compactas. Un único H1 de 56px en escritorio y 36px en móvil presenta “Compare with clarity.”; se reduce al completar la pareja. Ancho máximo 1200px, bordes sólidos, radios de 20–24px y controles de al menos 44px.
 
 At a glance permanece visible. Product details, Ingredients, Pricing, Brand claims y Evidence empiezan cerradas. Evidence & sources separa etiquetas, ingredientes, formulaciones, producto terminado y análisis editorial de la pareja cuando existe. Los lectores editoriales mantienen sus pestañas y su variante de tabla original.
 
 En móvil, cada atributo ocupa una fila encima de los valores A/B, con identidades repetidas. Los textos largos del detalle se apilan. No hay cabeceras ni barras flotantes. El selector nativo mide hasta 880px en escritorio y adapta su altura en móvil; los resultados tienen desplazamiento propio. Los activos son registros editoriales propios y cuentan con un respaldo estable ante fallos de imagen.
 
 La fecha de observación del precio se distingue de la comprobación de etiqueta. Los valores desconocidos, límites de concentración, precauciones y fuentes permanecen al filtrar diferencias. Las divulgaciones de marca se atribuyen al fabricante y se separan de la interpretación editorial. US/USD es el contexto comercial de este comparador.
+
+## Comparación general
+
+El acceso global Compare lleva a /compare/; los artículos usan /compare/{slug}/. Se retiran las rutas anteriores sin redirección. El H1 es “Compare with clarity.” y el subtítulo “Explore documented differences. Understand the evidence. Check the sources.”. El comparador no muestra navegación local de Skincare. Las tarjetas dicen Choose a product y el aviso de cobertura identifica los productos faciales disponibles; Peptides A–Z ofrece explorar otras áreas. Los artículos conservan su tema con un enlace a Skin & cosmetics. Las reglas de compatibilidad proceden del registro de grupos y no de palabras o efectos compartidos. No hay categorías científicas vacías ni comparaciones de péptidos sin datos revisados.
+
+## Áreas futuras y plantilla compartida
+
+El registro interno src/lib/topic-registry.ts prepara 16 áreas: tres activas y 13 planificadas. Las planificadas no tienen enlace público, opción deshabilitada, resultado de búsqueda, filtro ni página vacía. La navegación consume solamente las activas. Health & research usa TopicLanding: título de área, introducción existente, bloques por formato con contenido real y enlaces relacionados activos. Los bloques vacíos se omiten. Se reutilizan tokens, tipografías, superficies y foco; no se añade otro sistema visual.
+
+Una identidad puede pertenecer a varios temas sin duplicar su ficha. La agenda de investigación y el modelo de borradores son internos; no generan contenido científico ni opciones del comparador. Antes de activar un área nueva, preparar una introducción con fuentes y dos fichas completas con comprobación editorial, conservando el estado real de revisión científica. La comprobación de integridad ayuda a la revisión, pero no publica ni certifica la evidencia. Ver docs/topic-foundation/IMPLEMENTATION.md y RESEARCH_ROADMAP.md.

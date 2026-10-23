@@ -1,4 +1,5 @@
 "use client";
+import { comparisonPath } from "@/lib/config";
 import Link from "next/link";
 import { useId, useSyncExternalStore } from "react";
 import type {
@@ -328,7 +329,7 @@ export function SearchExploration({
                 {a && b ? (
                   <Link
                     className="button"
-                    href={`/skincare/compare/?${new URLSearchParams({ a: a.id, b: b.id })}`}
+                    href={`${comparisonPath()}?${new URLSearchParams({ a: a.id, b: b.id })}`}
                   >
                     Open comparison →
                   </Link>

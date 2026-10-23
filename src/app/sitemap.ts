@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { site } from "@/lib/config";
+import { site, comparisonPath } from "@/lib/config";
 import { products, catalog } from "@/lib/data";
 import { guides } from "@/lib/guides";
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .map((i) => `skincare/ingredients/${i.slug}`),
     ...catalog.comparisons
       .filter((c) => c.publicationStatus === "published")
-      .map((c) => `skincare/compare/${c.slug}`),
+      .map((c) => comparisonPath(c.slug).slice(1, -1)),
     ...(guides.some((g) => g.status === "published")
       ? ["skincare/guides"]
       : []),

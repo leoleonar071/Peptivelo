@@ -1,3 +1,4 @@
+import { comparisonPath } from "@/lib/config";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Shuffle } from "lucide-react";
 import { ReaderTabs } from "./reader-tabs";
@@ -71,7 +72,7 @@ export function EditorialComparison({
       </div>
       <div className="reader-pair-actions">
         <span>Two formulas. A closer look at what matters.</span>
-        <Link href={`/skincare/compare/?a=${pair[0].id}&b=${pair[1].id}`}>
+        <Link href={`${comparisonPath()}?a=${pair[0].id}&b=${pair[1].id}`}>
           <Shuffle size={16} /> Change products
         </Link>
       </div>
@@ -138,7 +139,7 @@ export function EditorialComparison({
                   its name.
                 </p>
               </div>
-              <ComparisonGrid a={pair[0]} b={pair[1]} clarifyLimits={usesReadingContext(c.id)} returnTo={`/skincare/compare/${c.slug}/#comparison-peptides`} />
+              <ComparisonGrid a={pair[0]} b={pair[1]} clarifyLimits={usesReadingContext(c.id)} returnTo={`${comparisonPath(c.slug)}#comparison-peptides`} />
             </section>
 
             <details className="reader-disclosure" id="buying-notes">

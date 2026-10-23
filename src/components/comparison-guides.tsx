@@ -1,3 +1,4 @@
+import { comparisonPath } from "@/lib/config";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { catalog } from "@/lib/data";
@@ -17,7 +18,7 @@ export function ComparisonGuides({ productId }: { productId?: string }) {
           <Link
             className="question-card"
             key={guide.id}
-            href={`/skincare/compare/${guide.slug}/`}
+            href={comparisonPath(guide.slug)}
           >
             <span className="badge">Editorial draft</span>
             <h3>{guide.title}</h3>

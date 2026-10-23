@@ -1,3 +1,4 @@
+import { comparisonPath } from "@/lib/config";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { catalog } from "@/lib/data";
@@ -57,7 +58,7 @@ export default function ChoosePage() {
                 <p>{path.reason}</p>
                 <div className="choose-limit"><strong>What this cannot tell you</strong><p>{path.limit}</p></div>
                 <p><strong>Keep this question in mind:</strong> {path.question}</p>
-                <Link className="button" href={`/skincare/compare/${guide.slug}/`}>Explore this comparison <ArrowRight size={16} /></Link>
+                <Link className="button" href={comparisonPath(guide.slug)}>Explore this comparison <ArrowRight size={16} /></Link>
                 <p className="choose-source-note">Label facts, research citations and their limits are inside the comparison.</p>
               </div>
             </details>
@@ -67,7 +68,7 @@ export default function ChoosePage() {
       <div className="choose-other">
         <p>Already have a bottle? <Link href="/skincare/identify/">Understand your label →</Link></p>
         <p>Looking for fuller-looking hair? <Link href="/haircare/">Explore hair & scalp →</Link></p>
-        <Link className="text-link" href="/skincare/compare/">Choose your own two products <ArrowRight size={16} /></Link>
+        <Link className="text-link" href={comparisonPath()}>Choose your own two products <ArrowRight size={16} /></Link>
       </div>
     </main>
   );

@@ -1,3 +1,4 @@
+import { comparisonPath } from "@/lib/config";
 import Link from "next/link";
 import { catalog, products } from "@/lib/data";
 import { type Guide } from "@/lib/guides";
@@ -144,7 +145,7 @@ export function ReadingGuide({ guide }: { guide: Guide }) {
             const comparison = catalog.comparisons.find((c) => c.id === id)!;
             return (
               <li key={id}>
-                <Link href={`/skincare/compare/${comparison.slug}/`}>
+                <Link href={comparisonPath(comparison.slug)}>
                   {comparison.title}
                 </Link>{" "}
                 · Editorial draft

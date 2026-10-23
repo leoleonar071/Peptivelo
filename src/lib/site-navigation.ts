@@ -1,27 +1,10 @@
-export const topics = [
-  {
-    id: "skin",
-    title: "Skin & cosmetics",
-    href: "/skincare/",
-    description:
-      "Explore serum labels, cosmetic ingredients and product comparisons.",
-  },
-  {
-    id: "hair",
-    title: "Hair & scalp",
-    href: "/haircare/",
-    description: "Understand scalp-serum labels and their peptide evidence.",
-  },
-  {
-    id: "health",
-    title: "Health & research",
-    href: "/topics/health-research/",
-    description: "Read selected research briefs and understand their limits.",
-  },
-] as const;
-export type TopicId = (typeof topics)[number]["id"];
+import { comparisonPath } from "@/lib/config";
+import { activeTopics } from "./topic-registry";
+export type { TopicId } from "./topic-registry";
+export const topics = activeTopics;
 export const globalLinks = [
   { title: "Peptides A–Z", href: "/peptides/" },
+  { title: "Compare", href: comparisonPath() },
   { title: "Learn", href: "/learn/" },
   { title: "Search", href: "/search/" },
 ];
@@ -54,19 +37,19 @@ export const footerGroups = [
   },
 ];
 export function topicForPath(path: string) {
-  if (path.startsWith("/skincare")) return topics[0];
-  if (path.startsWith("/haircare")) return topics[1];
-  if (
-    path.startsWith("/topics/health-research") ||
-    /^\/library\/(bpc-157|retatrutide)(?:\/|$)/.test(path)
-  )
-    return topics[2];
+  const topic = topics.find(
+    (candidate) =>
+      path === candidate.href.slice(0, -1) || path.startsWith(candidate.href),
+  );
+  if (topic) return topic;
+  if (/^\/library\/(bpc-157|retatrutide)(?:\/|$)/.test(path))
+    return topics.find((candidate) => candidate.id === "health");
   return undefined;
 }
 export const skinLinks = [
   { title: "Overview", href: "/skincare/" },
   { title: "Products", href: "/skincare/products/" },
-  { title: "Comparisons", href: "/skincare/compare/" },
+  { title: "Comparisons", href: comparisonPath() },
   { title: "Ingredients", href: "/skincare/ingredients/" },
   { title: "Guides", href: "/skincare/guides/" },
 ];

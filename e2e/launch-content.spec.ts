@@ -31,7 +31,7 @@ test("editorial guide explains the choice, sources and new ingredient without lo
   page,
 }, testInfo) => {
   await page.goto(
-    "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+    "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
   );
   await expect(page.locator(".reader-status")).toContainText("Scientific review pending");
   await page.getByRole("tab", { name: "Ingredients & price", exact: true }).click();
@@ -107,7 +107,7 @@ test("all five editorial drafts render from server HTML with sources and noindex
     "the-ordinary-argireline-vs-multi-peptide-ha",
     "geek-gorgeous-power-peptides-vs-the-ordinary-ha",
   ]) {
-    const response = await request.get(`/skincare/compare/${slug}/`);
+    const response = await request.get(`/compare/${slug}/`);
     expect(response.status()).toBe(200);
     const html = await response.text();
     expect(html).toContain("What we cannot tell from the label");

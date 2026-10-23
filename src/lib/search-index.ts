@@ -1,3 +1,5 @@
+import { activeTopics } from "./topic-registry";
+import { comparisonPath } from "@/lib/config";
 import { products, catalog, brandName } from "./data";
 import { guides } from "./guides";
 import { libraryArticles } from "./library";
@@ -6,6 +8,14 @@ import { ingredientPath, productPath } from "./config";
 import { ingredientAliases, type SearchEntry } from "./search";
 // Extend with real routes and sources as collections grow.
 export const searchIndex: SearchEntry[] = [
+  {
+    name: "Compare",
+    href: comparisonPath(),
+    detail:
+      "Explore documented differences. Currently available: facial skincare products.",
+    terms: "compare comparison tool products labels prices sources",
+    category: "Comparisons",
+  },
   ...[
     {
       name: "Explore topics",
@@ -25,12 +35,17 @@ export const searchIndex: SearchEntry[] = [
       detail: "Peptide basics and cosmetic label guides.",
       terms: "learn beginner basics introduction labels",
     },
-    {
-      name: "Health & research",
-      href: "/topics/health-research/",
-      detail: "Selected retatrutide and BPC-157 research briefs.",
-      terms: "health research studies",
-    },
+    ...activeTopics
+      .filter((topic) => topic.href.startsWith("/topics/"))
+      .map((topic) => ({
+        name: topic.title,
+        href: topic.href,
+        detail: topic.description,
+        terms:
+          topic.id === "health"
+            ? "health research studies"
+            : `${topic.title} ${topic.description}`,
+      })),
   ].map((entry): SearchEntry => ({ ...entry, category: "Guides & articles" })),
   ...catalog.ingredients
     .filter((i) => i.status === "published")
@@ -124,7 +139,7 @@ export const searchIndex: SearchEntry[] = [
         return p ? `${brandName(p)} ${p.name}` : "";
       })
       .join(" ")}`,
-    href: `/skincare/compare/${c.slug}/`,
+    href: comparisonPath(c.slug),
     category: "Comparisons",
     relations: [
       ...new Set(

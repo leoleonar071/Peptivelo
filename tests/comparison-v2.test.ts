@@ -56,7 +56,7 @@ it("editorial evidence remains tied to its exact pair and every passage source i
   const data = comparisonEvidenceData();
   expect(data.market).toBe("US");
   const pair = data.pairs[[a.id, b.id].sort().join("|")];
-  expect(pair.href).toBe("/skincare/compare/niod-cais3-vs-the-ordinary/");
+  expect(pair.href).toBe("/compare/niod-cais3-vs-the-ordinary/");
   expect(pair.paragraphs.length).toBeGreaterThan(0);
   for (const p of Object.values(data.pairs).flatMap((p) => p.paragraphs))
     for (const id of p.sourceIds) expect(data.sources[id], id).toBeDefined();

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { topics } from "@/lib/site-navigation";
 import { type ContentEntry } from "@/lib/content-navigation";
+import { isPublicTopicEntry } from "@/lib/content-topics";
 export function TopicCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
   const Heading = headingLevel === 2 ? "h2" : "h3";
   return (
@@ -26,7 +27,7 @@ export function ContentCards({
   const Heading = headingLevel === 2 ? "h2" : "h3";
   return (
     <div className="discovery-grid content-grid">
-      {entries.map((e) => (
+      {entries.filter(isPublicTopicEntry).map((e) => (
         <Link className="discovery-card" href={e.href} key={e.id}>
           <span className="eyebrow">
             {topics.find((t) => t.id === e.topic)?.title ?? "Peptide basics"} ·{" "}

@@ -1,3 +1,4 @@
+import { comparisonUrl } from "@/lib/config";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, Check, FlaskConical, ArrowRight } from "lucide-react";
@@ -86,7 +87,7 @@ export function ProductCard({ product: p }: { product: Product }) {
         <div className="card-foot">
           <VerifiedDate date={p.lastVerifiedAt} />
           <Link
-            href={`/skincare/compare/?a=${p.id}`}
+            href={comparisonUrl(p.id)}
             aria-label={`Add to comparison: ${p.name}`}
           >
             Add to comparison <ArrowRight size={17} />
@@ -96,7 +97,13 @@ export function ProductCard({ product: p }: { product: Product }) {
     </article>
   );
 }
-export function SourceList({ ids, anchors = false }: { ids: string[]; anchors?: boolean }) {
+export function SourceList({
+  ids,
+  anchors = false,
+}: {
+  ids: string[];
+  anchors?: boolean;
+}) {
   return (
     <div className="source-list">
       {catalog.sources
@@ -180,9 +187,9 @@ export function LoadingState() {
 export function AffiliateDisclosure() {
   return (
     <p className="disclosure">
-      No affiliate partnerships are active. Manufacturer and store links are ordinary
-      links; we do not earn commissions from them. Recorded prices exclude tax
-      and shipping and may have changed.
+      No affiliate partnerships are active. Manufacturer and store links are
+      ordinary links; we do not earn commissions from them. Recorded prices
+      exclude tax and shipping and may have changed.
     </p>
   );
 }

@@ -4,7 +4,7 @@ import AxeBuilder from "@axe-core/playwright";
 test("editorial reader identifies products and guides a narrow-screen decision", async ({
   page,
 }, testInfo) => {
-  await page.goto("/skincare/compare/niod-cais3-vs-the-ordinary/");
+  await page.goto("/compare/niod-cais3-vs-the-ordinary/");
   await expect(page.locator(".reader-product")).toHaveCount(2);
   await expect(page.locator(".reader-takeaways > div")).toHaveCount(3);
   await expect(page.locator(".reader-caution")).toBeVisible();

@@ -3,7 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 
 test("priority summaries answer the three buying questions with source access", async ({ page }, info) => {
   for (const slug of ["niod-cais3-vs-the-ordinary", "the-ordinary-multi-peptide-ha-vs-copper"]) {
-    await page.goto(`/skincare/compare/${slug}/`);
+    await page.goto(`/compare/${slug}/`);
     const summary = page.locator(".reader-takeaways");
     await expect(summary.getByRole("heading")).toHaveText(["What is documented?", "What does it mean for your purchase?", "What has not been demonstrated?"]);
     const citation = summary.locator(".inline-citations a").first();

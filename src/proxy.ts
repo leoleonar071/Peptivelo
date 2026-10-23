@@ -1,11 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { site } from "@/lib/config";
+import { site, comparisonPath } from "@/lib/config";
 export function proxy(req: NextRequest) {
   const res = NextResponse.next();
   if (
     !site.indexable ||
     req.nextUrl.search ||
-    req.nextUrl.pathname.replace(/\/$/, "") === "/skincare/compare"
+    req.nextUrl.pathname.replace(/\/$/, "") === comparisonPath().replace(/\/$/, "")
   )
     res.headers.set("X-Robots-Tag", "noindex, follow");
   res.headers.set("X-Content-Type-Options", "nosniff");

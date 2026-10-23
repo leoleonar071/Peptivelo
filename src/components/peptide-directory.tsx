@@ -3,9 +3,14 @@ import { useState } from "react";
 import { topics } from "@/lib/site-navigation";
 import { type ContentEntry } from "@/lib/content-navigation";
 import { ContentCards } from "./discovery";
+import { entriesForTopic, isPublicTopicEntry } from "@/lib/content-topics";
+import type { TopicId } from "@/lib/topic-registry";
 export function PeptideDirectory({ entries }: { entries: ContentEntry[] }) {
   const [topic, setTopic] = useState("all");
-  const filtered = entries.filter((e) => topic === "all" || e.topic === topic);
+  const filtered =
+    topic === "all"
+      ? entries.filter(isPublicTopicEntry)
+      : entriesForTopic(entries, topic as TopicId);
   return (
     <>
       <div className="directory-controls">

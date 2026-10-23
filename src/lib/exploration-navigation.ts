@@ -4,13 +4,12 @@ import type {
   ExplorationState,
   QueryParams,
 } from "./exploration";
+import { canCompareEntities } from "./comparison-groups";
 
 export function compatible(a: ExplorationProduct, b: ExplorationProduct) {
-  return (
-    a.id !== b.id &&
-    a.context === "skin" &&
-    b.context === "skin" &&
-    a.category === b.category
+  return canCompareEntities(
+    { id: a.id, kind: "product", topic: a.context },
+    { id: b.id, kind: "product", topic: b.context },
   );
 }
 export function explorationUrl(

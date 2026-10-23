@@ -51,7 +51,7 @@ test("SEO routes and response headers retain prelaunch protections", async ({
   expect(sitemap.headers()["content-type"]).toContain("xml");
   expect(await sitemap.text()).toContain("<urlset");
   const draft = await request.get(
-    "/skincare/compare/niod-cais3-vs-the-ordinary/",
+    "/compare/niod-cais3-vs-the-ordinary/",
   );
   expect(await draft.text()).toMatch(/name="robots"[^>]*content="[^"]*noindex/);
   const filtered = await request.get("/tools/price-per-ml/?items=malformed");

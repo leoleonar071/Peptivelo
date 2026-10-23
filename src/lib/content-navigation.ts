@@ -1,14 +1,17 @@
+import { comparisonPath } from "@/lib/config";
 import { catalog, products, brandName } from "./data";
 import { guides } from "./guides";
 import { haircare } from "./haircare";
 import { libraryArticles } from "./library";
 import { type TopicId } from "./site-navigation";
+import { isPublicTopicEntry } from "./content-topics";
 export type ContentEntry = {
   id: string;
   href: string;
   title: string;
   description: string;
   topic: TopicId | null;
+  additionalTopics?: readonly TopicId[];
   format:
     | "Ingredient profile"
     | "Research brief"
@@ -20,7 +23,7 @@ export type ContentEntry = {
   learn?: boolean;
 };
 // Status is derived from the source record, never maintained as a second editorial field.
-export const contentNavigation: ContentEntry[] = [
+const existingContent: ContentEntry[] = [
   ...products.map((product) => ({
     id: `product:${product.id}`,
     href: `/skincare/products/${product.slug}/`,
@@ -80,7 +83,7 @@ export const contentNavigation: ContentEntry[] = [
   })),
   ...catalog.comparisons.map((c) => ({
     id: `comparison:${c.id}`,
-    href: `/skincare/compare/${c.slug}/`,
+    href: comparisonPath(c.slug),
     title: c.title,
     description: c.editorialSummary,
     topic: "skin" as const,
@@ -98,3 +101,4 @@ export const contentNavigation: ContentEntry[] = [
     status: haircare.product.status,
   },
 ];
+export const contentNavigation = existingContent.filter(isPublicTopicEntry);

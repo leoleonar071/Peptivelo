@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-const url = "/skincare/compare/?a=ordinary-copper&b=niod-cais3";
+const url = "/compare/?a=ordinary-copper&b=niod-cais3";
 test("difference filtering preserves essentials and swapped values", async ({
   page,
 }) => {

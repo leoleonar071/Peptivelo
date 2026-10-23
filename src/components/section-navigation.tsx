@@ -19,7 +19,7 @@ export function SectionNavigation() {
         : [
             {
               title: basics ? "Learn" : "Overview",
-              href: basics ? "/learn/" : "/topics/health-research/",
+              href: basics ? "/learn/" : topic!.href,
             },
           ];
   const current =

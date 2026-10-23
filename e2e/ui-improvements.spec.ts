@@ -53,7 +53,7 @@ test("topic discovery leads to product records and a preselected comparison", as
     page.getByText("1 of 2 products selected", { exact: true }),
   ).toBeVisible();
   await page
-    .getByRole("button", { name: "Choose a serum — Product B", exact: true })
+    .getByRole("button", { name: "Choose a product — Product B", exact: true })
     .click();
   await page.getByRole("button", { name: /NIOD.*Copper Amino/ }).click();
   await expect(

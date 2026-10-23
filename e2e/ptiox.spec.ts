@@ -4,7 +4,7 @@ import AxeBuilder from "@axe-core/playwright";
 test("P-TIOX has a scoped, progressive comparison with academic disclosures", async ({
   page,
 }, testInfo) => {
-  await page.goto("/skincare/compare/skinceuticals-ptiox-vs-the-ordinary-ha/");
+  await page.goto("/compare/skinceuticals-ptiox-vs-the-ordinary-ha/");
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
     "content",
     /noindex/,

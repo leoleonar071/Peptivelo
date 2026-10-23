@@ -4,9 +4,9 @@ import AxeBuilder from "@axe-core/playwright";
 test("visual picker supports search, empty results, keyboard selection and focus restoration", async ({
   page,
 }) => {
-  await page.goto("/skincare/compare/");
+  await page.goto("/compare/");
   const trigger = page.getByRole("button", {
-    name: "Choose a serum — Product A",
+    name: "Choose a product — Product A",
     exact: true,
   });
   await expect(trigger).toBeEnabled();
@@ -42,7 +42,7 @@ test("visual picker supports search, empty results, keyboard selection and focus
     page.getByRole("button", { name: "Change product A", exact: true }),
   ).toBeFocused();
   const second = page.getByRole("button", {
-    name: "Choose a serum — Product B",
+    name: "Choose a product — Product B",
     exact: true,
   });
   await second.click();
@@ -54,7 +54,7 @@ test("visual picker supports search, empty results, keyboard selection and focus
 test("shared comparisons restore immediately, disclose gaps and survive swap and reset", async ({
   page,
 }) => {
-  await page.goto("/skincare/compare/?a=ordinary-copper&b=niod-cais3");
+  await page.goto("/compare/?a=ordinary-copper&b=niod-cais3");
   await expect(
     page.getByRole("heading", { name: "At a glance" }),
   ).toBeVisible();
@@ -90,18 +90,18 @@ test("shared comparisons restore immediately, disclose gaps and survive swap and
   await page.getByRole("button", { name: "Start over", exact: true }).click();
   await expect(
     page.getByRole("button", {
-      name: "Choose a serum — Product A",
+      name: "Choose a product — Product A",
       exact: true,
     }),
   ).toBeVisible();
   expect(new URL(page.url()).searchParams.has("a")).toBe(false);
-  await page.goto("/skincare/compare/?a=niod-cais3&b=niod-cais3");
+  await page.goto("/compare/?a=niod-cais3&b=niod-cais3");
   await expect(
     page.getByText("1 of 2 products selected", { exact: true }),
   ).toBeVisible();
   await expect(
     page.getByRole("button", {
-      name: "Choose a serum — Product B",
+      name: "Choose a product — Product B",
       exact: true,
     }),
   ).toBeVisible();

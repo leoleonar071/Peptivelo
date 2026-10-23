@@ -4,7 +4,7 @@ import AxeBuilder from "@axe-core/playwright";
 test("overview leads the label table and detailed evidence preserves scientific provenance", async ({
   page,
 }, testInfo) => {
-  await page.goto("/skincare/compare/niod-cais3-vs-the-ordinary/");
+  await page.goto("/compare/niod-cais3-vs-the-ordinary/");
   await page.getByRole("tab", { name: "Evidence", exact: true }).click();
   const evaluation = page.locator("#research-evidence");
   await expect(evaluation.getByRole("heading", { level: 2 })).toHaveText(

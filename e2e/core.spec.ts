@@ -12,9 +12,9 @@ test("picker waits for client handlers before accepting a selection", async ({
     await route.continue();
   });
   try {
-    await page.goto("/skincare/compare/", { waitUntil: "commit" });
+    await page.goto("/compare/", { waitUntil: "commit" });
     const choose = page.getByRole("button", {
-      name: "Choose a serum — Product A",
+      name: "Choose a product — Product A",
       exact: true,
     });
     await expect(choose).toBeDisabled();
@@ -42,9 +42,9 @@ test("search filters the real catalog", async ({ page }) => {
 test("two visual selections compare automatically and prevent duplicate products", async ({
   page,
 }) => {
-  await page.goto("/skincare/compare/");
+  await page.goto("/compare/");
   await page
-    .getByRole("button", { name: "Choose a serum — Product A", exact: true })
+    .getByRole("button", { name: "Choose a product — Product A", exact: true })
     .click();
   await page
     .getByRole("textbox", { name: "Search products in picker" })
@@ -56,7 +56,7 @@ test("two visual selections compare automatically and prevent duplicate products
     page.getByText("1 of 2 products selected", { exact: true }),
   ).toBeVisible();
   await page
-    .getByRole("button", { name: "Choose a serum — Product B", exact: true })
+    .getByRole("button", { name: "Choose a product — Product B", exact: true })
     .click();
   await expect(
     page.getByRole("button", { name: /The Ordinary.*Multi-Peptide \+ Copper/ }),
@@ -80,7 +80,7 @@ test("two visual selections compare automatically and prevent duplicate products
   );
   await expect(
     page.getByRole("button", {
-      name: "Choose a serum — Product B",
+      name: "Choose a product — Product B",
       exact: true,
     }),
   ).toBeVisible();

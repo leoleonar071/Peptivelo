@@ -115,7 +115,7 @@ test("percentage examples stay hypothetical and every comparison exposes sources
     "the-ordinary-argireline-vs-multi-peptide-ha",
     "geek-gorgeous-power-peptides-vs-the-ordinary-ha",
   ]) {
-    const response = await request.get(`/skincare/compare/${slug}/`);
+    const response = await request.get(`/compare/${slug}/`);
     expect(response.status()).toBe(200);
     const html = await response.text();
     expect(html).toContain("Questions about these products");

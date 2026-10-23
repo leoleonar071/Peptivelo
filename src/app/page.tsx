@@ -1,3 +1,4 @@
+import { comparisonPath } from "@/lib/config";
 import Link from "next/link";
 import { HomeHero } from "@/components/home-hero";
 import { TopicCards, ContentCards } from "@/components/discovery";
@@ -11,7 +12,7 @@ export default function Home() {
       (e) => e.href === "/skincare/guides/peptide-percentages-explained/",
     )!,
     contentNavigation.find(
-      (e) => e.href === "/skincare/compare/niod-cais3-vs-the-ordinary/",
+      (e) => e.href === comparisonPath("niod-cais3-vs-the-ordinary"),
     )!,
     contentNavigation.find((e) => e.id === "hair:product")!,
   ];

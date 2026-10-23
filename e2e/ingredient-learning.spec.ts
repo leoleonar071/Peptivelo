@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-const comparison = "/skincare/compare/?a=ordinary-copper&b=niod-cais3";
+const comparison = "/compare/?a=ordinary-copper&b=niod-cais3";
 
 test("ingredient explanations are readable, accessible and return keyboard focus", async ({
   page,

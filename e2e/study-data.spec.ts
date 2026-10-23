@@ -4,7 +4,7 @@ import AxeBuilder from "@axe-core/playwright";
 test("technical evidence stays optional and distinguishes trials from assessments", async ({
   page,
 }) => {
-  await page.goto("/skincare/compare/niod-cais3-vs-the-ordinary/");
+  await page.goto("/compare/niod-cais3-vs-the-ordinary/");
   const disclosure = page.locator("#study-data");
   await expect(disclosure).not.toBeVisible();
   await page.getByRole("tab", { name: "Evidence", exact: true }).click();

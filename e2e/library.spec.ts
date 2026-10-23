@@ -12,7 +12,7 @@ test("COSRX exact mini presentation appears in search and sourced comparisons", 
   await page.getByRole("button", { name: "Yes, explore this serum" }).click();
   await expect(page.locator(".identify-learn details")).toHaveCount(6);
   await page.goto(
-    "/skincare/compare/cosrx-six-peptide-vs-the-ordinary-copper/",
+    "/compare/cosrx-six-peptide-vs-the-ordinary-copper/",
   );
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
     "content",

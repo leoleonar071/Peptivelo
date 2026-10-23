@@ -26,7 +26,7 @@ test("skin topic leads to an editorial comparison and its product profile", asyn
     })
     .click();
   await expect(page).toHaveURL(
-    /\/skincare\/compare\/niod-cais3-vs-the-ordinary\/$/,
+    /\/compare\/niod-cais3-vs-the-ordinary\/$/,
   );
   await page.locator(".reader-pair .reader-photo").first().click();
   await expect(page).toHaveURL(/\/skincare\/products\//);

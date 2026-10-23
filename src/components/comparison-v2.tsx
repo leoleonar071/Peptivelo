@@ -31,13 +31,11 @@ function GlanceCell({
 export function ComparisonHero({ complete }: { complete: boolean }) {
   return (
     <header className={`v2-hero ${complete ? "is-complete" : ""}`}>
-      <span className="eyebrow">PEPTIVELO · PRODUCT COMPARISON</span>
-      <h1>
-        Compare peptide serums.<span>Understand the differences.</span>
-      </h1>
+      <span className="eyebrow">PEPTIVELO · COMPARISON</span>
+      <h1>Compare with clarity.</h1>
       <p>
-        Compare ingredients, recorded prices, and the evidence behind product
-        claims—with sources you can check.
+        Explore documented differences. Understand the evidence. Check the
+        sources.
       </p>
     </header>
   );

@@ -5,7 +5,7 @@ const catalog = JSON.parse(readFileSync("src/data/catalog.json", "utf8")) as { c
 
 for (const c of catalog.comparisons.filter((c) => !["niod-vs-ordinary", "ordinary-ha-vs-copper"].includes(c.id))) {
   test(`${c.id}: three answers, scoped sources and progressive details`, async ({ page }, info) => {
-    await page.goto(`/skincare/compare/${c.slug}/`);
+    await page.goto(`/compare/${c.slug}/`);
     await expect(page.locator(".reader-takeaways h3")).toHaveText(["What is documented?", "What does it mean for your purchase?", "What has not been demonstrated?"]);
     await expect(page.locator("#research-evidence")).not.toBeVisible();
     await page.getByRole("tab", { name: "Evidence", exact: true }).click();

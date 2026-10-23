@@ -13,7 +13,7 @@ for (const theme of ["light", "dark"]) {
     await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
     for (const route of [
       "/",
-      "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
       "/skincare/identify/",
       "/library/",
       "/haircare/",
@@ -52,7 +52,7 @@ for (const theme of ["light", "dark"]) {
         });
     }
     await page.goto(
-      "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/#research-evidence",
+      "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/#research-evidence",
     );
     const citation = page
       .locator("#evaluation-benefits .inline-citations a")
@@ -70,9 +70,9 @@ for (const theme of ["light", "dark"]) {
     ).toEqual([]);
     await page.keyboard.press("Escape");
     await expect(citation).toBeFocused();
-    await page.goto("/skincare/compare/");
+    await page.goto("/compare/");
     await page
-      .getByRole("button", { name: "Choose a serum — Product A", exact: true })
+      .getByRole("button", { name: "Choose a product — Product A", exact: true })
       .click();
     await page
       .getByRole("textbox", { name: "Search products in picker" })

@@ -1,6 +1,12 @@
 "use client";
+import { comparisonPath } from "@/lib/config";
 
 import Link from "next/link";
+import {
+  facialComparisonGroup,
+  eligibleComparisonProducts,
+  canCompareProducts,
+} from "@/lib/comparison-groups";
 import {
   useEffect,
   useId,
@@ -23,13 +29,7 @@ import {
   Copy,
   FlaskConical,
 } from "lucide-react";
-import {
-  products,
-  catalog,
-  brandName,
-  sourceFor,
-  type Product,
-} from "@/lib/data";
+import { catalog, brandName, sourceFor, type Product } from "@/lib/data";
 import { comparisonFacts, volumeLabel } from "@/lib/comparison";
 import { money } from "@/lib/math";
 import { productPath } from "@/lib/config";
@@ -95,7 +95,7 @@ export function ProductSelector({
   const trigger = useRef<HTMLButtonElement>(null);
   const id = useId();
   const slotName = slot === 1 ? "first" : "second";
-  const matches = products.filter((p) => {
+  const matches = eligibleComparisonProducts.filter((p) => {
     const text =
       `${brandName(p)} ${p.name} ${p.ingredientList.join(" ")} ${p.ingredientIds.flatMap((id) => ingredientAliases[id] ?? []).join(" ")}`.toLowerCase();
     return query
@@ -211,7 +211,7 @@ export function ProductSelector({
             className="empty-slot-trigger"
             aria-label={
               v2
-                ? `Choose a serum — Product ${slot === 1 ? "A" : "B"}`
+                ? `Choose a product — Product ${slot === 1 ? "A" : "B"}`
                 : undefined
             }
             aria-haspopup="dialog"
@@ -222,7 +222,7 @@ export function ProductSelector({
             <span className="add-product-icon">
               <Plus size={24} />
             </span>
-            {v2 ? "Choose a serum" : `Choose ${slotName} product`}{" "}
+            {v2 ? "Choose a product" : `Choose ${slotName} product`}{" "}
             <ArrowRight size={18} />
             {v2 && <small>Search by brand, product, or ingredient</small>}
           </button>
@@ -285,7 +285,7 @@ export function ProductSelector({
               aria-label="Search products in picker"
               placeholder={
                 v2
-                  ? "Search brand, serum, or ingredient..."
+                  ? "Search brand, product, or ingredient..."
                   : "Try a brand, product, or peptide…"
               }
             />
@@ -477,7 +477,7 @@ export function ComparisonTable({
       <ComparisonGrid a={a} b={b} controls={controls} />
       {showGuide && guide && (
         <p className="section-intro">
-          <Link className="text-link" href={`/skincare/compare/${guide.slug}/`}>
+          <Link className="text-link" href={comparisonPath(guide.slug)}>
             Understand this buying decision · Editorial draft{" "}
             <ArrowRight size={16} />
           </Link>
@@ -793,8 +793,10 @@ export function Compare({
     () => new URLSearchParams({ a: first ?? "", b: second ?? "" }).toString(),
   );
   const params = new URLSearchParams(query);
-  const a = products.find((p) => p.id === params.get("a"));
-  const b = products.find((p) => p.id === params.get("b") && p.id !== a?.id);
+  const a = eligibleComparisonProducts.find((p) => p.id === params.get("a"));
+  const b = eligibleComparisonProducts.find(
+    (p) => p.id === params.get("b") && (!a || canCompareProducts(a.id, p.id)),
+  );
   const count = Number(!!a) + Number(!!b);
   const invalid = (!!params.get("a") && !a) || (!!params.get("b") && !b);
   const [shareStatus, setShareStatus] = useState("");
@@ -812,7 +814,7 @@ export function Compare({
     previousCount.current = count;
   }, [count]);
   function change(next: [string, string]) {
-    if (next[0] && next[0] === next[1]) return;
+    if (next[0] && next[1] && !canCompareProducts(next[0], next[1])) return;
     const url = new URL(location.href);
     for (const [index, key] of ["a", "b"].entries()) {
       if (next[index]) url.searchParams.set(key, next[index]);
@@ -855,6 +857,10 @@ export function Compare({
       ref={root}
     >
       <ComparisonHero complete={count === 2} />
+      <p className="v2-method-note">
+        Currently available: {facialComparisonGroup.presentation.label}.{" "}
+        <Link href="/peptides/">Explore Peptides A–Z →</Link>
+      </p>
       <span className="sr-only" role="status">
         {count} of 2 products selected{count === 2 ? " · Comparison ready" : ""}
       </span>

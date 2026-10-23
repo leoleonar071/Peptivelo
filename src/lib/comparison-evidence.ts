@@ -1,3 +1,5 @@
+import { facialComparisonGroup } from "./comparison-groups";
+import { comparisonPath } from "@/lib/config";
 import { catalog } from "./data";
 import { evaluations } from "./evaluations";
 import { evidence } from "./citations";
@@ -38,7 +40,7 @@ export function comparisonEvidenceData(): ComparisonEvidenceData {
     );
     pairs[[...comparison.comparedProductIds].sort().join("|")] = {
       title: comparison.title,
-      href: `/skincare/compare/${comparison.slug}/`,
+      href: comparisonPath(comparison.slug),
       paragraphs: evaluation
         ? evaluation.sections.flatMap((s) => s.paragraphs)
         : comparison.researchContext
@@ -53,8 +55,8 @@ export function comparisonEvidenceData(): ComparisonEvidenceData {
     };
   }
   return {
-    market: "US",
-    currency: "USD",
+    market: facialComparisonGroup.presentation.market,
+    currency: facialComparisonGroup.presentation.currency,
     pairs,
     sources: Object.fromEntries(
       catalog.sources.map((source) => {

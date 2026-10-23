@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-const route = "/skincare/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/";
+const route = "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/";
 test("summary leads to facts, sources and distinguishable exact-product offers", async ({ page }, info) => {
   await page.goto(route);
   await page.getByRole("link", { name: "Understand the price", exact: true }).click();
@@ -42,5 +42,5 @@ test("ingredient guide returns to the same editorial pair and section", async ({
   await page.setViewportSize({ width: 320, height: 800 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.goto("/skincare/ingredients/palmitoyl-tripeptide-1/?a=ordinary-matrixyl&b=ordinary-ha&returnTo=https%3A%2F%2Funtrusted.invalid%2F");
-  await expect(page.getByRole("link", { name: "Back to your comparison" })).toHaveAttribute("href", "/skincare/compare/?a=ordinary-matrixyl&b=ordinary-ha");
+  await expect(page.getByRole("link", { name: "Back to your comparison" })).toHaveAttribute("href", "/compare/?a=ordinary-matrixyl&b=ordinary-ha");
 });

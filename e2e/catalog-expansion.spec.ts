@@ -44,7 +44,7 @@ test("new editorial pairs explain limits with accessible ingredient help", async
     "timeless-synthe6-vs-the-ordinary-matrixyl",
     "medik8-liquid-peptides-vs-the-ordinary-ha",
   ]) {
-    await page.goto(`/skincare/compare/${slug}/`);
+    await page.goto(`/compare/${slug}/`);
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
       "content",
       /noindex/,

@@ -44,7 +44,7 @@ test("pilot references resolve and keyboard return links preserve reading positi
       ),
     ).toBe(true);
   }
-  await page.goto("/skincare/compare/niod-cais3-vs-the-ordinary/");
+  await page.goto("/compare/niod-cais3-vs-the-ordinary/");
   const citation = page
     .locator(
       '.reader-takeaways .inline-citations a[href="#comparison-reference-argireline-trial"]',

@@ -3,7 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 
 test("source types and data gaps stay understandable in both priority readers", async ({ page }, info) => {
   for (const slug of ["niod-cais3-vs-the-ordinary", "the-ordinary-multi-peptide-ha-vs-copper"]) {
-    await page.goto(`/skincare/compare/${slug}/`);
+    await page.goto(`/compare/${slug}/`);
     await expect(page.locator(".support-key")).not.toBeVisible();
     await page.getByRole("tab", { name: "Evidence", exact: true }).click();
     const benefit = page.locator("#evaluation-benefits");

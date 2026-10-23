@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-const path = "/skincare/compare/";
+const path = "/compare/";
 const pair = `${path}?a=ordinary-copper&b=niod-cais3`;
-const choose = (letter: "A" | "B") => `Choose a serum — Product ${letter}`;
+const choose = (letter: "A" | "B") => `Choose a product — Product ${letter}`;
 
 test("the route error view resets a local error state without losing the comparison URL", async ({
   page,
@@ -112,7 +112,7 @@ test("selection, swaps, changes, duplicate protection and browser history keep A
   await page.goto(path);
   await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "Compare peptide serums.Understand the differences.",
+    "Compare with clarity.",
   );
   await page.getByRole("button", { name: choose("B"), exact: true }).click();
   await expect(

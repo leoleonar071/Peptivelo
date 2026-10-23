@@ -6,12 +6,12 @@ test("key routes and populated comparison have no automated WCAG A/AA violations
   for (const path of [
     "/",
     "/skincare/products/",
-    "/skincare/compare/",
+    "/compare/",
     "/tools/price-per-ml/",
     "/skincare/products/niod-cais3/",
   ]) {
     await page.goto(path);
-    if (path === "/skincare/compare/")
+    if (path === "/compare/")
       await page
         .getByRole("button", {
           name: "Try an example comparison",

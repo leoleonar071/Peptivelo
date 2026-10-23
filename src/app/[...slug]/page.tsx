@@ -1,3 +1,4 @@
+import { comparisonPath } from "@/lib/config";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -77,11 +78,11 @@ function resolve(path: string) {
         "Understand commercial peptide names, percentages and the limits of serum label comparisons.",
       index: guides.some((guide) => guide.status === "published"),
     };
-  if (path === "skincare/compare")
+  if (path === "compare")
     return {
-      title: "Compare peptide serums",
+      title: "Compare with clarity.",
       description:
-        "Choose two serums to compare their documented labels, price observations, and disclosures.",
+        "Explore documented differences. Understand the evidence. Check the sources.",
       index: false,
     };
   if (path === "tools/price-per-ml")
@@ -99,6 +100,16 @@ function resolve(path: string) {
       index: true,
     };
   const parts = path.split("/");
+  if (parts.length === 2 && parts[0] === "compare") {
+    const comparison = catalog.comparisons.find((c) => c.slug === parts[1]);
+    return comparison
+      ? {
+          title: comparison.title,
+          description: comparison.editorialSummary,
+          index: comparison.publicationStatus === "published",
+        }
+      : null;
+  }
   if (parts.length === 3 && parts[0] === "skincare") {
     const guide =
       parts[1] === "guides"
@@ -132,16 +143,6 @@ function resolve(path: string) {
         description: i.description,
         index: !i.education.scientificReviewPending,
       };
-    const c =
-      parts[1] === "compare"
-        ? catalog.comparisons.find((c) => c.slug === parts[2])
-        : null;
-    if (c)
-      return {
-        title: c.title,
-        description: c.editorialSummary,
-        index: c.publicationStatus === "published",
-      };
   }
   return null;
 }
@@ -169,6 +170,7 @@ export default async function Page({ params, searchParams }: Props) {
   const breadcrumbs = slug
     .map((part, i) => ({
       label:
+        (slug[0] === "compare" && i === 0 ? "Compare" : undefined) ??
         skinLinks
           .find((l) => l.href === `/${slug.slice(0, i + 1).join("/")}/`)
           ?.title.replace("Overview", "Skin & cosmetics") ??
@@ -193,7 +195,7 @@ export default async function Page({ params, searchParams }: Props) {
           </p>
         )}
         {path === "methodology" && (
-          <Link className="button" href="/skincare/compare/">
+          <Link className="button" href={comparisonPath()}>
             Try the comparison tool <ArrowRight size={16} />
           </Link>
         )}
@@ -225,7 +227,7 @@ export default async function Page({ params, searchParams }: Props) {
           </p>
           <Link
             className="text-link"
-            href="/skincare/compare/?a=ordinary-copper&b=niod-cais3"
+            href={comparisonPath() + "?a=ordinary-copper&b=niod-cais3"}
           >
             Compare these products <ArrowRight size={16} />
           </Link>
@@ -239,7 +241,7 @@ export default async function Page({ params, searchParams }: Props) {
         <LearningGuides />
       </>
     );
-  else if (path === "skincare/compare")
+  else if (path === "compare")
     body = (
       <>
         <Compare
@@ -398,7 +400,7 @@ export default async function Page({ params, searchParams }: Props) {
         <SourceList ids={[p.sourceId]} />
         <h2>Compare this product</h2>
         <div className="button-row">
-          <Link className="button" href={`/skincare/compare/?a=${p.id}`}>
+          <Link className="button" href={`${comparisonPath()}?a=${p.id}`}>
             Add to compare
           </Link>
         </div>
@@ -419,14 +421,14 @@ export default async function Page({ params, searchParams }: Props) {
               c.comparedProductIds.includes(selectedA.id) &&
               c.comparedProductIds.includes(selectedB.id) &&
               get("returnTo") ===
-                `/skincare/compare/${c.slug}/#comparison-peptides`,
+                `${comparisonPath(c.slug)}#comparison-peptides`,
           )
         : undefined;
     const returnPath = editorialReturn
-      ? `/skincare/compare/${editorialReturn.slug}/#comparison-peptides`
+      ? `${comparisonPath(editorialReturn.slug)}#comparison-peptides`
       : selectedA && selectedB
-        ? `/skincare/compare/?${new URLSearchParams({ a: selectedA.id, b: selectedB.id })}`
-        : "/skincare/compare/";
+        ? `${comparisonPath()}?${new URLSearchParams({ a: selectedA.id, b: selectedB.id })}`
+        : comparisonPath();
     body = (
       <>
         <Link className="text-link ingredient-return" href={returnPath}>
@@ -460,7 +462,7 @@ export default async function Page({ params, searchParams }: Props) {
       </>
     );
   } else {
-    const c = catalog.comparisons.find((c) => c.slug === slug[2])!;
+    const c = catalog.comparisons.find((c) => c.slug === slug[1])!;
     const citations = c.citationPilot ? comparisonCitations(c) : null;
     const evaluation = evaluationFor(c.id);
     body =
@@ -636,7 +638,7 @@ export default async function Page({ params, searchParams }: Props) {
             ))}
             <Link
               className="text-link"
-              href={`/skincare/compare/?a=${c.comparedProductIds[0]}&b=${c.comparedProductIds[1]}`}
+              href={`${comparisonPath()}?a=${c.comparedProductIds[0]}&b=${c.comparedProductIds[1]}`}
             >
               Change these products <ArrowRight size={16} />
             </Link>
@@ -658,7 +660,7 @@ export default async function Page({ params, searchParams }: Props) {
   };
   return (
     <div
-      className={`wrap page-content ${path === "skincare/compare" ? "comparison-page" : ""} ${slug[1] === "compare" && evaluationFor(catalog.comparisons.find((c) => c.slug === slug[2])?.id ?? "") ? "editorial-pilot" : ""}`}
+      className={`wrap page-content ${path === "compare" ? "comparison-page" : ""} ${slug[0] === "compare" && slug[1] && evaluationFor(catalog.comparisons.find((c) => c.slug === slug[1])?.id ?? "") ? "editorial-pilot" : ""}`}
     >
       <script
         type="application/ld+json"
@@ -667,15 +669,22 @@ export default async function Page({ params, searchParams }: Props) {
         }}
       />
       <Breadcrumbs items={breadcrumbs} />
-      {path !== "skincare/compare" && (
+      {slug[0] === "compare" && slug[1] && (
+        <Link className="text-link" href="/skincare/">
+          Skin & cosmetics →
+        </Link>
+      )}
+      {path !== "compare" && (
         <div className="page-heading">
           <span className="eyebrow">
             {site.name.toUpperCase()} /{" "}
-            {slug[0] === "tools"
-              ? "FREE TOOLS"
-              : slug[0] === "skincare"
-                ? "SKIN & COSMETICS"
-                : "ABOUT PEPTIVELO"}
+            {slug[0] === "compare"
+              ? "COMPARISONS"
+              : slug[0] === "tools"
+                ? "FREE TOOLS"
+                : slug[0] === "skincare"
+                  ? "SKIN & COSMETICS"
+                  : "ABOUT PEPTIVELO"}
           </span>
           <h1>{r.title}</h1>
           <p>{r.description}</p>

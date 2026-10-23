@@ -1,4 +1,6 @@
-# Peptivelo Comparison V2 — entrega local
+# Peptivelo Comparison V2 — informe histórico
+
+Esta etapa queda supersedida en rutas y acceso por [Comparador general](../general-comparison/IMPLEMENTATION.md). Las capturas de esta carpeta corresponden a V2 antes de la migración.
 
 Fecha: 23 de octubre de 2026.
 
@@ -6,7 +8,7 @@ Fecha: 23 de octubre de 2026.
 
 El comparador raíz ofrece selección visual A/B y análisis automático de una pareja válida. El resumen permanece visible y las explicaciones se consultan mediante secciones expandibles. Los lectores editoriales conservan sus pestañas y su tabla anterior.
 
-Vista local: [Comparador](http://localhost:3200/skincare/compare/) · [Ejemplo](http://localhost:3200/skincare/compare/?a=ordinary-copper&b=niod-cais3).
+Vista local: [Comparador](http://localhost:3200/compare/) · [Ejemplo](http://localhost:3200/compare/?a=ordinary-copper&b=niod-cais3).
 
 No se han modificado el catálogo, el backend, las fuentes científicas ni el algoritmo de relevancia. No se ha realizado un despliegue.
 

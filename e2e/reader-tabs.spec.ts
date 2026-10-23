@@ -4,7 +4,7 @@ import AxeBuilder from "@axe-core/playwright";
 test("tabs support keyboard, history, deep links and reference focus return", async ({
   page,
 }, testInfo) => {
-  await page.goto("/skincare/compare/niod-cais3-vs-the-ordinary/");
+  await page.goto("/compare/niod-cais3-vs-the-ordinary/");
   const overview = page.getByRole("tab", { name: "Overview", exact: true });
   const ingredients = page.getByRole("tab", {
     name: "Ingredients & price",
