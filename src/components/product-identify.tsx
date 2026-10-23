@@ -10,6 +10,7 @@ import {
   Check,
   ChevronDown,
   ScanLine,
+  FlaskConical,
 } from "lucide-react";
 import { products, catalog, brandName, type Product } from "@/lib/data";
 import { volumeLabel } from "@/lib/comparison";
@@ -17,12 +18,11 @@ import { productPath } from "@/lib/config";
 import { Bottle } from "./ui";
 import { EvidenceLinks } from "./ingredient-education";
 import { ProductScanner } from "./product-scanner";
+import { useClientReady } from "@/lib/use-client-ready";
 
-// Intent: a shopper holding a serum finds its label, confirms the exact size,
-// then reads a short notebook-style profile. DM Sans, petroleum ink and warm
-// paper reuse the reader palette; quiet borders, inset search and 4px spacing
-// keep the source trail legible without adding dashboard decoration.
+// One search-led surface, followed by an honest documented-label preview.
 export function ProductIdentify() {
+  const ready = useClientReady();
   const router = useRouter();
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<Product | null>(null);
@@ -61,7 +61,7 @@ export function ProductIdentify() {
             "Is this your serum?"
           ) : (
             <>
-              Find your serum. <span>Understand what&apos;s inside.</span>
+              Find your serum. <span>Know what&apos;s inside.</span>
             </>
           )}
         </h1>
@@ -70,7 +70,7 @@ export function ProductIdentify() {
             ? "Start with the label. Explore the research when you need more."
             : selected
               ? "Match the brand, product name and size with your bottle before continuing."
-              : "Scan a barcode or search by name to explore documented ingredients, product information, and evidence limitations."}
+              : "Search by name or scan a compatible code to explore product ingredients, label information, and sources."}
         </p>
       </header>
       {!selected ? (
@@ -78,54 +78,66 @@ export function ProductIdentify() {
           className="identify-search-section"
           aria-label="Find your serum"
         >
-          <div className="identify-methods">
-            <section
-              className="identify-scan-card"
-              aria-labelledby="scan-method-title"
+          <div className="identify-search-surface">
+            <form
+              className="identify-primary-search"
+              aria-busy={!ready}
+              role="search"
+              aria-label="Find a documented serum"
+              onSubmit={(event) => {
+                event.preventDefault();
+                document
+                  .querySelector<HTMLButtonElement>(".identify-result")
+                  ?.focus();
+              }}
             >
-              <ScanLine size={36} aria-hidden="true" />
-              <h2 id="scan-method-title">Scan your product</h2>
-              <p>Have the bottle? Use its code to find a match.</p>
-              <button
-                className="button"
-                ref={scanTrigger}
-                onClick={() => setScanning(true)}
-              >
-                <ScanLine size={20} aria-hidden="true" /> Scan barcode
-              </button>
-              <small>
-                Peptivelo product QR links supported. Manufacturer barcode
-                coverage is not available yet.
-              </small>
-            </section>
-            <span className="identify-method-divider">or search manually</span>
-            <section
-              className="identify-name-card"
-              aria-labelledby="name-method-title"
-            >
-              <Search size={28} aria-hidden="true" />
-              <h2 id="name-method-title">Search by name</h2>
-              <p>Enter a brand, product name, or ingredient.</p>
               <label className="sr-only" htmlFor="serum-search">
                 Search by brand, product or ingredient
               </label>
-              <div className="identify-input">
-                <Search size={20} aria-hidden="true" />
-                <input
-                  ref={search}
-                  id="serum-search"
-                  type="search"
-                  value={query}
-                  onChange={(event) => setQuery(event.target.value)}
-                  placeholder="e.g. The Ordinary..."
-                  autoComplete="off"
-                />
+              <input
+                ref={search}
+                id="serum-search"
+                type="search"
+                disabled={!ready}
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                onKeyDown={(event) => {
+                  if (event.key === "ArrowDown") {
+                    event.preventDefault();
+                    document
+                      .querySelector<HTMLButtonElement>(".identify-result")
+                      ?.focus();
+                  }
+                  if (event.key === "Escape") setQuery("");
+                }}
+                placeholder="Search by brand, serum, or ingredient..."
+                autoComplete="off"
+                aria-controls="identify-results"
+                aria-describedby="identify-search-help"
+              />
+              <button type="submit" aria-label="Search serum" disabled={!ready}>
+                <Search size={22} aria-hidden="true" />
+              </button>
+            </form>
+            <div className="identify-scan-row">
+              <ScanLine size={28} aria-hidden="true" />
+              <div>
+                <strong>Scan a Peptivelo QR</strong>
+                <p>Use a compatible Peptivelo QR code.</p>
               </div>
-
-              <p className="identify-coverage">
-                Matches are limited to products documented in Peptivelo.
-              </p>
-            </section>
+              <button
+                className="button secondary"
+                ref={scanTrigger}
+                disabled={!ready}
+                onClick={() => setScanning(true)}
+              >
+                Scan QR
+              </button>
+            </div>
+            <p className="identify-coverage" id="identify-search-help">
+              Only products documented in Peptivelo can be matched. Manufacturer
+              barcodes are not supported yet.
+            </p>
           </div>
           <section
             className="identify-catalog"
@@ -135,18 +147,21 @@ export function ProductIdentify() {
               {query ? "Matching serums" : "Browse documented serums"}
             </h2>
             <p role="status">
-              {query ? matches.length : products.length} products{" "}
-              {query ? "found" : "in the Peptivelo catalog"}.
+              {query
+                ? `${matches.length} matching ${matches.length === 1 ? "serum" : "serums"}.`
+                : "Explore a few documented label profiles. Select one to confirm the name and size."}
             </p>
             {matches.length ? (
               <div
+                id="identify-results"
                 className={
                   query ? "identify-results" : "identify-results is-preview"
                 }
               >
-                {(query ? matches : matches.slice(0, 6)).map((p) => (
+                {(query ? matches : matches.slice(0, 3)).map((p) => (
                   <button
                     type="button"
+                    disabled={!ready}
                     className="identify-result"
                     key={p.id}
                     onClick={() => {
@@ -154,7 +169,11 @@ export function ProductIdentify() {
                       focusHeading();
                     }}
                   >
-                    <Bottle product={p} />
+                    <span className="identify-record-visual" aria-hidden="true">
+                      <FlaskConical size={32} strokeWidth={1.2} />
+                      <span>Documented label</span>
+                      <strong>{volumeLabel(p)}</strong>
+                    </span>
                     <span className="identify-result-copy">
                       <span>{brandName(p)}</span>
                       <strong>{p.name}</strong>
@@ -165,7 +184,7 @@ export function ProductIdentify() {
                 ))}
               </div>
             ) : (
-              <div className="identify-empty">
+              <div className="identify-empty" id="identify-results">
                 <h2>No matching product yet.</h2>
                 <p>
                   Try a shorter product name or brand. This catalog covers
@@ -187,10 +206,16 @@ export function ProductIdentify() {
               View all products →
             </Link>
           </section>
-          <p className="identify-footnote">
-            Manual search stays in this browser. Product records are not
-            packaging photographs.
-          </p>
+          <div className="identify-context">
+            <p>
+              Search stays in your browser. These are label records, not
+              packaging photographs or authentication results.
+            </p>
+            <Link className="text-link" href="/methodology/">
+              How we document products{" "}
+              <ArrowRight size={16} aria-hidden="true" />
+            </Link>
+          </div>
           <Link className="text-link" href="/haircare/">
             Looking for a scalp serum? Explore haircare <ArrowRight size={16} />
           </Link>

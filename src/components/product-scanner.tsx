@@ -26,7 +26,7 @@ export function ProductScanner({
   const [active, setActive] = useState(false);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState(
-    "Use a Peptivelo product QR or a registered product barcode.",
+    "Use a Peptivelo product QR. Manufacturer barcodes are not supported yet.",
   );
   const [code, setCode] = useState("");
   function stop() {
@@ -171,7 +171,7 @@ export function ProductScanner({
       <div className="scanner-heading">
         <div>
           <span className="eyebrow">FIND YOUR SERUM</span>
-          <h2 id="scanner-title">Scan a product code</h2>
+          <h2 id="scanner-title">Scan a Peptivelo QR</h2>
         </div>
         <button
           className="scanner-close"
@@ -195,7 +195,7 @@ export function ProductScanner({
         {!active && (
           <div>
             <ScanLine size={40} aria-hidden="true" />
-            <span>QR & barcode reader</span>
+            <span>Peptivelo QR reader</span>
           </div>
         )}
       </div>

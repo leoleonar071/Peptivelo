@@ -33,7 +33,7 @@ for (const theme of ["light", "dark"]) {
     await page.keyboard.press("Escape");
     await page.goto("/skincare/identify/");
     await page.getByRole("button", { name: "Scan a code", exact: true }).click();
-    await expect(page.getByRole("dialog", { name: "Scan a product code" })).toBeVisible();
+    await expect(page.getByRole("dialog", { name: "Scan a Peptivelo QR" })).toBeVisible();
     expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag22aa"]).analyze()).violations).toEqual([]);
     await page.keyboard.press("Escape");
     await page.emulateMedia({ reducedMotion: "reduce" });

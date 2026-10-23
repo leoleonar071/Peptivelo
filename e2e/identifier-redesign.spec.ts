@@ -21,8 +21,11 @@ test("identifier responsive methods, search and scanner states", async ({
         "Find your serum.",
       );
       await expect(
-        page.getByRole("button", { name: "Scan barcode", exact: true }),
+        page.getByRole("button", { name: "Scan QR", exact: true }),
       ).toBeVisible();
+      await expect(page.locator(".identify-result")).toHaveCount(3);
+      await page.getByRole("button", { name: "Search serum", exact: true }).click();
+      await expect(page.locator(".identify-result").first()).toBeFocused();
       expect(
         await page.evaluate(
           () => document.documentElement.scrollWidth <= innerWidth,
@@ -50,7 +53,7 @@ test("identifier responsive methods, search and scanner states", async ({
       ).toBeVisible();
       await page.getByRole("searchbox").fill("");
       await page
-        .getByRole("button", { name: "Scan barcode", exact: true })
+        .getByRole("button", { name: "Scan QR", exact: true })
         .click();
       await expect(page.getByRole("dialog")).toBeVisible();
       await page.screenshot({

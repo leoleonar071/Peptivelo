@@ -17,11 +17,11 @@ test("scanner handles unknown codes and camera denial with accessible manual exi
   });
   await page.goto("/skincare/identify/");
   const trigger = page.getByRole("button", {
-    name: "Scan barcode",
+    name: "Scan QR",
     exact: true,
   });
   await trigger.click();
-  const dialog = page.getByRole("dialog", { name: "Scan a product code" });
+  const dialog = page.getByRole("dialog", { name: "Scan a Peptivelo QR" });
   await expect(dialog).toBeVisible();
   await page.getByRole("button", { name: "Start camera" }).click();
   await expect(dialog.getByRole("status")).toContainText(
@@ -49,7 +49,7 @@ test("a real QR image decodes locally and opens the exact product profile", asyn
   page,
 }) => {
   await page.goto("/skincare/identify/");
-  await page.getByRole("button", { name: "Scan barcode", exact: true }).click();
+  await page.getByRole("button", { name: "Scan QR", exact: true }).click();
   const png = await QRCode.toBuffer(
     "https://peptivelo.com/skincare/products/the-ordinary-multi-peptide-copper/",
     { width: 360, margin: 4 },
@@ -93,7 +93,7 @@ test("closing during camera permission stops a stream that arrives late", async 
     });
   });
   await page.goto("/skincare/identify/");
-  await page.getByRole("button", { name: "Scan barcode", exact: true }).click();
+  await page.getByRole("button", { name: "Scan QR", exact: true }).click();
   await page.getByRole("button", { name: "Start camera" }).click();
   await expect
     .poll(() =>
@@ -145,7 +145,7 @@ test("an active camera stream stops on Stop and Escape", async ({ page }) => {
     });
   });
   await page.goto("/skincare/identify/");
-  await page.getByRole("button", { name: "Scan barcode", exact: true }).click();
+  await page.getByRole("button", { name: "Scan QR", exact: true }).click();
   await page.getByRole("button", { name: "Start camera" }).click();
   await expect(
     page.getByRole("button", { name: "Stop camera", exact: true }),
