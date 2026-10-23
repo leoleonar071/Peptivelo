@@ -23,6 +23,6 @@ for (const c of catalog.comparisons.filter((c) => !["niod-vs-ordinary", "ordinar
     expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze()).violations).toEqual([]);
     await page.setViewportSize({ width: 320, height: 800 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-    if (c.id === "matrixyl-vs-ha") await page.screenshot({ path: `docs/all-reader-label-${info.project.name}.png` });
+    if (c.id === "matrixyl-vs-ha") await page.screenshot({ path: info.outputPath(`all-reader-label-${info.project.name}.png`) });
   });
 }

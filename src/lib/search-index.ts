@@ -3,7 +3,7 @@ import { guides } from "./guides";
 import { libraryArticles } from "./library";
 import { haircare } from "./haircare";
 import { ingredientPath, productPath } from "./config";
-import type { SearchEntry } from "./search";
+import { ingredientAliases, type SearchEntry } from "./search";
 // Extend with real routes and sources as collections grow.
 export const searchIndex: SearchEntry[] = [
   ...[
@@ -44,7 +44,7 @@ export const searchIndex: SearchEntry[] = [
       identity: {
         id: i.id,
         name: i.inciName,
-        aliases: i.id === "copper-tripeptide-1" ? ["GHK-Cu", "GHKCu"] : [],
+        aliases: ingredientAliases[i.id] ?? [],
       },
     })),
   ...haircare.ingredients.map((i): SearchEntry => ({

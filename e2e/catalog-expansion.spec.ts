@@ -49,9 +49,10 @@ test("new editorial pairs explain limits with accessible ingredient help", async
       "content",
       /noindex/,
     );
+    await page.getByRole("tab", { name: "Evidence", exact: true }).click();
     await expect(
       page.getByRole("heading", {
-        name: "Check the original sources",
+        name: "What the sources tell us.",
         exact: true,
       }),
     ).toBeVisible();
@@ -61,6 +62,9 @@ test("new editorial pairs explain limits with accessible ingredient help", async
       ),
     ).toBe(true);
   }
+  await page
+    .getByRole("tab", { name: "Ingredients & price", exact: true })
+    .click();
   await page
     .getByRole("button", {
       name: "What does it do? Palmitoyl sh-Hexapeptide-13 Serine SP Amide",
@@ -80,6 +84,8 @@ test("new editorial pairs explain limits with accessible ingredient help", async
     ),
   ).toBe(true);
   await page.screenshot({
-    path: `docs/catalog-expansion-help-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(
+      `catalog-expansion-help-${testInfo.project.name}.png`,
+    ),
   });
 });

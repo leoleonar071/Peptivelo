@@ -58,6 +58,6 @@ test("tabs support keyboard, history, deep links and reference focus return", as
     }),
   );
   await page.screenshot({
-    path: `docs/reader-tabs-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`reader-tabs-${testInfo.project.name}.png`),
   });
 });

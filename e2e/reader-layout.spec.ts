@@ -15,11 +15,11 @@ test("editorial reader identifies products and guides a narrow-screen decision",
       ),
     ).toBe(true);
   await page.screenshot({
-    path: `docs/reader-layout-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`reader-layout-${testInfo.project.name}.png`),
     fullPage: true,
   });
   await page.screenshot({
-    path: `docs/reader-viewport-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`reader-viewport-${testInfo.project.name}.png`),
   });
   const nav = page.getByRole("tablist", { name: "Comparison sections" });
   await expect(

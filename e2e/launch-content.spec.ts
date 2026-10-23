@@ -52,7 +52,7 @@ test("editorial guide explains the choice, sources and new ingredient without lo
   expect(editorialScan.violations).toEqual([]);
   await page.getByRole("heading", { level: 1 }).scrollIntoViewIfNeeded();
   await page.screenshot({
-    path: `docs/launch-editorial-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`launch-editorial-${testInfo.project.name}.png`),
   });
   await page
     .getByRole("button", {
@@ -93,7 +93,7 @@ test("editorial guide explains the choice, sources and new ingredient without lo
     ),
   ).toBe(true);
   await page.screenshot({
-    path: `docs/launch-comparison-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`launch-comparison-${testInfo.project.name}.png`),
   });
 });
 

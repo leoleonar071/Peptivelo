@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { catalog, products, brandName, priceFor } from "@/lib/data";
+import { comparisonEvidenceData } from "@/lib/comparison-evidence";
 import { skinLinks } from "@/lib/site-navigation";
 import { site, ingredientPath } from "@/lib/config";
 import { ProductOffers } from "@/components/product-offers";
@@ -245,8 +246,12 @@ export default async function Page({ params, searchParams }: Props) {
           key={`${get("a") ?? ""}:${get("b") ?? ""}`}
           first={get("a")}
           second={get("b")}
+          evidenceData={comparisonEvidenceData()}
         />
-        <ComparisonGuides />
+        <details className="v2-editorial-links">
+          <summary>Explore editorial comparisons</summary>
+          <ComparisonGuides />
+        </details>
       </>
     );
   else if (path === "tools/price-per-ml")
@@ -394,7 +399,7 @@ export default async function Page({ params, searchParams }: Props) {
         <h2>Compare this product</h2>
         <div className="button-row">
           <Link className="button" href={`/skincare/compare/?a=${p.id}`}>
-            Choose a comparison
+            Add to compare
           </Link>
         </div>
         <ComparisonGuides productId={p.id} />
@@ -662,18 +667,20 @@ export default async function Page({ params, searchParams }: Props) {
         }}
       />
       <Breadcrumbs items={breadcrumbs} />
-      <div className="page-heading">
-        <span className="eyebrow">
-          {site.name.toUpperCase()} /{" "}
-          {slug[0] === "tools"
-            ? "FREE TOOLS"
-            : slug[0] === "skincare"
-              ? "SKIN & COSMETICS"
-              : "ABOUT PEPTIVELO"}
-        </span>
-        <h1>{r.title}</h1>
-        <p>{r.description}</p>
-      </div>
+      {path !== "skincare/compare" && (
+        <div className="page-heading">
+          <span className="eyebrow">
+            {site.name.toUpperCase()} /{" "}
+            {slug[0] === "tools"
+              ? "FREE TOOLS"
+              : slug[0] === "skincare"
+                ? "SKIN & COSMETICS"
+                : "ABOUT PEPTIVELO"}
+          </span>
+          <h1>{r.title}</h1>
+          <p>{r.description}</p>
+        </div>
+      )}
       {body}
     </div>
   );

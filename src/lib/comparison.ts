@@ -29,6 +29,7 @@ export const volumeLabel = (p: Product) =>
   `${p.volume} ${p.volumeUnit === "ml" ? "mL" : "US fl oz"}`;
 
 export type ComparisonValue = {
+  sourceIds?: string[];
   text: string;
   note?: string;
   items?: string[];
@@ -37,6 +38,98 @@ export type ComparisonValue = {
   missing?: boolean;
   limitLabel?: string;
 };
+
+export const comparisonGroupsV2 = [
+  "Product details",
+  "Ingredients",
+  "Pricing",
+  "Brand claims",
+  "Evidence",
+] as const;
+export function comparisonRowsV2(a: Product, b: Product): ComparisonRow[] {
+  const facts = comparisonFacts(a, b);
+  const pair = [a, b] as const;
+  const rows = comparisonRows(a, b, true).map((row) => ({
+    ...row,
+    group: ["size", "format", "usage"].includes(row.id)
+      ? "Product details"
+      : row.id === "peptides"
+        ? "Ingredients"
+        : ["price", "unit-cost"].includes(row.id)
+          ? "Pricing"
+          : row.id === "concentrations"
+            ? "Brand claims"
+            : "Evidence",
+    values: row.values.map((value, index) => ({
+      ...value,
+      ...(row.id === "concentrations"
+        ? {
+            text: pair[index].concentrationDisclosure,
+            note: "Manufacturer disclosure, not an independent measurement. A blend percentage does not establish each ingredient’s concentration.",
+          }
+        : {}),
+      sourceIds: [
+        row.id === "price" || row.id === "unit-cost"
+          ? (facts.observations[index]?.sourceId ?? pair[index].sourceId)
+          : pair[index].sourceId,
+      ],
+      ...(row.id === "price" && facts.observations[index]
+        ? { date: facts.observations[index]!.observedAt }
+        : {}),
+    })) as [ComparisonValue, ComparisonValue],
+  }));
+  const add = (
+    id: string,
+    group: string,
+    label: string,
+    render: (p: Product, index: number) => ComparisonValue,
+    essential = true,
+  ) =>
+    rows.push({
+      id,
+      group,
+      label,
+      essential,
+      different: true,
+      values: [render(a, 0), render(b, 1)],
+    });
+  add("identity", "Product details", "Product", (p) => ({
+    text: `${brandName(p)} ${p.name}`,
+    href: `/skincare/products/${p.slug}/`,
+  }));
+  add(
+    "market",
+    "Product details",
+    "Reference market",
+    () => ({ text: "United States · USD" }),
+    false,
+  );
+  add("label-date", "Product details", "Label checked", (p) => ({
+    text: p.lastVerifiedAt,
+    sourceIds: [p.sourceId],
+  }));
+  add("formula-scope", "Ingredients", "Ingredient-list coverage", (p) => ({
+    text: p.ingredientListScope,
+    note: "A missing name in this selection does not establish absence from the formula.",
+    sourceIds: [p.sourceId],
+  }));
+  add("price-source", "Pricing", "Price source & update limits", (p, i) => ({
+    text: facts.observations[i]
+      ? "Recorded size-specific price"
+      : "Price unavailable",
+    missing: !facts.observations[i],
+    sourceIds: [facts.observations[i]?.sourceId ?? p.sourceId],
+    note: "Dated observation, not a live offer. Recheck prices older than 30 days before buying.",
+  }));
+  add("claims-coverage", "Brand claims", "Marketing-claim coverage", () => ({
+    text: "Marketing claims are not separately structured in these catalog records.",
+    missing: true,
+    note: "Disclosed concentrations below are manufacturer information, not measured efficacy.",
+  }));
+  return rows.map((row) =>
+    row.id === "market" ? { ...row, different: false } : row,
+  );
+}
 export type ComparisonRow = {
   id: string;
   group: string;
@@ -48,7 +141,11 @@ export type ComparisonRow = {
 
 // Unknown values are never considered proof of equality. Limits and sources
 // remain visible even when a shopper asks to hide matching recorded facts.
-export function comparisonRows(a: Product, b: Product, clarifyLimits = false): ComparisonRow[] {
+export function comparisonRows(
+  a: Product,
+  b: Product,
+  clarifyLimits = false,
+): ComparisonRow[] {
   const pair = [a, b] as const;
   const facts = comparisonFacts(a, b);
   const values = (
@@ -143,7 +240,9 @@ export function comparisonRows(a: Product, b: Product, clarifyLimits = false): C
       essential: true,
       values: values((p) => ({
         text: p.concentrationExplanation,
-        limitLabel: clarifyLimits ? readingLimits.concentration.label : undefined,
+        limitLabel: clarifyLimits
+          ? readingLimits.concentration.label
+          : undefined,
         note: readingLimits.concentration.detail,
       })),
     },

@@ -17,6 +17,9 @@ export type SearchEntry = {
   relations?: { entityId: string; reason: string }[];
   matchReason?: string;
 };
+export const ingredientAliases: Record<string, string[]> = {
+  "copper-tripeptide-1": ["GHK-Cu", "GHKCu"],
+};
 export function searchDestination(entry: SearchEntry, query: string) {
   return entry.entity && entry.category !== "Guides & articles"
     ? `/search/?${new URLSearchParams({ q: query.slice(0, 200), entity: entry.entity.id })}`

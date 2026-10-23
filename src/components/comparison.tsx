@@ -1,7 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useId, useRef, useState } from "react";
+import {
+  useEffect,
+  useId,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from "react";
 import {
   Search,
   Plus,
@@ -33,7 +39,12 @@ import { Bottle, VerifiedDate, SourceList } from "./ui";
 import { ComparisonGrid } from "./comparison-grid";
 import { IngredientHelp } from "./ingredient-help";
 
+import { ComparisonHero, ComparisonV2 } from "./comparison-v2";
+import { ComparisonProductImage } from "./comparison-product-image";
+import type { ComparisonEvidenceData } from "@/lib/comparison-evidence";
+import "../styles/comparison-v2.css";
 import { useClientReady } from "@/lib/use-client-ready";
+import { ingredientAliases } from "@/lib/search";
 
 function ProductPrice({ product }: { product: Product }) {
   const { observations, costs } = comparisonFacts(product, product);
@@ -46,7 +57,9 @@ function ProductPrice({ product }: { product: Product }) {
           <span>
             {volumeLabel(product)} · {money(costs[0]!.perMl)}/mL
           </span>
-          <small>Price recorded {p.verifiedAt}</small>
+          <small>
+            Price recorded <time dateTime={p.observedAt}>{p.observedAt}</time>
+          </small>
         </>
       ) : (
         <>
@@ -65,6 +78,7 @@ export function ProductSelector({
   onChange,
   disabled,
   compact = false,
+  v2 = false,
 }: {
   slot: 1 | 2;
   product?: Product;
@@ -72,6 +86,7 @@ export function ProductSelector({
   onChange: (id: string) => void;
   disabled: boolean;
   compact?: boolean;
+  v2?: boolean;
 }) {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
@@ -80,11 +95,15 @@ export function ProductSelector({
   const trigger = useRef<HTMLButtonElement>(null);
   const id = useId();
   const slotName = slot === 1 ? "first" : "second";
-  const matches = products.filter((p) =>
-    `${brandName(p)} ${p.name} ${p.ingredientList.join(" ")}`
+  const matches = products.filter((p) => {
+    const text =
+      `${brandName(p)} ${p.name} ${p.ingredientList.join(" ")} ${p.ingredientIds.flatMap((id) => ingredientAliases[id] ?? []).join(" ")}`.toLowerCase();
+    return query
+      .trim()
       .toLowerCase()
-      .includes(query.trim().toLowerCase()),
-  );
+      .split(/\s+/)
+      .every((token) => text.includes(token));
+  });
   useEffect(() => {
     if (!open) return;
     const original = document.body.style.overflow;
@@ -103,6 +122,15 @@ export function ProductSelector({
     dialog.current?.close();
   }
   function navigateResults(event: React.KeyboardEvent) {
+    if (event.key === "Enter" && event.target === search.current) {
+      event.preventDefault();
+      dialog.current
+        ?.querySelector<HTMLButtonElement>(
+          "[data-product-option]:not(:disabled)",
+        )
+        ?.click();
+      return;
+    }
     if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return;
     const choices = Array.from(
       dialog.current?.querySelectorAll<HTMLButtonElement>(
@@ -126,18 +154,18 @@ export function ProductSelector({
   }
   return (
     <article
-      className={`compare-slot ${product ? "is-selected" : ""} ${compact ? "matrix-selector" : ""}`}
-      aria-label={`Product ${slot}`}
+      className={`compare-slot ${product ? "is-selected" : ""} ${compact && !v2 ? "matrix-selector" : ""} ${v2 ? "v2-slot" : ""}`}
+      aria-label={`Product ${v2 ? (slot === 1 ? "A" : "B") : slot}`}
     >
       <div className="slot-top">
         <span className="slot-marker">{slot === 1 ? "A" : "B"}</span>
-        <span>PRODUCT {slot}</span>
+        <span>PRODUCT {v2 ? (slot === 1 ? "A" : "B") : slot}</span>
         {product && (
           <button
             className="slot-remove"
             disabled={disabled}
             onClick={() => onChange("")}
-            aria-label={`Remove product ${slot}`}
+            aria-label={`Remove product ${v2 ? (slot === 1 ? "A" : "B") : slot}`}
           >
             <X size={16} />
           </button>
@@ -147,7 +175,11 @@ export function ProductSelector({
         <>
           <div className="selected-product">
             <div className="mini-bottle" aria-hidden="true">
-              <Bottle product={product} />
+              {v2 ? (
+                <ComparisonProductImage key={product.id} product={product} />
+              ) : (
+                <Bottle product={product} />
+              )}
             </div>
             <div className="selected-copy">
               <span className="eyebrow">{brandName(product)}</span>
@@ -167,7 +199,8 @@ export function ProductSelector({
               disabled={disabled}
               onClick={show}
             >
-              Change product {slot} <ArrowLeftRight size={14} />
+              Change product {v2 ? (slot === 1 ? "A" : "B") : slot}{" "}
+              <ArrowLeftRight size={14} />
             </button>
           </div>
         </>
@@ -176,6 +209,11 @@ export function ProductSelector({
           <button
             ref={trigger}
             className="empty-slot-trigger"
+            aria-label={
+              v2
+                ? `Choose a serum — Product ${slot === 1 ? "A" : "B"}`
+                : undefined
+            }
             aria-haspopup="dialog"
             aria-controls={id}
             disabled={disabled}
@@ -184,20 +222,28 @@ export function ProductSelector({
             <span className="add-product-icon">
               <Plus size={24} />
             </span>
-            Choose {slotName} product <ArrowRight size={18} />
+            {v2 ? "Choose a serum" : `Choose ${slotName} product`}{" "}
+            <ArrowRight size={18} />
+            {v2 && <small>Search by brand, product, or ingredient</small>}
           </button>
-          <p className="slot-help">Search by product, brand, or ingredient.</p>
-          <span className="slot-empty-note">
-            {slot === 2 && other
-              ? "Your first product is ready. Add another to see the differences."
-              : "A source-checked label, with the gaps left visible."}
-          </span>
+          {!v2 && (
+            <>
+              <p className="slot-help">
+                Search by product, brand, or ingredient.
+              </p>
+              <span className="slot-empty-note">
+                {slot === 2 && other
+                  ? "Your first product is ready. Add another to see the differences."
+                  : "A source-checked label, with the gaps left visible."}
+              </span>
+            </>
+          )}
         </>
       )}
       <dialog
         id={id}
         ref={dialog}
-        className="product-picker-dialog"
+        className={`product-picker-dialog ${v2 ? "v2-picker" : ""}`}
         aria-labelledby={`${id}-title`}
         aria-describedby={`${id}-description`}
         onClose={() => {
@@ -211,8 +257,12 @@ export function ProductSelector({
         <div className="picker-inner">
           <div className="picker-header">
             <div>
-              <span className="eyebrow">YOUR COMPARISON / PRODUCT {slot}</span>
-              <h2 id={`${id}-title`}>Choose your {slotName} product.</h2>
+              <span className="eyebrow">
+                YOUR COMPARISON / PRODUCT {v2 ? (slot === 1 ? "A" : "B") : slot}
+              </span>
+              <h2 id={`${id}-title`}>
+                {v2 ? "Select a product" : `Choose your ${slotName} product.`}
+              </h2>
               <p id={`${id}-description`}>
                 Recognize the label. Check the size. See what’s documented.
               </p>
@@ -233,7 +283,11 @@ export function ProductSelector({
               onChange={(e) => setQuery(e.target.value)}
               onKeyDown={navigateResults}
               aria-label="Search products in picker"
-              placeholder="Try a brand, product, or peptide…"
+              placeholder={
+                v2
+                  ? "Search brand, serum, or ingredient..."
+                  : "Try a brand, product, or peptide…"
+              }
             />
             {query && (
               <button
@@ -269,7 +323,11 @@ export function ProductSelector({
                   }}
                 >
                   <span className="mini-bottle" aria-hidden="true">
-                    <Bottle product={p} />
+                    {v2 ? (
+                      <ComparisonProductImage product={p} />
+                    ) : (
+                      <Bottle product={p} />
+                    )}
                   </span>
                   <span className="picker-option-copy">
                     <span className="eyebrow">{brandName(p)}</span>
@@ -279,7 +337,7 @@ export function ProductSelector({
                     </span>
                     <span className="picker-option-status">
                       {unavailable
-                        ? `Already selected as product ${slot === 1 ? 2 : 1}`
+                        ? `Already selected as product ${v2 ? (slot === 1 ? "B" : "A") : slot === 1 ? 2 : 1}`
                         : p.id === product?.id
                           ? "Currently selected"
                           : `Label source checked ${p.lastVerifiedAt}`}
@@ -327,8 +385,8 @@ export function ProductSelector({
           <div className="picker-footer">
             <BookOpen size={16} />
             <span>
-              Label facts, not product ratings. Photographs show the recorded
-              product variants; check each presentation before buying.
+              Label facts, not product ratings. Product records identify the
+              recorded presentation; they are not packaging photographs.
             </span>
           </div>
         </div>
@@ -711,50 +769,60 @@ export function ComparisonTable({
   );
 }
 
+function subscribeComparison(listener: () => void) {
+  window.addEventListener("popstate", listener);
+  window.addEventListener("peptivelo:compare-selection", listener);
+  return () => {
+    window.removeEventListener("popstate", listener);
+    window.removeEventListener("peptivelo:compare-selection", listener);
+  };
+}
 export function Compare({
   first,
   second,
+  evidenceData,
 }: {
   first?: string;
   second?: string;
+  evidenceData?: ComparisonEvidenceData;
 }) {
   const ready = useClientReady();
-  const initialA = products.find((p) => p.id === first)?.id ?? "";
-  const initialB =
-    products.find((p) => p.id === second && p.id !== initialA)?.id ?? "";
-  const [selection, setSelection] = useState<[string, string]>([
-    initialA,
-    initialB,
-  ]);
-  const [shareStatus, setShareStatus] = useState("");
-  const a = products.find((p) => p.id === selection[0]);
-  const b = products.find((p) => p.id === selection[1]);
+  const query = useSyncExternalStore(
+    subscribeComparison,
+    () => window.location.search,
+    () => new URLSearchParams({ a: first ?? "", b: second ?? "" }).toString(),
+  );
+  const params = new URLSearchParams(query);
+  const a = products.find((p) => p.id === params.get("a"));
+  const b = products.find((p) => p.id === params.get("b") && p.id !== a?.id);
   const count = Number(!!a) + Number(!!b);
-  const workspace = useRef<HTMLDivElement>(null);
+  const invalid = (!!params.get("a") && !a) || (!!params.get("b") && !b);
+  const [shareStatus, setShareStatus] = useState("");
+  const root = useRef<HTMLDivElement>(null);
   const previousCount = useRef(count);
   useEffect(() => {
-    if (previousCount.current !== count) {
-      if (count === 2)
-        workspace.current
-          ?.querySelector<HTMLElement>("#comparison-result-title")
-          ?.focus();
-      else if (previousCount.current === 2)
-        workspace.current
-          ?.querySelector<HTMLButtonElement>(".empty-slot-trigger")
-          ?.focus();
-    }
+    if (count === 2 && previousCount.current !== 2)
+      root.current
+        ?.querySelector<HTMLElement>("#comparison-result-title")
+        ?.focus();
+    else if (previousCount.current === 2 && count < 2)
+      root.current
+        ?.querySelector<HTMLButtonElement>(".empty-slot-trigger")
+        ?.focus();
     previousCount.current = count;
   }, [count]);
   function change(next: [string, string]) {
     if (next[0] && next[0] === next[1]) return;
-    setSelection(next);
-    setShareStatus("");
     const url = new URL(location.href);
-    for (const [i, key] of ["a", "b"].entries()) {
-      if (next[i]) url.searchParams.set(key, next[i]);
+    for (const [index, key] of ["a", "b"].entries()) {
+      if (next[index]) url.searchParams.set(key, next[index]);
       else url.searchParams.delete(key);
     }
-    history.replaceState(null, "", url);
+    // Pair-specific anchors must not describe a newly selected pair.
+    url.hash = "";
+    history.pushState(null, "", url);
+    window.dispatchEvent(new Event("peptivelo:compare-selection"));
+    setShareStatus("");
     if (next[0] && next[1])
       track("comparison_completed", { a: next[0], b: next[1] });
     else if (next.some(Boolean)) track("comparison_started");
@@ -765,44 +833,45 @@ export function Compare({
       slot={1}
       product={a}
       other={b}
-      compact={!!(a && b)}
+      compact={count === 2}
+      v2
       disabled={!ready}
-      onChange={(id) => change([id, selection[1]])}
+      onChange={(id) => change([id, b?.id ?? ""])}
     />,
     <ProductSelector
       key="b"
       slot={2}
       product={b}
       other={a}
-      compact={!!(a && b)}
+      compact={count === 2}
+      v2
       disabled={!ready}
-      onChange={(id) => change([selection[0], id])}
+      onChange={(id) => change([a?.id ?? "", id])}
     />,
   ];
   return (
-    <div className="compare-workspace" ref={workspace}>
-      <div className="comparison-toolbar">
-        <div className="selection-progress" role="status">
-          <span className={a ? "complete" : ""}>1</span>
-          <i />
-          <span className={b ? "complete" : ""}>2</span>
-          <strong>
-            {count} of 2 products selected
-            {count === 2 ? " · Comparison ready" : ""}
-          </strong>
-        </div>
-        <div className="comparison-toolbar-controls">
+    <div
+      className={`compare-workspace comparison-v2 ${count === 2 ? "v2-is-complete" : ""}`}
+      ref={root}
+    >
+      <ComparisonHero complete={count === 2} />
+      <span className="sr-only" role="status">
+        {count} of 2 products selected{count === 2 ? " · Comparison ready" : ""}
+      </span>
+      {invalid && (
+        <p className="v2-validation" role="status">
+          An unknown or duplicate product was ignored. Choose a different
+          catalog product for the empty selection.
+        </p>
+      )}
+      {count > 0 && (
+        <div className="v2-toolbar">
           {a && b && (
             <>
-              <button
-                className="text-link"
-                disabled={!ready}
-                onClick={() => change([b.id, a.id])}
-              >
-                <ArrowLeftRight size={15} /> Swap sides
+              <button disabled={!ready} onClick={() => change([b.id, a.id])}>
+                <ArrowLeftRight size={16} /> Swap sides
               </button>
               <button
-                className="text-link"
                 disabled={!ready}
                 onClick={async () => {
                   try {
@@ -815,81 +884,57 @@ export function Compare({
                   }
                 }}
               >
-                <Copy size={15} /> Copy comparison link
+                <Copy size={16} /> Copy comparison link
               </button>
             </>
           )}
-          {count > 0 && (
-            <button
-              className="text-link"
-              disabled={!ready}
-              onClick={() => change(["", ""])}
-            >
-              Start over <X size={14} />
-            </button>
-          )}
-        </div>
-      </div>
-      <p className="comparison-share-status" role="status">
-        {shareStatus}
-      </p>
-      {!(a && b) && (
-        <div className="product-slots">
-          {selectors[0]}
-          <div className="slot-versus" aria-hidden="true">
-            vs.
-          </div>
-          {selectors[1]}
+          <button disabled={!ready} onClick={() => change(["", ""])}>
+            Start over <X size={16} />
+          </button>
         </div>
       )}
+      {shareStatus && (
+        <p className="v2-share-status" role="status">
+          {shareStatus}
+        </p>
+      )}
       {a && b ? (
-        <>
-          <ComparisonTable a={a} b={b} controls={selectors} />
-        </>
+        <ComparisonV2
+          a={a}
+          b={b}
+          selectors={selectors}
+          evidence={evidenceData}
+        />
       ) : (
-        <div className="comparison-empty">
-          <div className="empty-pair-symbol" aria-hidden="true">
-            A <span>↔</span> B
+        <>
+          <div className="v2-product-slots">{selectors}</div>
+          <div className="v2-starter">
+            <div>
+              <strong>Try an example comparison</strong>
+              <span>The Ordinary Copper Peptides and NIOD CAIS3</span>
+            </div>
+            <button
+              className="button"
+              disabled={!ready}
+              onClick={() => change(["ordinary-copper", "niod-cais3"])}
+            >
+              Try an example comparison <ArrowRight size={16} />
+            </button>
           </div>
-          <div>
-            <h2>
-              {count === 0
-                ? "Two labels. A clearer picture."
-                : "One more product, then the differences."}
-            </h2>
-            <p>
-              {count === 0
-                ? "Choose two serums to see their recorded prices, selected peptide labels, and what the available data cannot tell us."
-                : "Choose a different product in the empty space above. Your comparison will appear automatically."}
-            </p>
-            {count === 0 && products.length >= 2 && (
-              <button
-                className="text-link"
-                disabled={!ready}
-                onClick={() => change([products[0].id, products[1].id])}
-              >
-                Try the starter comparison <ArrowRight size={16} />
-              </button>
-            )}
-          </div>
-        </div>
+          <p className="v2-method-note">
+            Two recorded labels, with their sources and limits.{" "}
+            <Link href="/methodology/">How we compare →</Link>
+          </p>
+        </>
       )}
       <noscript>
         <p>
-          Enable JavaScript to choose products. Source-backed product profiles
-          remain available in the catalog.
-        </p>
-      </noscript>
-      <div className="comparison-standard">
-        <BookOpen size={17} />
-        <p>
-          Selected label ingredients, not full formulas. No efficacy scores or
-          clinical equivalence.{" "}
-          <Link href="/methodology/">
-            How we compare <ArrowUpRight size={13} />
+          Enable JavaScript to choose products.{" "}
+          <Link href="/skincare/products/">
+            Source-backed product profiles remain available.
           </Link>
         </p>
-      </div>
+      </noscript>
     </div>
   );
 }

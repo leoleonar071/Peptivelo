@@ -6,7 +6,7 @@ test("visual picker supports search, empty results, keyboard selection and focus
 }) => {
   await page.goto("/skincare/compare/");
   const trigger = page.getByRole("button", {
-    name: "Choose first product",
+    name: "Choose a serum — Product A",
     exact: true,
   });
   await expect(trigger).toBeEnabled();
@@ -39,10 +39,10 @@ test("visual picker supports search, empty results, keyboard selection and focus
   await page.keyboard.press("Enter");
   await expect(picker).not.toBeVisible();
   await expect(
-    page.getByRole("button", { name: "Change product 1", exact: true }),
+    page.getByRole("button", { name: "Change product A", exact: true }),
   ).toBeFocused();
   const second = page.getByRole("button", {
-    name: "Choose second product",
+    name: "Choose a serum — Product B",
     exact: true,
   });
   await second.click();
@@ -56,10 +56,10 @@ test("shared comparisons restore immediately, disclose gaps and survive swap and
 }) => {
   await page.goto("/skincare/compare/?a=ordinary-copper&b=niod-cais3");
   await expect(
-    page.getByRole("heading", { name: "Your comparison, at a glance." }),
+    page.getByRole("heading", { name: "At a glance" }),
   ).toBeVisible();
   await page
-    .getByRole("link", { name: "See the label differences", exact: true })
+    .getByRole("link", { name: "See the label differences →", exact: true })
     .click();
   await expect(page.locator("#ingredient-details")).toHaveAttribute("open", "");
   await expect(
@@ -74,15 +74,14 @@ test("shared comparisons restore immediately, disclose gaps and survive swap and
     page.locator(".compare-slot").first().getByRole("heading"),
   ).toContainText("Copper Amino Isolate");
   await page
-    .getByRole("link", { name: "Check sources & gaps", exact: true })
+    .getByRole("link", { name: "Check sources & gaps →", exact: true })
     .click();
+  await expect(page.locator('[data-comparison-row="unknowns"]')).toBeVisible();
   await expect(
-    page.getByRole("heading", {
-      name: "What we cannot determine",
-      exact: true,
-    }),
-  ).toBeVisible();
-  await expect(page.locator("#source-details .source-list a")).toHaveCount(2);
+    page.locator(
+      '#source-details [data-comparison-row="sources"] td a.matrix-source',
+    ),
+  ).toHaveCount(2);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -90,7 +89,10 @@ test("shared comparisons restore immediately, disclose gaps and survive swap and
   ).toBe(true);
   await page.getByRole("button", { name: "Start over", exact: true }).click();
   await expect(
-    page.getByRole("button", { name: "Choose first product", exact: true }),
+    page.getByRole("button", {
+      name: "Choose a serum — Product A",
+      exact: true,
+    }),
   ).toBeVisible();
   expect(new URL(page.url()).searchParams.has("a")).toBe(false);
   await page.goto("/skincare/compare/?a=niod-cais3&b=niod-cais3");
@@ -98,6 +100,9 @@ test("shared comparisons restore immediately, disclose gaps and survive swap and
     page.getByText("1 of 2 products selected", { exact: true }),
   ).toBeVisible();
   await expect(
-    page.getByRole("button", { name: "Choose second product", exact: true }),
+    page.getByRole("button", {
+      name: "Choose a serum — Product B",
+      exact: true,
+    }),
   ).toBeVisible();
 });

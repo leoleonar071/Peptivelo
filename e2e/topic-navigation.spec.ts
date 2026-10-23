@@ -15,6 +15,7 @@ test("skin topic leads to an editorial comparison and its product profile", asyn
     .getByRole("navigation", { name: "Skin & cosmetics navigation" })
     .getByRole("link", { name: "Comparisons", exact: true })
     .click();
+  await page.locator(".v2-editorial-links > summary").click();
   await page
     .getByRole("link")
     .filter({

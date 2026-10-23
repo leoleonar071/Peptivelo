@@ -16,7 +16,7 @@ test("HA versus copper exposes scoped academic safety evidence", async ({ page }
   await page.keyboard.press("Escape");
   await expect(citation).toBeFocused();
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze()).violations).toEqual([]);
-  await page.screenshot({ path: `docs/review-ha-${info.project.name}.png`, fullPage: true });
+  await page.screenshot({ path: info.outputPath(`review-ha-${info.project.name}.png`), fullPage: true });
   await page.goto("/skincare/ingredients/acetyl-hexapeptide-8/");
   await expect(page.getByText("Editorial draft · Qualified scientific review pending.")).toBeVisible();
   await expect(page.getByText(/The 2025 safety panel/)).toContainText("not evidence of harm");

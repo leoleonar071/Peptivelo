@@ -39,35 +39,46 @@ test("label guides connect a buying decision with sourced names, questions and a
     ),
   ).toBe(true);
   await page.screenshot({
-    path: `docs/label-guide-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`label-guide-${testInfo.project.name}.png`),
     fullPage: true,
   });
   await page.getByRole("heading", { level: 1 }).scrollIntoViewIfNeeded();
   await page.screenshot({
-    path: `docs/label-guide-${testInfo.project.name}-viewport.png`,
+    path: testInfo.outputPath(
+      `label-guide-${testInfo.project.name}-viewport.png`,
+    ),
   });
   await table.scrollIntoViewIfNeeded();
-  await page.screenshot({ path: `docs/label-guide-table-${testInfo.project.name}.png` });
+  await page.screenshot({
+    path: testInfo.outputPath(`label-guide-table-${testInfo.project.name}.png`),
+  });
   await page
     .getByRole("link", {
       name: "The Ordinary Matrixyl vs. Multi-Peptide + HA",
       exact: true,
     })
     .click();
+  await page
+    .getByRole("tab", { name: "Ingredients & price", exact: true })
+    .click();
+  await page.locator("#buying-notes > summary").click();
   await expect(
     page.getByRole("heading", {
       name: "Use this comparison for your decision",
       exact: true,
     }),
   ).toBeVisible();
+  await page.getByRole("tab", { name: "Evidence", exact: true }).click();
   await expect(
-    page.getByRole("heading", {
-      name: "What does HA mean in both product names?",
-      exact: true,
-    }),
+    page.getByText("What does HA mean in both product names?", { exact: true }),
   ).toBeVisible();
+  await page
+    .getByRole("tab", { name: "Ingredients & price", exact: true })
+    .click();
   await expect(
-    page.getByRole("link", { name: /Matrixyl 3000 vs Matrixyl synthe/ }),
+    page.locator(
+      '.reader-related a[href="/skincare/guides/matrixyl-3000-vs-synthe6/"]',
+    ),
   ).toBeVisible();
 });
 

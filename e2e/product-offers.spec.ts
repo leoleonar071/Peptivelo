@@ -8,11 +8,9 @@ test("compares two real stores for the same variant and keeps checkout unknowns 
   await page.goto(product);
   const offers = page.locator("#offers");
   await expect(offers.locator(".offer-card")).toHaveCount(2);
-  const sephora = offers
-    .locator(".offer-card")
-    .filter({
-      has: page.getByRole("heading", { name: "Sephora US", exact: true }),
-    });
+  const sephora = offers.locator(".offer-card").filter({
+    has: page.getByRole("heading", { name: "Sephora US", exact: true }),
+  });
   await expect(sephora).toContainText("$38.95 estimated");
   await expect(sephora).toContainText("Delivery estimate not confirmed");
   await expect(sephora).toContainText("1–3 business days");
@@ -41,11 +39,25 @@ test("compares two real stores for the same variant and keeps checkout unknowns 
         .analyze()
     ).violations,
   ).toEqual([]);
-  await page.locator("#offers").screenshot({ path: `docs/audit-evidence/store-comparison/offers-${info.project.name}-light.png` });
+  await page
+    .locator("#offers")
+    .screenshot({
+      path: info.outputPath(`audit-evidence/store-comparison/offers-${info.project.name}-light.png`),
+    });
   await page.getByRole("button", { name: "Switch to dark theme" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-  expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"]).analyze()).violations).toEqual([]);
-  await page.locator("#offers").screenshot({ path: `docs/audit-evidence/store-comparison/offers-${info.project.name}-dark.png` });
+  expect(
+    (
+      await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
+        .analyze()
+    ).violations,
+  ).toEqual([]);
+  await page
+    .locator("#offers")
+    .screenshot({
+      path: info.outputPath(`audit-evidence/store-comparison/offers-${info.project.name}-dark.png`),
+    });
 });
 
 test("destination filters do not reuse US offers or claim foreign coverage", async ({
@@ -121,9 +133,7 @@ test("owned records replace borrowed photos in product, catalog and scalp pages"
     (await request.get("/images/products/ordinary-copper-30ml.png")).status(),
   ).toBe(404);
   await page.goto(product);
-  await page
-    .getByRole("link", { name: "Choose a comparison", exact: true })
-    .click();
+  await page.getByRole("link", { name: "Add to compare", exact: true }).click();
   await expect(page).toHaveURL(/\?a=ordinary-copper$/);
   await expect(
     page.getByText("1 of 2 products selected", { exact: true }),

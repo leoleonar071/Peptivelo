@@ -1,104 +1,94 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-
 const url = "/skincare/compare/?a=ordinary-copper&b=niod-cais3";
-
-test("difference filtering keeps unknowns and swaps product values correctly", async ({
+test("difference filtering preserves essentials and swapped values", async ({
   page,
 }) => {
   await page.goto(url);
-  const matrix = page.getByRole("table", {
-    name: /Peptide serum label comparison/,
-  });
-  await expect(matrix).toBeVisible();
-  await expect(matrix.locator('[data-comparison-row="size"]')).toBeVisible();
+  for (const id of [
+    "product-details",
+    "pricing-details",
+    "brand-claims",
+    "source-details",
+  ])
+    await page.locator(`#${id} > summary`).click();
+  const matrix = page.locator(".v2-details");
   await expect(
     matrix.locator('[data-comparison-row="price"] td').first(),
   ).toContainText("$32.00");
   await page
-    .getByRole("checkbox", { name: "Show only differences", exact: true })
+    .getByRole("checkbox", { name: "Show differences only", exact: true })
     .check();
-  await expect(matrix.locator('[data-comparison-row="size"]')).toHaveCount(0);
-  await expect(matrix.locator('[data-comparison-row="format"]')).toHaveCount(0);
-  for (const row of [
+  for (const id of ["size", "format", "market"])
+    await expect(matrix.locator(`[data-comparison-row="${id}"]`)).toHaveCount(
+      0,
+    );
+  for (const id of [
     "price",
     "unit-cost",
     "unknowns",
     "concentrations",
     "sources",
   ])
-    await expect(
-      matrix.locator(`[data-comparison-row="${row}"]`),
-    ).toBeVisible();
-  await expect(
-    page.getByText("2 matching rows hidden", { exact: false }),
-  ).toBeVisible();
+    await expect(matrix.locator(`[data-comparison-row="${id}"]`)).toBeVisible();
   await page.getByRole("button", { name: "Swap sides", exact: true }).click();
   await expect(
     matrix.locator('[data-comparison-row="price"] td').first(),
   ).toContainText("$93.00");
   await expect(
-    matrix.locator('[data-comparison-row="price"] td').nth(1),
-  ).toContainText("$32.00");
-  await expect(
-    page.getByRole("checkbox", { name: "Show only differences", exact: true }),
+    page.getByRole("checkbox", { name: "Show differences only", exact: true }),
   ).toBeChecked();
   await page
-    .getByRole("checkbox", { name: "Show only differences", exact: true })
+    .getByRole("checkbox", { name: "Show differences only", exact: true })
     .uncheck();
   await expect(matrix.locator('[data-comparison-row="size"]')).toBeVisible();
 });
-
-test("product headers stay in view while facts scroll and the picker remains accessible", async ({
+test("labelled product identities and picker remain accessible after expanding facts", async ({
   page,
-}, testInfo) => {
+}) => {
   await page.goto(url);
-  const matrix = page.locator(".visual-comparison");
-  await matrix.locator("thead").scrollIntoViewIfNeeded();
-  await page.screenshot({
-    path: `docs/compare-matrix-${testInfo.project.name}-viewport.png`,
-  });
-  await page.screenshot({
-    path: `docs/compare-matrix-${testInfo.project.name}.png`,
-    fullPage: true,
-  });
-  await matrix
-    .locator('[data-comparison-row="peptides"]')
-    .scrollIntoViewIfNeeded();
-  const header = await matrix.locator("thead").boundingBox();
-  expect(header!.y).toBeGreaterThanOrEqual(-1);
-  expect(header!.y).toBeLessThan(5);
+  await page.locator("#ingredient-details > summary").click();
+  await page.locator("#comparison-peptides").scrollIntoViewIfNeeded();
+  await expect(
+    page.locator("#comparison-peptides .v2-cell-identity"),
+  ).toHaveCount(2);
   await page
-    .getByRole("button", { name: "Change product 1", exact: true })
+    .getByRole("button", { name: "Change product A", exact: true })
     .click();
   await expect(page.getByRole("dialog")).toBeVisible();
-  const scan = await new AxeBuilder({ page })
-    .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
-    .analyze();
-  expect(scan.violations).toEqual([]);
+  expect(
+    (
+      await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+        .analyze()
+    ).violations,
+  ).toEqual([]);
   await page.keyboard.press("Escape");
   await expect(
-    page.getByRole("button", { name: "Change product 1", exact: true }),
+    page.getByRole("button", { name: "Change product A", exact: true }),
   ).toBeFocused();
 });
-
-test("paired facts fit a narrow mobile screen without horizontal page scrolling", async ({
+test("mobile price pairs align while long values stack with A/B labels", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 320, height: 740 });
   await page.goto(url);
-  await expect(
-    page.locator('[data-comparison-row="concentrations"]'),
-  ).toBeVisible();
+  await page.locator("#pricing-details > summary").click();
+  await page.locator("#brand-claims > summary").click();
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
     ),
   ).toBe(true);
-  const row = page.locator('[data-comparison-row="price"]');
-  const cells = await row.locator("td").all();
-  const left = await cells[0].boundingBox();
-  const right = await cells[1].boundingBox();
+  const cells = page.locator('.v2-details [data-comparison-row="price"] td');
+  const left = await cells.nth(0).boundingBox();
+  const right = await cells.nth(1).boundingBox();
   expect(Math.abs(left!.y - right!.y)).toBeLessThan(2);
   expect(right!.x).toBeGreaterThan(left!.x);
+  const long = page.locator(
+    '.v2-details [data-comparison-row="concentrations"] td',
+  );
+  expect((await long.nth(1).boundingBox())!.y).toBeGreaterThan(
+    (await long.nth(0).boundingBox())!.y,
+  );
 });

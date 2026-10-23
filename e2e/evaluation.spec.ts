@@ -52,6 +52,6 @@ test("overview leads the label table and detailed evidence preserves scientific 
   expect(scan.violations).toEqual([]);
   await evaluation.evaluate((el) => el.scrollIntoView({ block: "start" }));
   await page.screenshot({
-    path: `docs/critical-evidence-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`critical-evidence-${testInfo.project.name}.png`),
   });
 });

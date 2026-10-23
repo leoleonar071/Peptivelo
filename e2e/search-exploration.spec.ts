@@ -39,7 +39,7 @@ test("one search opens an ingredient and separates exact labels from editorial a
   await expect(page).toHaveURL(/\/skincare\/compare\/\?a=.*&b=/);
   await expect(
     page.getByRole("heading", {
-      name: "Your comparison, at a glance.",
+      name: "At a glance",
       exact: true,
     }),
   ).toBeVisible();

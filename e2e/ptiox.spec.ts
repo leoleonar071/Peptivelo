@@ -31,7 +31,7 @@ test("P-TIOX has a scoped, progressive comparison with academic disclosures", as
   await page.keyboard.press("Escape");
   await expect(cite).toBeFocused();
   await page.screenshot({
-    path: `docs/ptiox-evidence-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`ptiox-evidence-${testInfo.project.name}.png`),
   });
   await page.setViewportSize({ width: 320, height: 800 });
   expect(

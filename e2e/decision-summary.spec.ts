@@ -17,7 +17,7 @@ test("priority summaries answer the three buying questions with source access", 
       await expect(summary).not.toContainText("price remains unverified");
     }
     expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze()).violations).toEqual([]);
-    await page.screenshot({ path: `docs/decision-summary-${slug}-${info.project.name}.png` });
+    await page.screenshot({ path: info.outputPath(`decision-summary-${slug}-${info.project.name}.png`) });
     const viewport = page.viewportSize();
     await page.setViewportSize({ width: 320, height: 800 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

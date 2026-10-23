@@ -13,7 +13,7 @@ test("source types and data gaps stay understandable in both priority readers", 
     await expect(benefit.locator(".evidence-support").last()).toHaveText("Editorial interpretation");
     await page.locator(".support-key summary").click();
     await expect(page.locator(".support-key")).toContainText("not a quality score");
-    await page.screenshot({ path: `docs/reading-context-${slug}-${info.project.name}.png`, fullPage: true });
+    await page.screenshot({ path: info.outputPath(`reading-context-${slug}-${info.project.name}.png`), fullPage: true });
     await page.getByRole("tab", { name: "Ingredients & price", exact: true }).click();
     await expect(page.locator(".data-limit-inline").filter({ visible: true })).toHaveCount(2);
     await expect(page.locator(".visual-comparison")).toContainText("Individual amounts not verified");

@@ -8,20 +8,20 @@ Peptivelo es una plataforma independiente de información y comparación, no fab
 
 Referencia: petróleo #0E3D36, azul gris #4E6B72, sage #9BB7A7, aqua #C7E0D9 y marfil #F8F7F2. Sage queda reservado para decoración, no texto esencial.
 
-| Rol | Claro (predeterminado) | Oscuro |
-| --- | --- | --- |
-| Fondo | #F8F7F2 | #0A2925 |
-| Superficie | #FFFFFF | #0E3D36 |
-| Superficie secundaria | #EFF4F0 | #164B43 |
-| Texto | #13332F | #F8F7F2 |
-| Texto secundario | #4E6B72 | #C7E0D9 |
-| Borde | #D9E4DD | #35655B |
-| Acción primaria / texto | #0E3D36 / #FFFFFF | #C7E0D9 / #0E3D36 |
-| Hover primario | #15554B | #F8F7F2 |
-| Acento / texto | #C7E0D9 / #0E3D36 | #1D5149 / #F8F7F2 |
-| Foco | #276D63 | #B7E1D6 |
+| Rol                     | Claro (predeterminado) | Oscuro            |
+| ----------------------- | ---------------------- | ----------------- |
+| Fondo                   | #F8F7F2                | #0A2925           |
+| Superficie              | #FFFFFF                | #0E3D36           |
+| Superficie secundaria   | #EFF4F0                | #164B43           |
+| Texto                   | #13332F                | #F8F7F2           |
+| Texto secundario        | #4E6B72                | #C7E0D9           |
+| Borde                   | #D9E4DD                | #35655B           |
+| Acción primaria / texto | #0E3D36 / #FFFFFF      | #C7E0D9 / #0E3D36 |
+| Hover primario          | #15554B                | #F8F7F2           |
+| Acento / texto          | #C7E0D9 / #0E3D36      | #1D5149 / #F8F7F2 |
+| Foco                    | #276D63                | #B7E1D6           |
 
-Son las extensiones de interfaz propuestas por el manual. Las sombras y fondos de diálogo se derivan del petróleo con mezcla transparente. Los bordes de controles editables usan el color de texto secundario para facilitar su identificación. Las fotos conservan una superficie blanca para reconocer el producto.
+Son las extensiones de interfaz propuestas por el manual. Las sombras y fondos de diálogo se derivan del petróleo con mezcla transparente. Los bordes de controles editables usan el color de texto secundario para facilitar su identificación. Las fichas visuales propias identifican la presentación registrada; no simulan fotografías de envases.
 
 El selector guarda únicamente `pv-theme=light|dark` en almacenamiento local. Sin preferencia guardada, empieza en claro incluso si el sistema operativo usa oscuro. Si el almacenamiento no está disponible, el selector funciona durante esa página. El tema se aplica antes de hidratar la interfaz para reducir el destello del tema incorrecto.
 
@@ -43,6 +43,16 @@ Activos pendientes: logo horizontal aprobado, isotipo SVG original, versión rev
 
 ## Continuidad editorial y funcional
 
-Se mantienen productos, datos, rutas, comparación, selección por pregunta, identificación, biblioteca, cabello, guías, calculadora, metodología y fuentes. El menú More reúne accesos secundarios y admite teclado/Escape. Las citas, fechas, afiliación y límites de evidencia conservan su contenido y su estado pendiente de revisión cualificada.
+Se mantienen productos, datos, rutas, comparación, selección por pregunta, identificación, biblioteca, cabello, guías, calculadora, metodología y fuentes. El menú global reúne Explore topics, Peptides A–Z, Learn y Search, con agrupaciones equivalentes en móvil y cierre mediante Escape. Las citas, fechas, afiliación y límites de evidencia conservan su contenido y su estado pendiente de revisión cualificada.
 
 No se convierte la falta de datos en ineficacia, ni una etiqueta comercial en evidencia clínica. Los colores de evidencia son descriptivos, no una escala inventada de calidad o eficacia. No se modificaron indexación, monetización, precios ni fuentes científicas por este cambio visual.
+
+## Comparador V2
+
+El comparador raíz usa dos estados: selección A/B con tarjetas completas y análisis automático con identidades compactas. Un único H1 de 56px en escritorio y 36px en móvil presenta las dos frases solicitadas; se reduce al completar la pareja. Ancho máximo 1200px, bordes sólidos, radios de 20–24px y controles de al menos 44px.
+
+At a glance permanece visible. Product details, Ingredients, Pricing, Brand claims y Evidence empiezan cerradas. Evidence & sources separa etiquetas, ingredientes, formulaciones, producto terminado y análisis editorial de la pareja cuando existe. Los lectores editoriales mantienen sus pestañas y su variante de tabla original.
+
+En móvil, cada atributo ocupa una fila encima de los valores A/B, con identidades repetidas. Los textos largos del detalle se apilan. No hay cabeceras ni barras flotantes. El selector nativo mide hasta 880px en escritorio y adapta su altura en móvil; los resultados tienen desplazamiento propio. Los activos son registros editoriales propios y cuentan con un respaldo estable ante fallos de imagen.
+
+La fecha de observación del precio se distingue de la comprobación de etiqueta. Los valores desconocidos, límites de concentración, precauciones y fuentes permanecen al filtrar diferencias. Las divulgaciones de marca se atribuyen al fabricante y se separan de la interpretación editorial. US/USD es el contexto comercial de este comparador.

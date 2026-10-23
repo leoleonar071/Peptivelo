@@ -4,7 +4,6 @@ import AxeBuilder from "@axe-core/playwright";
 const paths = [
   "/skincare/guides/matrixyl-3000-vs-synthe6/",
   "/skincare/guides/peptide-percentages-explained/",
-  "/skincare/compare/niod-cais3-vs-the-ordinary/",
 ];
 
 test("pilot references resolve and keyboard return links preserve reading position", async ({
@@ -45,8 +44,18 @@ test("pilot references resolve and keyboard return links preserve reading positi
       ),
     ).toBe(true);
   }
+  await page.goto("/skincare/compare/niod-cais3-vs-the-ordinary/");
+  const citation = page
+    .locator(
+      '.reader-takeaways .inline-citations a[href="#comparison-reference-argireline-trial"]',
+    )
+    .first();
+  await citation.click();
+  const referenceDialog = page.getByRole("dialog", {
+    name: "About this reference",
+  });
+  await expect(referenceDialog).toBeVisible();
   const trial = page.locator("#comparison-reference-argireline-trial");
-  await page.locator(".reader-takeaways .inline-citations a").first().click();
   if (!((await trial.locator("details").getAttribute("open")) === ""))
     await trial.locator("summary").click();
   await expect(trial).toContainText("60 Chinese participants");
@@ -62,8 +71,10 @@ test("pilot references resolve and keyboard return links preserve reading positi
   expect(scan.violations).toEqual([]);
   await trial.scrollIntoViewIfNeeded();
   await page.screenshot({
-    path: `docs/citations-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`citations-${testInfo.project.name}.png`),
   });
+  await page.keyboard.press("Escape");
+  await expect(citation).toBeFocused();
 });
 
 test("references, study limits and hypothetical labels exist without JavaScript", async ({

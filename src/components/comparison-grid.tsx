@@ -2,70 +2,14 @@
 
 import { useId, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import { brandName, type Product } from "@/lib/data";
-import {
-  comparisonRows,
-  visibleComparisonRows,
-  type ComparisonValue,
-} from "@/lib/comparison";
+import { comparisonRows, visibleComparisonRows } from "@/lib/comparison";
 import { productPath } from "@/lib/config";
 import { Bottle } from "./ui";
-import { IngredientHelp } from "./ingredient-help";
+import { FactValue } from "./comparison-value";
+import { ComparisonDetailsV2 } from "./comparison-details-v2";
 
-function FactValue({
-  value,
-  explainIngredients = false,
-  comparisonQuery,
-}: {
-  value: ComparisonValue;
-  explainIngredients?: boolean;
-  comparisonQuery?: string;
-}) {
-  return (
-    <>
-      {value.href ? (
-        <a
-          className="matrix-source"
-          href={value.href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {value.text} <ArrowUpRight size={15} />
-        </a>
-      ) : (
-        value.text && (
-          <span className={value.missing ? "matrix-missing" : "matrix-value"}>
-            {value.text}
-          </span>
-        )
-      )}
-      {value.items && (
-        <ul className="matrix-list">
-          {value.items.map((item) => (
-            <li key={item}>
-              {explainIngredients ? (
-                <IngredientHelp name={item} comparisonQuery={comparisonQuery} />
-              ) : (
-                item
-              )}
-            </li>
-          ))}
-        </ul>
-      )}
-      {value.date && (
-        <small>
-          {value.href ? "Label checked" : "Price recorded"}{" "}
-          <time dateTime={value.date}>{value.date}</time>
-        </small>
-      )}
-      {value.note && <small>{value.note}</small>}
-      {value.limitLabel && <small className="data-limit-inline"><strong>{value.limitLabel}</strong></small>}
-    </>
-  );
-}
-
-export function ComparisonGrid({
+function LegacyComparisonGrid({
   a,
   b,
   controls,
@@ -164,8 +108,16 @@ export function ComparisonGrid({
                   className="matrix-row"
                   role="row"
                   data-comparison-row={row.id}
-                  id={row.id === "price" ? "price-comparison" : row.id === "peptides" ? "comparison-peptides" : undefined}
-                  tabIndex={row.id === "price" || row.id === "peptides" ? -1 : undefined}
+                  id={
+                    row.id === "price"
+                      ? "price-comparison"
+                      : row.id === "peptides"
+                        ? "comparison-peptides"
+                        : undefined
+                  }
+                  tabIndex={
+                    row.id === "price" || row.id === "peptides" ? -1 : undefined
+                  }
                   key={row.id}
                 >
                   <th id={`${id}-${row.id}`} scope="row" role="rowheader">
@@ -221,5 +173,17 @@ export function ComparisonGrid({
         matching names do not establish equivalent formulas or results.
       </p>
     </div>
+  );
+}
+
+export function ComparisonGrid(
+  props: Parameters<typeof LegacyComparisonGrid>[0] & {
+    variant?: "legacy" | "v2";
+  },
+) {
+  return props.variant === "v2" ? (
+    <ComparisonDetailsV2 a={props.a} b={props.b} />
+  ) : (
+    <LegacyComparisonGrid {...props} />
   );
 }

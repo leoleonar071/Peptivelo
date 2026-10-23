@@ -7,6 +7,7 @@ test("ingredient explanations are readable, accessible and return keyboard focus
   page,
 }, testInfo) => {
   await page.goto(comparison);
+  await page.locator("#ingredient-details > summary").click();
   const trigger = page
     .getByRole("button", {
       name: "What does it do? Acetyl Hexapeptide-8",
@@ -35,7 +36,7 @@ test("ingredient explanations are readable, accessible and return keyboard focus
     dialog.getByRole("link", { name: /Wang et al/ }).first(),
   ).toHaveAttribute("href", "https://pubmed.ncbi.nlm.nih.gov/23417317/");
   await page.screenshot({
-    path: `docs/ingredient-help-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`ingredient-help-${testInfo.project.name}.png`),
   });
   const scan = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
@@ -78,6 +79,7 @@ test("full guides preserve the chosen pair and explain names without a quality r
   page,
 }, testInfo) => {
   await page.goto(comparison);
+  await page.locator("#ingredient-details > summary").click();
   await expect(page.locator('[data-comparison-row="peptides"]')).toContainText(
     "identifier, not its strength",
   );
@@ -102,14 +104,14 @@ test("full guides preserve the chosen pair and explain names without a quality r
     .analyze();
   expect(scan.violations).toEqual([]);
   await page.screenshot({
-    path: `docs/ingredient-guide-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`ingredient-guide-${testInfo.project.name}.png`),
     fullPage: true,
   });
   await page
     .getByRole("link", { name: "Back to your comparison", exact: true })
     .click();
   await expect(page).toHaveURL(/compare\/\?a=ordinary-copper&b=niod-cais3/);
-  await expect(page.locator(".visual-comparison")).toBeVisible();
+  await expect(page.locator(".v2-glance")).toBeVisible();
   expect(
     await page.locator("body").evaluate((body) => body.style.overflow),
   ).not.toBe("hidden");
@@ -122,10 +124,11 @@ test("ingredient help fits 320px and the summary translates the comparison", asy
   await page.goto(comparison);
   await expect(
     page.getByRole("heading", {
-      name: "What these differences mean",
+      name: "At a glance",
       exact: true,
     }),
   ).toBeVisible();
+  await page.locator("#ingredient-details > summary").click();
   await page
     .getByRole("button", {
       name: "What does it do? Tripeptide-29",

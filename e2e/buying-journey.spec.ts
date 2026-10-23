@@ -21,7 +21,7 @@ test("summary leads to facts, sources and distinguishable exact-product offers",
   await expect(page.locator(".reader-buy-options")).toContainText("Recorded 2026-10-19");
   expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze()).violations).toEqual([]);
   await page.locator("#where-to-buy").scrollIntoViewIfNeeded();
-  await page.screenshot({ path: `docs/buying-journey-${info.project.name}.png` });
+  await page.screenshot({ path: info.outputPath(`buying-journey-${info.project.name}.png`) });
   await page.getByRole("tab", { name: "Overview", exact: true }).click();
   await page.getByRole("link", { name: "Check the evidence", exact: true }).click();
   await expect(page.locator("#research-evidence")).toBeFocused();

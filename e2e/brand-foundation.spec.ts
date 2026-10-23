@@ -11,6 +11,6 @@ test("requested typography and supplied isotype preserve the existing light UI",
     expect(await page.locator("body").evaluate((el) => getComputedStyle(el).fontFamily)).toContain("Inter");
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     expect((await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"]).analyze()).violations).toEqual([]);
-    if (route === "/") await page.screenshot({ path: `docs/brand-foundation-${info.project.name}.png` });
+    if (route === "/") await page.screenshot({ path: info.outputPath(`brand-foundation-${info.project.name}.png`) });
   }
 });

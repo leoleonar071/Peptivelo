@@ -14,7 +14,7 @@ test("picker waits for client handlers before accepting a selection", async ({
   try {
     await page.goto("/skincare/compare/", { waitUntil: "commit" });
     const choose = page.getByRole("button", {
-      name: "Choose first product",
+      name: "Choose a serum — Product A",
       exact: true,
     });
     await expect(choose).toBeDisabled();
@@ -44,7 +44,7 @@ test("two visual selections compare automatically and prevent duplicate products
 }) => {
   await page.goto("/skincare/compare/");
   await page
-    .getByRole("button", { name: "Choose first product", exact: true })
+    .getByRole("button", { name: "Choose a serum — Product A", exact: true })
     .click();
   await page
     .getByRole("textbox", { name: "Search products in picker" })
@@ -56,14 +56,14 @@ test("two visual selections compare automatically and prevent duplicate products
     page.getByText("1 of 2 products selected", { exact: true }),
   ).toBeVisible();
   await page
-    .getByRole("button", { name: "Choose second product", exact: true })
+    .getByRole("button", { name: "Choose a serum — Product B", exact: true })
     .click();
   await expect(
     page.getByRole("button", { name: /The Ordinary.*Multi-Peptide \+ Copper/ }),
   ).toBeDisabled();
   await page.getByRole("button", { name: /NIOD.*Copper Amino/ }).click();
   await expect(
-    page.getByRole("heading", { name: "Your comparison, at a glance." }),
+    page.getByRole("heading", { name: "At a glance" }),
   ).toBeVisible();
   const priceRow = page.getByRole("row", { name: /^Recorded price / });
   await expect(priceRow.getByRole("cell")).toHaveCount(2);
@@ -73,13 +73,16 @@ test("two visual selections compare automatically and prevent duplicate products
     "$1.07 / mL",
   );
   await page
-    .getByRole("button", { name: "Remove product 2", exact: true })
+    .getByRole("button", { name: "Remove product B", exact: true })
     .click();
+  await expect(page.getByRole("heading", { name: "At a glance" })).toHaveCount(
+    0,
+  );
   await expect(
-    page.getByRole("heading", { name: "Your comparison, at a glance." }),
-  ).toHaveCount(0);
-  await expect(
-    page.getByRole("button", { name: "Choose second product", exact: true }),
+    page.getByRole("button", {
+      name: "Choose a serum — Product B",
+      exact: true,
+    }),
   ).toBeVisible();
 });
 test("calculator normalizes, validates and restores share parameters", async ({

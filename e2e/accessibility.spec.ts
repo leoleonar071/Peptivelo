@@ -14,7 +14,7 @@ test("key routes and populated comparison have no automated WCAG A/AA violations
     if (path === "/skincare/compare/")
       await page
         .getByRole("button", {
-          name: "Try the starter comparison",
+          name: "Try an example comparison",
           exact: true,
         })
         .click();

@@ -37,7 +37,7 @@ test("hair evidence opens on demand, resolves citations and preserves study limi
     .locator(".hair-photo img")
     .evaluate((img: HTMLImageElement) => img.decode());
   await page.screenshot({
-    path: `docs/haircare-profile-${testInfo.project.name}.png`,
+    path: testInfo.outputPath(`haircare-profile-${testInfo.project.name}.png`),
   });
   const research = page.locator("#hair-research");
   await expect(research).not.toHaveAttribute("open", "");
