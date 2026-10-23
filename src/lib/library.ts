@@ -3,6 +3,7 @@ import { citationSet } from "./citations";
 export const libraryArticles = [
   {
     slug: "peptide-categories",
+    status: "draft" as const,
     title: "Cosmetic, prescription or experimental?",
     category: "Start here",
     description:
@@ -32,6 +33,7 @@ export const libraryArticles = [
   },
   {
     slug: "retatrutide",
+    status: "draft" as const,
     title: "Retatrutide: human research and US status",
     category: "Research brief",
     description:
@@ -61,6 +63,7 @@ export const libraryArticles = [
   },
   {
     slug: "bpc-157",
+    status: "draft" as const,
     title: "BPC-157: what a small human pilot can tell us",
     category: "Research brief",
     description:

@@ -12,10 +12,16 @@ export type SearchEntry = {
   terms: string;
   href: string;
   category: SearchCategory;
+  entity?: { id: string; context: "skin" | "hair" | "health" };
   identity?: { id: string; name: string; aliases: string[] };
   relations?: { entityId: string; reason: string }[];
   matchReason?: string;
 };
+export function searchDestination(entry: SearchEntry, query: string) {
+  return entry.entity && entry.category !== "Guides & articles"
+    ? `/search/?${new URLSearchParams({ q: query.slice(0, 200), entity: entry.entity.id })}`
+    : entry.href;
+}
 const normalize = (value: string) =>
   value
     .toLowerCase()

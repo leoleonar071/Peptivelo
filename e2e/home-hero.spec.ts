@@ -14,8 +14,9 @@ for (const theme of ["light", "dark"]) {
     );
     await expect(
       page
-        .getByRole("navigation", { name: "Peptivelo tools" })
-        .getByRole("link"),
+        .locator(".discovery-section")
+        .first()
+        .getByRole("heading", { level: 3 }),
     ).toHaveCount(3);
     expect(
       await page.evaluate(
@@ -37,9 +38,12 @@ for (const theme of ["light", "dark"]) {
       path: info.outputPath(`search-hero-${theme}.png`),
       fullPage: false,
     });
-    await page.locator(".knowledge-section").screenshot({
-      path: info.outputPath(`search-discovery-${theme}.png`),
-    });
+    await page
+      .locator(".discovery-section")
+      .first()
+      .screenshot({
+        path: info.outputPath(`search-discovery-${theme}.png`),
+      });
     const search = page.getByRole("combobox");
     await search.fill("peptide");
     await expect(
@@ -70,7 +74,7 @@ for (const theme of ["light", "dark"]) {
     await search.press("ArrowDown");
     await search.press("Enter");
     await expect(page).toHaveURL(
-      /\/skincare\/ingredients\/copper-tripeptide-1\//,
+      /entity=skin%3Aingredient%3Acopper-tripeptide-1/,
     );
     expect(errors).toEqual([]);
   });
@@ -86,7 +90,7 @@ test("all results, starter suggestions and narrow viewport work", async ({
   await page.goto("/");
   await page.setViewportSize({ width: 320, height: 740 });
   await expect(
-    page.getByRole("link", { name: /Identify (a )?product/, exact: true }),
+    page.getByRole("heading", { name: "Explore by topic", exact: true }),
   ).toBeVisible();
   expect(
     await page.evaluate(
@@ -95,9 +99,9 @@ test("all results, starter suggestions and narrow viewport work", async ({
   ).toBe(true);
   await page
     .locator(".hero-start")
-    .getByRole("link", { name: "GHK-Cu" })
+    .getByRole("link", { name: "GHK-Cu →" })
     .click();
-  await expect(page.locator(".search-document").first()).toContainText(
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(
     "Copper Tripeptide-1",
   );
 });

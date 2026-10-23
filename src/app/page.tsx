@@ -1,23 +1,22 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  ArrowUpRight,
-  Columns3,
-  Calculator,
-  BookOpen,
-  ShieldCheck,
-} from "lucide-react";
-import { products } from "@/lib/data";
-import { site } from "@/lib/config";
-import { ProductCard, SectionHeading } from "@/components/ui";
 import { HomeHero } from "@/components/home-hero";
-import { LearningGuides } from "@/components/learning-guides";
+import { TopicCards, ContentCards } from "@/components/discovery";
+import { contentNavigation } from "@/lib/content-navigation";
+import { site } from "@/lib/config";
 export const metadata = { alternates: { canonical: "/" } };
-const starterComparison = "/skincare/compare/?a=ordinary-copper&b=niod-cais3";
-
 export default function Home() {
+  const featured = [
+    contentNavigation.find((e) => e.id === "library:retatrutide")!,
+    contentNavigation.find(
+      (e) => e.href === "/skincare/guides/peptide-percentages-explained/",
+    )!,
+    contentNavigation.find(
+      (e) => e.href === "/skincare/compare/niod-cais3-vs-the-ordinary/",
+    )!,
+    contentNavigation.find((e) => e.id === "hair:product")!,
+  ];
   return (
-    <div className="home-editorial">
+    <div className="discovery-home">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -36,105 +35,63 @@ export default function Home() {
         }}
       />
       <HomeHero />
-      <section className="catalog-section" id="products">
-        <div className="wrap section">
-          <SectionHeading
-            kicker="THE STARTER COLLECTION"
-            title="Choose a product. Look closer."
-            href="/skincare/products/"
-            label="Explore the catalog"
-          />
-          <p className="section-intro">
-            Explore {products.length} documented US label profiles. Prices are
-            dated observations, not live offers.
-          </p>
-          <div className="home-product-grid">
-            {products.map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
-          </div>
-          <div className="catalog-next-step">
-            <p>New to comparing peptide serums?</p>
-            <Link className="button" href={starterComparison}>
-              Try the starter comparison <ArrowRight size={18} />
-            </Link>
-          </div>
-          <p className="photo-credit">
-            Product records show documented names and sizes, not packaging
-            photographs. Check the current package before buying.
-          </p>
-        </div>
+      <section
+        className="wrap discovery-section"
+        aria-labelledby="topics-title"
+      >
+        <span className="eyebrow">FIND YOUR STARTING POINT</span>
+        <h2 id="topics-title">Explore by topic</h2>
+        <p>Choose an area to see its products, explanations and research.</p>
+        <TopicCards headingLevel={3} />
+        <Link className="text-link" href="/topics/">
+          All topics →
+        </Link>
       </section>
-      <div className="wrap">
-        <section className="section choose-home-entry">
-          <span className="eyebrow">START WITH YOUR QUESTION</span>
-          <h2>Less searching. A clearer starting point.</h2>
+      <section className="wrap discovery-section">
+        <div className="discovery-intro-panel">
+          <span className="eyebrow">START WITH THE BASICS</span>
+          <h2>New to peptides?</h2>
           <p>
-            Expression lines, formula basics, or a higher price: explore the
-            differences that matter to you.
+            A cosmetic label, a medicine and an experimental compound need
+            different kinds of evidence. Understand the differences before going
+            deeper.
           </p>
-          <Link className="button" href="/skincare/choose/">
-            Find a comparison to explore <ArrowRight size={18} />
+          <Link className="button" href="/library/peptide-categories/">
+            Start here →
           </Link>
-        </section>
-        <LearningGuides />
-      </div>
-      <section className="wrap section">
-        <SectionHeading
-          kicker="A LITTLE CONTEXT HELPS"
-          title="Understand the details that matter."
-        />
-        <div className="question-grid">
-          {[
-            {
-              icon: Columns3,
-              title: "Compare the labels",
-              text: "See the recorded differences and the limits of what we can conclude.",
-              href: starterComparison,
-              cta: "Open a comparison",
-            },
-            {
-              icon: BookOpen,
-              title: "Decode an ingredient",
-              text: "Find exact ingredient names, their sources, and what remains unknown.",
-              href: "/skincare/ingredients/",
-              cta: "Explore ingredients",
-            },
-            {
-              icon: Calculator,
-              title: "Put price in perspective",
-              text: "Enter your own prices and sizes to compare the cost per milliliter.",
-              href: "/tools/price-per-ml/",
-              cta: "Calculate price per mL",
-            },
-          ].map((x) => (
-            <Link className="question-card" key={x.href} href={x.href}>
-              <x.icon size={24} />
-              <h3>{x.title}</h3>
-              <p>{x.text}</p>
-              <span className="text-link">
-                {x.cta}
-                <ArrowUpRight size={17} />
-              </span>
-            </Link>
-          ))}
+          <Link className="text-link" href="/learn/">
+            Explore all learning guides →
+          </Link>
         </div>
       </section>
-      <section className="methodology-brief">
-        <div className="wrap">
-          <ShieldCheck size={30} />
-          <div>
-            <span className="eyebrow">CLEAR SOURCES. VISIBLE LIMITS.</span>
-            <h2>Know what you’re comparing.</h2>
-            <p>
-              We check manufacturer labels and show what’s missing. Label
-              verification is not independent laboratory testing, and ingredient
-              overlap does not establish equal results.
-            </p>
+      <section
+        className="wrap discovery-section"
+        aria-labelledby="featured-title"
+      >
+        <span className="eyebrow">SELECTED READING</span>
+        <h2 id="featured-title">Featured content</h2>
+        <p>
+          Explore different topics and formats. Review status is shown on each
+          selection.
+        </p>
+        <ContentCards entries={featured} headingLevel={3} />
+      </section>
+      <section className="wrap discovery-section">
+        <div className="discovery-intro-panel">
+          <span className="eyebrow">CLEAR SOURCES. VISIBLE LIMITS.</span>
+          <h2>How we work</h2>
+          <p>
+            We distinguish label facts, ingredient research and product
+            evidence. Missing information and pending reviews stay visible.
+          </p>
+          <div className="button-row">
+            <Link className="button" href="/methodology/">
+              Our methodology
+            </Link>
+            <Link className="text-link" href="/sources/">
+              Explore our sources →
+            </Link>
           </div>
-          <Link className="text-link" href="/methodology/">
-            How we compare <ArrowRight size={18} />
-          </Link>
         </div>
       </section>
     </div>

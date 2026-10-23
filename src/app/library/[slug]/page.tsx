@@ -24,8 +24,13 @@ export default async function LibraryArticle({ params }: Props) {
   return (
     <article className="wrap library-page">
       <LibraryDisclosures>
-        <Link className="text-link" href="/library/">
-          ← Peptide library
+        <Link
+          className="text-link"
+          href={
+            a.category === "Start here" ? "/learn/" : "/topics/health-research/"
+          }
+        >
+          ← {a.category === "Start here" ? "Learn" : "Health & research"}
         </Link>
         <header className="identify-intro">
           <span className="eyebrow">{a.category} · EDITORIAL DRAFT</span>
@@ -76,8 +81,17 @@ export default async function LibraryArticle({ params }: Props) {
           </summary>
           <References set={citations} />
         </details>
-        <Link className="text-link" href="/library/">
-          Explore the library →
+        <Link
+          className="text-link"
+          href={
+            a.category === "Start here" ? "/learn/" : "/topics/health-research/"
+          }
+        >
+          Explore{" "}
+          {a.category === "Start here"
+            ? "learning guides"
+            : "health & research"}{" "}
+          →
         </Link>
       </LibraryDisclosures>
     </article>

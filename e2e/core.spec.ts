@@ -30,11 +30,8 @@ test("picker waits for client handlers before accepting a selection", async ({
   }
 });
 test("search filters the real catalog", async ({ page }) => {
-  await page.goto("/");
-  await page
-    .getByRole("textbox", { name: "Search products or ingredients" })
-    .fill("NIOD");
-  await page.getByRole("button", { name: "Search", exact: true }).click();
+  await page.goto("/skincare/products/");
+  await page.getByRole("textbox", { name: "Filter products" }).fill("NIOD");
   await expect(page.getByText("1 products · US catalog")).toBeVisible();
   await expect(
     page.getByRole("heading", {
@@ -68,13 +65,13 @@ test("two visual selections compare automatically and prevent duplicate products
   await expect(
     page.getByRole("heading", { name: "Your comparison, at a glance." }),
   ).toBeVisible();
-  await expect(
-    page.getByRole("heading", { name: "We can’t compare prices yet." }),
-  ).toBeVisible();
-  await page.locator("summary").filter({ hasText: "Price & size" }).click();
-  await expect(
-    page.getByText("Not verified for this size", { exact: true }),
-  ).toBeVisible();
+  const priceRow = page.getByRole("row", { name: /^Recorded price / });
+  await expect(priceRow.getByRole("cell")).toHaveCount(2);
+  await expect(priceRow).toContainText("$32.00 USD");
+  await expect(priceRow).toContainText("$93.00 USD");
+  await expect(page.getByRole("row", { name: /^Price per mL / })).toContainText(
+    "$1.07 / mL",
+  );
   await page
     .getByRole("button", { name: "Remove product 2", exact: true })
     .click();

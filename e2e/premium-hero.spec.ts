@@ -60,22 +60,24 @@ test("premium hero at all requested widths and themes", async ({
       expect(shape.width).toBeGreaterThanOrEqual(48);
       expect(shape.radius).toBe("50%");
       expect(shape.text).toBe("");
-      await expect(page.locator(".preview-document")).toHaveCount(3);
+      await expect(page.locator(".content-grid .discovery-card")).toHaveCount(
+        4,
+      );
       await expect(page.locator(".home-hero .knowledge-preview")).toHaveCount(
         0,
       );
-      await expect(page.locator(".hero-shortcuts a")).toHaveCount(3);
-      await expect(page.locator(".hero-start a")).toHaveCount(2);
+      await expect(page.locator(".hero-shortcuts a")).toHaveCount(0);
+      await expect(page.locator(".hero-start a")).toHaveCount(3);
       expect(
         await page
           .locator("h1")
           .evaluate((el) => getComputedStyle(el).fontWeight),
-      ).toBe("500");
+      ).toBe("700");
       expect(
         await page
           .locator("h1")
           .evaluate((el) => getComputedStyle(el).fontFamily),
-      ).toContain("Instrument Sans");
+      ).toContain("Manrope");
       if (width <= 540) {
         await expect(page.getByRole("combobox")).toHaveAttribute(
           "placeholder",
@@ -84,45 +86,38 @@ test("premium hero at all requested widths and themes", async ({
         const field = await form.boundingBox();
         expect(field!.y + field!.height).toBeLessThan(960);
       }
-      await page
-        .locator(".home-hero")
-        .screenshot({
-          animations: "disabled",
-          path: info.outputPath(`premium-hero-${theme}-${width}.png`),
-        });
+      await page.locator(".home-hero").screenshot({
+        animations: "disabled",
+        path: info.outputPath(`premium-hero-${theme}-${width}.png`),
+      });
       if (width === 1440 || width === 390)
         await page
-          .locator(".connected-preview-section")
+          .locator(".discovery-section")
+          .first()
           .screenshot({
             animations: "disabled",
             path: info.outputPath(`connected-${width}-${theme}.png`),
           });
       const input = page.getByRole("combobox");
       await input.focus();
-      await page
-        .locator(".home-hero")
-        .screenshot({
-          animations: "disabled",
-          path: info.outputPath(`focus-${width}-${theme}.png`),
-        });
+      await page.locator(".home-hero").screenshot({
+        animations: "disabled",
+        path: info.outputPath(`focus-${width}-${theme}.png`),
+      });
       await input.fill("GHK-Cu");
       await expect(page.getByRole("option").first()).toBeVisible();
-      await page
-        .locator(".home-hero")
-        .screenshot({
-          animations: "disabled",
-          path: info.outputPath(`results-${width}-${theme}.png`),
-        });
+      await page.locator(".home-hero").screenshot({
+        animations: "disabled",
+        path: info.outputPath(`results-${width}-${theme}.png`),
+      });
       await input.fill("zzzzzz-no-entry");
       await expect(
         page.getByText("No matching documents.", { exact: false }),
       ).toBeVisible();
-      await page
-        .locator(".home-hero")
-        .screenshot({
-          animations: "disabled",
-          path: info.outputPath(`empty-${width}-${theme}.png`),
-        });
+      await page.locator(".home-hero").screenshot({
+        animations: "disabled",
+        path: info.outputPath(`empty-${width}-${theme}.png`),
+      });
       await input.fill("");
       await input.press("Escape");
       await input.blur();
@@ -138,7 +133,7 @@ test("premium hero at all requested widths and themes", async ({
     }
   }
   const destinations = await page
-    .locator(".preview-document, .hero-shortcuts a, .preview-query > a")
+    .locator(".discovery-card")
     .evaluateAll((links) => links.map((link) => link.getAttribute("href")!));
   for (const href of destinations)
     expect((await request.get(href)).status(), href).toBe(200);

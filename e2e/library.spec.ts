@@ -32,7 +32,9 @@ test("library separates scopes and reveals academic references on demand", async
   page,
 }, testInfo) => {
   await page.goto("/library/");
-  await page.getByRole("link", { name: /Understand the differences/ }).click();
+  await page
+    .getByRole("link", { name: "New to peptides? Start here →", exact: true })
+    .click();
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
     "Cosmetic, prescription or experimental?",
   );
@@ -69,5 +71,5 @@ test("library separates scopes and reveals academic references on demand", async
       .analyze();
     expect(result.violations).toEqual([]);
   }
-  await page.screenshot({ path: `docs/library-${testInfo.project.name}.png` });
+  await page.screenshot({ path: testInfo.outputPath("library.png") });
 });

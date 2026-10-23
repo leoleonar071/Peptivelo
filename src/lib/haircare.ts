@@ -21,6 +21,7 @@ export const haircare = z
       .array(
         z.object({
           slug: z.string(),
+          status: z.literal("draft").default("draft"),
           name: z.string(),
           summary: z.string(),
           identity: z.string(),

@@ -17,8 +17,8 @@ export default function HaircarePage() {
   const p = haircare.product;
   return (
     <div className="wrap library-page haircare-page">
-      <Link className="text-link" href="/library/">
-        ← Peptide library
+      <Link className="text-link" href="/topics/">
+        ← All topics
       </Link>
       <header className="identify-intro">
         <span className="eyebrow">HAIR & SCALP · COSMETIC PROFILES</span>
@@ -28,7 +28,11 @@ export default function HaircarePage() {
           unanswered.
         </p>
       </header>
-      <section className="hair-start" aria-labelledby="hair-start-title">
+      <section
+        id="product"
+        className="hair-start"
+        aria-labelledby="hair-start-title"
+      >
         <Link
           href={hairProductPath}
           aria-label={`Explore ${p.brand} ${p.name}`}
@@ -48,7 +52,7 @@ export default function HaircarePage() {
           </Link>
         </div>
       </section>
-      <section className="hair-ingredient-links">
+      <section id="ingredients" className="hair-ingredient-links">
         <h2>Start with the peptide names</h2>
         <p>
           Different names, different evidence. Neither a blend name nor a

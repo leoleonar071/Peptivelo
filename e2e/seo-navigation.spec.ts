@@ -7,8 +7,13 @@ test("client navigation preserves product detail, canonical and source links", a
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/");
   await page
-    .getByRole("link", { name: "Explore products", exact: true })
-    .first()
+    .locator(".discovery-section")
+    .getByRole("link")
+    .filter({ has: page.getByRole("heading", { name: "Skin & cosmetics" }) })
+    .click();
+  await page
+    .getByRole("navigation", { name: "Skin & cosmetics navigation" })
+    .getByRole("link", { name: "Products", exact: true })
     .click();
   await expect(page).toHaveURL(/\/skincare\/products\/$/);
   await page

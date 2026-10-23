@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { catalog, products, brandName, priceFor } from "@/lib/data";
+import { skinLinks } from "@/lib/site-navigation";
 import { site, ingredientPath } from "@/lib/config";
 import { ProductOffers } from "@/components/product-offers";
 import { parseRows } from "@/lib/calculator";
@@ -124,7 +125,12 @@ function resolve(path: string) {
             (i) => i.slug === parts[2] && i.status === "published",
           )
         : null;
-    if (i) return { title: i.name, description: i.description, index: !i.education.scientificReviewPending };
+    if (i)
+      return {
+        title: i.name,
+        description: i.description,
+        index: !i.education.scientificReviewPending,
+      };
     const c =
       parts[1] === "compare"
         ? catalog.comparisons.find((c) => c.slug === parts[2])
@@ -161,7 +167,11 @@ export default async function Page({ params, searchParams }: Props) {
   if (!r) notFound();
   const breadcrumbs = slug
     .map((part, i) => ({
-      label: part.replaceAll("-", " "),
+      label:
+        skinLinks
+          .find((l) => l.href === `/${slug.slice(0, i + 1).join("/")}/`)
+          ?.title.replace("Overview", "Skin & cosmetics") ??
+        (i === slug.length - 1 ? r.title : part.replaceAll("-", " ")),
       href: `/${slug.slice(0, i + 1).join("/")}/`,
     }))
     .filter((x) => !["/tools/"].includes(x.href));
@@ -219,7 +229,9 @@ export default async function Page({ params, searchParams }: Props) {
             Compare these products <ArrowRight size={16} />
           </Link>
           <p>
-            <Link className="standalone-text-link" href="/methodology/">See our methodology</Link>
+            <Link className="standalone-text-link" href="/methodology/">
+              See our methodology
+            </Link>
           </p>
         </section>
         <ComparisonGuides />
@@ -228,11 +240,14 @@ export default async function Page({ params, searchParams }: Props) {
     );
   else if (path === "skincare/compare")
     body = (
-      <Compare
-        key={`${get("a") ?? ""}:${get("b") ?? ""}`}
-        first={get("a")}
-        second={get("b")}
-      />
+      <>
+        <Compare
+          key={`${get("a") ?? ""}:${get("b") ?? ""}`}
+          first={get("a")}
+          second={get("b")}
+        />
+        <ComparisonGuides />
+      </>
     );
   else if (path === "tools/price-per-ml")
     body = <PriceCalculator initialRows={parseRows(get("items"))} />;
@@ -342,7 +357,11 @@ export default async function Page({ params, searchParams }: Props) {
             <AffiliateDisclosure />
           </div>
         </div>
-        <ProductOffers product={p} market={get("market")} sort={get("offerSort")} />
+        <ProductOffers
+          product={p}
+          market={get("market")}
+          sort={get("offerSort")}
+        />
         <div className="two-col section">
           <section className="panel">
             <h2>Selected label ingredients</h2>
@@ -374,10 +393,7 @@ export default async function Page({ params, searchParams }: Props) {
         <SourceList ids={[p.sourceId]} />
         <h2>Compare this product</h2>
         <div className="button-row">
-          <Link
-            className="button"
-            href={`/skincare/compare/?a=${p.id}`}
-          >
+          <Link className="button" href={`/skincare/compare/?a=${p.id}`}>
             Choose a comparison
           </Link>
         </div>
@@ -391,9 +407,19 @@ export default async function Page({ params, searchParams }: Props) {
     const selectedB = products.find(
       (p) => p.id === get("b") && p.id !== selectedA?.id,
     );
-    const editorialReturn = selectedA && selectedB ? catalog.comparisons.find((c) => c.comparedProductIds.includes(selectedA.id) && c.comparedProductIds.includes(selectedB.id) && get("returnTo") === `/skincare/compare/${c.slug}/#comparison-peptides`) : undefined;
-    const returnPath = editorialReturn ? `/skincare/compare/${editorialReturn.slug}/#comparison-peptides` :
+    const editorialReturn =
       selectedA && selectedB
+        ? catalog.comparisons.find(
+            (c) =>
+              c.comparedProductIds.includes(selectedA.id) &&
+              c.comparedProductIds.includes(selectedB.id) &&
+              get("returnTo") ===
+                `/skincare/compare/${c.slug}/#comparison-peptides`,
+          )
+        : undefined;
+    const returnPath = editorialReturn
+      ? `/skincare/compare/${editorialReturn.slug}/#comparison-peptides`
+      : selectedA && selectedB
         ? `/skincare/compare/?${new URLSearchParams({ a: selectedA.id, b: selectedB.id })}`
         : "/skincare/compare/";
     body = (
@@ -639,7 +665,11 @@ export default async function Page({ params, searchParams }: Props) {
       <div className="page-heading">
         <span className="eyebrow">
           {site.name.toUpperCase()} /{" "}
-          {slug[0] === "tools" ? "FREE TOOLS" : "THE SKINCARE EDITION"}
+          {slug[0] === "tools"
+            ? "FREE TOOLS"
+            : slug[0] === "skincare"
+              ? "SKIN & COSMETICS"
+              : "ABOUT PEPTIVELO"}
         </span>
         <h1>{r.title}</h1>
         <p>{r.description}</p>

@@ -1,62 +1,103 @@
 "use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
-
-const extraLinks = [
-  ["/search/", "Search Peptivelo"],
-  ["/library/", "Peptide library"],
-  ["/skincare/identify/", "Know your serum"],
-  ["/skincare/guides/", "Label guides"],
-  ["/skincare/ingredients/", "Ingredients"],
-  ["/tools/price-per-ml/", "Price calculator"],
-  ["/methodology/", "Methodology"],
-  ["/skincare/choose/", "Choose by your question"],
-  ["/haircare/", "Hair & scalp"],
-  ["/sources/", "Sources"],
-];
+import { globalLinks, topics, topicForPath } from "@/lib/site-navigation";
 
 export function Navigation() {
   const pathname = usePathname();
-  function item(href: string, label: string) {
-    const active = pathname.replace(/\/$/, "") === href.replace(/\/$/, "");
+  const root = useRef<HTMLElement>(null);
+  const topic = topicForPath(pathname);
+  useEffect(() => {
+    root.current?.querySelectorAll("details").forEach((d) => {
+      d.open = false;
+    });
+  }, [pathname]);
+  useEffect(() => {
+    function outside(event: PointerEvent) {
+      if (!root.current?.contains(event.target as Node))
+        root.current?.querySelectorAll("details").forEach((d) => {
+          d.open = false;
+        });
+    }
+    document.addEventListener("pointerdown", outside);
+    return () => document.removeEventListener("pointerdown", outside);
+  }, []);
+  function links() {
     return (
-      <Link key={href} href={href} aria-current={active ? "page" : undefined}>
-        {label}
-      </Link>
+      <>
+        <details className="topic-menu">
+          <summary data-active={!!topic || pathname === "/topics/"}>
+            Explore topics <ChevronDown size={16} aria-hidden="true" />
+          </summary>
+          <div className="topic-menu-panel">
+            {topics.map((t) => (
+              <Link
+                key={t.id}
+                href={t.href}
+                aria-current={topic?.id === t.id ? "location" : undefined}
+              >
+                {t.title}
+                <small>{t.description}</small>
+              </Link>
+            ))}
+            <Link
+              href="/topics/"
+              aria-current={pathname === "/topics/" ? "page" : undefined}
+            >
+              All topics →
+            </Link>
+          </div>
+        </details>
+        {globalLinks.map((l) => (
+          <Link
+            key={l.href}
+            href={l.href}
+            aria-current={
+              pathname.startsWith(l.href) ||
+              (l.href === "/learn/" &&
+                pathname === "/library/peptide-categories/")
+                ? "page"
+                : undefined
+            }
+          >
+            {l.title}
+          </Link>
+        ))}
+      </>
     );
   }
   return (
-    <nav aria-label="Main navigation">
-      {item("/skincare/products/", "Explore products")}
-      {item("/skincare/compare/", "Compare")}
-      <div className="nav-secondary">
-        {extraLinks.slice(0, 2).map(([href, label]) => item(href, label))}
-      </div>
-      <details
-        className="nav-more"
-        onKeyDown={(event) => {
-          if (event.key === "Escape") {
-            event.currentTarget.open = false;
-            event.currentTarget.querySelector("summary")?.focus();
-          }
-        }}
-      >
+    <nav
+      ref={root}
+      className="global-navigation"
+      aria-label="Main navigation"
+      onClick={(event) => {
+        if ((event.target as HTMLElement).closest("a")) {
+          root.current?.querySelectorAll("details").forEach((details) => {
+            details.open = false;
+          });
+        }
+      }}
+      onKeyDown={(event) => {
+        if (event.key !== "Escape") return;
+        const open = Array.from(
+          root.current?.querySelectorAll("details[open]") ?? [],
+        ).reverse()[0] as HTMLDetailsElement | undefined;
+        if (open) {
+          open.open = false;
+          open.querySelector("summary")?.focus();
+          event.stopPropagation();
+        }
+      }}
+    >
+      <div className="desktop-navigation">{links()}</div>
+      <details className="mobile-navigation">
         <summary>
-          More <ChevronDown size={16} />
+          Menu <ChevronDown size={16} aria-hidden="true" />
         </summary>
-        <div
-          className="nav-menu"
-          onClick={(event) => {
-            if ((event.target as HTMLElement).closest("a")) {
-              const details = event.currentTarget.closest("details");
-              if (details) details.open = false;
-            }
-          }}
-        >
-          {extraLinks.map(([href, label]) => item(href, label))}
-        </div>
+        <div className="mobile-navigation-panel">{links()}</div>
       </details>
     </nav>
   );

@@ -6,6 +6,32 @@ import { ingredientPath, productPath } from "./config";
 import type { SearchEntry } from "./search";
 // Extend with real routes and sources as collections grow.
 export const searchIndex: SearchEntry[] = [
+  ...[
+    {
+      name: "Explore topics",
+      href: "/topics/",
+      detail: "Browse skin, hair and selected health research.",
+      terms: "topics areas explore",
+    },
+    {
+      name: "Peptides A–Z",
+      href: "/peptides/",
+      detail: "Alphabetical ingredient profiles and research briefs.",
+      terms: "directory peptides ingredients alphabetical",
+    },
+    {
+      name: "Learn",
+      href: "/learn/",
+      detail: "Peptide basics and cosmetic label guides.",
+      terms: "learn beginner basics introduction labels",
+    },
+    {
+      name: "Health & research",
+      href: "/topics/health-research/",
+      detail: "Selected retatrutide and BPC-157 research briefs.",
+      terms: "health research studies",
+    },
+  ].map((entry): SearchEntry => ({ ...entry, category: "Guides & articles" })),
   ...catalog.ingredients
     .filter((i) => i.status === "published")
     .map((i): SearchEntry => ({
@@ -14,6 +40,7 @@ export const searchIndex: SearchEntry[] = [
       category: "Peptides & ingredients",
       terms: `${i.inciName} ${i.description} ${i.inciName === "Copper Tripeptide-1" ? "GHK-Cu copper peptides" : ""}`,
       href: ingredientPath(i.slug),
+      entity: { id: `skin:ingredient:${i.id}`, context: "skin" },
       identity: {
         id: i.id,
         name: i.inciName,
@@ -25,6 +52,7 @@ export const searchIndex: SearchEntry[] = [
     detail: `${i.summary} · Hair & scalp`,
     terms: i.identity,
     href: `/haircare/ingredients/${i.slug}/`,
+    entity: { id: `hair:ingredient:${i.slug}`, context: "hair" },
     category: "Peptides & ingredients",
     identity: { id: `haircare:${i.slug}`, name: i.name, aliases: [] },
   })),
@@ -33,6 +61,7 @@ export const searchIndex: SearchEntry[] = [
     detail: `${brandName(p)} · ${p.volume} ${p.volumeUnit === "ml" ? "mL" : "fl oz"} · US label profile`,
     terms: `${brandName(p)} ${p.ingredientList.join(" ")} ${p.description} serum ingredients label`,
     href: productPath(p.slug),
+    entity: { id: `skin:product:${p.id}`, context: "skin" },
     category: "Products",
     relations: p.ingredientIds.map((entityId) => ({
       entityId,
@@ -44,6 +73,7 @@ export const searchIndex: SearchEntry[] = [
     detail: `${haircare.product.brand} · Hair & scalp · Draft profile`,
     terms: "hair scalp serum density",
     href: `/haircare/products/${haircare.product.slug}/`,
+    entity: { id: "hair:product", context: "hair" },
     category: "Products",
     relations: haircare.ingredients.map((item) => ({
       entityId: `haircare:${item.slug}`,
@@ -72,6 +102,10 @@ export const searchIndex: SearchEntry[] = [
     detail: `${a.description} · Draft research context`,
     terms: `${a.slug} ${a.category} ${a.answer} ${a.sections.map((s) => s.title).join(" ")}`,
     href: `/library/${a.slug}/`,
+    entity:
+      a.category === "Research brief"
+        ? { id: `health:${a.slug}`, context: "health" }
+        : undefined,
     category: "Guides & articles",
   })),
   {

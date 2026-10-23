@@ -21,6 +21,7 @@ import {
   groupedSuggestions,
   searchEntries,
   searchCategories,
+  searchDestination,
   type SearchEntry,
 } from "@/lib/search";
 const icons = [FlaskConical, Package, BookOpen, Columns3, BookOpen];
@@ -167,7 +168,7 @@ export function HeroSearch({
               matches[active]
             ) {
               event.preventDefault();
-              navigate(matches[active].href);
+              navigate(searchDestination(matches[active], query));
             }
           }}
         />
@@ -226,13 +227,15 @@ export function HeroSearch({
                       role="option"
                       aria-selected={active === index}
                       onMouseDown={(event) => event.preventDefault()}
-                      onClick={() => navigate(entry.href)}
+                      onClick={() => navigate(searchDestination(entry, query))}
                       onPointerMove={() => setActive(index)}
                     >
                       <span>
                         <strong>{entry.name}</strong>
                         <small>{entry.detail}</small>
-                        {entry.matchReason && <small>{entry.matchReason}</small>}
+                        {entry.matchReason && (
+                          <small>{entry.matchReason}</small>
+                        )}
                       </span>
                       <ArrowRight size={16} aria-hidden="true" />
                     </div>

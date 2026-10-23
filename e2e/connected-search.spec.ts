@@ -5,25 +5,19 @@ test("a compact ingredient alias connects documented products, comparisons and s
   page,
 }) => {
   await page.goto("/search/?q=GHKCu");
-  const products = page
-    .locator(".search-result-group")
-    .filter({
-      has: page.getByRole("heading", { level: 2, name: /^Products/ }),
-    });
-  await expect(products.locator(".search-document")).toHaveCount(2);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Copper Tripeptide-1",
+  );
+  await page.getByRole("tab", { name: "Compare", exact: true }).click();
+  const products = page.locator(".explore-product-grid");
+  await expect(products.locator(".explore-product")).toHaveCount(2);
   await expect(products).toContainText(
     "Recorded label lists Copper Tripeptide-1",
   );
   await expect(products).not.toContainText("NIOD");
-  const comparisons = page
-    .locator(".search-result-group")
-    .filter({
-      has: page.getByRole("heading", { level: 2, name: /^Comparisons/ }),
-    });
-  await expect(comparisons.locator(".search-document")).toHaveCount(3);
-  await expect(comparisons).toContainText(
-    "not an ingredient-equivalence claim",
-  );
+  await page.getByLabel("Other formulas", { exact: false }).check();
+  await expect(products).toContainText("NIOD");
+  await expect(products).toContainText("not established as equivalent");
   expect(
     (
       await new AxeBuilder({ page })
@@ -31,12 +25,15 @@ test("a compact ingredient alias connects documented products, comparisons and s
         .analyze()
     ).violations,
   ).toEqual([]);
-  const source = page.locator(
-    'a.search-document[href="/sources/#source-cir-peptides"]',
-  );
+  await page.getByRole("tab", { name: "Overview", exact: true }).click();
+  await page.locator(".explore-sources > summary").first().click();
+  const source = page.locator(".explore-sources a").first();
+  const href = await source.getAttribute("href");
   await source.click();
-  await expect(page).toHaveURL(/\/sources\/#source-cir-peptides$/);
-  await expect(page.locator("#source-cir-peptides")).toBeVisible();
+  await expect(page).toHaveURL(
+    new RegExp(href!.replace("/sources/", "\\/sources\\/")),
+  );
+  await expect(page.locator(href!.split("/").at(-1)!)).toBeVisible();
 });
 
 test("spelling fallback is disclosed and retains the query in the URL", async ({
