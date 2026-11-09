@@ -1,0 +1,8 @@
+{
+  "title": "What is a peptide?",
+  "definition": "A peptide is a molecule made from amino-acid building blocks joined by peptide bonds. The name alone does not tell you what a particular product will do.",
+  "context": "On Peptivelo, a peptide profile describes a named identity or form. An ingredient is a component listed in a formulation. A finished product is the complete formulation sold in a particular presentation. Research about one component is a different question from testing that finished product.",
+  "reading": "Start with the identity and context, then ask what was actually studied. Open the source notes to distinguish terminology, manufacturer information, laboratory work and human research.",
+  "sourceIds": ["iupac-peptides", "fda-cosmetic-drug"],
+  "checkedAt": "2026-11-08"
+}

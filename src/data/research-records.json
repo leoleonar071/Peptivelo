@@ -1,0 +1,74 @@
+[
+  {
+    "documentId": "skin:acetyl-hexapeptide-8",
+    "question": "What does the selected ingredient research establish, and which conclusions cannot be transferred to finished products?",
+    "selectionScope": "Focused follow-up of existing citations on 2026-11-08. The historical selection process was not recorded; this log does not reconstruct or claim that earlier search. This is not a systematic review.",
+    "searches": [
+      {
+        "date": "2026-11-08",
+        "method": "Web search restricted to PubMed-indexed pages",
+        "query": "site.pubmed.ncbi.nlm.nih.gov \"Acetyl Hexapeptide-8\" randomized placebo wrinkles",
+        "limitation": "Search-engine discovery, not a complete PubMed database search."
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "argireline-trial",
+        "state": "abstract-read",
+        "reason": "Selected to illustrate a randomized human ingredient study with a defined population and follow-up; not a test of all retail products containing the ingredient."
+      },
+      {
+        "sourceId": "kraeling-penetration",
+        "state": "abstract-read",
+        "reason": "Existing laboratory reference retained to distinguish a skin model from a living-person efficacy trial; not newly reappraised in this follow-up."
+      },
+      {
+        "sourceId": "cir-acetyl",
+        "state": "sections-read",
+        "reason": "Selected safety assessment; conclusion and declared funding rechecked in the publisher HTML on 2026-11-08."
+      }
+    ],
+    "pending": [
+      "A complete database search and explicit screening of additional studies have not been completed.",
+      "Full methods, effect-size extraction and qualified scientific appraisal remain pending. No absence-of-evidence claim is made."
+    ],
+    "candidates": []
+  },
+  {
+    "documentId": "library:bpc-157",
+    "question": "What can the selected two-participant intravenous pilot establish about the observations it reports?",
+    "selectionScope": "Focused follow-up of an existing selected-study brief on 2026-11-08, not an inventory of all human research. The original search process was not recorded. Selection here is for explaining this pilot’s scope, not for recommending a preparation.",
+    "searches": [
+      {
+        "date": "2026-11-08",
+        "method": "Web search restricted to PubMed-indexed pages",
+        "query": "site.pubmed.ncbi.nlm.nih.gov \"BPC-157\" \"human\" pilot",
+        "limitation": "Discovery query only; not an exhaustive database search or study-quality screening."
+      }
+    ],
+    "sources": [
+      {
+        "sourceId": "bpc-human-pilot",
+        "state": "abstract-read",
+        "reason": "The primary record underlying this brief; the abstract was inspected again. Full text, original data and the ethics dossier were not appraised."
+      },
+      {
+        "sourceId": "fda-research-peptides",
+        "state": "sections-read",
+        "reason": "Dated US regulatory communication used for its specific scope, not as clinical trial evidence or an evaluation of a retail vial."
+      }
+    ],
+    "pending": [
+      "Other human reports and their full texts have not been systematically screened.",
+      "The editor link exposed embedded content that was not inspected. Full-text access and qualified appraisal remain pending."
+    ],
+    "candidates": [
+      {
+        "title": "Additional human-evidence review identified in discovery results",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42885452/",
+        "state": "identified-not-read",
+        "reason": "A lead for further screening; its conclusions have not been extracted or used as evidence in this brief."
+      }
+    ]
+  }
+]

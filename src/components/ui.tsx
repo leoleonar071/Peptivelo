@@ -1,4 +1,5 @@
 import { comparisonUrl } from "@/lib/config";
+import { sourceSummary } from "@/lib/source-summary";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, Check, FlaskConical, ArrowRight } from "lucide-react";
@@ -113,6 +114,22 @@ export function SourceList({
             <a href={s.url} target="_blank" rel="noopener noreferrer">
               {s.title} <ArrowUpRight size={14} />
             </a>
+            <small>
+              {sourceSummary(s.id)?.kind} · {sourceSummary(s.id)?.access}
+            </small>
+            {anchors && (
+              <details>
+                <summary>Evidence scope and disclosures</summary>
+                <dl>
+                  <dt>What it supports</dt>
+                  <dd>{sourceSummary(s.id)?.supports}</dd>
+                  <dt>Limits</dt>
+                  <dd>{sourceSummary(s.id)?.limits}</dd>
+                  <dt>Funding and commercial context</dt>
+                  <dd>{sourceSummary(s.id)?.commercialContext}</dd>
+                </dl>
+              </details>
+            )}
             <small>
               {s.publisher} ·{" "}
               {s.sourceType === "manufacturer"

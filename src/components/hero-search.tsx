@@ -90,10 +90,14 @@ export function HeroSearch({
         .getElementById(`${id}-${active}`)
         ?.scrollIntoView({ block: "nearest" });
   }, [active, id]);
-  function navigate(href: string) {
-    track("search_performed");
+  function navigate(entry: SearchEntry) {
+    track("search_submitted", { source: "suggestions" });
+    track("search_result_selected", {
+      source: "suggestions",
+      format: entry.category,
+    });
     setPending(true);
-    window.location.assign(href);
+    window.location.assign(searchDestination(entry, query));
   }
   return (
     <div
@@ -110,7 +114,7 @@ export function HeroSearch({
         role="search"
         aria-label="Search Peptivelo"
         onSubmit={() => {
-          track("search_performed");
+          track("search_submitted", { source: "search_form" });
           setPending(true);
         }}
       >
@@ -134,8 +138,11 @@ export function HeroSearch({
           aria-activedescendant={
             expanded && active >= 0 ? `${id}-${active}` : undefined
           }
-          value={query}
-          onFocus={() => setOpen(true)}
+          defaultValue={initialQuery}
+          onFocus={(event) => {
+            setQuery(event.currentTarget.value);
+            setOpen(true);
+          }}
           onChange={(event) => {
             setQuery(event.target.value);
             setActive(-1);
@@ -168,7 +175,7 @@ export function HeroSearch({
               matches[active]
             ) {
               event.preventDefault();
-              navigate(searchDestination(matches[active], query));
+              navigate(matches[active]);
             }
           }}
         />
@@ -227,7 +234,7 @@ export function HeroSearch({
                       role="option"
                       aria-selected={active === index}
                       onMouseDown={(event) => event.preventDefault()}
-                      onClick={() => navigate(searchDestination(entry, query))}
+                      onClick={() => navigate(entry)}
                       onPointerMove={() => setActive(index)}
                     >
                       <span>
@@ -254,6 +261,7 @@ export function HeroSearch({
         <Link
           className="search-all"
           href={`/search/?q=${encodeURIComponent(query)}`}
+          onClick={() => track("search_submitted", { source: "all_results" })}
         >
           View all results{results.length ? ` (${results.length})` : ""}
           <ArrowRight size={16} aria-hidden="true" />

@@ -7,8 +7,12 @@ export const pages: Record<
   methodology: {
     title: "Our methodology",
     intro:
-      "Clear comparisons begin with knowing exactly what is being compared.",
+      "Clear explanations begin with identifying the peptide, its context and what each source can establish.",
     sections: [
+      {
+        title: "Documentation states",
+        text: "The Transparency Profile describes our records, not efficacy, safety or clinical quality. Source registered means a reference is present. Data extracted means the recorded value has been transcribed or organized, with a human check still pending. Checked against the cited source requires a field-specific human check tied to this exact document version, with an actual date, scope and internal responsible ID. Not disclosed means the consulted sources do not disclose it; it does not mean the information does not exist. Not reviewed means we have not completed that check. Not applicable identifies a field that does not apply to this document. Source checks, editorial approval and qualified scientific review are separate. Approvals apply only to the exact document version and its supporting sources; changes require a new approval.",
+      },
       {
         title: "1. Record the source",
         text: "We document manufacturer label facts, their source URL, and the date consulted. A source check is not independent laboratory verification or clinical review.",
@@ -63,11 +67,11 @@ export const pages: Record<
   },
   about: {
     title: "A little more clarity.",
-    intro: `${site.name} organizes peptide skincare information so the details are easier to compare.`,
+    intro: `${site.name} is an independent platform for understanding peptides, exploring their contexts and following documented sources.`,
     sections: [
       {
-        title: "Starting with skincare",
-        text: "Our first collection focuses on cosmetic facial serums available through US brand websites. We bring together selected ingredient labels, disclosed information and dated price observations in one place.",
+        title: "One platform, different contexts",
+        text: "Explore skin and cosmetics, hair and scalp, and selected health research. Short explanations and optional source detail support both first-time readers and technically experienced readers. Our commercial comparison tool currently covers facial cosmetic serums with dated US information. A cosmetic label, a physiological peptide and an experimental preparation are kept in their own contexts.",
       },
       {
         title: "A considered beginning",

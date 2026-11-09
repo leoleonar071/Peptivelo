@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { guides, guidePath } from "@/lib/guides";
+import { isVisiblePath } from "@/lib/publication-registry";
 
 export function LearningGuides({ slugs }: { slugs?: string[] }) {
   const selected = guides.filter(
-    (guide) => !slugs || slugs.includes(guide.slug),
+    (guide) =>
+      isVisiblePath(guidePath(guide.slug)) &&
+      (!slugs || slugs.includes(guide.slug)),
   );
   return (
     <section className="section" aria-label="Understand peptide labels">

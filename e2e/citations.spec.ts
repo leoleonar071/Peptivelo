@@ -80,13 +80,15 @@ test("pilot references resolve and keyboard return links preserve reading positi
 test("references, study limits and hypothetical labels exist without JavaScript", async ({
   browser,
   request,
+  baseURL,
 }) => {
   const context = await browser.newContext({
     javaScriptEnabled: false,
+    baseURL,
     viewport: { width: 320, height: 740 },
   });
   const page = await context.newPage();
-  await page.goto("http://localhost:3100" + paths[1]);
+  await page.goto(paths[1]);
   await expect(page.locator("#worked-example .reference-kind")).toHaveText(
     "Hypothetical arithmetic",
   );

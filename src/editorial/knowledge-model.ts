@@ -16,7 +16,7 @@ export type KnowledgeEntityDraft = {
   context: DocumentedText;
   limitations: DocumentedText;
   evidence: readonly {
-    scope: "ingredient" | "formulation" | "finished-product";
+    scope: "peptide" | "ingredient" | "formulation" | "finished-product";
     kind:
       | "manufacturer-label"
       | "in-vitro"
@@ -38,6 +38,32 @@ export type KnowledgeEntityDraft = {
     sourceIds: readonly string[];
   }[];
 };
+
+// Activating a health topic is stricter than preparing it for editorial review.
+// This does not change publication records or comparison eligibility.
+export function assessTopicActivation(
+  topicId: TopicId,
+  input: Parameters<typeof assessTopicReadiness>[1],
+) {
+  const readiness = assessTopicReadiness(topicId, input);
+  const pending = input.profiles.some(
+    (profile) =>
+      profile.topicIds.includes(topicId) &&
+      profile.scientificReview !== "reviewed",
+  );
+  return {
+    ...readiness,
+    ready: readiness.ready && !pending,
+    issues: [
+      ...readiness.issues,
+      ...(pending
+        ? [
+            "Qualified scientific review is required before activating a new health topic.",
+          ]
+        : []),
+    ],
+  };
+}
 export type TopicIntroductionDraft = {
   topicId: TopicId;
   editorialReview: "pending" | "checked";

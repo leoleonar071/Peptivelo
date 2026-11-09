@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-08",
+  "scope": "Read-only sample of the previously deployed site; not a full audit or evidence that local changes are deployed.",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "robots": ["<meta name=\"robots\" content=\"noindex, follow\"/>"],
+      "title": "Peptivelo — Understand peptides. Compare with confidence.",
+      "canonical": "<link rel=\"canonical\" href=\"https://peptivelo.com/\"/>"
+    },
+    {
+      "path": "/search/?q=GHK-Cu",
+      "status": 200,
+      "robots": ["<meta name=\"robots\" content=\"noindex, follow\"/>"],
+      "title": "Search Peptivelo | Peptivelo"
+    },
+    {
+      "path": "/peptides/",
+      "status": 404,
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex\"/>",
+        "<meta name=\"robots\" content=\"noindex, follow\"/>"
+      ],
+      "title": "Peptivelo — Understand peptides. Compare with confidence."
+    },
+    {
+      "path": "/library/retatrutide/",
+      "status": 200,
+      "robots": ["<meta name=\"robots\" content=\"noindex, follow\">"],
+      "title": "Retatrutide: human research and US status | Peptivelo",
+      "canonical": "<link rel=\"canonical\" href=\"https://peptivelo.com/library/retatrutide/\">"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "robots": null,
+      "excerpt": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://peptivelo.com/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "robots": null,
+      "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n</urlset>\n"
+    }
+  ]
+}

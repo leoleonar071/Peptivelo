@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-08",
+  "origin": "http://127.0.0.1:3101",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/peptides/?topic=hair&format=Ingredient+profile",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/search/?q=copper&topic=skin&format=Product+profile",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/skincare/products/niod-cais3/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/compare/?a=ordinary-copper&b=niod-cais3",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/library/bpc-157/",
+      "status": 200,
+      "noindex": true
+    },
+    {
+      "path": "/topics/metabolism-appetite/",
+      "status": 404,
+      "noindex": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "noindex": true,
+      "sitemapEntries": 0
+    }
+  ]
+}

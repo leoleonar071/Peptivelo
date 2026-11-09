@@ -1,3 +1,7 @@
+import { canIndexPath, isVisiblePath } from "@/lib/publication-registry";
+import { TransparencyProfile } from "@/components/transparency-profile";
+import { KnowledgeNextSteps } from "@/components/knowledge-next-steps";
+import { DiscoveryReturn } from "@/components/discovery-return";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -8,28 +12,49 @@ import {
 } from "@/lib/haircare";
 import { Citations, References } from "@/components/citations";
 import { LibraryDisclosures } from "@/components/library-disclosures";
-type Props = { params: Promise<{ slug: string }> };
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
+  if (!isVisiblePath(hairIngredientPath(slug)))
+    return { title: "Not found", robots: { index: false, follow: false } };
   const i = haircare.ingredients.find((i) => i.slug === slug);
   return {
     title: i ? `${i.name}: haircare evidence explained` : "Not found",
     description: i?.summary,
-    robots: { index: false, follow: true },
+    robots: { index: canIndexPath(hairIngredientPath(slug)), follow: true },
     alternates: { canonical: hairIngredientPath(slug) },
   };
 }
 // Intent: explain a scalp-label name without implying a medical recommendation.
 // Reuse the library’s DM Sans, warm paper answer, quiet disclosure borders and
 // 4px spacing; technical scope remains adjacent to the finding.
-export default async function HairIngredientPage({ params }: Props) {
+export default async function HairIngredientPage({
+  params,
+  searchParams,
+}: Props) {
   const { slug } = await params;
   const ingredient = haircare.ingredients.find((entry) => entry.slug === slug);
   if (!ingredient) notFound();
+  const href = hairIngredientPath(slug);
+  if (!isVisiblePath(href)) notFound();
+  const query = await searchParams;
   const citations = hairIngredientCitations(ingredient);
   return (
     <article className="wrap library-page haircare-page">
       <LibraryDisclosures>
+        <DiscoveryReturn
+          fromProduct={
+            typeof query.fromProduct === "string"
+              ? query.fromProduct
+              : undefined
+          }
+          value={
+            typeof query.returnTo === "string" ? query.returnTo : undefined
+          }
+        />
         <Link className="text-link" href="/haircare/">
           ← Hair & scalp
         </Link>
@@ -79,6 +104,18 @@ export default async function HairIngredientPage({ params }: Props) {
         <Link className="button" href={hairProductPath}>
           Back to the scalp-serum profile →
         </Link>
+        <TransparencyProfile href={href} />
+        <KnowledgeNextSteps
+          href={href}
+          returnTo={
+            typeof query.returnTo === "string" ? query.returnTo : undefined
+          }
+          fromProduct={
+            typeof query.fromProduct === "string"
+              ? query.fromProduct
+              : undefined
+          }
+        />
       </LibraryDisclosures>
     </article>
   );

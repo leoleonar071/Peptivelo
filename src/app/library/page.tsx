@@ -1,10 +1,11 @@
+import { canIndexPath } from "@/lib/publication-registry";
 import Link from "next/link";
 import { globalLinks } from "@/lib/site-navigation";
 export const metadata = {
   title: "Peptide library",
   description: "Find your way to peptide topics, profiles and learning guides.",
   alternates: { canonical: "/library/" },
-  robots: { index: false, follow: true },
+  robots: { index: canIndexPath("/library/"), follow: true },
 };
 export default function LibraryPage() {
   return (

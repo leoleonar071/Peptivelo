@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-08",
+  "environment": "local built Worker in workerd; no production deployment",
+  "lint": "passed",
+  "typecheck": "passed",
+  "nextBuild": "passed",
+  "workerBuild": "passed",
+  "unit": { "files": 29, "passed": 135, "failed": 0 },
+  "browser": {
+    "files": 11,
+    "passed": 141,
+    "skipped": 6,
+    "failed": 0,
+    "projects": ["desktop", "tablet", "mobile"],
+    "configuration": "playwright.vinext.config.ts"
+  },
+  "humanFieldChecksRecorded": 0,
+  "humanPublicationApprovalsRecorded": 0,
+  "readerSessionsRun": 0,
+  "productionDeployed": false
+}

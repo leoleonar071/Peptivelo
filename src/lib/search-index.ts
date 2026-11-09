@@ -6,8 +6,10 @@ import { libraryArticles } from "./library";
 import { haircare } from "./haircare";
 import { ingredientPath, productPath } from "./config";
 import { ingredientAliases, type SearchEntry } from "./search";
+import { contentNavigation } from "./content-navigation";
+import { isVisiblePath, policyForPath } from "./publication-registry";
 // Extend with real routes and sources as collections grow.
-export const searchIndex: SearchEntry[] = [
+const candidateEntries: SearchEntry[] = [
   {
     name: "Compare",
     href: comparisonPath(),
@@ -166,3 +168,15 @@ export const searchIndex: SearchEntry[] = [
       })),
   })),
 ];
+export const searchIndex: SearchEntry[] = candidateEntries
+  .filter((entry) => isVisiblePath(entry.href))
+  .map((entry) => {
+    const document = contentNavigation.find((item) => item.href === entry.href);
+    const policy = policyForPath(entry.href);
+    return {
+      ...entry,
+      topic: document?.topic ?? entry.entity?.context ?? null,
+      format: document?.format ?? entry.category,
+      editorialStatus: document?.status ?? policy?.label ?? "Review pending",
+    };
+  });

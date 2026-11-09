@@ -1,0 +1,1932 @@
+{
+  "date": "2026-11-08",
+  "scope": "AI-assisted critical reading, not participant testing or qualified clinical approval.",
+  "evidence": [
+    {
+      "name": "home",
+      "path": "/",
+      "width": 1280,
+      "status": 200,
+      "title": "Peptivelo — Understand peptides. Explore the evidence and its limits.",
+      "h1": ["Understand peptides. Explore the evidence and its limits."],
+      "overflow": false,
+      "initialText": "INDEPENDENT PEPTIDE KNOWLEDGE\n\nUnderstand peptides.\nExplore the evidence and its limits.\n\nClear explanations for your first question. Documented sources for a closer look. Explore skin, hair and selected health research.\n\nSearch existing documents. Use arrow keys to choose a suggestion, Enter to open it, or Escape to close. From desktop, press Control K or Command K to focus search outside forms.\nTry searching:\nGHK-Cu →\nBPC-157 →\nPeptide concentrations →\n\nLinked sources · Visible limitations · Our methodology\n\nFIND YOUR STARTING POINT\nExplore by topic\n\nChoose an area to see its products, explanations and research.\n\nEXPLORE TOPIC\nSkin & cosmetics\n\nExplore serum labels, cosmetic ingredients and product comparisons.\n\nExplore this topic →\nEXPLORE TOPIC\nHair & scalp\n\nUnderstand scalp-serum labels and their peptide evidence.\n\nExplore this topic →\nEXPLORE TOPIC\nHealth & research\n\nRead selected research briefs and understand their limits.\n\nExplore this topic →\nAll topics →\nSTART WITH THE BASICS\nNew to peptides?\n\nA cosmetic label, a medicine and an experimental compound need different kinds of evidence. Understand the differences before going deeper.\n\nStart here →\nExplore all learning guides →\nCLEAR SOURCES. VISIBLE LIMITS.\nHow we work\n\nWe distinguish label facts, ingredient research and product evidence. Missing information and pending reviews stay visible.\n\nOur methodology\nExplore our sources →",
+      "expandedText": "INDEPENDENT PEPTIDE KNOWLEDGE\n\nUnderstand peptides.\nExplore the evidence and its limits.\n\nClear explanations for your first question. Documented sources for a closer look. Explore skin, hair and selected health research.\n\nSearch existing documents. Use arrow keys to choose a suggestion, Enter to open it, or Escape to close. From desktop, press Control K or Command K to focus search outside forms.\nTry searching:\nGHK-Cu →\nBPC-157 →\nPeptide concentrations →\n\nLinked sources · Visible limitations · Our methodology\n\nFIND YOUR STARTING POINT\nExplore by topic\n\nChoose an area to see its products, explanations and research.\n\nEXPLORE TOPIC\nSkin & cosmetics\n\nExplore serum labels, cosmetic ingredients and product comparisons.\n\nExplore this topic →\nEXPLORE TOPIC\nHair & scalp\n\nUnderstand scalp-serum labels and their peptide evidence.\n\nExplore this topic →\nEXPLORE TOPIC\nHealth & research\n\nRead selected research briefs and understand their limits.\n\nExplore this topic →\nAll topics →\nSTART WITH THE BASICS\nNew to peptides?\n\nA cosmetic label, a medicine and an experimental compound need different kinds of evidence. Understand the differences before going deeper.\n\nStart here →\nExplore all learning guides →\nCLEAR SOURCES. VISIBLE LIMITS.\nHow we work\n\nWe distinguish label facts, ingredient research and product evidence. Missing information and pending reviews stay visible.\n\nOur methodology\nExplore our sources →",
+      "firstViewport": [
+        {
+          "text": "Search peptides, products, ingredients, or questions",
+          "y": 488
+        },
+        {
+          "text": "Search Peptivelo",
+          "y": 484
+        },
+        {
+          "text": "Explore the peptide library",
+          "y": 0
+        },
+        {
+          "text": "View all results",
+          "y": 0
+        },
+        {
+          "text": "GHK-Cu →",
+          "y": 566
+        },
+        {
+          "text": "BPC-157 →",
+          "y": 566
+        },
+        {
+          "text": "Peptide concentrations →",
+          "y": 566
+        },
+        {
+          "text": "Our methodology",
+          "y": 625
+        },
+        {
+          "text": "Explore topicSkin & cosmeticsExplore serum labels, cosmetic ingredients and product comparisons.Explore this t",
+          "y": 885
+        },
+        {
+          "text": "Explore topicHair & scalpUnderstand scalp-serum labels and their peptide evidence.Explore this topic →",
+          "y": 885
+        },
+        {
+          "text": "Explore topicHealth & researchRead selected research briefs and understand their limits.Explore this topic →",
+          "y": 885
+        }
+      ],
+      "links": [
+        {
+          "text": "Explore the peptide library",
+          "href": "/library/"
+        },
+        {
+          "text": "View all results",
+          "href": "/search/?q="
+        },
+        {
+          "text": "GHK-Cu →",
+          "href": "/search/?q=GHK-Cu"
+        },
+        {
+          "text": "BPC-157 →",
+          "href": "/search/?q=BPC-157"
+        },
+        {
+          "text": "Peptide concentrations →",
+          "href": "/search/?q=Peptide%20concentrations"
+        },
+        {
+          "text": "Our methodology",
+          "href": "/methodology/"
+        },
+        {
+          "text": "Explore topicSkin & cosmeticsExplore serum labels, cosmetic ingredients and product comparisons.Explore this topic →",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Explore topicHair & scalpUnderstand scalp-serum labels and their peptide evidence.Explore this topic →",
+          "href": "/haircare/"
+        },
+        {
+          "text": "Explore topicHealth & researchRead selected research briefs and understand their limits.Explore this topic →",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "All topics →",
+          "href": "/topics/"
+        },
+        {
+          "text": "Start here →",
+          "href": "/library/peptide-categories/"
+        },
+        {
+          "text": "Explore all learning guides →",
+          "href": "/learn/"
+        },
+        {
+          "text": "Our methodology",
+          "href": "/methodology/"
+        },
+        {
+          "text": "Explore our sources →",
+          "href": "/sources/"
+        }
+      ],
+      "related": []
+    },
+    {
+      "name": "home",
+      "path": "/",
+      "width": 390,
+      "status": 200,
+      "title": "Peptivelo — Understand peptides. Explore the evidence and its limits.",
+      "h1": ["Understand peptides. Explore the evidence and its limits."],
+      "overflow": false,
+      "initialText": "INDEPENDENT PEPTIDE KNOWLEDGE\n\nUnderstand peptides.\nExplore the evidence and its limits.\n\nClear explanations for your first question. Documented sources for a closer look. Explore skin, hair and selected health research.\n\nSearch existing documents. Use arrow keys to choose a suggestion, Enter to open it, or Escape to close. From desktop, press Control K or Command K to focus search outside forms.\nTry searching:\nGHK-Cu →\nBPC-157 →\nPeptide concentrations →\n\nLinked sources · Visible limitations · Our methodology\n\nFIND YOUR STARTING POINT\nExplore by topic\n\nChoose an area to see its products, explanations and research.\n\nEXPLORE TOPIC\nSkin & cosmetics\n\nExplore serum labels, cosmetic ingredients and product comparisons.\n\nExplore this topic →\nEXPLORE TOPIC\nHair & scalp\n\nUnderstand scalp-serum labels and their peptide evidence.\n\nExplore this topic →\nEXPLORE TOPIC\nHealth & research\n\nRead selected research briefs and understand their limits.\n\nExplore this topic →\nAll topics →\nSTART WITH THE BASICS\nNew to peptides?\n\nA cosmetic label, a medicine and an experimental compound need different kinds of evidence. Understand the differences before going deeper.\n\nStart here →\nExplore all learning guides →\nCLEAR SOURCES. VISIBLE LIMITS.\nHow we work\n\nWe distinguish label facts, ingredient research and product evidence. Missing information and pending reviews stay visible.\n\nOur methodology\nExplore our sources →",
+      "expandedText": "INDEPENDENT PEPTIDE KNOWLEDGE\n\nUnderstand peptides.\nExplore the evidence and its limits.\n\nClear explanations for your first question. Documented sources for a closer look. Explore skin, hair and selected health research.\n\nSearch existing documents. Use arrow keys to choose a suggestion, Enter to open it, or Escape to close. From desktop, press Control K or Command K to focus search outside forms.\nTry searching:\nGHK-Cu →\nBPC-157 →\nPeptide concentrations →\n\nLinked sources · Visible limitations · Our methodology\n\nFIND YOUR STARTING POINT\nExplore by topic\n\nChoose an area to see its products, explanations and research.\n\nEXPLORE TOPIC\nSkin & cosmetics\n\nExplore serum labels, cosmetic ingredients and product comparisons.\n\nExplore this topic →\nEXPLORE TOPIC\nHair & scalp\n\nUnderstand scalp-serum labels and their peptide evidence.\n\nExplore this topic →\nEXPLORE TOPIC\nHealth & research\n\nRead selected research briefs and understand their limits.\n\nExplore this topic →\nAll topics →\nSTART WITH THE BASICS\nNew to peptides?\n\nA cosmetic label, a medicine and an experimental compound need different kinds of evidence. Understand the differences before going deeper.\n\nStart here →\nExplore all learning guides →\nCLEAR SOURCES. VISIBLE LIMITS.\nHow we work\n\nWe distinguish label facts, ingredient research and product evidence. Missing information and pending reviews stay visible.\n\nOur methodology\nExplore our sources →",
+      "firstViewport": [
+        {
+          "text": "Search peptides, products, ingredients, or questions",
+          "y": 495
+        },
+        {
+          "text": "Search Peptivelo",
+          "y": 493
+        },
+        {
+          "text": "Explore the peptide library",
+          "y": 0
+        },
+        {
+          "text": "View all results",
+          "y": 0
+        },
+        {
+          "text": "GHK-Cu →",
+          "y": 602
+        },
+        {
+          "text": "BPC-157 →",
+          "y": 602
+        },
+        {
+          "text": "Peptide concentrations →",
+          "y": 602
+        },
+        {
+          "text": "Our methodology",
+          "y": 661
+        }
+      ],
+      "links": [
+        {
+          "text": "Explore the peptide library",
+          "href": "/library/"
+        },
+        {
+          "text": "View all results",
+          "href": "/search/?q="
+        },
+        {
+          "text": "GHK-Cu →",
+          "href": "/search/?q=GHK-Cu"
+        },
+        {
+          "text": "BPC-157 →",
+          "href": "/search/?q=BPC-157"
+        },
+        {
+          "text": "Peptide concentrations →",
+          "href": "/search/?q=Peptide%20concentrations"
+        },
+        {
+          "text": "Our methodology",
+          "href": "/methodology/"
+        },
+        {
+          "text": "Explore topicSkin & cosmeticsExplore serum labels, cosmetic ingredients and product comparisons.Explore this topic →",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Explore topicHair & scalpUnderstand scalp-serum labels and their peptide evidence.Explore this topic →",
+          "href": "/haircare/"
+        },
+        {
+          "text": "Explore topicHealth & researchRead selected research briefs and understand their limits.Explore this topic →",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "All topics →",
+          "href": "/topics/"
+        },
+        {
+          "text": "Start here →",
+          "href": "/library/peptide-categories/"
+        },
+        {
+          "text": "Explore all learning guides →",
+          "href": "/learn/"
+        },
+        {
+          "text": "Our methodology",
+          "href": "/methodology/"
+        },
+        {
+          "text": "Explore our sources →",
+          "href": "/sources/"
+        }
+      ],
+      "related": []
+    },
+    {
+      "name": "directory",
+      "path": "/peptides/",
+      "width": 1280,
+      "status": 200,
+      "title": "Peptides A–Z | Peptivelo",
+      "h1": ["Find a peptide or ingredient."],
+      "overflow": false,
+      "initialText": "PEPTIDES A–Z\nFind a peptide or ingredient.\n\nBrowse ingredient profiles and research briefs alphabetically. Each entry shows its topic, format and review status. Profiles in different contexts remain separate.\n\nFilter by topic\nAll topics\nSkin & cosmetics\nHair & scalp\nHealth & research\nReading format\nAll formats\nIngredient profile\nResearch brief\nApply filters\n\n25 entries\n\nShare this view\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Hexapeptide-8\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Tetrapeptide-2\n\nA skin-conditioning peptide marketed by its supplier for firmer-looking skin.\n\nEditorial approval pending\nRead more →\nHAIR & SCALP · INGREDIENT PROFILE\nAcetyl Tetrapeptide-3\n\nA peptide listed with red clover extract in the brand’s Capixyl blend.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Tetrapeptide-5\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nHAIR & SCALP · INGREDIENT PROFILE\nBiotinoyl Tripeptide-1\n\nA peptide listed in the brand’s Procapil blend.\n\nEditorial draft · Review pending\nRead more →\nHEALTH & RESEARCH · RESEARCH BRIEF\nBPC-157: what a small human pilot can tell us\n\nRead a two-person pilot in context, alongside FDA safety uncertainties.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCarnosine\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCopper Palmitoyl Heptapeptide-14\n\nA copper-containing peptide with a different name from Copper Tripeptide-1.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCopper Tripeptide-1\n\nA copper-linked peptide used to help keep skin in good condition.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nDipeptide Diaminobutyroyl Benzylamide Diacetate\n\nA named peptide in some cosmetic blends; formula evidence is separate from ingredient evidence.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nHeptapeptide-15 Palmitate\n\nA separately named peptide used alongside a copper-containing ingredient in Power Peptides.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nOligopeptide-68\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Pentapeptide-4\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl sh-Hexapeptide-13 Serine SP Amide\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tetrapeptide-7\n\nA skin-conditioning peptide used in blends marketed for the appearance of wrinkles.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-1\n\nA skin-conditioning peptide used in blends marketed for the appearance of wrinkles.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-38\n\nA peptide associated with the commercial blend name Matrixyl synthe’6.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-8\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPentapeptide-18\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nHEALTH & RESEARCH · RESEARCH BRIEF\nRetatrutide: human research and US status\n\nA selected clinical study, its limitations and a dated FDA status check.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nsh-Polypeptide-121\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTetrapeptide-21\n\nA peptide identified by the brand as part of TEGO PEP 4-17.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-1 Acetate\n\nAnother peptide form on NIOD’s label. Its name does not state how much is present.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-1 Copper Acetate\n\nA copper-containing peptide name on NIOD’s label; its wording differs from Copper Tripeptide-1. Chemical equivalence has not been established in this review.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-29\n\nA three-part peptide. The number 29 is an identifier, not its strength.\n\nEditorial approval pending\nRead more →",
+      "expandedText": "PEPTIDES A–Z\nFind a peptide or ingredient.\n\nBrowse ingredient profiles and research briefs alphabetically. Each entry shows its topic, format and review status. Profiles in different contexts remain separate.\n\nFilter by topic\nAll topics\nSkin & cosmetics\nHair & scalp\nHealth & research\nReading format\nAll formats\nIngredient profile\nResearch brief\nApply filters\n\n25 entries\n\nShare this view\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Hexapeptide-8\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Tetrapeptide-2\n\nA skin-conditioning peptide marketed by its supplier for firmer-looking skin.\n\nEditorial approval pending\nRead more →\nHAIR & SCALP · INGREDIENT PROFILE\nAcetyl Tetrapeptide-3\n\nA peptide listed with red clover extract in the brand’s Capixyl blend.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Tetrapeptide-5\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nHAIR & SCALP · INGREDIENT PROFILE\nBiotinoyl Tripeptide-1\n\nA peptide listed in the brand’s Procapil blend.\n\nEditorial draft · Review pending\nRead more →\nHEALTH & RESEARCH · RESEARCH BRIEF\nBPC-157: what a small human pilot can tell us\n\nRead a two-person pilot in context, alongside FDA safety uncertainties.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCarnosine\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCopper Palmitoyl Heptapeptide-14\n\nA copper-containing peptide with a different name from Copper Tripeptide-1.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCopper Tripeptide-1\n\nA copper-linked peptide used to help keep skin in good condition.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nDipeptide Diaminobutyroyl Benzylamide Diacetate\n\nA named peptide in some cosmetic blends; formula evidence is separate from ingredient evidence.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nHeptapeptide-15 Palmitate\n\nA separately named peptide used alongside a copper-containing ingredient in Power Peptides.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nOligopeptide-68\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Pentapeptide-4\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl sh-Hexapeptide-13 Serine SP Amide\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tetrapeptide-7\n\nA skin-conditioning peptide used in blends marketed for the appearance of wrinkles.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-1\n\nA skin-conditioning peptide used in blends marketed for the appearance of wrinkles.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-38\n\nA peptide associated with the commercial blend name Matrixyl synthe’6.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-8\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPentapeptide-18\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nHEALTH & RESEARCH · RESEARCH BRIEF\nRetatrutide: human research and US status\n\nA selected clinical study, its limitations and a dated FDA status check.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nsh-Polypeptide-121\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTetrapeptide-21\n\nA peptide identified by the brand as part of TEGO PEP 4-17.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-1 Acetate\n\nAnother peptide form on NIOD’s label. Its name does not state how much is present.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-1 Copper Acetate\n\nA copper-containing peptide name on NIOD’s label; its wording differs from Copper Tripeptide-1. Chemical equivalence has not been established in this review.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-29\n\nA three-part peptide. The number 29 is an identifier, not its strength.\n\nEditorial approval pending\nRead more →",
+      "firstViewport": [
+        {
+          "text": "Apply filters",
+          "y": 363
+        },
+        {
+          "text": "Share this view",
+          "y": 442
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Hexapeptide-8A peptide studied for the appearance of expression li",
+          "y": 512
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Tetrapeptide-2A skin-conditioning peptide marketed by its supplier",
+          "y": 512
+        },
+        {
+          "text": "Hair & scalp · Ingredient profileAcetyl Tetrapeptide-3A peptide listed with red clover extract in the brand’s ",
+          "y": 824
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Tetrapeptide-5A peptide name recorded on a manufacturer’s cosmetic",
+          "y": 824
+        }
+      ],
+      "links": [
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Hexapeptide-8A peptide studied for the appearance of expression lines around the eyes.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Tetrapeptide-2A skin-conditioning peptide marketed by its supplier for firmer-looking skin.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/acetyl-tetrapeptide-2/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Hair & scalp · Ingredient profileAcetyl Tetrapeptide-3A peptide listed with red clover extract in the brand’s Capixyl blend.Editorial draft · Review pendingRead more →",
+          "href": "/haircare/ingredients/acetyl-tetrapeptide-3/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Tetrapeptide-5A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/acetyl-tetrapeptide-5/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Hair & scalp · Ingredient profileBiotinoyl Tripeptide-1A peptide listed in the brand’s Procapil blend.Editorial draft · Review pendingRead more →",
+          "href": "/haircare/ingredients/biotinoyl-tripeptide-1/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Health & research · Research briefBPC-157: what a small human pilot can tell usRead a two-person pilot in context, alongside FDA safety uncertainties.Editorial draft · Review pendingRead more →",
+          "href": "/library/bpc-157/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileCarnosineA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/carnosine/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileCopper Palmitoyl Heptapeptide-14A copper-containing peptide with a different name from Copper Tripeptide-1.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileCopper Tripeptide-1A copper-linked peptide used to help keep skin in good condition.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/copper-tripeptide-1/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileDipeptide Diaminobutyroyl Benzylamide DiacetateA named peptide in some cosmetic blends; formula evidence is separate from ingredient evidence.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileHeptapeptide-15 PalmitateA separately named peptide used alongside a copper-containing ingredient in Power Peptides.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/heptapeptide-15-palmitate/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileOligopeptide-68Listed in the COSRX formula. Research review pending.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/oligopeptide-68/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Pentapeptide-4A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-pentapeptide-4/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl sh-Hexapeptide-13 Serine SP AmideA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Tetrapeptide-7A skin-conditioning peptide used in blends marketed for the appearance of wrinkles.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-tetrapeptide-7/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Tripeptide-1A skin-conditioning peptide used in blends marketed for the appearance of wrinkles.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-tripeptide-1/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Tripeptide-38A peptide associated with the commercial blend name Matrixyl synthe’6.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-tripeptide-38/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Tripeptide-8Listed in the COSRX formula. Research review pending.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-tripeptide-8/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePentapeptide-18A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/pentapeptide-18/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Health & research · Research briefRetatrutide: human research and US statusA selected clinical study, its limitations and a dated FDA status check.Editorial draft · Review pendingRead more →",
+          "href": "/library/retatrutide/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilesh-Polypeptide-121Listed in the COSRX formula. Research review pending.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/sh-polypeptide-121/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileTetrapeptide-21A peptide identified by the brand as part of TEGO PEP 4-17.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/tetrapeptide-21/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileTripeptide-1 AcetateAnother peptide form on NIOD’s label. Its name does not state how much is present.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/tripeptide-1-acetate/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileTripeptide-1 Copper AcetateA copper-containing peptide name on NIOD’s label; its wording differs from Copper Tripeptide-1. Chemical equivalence has not been established in this review.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/tripeptide-1-copper-acetate/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileTripeptide-29A three-part peptide. The number 29 is an identifier, not its strength.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/tripeptide-29/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        }
+      ],
+      "related": []
+    },
+    {
+      "name": "directory",
+      "path": "/peptides/",
+      "width": 390,
+      "status": 200,
+      "title": "Peptides A–Z | Peptivelo",
+      "h1": ["Find a peptide or ingredient."],
+      "overflow": false,
+      "initialText": "PEPTIDES A–Z\nFind a peptide or ingredient.\n\nBrowse ingredient profiles and research briefs alphabetically. Each entry shows its topic, format and review status. Profiles in different contexts remain separate.\n\nFilter by topic\nAll topics\nSkin & cosmetics\nHair & scalp\nHealth & research\nReading format\nAll formats\nIngredient profile\nResearch brief\nApply filters\n\n25 entries\n\nShare this view\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Hexapeptide-8\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Tetrapeptide-2\n\nA skin-conditioning peptide marketed by its supplier for firmer-looking skin.\n\nEditorial approval pending\nRead more →\nHAIR & SCALP · INGREDIENT PROFILE\nAcetyl Tetrapeptide-3\n\nA peptide listed with red clover extract in the brand’s Capixyl blend.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Tetrapeptide-5\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nHAIR & SCALP · INGREDIENT PROFILE\nBiotinoyl Tripeptide-1\n\nA peptide listed in the brand’s Procapil blend.\n\nEditorial draft · Review pending\nRead more →\nHEALTH & RESEARCH · RESEARCH BRIEF\nBPC-157: what a small human pilot can tell us\n\nRead a two-person pilot in context, alongside FDA safety uncertainties.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCarnosine\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCopper Palmitoyl Heptapeptide-14\n\nA copper-containing peptide with a different name from Copper Tripeptide-1.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCopper Tripeptide-1\n\nA copper-linked peptide used to help keep skin in good condition.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nDipeptide Diaminobutyroyl Benzylamide Diacetate\n\nA named peptide in some cosmetic blends; formula evidence is separate from ingredient evidence.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nHeptapeptide-15 Palmitate\n\nA separately named peptide used alongside a copper-containing ingredient in Power Peptides.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nOligopeptide-68\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Pentapeptide-4\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl sh-Hexapeptide-13 Serine SP Amide\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tetrapeptide-7\n\nA skin-conditioning peptide used in blends marketed for the appearance of wrinkles.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-1\n\nA skin-conditioning peptide used in blends marketed for the appearance of wrinkles.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-38\n\nA peptide associated with the commercial blend name Matrixyl synthe’6.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-8\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPentapeptide-18\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nHEALTH & RESEARCH · RESEARCH BRIEF\nRetatrutide: human research and US status\n\nA selected clinical study, its limitations and a dated FDA status check.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nsh-Polypeptide-121\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTetrapeptide-21\n\nA peptide identified by the brand as part of TEGO PEP 4-17.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-1 Acetate\n\nAnother peptide form on NIOD’s label. Its name does not state how much is present.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-1 Copper Acetate\n\nA copper-containing peptide name on NIOD’s label; its wording differs from Copper Tripeptide-1. Chemical equivalence has not been established in this review.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-29\n\nA three-part peptide. The number 29 is an identifier, not its strength.\n\nEditorial approval pending\nRead more →",
+      "expandedText": "PEPTIDES A–Z\nFind a peptide or ingredient.\n\nBrowse ingredient profiles and research briefs alphabetically. Each entry shows its topic, format and review status. Profiles in different contexts remain separate.\n\nFilter by topic\nAll topics\nSkin & cosmetics\nHair & scalp\nHealth & research\nReading format\nAll formats\nIngredient profile\nResearch brief\nApply filters\n\n25 entries\n\nShare this view\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Hexapeptide-8\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Tetrapeptide-2\n\nA skin-conditioning peptide marketed by its supplier for firmer-looking skin.\n\nEditorial approval pending\nRead more →\nHAIR & SCALP · INGREDIENT PROFILE\nAcetyl Tetrapeptide-3\n\nA peptide listed with red clover extract in the brand’s Capixyl blend.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nAcetyl Tetrapeptide-5\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nHAIR & SCALP · INGREDIENT PROFILE\nBiotinoyl Tripeptide-1\n\nA peptide listed in the brand’s Procapil blend.\n\nEditorial draft · Review pending\nRead more →\nHEALTH & RESEARCH · RESEARCH BRIEF\nBPC-157: what a small human pilot can tell us\n\nRead a two-person pilot in context, alongside FDA safety uncertainties.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCarnosine\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCopper Palmitoyl Heptapeptide-14\n\nA copper-containing peptide with a different name from Copper Tripeptide-1.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nCopper Tripeptide-1\n\nA copper-linked peptide used to help keep skin in good condition.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nDipeptide Diaminobutyroyl Benzylamide Diacetate\n\nA named peptide in some cosmetic blends; formula evidence is separate from ingredient evidence.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nHeptapeptide-15 Palmitate\n\nA separately named peptide used alongside a copper-containing ingredient in Power Peptides.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nOligopeptide-68\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Pentapeptide-4\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl sh-Hexapeptide-13 Serine SP Amide\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tetrapeptide-7\n\nA skin-conditioning peptide used in blends marketed for the appearance of wrinkles.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-1\n\nA skin-conditioning peptide used in blends marketed for the appearance of wrinkles.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-38\n\nA peptide associated with the commercial blend name Matrixyl synthe’6.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPalmitoyl Tripeptide-8\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nPentapeptide-18\n\nA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.\n\nEditorial approval pending\nRead more →\nHEALTH & RESEARCH · RESEARCH BRIEF\nRetatrutide: human research and US status\n\nA selected clinical study, its limitations and a dated FDA status check.\n\nEditorial draft · Review pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nsh-Polypeptide-121\n\nListed in the COSRX formula. Research review pending.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTetrapeptide-21\n\nA peptide identified by the brand as part of TEGO PEP 4-17.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-1 Acetate\n\nAnother peptide form on NIOD’s label. Its name does not state how much is present.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-1 Copper Acetate\n\nA copper-containing peptide name on NIOD’s label; its wording differs from Copper Tripeptide-1. Chemical equivalence has not been established in this review.\n\nEditorial approval pending\nRead more →\nSKIN & COSMETICS · INGREDIENT PROFILE\nTripeptide-29\n\nA three-part peptide. The number 29 is an identifier, not its strength.\n\nEditorial approval pending\nRead more →",
+      "firstViewport": [
+        {
+          "text": "Apply filters",
+          "y": 629
+        },
+        {
+          "text": "Share this view",
+          "y": 706
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Hexapeptide-8A peptide studied for the appearance of expression li",
+          "y": 776
+        }
+      ],
+      "links": [
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Hexapeptide-8A peptide studied for the appearance of expression lines around the eyes.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Tetrapeptide-2A skin-conditioning peptide marketed by its supplier for firmer-looking skin.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/acetyl-tetrapeptide-2/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Hair & scalp · Ingredient profileAcetyl Tetrapeptide-3A peptide listed with red clover extract in the brand’s Capixyl blend.Editorial draft · Review pendingRead more →",
+          "href": "/haircare/ingredients/acetyl-tetrapeptide-3/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileAcetyl Tetrapeptide-5A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/acetyl-tetrapeptide-5/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Hair & scalp · Ingredient profileBiotinoyl Tripeptide-1A peptide listed in the brand’s Procapil blend.Editorial draft · Review pendingRead more →",
+          "href": "/haircare/ingredients/biotinoyl-tripeptide-1/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Health & research · Research briefBPC-157: what a small human pilot can tell usRead a two-person pilot in context, alongside FDA safety uncertainties.Editorial draft · Review pendingRead more →",
+          "href": "/library/bpc-157/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileCarnosineA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/carnosine/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileCopper Palmitoyl Heptapeptide-14A copper-containing peptide with a different name from Copper Tripeptide-1.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileCopper Tripeptide-1A copper-linked peptide used to help keep skin in good condition.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/copper-tripeptide-1/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileDipeptide Diaminobutyroyl Benzylamide DiacetateA named peptide in some cosmetic blends; formula evidence is separate from ingredient evidence.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileHeptapeptide-15 PalmitateA separately named peptide used alongside a copper-containing ingredient in Power Peptides.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/heptapeptide-15-palmitate/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileOligopeptide-68Listed in the COSRX formula. Research review pending.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/oligopeptide-68/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Pentapeptide-4A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-pentapeptide-4/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl sh-Hexapeptide-13 Serine SP AmideA peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Tetrapeptide-7A skin-conditioning peptide used in blends marketed for the appearance of wrinkles.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-tetrapeptide-7/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Tripeptide-1A skin-conditioning peptide used in blends marketed for the appearance of wrinkles.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-tripeptide-1/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Tripeptide-38A peptide associated with the commercial blend name Matrixyl synthe’6.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-tripeptide-38/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePalmitoyl Tripeptide-8Listed in the COSRX formula. Research review pending.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/palmitoyl-tripeptide-8/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilePentapeptide-18A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/pentapeptide-18/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Health & research · Research briefRetatrutide: human research and US statusA selected clinical study, its limitations and a dated FDA status check.Editorial draft · Review pendingRead more →",
+          "href": "/library/retatrutide/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profilesh-Polypeptide-121Listed in the COSRX formula. Research review pending.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/sh-polypeptide-121/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileTetrapeptide-21A peptide identified by the brand as part of TEGO PEP 4-17.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/tetrapeptide-21/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileTripeptide-1 AcetateAnother peptide form on NIOD’s label. Its name does not state how much is present.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/tripeptide-1-acetate/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileTripeptide-1 Copper AcetateA copper-containing peptide name on NIOD’s label; its wording differs from Copper Tripeptide-1. Chemical equivalence has not been established in this review.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/tripeptide-1-copper-acetate/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        },
+        {
+          "text": "Skin & cosmetics · Ingredient profileTripeptide-29A three-part peptide. The number 29 is an identifier, not its strength.Editorial approval pendingRead more →",
+          "href": "/skincare/ingredients/tripeptide-29/?returnTo=%2Fpeptides%2F%3Ftopic%3Dall%26format%3Dall"
+        }
+      ],
+      "related": []
+    },
+    {
+      "name": "ingredient",
+      "path": "/skincare/ingredients/acetyl-hexapeptide-8/",
+      "width": 1280,
+      "status": 200,
+      "title": "Acetyl Hexapeptide-8 | Peptivelo",
+      "h1": ["Acetyl Hexapeptide-8"],
+      "overflow": false,
+      "initialText": "Skin & cosmetics\nOverview\nProducts\nComparisons\nIngredients\nGuides\nIdentify my serum\nChoose by my question\nPrice calculator\n← Back to Ingredients\nHome\n/ Skin & Cosmetics\n/ Ingredients\n/ Acetyl Hexapeptide-8\nPEPTIVELO / SKIN & COSMETICS\nAcetyl Hexapeptide-8\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nCompare products\nReading the name\n\nThe ingredient is one part of a product. The formula is the whole mixture. A number such as 29 or 1 identifies a name; it is not a strength or quality score.\n\nExact label name: Acetyl Hexapeptide-8\nIn brief\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nThere is human research on a preparation of this ingredient. That is different from a direct test of this serum.\n\nType of support: Ingredient study\n\nQualified scientific review pending. A source check is not scientific approval.\n\nExplore detailed evidence and precautions\n\nSources checked 2026-10-20. Ingredient information is separate from testing a finished serum.\n\nSources you can check\nMulti-Peptide + Copper Peptides US product label\nThe Ordinary · Manufacturer / supplier information · Accessed 2026-10-20\nWang et al. (2013): randomized study of Argireline and eye-area lines\nAmerican Journal of Clinical Dermatology / PubMed · Research / ingredient reference · Accessed 2026-10-20\nAcetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)\nCosmetic Ingredient Review / International Journal of Toxicology · Research / ingredient reference · Accessed 2026-10-20\nAllergens in cosmetics: reactions and consumer precautions\nUS Food and Drug Administration · Public health guidance · Accessed 2026-10-19\nIn vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation\nCutaneous and Ocular Toxicology / PubMed · Research / ingredient reference · Accessed 2026-10-20\nFound on these recorded labels\nTHE ORDINARY\nMulti-Peptide + Copper Peptides 1% Serum\nCopper Tripeptide-1\nAcetyl Hexapeptide-8\n$32.00\n30 mL · $1.07/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTHE ORDINARY\nMulti-Peptide + HA Serum\nAcetyl Hexapeptide-8\nPalmitoyl Tripeptide-1\n$19.90\n30 mL · $0.66/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTHE ORDINARY\nArgireline Solution 10%\nAcetyl Hexapeptide-8\n$9.70\n30 mL · $0.32/mL\nLabel checked\n2026-10-19\nAdd to comparison\nNATURIUM\nMulti-Peptide Advanced Serum\nAcetyl Hexapeptide-8\nCopper Palmitoyl Heptapeptide-14\n$25.00\n30 mL · $0.83/mL\nLabel checked\n2026-10-19\nAdd to comparison\nMEDIK8\nLiquid Peptides\nCarnosine\nAcetyl Hexapeptide-8\n$68.00\n30 mL · $2.27/mL\nLabel checked\n2026-10-19\nAdd to comparison\nCOSRX\nThe 6 Peptide Skin Booster Serum Mini\nAcetyl Hexapeptide-8\nCopper Tripeptide-1\nPrice not available\n50 mL\n\nNo size-specific price is recorded. Check the manufacturer\n\nLabel checked\n2026-10-20\nAdd to comparison\nSKINCEUTICALS\nP-TIOX Anti-Wrinkle Serum\nAcetyl Hexapeptide-8\nDipeptide Diaminobutyroyl Benzylamide Diacetate\n$150.00\n30 mL · $5.00/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTransparency Profile\nRecorded documentation and review status · No score\nKeep exploring\nThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →\nNIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) →\nPeptides A–Z →\nHow to read our sources →",
+      "expandedText": "Skin & cosmetics\nOverview\nProducts\nComparisons\nIngredients\nGuides\nIdentify my serum\nChoose by my question\nPrice calculator\n← Back to Ingredients\nHome\n/ Skin & Cosmetics\n/ Ingredients\n/ Acetyl Hexapeptide-8\nPEPTIVELO / SKIN & COSMETICS\nAcetyl Hexapeptide-8\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nCompare products\nReading the name\n\nThe ingredient is one part of a product. The formula is the whole mixture. A number such as 29 or 1 identifies a name; it is not a strength or quality score.\n\nExact label name: Acetyl Hexapeptide-8\nIn brief\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nThere is human research on a preparation of this ingredient. That is different from a direct test of this serum.\n\nType of support: Ingredient study\n\nQualified scientific review pending. A source check is not scientific approval.\n\nExplore detailed evidence and precautions\nWhat it is\n\nA synthetic peptide investigated under the name Argireline. The study concerns a specific preparation, not every product listing this ingredient.\n\nWang et al. (2013): randomized study of Argireline and eye-area lines\nWhy it is used\n\nStudied as a cosmetic ingredient for reducing the appearance of eye-area lines.\n\nWang et al. (2013): randomized study of Argireline and eye-area lines\nWhat the evidence means\n\nA four-week randomized placebo-controlled trial enrolled 60 Chinese participants (3:1 allocation) and reported improved eye-area wrinkle measures. The inspected abstract does not establish results for the retail serums here or long-term benefit. A 24-hour laboratory skin-penetration study is a different kind of evidence, not a clinical efficacy trial.\n\nWang et al. (2013): randomized study of Argireline and eye-area lines\nIn vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation\nPrecautions and possible reactions\n\nThe 2025 safety panel concluded safe cosmetic use up to 0.005%; above that, it found insufficient data to determine safety. This is not evidence of harm above that amount. The pure-peptide concentrations in these compared serums are not verified, so this assessment cannot certify either bottle. A commercial blend percentage is not automatically the pure-peptide percentage.\n\nCosmetics can cause irritation or allergic reactions. Check the full ingredient list and follow product directions.\n\nAcetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)\nAllergens in cosmetics: reactions and consumer precautions\nWhat this means for your comparison\n\nThere is human research on a preparation of this ingredient. That is different from a direct test of this serum.\n\nSources checked 2026-10-20. Ingredient information is separate from testing a finished serum.\n\nSources you can check\nMulti-Peptide + Copper Peptides US product label\nThe Ordinary · Manufacturer / supplier information · Accessed 2026-10-20\nWang et al. (2013): randomized study of Argireline and eye-area lines\nAmerican Journal of Clinical Dermatology / PubMed · Research / ingredient reference · Accessed 2026-10-20\nAcetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)\nCosmetic Ingredient Review / International Journal of Toxicology · Research / ingredient reference · Accessed 2026-10-20\nAllergens in cosmetics: reactions and consumer precautions\nUS Food and Drug Administration · Public health guidance · Accessed 2026-10-19\nIn vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation\nCutaneous and Ocular Toxicology / PubMed · Research / ingredient reference · Accessed 2026-10-20\nFound on these recorded labels\nTHE ORDINARY\nMulti-Peptide + Copper Peptides 1% Serum\nCopper Tripeptide-1\nAcetyl Hexapeptide-8\n$32.00\n30 mL · $1.07/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTHE ORDINARY\nMulti-Peptide + HA Serum\nAcetyl Hexapeptide-8\nPalmitoyl Tripeptide-1\n$19.90\n30 mL · $0.66/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTHE ORDINARY\nArgireline Solution 10%\nAcetyl Hexapeptide-8\n$9.70\n30 mL · $0.32/mL\nLabel checked\n2026-10-19\nAdd to comparison\nNATURIUM\nMulti-Peptide Advanced Serum\nAcetyl Hexapeptide-8\nCopper Palmitoyl Heptapeptide-14\n$25.00\n30 mL · $0.83/mL\nLabel checked\n2026-10-19\nAdd to comparison\nMEDIK8\nLiquid Peptides\nCarnosine\nAcetyl Hexapeptide-8\n$68.00\n30 mL · $2.27/mL\nLabel checked\n2026-10-19\nAdd to comparison\nCOSRX\nThe 6 Peptide Skin Booster Serum Mini\nAcetyl Hexapeptide-8\nCopper Tripeptide-1\nPrice not available\n50 mL\n\nNo size-specific price is recorded. Check the manufacturer\n\nLabel checked\n2026-10-20\nAdd to comparison\nSKINCEUTICALS\nP-TIOX Anti-Wrinkle Serum\nAcetyl Hexapeptide-8\nDipeptide Diaminobutyroyl Benzylamide Diacetate\n$150.00\n30 mL · $5.00/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTransparency Profile\nRecorded documentation and review status · No score\n\nThese states describe our documentation, not a product’s effectiveness or safety. A source check records what the cited material says on the date shown.\n\nSource trail\nDocumented in cited sources\n\nReferences are recorded for this document. Their dates and access limits are shown individually; they are not independent product tests.\n\nSource 1\nSource 2\nSource 3\nSource 4\nSource 5\nRecorded ingredient identity\nDocumented in cited sources\n\nINCI: Acetyl Hexapeptide-8. Context-specific profiles are kept separate.\n\nRecorded check / observation: 2026-10-20\nSource 1\nFinished-product conclusions\nNot applicable\n\nThis is an ingredient profile. Ingredient evidence does not establish the results of a finished product.\n\nEditorial review\nNot reviewed\n\nNo current-version human editorial approval is recorded. Source checks and publication labels do not supply that approval.\n\nScientific review\nNot reviewed\n\nNo qualified scientific approval is recorded for this version. This profile does not establish efficacy, safety or clinical quality.\n\nRead the documentation methodology →\nKeep exploring\nThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →\nNIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) →\nPeptides A–Z →\nHow to read our sources →",
+      "firstViewport": [
+        {
+          "text": "Overview",
+          "y": 174
+        },
+        {
+          "text": "Products",
+          "y": 174
+        },
+        {
+          "text": "Comparisons",
+          "y": 174
+        },
+        {
+          "text": "Ingredients",
+          "y": 174
+        },
+        {
+          "text": "Guides",
+          "y": 174
+        },
+        {
+          "text": "Identify my serum",
+          "y": 226
+        },
+        {
+          "text": "Choose by my question",
+          "y": 226
+        },
+        {
+          "text": "Price calculator",
+          "y": 226
+        },
+        {
+          "text": "← Back to Ingredients",
+          "y": 270
+        },
+        {
+          "text": "Home",
+          "y": 357
+        },
+        {
+          "text": "Skin & cosmetics",
+          "y": 359
+        },
+        {
+          "text": "Ingredients",
+          "y": 359
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "y": 359
+        },
+        {
+          "text": "Compare products",
+          "y": 605
+        }
+      ],
+      "links": [
+        {
+          "text": "Overview",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Products",
+          "href": "/skincare/products/"
+        },
+        {
+          "text": "Comparisons",
+          "href": "/compare/"
+        },
+        {
+          "text": "Ingredients",
+          "href": "/skincare/ingredients/"
+        },
+        {
+          "text": "Guides",
+          "href": "/skincare/guides/"
+        },
+        {
+          "text": "Identify my serum",
+          "href": "/skincare/identify/"
+        },
+        {
+          "text": "Choose by my question",
+          "href": "/skincare/choose/"
+        },
+        {
+          "text": "Price calculator",
+          "href": "/tools/price-per-ml/"
+        },
+        {
+          "text": "← Back to Ingredients",
+          "href": "/skincare/ingredients/"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Skin & cosmetics",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Ingredients",
+          "href": "/skincare/ingredients/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Compare products",
+          "href": "/compare/"
+        },
+        {
+          "text": "Wang et al. (2013): randomized study of Argireline and eye-area lines",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+        },
+        {
+          "text": "Wang et al. (2013): randomized study of Argireline and eye-area lines",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+        },
+        {
+          "text": "Wang et al. (2013): randomized study of Argireline and eye-area lines",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+        },
+        {
+          "text": "In vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24754410/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)",
+          "href": "https://journals.sagepub.com/doi/10.1177/10915818251340391"
+        },
+        {
+          "text": "Allergens in cosmetics: reactions and consumer precautions",
+          "href": "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+        },
+        {
+          "text": "Multi-Peptide + Copper Peptides US product label",
+          "href": "https://theordinary.com/en-us/multi-peptide-copper-peptides-1-serum-100625.html"
+        },
+        {
+          "text": "Wang et al. (2013): randomized study of Argireline and eye-area lines",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)",
+          "href": "https://journals.sagepub.com/doi/10.1177/10915818251340391"
+        },
+        {
+          "text": "Allergens in cosmetics: reactions and consumer precautions",
+          "href": "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+        },
+        {
+          "text": "In vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24754410/"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+        },
+        {
+          "text": "Multi-Peptide + Copper Peptides 1% Serum",
+          "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+        },
+        {
+          "text": "Copper Tripeptide-1",
+          "href": "/skincare/ingredients/copper-tripeptide-1/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=ordinary-copper"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+        },
+        {
+          "text": "Multi-Peptide + HA Serum",
+          "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Palmitoyl Tripeptide-1",
+          "href": "/skincare/ingredients/palmitoyl-tripeptide-1/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=ordinary-ha"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+        },
+        {
+          "text": "Argireline Solution 10%",
+          "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=ordinary-argireline"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+        },
+        {
+          "text": "Multi-Peptide Advanced Serum",
+          "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Copper Palmitoyl Heptapeptide-14",
+          "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=naturium-multi-peptide"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/medik8-liquid-peptides/"
+        },
+        {
+          "text": "Liquid Peptides",
+          "href": "/skincare/products/medik8-liquid-peptides/"
+        },
+        {
+          "text": "Carnosine",
+          "href": "/skincare/ingredients/carnosine/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=medik8-liquid-peptides"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+        },
+        {
+          "text": "The 6 Peptide Skin Booster Serum Mini",
+          "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Copper Tripeptide-1",
+          "href": "/skincare/ingredients/copper-tripeptide-1/"
+        },
+        {
+          "text": "Check the manufacturer",
+          "href": "https://www.cosrx.com/products/the-6-peptide-skin-booster-serum-mini-50ml"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=cosrx-six-mini"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/skinceuticals-ptiox/"
+        },
+        {
+          "text": "P-TIOX Anti-Wrinkle Serum",
+          "href": "/skincare/products/skinceuticals-ptiox/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+          "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=skinceuticals-ptiox"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-ordinary"
+        },
+        {
+          "text": "Source 2",
+          "href": "/sources/#source-argireline-trial"
+        },
+        {
+          "text": "Source 3",
+          "href": "/sources/#source-cir-acetyl"
+        },
+        {
+          "text": "Source 4",
+          "href": "/sources/#source-fda-cosmetic-reactions"
+        },
+        {
+          "text": "Source 5",
+          "href": "/sources/#source-kraeling-penetration"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-argireline-trial"
+        },
+        {
+          "text": "Read the documentation methodology →",
+          "href": "/methodology/#documentation-states"
+        },
+        {
+          "text": "The Ordinary Multi-Peptide + Copper Peptides 1% Serum →",
+          "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+        },
+        {
+          "text": "NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) →",
+          "href": "/skincare/products/niod-cais3/"
+        },
+        {
+          "text": "Peptides A–Z →",
+          "href": "/peptides/"
+        },
+        {
+          "text": "How to read our sources →",
+          "href": "/methodology/"
+        }
+      ],
+      "related": [
+        "Keep exploringThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) →Peptides A–Z →How to read our sources →"
+      ]
+    },
+    {
+      "name": "ingredient",
+      "path": "/skincare/ingredients/acetyl-hexapeptide-8/",
+      "width": 390,
+      "status": 200,
+      "title": "Acetyl Hexapeptide-8 | Peptivelo",
+      "h1": ["Acetyl Hexapeptide-8"],
+      "overflow": false,
+      "initialText": "Skin & cosmetics\nOverview\nProducts\nComparisons\nIngredients\nGuides\nIdentify my serum\nChoose by my question\nPrice calculator\n← Back to Ingredients\nHome\n/ Skin & Cosmetics\n/ Ingredients\n/ Acetyl Hexapeptide-8\nPEPTIVELO / SKIN & COSMETICS\nAcetyl Hexapeptide-8\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nCompare products\nReading the name\n\nThe ingredient is one part of a product. The formula is the whole mixture. A number such as 29 or 1 identifies a name; it is not a strength or quality score.\n\nExact label name: Acetyl Hexapeptide-8\nIn brief\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nThere is human research on a preparation of this ingredient. That is different from a direct test of this serum.\n\nType of support: Ingredient study\n\nQualified scientific review pending. A source check is not scientific approval.\n\nExplore detailed evidence and precautions\n\nSources checked 2026-10-20. Ingredient information is separate from testing a finished serum.\n\nSources you can check\nMulti-Peptide + Copper Peptides US product label\nThe Ordinary · Manufacturer / supplier information · Accessed 2026-10-20\nWang et al. (2013): randomized study of Argireline and eye-area lines\nAmerican Journal of Clinical Dermatology / PubMed · Research / ingredient reference · Accessed 2026-10-20\nAcetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)\nCosmetic Ingredient Review / International Journal of Toxicology · Research / ingredient reference · Accessed 2026-10-20\nAllergens in cosmetics: reactions and consumer precautions\nUS Food and Drug Administration · Public health guidance · Accessed 2026-10-19\nIn vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation\nCutaneous and Ocular Toxicology / PubMed · Research / ingredient reference · Accessed 2026-10-20\nFound on these recorded labels\nTHE ORDINARY\nMulti-Peptide + Copper Peptides 1% Serum\nCopper Tripeptide-1\nAcetyl Hexapeptide-8\n$32.00\n30 mL · $1.07/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTHE ORDINARY\nMulti-Peptide + HA Serum\nAcetyl Hexapeptide-8\nPalmitoyl Tripeptide-1\n$19.90\n30 mL · $0.66/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTHE ORDINARY\nArgireline Solution 10%\nAcetyl Hexapeptide-8\n$9.70\n30 mL · $0.32/mL\nLabel checked\n2026-10-19\nAdd to comparison\nNATURIUM\nMulti-Peptide Advanced Serum\nAcetyl Hexapeptide-8\nCopper Palmitoyl Heptapeptide-14\n$25.00\n30 mL · $0.83/mL\nLabel checked\n2026-10-19\nAdd to comparison\nMEDIK8\nLiquid Peptides\nCarnosine\nAcetyl Hexapeptide-8\n$68.00\n30 mL · $2.27/mL\nLabel checked\n2026-10-19\nAdd to comparison\nCOSRX\nThe 6 Peptide Skin Booster Serum Mini\nAcetyl Hexapeptide-8\nCopper Tripeptide-1\nPrice not available\n50 mL\n\nNo size-specific price is recorded. Check the manufacturer\n\nLabel checked\n2026-10-20\nAdd to comparison\nSKINCEUTICALS\nP-TIOX Anti-Wrinkle Serum\nAcetyl Hexapeptide-8\nDipeptide Diaminobutyroyl Benzylamide Diacetate\n$150.00\n30 mL · $5.00/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTransparency Profile\nRecorded documentation and review status · No score\nKeep exploring\nThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →\nNIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) →\nPeptides A–Z →\nHow to read our sources →",
+      "expandedText": "Skin & cosmetics\nOverview\nProducts\nComparisons\nIngredients\nGuides\nIdentify my serum\nChoose by my question\nPrice calculator\n← Back to Ingredients\nHome\n/ Skin & Cosmetics\n/ Ingredients\n/ Acetyl Hexapeptide-8\nPEPTIVELO / SKIN & COSMETICS\nAcetyl Hexapeptide-8\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nCompare products\nReading the name\n\nThe ingredient is one part of a product. The formula is the whole mixture. A number such as 29 or 1 identifies a name; it is not a strength or quality score.\n\nExact label name: Acetyl Hexapeptide-8\nIn brief\n\nA peptide studied for the appearance of expression lines around the eyes.\n\nThere is human research on a preparation of this ingredient. That is different from a direct test of this serum.\n\nType of support: Ingredient study\n\nQualified scientific review pending. A source check is not scientific approval.\n\nExplore detailed evidence and precautions\nWhat it is\n\nA synthetic peptide investigated under the name Argireline. The study concerns a specific preparation, not every product listing this ingredient.\n\nWang et al. (2013): randomized study of Argireline and eye-area lines\nWhy it is used\n\nStudied as a cosmetic ingredient for reducing the appearance of eye-area lines.\n\nWang et al. (2013): randomized study of Argireline and eye-area lines\nWhat the evidence means\n\nA four-week randomized placebo-controlled trial enrolled 60 Chinese participants (3:1 allocation) and reported improved eye-area wrinkle measures. The inspected abstract does not establish results for the retail serums here or long-term benefit. A 24-hour laboratory skin-penetration study is a different kind of evidence, not a clinical efficacy trial.\n\nWang et al. (2013): randomized study of Argireline and eye-area lines\nIn vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation\nPrecautions and possible reactions\n\nThe 2025 safety panel concluded safe cosmetic use up to 0.005%; above that, it found insufficient data to determine safety. This is not evidence of harm above that amount. The pure-peptide concentrations in these compared serums are not verified, so this assessment cannot certify either bottle. A commercial blend percentage is not automatically the pure-peptide percentage.\n\nCosmetics can cause irritation or allergic reactions. Check the full ingredient list and follow product directions.\n\nAcetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)\nAllergens in cosmetics: reactions and consumer precautions\nWhat this means for your comparison\n\nThere is human research on a preparation of this ingredient. That is different from a direct test of this serum.\n\nSources checked 2026-10-20. Ingredient information is separate from testing a finished serum.\n\nSources you can check\nMulti-Peptide + Copper Peptides US product label\nThe Ordinary · Manufacturer / supplier information · Accessed 2026-10-20\nWang et al. (2013): randomized study of Argireline and eye-area lines\nAmerican Journal of Clinical Dermatology / PubMed · Research / ingredient reference · Accessed 2026-10-20\nAcetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)\nCosmetic Ingredient Review / International Journal of Toxicology · Research / ingredient reference · Accessed 2026-10-20\nAllergens in cosmetics: reactions and consumer precautions\nUS Food and Drug Administration · Public health guidance · Accessed 2026-10-19\nIn vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation\nCutaneous and Ocular Toxicology / PubMed · Research / ingredient reference · Accessed 2026-10-20\nFound on these recorded labels\nTHE ORDINARY\nMulti-Peptide + Copper Peptides 1% Serum\nCopper Tripeptide-1\nAcetyl Hexapeptide-8\n$32.00\n30 mL · $1.07/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTHE ORDINARY\nMulti-Peptide + HA Serum\nAcetyl Hexapeptide-8\nPalmitoyl Tripeptide-1\n$19.90\n30 mL · $0.66/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTHE ORDINARY\nArgireline Solution 10%\nAcetyl Hexapeptide-8\n$9.70\n30 mL · $0.32/mL\nLabel checked\n2026-10-19\nAdd to comparison\nNATURIUM\nMulti-Peptide Advanced Serum\nAcetyl Hexapeptide-8\nCopper Palmitoyl Heptapeptide-14\n$25.00\n30 mL · $0.83/mL\nLabel checked\n2026-10-19\nAdd to comparison\nMEDIK8\nLiquid Peptides\nCarnosine\nAcetyl Hexapeptide-8\n$68.00\n30 mL · $2.27/mL\nLabel checked\n2026-10-19\nAdd to comparison\nCOSRX\nThe 6 Peptide Skin Booster Serum Mini\nAcetyl Hexapeptide-8\nCopper Tripeptide-1\nPrice not available\n50 mL\n\nNo size-specific price is recorded. Check the manufacturer\n\nLabel checked\n2026-10-20\nAdd to comparison\nSKINCEUTICALS\nP-TIOX Anti-Wrinkle Serum\nAcetyl Hexapeptide-8\nDipeptide Diaminobutyroyl Benzylamide Diacetate\n$150.00\n30 mL · $5.00/mL\nLabel checked\n2026-10-20\nAdd to comparison\nTransparency Profile\nRecorded documentation and review status · No score\n\nThese states describe our documentation, not a product’s effectiveness or safety. A source check records what the cited material says on the date shown.\n\nSource trail\nDocumented in cited sources\n\nReferences are recorded for this document. Their dates and access limits are shown individually; they are not independent product tests.\n\nSource 1\nSource 2\nSource 3\nSource 4\nSource 5\nRecorded ingredient identity\nDocumented in cited sources\n\nINCI: Acetyl Hexapeptide-8. Context-specific profiles are kept separate.\n\nRecorded check / observation: 2026-10-20\nSource 1\nFinished-product conclusions\nNot applicable\n\nThis is an ingredient profile. Ingredient evidence does not establish the results of a finished product.\n\nEditorial review\nNot reviewed\n\nNo current-version human editorial approval is recorded. Source checks and publication labels do not supply that approval.\n\nScientific review\nNot reviewed\n\nNo qualified scientific approval is recorded for this version. This profile does not establish efficacy, safety or clinical quality.\n\nRead the documentation methodology →\nKeep exploring\nThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →\nNIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) →\nPeptides A–Z →\nHow to read our sources →",
+      "firstViewport": [
+        {
+          "text": "Overview",
+          "y": 184
+        },
+        {
+          "text": "Products",
+          "y": 184
+        },
+        {
+          "text": "Comparisons",
+          "y": 184
+        },
+        {
+          "text": "Ingredients",
+          "y": 232
+        },
+        {
+          "text": "Guides",
+          "y": 232
+        },
+        {
+          "text": "Identify my serum",
+          "y": 284
+        },
+        {
+          "text": "Choose by my question",
+          "y": 284
+        },
+        {
+          "text": "Price calculator",
+          "y": 336
+        },
+        {
+          "text": "← Back to Ingredients",
+          "y": 380
+        },
+        {
+          "text": "Home",
+          "y": 461
+        },
+        {
+          "text": "Skin & cosmetics",
+          "y": 463
+        },
+        {
+          "text": "Ingredients",
+          "y": 463
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "y": 490
+        },
+        {
+          "text": "Compare products",
+          "y": 762
+        }
+      ],
+      "links": [
+        {
+          "text": "Overview",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Products",
+          "href": "/skincare/products/"
+        },
+        {
+          "text": "Comparisons",
+          "href": "/compare/"
+        },
+        {
+          "text": "Ingredients",
+          "href": "/skincare/ingredients/"
+        },
+        {
+          "text": "Guides",
+          "href": "/skincare/guides/"
+        },
+        {
+          "text": "Identify my serum",
+          "href": "/skincare/identify/"
+        },
+        {
+          "text": "Choose by my question",
+          "href": "/skincare/choose/"
+        },
+        {
+          "text": "Price calculator",
+          "href": "/tools/price-per-ml/"
+        },
+        {
+          "text": "← Back to Ingredients",
+          "href": "/skincare/ingredients/"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Skin & cosmetics",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Ingredients",
+          "href": "/skincare/ingredients/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Compare products",
+          "href": "/compare/"
+        },
+        {
+          "text": "Wang et al. (2013): randomized study of Argireline and eye-area lines",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+        },
+        {
+          "text": "Wang et al. (2013): randomized study of Argireline and eye-area lines",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+        },
+        {
+          "text": "Wang et al. (2013): randomized study of Argireline and eye-area lines",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+        },
+        {
+          "text": "In vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24754410/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)",
+          "href": "https://journals.sagepub.com/doi/10.1177/10915818251340391"
+        },
+        {
+          "text": "Allergens in cosmetics: reactions and consumer precautions",
+          "href": "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+        },
+        {
+          "text": "Multi-Peptide + Copper Peptides US product label",
+          "href": "https://theordinary.com/en-us/multi-peptide-copper-peptides-1-serum-100625.html"
+        },
+        {
+          "text": "Wang et al. (2013): randomized study of Argireline and eye-area lines",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23417317/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8 Amide: cosmetic safety assessment (2025)",
+          "href": "https://journals.sagepub.com/doi/10.1177/10915818251340391"
+        },
+        {
+          "text": "Allergens in cosmetics: reactions and consumer precautions",
+          "href": "https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics"
+        },
+        {
+          "text": "In vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24754410/"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+        },
+        {
+          "text": "Multi-Peptide + Copper Peptides 1% Serum",
+          "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+        },
+        {
+          "text": "Copper Tripeptide-1",
+          "href": "/skincare/ingredients/copper-tripeptide-1/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=ordinary-copper"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+        },
+        {
+          "text": "Multi-Peptide + HA Serum",
+          "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Palmitoyl Tripeptide-1",
+          "href": "/skincare/ingredients/palmitoyl-tripeptide-1/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=ordinary-ha"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+        },
+        {
+          "text": "Argireline Solution 10%",
+          "href": "/skincare/products/the-ordinary-argireline-solution-10/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=ordinary-argireline"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+        },
+        {
+          "text": "Multi-Peptide Advanced Serum",
+          "href": "/skincare/products/naturium-multi-peptide-advanced-serum/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Copper Palmitoyl Heptapeptide-14",
+          "href": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=naturium-multi-peptide"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/medik8-liquid-peptides/"
+        },
+        {
+          "text": "Liquid Peptides",
+          "href": "/skincare/products/medik8-liquid-peptides/"
+        },
+        {
+          "text": "Carnosine",
+          "href": "/skincare/ingredients/carnosine/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=medik8-liquid-peptides"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+        },
+        {
+          "text": "The 6 Peptide Skin Booster Serum Mini",
+          "href": "/skincare/products/cosrx-six-peptide-skin-booster-mini/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Copper Tripeptide-1",
+          "href": "/skincare/ingredients/copper-tripeptide-1/"
+        },
+        {
+          "text": "Check the manufacturer",
+          "href": "https://www.cosrx.com/products/the-6-peptide-skin-booster-serum-mini-50ml"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=cosrx-six-mini"
+        },
+        {
+          "text": "",
+          "href": "/skincare/products/skinceuticals-ptiox/"
+        },
+        {
+          "text": "P-TIOX Anti-Wrinkle Serum",
+          "href": "/skincare/products/skinceuticals-ptiox/"
+        },
+        {
+          "text": "Acetyl Hexapeptide-8",
+          "href": "/skincare/ingredients/acetyl-hexapeptide-8/"
+        },
+        {
+          "text": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+          "href": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/"
+        },
+        {
+          "text": "Add to comparison",
+          "href": "/compare/?a=skinceuticals-ptiox"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-ordinary"
+        },
+        {
+          "text": "Source 2",
+          "href": "/sources/#source-argireline-trial"
+        },
+        {
+          "text": "Source 3",
+          "href": "/sources/#source-cir-acetyl"
+        },
+        {
+          "text": "Source 4",
+          "href": "/sources/#source-fda-cosmetic-reactions"
+        },
+        {
+          "text": "Source 5",
+          "href": "/sources/#source-kraeling-penetration"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-argireline-trial"
+        },
+        {
+          "text": "Read the documentation methodology →",
+          "href": "/methodology/#documentation-states"
+        },
+        {
+          "text": "The Ordinary Multi-Peptide + Copper Peptides 1% Serum →",
+          "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+        },
+        {
+          "text": "NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) →",
+          "href": "/skincare/products/niod-cais3/"
+        },
+        {
+          "text": "Peptides A–Z →",
+          "href": "/peptides/"
+        },
+        {
+          "text": "How to read our sources →",
+          "href": "/methodology/"
+        }
+      ],
+      "related": [
+        "Keep exploringThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) →Peptides A–Z →How to read our sources →"
+      ]
+    },
+    {
+      "name": "product",
+      "path": "/skincare/products/niod-cais3/",
+      "width": 1280,
+      "status": 200,
+      "title": "NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) | Peptivelo",
+      "h1": ["NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)"],
+      "overflow": false,
+      "initialText": "Skin & cosmetics\nOverview\nProducts\nComparisons\nIngredients\nGuides\nIdentify my serum\nChoose by my question\nPrice calculator\n← Back to Products\nHome\n/ Skin & Cosmetics\n/ Products\n/ NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)\nPEPTIVELO / SKIN & COSMETICS\nNIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)\n\nA copper peptide cosmetic serum. The manufacturer lists 15 mL and 30 mL options; this record describes the 30 mL size.\n\nView product identification record\n\nPeptivelo identification record. Not a packaging photograph or manufacturer endorsement.\n\nNIOD · WATER-BASED SERUM\n30 mL · US label\nLabel checked\n2026-10-20\n$93.00\n\n$3.10 / mL · $91.68 / US fl oz\n\nObserved 2026-10-20 · Stock not verified · USD, excluding tax and shipping\n\nVisit NIOD\n\nNo affiliate partnerships are active. Manufacturer and store links are ordinary links; we do not earn commissions from them. Recorded prices exclude tax and shipping and may have changed.\n\nSAME PRODUCT · DIFFERENT STORES\nWhere to buy\n\nCompare recorded offers for this 30 mL presentation. Stores handle payment, order support and fulfilment. Peptivelo does not sell or ship products.\n\nDelivery destination\nUnited States — contiguous states\nUnited Kingdom\nCanada\nPeru\nSort offers\nStore name\nRecorded product price\nEstimated product + shipping\nShortest complete delivery estimate\nRecorded price per mL\nUpdate offers\n\n2 stores recorded · USD · No currency conversion. This is limited coverage, not a complete market survey.\n\nNIOD\n30 mL · USD\n\nStock not confirmed\n\nRecorded price\n$93.00\n$3.10/mL · product only\nStandard shipping\nCost not confirmed\nFor the stated checkout conditions\nProduct + shipping\nTotal not confirmed\nBefore tax, duties or other charges\nOrder-to-delivery estimate\nDelivery estimate not confirmed\nNo destination-specific timing recorded.\n\nPrice observed 2026-10-20 (UTC). Dated snapshot; confirm at checkout.\n\nPrice source\nCheck price at NIOD\nOrdinary link · no commission\nSephora US\n1 oz / 30 mL · USD\n\nStock not confirmed\n\nRecorded price\n$93.00\n$3.10/mL · product only\nStandard shipping\nCost not confirmed\nFor the stated checkout conditions\nProduct + shipping\nTotal not confirmed\nBefore tax, duties or other charges\nOrder-to-delivery estimate\nDelivery estimate not confirmed\nNo destination-specific timing recorded.\n\nPrice observed 2026-10-22 (UTC). Dated snapshot; confirm at checkout.\n\nPrice source\nCheck price at Sephora US\nOrdinary link · no commission\n\nDelivery policies describe estimates, not measured delivery performance or guarantees from Peptivelo. Your address, processing time, stock, holidays and checkout conditions can change the result. Commercial relationships do not determine the order above.\n\nSelected label ingredients\n\nSelected label ingredients, not the complete INCI list. Exact names are preserved without assuming chemical equivalence.\n\nTripeptide-29\nTripeptide-1 Copper Acetate\nTripeptide-1 Acetate\nAcetyl Tetrapeptide-2\nTripeptide-29\nTripeptide-1 Copper Acetate\nTripeptide-1 Acetate\nAcetyl Tetrapeptide-2\nDisclosures & limitations\n\nThe manufacturer describes 1% GHK-Cu and 1% GHK. These are brand disclosures, not independently assayed concentrations.\n\nOfficial US 30 mL price observed after selecting 30 mL on 2026-10-20: USD 93. Excludes tax and shipping; dated observation, not a live price or performance ranking.\n\nNo comparative clinical effectiveness has been established by this profile.\n\nCAIS3 US product label\nNIOD · Manufacturer / supplier information · Accessed 2026-10-20\nCompare this product\nAdd to compare\nBUYING QUESTIONS, EXPLAINED\nStart with the difference you want to understand.\n\nSource-linked drafts. Human editorial review is pending.\n\nEditorial draft\nNIOD CAIS3 vs. The Ordinary copper peptide serum\n\nAre these copper serums interchangeable, and what differences can I actually verify?\n\nRead the comparison\nUNDERSTAND THE LABEL\nMake sense of the names and numbers.\nEditorial draft\nMatrixyl 3000 vs Matrixyl synthe’6: what the names mean\n\nCompare the peptide names behind Matrixyl 3000 and synthe’6, learn how to read a serum label, and understand what the names cannot tell you.\n\nRead the guide\nEditorial draft\nWhat peptide percentages on serum labels actually tell you\n\nLearn the difference between a peptide, a commercial blend and a finished serum, with examples and a clearly hypothetical concentration calculation.\n\nRead the guide\nTransparency Profile\nRecorded documentation and review status · No score\nKeep exploring\nThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →\nThe Ordinary Multi-Peptide + HA Serum →\nPeptides A–Z →\nHow to read our sources →",
+      "expandedText": "Skin & cosmetics\nOverview\nProducts\nComparisons\nIngredients\nGuides\nIdentify my serum\nChoose by my question\nPrice calculator\n← Back to Products\nHome\n/ Skin & Cosmetics\n/ Products\n/ NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)\nPEPTIVELO / SKIN & COSMETICS\nNIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)\n\nA copper peptide cosmetic serum. The manufacturer lists 15 mL and 30 mL options; this record describes the 30 mL size.\n\nView product identification record\n\nPeptivelo identification record. Not a packaging photograph or manufacturer endorsement.\n\nNIOD · WATER-BASED SERUM\n30 mL · US label\nLabel checked\n2026-10-20\n$93.00\n\n$3.10 / mL · $91.68 / US fl oz\n\nObserved 2026-10-20 · Stock not verified · USD, excluding tax and shipping\n\nVisit NIOD\n\nNo affiliate partnerships are active. Manufacturer and store links are ordinary links; we do not earn commissions from them. Recorded prices exclude tax and shipping and may have changed.\n\nSAME PRODUCT · DIFFERENT STORES\nWhere to buy\n\nCompare recorded offers for this 30 mL presentation. Stores handle payment, order support and fulfilment. Peptivelo does not sell or ship products.\n\nDelivery destination\nUnited States — contiguous states\nUnited Kingdom\nCanada\nPeru\nSort offers\nStore name\nRecorded product price\nEstimated product + shipping\nShortest complete delivery estimate\nRecorded price per mL\nUpdate offers\n\n2 stores recorded · USD · No currency conversion. This is limited coverage, not a complete market survey.\n\nNIOD\n30 mL · USD\n\nStock not confirmed\n\nRecorded price\n$93.00\n$3.10/mL · product only\nStandard shipping\nCost not confirmed\nFor the stated checkout conditions\nProduct + shipping\nTotal not confirmed\nBefore tax, duties or other charges\nOrder-to-delivery estimate\nDelivery estimate not confirmed\nNo destination-specific timing recorded.\n\nPrice observed 2026-10-20 (UTC). Dated snapshot; confirm at checkout.\n\nPrice source\nCheck price at NIOD\nOrdinary link · no commission\nSephora US\n1 oz / 30 mL · USD\n\nStock not confirmed\n\nRecorded price\n$93.00\n$3.10/mL · product only\nStandard shipping\nCost not confirmed\nFor the stated checkout conditions\nProduct + shipping\nTotal not confirmed\nBefore tax, duties or other charges\nOrder-to-delivery estimate\nDelivery estimate not confirmed\nNo destination-specific timing recorded.\n\nPrice observed 2026-10-22 (UTC). Dated snapshot; confirm at checkout.\n\nPrice source\nCheck price at Sephora US\nOrdinary link · no commission\n\nDelivery policies describe estimates, not measured delivery performance or guarantees from Peptivelo. Your address, processing time, stock, holidays and checkout conditions can change the result. Commercial relationships do not determine the order above.\n\nSelected label ingredients\n\nSelected label ingredients, not the complete INCI list. Exact names are preserved without assuming chemical equivalence.\n\nTripeptide-29\nTripeptide-1 Copper Acetate\nTripeptide-1 Acetate\nAcetyl Tetrapeptide-2\nTripeptide-29\nTripeptide-1 Copper Acetate\nTripeptide-1 Acetate\nAcetyl Tetrapeptide-2\nDisclosures & limitations\n\nThe manufacturer describes 1% GHK-Cu and 1% GHK. These are brand disclosures, not independently assayed concentrations.\n\nOfficial US 30 mL price observed after selecting 30 mL on 2026-10-20: USD 93. Excludes tax and shipping; dated observation, not a live price or performance ranking.\n\nNo comparative clinical effectiveness has been established by this profile.\n\nCAIS3 US product label\nNIOD · Manufacturer / supplier information · Accessed 2026-10-20\nCompare this product\nAdd to compare\nBUYING QUESTIONS, EXPLAINED\nStart with the difference you want to understand.\n\nSource-linked drafts. Human editorial review is pending.\n\nEditorial draft\nNIOD CAIS3 vs. The Ordinary copper peptide serum\n\nAre these copper serums interchangeable, and what differences can I actually verify?\n\nRead the comparison\nUNDERSTAND THE LABEL\nMake sense of the names and numbers.\nEditorial draft\nMatrixyl 3000 vs Matrixyl synthe’6: what the names mean\n\nCompare the peptide names behind Matrixyl 3000 and synthe’6, learn how to read a serum label, and understand what the names cannot tell you.\n\nRead the guide\nEditorial draft\nWhat peptide percentages on serum labels actually tell you\n\nLearn the difference between a peptide, a commercial blend and a finished serum, with examples and a clearly hypothetical concentration calculation.\n\nRead the guide\nTransparency Profile\nRecorded documentation and review status · No score\n\nThese states describe our documentation, not a product’s effectiveness or safety. A source check records what the cited material says on the date shown.\n\nSource trail\nDocumented in cited sources\n\nReferences are recorded for this document. Their dates and access limits are shown individually; they are not independent product tests.\n\nSource 1\nProduct identity & ingredient coverage\nDocumented in cited sources\n\nCopper Amino Isolate Serum 3 1:1 (CAIS3) · 30 mL. Selected label ingredients, not the complete INCI list. Exact names are preserved without assuming chemical equivalence.\n\nRecorded check / observation: 2026-10-20\nSource 1\nConcentration disclosure\nDocumented in cited sources\n\nThe manufacturer describes 1% GHK-Cu and 1% GHK. These are brand disclosures, not independently assayed concentrations.\n\nRecorded check / observation: 2026-10-20\nSource 1\nPrice observation\nDocumented in cited sources\n\n93 USD for 30 ml. Dated US observation, excluding tax and shipping; current stock is not verified.\n\nRecorded check / observation: 2026-10-20\nSource 1\nEditorial review\nNot reviewed\n\nNo current-version human editorial approval is recorded. Source checks and publication labels do not supply that approval.\n\nScientific review\nNot reviewed\n\nNo qualified scientific approval is recorded for this version. This profile does not establish efficacy, safety or clinical quality.\n\nRead the documentation methodology →\nKeep exploring\nThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →\nThe Ordinary Multi-Peptide + HA Serum →\nPeptides A–Z →\nHow to read our sources →",
+      "firstViewport": [
+        {
+          "text": "Overview",
+          "y": 174
+        },
+        {
+          "text": "Products",
+          "y": 174
+        },
+        {
+          "text": "Comparisons",
+          "y": 174
+        },
+        {
+          "text": "Ingredients",
+          "y": 174
+        },
+        {
+          "text": "Guides",
+          "y": 174
+        },
+        {
+          "text": "Identify my serum",
+          "y": 226
+        },
+        {
+          "text": "Choose by my question",
+          "y": 226
+        },
+        {
+          "text": "Price calculator",
+          "y": 226
+        },
+        {
+          "text": "← Back to Products",
+          "y": 270
+        },
+        {
+          "text": "Home",
+          "y": 357
+        },
+        {
+          "text": "Skin & cosmetics",
+          "y": 359
+        },
+        {
+          "text": "Products",
+          "y": 359
+        },
+        {
+          "text": "NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+          "y": 359
+        }
+      ],
+      "links": [
+        {
+          "text": "Overview",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Products",
+          "href": "/skincare/products/"
+        },
+        {
+          "text": "Comparisons",
+          "href": "/compare/"
+        },
+        {
+          "text": "Ingredients",
+          "href": "/skincare/ingredients/"
+        },
+        {
+          "text": "Guides",
+          "href": "/skincare/guides/"
+        },
+        {
+          "text": "Identify my serum",
+          "href": "/skincare/identify/"
+        },
+        {
+          "text": "Choose by my question",
+          "href": "/skincare/choose/"
+        },
+        {
+          "text": "Price calculator",
+          "href": "/tools/price-per-ml/"
+        },
+        {
+          "text": "← Back to Products",
+          "href": "/skincare/products/"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Skin & cosmetics",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Products",
+          "href": "/skincare/products/"
+        },
+        {
+          "text": "NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+          "href": "/skincare/products/niod-cais3/"
+        },
+        {
+          "text": "View product identification record",
+          "href": "/images/products/records/niod-cais3.svg"
+        },
+        {
+          "text": "Visit NIOD",
+          "href": "https://niod.com/en-us/copper-amino-isolate-serum-3-11-cais3-serum-100368.html"
+        },
+        {
+          "text": "Price source",
+          "href": "https://niod.com/en-us/copper-amino-isolate-serum-3-11-cais3-serum-100368.html"
+        },
+        {
+          "text": "Check price at NIOD",
+          "href": "https://niod.com/en-us/copper-amino-isolate-serum-3-11-cais3-serum-100368.html"
+        },
+        {
+          "text": "Price source",
+          "href": "https://www.sephora.com/product/copper-amino-isolate-serum-3-P526855?skuId=3030715"
+        },
+        {
+          "text": "Check price at Sephora US",
+          "href": "https://www.sephora.com/product/copper-amino-isolate-serum-3-P526855?skuId=3030715"
+        },
+        {
+          "text": "Tripeptide-29",
+          "href": "/skincare/ingredients/tripeptide-29/"
+        },
+        {
+          "text": "Tripeptide-1 Copper Acetate",
+          "href": "/skincare/ingredients/tripeptide-1-copper-acetate/"
+        },
+        {
+          "text": "Tripeptide-1 Acetate",
+          "href": "/skincare/ingredients/tripeptide-1-acetate/"
+        },
+        {
+          "text": "Acetyl Tetrapeptide-2",
+          "href": "/skincare/ingredients/acetyl-tetrapeptide-2/"
+        },
+        {
+          "text": "CAIS3 US product label",
+          "href": "https://niod.com/en-us/copper-amino-isolate-serum-3-11-cais3-serum-100368.html"
+        },
+        {
+          "text": "Add to compare",
+          "href": "/compare/?a=niod-cais3"
+        },
+        {
+          "text": "Editorial draftNIOD CAIS3 vs. The Ordinary copper peptide serumAre these copper serums interchangeable, and what differences can I actually verify?Read the comparison",
+          "href": "/compare/niod-cais3-vs-the-ordinary/"
+        },
+        {
+          "text": "Editorial draftMatrixyl 3000 vs Matrixyl synthe’6: what the names meanCompare the peptide names behind Matrixyl 3000 and synthe’6, learn how to read a serum label, and understand what the names cannot tell you.Read the guide",
+          "href": "/skincare/guides/matrixyl-3000-vs-synthe6/"
+        },
+        {
+          "text": "Editorial draftWhat peptide percentages on serum labels actually tell youLearn the difference between a peptide, a commercial blend and a finished serum, with examples and a clearly hypothetical concentration calculation.Read the guide",
+          "href": "/skincare/guides/peptide-percentages-explained/"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-niod"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-niod"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-niod"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-niod"
+        },
+        {
+          "text": "Read the documentation methodology →",
+          "href": "/methodology/#documentation-states"
+        },
+        {
+          "text": "The Ordinary Multi-Peptide + Copper Peptides 1% Serum →",
+          "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+        },
+        {
+          "text": "The Ordinary Multi-Peptide + HA Serum →",
+          "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+        },
+        {
+          "text": "Peptides A–Z →",
+          "href": "/peptides/"
+        },
+        {
+          "text": "How to read our sources →",
+          "href": "/methodology/"
+        }
+      ],
+      "related": [
+        "Keep exploringThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →The Ordinary Multi-Peptide + HA Serum →Peptides A–Z →How to read our sources →"
+      ]
+    },
+    {
+      "name": "product",
+      "path": "/skincare/products/niod-cais3/",
+      "width": 390,
+      "status": 200,
+      "title": "NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3) | Peptivelo",
+      "h1": ["NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)"],
+      "overflow": false,
+      "initialText": "Skin & cosmetics\nOverview\nProducts\nComparisons\nIngredients\nGuides\nIdentify my serum\nChoose by my question\nPrice calculator\n← Back to Products\nHome\n/ Skin & Cosmetics\n/ Products\n/ NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)\nPEPTIVELO / SKIN & COSMETICS\nNIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)\n\nA copper peptide cosmetic serum. The manufacturer lists 15 mL and 30 mL options; this record describes the 30 mL size.\n\nView product identification record\n\nPeptivelo identification record. Not a packaging photograph or manufacturer endorsement.\n\nNIOD · WATER-BASED SERUM\n30 mL · US label\nLabel checked\n2026-10-20\n$93.00\n\n$3.10 / mL · $91.68 / US fl oz\n\nObserved 2026-10-20 · Stock not verified · USD, excluding tax and shipping\n\nVisit NIOD\n\nNo affiliate partnerships are active. Manufacturer and store links are ordinary links; we do not earn commissions from them. Recorded prices exclude tax and shipping and may have changed.\n\nSAME PRODUCT · DIFFERENT STORES\nWhere to buy\n\nCompare recorded offers for this 30 mL presentation. Stores handle payment, order support and fulfilment. Peptivelo does not sell or ship products.\n\nDelivery destination\nUnited States — contiguous states\nUnited Kingdom\nCanada\nPeru\nSort offers\nStore name\nRecorded product price\nEstimated product + shipping\nShortest complete delivery estimate\nRecorded price per mL\nUpdate offers\n\n2 stores recorded · USD · No currency conversion. This is limited coverage, not a complete market survey.\n\nNIOD\n30 mL · USD\n\nStock not confirmed\n\nRecorded price\n$93.00\n$3.10/mL · product only\nStandard shipping\nCost not confirmed\nFor the stated checkout conditions\nProduct + shipping\nTotal not confirmed\nBefore tax, duties or other charges\nOrder-to-delivery estimate\nDelivery estimate not confirmed\nNo destination-specific timing recorded.\n\nPrice observed 2026-10-20 (UTC). Dated snapshot; confirm at checkout.\n\nPrice source\nCheck price at NIOD\nOrdinary link · no commission\nSephora US\n1 oz / 30 mL · USD\n\nStock not confirmed\n\nRecorded price\n$93.00\n$3.10/mL · product only\nStandard shipping\nCost not confirmed\nFor the stated checkout conditions\nProduct + shipping\nTotal not confirmed\nBefore tax, duties or other charges\nOrder-to-delivery estimate\nDelivery estimate not confirmed\nNo destination-specific timing recorded.\n\nPrice observed 2026-10-22 (UTC). Dated snapshot; confirm at checkout.\n\nPrice source\nCheck price at Sephora US\nOrdinary link · no commission\n\nDelivery policies describe estimates, not measured delivery performance or guarantees from Peptivelo. Your address, processing time, stock, holidays and checkout conditions can change the result. Commercial relationships do not determine the order above.\n\nSelected label ingredients\n\nSelected label ingredients, not the complete INCI list. Exact names are preserved without assuming chemical equivalence.\n\nTripeptide-29\nTripeptide-1 Copper Acetate\nTripeptide-1 Acetate\nAcetyl Tetrapeptide-2\nTripeptide-29\nTripeptide-1 Copper Acetate\nTripeptide-1 Acetate\nAcetyl Tetrapeptide-2\nDisclosures & limitations\n\nThe manufacturer describes 1% GHK-Cu and 1% GHK. These are brand disclosures, not independently assayed concentrations.\n\nOfficial US 30 mL price observed after selecting 30 mL on 2026-10-20: USD 93. Excludes tax and shipping; dated observation, not a live price or performance ranking.\n\nNo comparative clinical effectiveness has been established by this profile.\n\nCAIS3 US product label\nNIOD · Manufacturer / supplier information · Accessed 2026-10-20\nCompare this product\nAdd to compare\nBUYING QUESTIONS, EXPLAINED\nStart with the difference you want to understand.\n\nSource-linked drafts. Human editorial review is pending.\n\nEditorial draft\nNIOD CAIS3 vs. The Ordinary copper peptide serum\n\nAre these copper serums interchangeable, and what differences can I actually verify?\n\nRead the comparison\nUNDERSTAND THE LABEL\nMake sense of the names and numbers.\nEditorial draft\nMatrixyl 3000 vs Matrixyl synthe’6: what the names mean\n\nCompare the peptide names behind Matrixyl 3000 and synthe’6, learn how to read a serum label, and understand what the names cannot tell you.\n\nRead the guide\nEditorial draft\nWhat peptide percentages on serum labels actually tell you\n\nLearn the difference between a peptide, a commercial blend and a finished serum, with examples and a clearly hypothetical concentration calculation.\n\nRead the guide\nTransparency Profile\nRecorded documentation and review status · No score\nKeep exploring\nThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →\nThe Ordinary Multi-Peptide + HA Serum →\nPeptides A–Z →\nHow to read our sources →",
+      "expandedText": "Skin & cosmetics\nOverview\nProducts\nComparisons\nIngredients\nGuides\nIdentify my serum\nChoose by my question\nPrice calculator\n← Back to Products\nHome\n/ Skin & Cosmetics\n/ Products\n/ NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)\nPEPTIVELO / SKIN & COSMETICS\nNIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)\n\nA copper peptide cosmetic serum. The manufacturer lists 15 mL and 30 mL options; this record describes the 30 mL size.\n\nView product identification record\n\nPeptivelo identification record. Not a packaging photograph or manufacturer endorsement.\n\nNIOD · WATER-BASED SERUM\n30 mL · US label\nLabel checked\n2026-10-20\n$93.00\n\n$3.10 / mL · $91.68 / US fl oz\n\nObserved 2026-10-20 · Stock not verified · USD, excluding tax and shipping\n\nVisit NIOD\n\nNo affiliate partnerships are active. Manufacturer and store links are ordinary links; we do not earn commissions from them. Recorded prices exclude tax and shipping and may have changed.\n\nSAME PRODUCT · DIFFERENT STORES\nWhere to buy\n\nCompare recorded offers for this 30 mL presentation. Stores handle payment, order support and fulfilment. Peptivelo does not sell or ship products.\n\nDelivery destination\nUnited States — contiguous states\nUnited Kingdom\nCanada\nPeru\nSort offers\nStore name\nRecorded product price\nEstimated product + shipping\nShortest complete delivery estimate\nRecorded price per mL\nUpdate offers\n\n2 stores recorded · USD · No currency conversion. This is limited coverage, not a complete market survey.\n\nNIOD\n30 mL · USD\n\nStock not confirmed\n\nRecorded price\n$93.00\n$3.10/mL · product only\nStandard shipping\nCost not confirmed\nFor the stated checkout conditions\nProduct + shipping\nTotal not confirmed\nBefore tax, duties or other charges\nOrder-to-delivery estimate\nDelivery estimate not confirmed\nNo destination-specific timing recorded.\n\nPrice observed 2026-10-20 (UTC). Dated snapshot; confirm at checkout.\n\nPrice source\nCheck price at NIOD\nOrdinary link · no commission\nSephora US\n1 oz / 30 mL · USD\n\nStock not confirmed\n\nRecorded price\n$93.00\n$3.10/mL · product only\nStandard shipping\nCost not confirmed\nFor the stated checkout conditions\nProduct + shipping\nTotal not confirmed\nBefore tax, duties or other charges\nOrder-to-delivery estimate\nDelivery estimate not confirmed\nNo destination-specific timing recorded.\n\nPrice observed 2026-10-22 (UTC). Dated snapshot; confirm at checkout.\n\nPrice source\nCheck price at Sephora US\nOrdinary link · no commission\n\nDelivery policies describe estimates, not measured delivery performance or guarantees from Peptivelo. Your address, processing time, stock, holidays and checkout conditions can change the result. Commercial relationships do not determine the order above.\n\nSelected label ingredients\n\nSelected label ingredients, not the complete INCI list. Exact names are preserved without assuming chemical equivalence.\n\nTripeptide-29\nTripeptide-1 Copper Acetate\nTripeptide-1 Acetate\nAcetyl Tetrapeptide-2\nTripeptide-29\nTripeptide-1 Copper Acetate\nTripeptide-1 Acetate\nAcetyl Tetrapeptide-2\nDisclosures & limitations\n\nThe manufacturer describes 1% GHK-Cu and 1% GHK. These are brand disclosures, not independently assayed concentrations.\n\nOfficial US 30 mL price observed after selecting 30 mL on 2026-10-20: USD 93. Excludes tax and shipping; dated observation, not a live price or performance ranking.\n\nNo comparative clinical effectiveness has been established by this profile.\n\nCAIS3 US product label\nNIOD · Manufacturer / supplier information · Accessed 2026-10-20\nCompare this product\nAdd to compare\nBUYING QUESTIONS, EXPLAINED\nStart with the difference you want to understand.\n\nSource-linked drafts. Human editorial review is pending.\n\nEditorial draft\nNIOD CAIS3 vs. The Ordinary copper peptide serum\n\nAre these copper serums interchangeable, and what differences can I actually verify?\n\nRead the comparison\nUNDERSTAND THE LABEL\nMake sense of the names and numbers.\nEditorial draft\nMatrixyl 3000 vs Matrixyl synthe’6: what the names mean\n\nCompare the peptide names behind Matrixyl 3000 and synthe’6, learn how to read a serum label, and understand what the names cannot tell you.\n\nRead the guide\nEditorial draft\nWhat peptide percentages on serum labels actually tell you\n\nLearn the difference between a peptide, a commercial blend and a finished serum, with examples and a clearly hypothetical concentration calculation.\n\nRead the guide\nTransparency Profile\nRecorded documentation and review status · No score\n\nThese states describe our documentation, not a product’s effectiveness or safety. A source check records what the cited material says on the date shown.\n\nSource trail\nDocumented in cited sources\n\nReferences are recorded for this document. Their dates and access limits are shown individually; they are not independent product tests.\n\nSource 1\nProduct identity & ingredient coverage\nDocumented in cited sources\n\nCopper Amino Isolate Serum 3 1:1 (CAIS3) · 30 mL. Selected label ingredients, not the complete INCI list. Exact names are preserved without assuming chemical equivalence.\n\nRecorded check / observation: 2026-10-20\nSource 1\nConcentration disclosure\nDocumented in cited sources\n\nThe manufacturer describes 1% GHK-Cu and 1% GHK. These are brand disclosures, not independently assayed concentrations.\n\nRecorded check / observation: 2026-10-20\nSource 1\nPrice observation\nDocumented in cited sources\n\n93 USD for 30 ml. Dated US observation, excluding tax and shipping; current stock is not verified.\n\nRecorded check / observation: 2026-10-20\nSource 1\nEditorial review\nNot reviewed\n\nNo current-version human editorial approval is recorded. Source checks and publication labels do not supply that approval.\n\nScientific review\nNot reviewed\n\nNo qualified scientific approval is recorded for this version. This profile does not establish efficacy, safety or clinical quality.\n\nRead the documentation methodology →\nKeep exploring\nThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →\nThe Ordinary Multi-Peptide + HA Serum →\nPeptides A–Z →\nHow to read our sources →",
+      "firstViewport": [
+        {
+          "text": "Overview",
+          "y": 184
+        },
+        {
+          "text": "Products",
+          "y": 184
+        },
+        {
+          "text": "Comparisons",
+          "y": 184
+        },
+        {
+          "text": "Ingredients",
+          "y": 232
+        },
+        {
+          "text": "Guides",
+          "y": 232
+        },
+        {
+          "text": "Identify my serum",
+          "y": 284
+        },
+        {
+          "text": "Choose by my question",
+          "y": 284
+        },
+        {
+          "text": "Price calculator",
+          "y": 336
+        },
+        {
+          "text": "← Back to Products",
+          "y": 380
+        },
+        {
+          "text": "Home",
+          "y": 461
+        },
+        {
+          "text": "Skin & cosmetics",
+          "y": 463
+        },
+        {
+          "text": "Products",
+          "y": 463
+        },
+        {
+          "text": "NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+          "y": 490
+        }
+      ],
+      "links": [
+        {
+          "text": "Overview",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Products",
+          "href": "/skincare/products/"
+        },
+        {
+          "text": "Comparisons",
+          "href": "/compare/"
+        },
+        {
+          "text": "Ingredients",
+          "href": "/skincare/ingredients/"
+        },
+        {
+          "text": "Guides",
+          "href": "/skincare/guides/"
+        },
+        {
+          "text": "Identify my serum",
+          "href": "/skincare/identify/"
+        },
+        {
+          "text": "Choose by my question",
+          "href": "/skincare/choose/"
+        },
+        {
+          "text": "Price calculator",
+          "href": "/tools/price-per-ml/"
+        },
+        {
+          "text": "← Back to Products",
+          "href": "/skincare/products/"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Skin & cosmetics",
+          "href": "/skincare/"
+        },
+        {
+          "text": "Products",
+          "href": "/skincare/products/"
+        },
+        {
+          "text": "NIOD Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+          "href": "/skincare/products/niod-cais3/"
+        },
+        {
+          "text": "View product identification record",
+          "href": "/images/products/records/niod-cais3.svg"
+        },
+        {
+          "text": "Visit NIOD",
+          "href": "https://niod.com/en-us/copper-amino-isolate-serum-3-11-cais3-serum-100368.html"
+        },
+        {
+          "text": "Price source",
+          "href": "https://niod.com/en-us/copper-amino-isolate-serum-3-11-cais3-serum-100368.html"
+        },
+        {
+          "text": "Check price at NIOD",
+          "href": "https://niod.com/en-us/copper-amino-isolate-serum-3-11-cais3-serum-100368.html"
+        },
+        {
+          "text": "Price source",
+          "href": "https://www.sephora.com/product/copper-amino-isolate-serum-3-P526855?skuId=3030715"
+        },
+        {
+          "text": "Check price at Sephora US",
+          "href": "https://www.sephora.com/product/copper-amino-isolate-serum-3-P526855?skuId=3030715"
+        },
+        {
+          "text": "Tripeptide-29",
+          "href": "/skincare/ingredients/tripeptide-29/"
+        },
+        {
+          "text": "Tripeptide-1 Copper Acetate",
+          "href": "/skincare/ingredients/tripeptide-1-copper-acetate/"
+        },
+        {
+          "text": "Tripeptide-1 Acetate",
+          "href": "/skincare/ingredients/tripeptide-1-acetate/"
+        },
+        {
+          "text": "Acetyl Tetrapeptide-2",
+          "href": "/skincare/ingredients/acetyl-tetrapeptide-2/"
+        },
+        {
+          "text": "CAIS3 US product label",
+          "href": "https://niod.com/en-us/copper-amino-isolate-serum-3-11-cais3-serum-100368.html"
+        },
+        {
+          "text": "Add to compare",
+          "href": "/compare/?a=niod-cais3"
+        },
+        {
+          "text": "Editorial draftNIOD CAIS3 vs. The Ordinary copper peptide serumAre these copper serums interchangeable, and what differences can I actually verify?Read the comparison",
+          "href": "/compare/niod-cais3-vs-the-ordinary/"
+        },
+        {
+          "text": "Editorial draftMatrixyl 3000 vs Matrixyl synthe’6: what the names meanCompare the peptide names behind Matrixyl 3000 and synthe’6, learn how to read a serum label, and understand what the names cannot tell you.Read the guide",
+          "href": "/skincare/guides/matrixyl-3000-vs-synthe6/"
+        },
+        {
+          "text": "Editorial draftWhat peptide percentages on serum labels actually tell youLearn the difference between a peptide, a commercial blend and a finished serum, with examples and a clearly hypothetical concentration calculation.Read the guide",
+          "href": "/skincare/guides/peptide-percentages-explained/"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-niod"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-niod"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-niod"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-niod"
+        },
+        {
+          "text": "Read the documentation methodology →",
+          "href": "/methodology/#documentation-states"
+        },
+        {
+          "text": "The Ordinary Multi-Peptide + Copper Peptides 1% Serum →",
+          "href": "/skincare/products/the-ordinary-multi-peptide-copper/"
+        },
+        {
+          "text": "The Ordinary Multi-Peptide + HA Serum →",
+          "href": "/skincare/products/the-ordinary-multi-peptide-ha/"
+        },
+        {
+          "text": "Peptides A–Z →",
+          "href": "/peptides/"
+        },
+        {
+          "text": "How to read our sources →",
+          "href": "/methodology/"
+        }
+      ],
+      "related": [
+        "Keep exploringThe Ordinary Multi-Peptide + Copper Peptides 1% Serum →The Ordinary Multi-Peptide + HA Serum →Peptides A–Z →How to read our sources →"
+      ]
+    },
+    {
+      "name": "research",
+      "path": "/library/bpc-157/",
+      "width": 1280,
+      "status": 200,
+      "title": "BPC-157: what a small human pilot can tell us | Peptivelo",
+      "h1": ["BPC-157: what a small human pilot can tell us"],
+      "overflow": false,
+      "initialText": "Health & research\nOverview\nHome\n/\nHealth & Research\n/ BPC-157\n← Back to Health & research\n← Health & research\nRESEARCH BRIEF · EDITORIAL DRAFT\nBPC-157: what a small human pilot can tell us\n\nRead a two-person pilot in context, alongside FDA safety uncertainties.\n\nSource consultation dates are recorded with each reference · US context · Human editorial and scientific review pending\n\nThe short answer\n\nA published human pilot is not proof that BPC-157 is generally safe or heals injuries. The pilot reviewed here observed two people over three days; FDA separately identifies important safety uncertainties.[1][2]\n\nWhat did the pilot observe?\n+\nWhat does that leave unanswered?\n+\nWhat does FDA flag?\n+\n\nNo retail vial, purity certificate or treatment protocol is evaluated here. Scientific and human editorial review remain pending.\n\nReferences and access limits\nStudy design, commercial context and what was inspected\n+\nExplore health & research →\nTransparency Profile\nRecorded documentation and review status · No score\nKeep exploring\nRetatrutide: human research and US status →\nPeptides A–Z →\nHow to read our sources →",
+      "expandedText": "Health & research\nOverview\nHome\n/\nHealth & Research\n/ BPC-157\n← Back to Health & research\n← Health & research\nRESEARCH BRIEF · EDITORIAL DRAFT\nBPC-157: what a small human pilot can tell us\n\nRead a two-person pilot in context, alongside FDA safety uncertainties.\n\nSource consultation dates are recorded with each reference · US context · Human editorial and scientific review pending\n\nThe short answer\n\nA published human pilot is not proof that BPC-157 is generally safe or heals injuries. The pilot reviewed here observed two people over three days; FDA separately identifies important safety uncertainties.[1][2]\n\nWhat did the pilot observe?\n+\n\nThe 2025 intravenous pilot included two participants who had previously received BPC-157. The authors reported no adverse effects or measurable changes in the tested biomarkers during the short observation.[1]\n\nWhat does that leave unanswered?\n+\n\nAn uncontrolled two-person pilot cannot estimate uncommon harms or establish long-term safety. It did not demonstrate healing of tendons, muscles or gastrointestinal disease. This brief is not an inventory of all human research.[1]\n\nWhat does FDA flag?\n+\n\nFDA identifies limited safety information and potential immune-response and peptide-impurity concerns for proposed uses. These uncertainties do not prove a particular injury will occur, but they prevent a blanket safety assurance.[2]\n\nNo retail vial, purity certificate or treatment protocol is evaluated here. Scientific and human editorial review remain pending.\n\nReferences and access limits\nStudy design, commercial context and what was inspected\n+\nHuman pilot study\n\nLee E, Burgess K 2025. Alternative Therapies in Health and Medicine 31(5):20–24.\n\nSafety of Intravenous Infusion of BPC157 in Humans: A Pilot Study\n\nAlternative Therapies in Health and Medicine / PubMed · Reference checked 2026-10-20\n\nEvidence and limitations for reference 1\nWhat was studied\nUncontrolled intravenous pilot, two previously exposed participants; measurements over three days.\nWhat was reported\nAuthors reported no adverse effects or measurable changes in the tested biomarkers.\nWhat this supports here\nShort observations in two participants, not established clinical benefit.\nWhat it cannot establish\nNo control group, tiny selected sample and short observation; cannot establish general or long-term safety or injury healing.\nCommercial context and disclosures\nPrivate Florida clinic setting. Funding and conflicts were not verified from full text.\nWhat we inspected\nPubMed abstract inspected; full article not inspected.\n↩ 1\n↩ 2\n↩ 3\nRegulatory guidance\nCompounding substances that may present significant safety risks\n\nUS FDA · Reference checked 2026-10-20\n\nEvidence and limitations for reference 2\nWhat this supports here\nThe US regulator’s stated distinction or risk communication at the inspection date.\nWhat it cannot establish\nNot a new clinical trial or a complete literature review. Regulatory statements have a jurisdiction, date and specific scope; absence of established safety is not proof of a particular injury.\nCommercial context and disclosures\nUS government regulator; not a retailer.\nWhat we inspected\nPublic source text inspected; underlying clinical dossiers not independently reanalysed.\n↩ 1\n↩ 2\nExplore health & research →\nTransparency Profile\nRecorded documentation and review status · No score\n\nThese states describe our documentation, not a product’s effectiveness or safety. A source check records what the cited material says on the date shown.\n\nSource trail\nDocumented in cited sources\n\nReferences are recorded for this document. Their dates and access limits are shown individually; they are not independent product tests.\n\nSource 1\nSource 2\nEditorial review\nNot reviewed\n\nNo current-version human editorial approval is recorded. Source checks and publication labels do not supply that approval.\n\nScientific review\nNot reviewed\n\nNo qualified scientific approval is recorded for this version. This profile does not establish efficacy, safety or clinical quality.\n\nRead the documentation methodology →\nKeep exploring\nRetatrutide: human research and US status →\nPeptides A–Z →\nHow to read our sources →",
+      "firstViewport": [
+        {
+          "text": "Overview",
+          "y": 174
+        },
+        {
+          "text": "Home",
+          "y": 218
+        },
+        {
+          "text": "Health & research",
+          "y": 218
+        },
+        {
+          "text": "← Back to Health & research",
+          "y": 262
+        },
+        {
+          "text": "← Health & research",
+          "y": 372
+        },
+        {
+          "text": "[1]",
+          "y": 791
+        },
+        {
+          "text": "[2]",
+          "y": 791
+        }
+      ],
+      "links": [
+        {
+          "text": "Overview",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Health & research",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "← Back to Health & research",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "← Health & research",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "[1]",
+          "href": "#library-reference-bpc-human-pilot"
+        },
+        {
+          "text": "[2]",
+          "href": "#library-reference-fda-research-peptides"
+        },
+        {
+          "text": "[1]",
+          "href": "#library-reference-bpc-human-pilot"
+        },
+        {
+          "text": "[1]",
+          "href": "#library-reference-bpc-human-pilot"
+        },
+        {
+          "text": "[2]",
+          "href": "#library-reference-fda-research-peptides"
+        },
+        {
+          "text": "Safety of Intravenous Infusion of BPC157 in Humans: A Pilot Study",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/40131143/"
+        },
+        {
+          "text": "↩ 1",
+          "href": "#library-cite-answer-bpc-human-pilot"
+        },
+        {
+          "text": "↩ 2",
+          "href": "#library-cite-section-0-bpc-human-pilot"
+        },
+        {
+          "text": "↩ 3",
+          "href": "#library-cite-section-1-bpc-human-pilot"
+        },
+        {
+          "text": "Compounding substances that may present significant safety risks",
+          "href": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
+        },
+        {
+          "text": "↩ 1",
+          "href": "#library-cite-answer-fda-research-peptides"
+        },
+        {
+          "text": "↩ 2",
+          "href": "#library-cite-section-2-fda-research-peptides"
+        },
+        {
+          "text": "Explore health & research →",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-bpc-human-pilot"
+        },
+        {
+          "text": "Source 2",
+          "href": "/sources/#source-fda-research-peptides"
+        },
+        {
+          "text": "Read the documentation methodology →",
+          "href": "/methodology/#documentation-states"
+        },
+        {
+          "text": "Retatrutide: human research and US status →",
+          "href": "/library/retatrutide/"
+        },
+        {
+          "text": "Peptides A–Z →",
+          "href": "/peptides/"
+        },
+        {
+          "text": "How to read our sources →",
+          "href": "/methodology/"
+        }
+      ],
+      "related": [
+        "Keep exploringRetatrutide: human research and US status →Peptides A–Z →How to read our sources →"
+      ]
+    },
+    {
+      "name": "research",
+      "path": "/library/bpc-157/",
+      "width": 390,
+      "status": 200,
+      "title": "BPC-157: what a small human pilot can tell us | Peptivelo",
+      "h1": ["BPC-157: what a small human pilot can tell us"],
+      "overflow": false,
+      "initialText": "Health & research\nOverview\nHome\n/\nHealth & Research\n/ BPC-157\n← Back to Health & research\n← Health & research\nRESEARCH BRIEF · EDITORIAL DRAFT\nBPC-157: what a small human pilot can tell us\n\nRead a two-person pilot in context, alongside FDA safety uncertainties.\n\nSource consultation dates are recorded with each reference · US context · Human editorial and scientific review pending\n\nThe short answer\n\nA published human pilot is not proof that BPC-157 is generally safe or heals injuries. The pilot reviewed here observed two people over three days; FDA separately identifies important safety uncertainties.[1][2]\n\nWhat did the pilot observe?\n+\nWhat does that leave unanswered?\n+\nWhat does FDA flag?\n+\n\nNo retail vial, purity certificate or treatment protocol is evaluated here. Scientific and human editorial review remain pending.\n\nReferences and access limits\nStudy design, commercial context and what was inspected\n+\nExplore health & research →\nTransparency Profile\nRecorded documentation and review status · No score\nKeep exploring\nRetatrutide: human research and US status →\nPeptides A–Z →\nHow to read our sources →",
+      "expandedText": "Health & research\nOverview\nHome\n/\nHealth & Research\n/ BPC-157\n← Back to Health & research\n← Health & research\nRESEARCH BRIEF · EDITORIAL DRAFT\nBPC-157: what a small human pilot can tell us\n\nRead a two-person pilot in context, alongside FDA safety uncertainties.\n\nSource consultation dates are recorded with each reference · US context · Human editorial and scientific review pending\n\nThe short answer\n\nA published human pilot is not proof that BPC-157 is generally safe or heals injuries. The pilot reviewed here observed two people over three days; FDA separately identifies important safety uncertainties.[1][2]\n\nWhat did the pilot observe?\n+\n\nThe 2025 intravenous pilot included two participants who had previously received BPC-157. The authors reported no adverse effects or measurable changes in the tested biomarkers during the short observation.[1]\n\nWhat does that leave unanswered?\n+\n\nAn uncontrolled two-person pilot cannot estimate uncommon harms or establish long-term safety. It did not demonstrate healing of tendons, muscles or gastrointestinal disease. This brief is not an inventory of all human research.[1]\n\nWhat does FDA flag?\n+\n\nFDA identifies limited safety information and potential immune-response and peptide-impurity concerns for proposed uses. These uncertainties do not prove a particular injury will occur, but they prevent a blanket safety assurance.[2]\n\nNo retail vial, purity certificate or treatment protocol is evaluated here. Scientific and human editorial review remain pending.\n\nReferences and access limits\nStudy design, commercial context and what was inspected\n+\nHuman pilot study\n\nLee E, Burgess K 2025. Alternative Therapies in Health and Medicine 31(5):20–24.\n\nSafety of Intravenous Infusion of BPC157 in Humans: A Pilot Study\n\nAlternative Therapies in Health and Medicine / PubMed · Reference checked 2026-10-20\n\nEvidence and limitations for reference 1\nWhat was studied\nUncontrolled intravenous pilot, two previously exposed participants; measurements over three days.\nWhat was reported\nAuthors reported no adverse effects or measurable changes in the tested biomarkers.\nWhat this supports here\nShort observations in two participants, not established clinical benefit.\nWhat it cannot establish\nNo control group, tiny selected sample and short observation; cannot establish general or long-term safety or injury healing.\nCommercial context and disclosures\nPrivate Florida clinic setting. Funding and conflicts were not verified from full text.\nWhat we inspected\nPubMed abstract inspected; full article not inspected.\n↩ 1\n↩ 2\n↩ 3\nRegulatory guidance\nCompounding substances that may present significant safety risks\n\nUS FDA · Reference checked 2026-10-20\n\nEvidence and limitations for reference 2\nWhat this supports here\nThe US regulator’s stated distinction or risk communication at the inspection date.\nWhat it cannot establish\nNot a new clinical trial or a complete literature review. Regulatory statements have a jurisdiction, date and specific scope; absence of established safety is not proof of a particular injury.\nCommercial context and disclosures\nUS government regulator; not a retailer.\nWhat we inspected\nPublic source text inspected; underlying clinical dossiers not independently reanalysed.\n↩ 1\n↩ 2\nExplore health & research →\nTransparency Profile\nRecorded documentation and review status · No score\n\nThese states describe our documentation, not a product’s effectiveness or safety. A source check records what the cited material says on the date shown.\n\nSource trail\nDocumented in cited sources\n\nReferences are recorded for this document. Their dates and access limits are shown individually; they are not independent product tests.\n\nSource 1\nSource 2\nEditorial review\nNot reviewed\n\nNo current-version human editorial approval is recorded. Source checks and publication labels do not supply that approval.\n\nScientific review\nNot reviewed\n\nNo qualified scientific approval is recorded for this version. This profile does not establish efficacy, safety or clinical quality.\n\nRead the documentation methodology →\nKeep exploring\nRetatrutide: human research and US status →\nPeptides A–Z →\nHow to read our sources →",
+      "firstViewport": [
+        {
+          "text": "Overview",
+          "y": 184
+        },
+        {
+          "text": "Home",
+          "y": 228
+        },
+        {
+          "text": "Health & research",
+          "y": 228
+        },
+        {
+          "text": "← Back to Health & research",
+          "y": 272
+        },
+        {
+          "text": "← Health & research",
+          "y": 358
+        }
+      ],
+      "links": [
+        {
+          "text": "Overview",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "Home",
+          "href": "/"
+        },
+        {
+          "text": "Health & research",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "← Back to Health & research",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "← Health & research",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "[1]",
+          "href": "#library-reference-bpc-human-pilot"
+        },
+        {
+          "text": "[2]",
+          "href": "#library-reference-fda-research-peptides"
+        },
+        {
+          "text": "[1]",
+          "href": "#library-reference-bpc-human-pilot"
+        },
+        {
+          "text": "[1]",
+          "href": "#library-reference-bpc-human-pilot"
+        },
+        {
+          "text": "[2]",
+          "href": "#library-reference-fda-research-peptides"
+        },
+        {
+          "text": "Safety of Intravenous Infusion of BPC157 in Humans: A Pilot Study",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/40131143/"
+        },
+        {
+          "text": "↩ 1",
+          "href": "#library-cite-answer-bpc-human-pilot"
+        },
+        {
+          "text": "↩ 2",
+          "href": "#library-cite-section-0-bpc-human-pilot"
+        },
+        {
+          "text": "↩ 3",
+          "href": "#library-cite-section-1-bpc-human-pilot"
+        },
+        {
+          "text": "Compounding substances that may present significant safety risks",
+          "href": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
+        },
+        {
+          "text": "↩ 1",
+          "href": "#library-cite-answer-fda-research-peptides"
+        },
+        {
+          "text": "↩ 2",
+          "href": "#library-cite-section-2-fda-research-peptides"
+        },
+        {
+          "text": "Explore health & research →",
+          "href": "/topics/health-research/"
+        },
+        {
+          "text": "Source 1",
+          "href": "/sources/#source-bpc-human-pilot"
+        },
+        {
+          "text": "Source 2",
+          "href": "/sources/#source-fda-research-peptides"
+        },
+        {
+          "text": "Read the documentation methodology →",
+          "href": "/methodology/#documentation-states"
+        },
+        {
+          "text": "Retatrutide: human research and US status →",
+          "href": "/library/retatrutide/"
+        },
+        {
+          "text": "Peptides A–Z →",
+          "href": "/peptides/"
+        },
+        {
+          "text": "How to read our sources →",
+          "href": "/methodology/"
+        }
+      ],
+      "related": [
+        "Keep exploringRetatrutide: human research and US status →Peptides A–Z →How to read our sources →"
+      ]
+    },
+    {
+      "scenario": "directory-empty-combination",
+      "text": "PEPTIDES A–Z\nFind a peptide or ingredient.\n\nBrowse ingredient profiles and research briefs alphabetically. Each entry shows its topic, format and review status. Profiles in different contexts remain separate.\n\nFilter by topic\nAll topics\nSkin & cosmetics\nHair & scalp\nHealth & research\nReading format\nAll formats\nIngredient profile\nResearch brief\nApply filters\n\n0 entries\n\nShare this view\nNo entries in this selection yet.\n\nChoose another format or topic. No empty profiles are generated.\n\nReset filters →"
+    },
+    {
+      "scenario": "product-to-ingredient-context",
+      "currentUrl": "http://127.0.0.1:3101/skincare/ingredients/tripeptide-29/",
+      "hasExplicitDiscoveryReturn": 0,
+      "nativeHistoryTested": false
+    }
+  ]
+}

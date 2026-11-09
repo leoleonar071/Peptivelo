@@ -5,6 +5,7 @@ import { haircare } from "./haircare";
 import { libraryArticles } from "./library";
 import { type TopicId } from "./site-navigation";
 import { isPublicTopicEntry } from "./content-topics";
+import { policyForPath } from "./publication-registry";
 export type ContentEntry = {
   id: string;
   href: string;
@@ -101,4 +102,9 @@ const existingContent: ContentEntry[] = [
     status: haircare.product.status,
   },
 ];
-export const contentNavigation = existingContent.filter(isPublicTopicEntry);
+export const contentNavigation = existingContent
+  .filter(isPublicTopicEntry)
+  .map((entry) => ({
+    ...entry,
+    status: policyForPath(entry.href)?.label ?? "Review pending",
+  }));

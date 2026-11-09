@@ -1,22 +1,24 @@
 # Internal research queue
 
-All 13 briefs are **planned**. Identity, primary-study and regulatory research for the new areas is **not started**. The names below are proposed search labels, including families and provisional terms: they are not 52 verified molecule identities, aliases, articles, recommendations or comparison options. Area placement is a planning hypothesis to verify during research.
+All 13 areas remain **planned for public navigation**. On 8 November 2026, an internal documentary batch was prepared for metabolism and appetite: an introduction, two form-specific profiles and a proposed retatrutide update. Source access and review limitations are recorded in `src/editorial/metabolism-batch.ts` and [the implementation report](../KNOWLEDGE_PLATFORM_IMPLEMENTATION.md). Human editorial and scientific approvals remain pending. Source work for the other 12 areas is not started.
 
-| Priority | Area | Proposed search labels | Existing material to reuse |
-| --- | --- | --- | --- |
-| 1 | Metabolism & appetite | GLP-1; GIP; semaglutide; tirzepatide; retatrutide | `library:retatrutide` |
-| 2 | Growth hormone signaling | GHRH; sermorelin; tesamorelin; ipamorelin; CJC-1295 | — |
-| 3 | Reproduction & sexual health | GnRH; kisspeptin-10; kisspeptin-54; oxytocin | — |
-| 4 | Brain & nervous system | Neuropeptide Y; orexin A; orexin B; neurotensin | — |
-| 5 | Pancreatic hormones | Insulin; amylin; somatostatin; pramlintide | — |
-| 6 | Digestive health | Gastrin; secretin; cholecystokinin; GLP-2 | — |
-| 7 | Immunity & antimicrobial peptides | LL-37; alpha-defensins; beta-defensins; thymosin alpha 1 | — |
-| 8 | Tissue repair research | BPC-157; thymosin beta 4; TB-500 (identity to verify separately) | `library:bpc-157` |
-| 9 | Pain & sensory signaling | Substance P; CGRP; Met-enkephalin; beta-endorphin | — |
-| 10 | Cardiovascular & fluid balance | Angiotensin II; bradykinin; vasopressin; ANP; BNP | — |
-| 11 | Bone & mineral metabolism | PTH; calcitonin; teriparatide; abaloparatide | — |
-| 12 | Mitochondrial peptides | MOTS-c; humanin; SHLP2 | — |
-| 13 | Food-derived peptides | IPP; VPP; identified hydrolysate sequences (to select) | — |
+The names below remain proposed search labels, including families and provisional terms: they are not 52 verified molecule identities, aliases, articles, recommendations or comparison options. Area placement is a planning hypothesis to verify during research.
+
+| Priority | Area                              | Proposed search labels                                           | Existing material to reuse |
+| -------- | --------------------------------- | ---------------------------------------------------------------- | -------------------------- |
+| 1        | Metabolism & appetite             | GLP-1; GIP; semaglutide; tirzepatide; retatrutide                | `library:retatrutide`      |
+| 2        | Growth hormone signaling          | GHRH; sermorelin; tesamorelin; ipamorelin; CJC-1295              | —                          |
+| 3        | Reproduction & sexual health      | GnRH; kisspeptin-10; kisspeptin-54; oxytocin                     | —                          |
+| 4        | Brain & nervous system            | Neuropeptide Y; orexin A; orexin B; neurotensin                  | —                          |
+| 5        | Pancreatic hormones               | Insulin; amylin; somatostatin; pramlintide                       | —                          |
+| 6        | Digestive health                  | Gastrin; secretin; cholecystokinin; GLP-2                        | —                          |
+| 7        | Immunity & antimicrobial peptides | LL-37; alpha-defensins; beta-defensins; thymosin alpha 1         | —                          |
+| 8        | Tissue repair research            | BPC-157; thymosin beta 4; TB-500 (identity to verify separately) | `library:bpc-157`          |
+| 9        | Pain & sensory signaling          | Substance P; CGRP; Met-enkephalin; beta-endorphin                | —                          |
+| 10       | Cardiovascular & fluid balance    | Angiotensin II; bradykinin; vasopressin; ANP; BNP                | —                          |
+| 11       | Bone & mineral metabolism         | PTH; calcitonin; teriparatide; abaloparatide                     | —                          |
+| 12       | Mitochondrial peptides            | MOTS-c; humanin; SHLP2                                           | —                          |
+| 13       | Food-derived peptides             | IPP; VPP; identified hydrolysate sequences (to select)           | —                          |
 
 For each brief, resolve:
 

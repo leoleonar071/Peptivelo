@@ -11,9 +11,12 @@ import {
   type QueryParams,
 } from "@/lib/exploration";
 import "../../styles/search-exploration.css";
+import { activeTopics } from "@/lib/topic-registry";
+import { SearchOutcome } from "@/components/discovery-events";
 export const metadata = {
   title: "Search Peptivelo",
   robots: { index: false, follow: true },
+  alternates: { canonical: "/search/" },
 };
 export default async function SearchPage({
   searchParams,
@@ -22,21 +25,43 @@ export default async function SearchPage({
 }) {
   const params = await searchParams;
   const query = queryValue(params, "q").slice(0, 200);
-  const model = resolveExploration(params);
+  const hasFilters = ["group", "topic", "format"].some(
+    (key) => !!queryValue(params, key),
+  );
+  const model =
+    queryValue(params, "entity") || !hasFilters
+      ? resolveExploration(params)
+      : null;
   const state = model ? explorationState(params, model) : null;
   const results = model ? [] : searchEntries(searchIndex, query);
   const rawPage = Number(queryValue(params, "page"));
   const category =
     searchCategories.find((c) => c === queryValue(params, "group")) ?? "";
+  const topic =
+    activeTopics.find((item) => item.id === queryValue(params, "topic"))?.id ??
+    "";
+  const requestedFormat = queryValue(params, "format");
+  const format = searchIndex.some((entry) => entry.format === requestedFormat)
+    ? requestedFormat
+    : "";
   return (
     <div
       className={`wrap universal-search-page ${model ? "exploration-page" : "compact-results-page"}`}
     >
+      <SearchOutcome
+        key={query}
+        active={!!query.trim()}
+        empty={!model && !results.length}
+      />
       <div className="explore-search-bar">
         <HeroSearch entries={searchIndex} initialQuery={query} />
       </div>
       {model && state ? (
-        <SearchExploration model={model} state={state} />
+        <SearchExploration
+          model={model}
+          state={state}
+          returnTo={queryValue(params, "returnTo")}
+        />
       ) : (
         <>
           <header className="compact-results-heading">
@@ -56,6 +81,8 @@ export default async function SearchPage({
               results={results}
               query={query}
               category={category}
+              topic={topic}
+              format={format}
               page={Number.isSafeInteger(rawPage) ? rawPage : 1}
             />
           ) : (

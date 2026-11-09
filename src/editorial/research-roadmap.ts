@@ -3,13 +3,13 @@ import type { TopicId } from "../lib/topic-registry";
 export type ResearchBrief = {
   topicId: TopicId;
   priority: number;
-  stage: "planned";
+  stage: "planned" | "draft-prepared";
   candidateLabels: readonly string[];
   existingContentIds: readonly string[];
   questions: readonly string[];
   sourceWork: readonly {
     kind: "identity" | "primary-studies" | "regulatory";
-    state: "not-started";
+    state: "not-started" | "inspected" | "partial";
   }[];
 };
 const questions = [
@@ -149,8 +149,15 @@ const plannedBriefs = [
 export const researchRoadmap: readonly ResearchBrief[] = plannedBriefs.map(
   (brief) => ({
     ...brief,
-    stage: "planned",
+    stage: brief.topicId === "metabolism" ? "draft-prepared" : "planned",
     questions,
-    sourceWork,
+    sourceWork:
+      brief.topicId === "metabolism"
+        ? [
+            { kind: "identity", state: "inspected" },
+            { kind: "primary-studies", state: "partial" },
+            { kind: "regulatory", state: "inspected" },
+          ]
+        : sourceWork,
   }),
 );

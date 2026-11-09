@@ -5,6 +5,7 @@ import { guides } from "./guides";
 import { evidence } from "./citations";
 import { normalize } from "./math";
 import { compatible } from "./exploration-navigation";
+import { isVisiblePath } from "./publication-registry";
 
 export type SourceLink = {
   id: string;
@@ -123,7 +124,10 @@ const hairProduct: ExplorationProduct = {
 };
 const pairExists = (a: string, b: string) =>
   catalog.comparisons.some(
-    (c) => c.comparedProductIds.includes(a) && c.comparedProductIds.includes(b),
+    (c) =>
+      isVisiblePath(`/compare/${c.slug}/`) &&
+      c.comparedProductIds.includes(a) &&
+      c.comparedProductIds.includes(b),
   );
 function finish(
   model: Omit<Exploration, "canCompare" | "products" | "related">,
@@ -182,7 +186,7 @@ function finish(
     .slice(0, 2);
   return { ...model, products: candidates, related, canCompare };
 }
-export function getExploration(id: string): Exploration | null {
+function getRecordedExploration(id: string): Exploration | null {
   const ingredient = catalog.ingredients.find(
     (i) => id === `skin:ingredient:${i.id}` && i.status === "published",
   );
@@ -245,8 +249,10 @@ export function getExploration(id: string): Exploration | null {
   }
   const product = products.find((p) => id === `skin:product:${p.id}`);
   if (product) {
-    const comparisons = catalog.comparisons.filter((c) =>
-      c.comparedProductIds.includes(product.id),
+    const comparisons = catalog.comparisons.filter(
+      (c) =>
+        isVisiblePath(`/compare/${c.slug}/`) &&
+        c.comparedProductIds.includes(product.id),
     );
     return finish(
       {
@@ -402,6 +408,15 @@ export function getExploration(id: string): Exploration | null {
       [],
     );
   return null;
+}
+export function getExploration(id: string): Exploration | null {
+  const model = getRecordedExploration(id);
+  return model && isVisiblePath(model.href)
+    ? {
+        ...model,
+        related: model.related.filter((entry) => isVisiblePath(entry.href)),
+      }
+    : null;
 }
 export function resolveExploration(params: QueryParams) {
   const selected = queryValue(params, "entity");

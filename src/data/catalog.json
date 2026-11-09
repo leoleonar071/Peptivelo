@@ -271,6 +271,14 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7840088/",
       "sourceType": "research",
       "accessedAt": "2026-10-20"
+    },
+    {
+      "id": "iupac-peptides",
+      "title": "IUPAC Gold Book: peptides",
+      "publisher": "IUPAC",
+      "url": "https://goldbook.iupac.org/terms/view/P04479",
+      "accessedAt": "2026-11-08",
+      "sourceType": "research"
     }
   ],
   "brands": [
@@ -343,29 +351,20 @@
         "summary": "A copper-linked peptide used to help keep skin in good condition.",
         "whatItIs": {
           "text": "A short peptide joined to copper. This is an ingredient name, not a quality score.",
-          "sourceIds": [
-            "cir-peptides"
-          ]
+          "sourceIds": ["cir-peptides"]
         },
         "purpose": {
           "text": "Used as a skin-conditioning ingredient: a broad cosmetic role concerned with skin condition and appearance.",
-          "sourceIds": [
-            "cir-peptides"
-          ]
+          "sourceIds": ["cir-peptides"]
         },
         "evidence": {
           "text": "The CIR assessment addresses specified cosmetic identities, uses and concentrations. It is a safety assessment, not a trial showing that a finished serum reduces wrinkles. A full topical efficacy review remains pending.",
-          "sourceIds": [
-            "cir-peptides"
-          ],
+          "sourceIds": ["cir-peptides"],
           "label": "Safety assessment"
         },
         "precautions": {
           "text": "Cosmetic safety conclusions do not extend to injection. FDA separately identifies limited human safety data and potential immune-response risks for compounded injectable GHK-Cu.",
-          "sourceIds": [
-            "cir-peptides",
-            "fda-research-peptides"
-          ]
+          "sourceIds": ["cir-peptides", "fda-research-peptides"]
         },
         "takeaway": "Its presence identifies a copper-peptide ingredient. It does not tell us the results you will get from the whole serum.",
         "sourceCheckedAt": "2026-10-20",
@@ -379,7 +378,7 @@
       "slug": "acetyl-hexapeptide-8",
       "ingredientCategory": "Cosmetic peptide",
       "description": "A peptide studied for the appearance of expression lines around the eyes.",
-      "knownLimitations": "There is human research on a preparation of this ingredient. That is different from a direct test of this serum.",
+      "knownLimitations": "There is human research on a preparation of this ingredient. That is different from a direct test of finished products containing this ingredient.",
       "sourceIds": [
         "ordinary",
         "argireline-trial",
@@ -392,31 +391,22 @@
         "summary": "A peptide studied for the appearance of expression lines around the eyes.",
         "whatItIs": {
           "text": "A synthetic peptide investigated under the name Argireline. The study concerns a specific preparation, not every product listing this ingredient.",
-          "sourceIds": [
-            "argireline-trial"
-          ]
+          "sourceIds": ["argireline-trial"]
         },
         "purpose": {
           "text": "Studied as a cosmetic ingredient for reducing the appearance of eye-area lines.",
-          "sourceIds": [
-            "argireline-trial"
-          ]
+          "sourceIds": ["argireline-trial"]
         },
         "evidence": {
           "text": "A four-week randomized placebo-controlled trial enrolled 60 Chinese participants (3:1 allocation) and reported improved eye-area wrinkle measures. The inspected abstract does not establish results for the retail serums here or long-term benefit. A 24-hour laboratory skin-penetration study is a different kind of evidence, not a clinical efficacy trial.",
-          "sourceIds": [
-            "argireline-trial",
-            "kraeling-penetration"
-          ],
+          "sourceIds": ["argireline-trial", "kraeling-penetration"],
           "label": "Ingredient study"
         },
         "precautions": {
           "text": "The 2025 safety panel concluded safe cosmetic use up to 0.005%; above that, it found insufficient data to determine safety. This is not evidence of harm above that amount. The pure-peptide concentrations in these compared serums are not verified, so this assessment cannot certify either bottle. A commercial blend percentage is not automatically the pure-peptide percentage.",
-          "sourceIds": [
-            "cir-acetyl"
-          ]
+          "sourceIds": ["cir-acetyl"]
         },
-        "takeaway": "There is human research on a preparation of this ingredient. That is different from a direct test of this serum.",
+        "takeaway": "There is human research on a preparation of this ingredient. That is different from a direct test of finished products containing this ingredient.",
         "sourceCheckedAt": "2026-10-20",
         "scientificReviewPending": true
       }
@@ -429,39 +419,26 @@
       "ingredientCategory": "Cosmetic peptide",
       "description": "A three-part peptide. The number 29 is an identifier, not its strength.",
       "knownLimitations": "29 does not mean stronger or better than a peptide numbered 1. The number distinguishes the ingredient.",
-      "sourceIds": [
-        "niod",
-        "pubchem-29",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["niod", "pubchem-29", "fda-cosmetic-reactions"],
       "status": "published",
       "education": {
         "summary": "A three-part peptide. The number 29 is an identifier, not its strength.",
         "whatItIs": {
           "text": "PubChem links this name to glycyl-prolyl-hydroxyproline, a chain of three amino-acid units.",
-          "sourceIds": [
-            "pubchem-29"
-          ]
+          "sourceIds": ["pubchem-29"]
         },
         "purpose": {
           "text": "NIOD lists it in its peptide blend, but does not isolate its individual contribution on the label.",
-          "sourceIds": [
-            "niod"
-          ]
+          "sourceIds": ["niod"]
         },
         "evidence": {
-          "text": "The recorded sources establish identity and label presence. They do not establish a separate visible benefit from this ingredient in this serum.",
-          "sourceIds": [
-            "pubchem-29",
-            "niod"
-          ],
+          "text": "The recorded sources establish identity and label presence. They do not establish a separate visible benefit from this ingredient in a finished product containing this ingredient.",
+          "sourceIds": ["pubchem-29", "niod"],
           "label": "Label information"
         },
         "precautions": {
           "text": "An ingredient-specific reaction rate is not established by the sources recorded here. Check the whole product, not just this name.",
-          "sourceIds": [
-            "niod"
-          ]
+          "sourceIds": ["niod"]
         },
         "takeaway": "29 does not mean stronger or better than a peptide numbered 1. The number distinguishes the ingredient.",
         "sourceCheckedAt": "2026-10-19",
@@ -487,28 +464,20 @@
         "summary": "A skin-conditioning peptide used in blends marketed for the appearance of wrinkles.",
         "whatItIs": {
           "text": "A peptide with three amino-acid units and an attached fatty-acid part. The added part distinguishes its ingredient name.",
-          "sourceIds": [
-            "cir-peptides"
-          ]
+          "sourceIds": ["cir-peptides"]
         },
         "purpose": {
-          "text": "Croda includes it in Matrixyl 3000, an ingredient blend marketed for wrinkle appearance. This does not confirm a branded blend or its dose in this serum.",
-          "sourceIds": [
-            "croda-matrixyl"
-          ]
+          "text": "Croda includes it in Matrixyl 3000, an ingredient blend marketed for wrinkle appearance. This does not confirm a branded blend or its dose in a finished product containing this ingredient.",
+          "sourceIds": ["croda-matrixyl"]
         },
         "evidence": {
           "text": "The supplier describes a blend, not an independent test of this ingredient alone in The Ordinary serum.",
-          "sourceIds": [
-            "croda-matrixyl"
-          ],
+          "sourceIds": ["croda-matrixyl"],
           "label": "Supplier description"
         },
         "precautions": {
           "text": "A safety review addresses reported cosmetic uses, not every possible formula or individual reaction.",
-          "sourceIds": [
-            "cir-peptides"
-          ]
+          "sourceIds": ["cir-peptides"]
         },
         "takeaway": "A peptide blend’s claims cannot be assigned to this ingredient alone or used to rank these two serums.",
         "sourceCheckedAt": "2026-10-19",
@@ -534,28 +503,20 @@
         "summary": "A skin-conditioning peptide used in blends marketed for the appearance of wrinkles.",
         "whatItIs": {
           "text": "A peptide with four amino-acid units and an attached fatty-acid part. The added part distinguishes its ingredient name.",
-          "sourceIds": [
-            "cir-peptides"
-          ]
+          "sourceIds": ["cir-peptides"]
         },
         "purpose": {
-          "text": "Croda includes it in Matrixyl 3000, an ingredient blend marketed for wrinkle appearance. This does not confirm a branded blend or its dose in this serum.",
-          "sourceIds": [
-            "croda-matrixyl"
-          ]
+          "text": "Croda includes it in Matrixyl 3000, an ingredient blend marketed for wrinkle appearance. This does not confirm a branded blend or its dose in a finished product containing this ingredient.",
+          "sourceIds": ["croda-matrixyl"]
         },
         "evidence": {
           "text": "The supplier describes a blend, not an independent test of this ingredient alone in The Ordinary serum.",
-          "sourceIds": [
-            "croda-matrixyl"
-          ],
+          "sourceIds": ["croda-matrixyl"],
           "label": "Supplier description"
         },
         "precautions": {
           "text": "A safety review addresses reported cosmetic uses, not every possible formula or individual reaction.",
-          "sourceIds": [
-            "cir-peptides"
-          ]
+          "sourceIds": ["cir-peptides"]
         },
         "takeaway": "A peptide blend’s claims cannot be assigned to this ingredient alone or used to rank these two serums.",
         "sourceCheckedAt": "2026-10-19",
@@ -570,37 +531,26 @@
       "ingredientCategory": "Copper peptide",
       "description": "A copper-containing peptide name on NIOD’s label; its wording differs from Copper Tripeptide-1. Chemical equivalence has not been established in this review.",
       "knownLimitations": "Different copper names are a label difference; they are not proof that one serum is better.",
-      "sourceIds": [
-        "niod",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["niod", "fda-cosmetic-reactions"],
       "status": "published",
       "education": {
         "summary": "A copper-containing peptide name on NIOD’s label; its wording differs from Copper Tripeptide-1. Chemical equivalence has not been established in this review.",
         "whatItIs": {
           "text": "This exact name appears on the NIOD ingredient list. We keep it separate from differently named copper forms.",
-          "sourceIds": [
-            "niod"
-          ]
+          "sourceIds": ["niod"]
         },
         "purpose": {
           "text": "NIOD markets its copper-peptide technology for the appearance of aging skin. That product claim does not isolate the benefit of this exact ingredient.",
-          "sourceIds": [
-            "niod"
-          ]
+          "sourceIds": ["niod"]
         },
         "evidence": {
           "text": "A manufacturer label and product description are recorded. No independent comparison of these two copper ingredient forms is established here.",
-          "sourceIds": [
-            "niod"
-          ],
+          "sourceIds": ["niod"],
           "label": "Label information"
         },
         "precautions": {
           "text": "No ingredient-specific reaction rate is recorded for this exact label name. Do not borrow a safety conclusion from a differently named copper form.",
-          "sourceIds": [
-            "niod"
-          ]
+          "sourceIds": ["niod"]
         },
         "takeaway": "Different copper names are a label difference; they are not proof that one serum is better.",
         "sourceCheckedAt": "2026-10-19",
@@ -615,37 +565,26 @@
       "ingredientCategory": "Cosmetic peptide",
       "description": "Another peptide form on NIOD’s label. Its name does not state how much is present.",
       "knownLimitations": "Do not read the ingredient name as an individual percentage or as evidence of a stronger product.",
-      "sourceIds": [
-        "niod",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["niod", "fda-cosmetic-reactions"],
       "status": "published",
       "education": {
         "summary": "Another peptide form on NIOD’s label. Its name does not state how much is present.",
         "whatItIs": {
           "text": "A distinct ingredient name recorded in NIOD’s formula, alongside its copper-containing peptide name.",
-          "sourceIds": [
-            "niod"
-          ]
+          "sourceIds": ["niod"]
         },
         "purpose": {
           "text": "The brand describes GHK alongside copper-peptide technology. The individual contribution of this exact label ingredient is not demonstrated in the recorded sources.",
-          "sourceIds": [
-            "niod"
-          ]
+          "sourceIds": ["niod"]
         },
         "evidence": {
-          "text": "The source is a manufacturer description, not a study isolating this ingredient in this serum.",
-          "sourceIds": [
-            "niod"
-          ],
+          "text": "The source is a manufacturer description, not a study isolating this ingredient in a finished product containing this ingredient.",
+          "sourceIds": ["niod"],
           "label": "Label information"
         },
         "precautions": {
           "text": "The recorded label does not establish an individual side-effect rate or a complete safety assessment for this exact form.",
-          "sourceIds": [
-            "niod"
-          ]
+          "sourceIds": ["niod"]
         },
         "takeaway": "Do not read the ingredient name as an individual percentage or as evidence of a stronger product.",
         "sourceCheckedAt": "2026-10-19",
@@ -671,29 +610,20 @@
         "summary": "A skin-conditioning peptide marketed by its supplier for firmer-looking skin.",
         "whatItIs": {
           "text": "Lubrizol identifies it in Uplevity peptide solution and in a sample cosmetic formula as a skin-conditioning ingredient.",
-          "sourceIds": [
-            "lubrizol-formulation"
-          ]
+          "sourceIds": ["lubrizol-formulation"]
         },
         "purpose": {
           "text": "Its supplier markets it for firmer-looking skin. A supplier’s intended use is different from a demonstrated result in NIOD’s serum.",
-          "sourceIds": [
-            "lubrizol-uplevity"
-          ]
+          "sourceIds": ["lubrizol-uplevity"]
         },
         "evidence": {
-          "text": "The recorded support is supplier information. It does not establish an independent, ingredient-only trial in this serum.",
-          "sourceIds": [
-            "lubrizol-uplevity",
-            "lubrizol-formulation"
-          ],
+          "text": "The recorded support is supplier information. It does not establish an independent, ingredient-only trial in a finished product containing this ingredient.",
+          "sourceIds": ["lubrizol-uplevity", "lubrizol-formulation"],
           "label": "Supplier description"
         },
         "precautions": {
           "text": "The supplier’s sample formula is not a tested commercial product. It does not establish the safety or reaction rate of NIOD’s finished serum.",
-          "sourceIds": [
-            "lubrizol-formulation"
-          ]
+          "sourceIds": ["lubrizol-formulation"]
         },
         "takeaway": "Firming is an intended cosmetic use described by the supplier, not a promised result for every product.",
         "sourceCheckedAt": "2026-10-19",
@@ -767,36 +697,25 @@
         "summary": "A peptide identified by the brand as part of TEGO PEP 4-17.",
         "whatItIs": {
           "text": "A distinct peptide listed on the Power Peptides label. The number 21 is an identifier, not a strength score.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "purpose": {
           "text": "Geek & Gorgeous describes it within a blend marketed for the appearance of skin firmness.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "evidence": {
           "text": "The recorded support is manufacturer information about labels and ingredient systems. It does not establish how well this ingredient alone works in these finished serums.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ],
+          "sourceIds": ["geek-power-peptides"],
           "label": "Label information"
         },
         "precautions": {
           "text": "An ingredient-specific side-effect rate is not established by these sources. Check the complete product label and follow its current instructions.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "takeaway": "Recognize the exact ingredient name, then consider the whole product. Neither its number nor a blend percentage tells us which serum will work better for you.",
         "sourceCheckedAt": "2026-10-19"
       },
-      "sourceIds": [
-        "geek-power-peptides",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["geek-power-peptides", "fda-cosmetic-reactions"],
       "status": "published"
     },
     {
@@ -811,36 +730,25 @@
         "summary": "A copper-containing peptide with a different name from Copper Tripeptide-1.",
         "whatItIs": {
           "text": "The Power Peptides label lists this exact name separately from Heptapeptide-15 Palmitate.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "purpose": {
           "text": "The brand describes it as part of its X50 Antiaging ingredient system. Its product description does not independently prove better delivery or visible outcomes.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "evidence": {
           "text": "The recorded support is manufacturer information about labels and ingredient systems. It does not establish how well this ingredient alone works in these finished serums.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ],
+          "sourceIds": ["geek-power-peptides"],
           "label": "Label information"
         },
         "precautions": {
           "text": "An ingredient-specific side-effect rate is not established by these sources. Check the complete product label and follow its current instructions.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "takeaway": "Recognize the exact ingredient name, then consider the whole product. Neither its number nor a blend percentage tells us which serum will work better for you.",
         "sourceCheckedAt": "2026-10-19"
       },
-      "sourceIds": [
-        "geek-power-peptides",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["geek-power-peptides", "fda-cosmetic-reactions"],
       "status": "published"
     },
     {
@@ -855,36 +763,25 @@
         "summary": "A separately named peptide used alongside a copper-containing ingredient in Power Peptides.",
         "whatItIs": {
           "text": "A distinct name on the Power Peptides ingredient list; it is not Copper Tripeptide-1.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "purpose": {
           "text": "The brand describes a role in its X50 ingredient system. That is a manufacturer explanation, not an independent test of this peptide alone.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "evidence": {
           "text": "The recorded support is manufacturer information about labels and ingredient systems. It does not establish how well this ingredient alone works in these finished serums.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ],
+          "sourceIds": ["geek-power-peptides"],
           "label": "Label information"
         },
         "precautions": {
           "text": "An ingredient-specific side-effect rate is not established by these sources. Check the complete product label and follow its current instructions.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         "takeaway": "Recognize the exact ingredient name, then consider the whole product. Neither its number nor a blend percentage tells us which serum will work better for you.",
         "sourceCheckedAt": "2026-10-19"
       },
-      "sourceIds": [
-        "geek-power-peptides",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["geek-power-peptides", "fda-cosmetic-reactions"],
       "status": "published"
     },
     {
@@ -899,31 +796,20 @@
         "summary": "A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.",
         "whatItIs": {
           "text": "An exact ingredient name from the linked label. Its number is part of its identity, not a quality score.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["naturium-multi-peptide", "medik8-liquid-peptides"]
         },
         "purpose": {
           "text": "The manufacturer includes this ingredient in a peptide skincare formula. The label alone does not show what this ingredient contributes by itself.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["naturium-multi-peptide", "medik8-liquid-peptides"]
         },
         "evidence": {
           "text": "The recorded evidence is label information. No independent test of this ingredient in these finished serums is established here.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "medik8-liquid-peptides"
-          ],
+          "sourceIds": ["naturium-multi-peptide", "medik8-liquid-peptides"],
           "label": "Label information"
         },
         "precautions": {
           "text": "A label entry cannot tell us how often this ingredient causes a reaction. Follow the complete product directions; irritation can involve other ingredients too.",
-          "sourceIds": [
-            "fda-cosmetic-reactions"
-          ]
+          "sourceIds": ["fda-cosmetic-reactions"]
         },
         "takeaway": "Use this name to recognize the ingredient across labels. Judge the finished product with its directions and evidence, rather than its peptide count.",
         "sourceCheckedAt": "2026-10-19"
@@ -947,36 +833,25 @@
         "summary": "A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.",
         "whatItIs": {
           "text": "An exact ingredient name from the linked label. Its number is part of its identity, not a quality score.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["medik8-liquid-peptides"]
         },
         "purpose": {
           "text": "The manufacturer includes this ingredient in a peptide skincare formula. The label alone does not show what this ingredient contributes by itself.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["medik8-liquid-peptides"]
         },
         "evidence": {
           "text": "The recorded evidence is label information. No independent test of this ingredient in these finished serums is established here.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ],
+          "sourceIds": ["medik8-liquid-peptides"],
           "label": "Label information"
         },
         "precautions": {
           "text": "A label entry cannot tell us how often this ingredient causes a reaction. Follow the complete product directions; irritation can involve other ingredients too.",
-          "sourceIds": [
-            "fda-cosmetic-reactions"
-          ]
+          "sourceIds": ["fda-cosmetic-reactions"]
         },
         "takeaway": "Use this name to recognize the ingredient across labels. Judge the finished product with its directions and evidence, rather than its peptide count.",
         "sourceCheckedAt": "2026-10-19"
       },
-      "sourceIds": [
-        "medik8-liquid-peptides",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["medik8-liquid-peptides", "fda-cosmetic-reactions"],
       "status": "published"
     },
     {
@@ -991,36 +866,25 @@
         "summary": "A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.",
         "whatItIs": {
           "text": "An exact ingredient name from the linked label. Its number is part of its identity, not a quality score.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["medik8-liquid-peptides"]
         },
         "purpose": {
           "text": "The manufacturer includes this ingredient in a peptide skincare formula. The label alone does not show what this ingredient contributes by itself.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["medik8-liquid-peptides"]
         },
         "evidence": {
           "text": "The recorded evidence is label information. No independent test of this ingredient in these finished serums is established here.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ],
+          "sourceIds": ["medik8-liquid-peptides"],
           "label": "Label information"
         },
         "precautions": {
           "text": "A label entry cannot tell us how often this ingredient causes a reaction. Follow the complete product directions; irritation can involve other ingredients too.",
-          "sourceIds": [
-            "fda-cosmetic-reactions"
-          ]
+          "sourceIds": ["fda-cosmetic-reactions"]
         },
         "takeaway": "Use this name to recognize the ingredient across labels. Judge the finished product with its directions and evidence, rather than its peptide count.",
         "sourceCheckedAt": "2026-10-19"
       },
-      "sourceIds": [
-        "medik8-liquid-peptides",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["medik8-liquid-peptides", "fda-cosmetic-reactions"],
       "status": "published"
     },
     {
@@ -1035,36 +899,25 @@
         "summary": "A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.",
         "whatItIs": {
           "text": "An exact ingredient name from the linked label. Its number is part of its identity, not a quality score.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["medik8-liquid-peptides"]
         },
         "purpose": {
           "text": "The manufacturer includes this ingredient in a peptide skincare formula. The label alone does not show what this ingredient contributes by itself.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["medik8-liquid-peptides"]
         },
         "evidence": {
           "text": "The recorded evidence is label information. No independent test of this ingredient in these finished serums is established here.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ],
+          "sourceIds": ["medik8-liquid-peptides"],
           "label": "Label information"
         },
         "precautions": {
           "text": "A label entry cannot tell us how often this ingredient causes a reaction. Follow the complete product directions; irritation can involve other ingredients too.",
-          "sourceIds": [
-            "fda-cosmetic-reactions"
-          ]
+          "sourceIds": ["fda-cosmetic-reactions"]
         },
         "takeaway": "Use this name to recognize the ingredient across labels. Judge the finished product with its directions and evidence, rather than its peptide count.",
         "sourceCheckedAt": "2026-10-19"
       },
-      "sourceIds": [
-        "medik8-liquid-peptides",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["medik8-liquid-peptides", "fda-cosmetic-reactions"],
       "status": "published"
     },
     {
@@ -1079,36 +932,25 @@
         "summary": "A peptide name recorded on a manufacturer’s cosmetic ingredient list. The name identifies an ingredient, not a predicted result.",
         "whatItIs": {
           "text": "An exact ingredient name from the linked label. Its number is part of its identity, not a quality score.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["medik8-liquid-peptides"]
         },
         "purpose": {
           "text": "The manufacturer includes this ingredient in a peptide skincare formula. The label alone does not show what this ingredient contributes by itself.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ]
+          "sourceIds": ["medik8-liquid-peptides"]
         },
         "evidence": {
           "text": "The recorded evidence is label information. No independent test of this ingredient in these finished serums is established here.",
-          "sourceIds": [
-            "medik8-liquid-peptides"
-          ],
+          "sourceIds": ["medik8-liquid-peptides"],
           "label": "Label information"
         },
         "precautions": {
           "text": "A label entry cannot tell us how often this ingredient causes a reaction. Follow the complete product directions; irritation can involve other ingredients too.",
-          "sourceIds": [
-            "fda-cosmetic-reactions"
-          ]
+          "sourceIds": ["fda-cosmetic-reactions"]
         },
         "takeaway": "Use this name to recognize the ingredient across labels. Judge the finished product with its directions and evidence, rather than its peptide count.",
         "sourceCheckedAt": "2026-10-19"
       },
-      "sourceIds": [
-        "medik8-liquid-peptides",
-        "fda-cosmetic-reactions"
-      ],
+      "sourceIds": ["medik8-liquid-peptides", "fda-cosmetic-reactions"],
       "status": "published"
     },
     {
@@ -1119,36 +961,26 @@
       "ingredientCategory": "Cosmetic peptide",
       "description": "A named ingredient on the COSRX label; research evaluation is pending.",
       "knownLimitations": "Label identity alone does not establish benefit or individual tolerance.",
-      "sourceIds": [
-        "cosrx-six"
-      ],
+      "sourceIds": ["cosrx-six"],
       "status": "published",
       "education": {
         "summary": "Listed in the COSRX formula. Research review pending.",
         "whatItIs": {
           "text": "An exact name recorded from the manufacturer’s ingredient list.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "purpose": {
           "text": "The brand includes it in a cosmetic peptide blend; this is a label description.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "evidence": {
           "text": "Only label presence is documented here. No ingredient efficacy review is complete.",
-          "sourceIds": [
-            "cosrx-six"
-          ],
+          "sourceIds": ["cosrx-six"],
           "label": "Label information"
         },
         "precautions": {
           "text": "This label source does not establish ingredient-specific safety. Consult the complete current label.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "takeaway": "An ingredient name is not proof that a finished formula works.",
         "sourceCheckedAt": "2026-10-20"
@@ -1162,38 +994,26 @@
       "ingredientCategory": "Cosmetic peptide",
       "description": "A named ingredient on the COSRX label; research evaluation is pending.",
       "knownLimitations": "Label identity alone does not establish benefit or individual tolerance.",
-      "sourceIds": [
-        "cosrx-six",
-        "ptiox-zhu-2026",
-        "ptiox-uk-label"
-      ],
+      "sourceIds": ["cosrx-six", "ptiox-zhu-2026", "ptiox-uk-label"],
       "status": "published",
       "education": {
         "summary": "A named peptide in some cosmetic blends; formula evidence is separate from ingredient evidence.",
         "whatItIs": {
           "text": "An exact name recorded from the manufacturer’s ingredient list.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "purpose": {
           "text": "The brand includes it in a cosmetic peptide blend; this is a label description.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "evidence": {
           "label": "Formulation study",
           "text": "A 2026 paper studied a multi-ingredient serum containing this name. Reported formula improvements cannot isolate this ingredient’s contribution.",
-          "sourceIds": [
-            "ptiox-zhu-2026"
-          ]
+          "sourceIds": ["ptiox-zhu-2026"]
         },
         "precautions": {
           "text": "This label source does not establish ingredient-specific safety. Consult the complete current label.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "takeaway": "An ingredient name is not proof that a finished formula works.",
         "sourceCheckedAt": "2026-10-20"
@@ -1207,36 +1027,26 @@
       "ingredientCategory": "Cosmetic peptide",
       "description": "A named ingredient on the COSRX label; research evaluation is pending.",
       "knownLimitations": "Label identity alone does not establish benefit or individual tolerance.",
-      "sourceIds": [
-        "cosrx-six"
-      ],
+      "sourceIds": ["cosrx-six"],
       "status": "published",
       "education": {
         "summary": "Listed in the COSRX formula. Research review pending.",
         "whatItIs": {
           "text": "An exact name recorded from the manufacturer’s ingredient list.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "purpose": {
           "text": "The brand includes it in a cosmetic peptide blend; this is a label description.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "evidence": {
           "text": "Only label presence is documented here. No ingredient efficacy review is complete.",
-          "sourceIds": [
-            "cosrx-six"
-          ],
+          "sourceIds": ["cosrx-six"],
           "label": "Label information"
         },
         "precautions": {
           "text": "This label source does not establish ingredient-specific safety. Consult the complete current label.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "takeaway": "An ingredient name is not proof that a finished formula works.",
         "sourceCheckedAt": "2026-10-20"
@@ -1250,36 +1060,26 @@
       "ingredientCategory": "Cosmetic peptide",
       "description": "A named ingredient on the COSRX label; research evaluation is pending.",
       "knownLimitations": "Label identity alone does not establish benefit or individual tolerance.",
-      "sourceIds": [
-        "cosrx-six"
-      ],
+      "sourceIds": ["cosrx-six"],
       "status": "published",
       "education": {
         "summary": "Listed in the COSRX formula. Research review pending.",
         "whatItIs": {
           "text": "An exact name recorded from the manufacturer’s ingredient list.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "purpose": {
           "text": "The brand includes it in a cosmetic peptide blend; this is a label description.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "evidence": {
           "text": "Only label presence is documented here. No ingredient efficacy review is complete.",
-          "sourceIds": [
-            "cosrx-six"
-          ],
+          "sourceIds": ["cosrx-six"],
           "label": "Label information"
         },
         "precautions": {
           "text": "This label source does not establish ingredient-specific safety. Consult the complete current label.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         },
         "takeaway": "An ingredient name is not proof that a finished formula works.",
         "sourceCheckedAt": "2026-10-20"
@@ -1316,7 +1116,8 @@
       "formulationNotes": "Labels may vary by market and reformulation. Check the package you purchase.",
       "tone": "ivory",
       "concentrationExplanation": "The product name states 1% copper peptides. Amounts of the other selected peptides are not recorded.",
-      "image": "/images/products/records/ordinary-copper.svg"
+      "image": "/images/products/records/ordinary-copper.svg",
+      "concentrationStatus": "recorded-disclosure"
     },
     {
       "id": "niod-cais3",
@@ -1347,7 +1148,9 @@
       "formulationNotes": "Official US 30 mL price observed after selecting 30 mL on 2026-10-20: USD 93. Excludes tax and shipping; dated observation, not a live price or performance ranking.",
       "tone": "copper",
       "concentrationExplanation": "The brand describes two peptide components at 1% each. This does not reveal the amount of every named ingredient.",
-      "image": "/images/products/records/niod-cais3.svg"
+      "image": "/images/products/records/niod-cais3.svg",
+      "concentrationStatus": "recorded-disclosure",
+      "manufacturerStudyNote": "The manufacturer page consulted on 2026-11-08 contains descriptions of product testing reported by the brand. Methods and full reports have not been appraised here; these descriptions do not establish independent or comparative effectiveness."
     },
     {
       "id": "ordinary-ha",
@@ -1379,7 +1182,8 @@
       "formulationNotes": "Label facts only; no independent comparative effectiveness is established. Formulas may change by market and purchase date.",
       "tone": "ivory",
       "image": "/images/products/records/ordinary-ha.svg",
-      "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products."
+      "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products.",
+      "concentrationStatus": "not-disclosed"
     },
     {
       "id": "ordinary-matrixyl",
@@ -1409,7 +1213,8 @@
       "formulationNotes": "Label facts only; no independent comparative effectiveness is established. Formulas may change by market and purchase date.",
       "tone": "ivory",
       "image": "/images/products/records/ordinary-matrixyl.svg",
-      "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products."
+      "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products.",
+      "concentrationStatus": "recorded-disclosure"
     },
     {
       "id": "ordinary-argireline",
@@ -1420,13 +1225,9 @@
       "description": "A 30 mL serum listing Acetyl Hexapeptide-8, the peptide associated with the commercial name Argireline.",
       "volume": 30,
       "volumeUnit": "ml",
-      "ingredientList": [
-        "Acetyl Hexapeptide-8"
-      ],
+      "ingredientList": ["Acetyl Hexapeptide-8"],
       "ingredientListScope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula.",
-      "ingredientIds": [
-        "acetyl-hexapeptide-8"
-      ],
+      "ingredientIds": ["acetyl-hexapeptide-8"],
       "concentrationDisclosure": "10% appears in the Argireline Solution product name. A separately assayed concentration of pure Acetyl Hexapeptide-8 is not established here.",
       "concentrationExplanation": "The product name describes an Argireline solution at 10%. Do not read it as 10% pure Acetyl Hexapeptide-8 or compare it directly with another brand’s blend percentage.",
       "sourceId": "ordinary-argireline",
@@ -1435,7 +1236,8 @@
       "formulationNotes": "Label facts only; no independent comparative effectiveness is established. Formulas may change by market and purchase date.",
       "tone": "ivory",
       "image": "/images/products/records/ordinary-argireline.svg",
-      "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products."
+      "usageSummary": "The brand directs a few drops in the morning and evening, on unbroken skin, and advises patch testing. Read its current compatibility exclusions before combining with other products.",
+      "concentrationStatus": "recorded-disclosure"
     },
     {
       "id": "geek-power-peptides",
@@ -1471,7 +1273,8 @@
       "formulationNotes": "Label facts only; no independent comparative effectiveness is established. Formulas may change by market and purchase date.",
       "tone": "ivory",
       "image": "/images/products/records/geek-power-peptides.svg",
-      "usageSummary": "The brand directs use of 3–5 drops after cleansing and liquid or gel products, before creams, in the morning and/or evening. Follow its full current directions."
+      "usageSummary": "The brand directs use of 3–5 drops after cleansing and liquid or gel products, before creams, in the morning and/or evening. Follow its full current directions.",
+      "concentrationStatus": "recorded-disclosure"
     },
     {
       "id": "naturium-multi-peptide",
@@ -1501,7 +1304,8 @@
       "formulationNotes": "Manufacturer label facts only; no independent head-to-head effectiveness is established. Formulas can change. Check the packaging for the purchased version.",
       "tone": "ivory",
       "image": "/images/products/records/naturium-multi-peptide.svg",
-      "usageSummary": "Naturium directs application after cleansing and toning, before moisturizer and sunscreen. Follow the current product directions."
+      "usageSummary": "Naturium directs application after cleansing and toning, before moisturizer and sunscreen. Follow the current product directions.",
+      "concentrationStatus": "not-disclosed"
     },
     {
       "id": "timeless-synthe6",
@@ -1512,13 +1316,9 @@
       "description": "A facial serum sold as 1 US fl oz. The brand identifies Matrixyl Synthe’6 with Palmitoyl Tripeptide-38; its displayed ingredient list uses the commercial system name.",
       "volume": 1,
       "volumeUnit": "oz",
-      "ingredientList": [
-        "Palmitoyl Tripeptide-38"
-      ],
+      "ingredientList": ["Palmitoyl Tripeptide-38"],
       "ingredientListScope": "Selected label peptides, not the complete INCI list. Other peptides and non-peptide ingredients may be omitted. See the manufacturer for the full formula. Palmitoyl Tripeptide-38 is identified in the brand’s explanation of Matrixyl Synthe’6; its displayed list uses that system name.",
-      "ingredientIds": [
-        "palmitoyl-tripeptide-38"
-      ],
+      "ingredientIds": ["palmitoyl-tripeptide-38"],
       "concentrationDisclosure": "Timeless states 2% Matrixyl Synthe’6. This is a named-system disclosure, not a verified pure-peptide concentration.",
       "concentrationExplanation": "The stated 2% refers to Matrixyl Synthe’6. It does not establish 2% pure Palmitoyl Tripeptide-38 or a strength ranking against other blends.",
       "sourceId": "timeless-synthe6",
@@ -1527,7 +1327,8 @@
       "formulationNotes": "Manufacturer label facts only; no independent head-to-head effectiveness is established. Formulas can change. Check the packaging for the purchased version. Price records the one-time 1 US fl oz offer, excluding coupon and subscription discounts. Packaging also prints 30 mL; unit-cost calculations use the recorded US fl oz size.",
       "tone": "ivory",
       "image": "/images/products/records/timeless-synthe6.svg",
-      "usageSummary": "Timeless directs use on clean skin and allowing absorption before the next layer. Check its current directions, including its eye-area restrictions."
+      "usageSummary": "Timeless directs use on clean skin and allowing absorption before the next layer. Check its current directions, including its eye-area restrictions.",
+      "concentrationStatus": "recorded-disclosure"
     },
     {
       "id": "medik8-liquid-peptides",
@@ -1573,7 +1374,8 @@
       "formulationNotes": "Manufacturer label facts only; no independent head-to-head effectiveness is established. Formulas can change. Check the packaging for the purchased version.",
       "tone": "ivory",
       "image": "/images/products/records/medik8-liquid-peptides.svg",
-      "usageSummary": "Medik8 directs application after cleansing, morning and evening, before moisturizer. The brand recommends a patch test before first use."
+      "usageSummary": "Medik8 directs application after cleansing, morning and evening, before moisturizer. The brand recommends a patch test before first use.",
+      "concentrationStatus": "recorded-disclosure"
     },
     {
       "id": "cosrx-six-mini",
@@ -1609,7 +1411,8 @@
       "formulationNotes": "The brand positions it after cleansing. Product efficacy review and barcode verification remain pending. Exact 50 mL label profile only; no 150 mL price inferred.",
       "tone": "copper",
       "image": "/images/products/records/cosrx-six-mini.svg",
-      "usageSummary": "The manufacturer describes use after cleansing, as a first step. Follow current package directions."
+      "usageSummary": "The manufacturer describes use after cleansing, as a first step. Follow current package directions.",
+      "concentrationStatus": "not-reviewed"
     },
     {
       "id": "skinceuticals-ptiox",
@@ -1637,7 +1440,8 @@
       "formulationNotes": "UK selected-label names and US presentation are separate source checks. Brand-linked clinical publications exist; this is not a direct comparison with The Ordinary.",
       "tone": "copper",
       "image": "/images/products/records/skinceuticals-ptiox.svg",
-      "usageSummary": "The US brand describes twice-daily use. Follow current package directions and your clinician’s instructions around procedures."
+      "usageSummary": "The US brand describes twice-daily use. Follow current package directions and your clinician’s instructions around procedures.",
+      "concentrationStatus": "not-reviewed"
     }
   ],
   "retailers": [
@@ -1835,10 +1639,7 @@
       "id": "ordinary-ha-vs-copper",
       "slug": "the-ordinary-multi-peptide-ha-vs-copper",
       "title": "The Ordinary Multi-Peptide + HA vs. Copper Peptides",
-      "comparedProductIds": [
-        "ordinary-ha",
-        "ordinary-copper"
-      ],
+      "comparedProductIds": ["ordinary-ha", "ordinary-copper"],
       "buyerQuestion": "What changes when I choose the copper version?",
       "editorialSummary": "The copper version lists a copper-containing peptide alongside other selected peptides. Multi-Peptide + HA has the lower recorded price for 30 mL. The labels alone do not establish whether paying more will give you better results.",
       "documentedDifferences": "Both selected lists include Acetyl Hexapeptide-8, Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7. Copper Tripeptide-1 is listed in the copper product. Selected lists omit other ingredients, so absence from a selection does not prove absence from the complete formula.",
@@ -1857,10 +1658,7 @@
         }
       ],
       "limitations": "The catalog shows selected label peptides, not complete formulas. Individual concentrations may be undisclosed. No independent head-to-head effectiveness or individual tolerance is established here. This editorial draft awaits human review.",
-      "sourceIds": [
-        "ordinary-ha",
-        "ordinary"
-      ],
+      "sourceIds": ["ordinary-ha", "ordinary"],
       "publicationStatus": "draft",
       "decisionNotes": [
         {
@@ -1876,23 +1674,15 @@
         {
           "question": "Is the copper version just the same serum with one extra ingredient?",
           "answer": "These selected lists cannot establish that the complete formulas differ by only one ingredient. Read both full manufacturer lists before treating them as interchangeable.",
-          "sourceIds": [
-            "ordinary",
-            "ordinary-ha"
-          ]
+          "sourceIds": ["ordinary", "ordinary-ha"]
         },
         {
           "question": "Does 1% copper mean fewer peptides than the HA version?",
           "answer": "No. A disclosed percentage and an ingredient count answer different questions. The records do not disclose a separate amount of every selected peptide in either serum.",
-          "sourceIds": [
-            "ordinary",
-            "ordinary-ha"
-          ]
+          "sourceIds": ["ordinary", "ordinary-ha"]
         }
       ],
-      "relatedGuideSlugs": [
-        "peptide-percentages-explained"
-      ],
+      "relatedGuideSlugs": ["peptide-percentages-explained"],
       "updatedAt": "2026-10-20",
       "citationPilot": true
     },
@@ -1900,10 +1690,7 @@
       "id": "niod-vs-ordinary",
       "slug": "niod-cais3-vs-the-ordinary",
       "title": "NIOD CAIS3 vs. The Ordinary copper peptide serum",
-      "comparedProductIds": [
-        "niod-cais3",
-        "ordinary-copper"
-      ],
+      "comparedProductIds": ["niod-cais3", "ordinary-copper"],
       "editorialSummary": "Compare NIOD CAIS3 and The Ordinary copper serum with a draft critical review of ingredient benefits, documented reactions, long-term evidence gaps and price limitations. Scientific evidence is kept separate from label claims.",
       "documentedDifferences": "NIOD lists Tripeptide-1 Copper Acetate; The Ordinary lists Copper Tripeptide-1. These exact label names are retained without asserting molecular or clinical equivalence. The Ordinary also lists Acetyl Hexapeptide-8; NIOD lists Tripeptide-29. The ingredient selections shown here are incomplete.",
       "limitations": "The selected label entries and inspected sources do not establish head-to-head clinical outcomes or years of safety for these complete formulas. Prices are dated observations for the exact 30 mL bottles, not live offers. Editorial and qualified scientific review remain pending.",
@@ -1922,27 +1709,19 @@
         {
           "title": "Start with the exact copper name",
           "text": "NIOD lists Tripeptide-1 Copper Acetate; The Ordinary lists Copper Tripeptide-1. The word copper alone does not establish identical ingredients or performance.",
-          "sourceIds": [
-            "niod",
-            "ordinary"
-          ],
+          "sourceIds": ["niod", "ordinary"],
           "interpretation": false
         },
         {
           "title": "Other selected peptides also differ",
           "text": "NIOD lists Tripeptide-29 and Acetyl Tetrapeptide-2; The Ordinary lists Acetyl Hexapeptide-8 and palmitoyl peptides. Open the explanations to understand the names; do not treat the count as a quality score.",
-          "sourceIds": [
-            "niod",
-            "ordinary"
-          ],
+          "sourceIds": ["niod", "ordinary"],
           "interpretation": false
         },
         {
           "title": "Compare the exact 30 mL bottles",
           "text": "NIOD’s US site showed USD 93 after selecting 30 mL on 2026-10-20. The initial 15 mL selection showed USD 62 and is not the price used here. Recorded prices exclude tax and shipping and do not measure clinical benefit.",
-          "sourceIds": [
-            "niod"
-          ],
+          "sourceIds": ["niod"],
           "interpretation": true
         }
       ],
@@ -1950,10 +1729,7 @@
         {
           "title": "If your question is whether the copper names are equivalent",
           "text": "The exact names differ in the recorded labels. This comparison preserves them separately rather than treating both as the same ingredient.",
-          "sourceIds": [
-            "niod",
-            "ordinary"
-          ],
+          "sourceIds": ["niod", "ordinary"],
           "interpretation": true
         },
         {
@@ -1967,49 +1743,32 @@
         {
           "question": "Does NIOD’s 1:1 mean the same as The Ordinary’s 1%?",
           "answer": "NIOD describes two components in its technology; The Ordinary’s name includes a copper-peptide percentage. These different disclosures do not establish identical individual ingredient amounts.",
-          "sourceIds": [
-            "niod",
-            "ordinary"
-          ]
+          "sourceIds": ["niod", "ordinary"]
         },
         {
           "question": "Can this page tell me which copper serum works better?",
           "answer": "No. It compares selected label facts and cost information where verified. It does not establish comparative results, individual tolerance or equivalent copper forms.",
-          "sourceIds": [
-            "argireline-trial",
-            "cir-peptides"
-          ]
+          "sourceIds": ["argireline-trial", "cir-peptides"]
         },
         {
           "question": "Does a phenoxyethanol case report mean I should reject both serums?",
           "answer": "Not on that evidence alone. The cases concern other cosmetics and do not give a reaction rate for these products. The SCCS safety conclusion has defined use conditions and does not guarantee individual tolerance. A known ingredient allergy is a separate reason to discuss suitable alternatives with your clinician.",
-          "sourceIds": [
-            "phenoxyethanol-cases",
-            "sccs-phenoxyethanol"
-          ]
+          "sourceIds": ["phenoxyethanol-cases", "sccs-phenoxyethanol"]
         }
       ],
-      "relatedGuideSlugs": [
-        "peptide-percentages-explained"
-      ],
+      "relatedGuideSlugs": ["peptide-percentages-explained"],
       "updatedAt": "2026-10-20",
       "citationPilot": true,
       "researchContext": {
         "text": "An Argireline trial in 60 Chinese participants over four weeks reported improvements in eye-area wrinkle measures relative to placebo. The Ordinary lists Acetyl Hexapeptide-8, but that label entry does not make its complete serum the studied treatment. The abstract does not identify either compared copper serum as the tested product. We use this study to explain the limits of transferring ingredient research, not to select a winner.",
-        "sourceIds": [
-          "argireline-trial",
-          "ordinary"
-        ]
+        "sourceIds": ["argireline-trial", "ordinary"]
       }
     },
     {
       "id": "matrixyl-vs-ha",
       "slug": "the-ordinary-matrixyl-vs-multi-peptide-ha",
       "title": "The Ordinary Matrixyl vs. Multi-Peptide + HA",
-      "comparedProductIds": [
-        "ordinary-matrixyl",
-        "ordinary-ha"
-      ],
+      "comparedProductIds": ["ordinary-matrixyl", "ordinary-ha"],
       "buyerQuestion": "If Multi-Peptide + HA also lists these peptides, what does Matrixyl change?",
       "editorialSummary": "The three selected Matrixyl peptides also appear in the recorded Multi-Peptide + HA list, which additionally includes Acetyl Hexapeptide-8. Matrixyl has the lower recorded cost for the same bottle size. Shared names do not establish the same amounts or results.",
       "documentedDifferences": "The shared selected names are Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7 and Palmitoyl Tripeptide-38. Matrixyl is a commercial ingredient-family name; it is not a single ingredient called peptide 10.",
@@ -2017,55 +1776,36 @@
         {
           "title": "Decode the family name",
           "text": "Matrixyl 3000 is associated with Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7; Matrixyl synthe’6 with Palmitoyl Tripeptide-38. These names describe different ingredient systems.",
-          "sourceIds": [
-            "croda-matrixyl",
-            "croda-synthe6"
-          ],
+          "sourceIds": ["croda-matrixyl", "croda-synthe6"],
           "interpretation": true
         },
         {
           "title": "Do not turn 10% into a potency score",
           "text": "The Matrixyl product name states 10%. It does not tell us that each selected peptide is present at 10%, or that this serum is stronger than the broader blend.",
-          "sourceIds": [
-            "ordinary-matrixyl",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-matrixyl", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Overlap does not establish equivalence",
           "text": "The shared names help explain what you are buying, but neither the overlap nor the price tells us whether either serum will work better for you.",
-          "sourceIds": [
-            "ordinary-matrixyl",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-matrixyl", "ordinary-ha"],
           "interpretation": true
         }
       ],
       "limitations": "The catalog shows selected label peptides, not complete formulas. Individual concentrations may be undisclosed. No independent head-to-head effectiveness or individual tolerance is established here. This editorial draft awaits human review.",
-      "sourceIds": [
-        "ordinary-matrixyl",
-        "ordinary-ha",
-        "geek-power-peptides"
-      ],
+      "sourceIds": ["ordinary-matrixyl", "ordinary-ha", "geek-power-peptides"],
       "publicationStatus": "draft",
       "decisionNotes": [
         {
           "title": "If you want to understand overlap",
           "text": "The three selected palmitoyl peptide names match across the records. This can help avoid confusing a commercial name with an entirely separate set of ingredients.",
-          "sourceIds": [
-            "ordinary-matrixyl",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-matrixyl", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "If you are deciding whether the broader blend justifies its cost",
           "text": "Multi-Peptide + HA records additional names, but we have no independent finished-product comparison establishing an extra benefit. Cost is shown separately.",
-          "sourceIds": [
-            "ordinary-matrixyl",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-matrixyl", "ordinary-ha"],
           "interpretation": true
         }
       ],
@@ -2073,18 +1813,12 @@
         {
           "question": "Does Multi-Peptide + HA contain the three Matrixyl peptide names?",
           "answer": "Its recorded manufacturer label lists Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7 and Palmitoyl Tripeptide-38. Matching names do not establish matching amounts or a particular supplier grade.",
-          "sourceIds": [
-            "ordinary-ha",
-            "ordinary-matrixyl"
-          ]
+          "sourceIds": ["ordinary-ha", "ordinary-matrixyl"]
         },
         {
           "question": "What does HA mean in both product names?",
           "answer": "HA refers to hyaluronic acid. The labels include hyaluronate ingredients; HA is not another peptide or a peptide-strength score.",
-          "sourceIds": [
-            "ordinary-ha",
-            "ordinary-matrixyl"
-          ]
+          "sourceIds": ["ordinary-ha", "ordinary-matrixyl"]
         }
       ],
       "relatedGuideSlugs": [
@@ -2098,10 +1832,7 @@
       "id": "argireline-vs-ha",
       "slug": "the-ordinary-argireline-vs-multi-peptide-ha",
       "title": "The Ordinary Argireline vs. Multi-Peptide + HA",
-      "comparedProductIds": [
-        "ordinary-argireline",
-        "ordinary-ha"
-      ],
+      "comparedProductIds": ["ordinary-argireline", "ordinary-ha"],
       "buyerQuestion": "What is the difference between Argireline and the broader peptide blend?",
       "editorialSummary": "Both labels list Acetyl Hexapeptide-8. The Argireline solution has a narrower selected peptide list and the lower recorded price for 30 mL. Multi-Peptide + HA lists additional peptides; that does not establish a greater benefit.",
       "documentedDifferences": "Acetyl Hexapeptide-8 is the exact shared label name. Argireline is a commercial name associated with this peptide. The record does not establish equivalent individual concentrations across these serums.",
@@ -2109,54 +1840,36 @@
         {
           "title": "A commercial name and an ingredient name can refer to related information",
           "text": "Look for Acetyl Hexapeptide-8 on the label. The Argireline name is not a separate extra peptide in this comparison.",
-          "sourceIds": [
-            "ordinary-argireline",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-argireline", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "More names do not guarantee more benefit",
           "text": "Multi-Peptide + HA lists other selected peptides. This catalog does not establish whether adding them produces better results than the Argireline solution.",
-          "sourceIds": [
-            "ordinary-argireline",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-argireline", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Avoid buying two products just because their names differ",
           "text": "The overlap is useful when researching a purchase. It does not prove that combining both products adds a benefit, or that one can replace the other for every person.",
-          "sourceIds": [
-            "ordinary-argireline",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-argireline", "ordinary-ha"],
           "interpretation": true
         }
       ],
       "limitations": "The catalog shows selected label peptides, not complete formulas. Individual concentrations may be undisclosed. No independent head-to-head effectiveness or individual tolerance is established here. This editorial draft awaits human review.",
-      "sourceIds": [
-        "ordinary-argireline",
-        "ordinary-ha"
-      ],
+      "sourceIds": ["ordinary-argireline", "ordinary-ha"],
       "publicationStatus": "draft",
       "decisionNotes": [
         {
           "title": "If you recognize Argireline but not the INCI name",
           "text": "Look for Acetyl Hexapeptide-8. Both records list it, while the broader blend records additional selected peptides.",
-          "sourceIds": [
-            "ordinary-argireline",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-argireline", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "If you are considering buying both",
           "text": "The shared name is a reason to inspect overlap and your intended purchase. It does not establish that using both adds benefit, or that one replaces the other for everyone.",
-          "sourceIds": [
-            "ordinary-argireline",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ordinary-argireline", "ordinary-ha"],
           "interpretation": true
         }
       ],
@@ -2164,23 +1877,15 @@
         {
           "question": "Is Argireline listed as Acetyl Hexapeptide-8?",
           "answer": "Acetyl Hexapeptide-8 is the peptide name recorded on the Argireline solution label and also on Multi-Peptide + HA. Commercial and INCI names provide different label context.",
-          "sourceIds": [
-            "ordinary-argireline",
-            "ordinary-ha"
-          ]
+          "sourceIds": ["ordinary-argireline", "ordinary-ha"]
         },
         {
           "question": "Does the 10% solution contain more of that peptide than Multi-Peptide + HA?",
           "answer": "The recorded information does not establish separately comparable pure-peptide amounts. Do not use the printed solution percentage to infer an undisclosed amount in the broader blend.",
-          "sourceIds": [
-            "ordinary-argireline",
-            "ordinary-ha"
-          ]
+          "sourceIds": ["ordinary-argireline", "ordinary-ha"]
         }
       ],
-      "relatedGuideSlugs": [
-        "peptide-percentages-explained"
-      ],
+      "relatedGuideSlugs": ["peptide-percentages-explained"],
       "updatedAt": "2026-10-20",
       "citationPilot": true
     },
@@ -2188,10 +1893,7 @@
       "id": "geek-vs-ha",
       "slug": "geek-gorgeous-power-peptides-vs-the-ordinary-ha",
       "title": "Geek & Gorgeous Power Peptides vs. The Ordinary Multi-Peptide + HA",
-      "comparedProductIds": [
-        "geek-power-peptides",
-        "ordinary-ha"
-      ],
+      "comparedProductIds": ["geek-power-peptides", "ordinary-ha"],
       "buyerQuestion": "What changes when I choose a peptide blend from another brand?",
       "editorialSummary": "These 30 mL serums share several selected palmitoyl peptides. Power Peptides is described by its brand as milky and lists a different copper-containing peptide among its selected ingredients. Neither the ingredient count nor the disclosed complex percentages establish which will work better.",
       "documentedDifferences": "Both selected lists include Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7 and Palmitoyl Tripeptide-38. Power Peptides additionally lists Tetrapeptide-21, Copper Palmitoyl Heptapeptide-14 and Heptapeptide-15 Palmitate. Its copper name is distinct from Copper Tripeptide-1.",
@@ -2199,54 +1901,36 @@
         {
           "title": "The format may matter to your routine",
           "text": "Geek & Gorgeous describes a milky texture; The Ordinary labels its product a water-based serum. These are manufacturer descriptions, not the results of our own texture or layering test.",
-          "sourceIds": [
-            "geek-power-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["geek-power-peptides", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Ingredient-system percentages need context",
           "text": "Power Peptides discloses percentages for named complexes. Those figures cannot be compared directly with pure-peptide concentrations or used as a strength ranking.",
-          "sourceIds": [
-            "geek-power-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["geek-power-peptides", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Check price and directions separately",
           "text": "Use the dated 30 mL prices to compare cost. Then check the current directions from each manufacturer; a shared peptide does not establish identical layering guidance.",
-          "sourceIds": [
-            "geek-power-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["geek-power-peptides", "ordinary-ha"],
           "interpretation": true
         }
       ],
       "limitations": "The catalog shows selected label peptides, not complete formulas. Individual concentrations may be undisclosed. No independent head-to-head effectiveness or individual tolerance is established here. This editorial draft awaits human review.",
-      "sourceIds": [
-        "geek-power-peptides",
-        "ordinary-ha"
-      ],
+      "sourceIds": ["geek-power-peptides", "ordinary-ha"],
       "publicationStatus": "draft",
       "decisionNotes": [
         {
           "title": "If texture is important to your purchase",
           "text": "The brands describe different formats: milky for Power Peptides and water-based for Multi-Peptide + HA. We have not performed a texture or layering test, so treat this as attributed information.",
-          "sourceIds": [
-            "geek-power-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["geek-power-peptides", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "If you are comparing disclosed percentages",
           "text": "Power Peptides provides commercial-system percentages; the other selected record does not provide individual peptide amounts. Those disclosures cannot produce a comparable potency score.",
-          "sourceIds": [
-            "geek-power-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["geek-power-peptides", "ordinary-ha"],
           "interpretation": true
         }
       ],
@@ -2254,17 +1938,12 @@
         {
           "question": "Is the copper name in Power Peptides the same as Copper Tripeptide-1?",
           "answer": "Its selected label lists Copper Palmitoyl Heptapeptide-14. That distinct name is not silently mapped to Copper Tripeptide-1 in this catalog.",
-          "sourceIds": [
-            "geek-power-peptides"
-          ]
+          "sourceIds": ["geek-power-peptides"]
         },
         {
           "question": "Can I compare Power Peptides’ disclosed systems with Matrixyl 10%?",
           "answer": "You can compare what the brands disclose, but those numbers do not give a separate pure amount for every peptide. Check the system names and limits before drawing a conclusion.",
-          "sourceIds": [
-            "geek-power-peptides",
-            "ordinary-matrixyl"
-          ]
+          "sourceIds": ["geek-power-peptides", "ordinary-matrixyl"]
         }
       ],
       "relatedGuideSlugs": [
@@ -2278,10 +1957,7 @@
       "id": "naturium-vs-ha",
       "slug": "naturium-multi-peptide-vs-the-ordinary-ha",
       "title": "Naturium Multi-Peptide Advanced Serum vs. The Ordinary Multi-Peptide + HA",
-      "comparedProductIds": [
-        "naturium-multi-peptide",
-        "ordinary-ha"
-      ],
+      "comparedProductIds": ["naturium-multi-peptide", "ordinary-ha"],
       "buyerQuestion": "What should I compare when the peptide names differ?",
       "editorialSummary": "Both are 30 mL facial serums. Their selected peptide lists differ, so compare the exact names and dated cost before treating them as substitutes.",
       "documentedDifferences": "Naturium’s selected list includes a copper-containing name distinct from Copper Tripeptide-1. Sharing Acetyl Hexapeptide-8 does not make the whole formulas identical.",
@@ -2289,19 +1965,13 @@
         {
           "title": "Recognize the exact copper name",
           "text": "Copper Palmitoyl Heptapeptide-14 is the name recorded for Naturium. Similar copper wording does not establish the same ingredient or the same results.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["naturium-multi-peptide", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Look beyond the peptide list",
           "text": "Check each full manufacturer label for other ingredients relevant to your preferences. Our selected list is a navigation aid, not a complete formula.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["naturium-multi-peptide", "ordinary-ha"],
           "interpretation": true
         }
       ],
@@ -2309,19 +1979,13 @@
         {
           "title": "Recognize the exact copper name",
           "text": "Copper Palmitoyl Heptapeptide-14 is the name recorded for Naturium. Similar copper wording does not establish the same ingredient or the same results.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["naturium-multi-peptide", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Look beyond the peptide list",
           "text": "Check each full manufacturer label for other ingredients relevant to your preferences. Our selected list is a navigation aid, not a complete formula.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["naturium-multi-peptide", "ordinary-ha"],
           "interpretation": true
         }
       ],
@@ -2329,29 +1993,18 @@
         {
           "question": "Does a copper ingredient make Naturium equivalent to a Copper Tripeptide-1 serum?",
           "answer": "No equivalence is established here. The recorded copper name is different; use the exact-name ingredient guide for context.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "ordinary-ha"
-          ]
+          "sourceIds": ["naturium-multi-peptide", "ordinary-ha"]
         },
         {
           "question": "Can shared peptide names tell me which serum works better?",
           "answer": "No. A shared name does not disclose its amount, the full formulation or comparative results.",
-          "sourceIds": [
-            "naturium-multi-peptide",
-            "ordinary-ha"
-          ]
+          "sourceIds": ["naturium-multi-peptide", "ordinary-ha"]
         }
       ],
-      "relatedGuideSlugs": [
-        "peptide-percentages-explained"
-      ],
+      "relatedGuideSlugs": ["peptide-percentages-explained"],
       "updatedAt": "2026-10-20",
       "limitations": "Selected ingredients only. Individual peptide amounts, personal tolerance and independent comparative effectiveness are not established. Editorial draft awaiting human review.",
-      "sourceIds": [
-        "naturium-multi-peptide",
-        "ordinary-ha"
-      ],
+      "sourceIds": ["naturium-multi-peptide", "ordinary-ha"],
       "publicationStatus": "draft",
       "citationPilot": true
     },
@@ -2359,10 +2012,7 @@
       "id": "timeless-vs-matrixyl",
       "slug": "timeless-synthe6-vs-the-ordinary-matrixyl",
       "title": "Timeless Matrixyl Synthe’6 vs. The Ordinary Matrixyl 10% + HA",
-      "comparedProductIds": [
-        "timeless-synthe6",
-        "ordinary-matrixyl"
-      ],
+      "comparedProductIds": ["timeless-synthe6", "ordinary-matrixyl"],
       "buyerQuestion": "Does 10% versus 2% tell me which Matrixyl serum is stronger?",
       "editorialSummary": "The named systems need context: neither percentage establishes a directly comparable pure-peptide dose. Timeless is recorded as 1 US fl oz; The Ordinary as 30 mL.",
       "documentedDifferences": "Timeless identifies Synthe’6 with Palmitoyl Tripeptide-38. The Ordinary’s selected record also includes Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7.",
@@ -2370,19 +2020,13 @@
         {
           "title": "Compare the system, not just the percentage",
           "text": "Different named blends cannot be ranked by their headline percentages. Open the Matrixyl guide to distinguish the ingredient names.",
-          "sourceIds": [
-            "timeless-synthe6",
-            "ordinary-matrixyl"
-          ],
+          "sourceIds": ["timeless-synthe6", "ordinary-matrixyl"],
           "interpretation": true
         },
         {
           "title": "Use one volume basis for cost",
           "text": "The unit-cost calculation converts 1 US fl oz using 29.5735295625 mL. Timeless packaging also prints 30 mL; the catalog preserves the store’s 1 fl oz variant. Coupons and subscriptions are excluded.",
-          "sourceIds": [
-            "timeless-synthe6",
-            "ordinary-matrixyl"
-          ],
+          "sourceIds": ["timeless-synthe6", "ordinary-matrixyl"],
           "interpretation": true
         }
       ],
@@ -2390,19 +2034,13 @@
         {
           "title": "Compare the system, not just the percentage",
           "text": "Different named blends cannot be ranked by their headline percentages. Open the Matrixyl guide to distinguish the ingredient names.",
-          "sourceIds": [
-            "timeless-synthe6",
-            "ordinary-matrixyl"
-          ],
+          "sourceIds": ["timeless-synthe6", "ordinary-matrixyl"],
           "interpretation": true
         },
         {
           "title": "Use one volume basis for cost",
           "text": "The unit-cost calculation converts 1 US fl oz using 29.5735295625 mL. Timeless packaging also prints 30 mL; the catalog preserves the store’s 1 fl oz variant. Coupons and subscriptions are excluded.",
-          "sourceIds": [
-            "timeless-synthe6",
-            "ordinary-matrixyl"
-          ],
+          "sourceIds": ["timeless-synthe6", "ordinary-matrixyl"],
           "interpretation": true
         }
       ],
@@ -2410,18 +2048,12 @@
         {
           "question": "Is 10% five times stronger than 2%?",
           "answer": "That conclusion is not supported. The figures describe named ingredient systems and do not supply comparable pure-peptide amounts.",
-          "sourceIds": [
-            "timeless-synthe6",
-            "ordinary-matrixyl"
-          ]
+          "sourceIds": ["timeless-synthe6", "ordinary-matrixyl"]
         },
         {
           "question": "Is Timeless’ displayed ingredient list a full exact INCI transcription here?",
           "answer": "No. The brand’s list uses Matrixyl Synthe’6. Our selected entry follows its separate identification of Palmitoyl Tripeptide-38; it does not reconstruct a complete INCI list.",
-          "sourceIds": [
-            "timeless-synthe6",
-            "ordinary-matrixyl"
-          ]
+          "sourceIds": ["timeless-synthe6", "ordinary-matrixyl"]
         }
       ],
       "relatedGuideSlugs": [
@@ -2430,10 +2062,7 @@
       ],
       "updatedAt": "2026-10-20",
       "limitations": "Selected ingredients only. Individual peptide amounts, personal tolerance and independent comparative effectiveness are not established. Editorial draft awaiting human review.",
-      "sourceIds": [
-        "timeless-synthe6",
-        "ordinary-matrixyl"
-      ],
+      "sourceIds": ["timeless-synthe6", "ordinary-matrixyl"],
       "publicationStatus": "draft",
       "citationPilot": true
     },
@@ -2441,10 +2070,7 @@
       "id": "medik8-vs-ha",
       "slug": "medik8-liquid-peptides-vs-the-ordinary-ha",
       "title": "Medik8 Liquid Peptides vs. The Ordinary Multi-Peptide + HA",
-      "comparedProductIds": [
-        "medik8-liquid-peptides",
-        "ordinary-ha"
-      ],
+      "comparedProductIds": ["medik8-liquid-peptides", "ordinary-ha"],
       "buyerQuestion": "What does a higher-priced peptide complex actually tell me?",
       "editorialSummary": "These 30 mL profiles support a dated cost comparison. A higher price or a larger disclosed blend percentage does not establish better results.",
       "documentedDifferences": "This profile covers original Liquid Peptides, not Advanced MP. Its selected list includes multiple peptide names, including a distinct copper-containing ingredient.",
@@ -2452,19 +2078,13 @@
         {
           "title": "Separate the complex from pure peptide",
           "text": "Medik8’s 30% describes a multi-peptide complex. It does not provide a separate pure amount for each ingredient.",
-          "sourceIds": [
-            "medik8-liquid-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["medik8-liquid-peptides", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Separate price from effectiveness",
           "text": "The table measures purchase cost and recorded label differences. We have no independent head-to-head test establishing whether the extra cost improves results.",
-          "sourceIds": [
-            "medik8-liquid-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["medik8-liquid-peptides", "ordinary-ha"],
           "interpretation": true
         }
       ],
@@ -2472,19 +2092,13 @@
         {
           "title": "Separate the complex from pure peptide",
           "text": "Medik8’s 30% describes a multi-peptide complex. It does not provide a separate pure amount for each ingredient.",
-          "sourceIds": [
-            "medik8-liquid-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["medik8-liquid-peptides", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Separate price from effectiveness",
           "text": "The table measures purchase cost and recorded label differences. We have no independent head-to-head test establishing whether the extra cost improves results.",
-          "sourceIds": [
-            "medik8-liquid-peptides",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["medik8-liquid-peptides", "ordinary-ha"],
           "interpretation": true
         }
       ],
@@ -2492,29 +2106,18 @@
         {
           "question": "Is this Liquid Peptides Advanced MP?",
           "answer": "No. This record is for original Liquid Peptides. Do not apply its price or selected ingredients to the Advanced MP formula.",
-          "sourceIds": [
-            "medik8-liquid-peptides",
-            "ordinary-ha"
-          ]
+          "sourceIds": ["medik8-liquid-peptides", "ordinary-ha"]
         },
         {
           "question": "Does 30% mean 30% pure peptides?",
           "answer": "The brand describes a 30% complex. The checked disclosure does not establish 30% pure peptides.",
-          "sourceIds": [
-            "medik8-liquid-peptides",
-            "ordinary-ha"
-          ]
+          "sourceIds": ["medik8-liquid-peptides", "ordinary-ha"]
         }
       ],
-      "relatedGuideSlugs": [
-        "peptide-percentages-explained"
-      ],
+      "relatedGuideSlugs": ["peptide-percentages-explained"],
       "updatedAt": "2026-10-20",
       "limitations": "Selected ingredients only. Individual peptide amounts, personal tolerance and independent comparative effectiveness are not established. Editorial draft awaiting human review.",
-      "sourceIds": [
-        "medik8-liquid-peptides",
-        "ordinary-ha"
-      ],
+      "sourceIds": ["medik8-liquid-peptides", "ordinary-ha"],
       "publicationStatus": "draft",
       "citationPilot": true
     },
@@ -2522,10 +2125,7 @@
       "id": "cosrx-vs-ordinary",
       "slug": "cosrx-six-peptide-vs-the-ordinary-copper",
       "title": "COSRX 6 Peptide Mini vs The Ordinary Copper Peptides",
-      "comparedProductIds": [
-        "cosrx-six-mini",
-        "ordinary-copper"
-      ],
+      "comparedProductIds": ["cosrx-six-mini", "ordinary-copper"],
       "editorialSummary": "A comparison of selected label facts, with different sizes and disclosure limits. No clinical winner is established.",
       "citationPilot": true,
       "documentedDifferences": "The recorded COSRX mini is 50 mL; The Ordinary record is 30 mL. Both selected lists include Copper Tripeptide-1 and Acetyl Hexapeptide-8.",
@@ -2534,19 +2134,13 @@
         {
           "title": "Different presentations",
           "text": "Match the exact size before comparing an offer. This COSRX record is the 50 mL mini.",
-          "sourceIds": [
-            "cosrx-six",
-            "ordinary"
-          ],
+          "sourceIds": ["cosrx-six", "ordinary"],
           "interpretation": true
         },
         {
           "title": "Different disclosures",
           "text": "The Ordinary names 1% copper peptides. COSRX’s six-peptide name counts components; it is not a comparable concentration.",
-          "sourceIds": [
-            "cosrx-six",
-            "ordinary"
-          ],
+          "sourceIds": ["cosrx-six", "ordinary"],
           "interpretation": true
         }
       ],
@@ -2554,48 +2148,33 @@
         {
           "question": "Do shared names mean equal results?",
           "answer": "No. Ingredient research and label overlap do not establish equal performance of finished formulas.",
-          "sourceIds": [
-            "argireline-trial",
-            "cir-peptides"
-          ]
+          "sourceIds": ["argireline-trial", "cir-peptides"]
         },
         {
           "question": "Is there a fair cost comparison?",
           "answer": "Not yet. No COSRX price is published here because the availability information requires clarification.",
-          "sourceIds": [
-            "cosrx-six"
-          ]
+          "sourceIds": ["cosrx-six"]
         }
       ],
       "decisionNotes": [
         {
           "title": "Confirm the bottle",
           "text": "Use the exact mini presentation when reviewing this pair.",
-          "sourceIds": [
-            "cosrx-six"
-          ],
+          "sourceIds": ["cosrx-six"],
           "interpretation": true
         },
         {
           "title": "Read the full label",
           "text": "Selected lists omit non-peptide ingredients; they are not full-formula equivalence checks.",
-          "sourceIds": [
-            "cosrx-six",
-            "ordinary"
-          ],
+          "sourceIds": ["cosrx-six", "ordinary"],
           "interpretation": true
         }
       ],
       "researchContext": {
         "text": "The Argireline trial concerns a preparation, not either retail product in this pair. CIR addresses specified cosmetic safety uses, not a comparative benefit trial.",
-        "sourceIds": [
-          "argireline-trial",
-          "cir-peptides"
-        ]
+        "sourceIds": ["argireline-trial", "cir-peptides"]
       },
-      "relatedGuideSlugs": [
-        "peptide-percentages-explained"
-      ],
+      "relatedGuideSlugs": ["peptide-percentages-explained"],
       "updatedAt": "2026-10-20",
       "limitations": "Selected names, no verified COSRX availability or comparable cost, and no finished-product head-to-head clinical evaluation. Scientific review pending.",
       "sourceIds": [
@@ -2610,10 +2189,7 @@
       "id": "ptiox-vs-ha",
       "slug": "skinceuticals-ptiox-vs-the-ordinary-ha",
       "title": "SkinCeuticals P-TIOX vs The Ordinary Multi-Peptide + HA",
-      "comparedProductIds": [
-        "skinceuticals-ptiox",
-        "ordinary-ha"
-      ],
+      "comparedProductIds": ["skinceuticals-ptiox", "ordinary-ha"],
       "editorialSummary": "Compare the price, selected names and different evidence scopes without assuming equivalent formulas or a clinical winner.",
       "citationPilot": true,
       "buyerQuestion": "What does the higher price tell us — and what does it leave unanswered?",
@@ -2622,18 +2198,13 @@
         {
           "title": "A whole formula, not just peptides",
           "text": "The P-TIOX brand description includes PHA, niacinamide and laminaria extract. Its percentages are not a pure-peptide strength ranking.",
-          "sourceIds": [
-            "ptiox-us"
-          ],
+          "sourceIds": ["ptiox-us"],
           "interpretation": true
         },
         {
           "title": "Market-specific label limit",
           "text": "P-TIOX’s selected peptide names were read from a UK brand page. Check your US packaging before assuming the same full formula.",
-          "sourceIds": [
-            "ptiox-uk-label",
-            "ptiox-us"
-          ],
+          "sourceIds": ["ptiox-uk-label", "ptiox-us"],
           "interpretation": true
         }
       ],
@@ -2641,41 +2212,29 @@
         {
           "question": "Does published research prove P-TIOX is better than The Ordinary?",
           "answer": "No head-to-head study between these retail serums was reviewed. Studies of one formula or a post-injection setting cannot establish that comparison.",
-          "sourceIds": [
-            "ptiox-zhu-2026",
-            "ptiox-adjunct-2026"
-          ]
+          "sourceIds": ["ptiox-zhu-2026", "ptiox-adjunct-2026"]
         },
         {
           "question": "Does the post-injection study show the serum replaces injections?",
           "answer": "No. That randomized study examined the serum around botulinum toxin treatment, rather than replacing the procedure.",
-          "sourceIds": [
-            "ptiox-adjunct-2026"
-          ]
+          "sourceIds": ["ptiox-adjunct-2026"]
         }
       ],
       "decisionNotes": [
         {
           "title": "Separate cost from benefit",
           "text": "Compare the dated unit prices independently from the research; price is not a clinical outcome.",
-          "sourceIds": [
-            "ptiox-us",
-            "ordinary-ha"
-          ],
+          "sourceIds": ["ptiox-us", "ordinary-ha"],
           "interpretation": true
         },
         {
           "title": "Confirm the exact product",
           "text": "This record covers the 30 mL serum, not P-TIOX Cream or a bundle.",
-          "sourceIds": [
-            "ptiox-us"
-          ],
+          "sourceIds": ["ptiox-us"],
           "interpretation": true
         }
       ],
-      "relatedGuideSlugs": [
-        "peptide-percentages-explained"
-      ],
+      "relatedGuideSlugs": ["peptide-percentages-explained"],
       "updatedAt": "2026-10-20",
       "limitations": "Selected regional label names; limited source inspection; no complete literature review, independent assay or direct product trial. Editorial and scientific review pending.",
       "sourceIds": [

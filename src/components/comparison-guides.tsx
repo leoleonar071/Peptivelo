@@ -2,11 +2,13 @@ import { comparisonPath } from "@/lib/config";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { catalog } from "@/lib/data";
+import { isVisiblePath } from "@/lib/publication-registry";
 
 export function ComparisonGuides({ productId }: { productId?: string }) {
   const guides = catalog.comparisons.filter(
     (comparison) =>
-      !productId || comparison.comparedProductIds.includes(productId),
+      isVisiblePath(comparisonPath(comparison.slug)) &&
+      (!productId || comparison.comparedProductIds.includes(productId)),
   );
   return (
     <section className="section" aria-label="Buying questions, explained">

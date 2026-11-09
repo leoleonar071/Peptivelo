@@ -1,7 +1,7 @@
 {
   "name": "peptide-atlas",
   "version": "1.0.0",
-  "description": "Source-traceable peptide skincare comparison MVP",
+  "description": "Independent peptide knowledge platform with source-traceable research and cosmetic comparison",
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",
     "build": "next build",
@@ -19,7 +19,8 @@
     "test:e2e:vinext": "playwright test --config playwright.vinext.config.ts",
     "types:workers": "cf workers types",
     "audit:launch": "node --env-file-if-exists=.env.local scripts/audit-launch.mjs",
-    "audit:content": "node scripts/audit-content.mjs"
+    "audit:content": "node scripts/audit-content.mjs",
+    "publication:inspect": "node --env-file-if-exists=.env.local scripts/inspect-publication.mjs"
   },
   "license": "ISC",
   "type": "module",

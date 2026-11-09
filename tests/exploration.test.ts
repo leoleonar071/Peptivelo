@@ -123,7 +123,12 @@ it("maintains explicit search routing without moving article destinations", () =
     "entity=skin%3Aingredient%3Acopper-tripeptide-1",
   );
   const article = searchIndex.find((e) => e.href === "/library/bpc-157/")!;
-  expect(searchDestination(article, "BPC-157")).toBe(article.href);
+  const destination = new URL(
+    searchDestination(article, "BPC-157"),
+    "https://example.test",
+  );
+  expect(destination.pathname).toBe(article.href);
+  expect(destination.searchParams.get("returnTo")).toBe("/search/?q=BPC-157");
   const state = explorationState(
     { q: "GHK-Cu", a: "ordinary-copper", b: "cosrx-six-mini" },
     getExploration(ingredient.entity!.id)!,

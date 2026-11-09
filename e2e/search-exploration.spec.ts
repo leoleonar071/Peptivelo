@@ -110,6 +110,10 @@ test("ambiguous queries use compact results and invalid states recover", async (
     "Choose a result to explore.",
   );
   expect(await page.locator(".search-document").count()).toBeLessThanOrEqual(6);
+  await expect(page.locator(".explore-results-controls")).toHaveAttribute(
+    "aria-busy",
+    "false",
+  );
   await page.getByLabel("Show", { exact: true }).selectOption("Products");
   await expect(page).toHaveURL(/group=Products/);
   await page.locator(".search-document").first().click();
@@ -137,6 +141,9 @@ test("exploration supports keyboard tabs, mobile layout and both themes", async 
   for (const width of [320, 768, 1440]) {
     await page.setViewportSize({ width, height: 960 });
     await page.goto("/search/?q=GHK-Cu");
+    await expect(
+      page.getByRole("tab", { name: "Overview", exact: true }),
+    ).toBeEnabled();
     await page.getByRole("tab", { name: "Overview", exact: true }).focus();
     await page.keyboard.press("ArrowRight");
     await expect(

@@ -1,0 +1,297 @@
+/* Source notebook: shared ivory/petroleum surfaces, quiet borders, 4px grid.
+   Documentation states are descriptive, never colored efficacy ratings. */
+.transparency-profile {
+  margin-block: 32px;
+  overflow-wrap: anywhere;
+}
+.transparency-profile > summary {
+  min-height: 64px;
+  padding: 16px 20px;
+}
+.transparency-profile summary small {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.transparency-profile .reader-disclosure-body {
+  padding: 8px 20px 24px;
+}
+.documentation-fields {
+  margin-block: 24px;
+}
+.documentation-fields > div {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) minmax(0, 3fr);
+  gap: 24px;
+  padding-block: 20px;
+  border-top: 1px solid var(--line);
+}
+.documentation-fields dt {
+  font-weight: 600;
+}
+.documentation-fields dd {
+  margin: 0;
+  min-width: 0;
+}
+.documentation-fields dd p {
+  margin-block: 8px;
+}
+.documentation-fields small {
+  color: var(--muted);
+  font-size: 13px;
+}
+.documentation-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 8px;
+}
+.documentation-sources > div {
+  min-width: 0;
+  flex-basis: 100%;
+}
+.documentation-sources small,
+.source-overview small {
+  display: block;
+  line-height: 1.6;
+}
+.knowledge-related-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.knowledge-related-list li {
+  min-width: 0;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+.knowledge-related-list p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 4px 0;
+}
+.discovery-return-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.research-documentation,
+.source-overview {
+  margin-block: 24px;
+  overflow-wrap: anywhere;
+}
+.research-documentation .reader-disclosure-body {
+  padding: 16px 20px;
+}
+.research-query {
+  padding: 12px;
+  border-left: 2px solid var(--line);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.study-extraction > div {
+  border-top: 1px solid var(--line);
+  padding-block: 12px;
+}
+.study-extraction dt {
+  font-weight: 600;
+}
+.study-extraction dd {
+  margin: 4px 0;
+}
+.source-overview ul {
+  padding-left: 20px;
+}
+.source-overview li {
+  padding-block: 8px;
+}
+.source-overview .text-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.hero-basics {
+  margin: 16px auto 0;
+  font-size: 15px;
+}
+.hero-basics .text-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.peptide-basics {
+  scroll-margin-top: 24px;
+}
+.peptide-basics h2 {
+  font-size: clamp(26px, 4vw, 36px);
+}
+.product-research-actions {
+  margin-block: 20px;
+  align-items: center;
+}
+.product-research-actions .text-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.directory-controls {
+  display: grid;
+  grid-template-columns: minmax(180px, 2fr) repeat(2, minmax(120px, 1fr)) auto;
+  gap: 12px 16px;
+  align-items: end;
+  margin-block: 20px 4px;
+}
+.directory-field {
+  min-width: 0;
+}
+.directory-field label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.directory-field input,
+.directory-controls .directory-field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+.directory-controls p {
+  margin: 0;
+  font-size: 14px;
+}
+.directory-share .share-discovery {
+  justify-content: flex-end;
+  margin-block: 4px;
+}
+.directory-share .share-discovery > button {
+  background: transparent;
+  color: var(--muted);
+  border-color: transparent;
+  padding-inline: 8px;
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .directory-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .directory-name {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 600px) {
+  .knowledge-related-list {
+    grid-template-columns: 1fr;
+  }
+  .directory-field select {
+    font-size: 15px;
+  }
+  .directory-controls > p {
+    align-self: center;
+  }
+}
+.documentation-sources a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.knowledge-next-steps {
+  border-top: 1px solid var(--line);
+  padding-block: 24px;
+  margin-top: 32px;
+}
+.knowledge-next-steps h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.knowledge-next-steps .text-link,
+.discovery-return {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.knowledge-next-steps .button-row {
+  gap: 8px 24px;
+}
+.discovery-return {
+  margin-bottom: 16px;
+}
+.share-discovery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block: 16px;
+}
+.share-discovery [role="status"] {
+  font-size: 14px;
+  color: var(--muted);
+}
+.share-discovery label {
+  flex-basis: 100%;
+}
+.share-discovery input {
+  display: block;
+  width: 100%;
+  color: var(--ink);
+  background: var(--paper);
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.directory-controls,
+.explore-results-controls {
+  align-items: center;
+}
+.explore-results-controls {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.explore-results-controls label {
+  min-width: 0;
+}
+.explore-results-controls select {
+  max-width: 100%;
+}
+.ingredient-quick-answer {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+.ingredient-detailed {
+  margin-block: 24px;
+}
+.ingredient-detailed > summary {
+  cursor: pointer;
+  min-height: 48px;
+  font-weight: 600;
+  padding: 12px 0;
+}
+@media (max-width: 600px) {
+  .documentation-fields > div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .directory-controls {
+    align-items: stretch;
+  }
+  .directory-controls label {
+    flex-basis: 100%;
+  }
+  .directory-controls select {
+    width: 100%;
+  }
+  .explore-results-controls label {
+    width: 100%;
+  }
+}

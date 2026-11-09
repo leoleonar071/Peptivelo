@@ -1,4 +1,5 @@
 import { comparisonPath } from "@/lib/config";
+import { isVisiblePath } from "@/lib/publication-registry";
 import Link from "next/link";
 import { catalog, products } from "@/lib/data";
 import { type Guide } from "@/lib/guides";
@@ -143,6 +144,7 @@ export function ReadingGuide({ guide }: { guide: Guide }) {
         <ul>
           {guide.comparisonIds.map((id) => {
             const comparison = catalog.comparisons.find((c) => c.id === id)!;
+            if (!isVisiblePath(comparisonPath(comparison.slug))) return null;
             return (
               <li key={id}>
                 <Link href={comparisonPath(comparison.slug)}>

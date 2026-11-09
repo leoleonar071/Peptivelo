@@ -25,9 +25,7 @@ test("skin topic leads to an editorial comparison and its product profile", asyn
       }),
     })
     .click();
-  await expect(page).toHaveURL(
-    /\/compare\/niod-cais3-vs-the-ordinary\/$/,
-  );
+  await expect(page).toHaveURL(/\/compare\/niod-cais3-vs-the-ordinary\/$/);
   await page.locator(".reader-pair .reader-photo").first().click();
   await expect(page).toHaveURL(/\/skincare\/products\//);
   await page
@@ -88,7 +86,7 @@ test("topic discovery connects research, learning and the filtered directory", a
     })
     .click();
   await expect(page).toHaveURL(
-    /\/skincare\/ingredients\/copper-tripeptide-1\/$/,
+    /\/skincare\/ingredients\/copper-tripeptide-1\/\?returnTo=/,
   );
   await expect(
     page.getByRole("link", { name: "← Back to Ingredients", exact: true }),

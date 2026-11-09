@@ -1,3 +1,4 @@
+import { canIndexPath } from "@/lib/publication-registry";
 import Link from "next/link";
 import { TopicLanding } from "@/components/topic-landing";
 import { contentNavigation } from "@/lib/content-navigation";
@@ -6,7 +7,7 @@ export const metadata = {
   title: "Health & research",
   description: "Selected peptide research briefs and their evidence limits.",
   alternates: { canonical: "/topics/health-research/" },
-  robots: { index: false, follow: true },
+  robots: { index: canIndexPath("/topics/health-research/"), follow: true },
 };
 export default function ResearchPage() {
   return (

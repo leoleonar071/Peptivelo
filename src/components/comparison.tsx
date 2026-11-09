@@ -34,6 +34,7 @@ import { comparisonFacts, volumeLabel } from "@/lib/comparison";
 import { money } from "@/lib/math";
 import { productPath } from "@/lib/config";
 import { track } from "@/lib/analytics";
+import { isVisiblePath } from "@/lib/publication-registry";
 import { Bottle, VerifiedDate, SourceList } from "./ui";
 
 import { ComparisonGrid } from "./comparison-grid";
@@ -453,6 +454,7 @@ export function ComparisonTable({
   const facts = comparisonFacts(a, b);
   const guide = catalog.comparisons.find(
     (comparison) =>
+      isVisiblePath(comparisonPath(comparison.slug)) &&
       comparison.comparedProductIds.includes(a.id) &&
       comparison.comparedProductIds.includes(b.id),
   );
@@ -802,6 +804,15 @@ export function Compare({
   const [shareStatus, setShareStatus] = useState("");
   const root = useRef<HTMLDivElement>(null);
   const previousCount = useRef(count);
+  const lastTrackedSelection = useRef("");
+  useEffect(() => {
+    if (!ready) return;
+    const selection = `${a?.id ?? ""}|${b?.id ?? ""}`;
+    if (selection === lastTrackedSelection.current) return;
+    lastTrackedSelection.current = selection;
+    if (a && b) track("comparison_completed", { a: a.id, b: b.id });
+    else if (a || b) track("comparison_started");
+  }, [ready, a, b]);
   useEffect(() => {
     if (count === 2 && previousCount.current !== 2)
       root.current
@@ -825,9 +836,6 @@ export function Compare({
     history.pushState(null, "", url);
     window.dispatchEvent(new Event("peptivelo:compare-selection"));
     setShareStatus("");
-    if (next[0] && next[1])
-      track("comparison_completed", { a: next[0], b: next[1] });
-    else if (next.some(Boolean)) track("comparison_started");
   }
   const selectors: [React.ReactNode, React.ReactNode] = [
     <ProductSelector

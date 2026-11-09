@@ -15,6 +15,10 @@ import {
   explorationState,
 } from "@/lib/exploration-navigation";
 import { money } from "@/lib/math";
+import { withDiscoveryReturn, discoveryReturn } from "@/lib/discovery-context";
+import { DiscoveryReturn } from "./discovery-return";
+import { ShareDiscovery } from "./share-discovery";
+import { useClientReady } from "@/lib/use-client-ready";
 
 function subscribeQuery(listener: () => void) {
   window.addEventListener("popstate", listener);
@@ -67,10 +71,13 @@ function Price({ product: p }: { product: ExplorationProduct }) {
 export function SearchExploration({
   model,
   state: serverState,
+  returnTo,
 }: {
   model: Exploration;
   state: ExplorationState;
+  returnTo?: string;
 }) {
+  const ready = useClientReady();
   const locationQuery = useSyncExternalStore(
     subscribeQuery,
     () => window.location.search,
@@ -80,6 +87,7 @@ export function SearchExploration({
     Object.fromEntries(new URLSearchParams(locationQuery)),
     model,
   );
+  const contextUrl = withDiscoveryReturn(explorationUrl(state), returnTo);
   const sorted = sortedAlternatives(model, state);
   const id = useId();
   const tabs = [
@@ -88,7 +96,10 @@ export function SearchExploration({
     "evidence",
   ] as ExplorationState["tab"][];
   function update(changes: Partial<ExplorationState>) {
-    window.history.pushState(null, "", explorationUrl(state, changes));
+    const url = new URL(explorationUrl(state, changes), window.location.origin);
+    const safeReturn = discoveryReturn(returnTo);
+    if (safeReturn) url.searchParams.set("returnTo", safeReturn);
+    window.history.pushState(null, "", url.pathname + url.search);
     window.dispatchEvent(new Event("peptivelo:exploration-query"));
   }
   const a = model.reference ?? model.products.find((p) => p.id === state.a);
@@ -105,6 +116,7 @@ export function SearchExploration({
   }
   return (
     <section className="search-exploration" aria-label="Explore this result">
+      <DiscoveryReturn value={returnTo} />
       <header className="explore-heading">
         <span className="eyebrow">
           {model.context === "skin"
@@ -145,6 +157,7 @@ export function SearchExploration({
             id={`${id}-tab-${tab}`}
             type="button"
             role="tab"
+            disabled={!ready}
             aria-selected={state.tab === tab}
             aria-controls={`${id}-panel`}
             tabIndex={state.tab === tab ? 0 : -1}
@@ -193,7 +206,10 @@ export function SearchExploration({
                 ))}
               </details>
             )}
-            <Link className="button" href={model.href}>
+            <Link
+              className="button"
+              href={withDiscoveryReturn(model.href, contextUrl)}
+            >
               {model.kind === "research"
                 ? "Read the full article"
                 : "Read the full profile"}{" "}
@@ -202,6 +218,7 @@ export function SearchExploration({
             {model.canCompare ? (
               <button
                 className="explore-inline-action"
+                disabled={!ready}
                 onClick={() => update({ tab: "compare", page: 1 })}
               >
                 Explore comparison options →
@@ -211,7 +228,10 @@ export function SearchExploration({
                 <section className="explore-related">
                   <h2>Related products</h2>
                   {model.products.slice(0, 2).map((p) => (
-                    <Link key={p.id} href={p.href}>
+                    <Link
+                      key={p.id}
+                      href={withDiscoveryReturn(p.href, contextUrl)}
+                    >
                       {p.name} →
                     </Link>
                   ))}
@@ -225,7 +245,10 @@ export function SearchExploration({
               <section className="explore-related">
                 <h2>Keep exploring</h2>
                 {model.related.map((r) => (
-                  <Link key={r.href} href={r.href}>
+                  <Link
+                    key={r.href}
+                    href={withDiscoveryReturn(r.href, contextUrl)}
+                  >
                     {r.title} →
                   </Link>
                 ))}
@@ -253,6 +276,7 @@ export function SearchExploration({
                     <label key={group}>
                       <input
                         type="radio"
+                        disabled={!ready}
                         name={`${id}-group`}
                         value={group}
                         checked={state.group === group}
@@ -268,6 +292,7 @@ export function SearchExploration({
                 Order
                 <select
                   aria-label="Order"
+                  disabled={!ready}
                   value={state.sort}
                   onChange={(e) =>
                     update({
@@ -298,7 +323,10 @@ export function SearchExploration({
                           : `${money(a.perMl)} / mL`}
                       </small>
                       {!model.reference && (
-                        <button onClick={() => update({ a: "", b: "" })}>
+                        <button
+                          disabled={!ready}
+                          onClick={() => update({ a: "", b: "" })}
+                        >
                           Remove first product
                         </button>
                       )}
@@ -318,7 +346,10 @@ export function SearchExploration({
                           ? "Price unavailable"
                           : `${money(b.perMl)} / mL`}
                       </small>
-                      <button onClick={() => update({ b: "" })}>
+                      <button
+                        disabled={!ready}
+                        onClick={() => update({ b: "" })}
+                      >
                         Remove second product
                       </button>
                     </>
@@ -329,7 +360,10 @@ export function SearchExploration({
                 {a && b ? (
                   <Link
                     className="button"
-                    href={`${comparisonPath()}?${new URLSearchParams({ a: a.id, b: b.id })}`}
+                    href={withDiscoveryReturn(
+                      `${comparisonPath()}?${new URLSearchParams({ a: a.id, b: b.id })}`,
+                      contextUrl,
+                    )}
                   >
                     Open comparison →
                   </Link>
@@ -360,7 +394,7 @@ export function SearchExploration({
                     <div className="explore-card-actions">
                       <button
                         className="button"
-                        disabled={incompatible}
+                        disabled={!ready || incompatible}
                         aria-pressed={selected}
                         aria-label={`${selected ? "Selected" : "Compare"}: ${p.name}`}
                         onClick={() => select(p)}
@@ -371,7 +405,9 @@ export function SearchExploration({
                             ? "Replace second"
                             : "Compare"}
                       </button>
-                      <Link href={p.href}>View profile →</Link>
+                      <Link href={withDiscoveryReturn(p.href, contextUrl)}>
+                        View profile →
+                      </Link>
                     </div>
                     {incompatible && (
                       <small>
@@ -410,7 +446,10 @@ export function SearchExploration({
                   </details>
                 ))}
             </div>
-            <Link className="text-link" href={model.href}>
+            <Link
+              className="text-link"
+              href={withDiscoveryReturn(model.href, contextUrl)}
+            >
               Read the full analysis →
             </Link>
           </>
@@ -421,7 +460,7 @@ export function SearchExploration({
             aria-label={`${state.tab === "compare" ? "Products" : "Evidence"} pages`}
           >
             <button
-              disabled={state.page <= 1}
+              disabled={!ready || state.page <= 1}
               onClick={() => update({ page: state.page - 1 })}
             >
               Previous
@@ -430,7 +469,7 @@ export function SearchExploration({
               Page {state.page} of {pageCount}
             </span>
             <button
-              disabled={state.page >= pageCount}
+              disabled={!ready || state.page >= pageCount}
               onClick={() => update({ page: state.page + 1 })}
             >
               Next
@@ -438,6 +477,7 @@ export function SearchExploration({
           </nav>
         )}
       </div>
+      <ShareDiscovery href={contextUrl} />
       <span className="sr-only" role="status">
         {`${state.tab} ready${state.tab === "compare" ? `, ${[a, b].filter(Boolean).length} products selected` : ""}`}
       </span>

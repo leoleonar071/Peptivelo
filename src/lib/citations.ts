@@ -10,6 +10,7 @@ export const evidence = z
     z.object({
       sourceId: z.string(),
       kind: z.enum([
+        "Terminology reference",
         "Supplier information",
         "Manufacturer label",
         "Human ingredient study",

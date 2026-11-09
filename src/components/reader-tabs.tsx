@@ -75,6 +75,25 @@ export function ReaderTabs({
       const target = id ? document.getElementById(id) : null;
       if (target && root.current?.contains(target)) {
         if (target.matches(".numbered-references > li")) {
+          // A native citation can be followed before hydration attaches onClick.
+          // Keep its focused origin when upgrading the hash to a modal.
+          const origin = document.activeElement;
+          if (
+            origin instanceof HTMLAnchorElement &&
+            root.current.contains(origin) &&
+            origin.hash === `#${id}`
+          )
+            trigger.current = origin;
+          else if (!trigger.current)
+            trigger.current =
+              [
+                ...root.current.querySelectorAll<HTMLAnchorElement>(
+                  ".inline-citations a",
+                ),
+              ].find(
+                (link) =>
+                  link.hash === `#${id}` && link.getClientRects().length > 0,
+              ) ?? null;
           setReference(id);
           return;
         }
@@ -133,7 +152,9 @@ export function ReaderTabs({
       }
     }
     // Run after the dialog replaces the no-JavaScript bibliography.
-    const frame = requestAnimationFrame(() => followHash(Boolean(location.hash)));
+    const frame = requestAnimationFrame(() =>
+      followHash(Boolean(location.hash)),
+    );
     window.addEventListener("popstate", onHistory);
     window.addEventListener("hashchange", onHistory);
     document.addEventListener("click", onClick);

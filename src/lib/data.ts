@@ -22,6 +22,12 @@ const product = z.object({
   ingredientListScope: z.string(),
   ingredientIds: z.array(z.string()),
   concentrationDisclosure: z.string(),
+  concentrationStatus: z.enum([
+    "recorded-disclosure",
+    "not-disclosed",
+    "not-reviewed",
+  ]),
+  manufacturerStudyNote: z.string().optional(),
   concentrationExplanation: z.string(),
   sourceId: z.string(),
   lastVerifiedAt: z.iso.date(),

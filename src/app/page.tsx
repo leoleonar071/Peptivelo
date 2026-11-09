@@ -4,7 +4,13 @@ import { HomeHero } from "@/components/home-hero";
 import { TopicCards, ContentCards } from "@/components/discovery";
 import { contentNavigation } from "@/lib/content-navigation";
 import { site } from "@/lib/config";
-export const metadata = { alternates: { canonical: "/" } };
+import { canIndexPath, policyForPath } from "@/lib/publication-registry";
+import { PeptideContexts } from "@/components/peptide-contexts";
+import "../styles/home-visual.css";
+export const metadata = {
+  alternates: { canonical: "/" },
+  robots: { index: canIndexPath("/"), follow: true },
+};
 export default function Home() {
   const featured = [
     contentNavigation.find((e) => e.id === "library:retatrutide")!,
@@ -15,7 +21,7 @@ export default function Home() {
       (e) => e.href === comparisonPath("niod-cais3-vs-the-ordinary"),
     )!,
     contentNavigation.find((e) => e.id === "hair:product")!,
-  ];
+  ].filter((entry) => entry && policyForPath(entry.href)?.promotable);
   return (
     <div className="discovery-home">
       <script
@@ -43,48 +49,58 @@ export default function Home() {
         <span className="eyebrow">FIND YOUR STARTING POINT</span>
         <h2 id="topics-title">Explore by topic</h2>
         <p>Choose an area to see its products, explanations and research.</p>
-        <TopicCards headingLevel={3} />
+        <TopicCards headingLevel={3} illustrated />
         <Link className="text-link" href="/topics/">
           All topics →
         </Link>
       </section>
-      <section className="wrap discovery-section">
-        <div className="discovery-intro-panel">
-          <span className="eyebrow">START WITH THE BASICS</span>
-          <h2>New to peptides?</h2>
-          <p>
-            A cosmetic label, a medicine and an experimental compound need
-            different kinds of evidence. Understand the differences before going
-            deeper.
-          </p>
-          <Link className="button" href="/library/peptide-categories/">
-            Start here →
-          </Link>
-          <Link className="text-link" href="/learn/">
-            Explore all learning guides →
-          </Link>
-        </div>
-      </section>
       <section
         className="wrap discovery-section"
-        aria-labelledby="featured-title"
+        aria-labelledby="peptide-basics-title"
       >
-        <span className="eyebrow">SELECTED READING</span>
-        <h2 id="featured-title">Featured content</h2>
-        <p>
-          Explore different topics and formats. Review status is shown on each
-          selection.
-        </p>
-        <ContentCards entries={featured} headingLevel={3} />
+        <div className="discovery-intro-panel home-basics-panel">
+          <div className="home-basics-copy">
+            <span className="eyebrow">START WITH THE BASICS</span>
+            <h2 id="peptide-basics-title">New to peptides?</h2>
+            <p>
+              A cosmetic label, a medicine and an experimental compound need
+              different kinds of evidence. Understand the differences before
+              going deeper.
+            </p>
+            <Link className="button" href="/library/peptide-categories/">
+              Start here →
+            </Link>
+            <Link className="text-link" href="/learn/">
+              Explore all learning guides →
+            </Link>
+          </div>
+          <PeptideContexts />
+        </div>
       </section>
-      <section className="wrap discovery-section">
-        <div className="discovery-intro-panel">
-          <span className="eyebrow">CLEAR SOURCES. VISIBLE LIMITS.</span>
-          <h2>How we work</h2>
+      {featured.length > 0 && (
+        <section
+          className="wrap discovery-section"
+          aria-labelledby="featured-title"
+        >
+          <span className="eyebrow">SELECTED READING</span>
+          <h2 id="featured-title">Featured content</h2>
           <p>
-            We distinguish label facts, ingredient research and product
-            evidence. Missing information and pending reviews stay visible.
+            Explore different topics and formats. Review status is shown on each
+            selection.
           </p>
+          <ContentCards entries={featured} headingLevel={3} />
+        </section>
+      )}
+      <section className="wrap discovery-section">
+        <div className="home-method-panel">
+          <div>
+            <span className="eyebrow">CLEAR SOURCES. VISIBLE LIMITS.</span>
+            <h2>How we work</h2>
+            <p>
+              We distinguish label facts, ingredient research and product
+              evidence. Missing information and pending reviews stay visible.
+            </p>
+          </div>
           <div className="button-row">
             <Link className="button" href="/methodology/">
               Our methodology

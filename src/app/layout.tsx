@@ -7,6 +7,7 @@ import { site } from "@/lib/config";
 import { Navigation } from "@/components/navigation";
 import { footerGroups } from "@/lib/site-navigation";
 import { SectionNavigation } from "@/components/section-navigation";
+import { ReferenceEvents } from "@/components/discovery-events";
 import "./globals.css";
 import "./brand-typography.css";
 import "../styles/peptivelo-tokens.css";
@@ -15,15 +16,16 @@ import "../styles/home-hero.css";
 import "../styles/product-offers.css";
 import "../styles/home-editorial.css";
 import "../styles/discovery.css";
+import "../styles/knowledge.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Understand peptides. Compare with confidence.`,
+    default: `${site.name} — Understand peptides. Explore the evidence and its limits.`,
     template: `%s | ${site.name}`,
   },
   description:
     "Explore peptides, ingredients, products and research with clear explanations and traceable sources.",
-  robots: { index: site.indexable, follow: true },
+  robots: { index: false, follow: true },
   openGraph: { siteName: site.name, type: "website", locale: "en_US" },
   icons: {
     icon: [
@@ -47,6 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         />
       </head>
       <body>
+        <ReferenceEvents />
         <a className="skip-link" href="#main">
           Skip to content
         </a>

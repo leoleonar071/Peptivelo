@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sourceSummary } from "@/lib/source-summary";
 import { catalog } from "@/lib/data";
 import {
   citationId,
@@ -56,6 +57,27 @@ export function EvidenceNotice() {
   );
 }
 
+export function SourceOverview({ set }: { set: CitationSet }) {
+  return (
+    <section className="source-overview" aria-label="Sources at a glance">
+      <h2>Sources at a glance</h2>
+      <ul>
+        {set.sourceIds.map((id) => {
+          const source = sourceSummary(id)!;
+          return (
+            <li key={id}>
+              <a className="text-link" href={`#${referenceId(set, id)}`}>
+                {source.label} · {source.kind}
+              </a>
+              <small>{source.access}</small>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
 export function References({ set }: { set: CitationSet }) {
   return (
     <ol className="numbered-references" aria-label="Numbered references">
@@ -63,7 +85,12 @@ export function References({ set }: { set: CitationSet }) {
         const source = catalog.sources.find((s) => s.id === id)!;
         const note = evidence.find((e) => e.sourceId === id)!;
         return (
-          <li key={id} id={referenceId(set, id)} value={index + 1} tabIndex={-1}>
+          <li
+            key={id}
+            id={referenceId(set, id)}
+            value={index + 1}
+            tabIndex={-1}
+          >
             <span className="reference-kind">{note.kind}</span>
             {note.authors && (
               <p>

@@ -1,10 +1,11 @@
+import { canIndexPath } from "@/lib/publication-registry";
 import { TopicCards } from "@/components/discovery";
 export const metadata = {
   title: "Explore peptide topics",
   description:
     "Find a starting point in skin, hair and selected health research.",
   alternates: { canonical: "/topics/" },
-  robots: { index: false, follow: true },
+  robots: { index: canIndexPath("/topics/"), follow: true },
 };
 export default function TopicsPage() {
   return (

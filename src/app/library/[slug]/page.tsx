@@ -1,29 +1,47 @@
+import { canIndexPath, isVisiblePath } from "@/lib/publication-registry";
+import { TransparencyProfile } from "@/components/transparency-profile";
+import { KnowledgeNextSteps } from "@/components/knowledge-next-steps";
+import { DiscoveryReturn } from "@/components/discovery-return";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { libraryArticles, libraryCitations } from "@/lib/library";
-import { Citations, References } from "@/components/citations";
+import { Citations, References, SourceOverview } from "@/components/citations";
+import { ResearchDocumentation } from "@/components/research-documentation";
 import { LibraryDisclosures } from "@/components/library-disclosures";
-type Props = { params: Promise<{ slug: string }> };
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
+  if (!isVisiblePath(`/library/${slug}/`))
+    return { title: "Not found", robots: { index: false, follow: false } };
   const article = libraryArticles.find((a) => a.slug === slug);
   return {
     title: article?.title ?? "Not found",
     description: article?.description,
-    robots: { index: false, follow: true },
+    robots: { index: canIndexPath(`/library/${slug}/`), follow: true },
     alternates: { canonical: `/library/${slug}/` },
   };
 }
 // Intent: a brief first answer with optional evidence depth, reusing the reader’s
 // typography, warm surfaces, bordered disclosures and 4px spacing system.
-export default async function LibraryArticle({ params }: Props) {
+export default async function LibraryArticle({ params, searchParams }: Props) {
   const { slug } = await params;
   const a = libraryArticles.find((item) => item.slug === slug);
   if (!a) notFound();
+  const href = `/library/${slug}/`;
+  if (!isVisiblePath(href)) notFound();
+  const query = await searchParams;
   const citations = libraryCitations(a);
   return (
     <article className="wrap library-page">
       <LibraryDisclosures>
+        <DiscoveryReturn
+          value={
+            typeof query.returnTo === "string" ? query.returnTo : undefined
+          }
+        />
         <Link
           className="text-link"
           href={
@@ -38,8 +56,8 @@ export default async function LibraryArticle({ params }: Props) {
           <p>{a.description}</p>
         </header>
         <p className="identify-footnote">
-          Sources checked October 20, 2026 · US context · Human editorial and
-          scientific review pending
+          Source consultation dates are recorded with each reference · US
+          context · Human editorial and scientific review pending
         </p>
         <section className="library-answer">
           <h2>The short answer</h2>
@@ -67,6 +85,8 @@ export default async function LibraryArticle({ params }: Props) {
           ))}
         </section>
         <p className="library-takeaway">{a.takeaway}</p>
+        <ResearchDocumentation documentId={`library:${a.slug}`} />
+        <SourceOverview set={citations} />
         <details className="reader-disclosure" id="library-references">
           <summary>
             <span>
@@ -93,6 +113,13 @@ export default async function LibraryArticle({ params }: Props) {
             : "health & research"}{" "}
           →
         </Link>
+        <TransparencyProfile href={href} />
+        <KnowledgeNextSteps
+          href={href}
+          returnTo={
+            typeof query.returnTo === "string" ? query.returnTo : undefined
+          }
+        />
       </LibraryDisclosures>
     </article>
   );

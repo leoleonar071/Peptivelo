@@ -1,0 +1,30 @@
+[
+  {
+    "sourceId": "argireline-trial",
+    "design": "Randomized, placebo-controlled ingredient-preparation study; allocation 3:1.",
+    "population": "60 Chinese participants.",
+    "duration": "Four weeks.",
+    "outcome": "Appearance of peri-orbital lines assessed using subjective classifications and objective skin-replica measurements described in the abstract.",
+    "reportedFinding": "The inspected abstract reports improvements with the studied preparation relative to placebo.",
+    "magnitude": "Effect estimates have not been extracted into this record; no numerical product-benefit claim is made here.",
+    "uncertainty": "Confidence intervals and a practical-importance appraisal have not been extracted from the inspected material. This does not mean the full article omits them.",
+    "interpretation": "This selected study does not establish the results of every finished product listing the ingredient. Full methods and qualified scientific appraisal remain pending.",
+    "access": "Publisher abstract inspected; full subscription methods were not inspected.",
+    "extractedAt": "2026-11-08",
+    "humanReview": "pending"
+  },
+  {
+    "sourceId": "bpc-human-pilot",
+    "design": "Uncontrolled pilot at a private clinic; observations around intravenous administration.",
+    "population": "Two participants previously exposed to the preparation.",
+    "duration": "Measurements across three days.",
+    "outcome": "Tested blood biomarkers, vital signs and reported side effects, as described by the abstract.",
+    "reportedFinding": "The authors reported no adverse effects or measurable changes in the tested biomarkers during the observed period.",
+    "magnitude": "No population adverse-event rate is inferred from two participants.",
+    "uncertainty": "Precision estimates and a full methods appraisal have not been extracted. A tiny uncontrolled observation cannot establish general or long-term safety.",
+    "interpretation": "The brief reports the limited observations rather than adopting the authors’ broader safety conclusion. It provides no use protocol or product recommendation.",
+    "access": "PubMed abstract inspected; full article, original data and ethics dossier not appraised.",
+    "extractedAt": "2026-11-08",
+    "humanReview": "pending"
+  }
+]

@@ -107,11 +107,13 @@ it("prepares one research brief for every planned area without creating public p
     [...researchRoadmap].sort((a, b) => a.priority - b.priority)[0].topicId,
   ).toBe("metabolism");
   for (const brief of researchRoadmap) {
-    expect(brief.stage).toBe("planned");
+    expect(brief.stage).toBe(
+      brief.topicId === "metabolism" ? "draft-prepared" : "planned",
+    );
     expect(brief.candidateLabels.length).toBeGreaterThan(0);
     expect(
       brief.sourceWork.every((source) => source.state === "not-started"),
-    ).toBe(true);
+    ).toBe(brief.topicId !== "metabolism");
     for (const id of brief.existingContentIds)
       expect(contentNavigation.find((entry) => entry.id === id)).toBeDefined();
   }

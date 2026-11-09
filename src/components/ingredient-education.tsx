@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { catalog, type Ingredient } from "@/lib/data";
 import { ingredientPath } from "@/lib/config";
+import { policyForPath } from "@/lib/publication-registry";
+import { ResearchDocumentation } from "./research-documentation";
 
 export function EvidenceLinks({ ids }: { ids: string[] }) {
   return (
@@ -31,6 +33,7 @@ export function IngredientEducation({
 }) {
   const info = ingredient.education;
   const Heading = compact ? "h3" : "h2";
+  const DetailContainer = compact ? "div" : "details";
   const sections = [
     ["What it is", info.whatItIs],
     ["Why it is used", info.purpose],
@@ -39,33 +42,53 @@ export function IngredientEducation({
   ] as const;
   return (
     <div className={`ingredient-education ${compact ? "is-compact" : ""}`}>
+      {!compact && (
+        <section className="ingredient-quick-answer">
+          <h2>In brief</h2>
+          <p>{info.summary}</p>
+          <p>{ingredient.knownLimitations}</p>
+        </section>
+      )}
       <p className="education-kind">
         Type of support: <strong>{info.evidence.label}</strong>
       </p>
-      {info.scientificReviewPending && <p className="education-date">Editorial draft · Qualified scientific review pending.</p>}
-      {sections.map(([title, section]) => (
-        <section key={title}>
-          <Heading>{title}</Heading>
-          <p>{section.text}</p>
-          {title === "Precautions and possible reactions" && (
-            <p>
-              Cosmetics can cause irritation or allergic reactions. Check the
-              full ingredient list and follow product directions.
-            </p>
-          )}
-          <EvidenceLinks
-            ids={
-              title === "Precautions and possible reactions"
-                ? [...section.sourceIds, "fda-cosmetic-reactions"]
-                : section.sourceIds
-            }
-          />
+      {!policyForPath(ingredientPath(ingredient.slug))?.scientificReviewed && (
+        <p className="education-date">
+          Qualified scientific review pending. A source check is not scientific
+          approval.
+        </p>
+      )}
+      <DetailContainer className="ingredient-detailed">
+        {!compact && (
+          <summary>Explore detailed evidence and precautions</summary>
+        )}
+        {sections.map(([title, section]) => (
+          <section key={title}>
+            <Heading>{title}</Heading>
+            <p>{section.text}</p>
+            {title === "Precautions and possible reactions" && (
+              <p>
+                Cosmetics can cause irritation or allergic reactions. Check the
+                full ingredient list and follow product directions.
+              </p>
+            )}
+            <EvidenceLinks
+              ids={
+                title === "Precautions and possible reactions"
+                  ? [...section.sourceIds, "fda-cosmetic-reactions"]
+                  : section.sourceIds
+              }
+            />
+          </section>
+        ))}
+        <section className="education-takeaway">
+          <Heading>What this means for your comparison</Heading>
+          <p>{info.takeaway}</p>
         </section>
-      ))}
-      <section className="education-takeaway">
-        <Heading>What this means for your comparison</Heading>
-        <p>{info.takeaway}</p>
-      </section>
+      </DetailContainer>
+      {!compact && (
+        <ResearchDocumentation documentId={`skin:${ingredient.id}`} />
+      )}
       <p className="education-date">
         Sources checked{" "}
         <time dateTime={info.sourceCheckedAt}>{info.sourceCheckedAt}</time>.

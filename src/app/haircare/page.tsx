@@ -1,3 +1,4 @@
+import { canIndexPath } from "@/lib/publication-registry";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { haircare, hairProductPath, hairIngredientPath } from "@/lib/haircare";
@@ -6,7 +7,7 @@ export const metadata = {
   title: "Peptides in haircare",
   description:
     "Understand peptide scalp-serum labels and distinguish ingredient studies from finished-product evidence.",
-  robots: { index: false, follow: true },
+  robots: { index: canIndexPath("/haircare/"), follow: true },
   alternates: { canonical: "/haircare/" },
 };
 

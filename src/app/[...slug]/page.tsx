@@ -1,4 +1,13 @@
 import { comparisonPath } from "@/lib/config";
+import {
+  canIndexPath,
+  isVisiblePath,
+  documentForPath,
+} from "@/lib/publication-registry";
+import { TransparencyProfile } from "@/components/transparency-profile";
+import { KnowledgeNextSteps } from "@/components/knowledge-next-steps";
+import { DiscoveryReturn } from "@/components/discovery-return";
+import { withProductContext } from "@/lib/discovery-context";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -141,7 +150,7 @@ function resolve(path: string) {
       return {
         title: i.name,
         description: i.description,
-        index: !i.education.scientificReviewPending,
+        index: canIndexPath(`/${path}/`),
       };
   }
   return null;
@@ -149,13 +158,13 @@ function resolve(path: string) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const path = (await params).slug.join("/");
   const r = resolve(path);
-  if (!r)
+  if (!r || !isVisiblePath(`/${path}/`))
     return { title: "Page not found", robots: { index: false, follow: false } };
   return {
     title: r.title,
     description: r.description,
     alternates: { canonical: `/${path}/` },
-    robots: { index: site.indexable && r.index, follow: true },
+    robots: { index: canIndexPath(`/${path}/`), follow: true },
     openGraph: { title: r.title, description: r.description, url: `/${path}/` },
   };
 }
@@ -166,7 +175,7 @@ export default async function Page({ params, searchParams }: Props) {
   const slug = (await params).slug;
   const path = slug.join("/");
   const r = resolve(path);
-  if (!r) notFound();
+  if (!r || !isVisiblePath(`/${path}/`)) notFound();
   const breadcrumbs = slug
     .map((part, i) => ({
       label:
@@ -185,7 +194,15 @@ export default async function Page({ params, searchParams }: Props) {
       <div className="prose">
         {p.sections.map((s) => (
           <section key={s.title}>
-            <h2>{s.title}</h2>
+            <h2
+              id={
+                s.title === "Documentation states"
+                  ? "documentation-states"
+                  : undefined
+              }
+            >
+              {s.title}
+            </h2>
             <p>{s.text}</p>
           </section>
         ))}
@@ -322,7 +339,8 @@ export default async function Page({ params, searchParams }: Props) {
               View product identification record <ArrowUpRight size={16} />
             </a>
             <p className="photo-credit">
-              Photograph: {brandName(p)}. Packaging may change.
+              Peptivelo identification record. Not a packaging photograph or
+              manufacturer endorsement.
             </p>
           </div>
           <div>
@@ -370,7 +388,7 @@ export default async function Page({ params, searchParams }: Props) {
           sort={get("offerSort")}
         />
         <div className="two-col section">
-          <section className="panel">
+          <section className="panel" id="product-ingredients">
             <h2>Selected label ingredients</h2>
             <p>{p.ingredientListScope}</p>
             <ul>
@@ -380,7 +398,15 @@ export default async function Page({ params, searchParams }: Props) {
             </ul>
             <div className="tags">
               {p.ingredientIds.map((id) => (
-                <Link className="badge" href={ingredientPath(id)} key={id}>
+                <Link
+                  className="badge"
+                  href={withProductContext(
+                    ingredientPath(id),
+                    `/${path}/`,
+                    get("returnTo"),
+                  )}
+                  key={id}
+                >
                   {catalog.ingredients.find((i) => i.id === id)!.name}
                 </Link>
               ))}
@@ -397,7 +423,9 @@ export default async function Page({ params, searchParams }: Props) {
             </p>
           </section>
         </div>
-        <SourceList ids={[p.sourceId]} />
+        <section id="product-sources" aria-label="Product sources">
+          <SourceList ids={[p.sourceId]} />
+        </section>
         <h2>Compare this product</h2>
         <div className="button-row">
           <Link className="button" href={`${comparisonPath()}?a=${p.id}`}>
@@ -669,6 +697,10 @@ export default async function Page({ params, searchParams }: Props) {
         }}
       />
       <Breadcrumbs items={breadcrumbs} />
+      <DiscoveryReturn
+        value={get("returnTo")}
+        fromProduct={get("fromProduct")}
+      />
       {slug[0] === "compare" && slug[1] && (
         <Link className="text-link" href="/skincare/">
           Skin & cosmetics →
@@ -688,9 +720,35 @@ export default async function Page({ params, searchParams }: Props) {
           </span>
           <h1>{r.title}</h1>
           <p>{r.description}</p>
+          {slug[0] === "skincare" && slug[1] === "products" && slug[2] && (
+            <div className="button-row product-research-actions">
+              <Link
+                className="button"
+                href={`${comparisonPath()}?a=${products.find((p) => p.slug === slug[2])!.id}`}
+              >
+                Compare recorded facts
+              </Link>
+              <a className="text-link" href="#product-ingredients">
+                View ingredients
+              </a>
+              <a className="text-link" href="#product-sources">
+                View sources
+              </a>
+            </div>
+          )}
         </div>
       )}
       {body}
+      {documentForPath(`/${path}/`)?.sourceIds.length ? (
+        <>
+          <TransparencyProfile href={`/${path}/`} />
+          <KnowledgeNextSteps
+            href={`/${path}/`}
+            returnTo={get("returnTo")}
+            fromProduct={get("fromProduct")}
+          />
+        </>
+      ) : null}
     </div>
   );
 }

@@ -10,7 +10,7 @@ for (const theme of ["light", "dark"]) {
       await page.getByRole("button", { name: "Switch to dark theme" }).click();
     await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-      "Understand peptides. Look beyond the claims.",
+      "Understand peptides. Explore the evidence and its limits.",
     );
     await expect(
       page

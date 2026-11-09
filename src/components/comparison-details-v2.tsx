@@ -8,6 +8,7 @@ import {
   visibleComparisonRows,
 } from "@/lib/comparison";
 import { FactValue } from "./comparison-value";
+import { useClientReady } from "@/lib/use-client-ready";
 
 const groupIds = [
   "product-details",
@@ -24,6 +25,7 @@ const descriptions = [
   "Source trail and limits of comparison",
 ];
 export function ComparisonDetailsV2({ a, b }: { a: Product; b: Product }) {
+  const ready = useClientReady();
   const [differencesOnly, setDifferencesOnly] = useState(false);
   const id = useId();
   const root = useRef<HTMLDivElement>(null);
@@ -86,6 +88,7 @@ export function ComparisonDetailsV2({ a, b }: { a: Product; b: Product }) {
         <label>
           <input
             type="checkbox"
+            disabled={!ready}
             checked={differencesOnly}
             onChange={(e) => setDifferencesOnly(e.target.checked)}
           />{" "}

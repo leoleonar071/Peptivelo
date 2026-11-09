@@ -93,6 +93,9 @@ test("full guides preserve the chosen pair and explain names without a quality r
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Tripeptide-29",
   );
+  await page
+    .getByText("Explore detailed evidence and precautions", { exact: true })
+    .click();
   await expect(
     page.getByRole("heading", { name: "Why it is used", exact: true }),
   ).toBeVisible();

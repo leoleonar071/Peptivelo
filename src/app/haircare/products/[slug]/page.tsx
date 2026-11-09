@@ -1,3 +1,8 @@
+import { withProductContext } from "@/lib/discovery-context";
+import { canIndexPath, isVisiblePath } from "@/lib/publication-registry";
+import { TransparencyProfile } from "@/components/transparency-profile";
+import { KnowledgeNextSteps } from "@/components/knowledge-next-steps";
+import { DiscoveryReturn } from "@/components/discovery-return";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
@@ -12,9 +17,14 @@ import { money } from "@/lib/math";
 import { HairPhoto } from "@/components/hair-photo";
 import { Citations, References } from "@/components/citations";
 import { LibraryDisclosures } from "@/components/library-disclosures";
-type Props = { params: Promise<{ slug: string }> };
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
+  if (slug !== haircare.product.slug || !isVisiblePath(hairProductPath))
+    return { title: "Not found", robots: { index: false, follow: false } };
   return {
     title:
       slug === haircare.product.slug
@@ -22,7 +32,7 @@ export async function generateMetadata({ params }: Props) {
         : "Not found",
     description:
       "Understand the 60 mL scalp serum, its selected peptide ingredients and the limits of a related formulation trial.",
-    robots: { index: false, follow: true },
+    robots: { index: canIndexPath(hairProductPath), follow: true },
     alternates: { canonical: hairProductPath },
   };
 }
@@ -30,14 +40,28 @@ export async function generateMetadata({ params }: Props) {
 // Intent: recognize the exact scalp bottle, get a short answer, then choose
 // ingredient or study detail. Existing DM Sans, paper/mineral surfaces,
 // petroleum text, quiet borders and 4px spacing preserve reading continuity.
-export default async function HairProductPage({ params }: Props) {
-  if ((await params).slug !== haircare.product.slug) notFound();
+export default async function HairProductPage({ params, searchParams }: Props) {
+  const { slug } = await params;
+  if (slug !== haircare.product.slug) notFound();
+  const href = hairProductPath;
+  if (!isVisiblePath(href)) notFound();
+  const query = await searchParams;
   const p = haircare.product;
   const citations = hairProductCitations();
   const source = catalog.sources.find((s) => s.id === p.sourceId)!;
   return (
     <article className="wrap library-page haircare-page">
       <LibraryDisclosures>
+        <DiscoveryReturn
+          fromProduct={
+            typeof query.fromProduct === "string"
+              ? query.fromProduct
+              : undefined
+          }
+          value={
+            typeof query.returnTo === "string" ? query.returnTo : undefined
+          }
+        />
         <Link className="text-link" href="/haircare/">
           ← Hair & scalp
         </Link>
@@ -92,7 +116,16 @@ export default async function HairProductPage({ params }: Props) {
                     {i.identity}
                     <Citations set={citations} claim={`ingredient-${i.slug}`} />
                   </p>
-                  <Link className="text-link" href={hairIngredientPath(i.slug)}>
+                  <Link
+                    className="text-link"
+                    href={withProductContext(
+                      hairIngredientPath(i.slug),
+                      hairProductPath,
+                      typeof query.returnTo === "string"
+                        ? query.returnTo
+                        : undefined,
+                    )}
+                  >
                     Understand this ingredient →
                   </Link>
                 </section>
@@ -182,6 +215,18 @@ export default async function HairProductPage({ params }: Props) {
             Manufacturer link · No affiliate commission on this link
           </small>
         </section>
+        <TransparencyProfile href={href} />
+        <KnowledgeNextSteps
+          href={href}
+          returnTo={
+            typeof query.returnTo === "string" ? query.returnTo : undefined
+          }
+          fromProduct={
+            typeof query.fromProduct === "string"
+              ? query.fromProduct
+              : undefined
+          }
+        />
       </LibraryDisclosures>
     </article>
   );

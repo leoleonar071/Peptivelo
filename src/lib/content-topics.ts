@@ -1,9 +1,11 @@
 import type { ContentEntry } from "./content-navigation";
 import { isActiveTopic, type TopicId } from "./topic-registry";
+import { isVisiblePath } from "./publication-registry";
 
 // Planning metadata must not become an entry in a public listing by accident.
 export const isPublicTopicEntry = (entry: ContentEntry) =>
-  entry.topic === null || isActiveTopic(entry.topic);
+  (entry.topic === null || isActiveTopic(entry.topic)) &&
+  isVisiblePath(entry.href);
 export function entriesForTopic(
   entries: readonly ContentEntry[],
   topic: TopicId,

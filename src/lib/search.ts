@@ -16,14 +16,25 @@ export type SearchEntry = {
   identity?: { id: string; name: string; aliases: string[] };
   relations?: { entityId: string; reason: string }[];
   matchReason?: string;
+  topic?: TopicId | null;
+  format?: string;
+  editorialStatus?: string;
 };
 export const ingredientAliases: Record<string, string[]> = {
   "copper-tripeptide-1": ["GHK-Cu", "GHKCu"],
 };
-export function searchDestination(entry: SearchEntry, query: string) {
+export function searchDestination(
+  entry: SearchEntry,
+  query: string,
+  returnTo?: string,
+) {
   return entry.entity && entry.category !== "Guides & articles"
     ? `/search/?${new URLSearchParams({ q: query.slice(0, 200), entity: entry.entity.id })}`
-    : entry.href;
+    : withDiscoveryReturn(
+        entry.href,
+        returnTo ??
+          `/search/?${new URLSearchParams({ q: query.slice(0, 200) })}`,
+      );
 }
 const normalize = (value: string) =>
   value
@@ -196,3 +207,5 @@ export function groupedSuggestions(results: SearchEntry[], perCategory = 2) {
     ),
   );
 }
+import type { TopicId } from "./topic-registry";
+import { withDiscoveryReturn } from "./discovery-context";

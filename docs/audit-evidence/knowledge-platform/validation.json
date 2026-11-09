@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-08",
+  "scope": "Local implementation only; no deployment or human editorial/scientific approvals.",
+  "typecheck": "passed",
+  "lint": "passed",
+  "unit": {
+    "files": 28,
+    "passed": 130,
+    "failed": 0
+  },
+  "nextBuild": "passed",
+  "workerBuild": "passed",
+  "browser": {
+    "runtime": "built vinext Worker in workerd",
+    "specFiles": 12,
+    "projects": ["desktop", "tablet", "mobile"],
+    "passed": 141,
+    "failed": 0,
+    "configuredSkips": 6
+  },
+  "visualQA": [
+    "desktop home light",
+    "tablet documentation dark",
+    "mobile 320px home light",
+    "mobile 320px documentation dark"
+  ],
+  "humanUsabilityTest": "not-run",
+  "clinicalDraftPublication": "blocked-pending-human-review",
+  "analyticsTransport": "not-installed",
+  "productionDeployment": "not-performed"
+}

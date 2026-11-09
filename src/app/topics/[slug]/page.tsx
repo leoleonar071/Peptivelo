@@ -4,6 +4,7 @@ import { activeTopicBySlug } from "@/lib/topic-registry";
 import { contentNavigation } from "@/lib/content-navigation";
 import { entriesForTopic } from "@/lib/content-topics";
 import { TopicLanding } from "@/components/topic-landing";
+import { canIndexPath } from "@/lib/publication-registry";
 
 type Props = { params: Promise<{ slug: string }> };
 function availableTopic(slug: string) {
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: topic.title,
         description: topic.description,
         alternates: { canonical: topic.href },
-        robots: { index: false, follow: true },
+        robots: { index: canIndexPath(topic.href), follow: true },
       }
     : { title: "Page not found", robots: { index: false, follow: false } };
 }

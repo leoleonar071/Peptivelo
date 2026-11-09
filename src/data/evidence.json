@@ -299,9 +299,9 @@
     "kind": "Expert safety assessment",
     "supports": "The 2025 panel gives a favorable conclusion up to 0.005% and finds data insufficient above that concentration.",
     "limits": "Not evidence of harm above the assessed amount or certification of a complete serum. Pure-peptide concentrations in this comparison are unverified; blend percentages are not interchangeable.",
-    "commercialContext": "CIR assessment includes published and industry-submitted data. Article-specific funding and conflict statements were not verified in this pass; not government approval.",
-    "checkedAt": "2026-10-20",
-    "access": "Publisher full-text introduction, abstract, composition and use-concentration sections inspected. Underlying toxicology datasets not independently reanalyzed.",
+    "commercialContext": "The article declares no potential conflicts. It states that the supplement was sponsored by CIR, which is financially supported by the Personal Care Products Council. These are disclosed statements, not an independent audit or government approval.",
+    "checkedAt": "2026-11-08",
+    "access": "Publisher HTML abstract, selected text sections, conclusion, funding and conflict declarations inspected. Underlying toxicology datasets were not independently reanalysed.",
     "authors": "Johnson W Jr, Bergfeld WF, Belsito DV, et al.",
     "journal": "International Journal of Toxicology",
     "year": 2025,
@@ -335,5 +335,15 @@
     "commercialContext": "Published by the manufacturer and seller; not independent corroboration.",
     "checkedAt": "2026-10-19",
     "access": "Existing manufacturer-source catalog record reused; no new remote source inspection in this interface extension."
+  },
+  {
+    "sourceId": "iupac-peptides",
+    "kind": "Terminology reference",
+    "supports": "A chemical definition of peptides and their amino-acid-derived bonds.",
+    "limits": "Terminology, not evidence of a product benefit, clinical use or safety.",
+    "commercialContext": "IUPAC terminology reference; no clinical endorsement is inferred.",
+    "checkedAt": "2026-11-08",
+    "access": "Official indexed definition excerpt inspected. Automated retrieval of the direct entry and its PDF returned HTTP 403; full-page access was not obtained.",
+    "publicationUrl": "https://goldbook.iupac.org/terms/view/P04479"
   }
 ]
