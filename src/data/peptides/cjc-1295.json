@@ -1,0 +1,42 @@
+{
+  "id": "peptide:cjc-1295",
+  "name": "CJC-1295",
+  "slug": "cjc-1295",
+  "identityKind": "unverified-label",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/cjc-1295/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "growth",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

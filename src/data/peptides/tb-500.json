@@ -1,0 +1,42 @@
+{
+  "id": "peptide:tb-500",
+  "name": "TB-500",
+  "slug": "tb-500",
+  "identityKind": "unverified-label",
+  "identityVerification": "pending",
+  "priority": "initial",
+  "canonicalPath": "/peptides/tb-500/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "repair",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

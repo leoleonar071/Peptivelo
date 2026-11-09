@@ -12,6 +12,10 @@ import {
   type ContentEntry,
 } from "../src/lib/content-navigation";
 import { entriesForTopic, isPublicTopicEntry } from "../src/lib/content-topics";
+import {
+  publicationDocuments,
+  isVisiblePath,
+} from "../src/lib/publication-registry";
 import { searchIndex } from "../src/lib/search-index";
 import { TopicLanding } from "../src/components/topic-landing";
 import { researchRoadmap } from "../src/editorial/research-roadmap";
@@ -33,7 +37,9 @@ it("keeps planning out of navigation, search and published destinations without 
     "hair",
     "health",
   ]);
-  expect(topics).toEqual(activeTopics);
+  expect(topics).toEqual(
+    activeTopics.filter((topic) => isVisiblePath(topic.href)),
+  );
   for (const topic of topicRegistry) {
     if ("parentId" in topic) expect(ids.has(topic.parentId)).toBe(true);
     for (const related of topic.relatedIds)
@@ -52,10 +58,10 @@ it("keeps planning out of navigation, search and published destinations without 
       expect(topicForPath(`/topics/${topic.slug}/`)).toBeUndefined();
     }
   }
-  expect(topicForPath("/library/retatrutide/")?.id).toBe("health");
+  expect(topicForPath("/library/retatrutide/")).toBeUndefined();
   expect(topicForPath("/skincare/products/example/")?.id).toBe("skin");
   expect(topicForPath("/skincare-other/")).toBeUndefined();
-  for (const topic of activeTopics)
+  for (const topic of topics)
     expect(entriesForTopic(contentNavigation, topic.id).length).toBeGreaterThan(
       0,
     );
@@ -82,16 +88,16 @@ it("shares one content identity across active topics while suppressing planned p
   expect(isPublicTopicEntry(hidden)).toBe(false);
 });
 
-it("renders a populated shared landing and omits empty formats and planned subtopics", () => {
+it("omits unpublished research, empty formats and planned subtopics", () => {
   const html = renderToStaticMarkup(
     createElement(TopicLanding, {
       topic: activeTopicBySlug("health-research")!,
       entries: contentNavigation,
     }),
   );
-  expect(html).toContain("Research &amp; articles");
-  expect(html).toMatch(/href="\/library\/bpc-157\/?"/);
-  expect(html).toMatch(/href="\/library\/retatrutide\/?"/);
+  expect(html).not.toContain("Research &amp; articles");
+  expect(html).not.toMatch(/href="\/library\/bpc-157\/?"/);
+  expect(html).not.toMatch(/href="\/library\/retatrutide\/?"/);
   expect(html).not.toContain("<h2>Products</h2>");
   expect(html).not.toContain("<h2>Comparisons</h2>");
   expect(html).not.toContain("/topics/metabolism-appetite");
@@ -115,7 +121,9 @@ it("prepares one research brief for every planned area without creating public p
       brief.sourceWork.every((source) => source.state === "not-started"),
     ).toBe(brief.topicId !== "metabolism");
     for (const id of brief.existingContentIds)
-      expect(contentNavigation.find((entry) => entry.id === id)).toBeDefined();
+      expect(
+        publicationDocuments.find((entry) => entry.id === id),
+      ).toBeDefined();
   }
   expect(comparisonGroups).toHaveLength(1);
 });

@@ -1,0 +1,39 @@
+.peptide-profile {
+  max-width: 900px;
+  overflow-wrap: anywhere;
+}
+.peptide-profile > nav {
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+.peptide-profile > section,
+.peptide-profile > aside {
+  margin-block: 2.5rem;
+}
+.peptide-profile .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.peptide-image {
+  margin: 1.5rem 0;
+}
+.peptide-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.peptide-image figcaption {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+.peptide-citations {
+  white-space: normal;
+  font-size: 0.8em;
+}
+@media (max-width: 600px) {
+  .peptide-profile > section {
+    margin-block: 1.75rem;
+  }
+}

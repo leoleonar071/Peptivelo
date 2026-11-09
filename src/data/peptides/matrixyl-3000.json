@@ -1,0 +1,40 @@
+{
+  "id": "peptide:matrixyl-3000",
+  "name": "Matrixyl 3000",
+  "slug": "matrixyl-3000",
+  "identityKind": "unverified-label",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/matrixyl-3000/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "skin",
+  "additionalTopicIds": [],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

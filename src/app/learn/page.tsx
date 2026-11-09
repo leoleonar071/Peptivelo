@@ -1,4 +1,4 @@
-import { canIndexPath } from "@/lib/publication-registry";
+import { canIndexPath, isVisiblePath } from "@/lib/publication-registry";
 import { ContentCards } from "@/components/discovery";
 import { contentNavigation } from "@/lib/content-navigation";
 import Link from "next/link";
@@ -45,12 +45,14 @@ export default function LearnPage() {
           . <Link href="/sources/#source-iupac-peptides">Access notes →</Link>
         </p>
         <div className="button-row">
-          <Link
-            className="button secondary"
-            href="/library/peptide-categories/"
-          >
-            Understand cosmetic, medicine and experimental contexts →
-          </Link>
+          {isVisiblePath("/library/peptide-categories/") && (
+            <Link
+              className="button secondary"
+              href="/library/peptide-categories/"
+            >
+              Understand cosmetic, medicine and experimental contexts →
+            </Link>
+          )}
           <Link className="text-link" href="/topics/">
             Choose a topic →
           </Link>

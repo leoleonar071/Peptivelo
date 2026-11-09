@@ -80,10 +80,12 @@ it("requires current-version editorial AND scientific approval, plus the site sw
     publicationDecision(changed, reviews, [], true).scientificReviewed,
   ).toBe(false);
 });
-it("keeps new drafts internal and preserves only explicitly grandfathered draft URLs", () => {
+it("keeps all drafts internal including legacy URLs", () => {
   const draft = { ...document, status: "draft" as const };
   expect(publicationDecision(draft, [], [], true).visible).toBe(false);
-  expect(publicationDecision(draft, [], [draft.href], true).visible).toBe(true);
+  expect(publicationDecision(draft, [], [draft.href], true).visible).toBe(
+    false,
+  );
   expect(publicationDecision(draft, [], [draft.href], true).promotable).toBe(
     false,
   );
@@ -95,7 +97,7 @@ it("keeps new drafts internal and preserves only explicitly grandfathered draft 
       true,
     ).visible,
   ).toBe(false);
-  expect(policyForPath("/library/bpc-157/")?.visible).toBe(true);
+  expect(policyForPath("/library/bpc-157/")?.visible).toBe(false);
   expect(policyForPath("/library/glp-1/")).toBeUndefined();
 });
 it("does not infer human review from published status or an absent legacy flag", () => {

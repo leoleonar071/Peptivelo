@@ -1,6 +1,7 @@
 import { z } from "zod";
 import raw from "@/data/catalog.json";
-const status = z.enum(["draft", "published", "demo"]);
+import { legacyEditorialStatus as status } from "./editorial-status";
+import { editorialImageSchema } from "./peptide-schema";
 const source = z.object({
   id: z.string(),
   title: z.string(),
@@ -35,6 +36,7 @@ const product = z.object({
   formulationNotes: z.string(),
   tone: z.string(),
   image: z.string().startsWith("/images/products/"),
+  editorialImages: z.array(editorialImageSchema).optional(),
   usageSummary: z.string().optional(),
 });
 const explanation = z.object({

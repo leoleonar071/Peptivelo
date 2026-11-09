@@ -1,4 +1,5 @@
-import { canIndexPath } from "@/lib/publication-registry";
+import { notFound } from "next/navigation";
+import { canIndexPath, isVisiblePath } from "@/lib/publication-registry";
 import Link from "next/link";
 import { TopicLanding } from "@/components/topic-landing";
 import { contentNavigation } from "@/lib/content-navigation";
@@ -10,6 +11,7 @@ export const metadata = {
   robots: { index: canIndexPath("/topics/health-research/"), follow: true },
 };
 export default function ResearchPage() {
+  if (!isVisiblePath("/topics/health-research/")) notFound();
   return (
     <TopicLanding
       topic={activeTopicBySlug("health-research")!}

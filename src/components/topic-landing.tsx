@@ -1,3 +1,4 @@
+import { isVisiblePath } from "@/lib/publication-registry";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ContentCards } from "./discovery";
@@ -35,7 +36,9 @@ export function TopicLanding({
   const subtopics = activeTopics.filter(
     (candidate) => "parentId" in candidate && candidate.parentId === topic.id,
   );
-  const related = relatedActiveTopics(topic);
+  const related = relatedActiveTopics(topic).filter((t) =>
+    isVisiblePath(t.href),
+  );
   return (
     <div className="wrap discovery-page">
       <span className="eyebrow">{topic.title.toUpperCase()}</span>

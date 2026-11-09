@@ -17,6 +17,7 @@ import "../styles/product-offers.css";
 import "../styles/home-editorial.css";
 import "../styles/discovery.css";
 import "../styles/knowledge.css";
+import "../styles/peptide-profile.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {

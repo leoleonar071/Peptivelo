@@ -1,0 +1,42 @@
+{
+  "id": "peptide:aod-9604",
+  "name": "AOD-9604",
+  "slug": "aod-9604",
+  "identityKind": "compound",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/aod-9604/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "metabolism",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

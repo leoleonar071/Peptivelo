@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { editorialStatus } from "./editorial-status";
 import raw from "@/data/guides.json";
 import { catalog } from "./data";
 
@@ -13,7 +14,7 @@ const guideSchema = z.object({
   description: z.string().min(1),
   answer: z.string().min(1),
   answerSourceIds: z.array(z.string()).min(1),
-  status: z.enum(["draft", "published"]),
+  status: editorialStatus,
   updatedAt: z.iso.date(),
   scope: z.string().min(1),
   sections: z

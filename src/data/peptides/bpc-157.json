@@ -1,0 +1,42 @@
+{
+  "id": "peptide:bpc-157",
+  "name": "BPC-157",
+  "slug": "bpc-157",
+  "identityKind": "compound",
+  "identityVerification": "pending",
+  "priority": "initial",
+  "canonicalPath": "/library/bpc-157/",
+  "existingDocumentId": "library:bpc-157",
+  "preparationRefs": [],
+  "primaryTopicId": "repair",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

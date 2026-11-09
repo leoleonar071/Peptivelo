@@ -1,4 +1,5 @@
-import { canIndexPath } from "@/lib/publication-registry";
+import { notFound } from "next/navigation";
+import { canIndexPath, isVisiblePath } from "@/lib/publication-registry";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { haircare, hairProductPath, hairIngredientPath } from "@/lib/haircare";
@@ -15,6 +16,7 @@ export const metadata = {
 // not a treatment ranking. DM Sans, petroleum ink, warm paper and 4px spacing
 // reuse the library, with quiet borders separating labels from evidence.
 export default function HaircarePage() {
+  if (!isVisiblePath("/haircare/")) notFound();
   const p = haircare.product;
   return (
     <div className="wrap library-page haircare-page">

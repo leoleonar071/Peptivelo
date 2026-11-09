@@ -1,0 +1,40 @@
+{
+  "id": "peptide:argireline",
+  "name": "Argireline",
+  "slug": "argireline",
+  "identityKind": "unverified-label",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/argireline/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "skin",
+  "additionalTopicIds": [],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

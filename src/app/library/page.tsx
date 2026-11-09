@@ -1,4 +1,4 @@
-import { canIndexPath } from "@/lib/publication-registry";
+import { canIndexPath, isVisiblePath } from "@/lib/publication-registry";
 import Link from "next/link";
 import { globalLinks } from "@/lib/site-navigation";
 export const metadata = {
@@ -12,10 +12,7 @@ export default function LibraryPage() {
     <div className="wrap discovery-page">
       <span className="eyebrow">PEPTIDE LIBRARY</span>
       <h1>A clearer way to explore Peptivelo.</h1>
-      <p>
-        The library’s articles are still available. Choose a topic, find a
-        peptide or start with a learning guide.
-      </p>
+      <p>Choose a topic, find a peptide or start with a learning guide.</p>
       <div className="discovery-grid">
         {[
           {
@@ -40,9 +37,11 @@ export default function LibraryPage() {
           </Link>
         ))}
       </div>
-      <Link className="text-link" href="/library/peptide-categories/">
-        New to peptides? Start here →
-      </Link>
+      {isVisiblePath("/library/peptide-categories/") && (
+        <Link className="text-link" href="/library/peptide-categories/">
+          New to peptides? Start here →
+        </Link>
+      )}
     </div>
   );
 }

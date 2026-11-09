@@ -5,6 +5,7 @@ import { haircare } from "./haircare";
 import { libraryArticles } from "./library";
 import { type TopicId } from "./site-navigation";
 import { isPublicTopicEntry } from "./content-topics";
+import { publicPeptides as peptides } from "./public-peptides";
 import { policyForPath } from "./publication-registry";
 export type ContentEntry = {
   id: string;
@@ -25,6 +26,19 @@ export type ContentEntry = {
 };
 // Status is derived from the source record, never maintained as a second editorial field.
 const existingContent: ContentEntry[] = [
+  ...peptides
+    .filter((p) => !p.existingDocumentId)
+    .map((p): ContentEntry => ({
+      id: p.id,
+      href: p.canonicalPath,
+      title: p.name,
+      description: p.seo.description,
+      topic: p.primaryTopicId,
+      additionalTopics: p.additionalTopicIds,
+      format: "Ingredient profile",
+      status: p.status,
+      directory: true,
+    })),
   ...products.map((product) => ({
     id: `product:${product.id}`,
     href: `/skincare/products/${product.slug}/`,
@@ -106,5 +120,13 @@ export const contentNavigation = existingContent
   .filter(isPublicTopicEntry)
   .map((entry) => ({
     ...entry,
+    additionalTopics: [
+      ...new Set([
+        ...(entry.additionalTopics ?? []),
+        ...peptides
+          .filter((p) => p.canonicalPath === entry.href)
+          .flatMap((p) => [p.primaryTopicId, ...p.additionalTopicIds]),
+      ]),
+    ].filter((topic) => topic !== entry.topic),
     status: policyForPath(entry.href)?.label ?? "Review pending",
   }));

@@ -1,7 +1,8 @@
 import { comparisonPath } from "@/lib/config";
 import { activeTopics } from "./topic-registry";
 export type { TopicId } from "./topic-registry";
-export const topics = activeTopics;
+import { isVisiblePath } from "./publication-registry";
+export const topics = activeTopics.filter((topic) => isVisiblePath(topic.href));
 export const globalLinks = [
   { title: "Peptides A–Z", href: "/peptides/" },
   { title: "Compare", href: comparisonPath() },

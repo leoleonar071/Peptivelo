@@ -1,0 +1,44 @@
+{
+  "id": "peptide:tirzepatide",
+  "name": "Tirzepatide",
+  "slug": "tirzepatide",
+  "identityKind": "compound",
+  "identityVerification": "pending",
+  "priority": "initial",
+  "canonicalPath": "/peptides/tirzepatide/",
+  "existingDocumentId": null,
+  "preparationRefs": [
+    "src/editorial/metabolism-batch.ts"
+  ],
+  "primaryTopicId": "metabolism",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

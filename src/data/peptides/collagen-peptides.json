@@ -1,0 +1,40 @@
+{
+  "id": "peptide:collagen-peptides",
+  "name": "Collagen Peptides",
+  "slug": "collagen-peptides",
+  "identityKind": "group",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/collagen-peptides/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "food",
+  "additionalTopicIds": [],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

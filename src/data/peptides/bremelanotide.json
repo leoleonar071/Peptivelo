@@ -1,0 +1,42 @@
+{
+  "id": "peptide:bremelanotide",
+  "name": "Bremelanotide (PT-141)",
+  "slug": "bremelanotide",
+  "identityKind": "unverified-label",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/bremelanotide/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "reproduction",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

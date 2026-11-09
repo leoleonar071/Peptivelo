@@ -1,10 +1,13 @@
 import { isActiveTopic, type TopicId } from "./topic-registry";
+import type { z } from "zod";
+import type { legacyEditorialStatus } from "./editorial-status";
 
 export type PublicationDocument = {
   id: string;
   href: string;
   topic: TopicId | null;
-  status: "draft" | "published" | "demo";
+  status: z.infer<typeof legacyEditorialStatus>;
+  requireApprovalForVisibility?: boolean;
   revision: string;
   sourceIds: readonly string[];
   checkedAt?: string;
@@ -37,7 +40,7 @@ export function contentRevision(value: unknown): string {
 export function publicationDecision(
   document: PublicationDocument,
   reviews: readonly PublicationReview[],
-  legacyPublicPaths: readonly string[],
+  _legacyPublicPaths: readonly string[],
   siteIndexable = false,
 ) {
   const approved = (kind: PublicationReview["kind"]) =>
@@ -51,14 +54,13 @@ export function publicationDecision(
     );
   const editorialReviewed = approved("editorial");
   const scientificReviewed = approved("scientific");
-  const visible =
-    document.status !== "demo" &&
-    (document.topic === null || isActiveTopic(document.topic)) &&
-    (document.status === "published" ||
-      legacyPublicPaths.includes(document.href));
   const approvedForPublication =
     editorialReviewed &&
     (!document.requiresScientificReview || scientificReviewed);
+  const visible =
+    document.status === "published" &&
+    (document.topic === null || isActiveTopic(document.topic)) &&
+    (!document.requireApprovalForVisibility || approvedForPublication);
   const promotable =
     visible && document.status === "published" && approvedForPublication;
   return {
@@ -70,10 +72,14 @@ export function publicationDecision(
     label:
       document.status === "draft"
         ? "Editorial draft · Review pending"
-        : !editorialReviewed
-          ? "Editorial approval pending"
-          : document.requiresScientificReview && !scientificReviewed
-            ? "Scientific review pending"
-            : "Editorially reviewed",
+        : document.status === "in-review"
+          ? "In Review"
+          : document.status === "archived"
+            ? "Archived"
+            : !editorialReviewed
+              ? "Editorial approval pending"
+              : document.requiresScientificReview && !scientificReviewed
+                ? "Scientific review pending"
+                : "Editorially reviewed",
   };
 }

@@ -47,7 +47,7 @@ export const topicRegistry = [
   {
     id: "metabolism",
     slug: "metabolism-appetite",
-    title: "Metabolism & appetite",
+    title: "Weight & Metabolism",
     state: "planned",
     parentId: "health",
     description:
@@ -103,7 +103,7 @@ export const topicRegistry = [
   {
     id: "nervous",
     slug: "brain-nervous-system",
-    title: "Brain & nervous system",
+    title: "Cognitive & Longevity Research",
     state: "planned",
     parentId: "health",
     description:
@@ -181,7 +181,7 @@ export const topicRegistry = [
   {
     id: "repair",
     slug: "tissue-repair-research",
-    title: "Tissue repair research",
+    title: "Recovery & Experimental Research",
     state: "planned",
     parentId: "health",
     description:
@@ -207,7 +207,7 @@ export const topicRegistry = [
   {
     id: "food",
     slug: "food-derived-peptides",
-    title: "Food-derived peptides",
+    title: "Nutrition & Supplements",
     state: "planned",
     description:
       "Editorial scope: identified food-derived sequences, mixtures and evidence behind proposed claims.",

@@ -20,7 +20,14 @@
     "types:workers": "cf workers types",
     "audit:launch": "node --env-file-if-exists=.env.local scripts/audit-launch.mjs",
     "audit:content": "node scripts/audit-content.mjs",
-    "publication:inspect": "node --env-file-if-exists=.env.local scripts/inspect-publication.mjs"
+    "publication:inspect": "node --env-file-if-exists=.env.local scripts/inspect-publication.mjs",
+    "editorial:prepare": "node scripts/prepare-peptides.mjs",
+    "predev": "npm run editorial:prepare",
+    "predev:vinext": "npm run editorial:prepare",
+    "prebuild": "npm run editorial:prepare",
+    "prebuild:vinext": "npm run editorial:prepare",
+    "pretypecheck": "npm run editorial:prepare",
+    "pretest": "npm run editorial:prepare"
   },
   "license": "ISC",
   "type": "module",

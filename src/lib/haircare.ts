@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { editorialStatus } from "./editorial-status";
+import { editorialImageSchema } from "./peptide-schema";
 import raw from "@/data/haircare.json";
 import { catalog } from "./data";
 import { citationSet } from "./citations";
@@ -14,14 +16,15 @@ export const haircare = z
       priceUsd: z.number().nonnegative(),
       checkedAt: z.iso.date(),
       image: z.string().startsWith("/images/products/"),
+      editorialImages: z.array(editorialImageSchema).optional(),
       sourceId: z.string(),
-      status: z.literal("draft"),
+      status: editorialStatus,
     }),
     ingredients: z
       .array(
         z.object({
           slug: z.string(),
-          status: z.literal("draft").default("draft"),
+          status: editorialStatus.default("draft"),
           name: z.string(),
           summary: z.string(),
           identity: z.string(),

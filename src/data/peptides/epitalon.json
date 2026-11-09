@@ -1,0 +1,42 @@
+{
+  "id": "peptide:epitalon",
+  "name": "Epitalon",
+  "slug": "epitalon",
+  "identityKind": "compound",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/epitalon/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "nervous",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

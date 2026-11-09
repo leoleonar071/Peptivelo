@@ -10,6 +10,24 @@ import { contentNavigation } from "./content-navigation";
 import { isVisiblePath, policyForPath } from "./publication-registry";
 // Extend with real routes and sources as collections grow.
 const candidateEntries: SearchEntry[] = [
+  ...contentNavigation
+    .filter((entry) => entry.id.startsWith("peptide:"))
+    .map((entry): SearchEntry => ({
+      name: entry.title,
+      detail: entry.description,
+      href: entry.href,
+      terms: entry.title,
+      category: "Peptides & ingredients",
+    })),
+  ...contentNavigation
+    .filter((entry) => entry.id.startsWith("peptide:"))
+    .map((entry): SearchEntry => ({
+      name: entry.title,
+      detail: entry.description,
+      href: entry.href,
+      terms: entry.title,
+      category: "Peptides & ingredients",
+    })),
   {
     name: "Compare",
     href: comparisonPath(),

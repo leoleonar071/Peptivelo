@@ -1,0 +1,42 @@
+{
+  "id": "peptide:melanotan-ii",
+  "name": "Melanotan II",
+  "slug": "melanotan-ii",
+  "identityKind": "compound",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/melanotan-ii/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "reproduction",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

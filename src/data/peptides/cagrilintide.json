@@ -1,0 +1,42 @@
+{
+  "id": "peptide:cagrilintide",
+  "name": "Cagrilintide",
+  "slug": "cagrilintide",
+  "identityKind": "compound",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/cagrilintide/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "metabolism",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

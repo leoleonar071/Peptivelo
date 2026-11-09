@@ -10,6 +10,7 @@ import { evidence } from "./citations";
 import { evaluationFor } from "./evaluations";
 import { studyDataFor } from "./study-data";
 import { offers } from "./offers";
+import { publicPeptides as peptides } from "./public-peptides";
 import legacyPublicPaths from "../data/publication-baseline.json";
 import rawReviews from "../data/publication-reviews.json";
 import rawResearch from "../data/research-records.json";
@@ -66,6 +67,22 @@ function adapt(
   };
 }
 const documents: PublicationDocument[] = [
+  ...peptides
+    .filter((p) => !p.existingDocumentId)
+    .map((p) => {
+      const sourceIds = p.sources.map((source) => source.id);
+      return {
+        id: p.id,
+        href: p.canonicalPath,
+        topic: p.primaryTopicId,
+        status: p.status,
+        sourceIds,
+        checkedAt: p.updatedAt ?? undefined,
+        requiresScientificReview: true,
+        requireApprovalForVisibility: true,
+        revision: contentRevision(p),
+      } satisfies PublicationDocument;
+    }),
   ...catalog.products.map((p) =>
     adapt(
       {
@@ -240,7 +257,16 @@ const structuralDocuments = structuralPages.map((page) =>
       id: `page:${page.href}`,
       href: page.href,
       topic: null,
-      status: "published",
+      status:
+        activeTopics.some((topic) => topic.href === page.href) &&
+        !documents.some(
+          (document) =>
+            document.topic ===
+              activeTopics.find((topic) => topic.href === page.href)?.id &&
+            document.status === "published",
+        )
+          ? "draft"
+          : "published",
       sourceIds: [],
       requiresScientificReview: false,
       ...(page.href === "/compare/" ? { indexing: "never" as const } : {}),
@@ -261,13 +287,20 @@ if (
 for (const document of documents)
   if (
     document.sourceIds.some(
-      (id) => !catalog.sources.some((source) => source.id === id),
+      (id) =>
+        !catalog.sources.some((source) => source.id === id) &&
+        !peptides
+          .find((p) => p.id === document.id)
+          ?.sources.some((source) => source.id === id),
     )
   )
     throw new Error(`Unknown publication source: ${document.id}`);
 for (const review of reviews)
   if (
-    !publicationDocuments.some((document) => document.id === review.documentId)
+    !publicationDocuments.some(
+      (document) => document.id === review.documentId,
+    ) &&
+    !/^peptide:[a-z0-9-]+$/.test(review.documentId)
   )
     throw new Error(`Unknown reviewed document: ${review.documentId}`);
 

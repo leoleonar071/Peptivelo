@@ -25,7 +25,7 @@ it("resolves exact identities but leaves partial, question and unknown queries f
     expect(resolveExploration({ q })).toBeNull();
   expect(resolveExploration({ q: "GHK-Cu", entity: "invalid" })).toBeNull();
   expect(resolveExploration({ q: ["GHK-Cu", "Retatrutide"] })).toBeNull();
-  expect(resolveExploration({ q: "BPC-157" })?.context).toBe("health");
+  expect(resolveExploration({ q: "BPC-157" })).toBeNull();
 });
 
 it("preserves exact ingredient identity, separates editorial alternatives and excludes reference", () => {
@@ -36,9 +36,7 @@ it("preserves exact ingredient identity, separates editorial alternatives and ex
       .map((p) => p.id)
       .sort(),
   ).toEqual(["cosrx-six-mini", "ordinary-copper"].sort());
-  const niod = model.products.find((p) => p.id === "niod-cais3")!;
-  expect(niod.group).toBe("other");
-  expect(niod.reason).toContain("editorial draft");
+  expect(model.products.some((p) => p.group === "other")).toBe(false);
   expect(new Set(model.products.map((p) => p.id)).size).toBe(
     model.products.length,
   );
@@ -69,16 +67,10 @@ it("keeps missing prices last in either price direction", () => {
 });
 
 it("only offers the existing facial-serum comparator for compatible pairs", () => {
-  const hair = getExploration("hair:ingredient:biotinoyl-tripeptide-1")!;
-  expect(hair.products).toHaveLength(1);
-  expect(hair.canCompare).toBe(false);
-  expect(getExploration("hair:product")?.canCompare).toBe(false);
-  const research = getExploration("health:bpc-157")!;
-  expect(research.canCompare).toBe(false);
-  expect(research.products).toEqual([]);
-  expect(research.evidence.length).toBeGreaterThan(0);
+  expect(getExploration("hair:ingredient:biotinoyl-tripeptide-1")).toBeNull();
+  expect(getExploration("hair:product")).toBeNull();
+  expect(getExploration("health:bpc-157")).toBeNull();
   const skin = getExploration("skin:product:ordinary-copper")!;
-  expect(compatible(skin.reference!, hair.products[0])).toBe(false);
   expect(compatible(skin.reference!, skin.reference!)).toBe(false);
 });
 
@@ -109,10 +101,7 @@ it("validates selection, pagination and tabs, locking product reference", () => 
       getExploration("skin:ingredient:copper-tripeptide-1")!,
     ),
   ).toMatchObject({ a: "", b: "", page: 1 });
-  expect(
-    explorationState({ tab: "compare" }, getExploration("health:retatrutide")!)
-      .tab,
-  ).toBe("overview");
+  expect(getExploration("health:retatrutide")).toBeNull();
 });
 
 it("maintains explicit search routing without moving article destinations", () => {
@@ -122,7 +111,7 @@ it("maintains explicit search routing without moving article destinations", () =
   expect(searchDestination(ingredient, "GHK-Cu")).toContain(
     "entity=skin%3Aingredient%3Acopper-tripeptide-1",
   );
-  const article = searchIndex.find((e) => e.href === "/library/bpc-157/")!;
+  const article = searchIndex.find((e) => e.href === "/methodology/")!;
   const destination = new URL(
     searchDestination(article, "BPC-157"),
     "https://example.test",

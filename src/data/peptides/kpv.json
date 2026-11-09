@@ -1,0 +1,42 @@
+{
+  "id": "peptide:kpv",
+  "name": "KPV",
+  "slug": "kpv",
+  "identityKind": "compound",
+  "identityVerification": "pending",
+  "priority": "future",
+  "canonicalPath": "/peptides/kpv/",
+  "existingDocumentId": null,
+  "preparationRefs": [],
+  "primaryTopicId": "repair",
+  "additionalTopicIds": [
+    "health"
+  ],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

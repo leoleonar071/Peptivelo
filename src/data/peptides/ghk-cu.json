@@ -1,0 +1,42 @@
+{
+  "id": "peptide:ghk-cu",
+  "name": "GHK-Cu",
+  "slug": "ghk-cu",
+  "identityKind": "compound",
+  "identityVerification": "pending",
+  "priority": "initial",
+  "canonicalPath": "/skincare/ingredients/copper-tripeptide-1/",
+  "existingDocumentId": "skin:copper-tripeptide-1",
+  "preparationRefs": [],
+  "primaryTopicId": "skin",
+  "additionalTopicIds": [],
+  "tags": [],
+  "status": "draft",
+  "sections": {
+    "overview": [],
+    "howItWorks": [],
+    "research": [],
+    "applications": [],
+    "safety": [],
+    "products": [],
+    "comparisons": [],
+    "methodology": []
+  },
+  "faq": [],
+  "sources": [],
+  "regulatoryRecords": [],
+  "images": [],
+  "ingredientIds": [
+    "copper-tripeptide-1"
+  ],
+  "productIds": [],
+  "comparisonIds": [],
+  "relatedPeptideIds": [],
+  "guideIds": [],
+  "updatedAt": null,
+  "reviewedAt": null,
+  "seo": {
+    "title": "",
+    "description": ""
+  }
+}

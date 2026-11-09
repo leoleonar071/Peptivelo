@@ -4,7 +4,11 @@ import { HomeHero } from "@/components/home-hero";
 import { TopicCards, ContentCards } from "@/components/discovery";
 import { contentNavigation } from "@/lib/content-navigation";
 import { site } from "@/lib/config";
-import { canIndexPath, policyForPath } from "@/lib/publication-registry";
+import {
+  canIndexPath,
+  policyForPath,
+  isVisiblePath,
+} from "@/lib/publication-registry";
 import { PeptideContexts } from "@/components/peptide-contexts";
 import "../styles/home-visual.css";
 export const metadata = {
@@ -67,9 +71,11 @@ export default function Home() {
               different kinds of evidence. Understand the differences before
               going deeper.
             </p>
-            <Link className="button" href="/library/peptide-categories/">
-              Start here →
-            </Link>
+            {isVisiblePath("/library/peptide-categories/") && (
+              <Link className="button" href="/library/peptide-categories/">
+                Start here →
+              </Link>
+            )}
             <Link className="text-link" href="/learn/">
               Explore all learning guides →
             </Link>
