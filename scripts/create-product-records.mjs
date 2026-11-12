@@ -3,9 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const catalogFile = path.join(root, "src/data/catalog.json");
-const haircareFile = path.join(root, "src/data/haircare.json");
 const catalog = JSON.parse(await fs.readFile(catalogFile, "utf8"));
-const haircare = JSON.parse(await fs.readFile(haircareFile, "utf8"));
 const output = path.join(root, "public/images/products/records");
 const archive = path.join(root, ".migration-backup/product-photographs");
 await fs.mkdir(output, { recursive: true });
@@ -79,13 +77,8 @@ for (const product of catalog.products) {
     `${product.volume} ${product.volumeUnit === "ml" ? "mL" : "US fl oz"}`,
   );
 }
-await create(
-  haircare.product,
-  haircare.product.brand,
-  `${haircare.product.volumeMl} mL`,
-);
+// The scalp record is an editorial asset outside public/.
 await fs.writeFile(catalogFile, JSON.stringify(catalog, null, 2) + "\n");
-await fs.writeFile(haircareFile, JSON.stringify(haircare, null, 2) + "\n");
 console.log(
-  "Created 12 owned text records. Previous photographs archived outside public/ and ignored by Git.",
+  "Created owned text records for the facial catalog. Previous photographs archived outside public/ and ignored by Git.",
 );

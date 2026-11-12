@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { skinLinks, topicForPath } from "@/lib/site-navigation";
-export function SectionNavigation() {
+import { skinLinks, topicForPath, type NavigationTopic } from "@/lib/navigation-links";
+export function SectionNavigation({ topics, showBasics }: { topics: NavigationTopic[]; showBasics: boolean }) {
   const path = usePathname();
-  const topic = topicForPath(path);
-  const basics = path === "/library/peptide-categories/";
+  const topic = topicForPath(path, topics);
+  const basics = showBasics && path === "/library/peptide-categories/";
   if (!topic && !basics) return null;
   const links =
     topic?.id === "skin"

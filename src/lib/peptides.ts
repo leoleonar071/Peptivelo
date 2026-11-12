@@ -1,3 +1,4 @@
+import "server-only";
 import { peptideRecords } from "./peptide-records";
 import { catalog } from "./data";
 import { haircare } from "./haircare";

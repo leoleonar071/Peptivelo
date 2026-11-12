@@ -1,6 +1,6 @@
 import type { ContentEntry } from "./content-navigation";
 import { ingredientAliases } from "./search";
-import { catalog } from "./data";
+import { catalog } from "./public-catalog";
 const normalize = (value: string) =>
   value
     .normalize("NFKD")

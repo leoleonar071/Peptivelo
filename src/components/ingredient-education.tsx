@@ -1,15 +1,20 @@
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { catalog, type Ingredient } from "@/lib/data";
+import { catalog, type Ingredient } from "@/lib/public-catalog";
 import { ingredientPath } from "@/lib/config";
-import { policyForPath } from "@/lib/publication-registry";
-import { ResearchDocumentation } from "./research-documentation";
 
-export function EvidenceLinks({ ids }: { ids: string[] }) {
+export function EvidenceLinks({
+  ids,
+  sources = catalog.sources,
+}: {
+  ids: string[];
+  sources?: typeof catalog.sources;
+}) {
   return (
     <ul className="education-sources" aria-label="Sources for this explanation">
       {ids.map((id) => {
-        const source = catalog.sources.find((s) => s.id === id)!;
+        const source = sources.find((s) => s.id === id);
+        if (!source) return null;
         return (
           <li key={id}>
             <a href={source.url} target="_blank" rel="noopener noreferrer">
@@ -26,10 +31,12 @@ export function IngredientEducation({
   ingredient,
   compact = false,
   guideHref,
+  scientificReviewed = false,
 }: {
   ingredient: Ingredient;
   compact?: boolean;
   guideHref?: string;
+  scientificReviewed?: boolean;
 }) {
   const info = ingredient.education;
   const Heading = compact ? "h3" : "h2";
@@ -52,7 +59,7 @@ export function IngredientEducation({
       <p className="education-kind">
         Type of support: <strong>{info.evidence.label}</strong>
       </p>
-      {!policyForPath(ingredientPath(ingredient.slug))?.scientificReviewed && (
+      {!scientificReviewed && (
         <p className="education-date">
           Qualified scientific review pending. A source check is not scientific
           approval.
@@ -86,9 +93,6 @@ export function IngredientEducation({
           <p>{info.takeaway}</p>
         </section>
       </DetailContainer>
-      {!compact && (
-        <ResearchDocumentation documentId={`skin:${ingredient.id}`} />
-      )}
       <p className="education-date">
         Sources checked{" "}
         <time dateTime={info.sourceCheckedAt}>{info.sourceCheckedAt}</time>.

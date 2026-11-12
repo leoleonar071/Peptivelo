@@ -1,3 +1,4 @@
+import "server-only";
 import { z } from "zod";
 import { editorialStatus } from "./editorial-status";
 import { editorialImageSchema } from "./peptide-schema";

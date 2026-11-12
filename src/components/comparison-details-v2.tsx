@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
-import { brandName, type Product } from "@/lib/data";
+import { brandName, type Product } from "@/lib/public-catalog";
 import {
   comparisonGroupsV2,
   comparisonRowsV2,

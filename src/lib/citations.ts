@@ -1,3 +1,4 @@
+import "server-only";
 import { z } from "zod";
 import raw from "@/data/evidence.json";
 import { catalog, type EditorialComparison } from "./data";

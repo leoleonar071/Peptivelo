@@ -15,8 +15,7 @@ import {
   brandName,
   priceFor,
   sourceFor,
-  type Product,
-} from "@/lib/data";
+} from "@/lib/public-catalog";
 import { difference, money, normalize } from "@/lib/math";
 import { ProductCard, EmptyState } from "./ui";
 import { track } from "@/lib/analytics";
@@ -375,7 +374,15 @@ export function ProductViewEvent({ id }: { id: string }) {
   useEffect(() => track("product_viewed", { id }), [id]);
   return null;
 }
-export function RetailerLink({ product, detailed = false }: { product: Product; detailed?: boolean }) {
+export function RetailerLink({
+  productId,
+  detailed = false,
+}: {
+  productId: string;
+  detailed?: boolean;
+}) {
+  const product = products.find((item) => item.id === productId);
+  if (!product) return null;
   const source = sourceFor(product);
   const retailer = catalog.retailers.find((r) => r.id === product.brandId);
   const affiliate = retailer?.affiliateUrl;
@@ -392,7 +399,16 @@ export function RetailerLink({ product, detailed = false }: { product: Product; 
         })
       }
     >
-      {detailed ? <span>View {product.name} · {product.volume} {product.volumeUnit === "ml" ? "mL" : "US fl oz"} at {brandName(product)}</span> : <>Visit {brandName(product)}</>} <ArrowRight size={16} />
+      {detailed ? (
+        <span>
+          View {product.name} · {product.volume}{" "}
+          {product.volumeUnit === "ml" ? "mL" : "US fl oz"} at{" "}
+          {brandName(product)}
+        </span>
+      ) : (
+        <>Visit {brandName(product)}</>
+      )}{" "}
+      <ArrowRight size={16} />
     </a>
   );
 }

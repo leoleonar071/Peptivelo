@@ -45,5 +45,5 @@ test("buying paths progressively reveal one comparison and its limits", async ({
   await page
     .getByRole("link", { name: "Explore this comparison", exact: true })
     .click();
-  await expect(page).toHaveURL(/skinceuticals-ptiox-vs-the-ordinary-ha/);
+  await expect(page).toHaveURL(/compare\/\?a=skinceuticals-ptiox&b=ordinary-ha/);
 });

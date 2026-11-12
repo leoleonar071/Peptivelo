@@ -13,10 +13,10 @@ for (const theme of ["light", "dark"]) {
     await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
     for (const route of [
       "/",
-      "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "/compare/?a=ordinary-matrixyl&b=ordinary-ha",
       "/skincare/identify/",
       "/library/",
-      "/haircare/",
+      "/peptides/",
       "/tools/price-per-ml/",
     ]) {
       await page.goto(route);
@@ -51,25 +51,7 @@ for (const theme of ["light", "dark"]) {
           ),
         });
     }
-    await page.goto(
-      "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/#research-evidence",
-    );
-    const citation = page
-      .locator("#evaluation-benefits .inline-citations a")
-      .first();
-    await citation.click();
-    await expect(
-      page.getByRole("dialog", { name: "About this reference" }),
-    ).toBeVisible();
-    expect(
-      (
-        await new AxeBuilder({ page })
-          .withTags(["wcag2a", "wcag2aa", "wcag22aa"])
-          .analyze()
-      ).violations,
-    ).toEqual([]);
-    await page.keyboard.press("Escape");
-    await expect(citation).toBeFocused();
+    expect((await page.request.get("/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/")).status()).toBe(404);
     await page.goto("/compare/");
     await page
       .getByRole("button", { name: "Choose a product — Product A", exact: true })
@@ -116,9 +98,7 @@ for (const theme of ["light", "dark"]) {
       await menu.locator(":scope > summary").click();
     await menu.locator(".topic-menu > summary").click();
     for (const name of [
-      "Hair & scalp",
       "Skin & cosmetics",
-      "Health & research",
     ])
       await expect(
         page

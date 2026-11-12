@@ -4,7 +4,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { Info, X } from "lucide-react";
 import Link from "next/link";
 import { ingredientPath } from "@/lib/config";
-import { ingredientForName } from "@/lib/data";
+import { ingredientForName } from "@/lib/public-catalog";
 import { IngredientEducation } from "./ingredient-education";
 import { useClientReady } from "@/lib/use-client-ready";
 

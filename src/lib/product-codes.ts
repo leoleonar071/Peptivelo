@@ -1,4 +1,4 @@
-import { products } from "./data";
+import { products } from "./public-catalog";
 import { site } from "./config";
 
 // Add manufacturer GTIN mappings only after checking the exact product/size

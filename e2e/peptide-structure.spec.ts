@@ -1,18 +1,22 @@
+import { readFileSync } from "node:fs";
 import { test, expect } from "@playwright/test";
+const historicalRoutes = JSON.parse(
+  readFileSync(new URL("../src/data/publication-baseline.json", import.meta.url), "utf8"),
+) as string[];
 
 test("keeps new editorial records private and canonical profiles unique", async ({
   request,
 }) => {
   for (const path of [
     "/peptides/semaglutide/",
+    "/editorial-preview/ghk-cu/",
     "/peptides/tirzepatide/",
     "/peptides/tb-500/",
     "/peptides/ghk-cu/",
     "/peptides/retatrutide/",
     "/peptides/bpc-157/",
     "/peptides/matrixyl-3000/",
-    "/library/retatrutide/",
-    "/library/bpc-157/",
+    ...historicalRoutes,
     "/topics/metabolism-appetite/",
     "/topics/health-research/",
     "/haircare/",
@@ -25,7 +29,7 @@ test("keeps new editorial records private and canonical profiles unique", async 
   ).toBe(200);
   const sitemap = await (await request.get("/sitemap.xml")).text();
   expect(sitemap).not.toContain("/peptides/semaglutide/");
-  expect(sitemap).not.toContain("/library/retatrutide/");
+  for (const path of historicalRoutes) expect(sitemap).not.toContain(path);
 });
 
 test("keeps the public directory usable at each viewport without empty topics", async ({

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: p.canonicalPath,
       type: "article",
       modifiedTime: p.updatedAt ?? undefined,
-      ...(image
+      ...(image?.optimizedFile
         ? { images: [{ url: image.optimizedFile, alt: image.alt }] }
         : {}),
     },

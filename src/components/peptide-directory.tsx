@@ -1,11 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { topics } from "@/lib/site-navigation";
+import type { NavigationTopic } from "@/lib/navigation-links";
 import type { ContentEntry } from "@/lib/content-navigation";
-import { ContentCards } from "./discovery";
-import { entriesForTopic, isPublicTopicEntry } from "@/lib/content-topics";
-import type { TopicId } from "@/lib/topic-registry";
+import { ContentCards } from "./content-cards";
 import { matchesDirectoryName } from "@/lib/directory-search";
 import { ShareDiscovery } from "./share-discovery";
 
@@ -13,11 +11,13 @@ import { ShareDiscovery } from "./share-discovery";
 // Shared paper/ink tokens, native accessible controls, Manrope/Inter, 4px grid.
 export function PeptideDirectory({
   entries,
+  topics,
   topic = "all",
   format = "all",
   qname = "",
 }: {
   entries: ContentEntry[];
+  topics: NavigationTopic[];
   topic?: string;
   format?: string;
   qname?: string;
@@ -30,12 +30,9 @@ export function PeptideDirectory({
   const selectedFormat = formats.includes(format as ContentEntry["format"])
     ? format
     : "all";
-  const available =
-    selectedTopic === "all"
-      ? entries.filter(isPublicTopicEntry)
-      : entriesForTopic(entries, selectedTopic as TopicId);
-  const filtered = available.filter(
+  const filtered = entries.filter(
     (entry) =>
+      (selectedTopic === "all" || entry.topic === selectedTopic || entry.additionalTopics?.some((topic) => topic === selectedTopic)) &&
       (selectedFormat === "all" || entry.format === selectedFormat) &&
       matchesDirectoryName(entry, qname),
   );
@@ -121,7 +118,7 @@ export function PeptideDirectory({
         <ShareDiscovery href={returnTo} />
       </div>
       {filtered.length ? (
-        <ContentCards entries={filtered} returnTo={returnTo} />
+        <ContentCards topics={topics} entries={filtered} returnTo={returnTo} />
       ) : (
         <div className="search-empty">
           <h2>No entries in this selection yet.</h2>

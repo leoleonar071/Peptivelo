@@ -105,6 +105,7 @@ it("carries a validated product and discovery parent without allowing external r
   for (const value of [
     "//evil.test/skincare/products/niod-cais3/",
     "/skincare/products/unknown/",
+    "/haircare/products/the-ordinary-hair-density/",
     "/contact/",
     "javascript:alert(1)",
   ])

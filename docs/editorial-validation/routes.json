@@ -1,0 +1,959 @@
+{
+  "checkedAt": "2026-11-09T17:25:22.196Z",
+  "results": [
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/niod-cais3-vs-the-ordinary/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/niod-cais3-vs-the-ordinary/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/the-ordinary-multi-peptide-ha-vs-copper/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/the-ordinary-multi-peptide-ha-vs-copper/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/the-ordinary-argireline-vs-multi-peptide-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/the-ordinary-argireline-vs-multi-peptide-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/naturium-multi-peptide-vs-the-ordinary-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/naturium-multi-peptide-vs-the-ordinary-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/timeless-synthe6-vs-the-ordinary-matrixyl/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/timeless-synthe6-vs-the-ordinary-matrixyl/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/cosrx-six-peptide-vs-the-ordinary-copper/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/cosrx-six-peptide-vs-the-ordinary-copper/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/medik8-liquid-peptides-vs-the-ordinary-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/medik8-liquid-peptides-vs-the-ordinary-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/compare/skinceuticals-ptiox-vs-the-ordinary-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/compare/skinceuticals-ptiox-vs-the-ordinary-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/guides/matrixyl-3000-vs-synthe6/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/skincare/guides/matrixyl-3000-vs-synthe6/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/guides/peptide-percentages-explained/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/skincare/guides/peptide-percentages-explained/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/library/peptide-categories/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/library/peptide-categories/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/library/retatrutide/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/library/retatrutide/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/library/bpc-157/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/library/bpc-157/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/haircare/products/the-ordinary-hair-density/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/haircare/products/the-ordinary-hair-density/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/haircare/ingredients/acetyl-tetrapeptide-3/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "http://localhost:3100/haircare/ingredients/acetyl-tetrapeptide-3/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/the-ordinary-multi-peptide-copper/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/the-ordinary-multi-peptide-copper/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/the-ordinary-multi-peptide-ha/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/the-ordinary-multi-peptide-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/niod-cais3/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/niod-cais3/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/the-ordinary-matrixyl-10-ha/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/the-ordinary-matrixyl-10-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/geek-and-gorgeous-power-peptides/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/geek-and-gorgeous-power-peptides/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/the-ordinary-argireline-solution-10/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/the-ordinary-argireline-solution-10/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/naturium-multi-peptide-advanced-serum/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/naturium-multi-peptide-advanced-serum/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/timeless-matrixyl-synthe6-serum/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/timeless-matrixyl-synthe6-serum/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/medik8-liquid-peptides/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/medik8-liquid-peptides/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/cosrx-six-peptide-skin-booster-mini/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/cosrx-six-peptide-skin-booster-mini/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/products/skinceuticals-ptiox/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/products/skinceuticals-ptiox/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/copper-tripeptide-1/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/copper-tripeptide-1/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/acetyl-hexapeptide-8/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/acetyl-hexapeptide-8/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/tripeptide-29/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/tripeptide-29/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-1/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/palmitoyl-tripeptide-1/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/palmitoyl-tetrapeptide-7/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/palmitoyl-tetrapeptide-7/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/tripeptide-1-copper-acetate/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/tripeptide-1-copper-acetate/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/tripeptide-1-acetate/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/tripeptide-1-acetate/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/acetyl-tetrapeptide-2/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/acetyl-tetrapeptide-2/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-38/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/palmitoyl-tripeptide-38/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/tetrapeptide-21/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/tetrapeptide-21/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/copper-palmitoyl-heptapeptide-14/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/heptapeptide-15-palmitate/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/heptapeptide-15-palmitate/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/carnosine/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/carnosine/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/palmitoyl-pentapeptide-4/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/palmitoyl-pentapeptide-4/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/pentapeptide-18/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/pentapeptide-18/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/acetyl-tetrapeptide-5/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/acetyl-tetrapeptide-5/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/sh-polypeptide-121/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/sh-polypeptide-121/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/",
+      "expected": 200,
+      "reason": "public-hub",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/oligopeptide-68/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/oligopeptide-68/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-8/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/skincare/ingredients/palmitoyl-tripeptide-8/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/topics/",
+      "expected": 200,
+      "reason": "public-hub",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/topics/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "http://localhost:3100",
+      "path": "/peptides/",
+      "expected": 200,
+      "reason": "public-hub",
+      "actual": 200,
+      "finalUrl": "http://localhost:3100/peptides/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/the-ordinary-multi-peptide-ha-vs-copper/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/the-ordinary-multi-peptide-ha-vs-copper/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/niod-cais3-vs-the-ordinary/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/niod-cais3-vs-the-ordinary/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/naturium-multi-peptide-vs-the-ordinary-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/naturium-multi-peptide-vs-the-ordinary-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/the-ordinary-argireline-vs-multi-peptide-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/the-ordinary-argireline-vs-multi-peptide-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/cosrx-six-peptide-vs-the-ordinary-copper/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/cosrx-six-peptide-vs-the-ordinary-copper/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/medik8-liquid-peptides-vs-the-ordinary-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/medik8-liquid-peptides-vs-the-ordinary-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/timeless-synthe6-vs-the-ordinary-matrixyl/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/timeless-synthe6-vs-the-ordinary-matrixyl/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/guides/peptide-percentages-explained/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/skincare/guides/peptide-percentages-explained/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/guides/matrixyl-3000-vs-synthe6/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/skincare/guides/matrixyl-3000-vs-synthe6/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/skinceuticals-ptiox-vs-the-ordinary-ha/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/compare/skinceuticals-ptiox-vs-the-ordinary-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/library/bpc-157/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/library/bpc-157/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/library/retatrutide/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/library/retatrutide/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/library/peptide-categories/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/library/peptide-categories/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/haircare/ingredients/acetyl-tetrapeptide-3/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/haircare/ingredients/acetyl-tetrapeptide-3/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/haircare/products/the-ordinary-hair-density/",
+      "expected": 404,
+      "reason": "historical-draft-withdrawn",
+      "actual": 404,
+      "finalUrl": "https://peptivelo.com/haircare/products/the-ordinary-hair-density/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/the-ordinary-multi-peptide-copper/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/the-ordinary-multi-peptide-copper/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/the-ordinary-multi-peptide-ha/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/the-ordinary-multi-peptide-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/niod-cais3/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/niod-cais3/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/the-ordinary-argireline-solution-10/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/the-ordinary-argireline-solution-10/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/geek-and-gorgeous-power-peptides/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/geek-and-gorgeous-power-peptides/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/the-ordinary-matrixyl-10-ha/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/the-ordinary-matrixyl-10-ha/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/medik8-liquid-peptides/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/medik8-liquid-peptides/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/timeless-matrixyl-synthe6-serum/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/timeless-matrixyl-synthe6-serum/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/naturium-multi-peptide-advanced-serum/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/naturium-multi-peptide-advanced-serum/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/cosrx-six-peptide-skin-booster-mini/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/cosrx-six-peptide-skin-booster-mini/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/skinceuticals-ptiox/",
+      "expected": 200,
+      "reason": "published-product",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/products/skinceuticals-ptiox/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/copper-tripeptide-1/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/copper-tripeptide-1/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/tripeptide-29/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/tripeptide-29/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-1/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/palmitoyl-tripeptide-1/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/acetyl-hexapeptide-8/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/acetyl-hexapeptide-8/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/tripeptide-1-acetate/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/tripeptide-1-acetate/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-tetrapeptide-7/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/palmitoyl-tetrapeptide-7/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/tripeptide-1-copper-acetate/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/tripeptide-1-copper-acetate/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/tetrapeptide-21/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/tetrapeptide-21/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/acetyl-tetrapeptide-2/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/acetyl-tetrapeptide-2/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-38/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/palmitoyl-tripeptide-38/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/heptapeptide-15-palmitate/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/heptapeptide-15-palmitate/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/copper-palmitoyl-heptapeptide-14/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-pentapeptide-4/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/palmitoyl-pentapeptide-4/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/carnosine/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/carnosine/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/pentapeptide-18/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/pentapeptide-18/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/sh-polypeptide-121/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/sh-polypeptide-121/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/acetyl-tetrapeptide-5/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/acetyl-tetrapeptide-5/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-8/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/palmitoyl-tripeptide-8/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/",
+      "expected": 200,
+      "reason": "public-hub",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/oligopeptide-68/",
+      "expected": 200,
+      "reason": "published-ingredient",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/skincare/ingredients/oligopeptide-68/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/peptides/",
+      "expected": 200,
+      "reason": "public-hub",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/peptides/",
+      "matchesExpected": true
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/topics/",
+      "expected": 200,
+      "reason": "public-hub",
+      "actual": 200,
+      "finalUrl": "https://peptivelo.com/topics/",
+      "matchesExpected": true
+    }
+  ]
+}

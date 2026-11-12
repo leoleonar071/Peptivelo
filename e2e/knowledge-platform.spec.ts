@@ -8,8 +8,8 @@ test("broad discovery preserves directory filters through a sourced profile", as
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Understand peptides. Explore the evidence and its limits.",
   );
-  await page.goto("/peptides/?topic=hair&format=Ingredient+profile");
-  await expect(page.getByLabel("Filter by topic")).toHaveValue("hair");
+  await page.goto("/peptides/?topic=skin&format=Ingredient+profile&qname=Copper+Tripeptide-1");
+  await expect(page.getByLabel("Filter by topic")).toHaveValue("skin");
   await expect(page.getByLabel("Reading format")).toHaveValue(
     "Ingredient profile",
   );
@@ -21,11 +21,11 @@ test("broad discovery preserves directory filters through a sourced profile", as
     profile.getByText("No qualified scientific approval", { exact: false }),
   ).toBeVisible();
   await page.getByRole("link", { name: "Back to your directory" }).click();
-  await expect(page.getByLabel("Filter by topic")).toHaveValue("hair");
+  await expect(page.getByLabel("Filter by topic")).toHaveValue("skin");
   await expect(page.getByLabel("Reading format")).toHaveValue(
     "Ingredient profile",
   );
-  await page.getByLabel("Filter by topic").selectOption("health");
+  await page.goto("/peptides/?qname=unmatched-example");
   await expect(
     page.getByRole("heading", { name: "No entries in this selection yet." }),
   ).toBeVisible();
@@ -62,9 +62,8 @@ test("search context survives evidence, a full profile and native history", asyn
 test("search topic and reading format survive the complete results-to-profile journey", async ({
   page,
 }) => {
-  await page.goto(
-    "/search/?q=copper&group=Products&topic=skin&format=Product+profile&page=1",
-  );
+  const results = "/search/?q=copper&group=Products&topic=skin&format=Product+profile&page=1";
+  await page.goto(results);
   await expect(
     page.getByRole("combobox", { name: "Topic", exact: true }),
   ).toHaveValue("skin");
@@ -73,9 +72,18 @@ test("search topic and reading format survive the complete results-to-profile jo
   ).toHaveValue("Product profile");
   await page.locator(".search-document").first().click();
   await page.getByRole("tab", { name: "Overview", exact: true }).click();
-  await page.getByRole("link", { name: "Read the full profile" }).click();
-  await page.getByRole("link", { name: "Back to your exploration" }).click();
-  await page.getByRole("link", { name: "Back to your exploration" }).click();
+  const profile = page.getByRole("link", { name: "Read the full profile" });
+  const profileHref = await profile.getAttribute("href");
+  await profile.click();
+  await expect(page).toHaveURL(new URL(profileHref!, page.url()).href);
+  const exploration = new URL(profileHref!, page.url()).searchParams.get("returnTo")!;
+  const back = page.getByRole("link", { name: "Back to your exploration" });
+  await expect(back).toHaveAttribute("href", exploration);
+  await back.click();
+  await expect(page).toHaveURL(new URL(exploration, page.url()).href);
+  await expect(back).toHaveAttribute("href", results);
+  await back.click();
+  await expect(page).toHaveURL(new URL(results, page.url()).href);
   await expect(
     page.getByRole("combobox", { name: "Topic", exact: true }),
   ).toHaveValue("skin");
@@ -151,8 +159,9 @@ test("local events contain no raw query, URL or email and references emit once",
   );
   expect(JSON.stringify(events)).not.toContain("private-person");
   expect(JSON.stringify(events)).not.toContain("q=");
-  await page.goto("/library/bpc-157/");
-  await page.locator(".inline-citations a").first().click();
+  await page.goto("/skincare/ingredients/acetyl-hexapeptide-8/");
+  await page.locator(".ingredient-detailed > summary").click();
+  await page.locator(".education-sources a").first().click();
   await expect
     .poll(() =>
       page.evaluate(
@@ -176,7 +185,7 @@ test("internal expansion stays inaccessible and draft metadata stays noindex", a
     "/library/gip/",
   ])
     expect((await request.get(href)).status()).toBe(404);
-  await page.goto("/library/retatrutide/");
+  expect((await page.goto("/library/retatrutide/"))?.status()).toBe(404);
   await expect(page.locator('meta[name="robots"]').first()).toHaveAttribute(
     "content",
     /noindex/,
@@ -195,8 +204,8 @@ test("directory and detailed reading remain usable without JavaScript", async ({
     baseURL,
   });
   const page = await context.newPage();
-  await page.goto("/peptides/?topic=hair&format=Ingredient+profile");
-  await expect(page.locator(".content-grid .discovery-card")).toHaveCount(2);
+  await page.goto("/peptides/?topic=skin&format=Ingredient+profile&qname=Copper+Tripeptide-1");
+  await expect(page.locator(".content-grid .discovery-card")).toHaveCount(1);
   await page.locator(".content-grid .discovery-card").first().click();
   await page.locator(".transparency-profile > summary").click();
   await expect(page.locator(".documentation-fields")).toBeVisible();

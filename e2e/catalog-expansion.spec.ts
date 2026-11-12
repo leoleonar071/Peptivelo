@@ -1,5 +1,5 @@
+import { expectPrivateDrafts } from "./draft-route-assertions";
 import { test, expect } from "@playwright/test";
-import AxeBuilder from "@axe-core/playwright";
 
 test("new brands preserve size, price and volume filtering", async ({
   page,
@@ -33,59 +33,9 @@ test("new brands preserve size, price and volume filtering", async ({
     page.getByRole("link", {
       name: /Naturium Multi-Peptide Advanced Serum vs/,
     }),
-  ).toBeVisible();
+  ).toHaveCount(0);
 });
 
-test("new editorial pairs explain limits with accessible ingredient help", async ({
-  page,
-}, testInfo) => {
-  for (const slug of [
-    "naturium-multi-peptide-vs-the-ordinary-ha",
-    "timeless-synthe6-vs-the-ordinary-matrixyl",
-    "medik8-liquid-peptides-vs-the-ordinary-ha",
-  ]) {
-    await page.goto(`/compare/${slug}/`);
-    await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
-      "content",
-      /noindex/,
-    );
-    await page.getByRole("tab", { name: "Evidence", exact: true }).click();
-    await expect(
-      page.getByRole("heading", {
-        name: "What the sources tell us.",
-        exact: true,
-      }),
-    ).toBeVisible();
-    expect(
-      await page.evaluate(
-        () => document.documentElement.scrollWidth <= innerWidth,
-      ),
-    ).toBe(true);
-  }
-  await page
-    .getByRole("tab", { name: "Ingredients & price", exact: true })
-    .click();
-  await page
-    .getByRole("button", {
-      name: "What does it do? Palmitoyl sh-Hexapeptide-13 Serine SP Amide",
-      exact: true,
-    })
-    .first()
-    .click();
-  const dialog = page.getByRole("dialog");
-  await expect(dialog).toContainText("Label information");
-  const scan = await new AxeBuilder({ page })
-    .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
-    .analyze();
-  expect(scan.violations).toEqual([]);
-  expect(
-    await dialog.evaluate(
-      (el) => el.getBoundingClientRect().right <= innerWidth,
-    ),
-  ).toBe(true);
-  await page.screenshot({
-    path: testInfo.outputPath(
-      `catalog-expansion-help-${testInfo.project.name}.png`,
-    ),
+test("withdrawn new-brand readers cannot expose comparison details", async ({ request }) => {
+    await expectPrivateDrafts(request, ["/compare/naturium-multi-peptide-vs-the-ordinary-ha/","/compare/timeless-synthe6-vs-the-ordinary-matrixyl/","/compare/medik8-liquid-peptides-vs-the-ordinary-ha/"]);
   });
-});

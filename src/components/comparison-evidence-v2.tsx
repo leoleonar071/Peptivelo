@@ -1,6 +1,6 @@
 import Link from "next/link";
-import type { Product } from "@/lib/data";
-import { brandName } from "@/lib/data";
+import type { Product } from "@/lib/public-catalog";
+import { brandName } from "@/lib/public-catalog";
 import type { ComparisonEvidenceData } from "@/lib/comparison-evidence";
 
 export function ComparisonEvidenceV2({

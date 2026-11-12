@@ -112,6 +112,43 @@ it("does not publish empty records, unknown references, incomplete licenses or u
       originalUrl: "javascript:alert(1)",
     }).success,
   ).toBe(false);
+  const candidate = {
+    approval: "pending",
+    originalSource: "Test provider",
+    credit: "Test contributor",
+    license: "Pending verification",
+    originalUrl: "https://example.invalid/image",
+    alt: "Test packaging",
+    aiChanges: "",
+    attributionRequired: false,
+    attribution: "",
+    provenance: { provider: "open-beauty-facts", commercialUse: "unknown" },
+  };
+  expect(editorialImageSchema.safeParse(candidate).success).toBe(true);
+  const withPermission = {
+    ...candidate,
+    approval: "approved",
+    optimizedFile: "/images/test-fixture.webp",
+    provenance: {
+      ...candidate.provenance,
+      commercialUse: "allowed",
+      author: "Test photographer",
+      permissionEvidence: "Test approval record",
+    },
+  };
+  expect(editorialImageSchema.safeParse(withPermission).success).toBe(false);
+  expect(
+    editorialImageSchema.safeParse({
+      ...withPermission,
+      provenance: {
+        ...withPermission.provenance,
+        productMatch: {
+          catalogProductId: "test-product",
+          exactVariantEvidence: "Test variant record",
+        },
+      },
+    }).success,
+  ).toBe(true);
   expect(revision(draft)).toBe(contentRevision(draft));
   const published = { ...draft, status: "published" };
   expect(preparePublicPeptides([published], [])).toEqual([]);

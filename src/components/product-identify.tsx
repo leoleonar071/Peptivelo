@@ -13,7 +13,7 @@ import {
   ScanLine,
   FlaskConical,
 } from "lucide-react";
-import { products, catalog, brandName, type Product } from "@/lib/data";
+import { products, catalog, brandName, type Product } from "@/lib/public-catalog";
 import { volumeLabel } from "@/lib/comparison";
 import { productPath } from "@/lib/config";
 import { Bottle } from "./ui";
@@ -22,7 +22,7 @@ import { ProductScanner } from "./product-scanner";
 import { useClientReady } from "@/lib/use-client-ready";
 
 // One search-led surface, followed by an honest documented-label preview.
-export function ProductIdentify() {
+export function ProductIdentify({ showHaircare = false }: { showHaircare?: boolean }) {
   const ready = useClientReady();
   const router = useRouter();
   const [query, setQuery] = useState("");
@@ -217,9 +217,9 @@ export function ProductIdentify() {
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
           </div>
-          <Link className="text-link" href="/haircare/">
+          {showHaircare && <Link className="text-link" href="/haircare/">
             Looking for a scalp serum? Explore haircare <ArrowRight size={16} />
-          </Link>
+          </Link>}
         </section>
       ) : (
         <>

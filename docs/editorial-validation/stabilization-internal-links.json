@@ -1,0 +1,540 @@
+{
+  "checkedAt": "2026-11-11T21:21:17.638Z",
+  "results": [
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/the-ordinary-multi-peptide-ha/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/niod-cais3/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/the-ordinary-multi-peptide-copper/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/the-ordinary-matrixyl-10-ha/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/timeless-matrixyl-synthe6-serum/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/naturium-multi-peptide-advanced-serum/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/geek-and-gorgeous-power-peptides/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/the-ordinary-argireline-solution-10/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/cosrx-six-peptide-skin-booster-mini/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/medik8-liquid-peptides/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/skinceuticals-ptiox/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/copper-tripeptide-1/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/tripeptide-29/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-1/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/acetyl-hexapeptide-8/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-tetrapeptide-7/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/tripeptide-1-copper-acetate/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/tripeptide-1-acetate/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/acetyl-tetrapeptide-2/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-38/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/tetrapeptide-21/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/heptapeptide-15-palmitate/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-pentapeptide-4/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/carnosine/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/pentapeptide-18/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/acetyl-tetrapeptide-5/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/oligopeptide-68/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/sh-polypeptide-121/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/topics/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/choose/",
+      "status": 200,
+      "links": [
+        "/compare/the-ordinary-argireline-vs-multi-peptide-ha/",
+        "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+        "/compare/skinceuticals-ptiox-vs-the-ordinary-ha/",
+        "/haircare/"
+      ]
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/peptides/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-8/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/identify/",
+      "status": 200,
+      "links": [
+        "/haircare/"
+      ]
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/products/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/skincare/guides/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/library/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/compare/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/learn/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "https://peptivelo.com",
+      "path": "/search/?q=peptide",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/the-ordinary-multi-peptide-copper/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/the-ordinary-multi-peptide-ha/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/niod-cais3/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/the-ordinary-matrixyl-10-ha/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/geek-and-gorgeous-power-peptides/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/the-ordinary-argireline-solution-10/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/naturium-multi-peptide-advanced-serum/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/timeless-matrixyl-synthe6-serum/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/medik8-liquid-peptides/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/cosrx-six-peptide-skin-booster-mini/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/skinceuticals-ptiox/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/copper-tripeptide-1/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/tripeptide-29/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-1/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/palmitoyl-tetrapeptide-7/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/acetyl-hexapeptide-8/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/tripeptide-1-acetate/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/tripeptide-1-copper-acetate/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-38/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/acetyl-tetrapeptide-2/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/tetrapeptide-21/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/copper-palmitoyl-heptapeptide-14/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/heptapeptide-15-palmitate/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/palmitoyl-sh-hexapeptide-13-serine-sp-amide/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/carnosine/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/palmitoyl-pentapeptide-4/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/pentapeptide-18/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/acetyl-tetrapeptide-5/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/sh-polypeptide-121/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/dipeptide-diaminobutyroyl-benzylamide-diacetate/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/oligopeptide-68/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/topics/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/choose/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/peptides/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/ingredients/palmitoyl-tripeptide-8/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/identify/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/products/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/skincare/guides/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/learn/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/library/",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/search/?q=peptide",
+      "status": 200,
+      "links": []
+    },
+    {
+      "origin": "http://127.0.0.1:3104",
+      "path": "/compare/",
+      "status": 200,
+      "links": []
+    }
+  ]
+}

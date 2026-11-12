@@ -1,4 +1,4 @@
-import { products } from "./data";
+import { products } from "./public-catalog";
 import type { TopicId } from "./site-navigation";
 
 export type ComparisonEntity = {

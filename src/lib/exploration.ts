@@ -1,3 +1,4 @@
+import "server-only";
 import { catalog, products, brandName, priceFor } from "./data";
 import { haircare } from "./haircare";
 import { libraryArticles } from "./library";

@@ -1,3 +1,4 @@
+import "server-only";
 import { catalog } from "./data";
 import { evidence } from "./citations";
 

@@ -1,3 +1,4 @@
+import "server-only";
 import { activeTopics } from "./topic-registry";
 import { comparisonPath } from "@/lib/config";
 import { products, catalog, brandName } from "./data";
@@ -7,7 +8,7 @@ import { haircare } from "./haircare";
 import { ingredientPath, productPath } from "./config";
 import { ingredientAliases, type SearchEntry } from "./search";
 import { contentNavigation } from "./content-navigation";
-import { isVisiblePath, policyForPath } from "./publication-registry";
+import { isVisiblePath, policyForPath, publicSourceIds } from "./publication-registry";
 // Extend with real routes and sources as collections grow.
 const candidateEntries: SearchEntry[] = [
   ...contentNavigation
@@ -172,7 +173,7 @@ const candidateEntries: SearchEntry[] = [
       reason: `Includes a product listing ${catalog.ingredients.find((item) => item.id === entityId)!.inciName}; not an ingredient-equivalence claim`,
     })),
   })),
-  ...catalog.sources.map((source): SearchEntry => ({
+  ...catalog.sources.filter((source) => publicSourceIds.has(source.id)).map((source): SearchEntry => ({
     name: source.title,
     detail: `${source.publisher} · ${source.sourceType === "research" ? "Research reference" : source.sourceType === "regulator" ? "Regulatory guidance" : "Manufacturer / supplier source"} · Checked ${source.accessedAt}`,
     terms: `${source.publisher} ${source.sourceType} ${source.sourceType === "research" ? "study research evidence" : ""}`,

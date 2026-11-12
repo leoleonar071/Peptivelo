@@ -68,29 +68,14 @@ test("retired routes return 404 without redirects and every editorial route has 
   }
   for (const c of catalog.comparisons) {
     const response = await request.get(`/compare/${c.slug}/`);
-    expect(response.status()).toBe(200);
-    const html = await response.text();
-    expect(html).toContain(`/compare/${c.slug}/`);
-    expect(html).toMatch(
-      new RegExp(`rel="canonical" href="[^"]*/compare/${c.slug}/"`),
-    );
-    expect(html).not.toContain("/skincare/compare/");
+    expect(response.status()).toBe(404);
+    expect(response.headers().location).toBeUndefined();
   }
 });
 test("editorials retain topic identity while links and search use general comparison destinations", async ({
   page,
 }) => {
-  await page.goto("/compare/niod-cais3-vs-the-ordinary/");
-  await expect(
-    page.getByRole("link", { name: "Skin & cosmetics →", exact: true }),
-  ).toBeVisible();
-  await expect(
-    page.getByRole("navigation", { name: "Breadcrumb" }),
-  ).toContainText("Compare");
-  await expect(
-    page.getByRole("navigation", { name: "Skin & cosmetics navigation" }),
-  ).toHaveCount(0);
-  expect(await page.locator('a[href*="/skincare/compare"]').count()).toBe(0);
+  expect((await page.request.get("/compare/niod-cais3-vs-the-ordinary/")).status()).toBe(404);
   await page.goto("/search/?entity=skin:product:ordinary-copper&tab=compare");
   expect(await page.locator('a[href*="/skincare/compare"]').count()).toBe(0);
 });

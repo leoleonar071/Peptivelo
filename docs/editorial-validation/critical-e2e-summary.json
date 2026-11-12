@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "startTime": "2026-11-09T17:33:09.158Z",
+    "duration": 21196.209,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "commands": [
+    "npx playwright test e2e/peptide-structure.spec.ts e2e/accessibility.spec.ts --workers=3",
+    "npx playwright test --config playwright.editorial.config.ts --workers=2"
+  ],
+  "privatePreview": {
+    "passed": 9,
+    "failed": 0
+  },
+  "workerStats": {
+    "startTime": "2026-11-09T17:34:04.631Z",
+    "duration": 12418.078,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

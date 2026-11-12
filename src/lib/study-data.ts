@@ -1,3 +1,4 @@
+import "server-only";
 // Extraction from the evidence records checked on 2026-10-19.
 // Assessments have no single trial population or follow-up period.
 export const studyData = [

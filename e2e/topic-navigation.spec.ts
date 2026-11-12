@@ -1,7 +1,8 @@
+import { expectPrivateDrafts } from "./draft-route-assertions";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-test("skin topic leads to an editorial comparison and its product profile", async ({
+test("skin topic leads to the public interactive comparison", async ({
   page,
 }) => {
   await page.goto("/");
@@ -15,66 +16,19 @@ test("skin topic leads to an editorial comparison and its product profile", asyn
     .getByRole("navigation", { name: "Skin & cosmetics navigation" })
     .getByRole("link", { name: "Comparisons", exact: true })
     .click();
-  await page.locator(".v2-editorial-links > summary").click();
-  await page
-    .getByRole("link")
-    .filter({
-      has: page.getByRole("heading", {
-        name: "NIOD CAIS3 vs. The Ordinary copper peptide serum",
-        exact: true,
-      }),
-    })
-    .click();
-  await expect(page).toHaveURL(/\/compare\/niod-cais3-vs-the-ordinary\/$/);
-  await page.locator(".reader-pair .reader-photo").first().click();
-  await expect(page).toHaveURL(/\/skincare\/products\//);
-  await page
-    .getByRole("link", { name: "← Back to Products", exact: true })
-    .click();
-  await expect(page).toHaveURL(/\/skincare\/products\/$/);
+  await expect(page.locator('.v2-editorial-links a[href="/compare/niod-cais3-vs-the-ordinary/"]')).toHaveCount(0);
+  await expect(page.getByRole("button", { name: "Choose a product — Product A", exact: true })).toBeVisible();
 });
 
 test("topic discovery connects research, learning and the filtered directory", async ({
   page,
 }) => {
   await page.goto("/");
-  await page
-    .locator(".discovery-card")
-    .filter({
-      has: page.getByRole("heading", {
-        name: "Health & research",
-        exact: true,
-      }),
-    })
-    .click();
-  await page
-    .getByRole("link")
-    .filter({ has: page.getByRole("heading", { name: /BPC-157/ }) })
-    .click();
-  await expect(page).toHaveURL(/\/library\/bpc-157\/$/);
-  await expect(
-    page
-      .getByRole("navigation", { name: "Main navigation" })
-      .locator(".topic-menu > summary")
-      .first(),
-  ).toHaveAttribute("data-active", "true");
-  await page
-    .getByRole("link", { name: "← Back to Health & research", exact: true })
-    .click();
-  await expect(page).toHaveURL(/\/topics\/health-research\/$/);
+  await expect(page.locator('a[href="/topics/health-research/"]')).toHaveCount(0);
   await page.goto("/learn/");
-  await page
-    .locator(".discovery-card")
-    .filter({ has: page.getByRole("heading", { name: /percentages/ }) })
-    .click();
-  await expect(page).toHaveURL(
-    /\/skincare\/guides\/peptide-percentages-explained\/$/,
-  );
+  await expect(page.locator('a[href="/skincare/guides/peptide-percentages-explained/"]')).toHaveCount(0);
   await page.goto("/peptides/");
-  await page.getByLabel("Filter by topic").selectOption("hair");
-  await expect(page.locator(".discovery-card")).toHaveCount(2);
-  await page.getByLabel("Filter by topic").selectOption("health");
-  await expect(page.locator(".discovery-card")).toHaveCount(2);
+  await expect(page.locator('#directory-topic option[value="hair"], #directory-topic option[value="health"]')).toHaveCount(0);
   await page.getByLabel("Filter by topic").selectOption("skin");
   await page
     .locator(".discovery-card")
@@ -93,21 +47,9 @@ test("topic discovery connects research, learning and the filtered directory", a
   ).toBeVisible();
 });
 
-test("hair navigation exposes working ingredient and product destinations", async ({
-  page,
-}) => {
-  await page.goto("/haircare/");
-  await page
-    .getByRole("navigation", { name: "Hair & scalp navigation" })
-    .getByRole("link", { name: "Ingredients", exact: true })
-    .click();
-  await page.locator("#ingredients").getByRole("link").first().click();
-  await expect(page).toHaveURL(/\/haircare\/ingredients\//);
-  await page
-    .getByRole("link", { name: "← Back to hair ingredients", exact: true })
-    .click();
-  await expect(page.locator("#ingredients")).toBeInViewport();
-});
+test("the draft-only hair hub is unavailable", async ({ request }) => {
+    await expectPrivateDrafts(request, ["/haircare/"]);
+  });
 
 test("menus work with keyboard, close on Escape and fit narrow screens", async ({
   page,
@@ -164,7 +106,6 @@ test("new indices keep noindex and remain outside the sitemap", async ({
   const sitemap = await (await request.get("/sitemap.xml")).text();
   for (const href of [
     "/topics/",
-    "/topics/health-research/",
     "/learn/",
     "/peptides/",
     "/library/",

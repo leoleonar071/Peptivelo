@@ -2,7 +2,7 @@
 
 import { useId, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { brandName, type Product } from "@/lib/data";
+import { brandName, type Product } from "@/lib/public-catalog";
 import { comparisonRows, visibleComparisonRows } from "@/lib/comparison";
 import { productPath } from "@/lib/config";
 import { Bottle } from "./ui";

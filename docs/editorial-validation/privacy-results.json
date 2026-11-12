@@ -1,0 +1,470 @@
+{
+  "builds": [
+    {
+      "target": "next",
+      "checkedAt": "2026-11-12T04:31:07.804Z",
+      "counts": {
+        ".js": 23,
+        ".css": 6,
+        ".md": 3,
+        ".txt": 4,
+        ".svg": 19,
+        ".html": 10,
+        ".rsc": 40,
+        ".body": 2
+      },
+      "fingerprints": 371,
+      "matches": []
+    },
+    {
+      "target": "worker",
+      "checkedAt": "2026-11-12T04:29:48.334Z",
+      "counts": {
+        ".json": 2,
+        ".md": 3,
+        ".txt": 4,
+        ".svg": 19,
+        "headers": 1,
+        ".js": 47,
+        ".css": 5
+      },
+      "fingerprints": 371,
+      "matches": []
+    }
+  ],
+  "httpAssets": [
+    {
+      "target": "next",
+      "requested": 55,
+      "statuses": {
+        "200": 55
+      },
+      "unavailable": [],
+      "matches": []
+    },
+    {
+      "target": "worker",
+      "requested": 81,
+      "statuses": {
+        "200": 78,
+        "308": 1,
+        "404": 2
+      },
+      "unavailable": [
+        {
+          "path": "/_headers",
+          "status": 308
+        },
+        {
+          "path": "/vinext-client-entry-manifest.json",
+          "status": 404
+        },
+        {
+          "path": "/.vite/manifest.json",
+          "status": 404
+        }
+      ],
+      "matches": []
+    }
+  ],
+  "historicalPositiveControl": {
+    "commit": "6f21ad4",
+    "javascriptFiles": 46,
+    "filesWithMatches": 2,
+    "distinctFingerprintsFound": 369
+  },
+  "historicalRoutes": [
+    {
+      "runtime": "next",
+      "path": "/compare/the-ordinary-multi-peptide-ha-vs-copper/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/niod-cais3-vs-the-ordinary/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/the-ordinary-argireline-vs-multi-peptide-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/naturium-multi-peptide-vs-the-ordinary-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/timeless-synthe6-vs-the-ordinary-matrixyl/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/medik8-liquid-peptides-vs-the-ordinary-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/cosrx-six-peptide-vs-the-ordinary-copper/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/compare/skinceuticals-ptiox-vs-the-ordinary-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/skincare/guides/matrixyl-3000-vs-synthe6/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/skincare/guides/peptide-percentages-explained/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/library/peptide-categories/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/library/retatrutide/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/library/bpc-157/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/haircare/products/the-ordinary-hair-density/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "next",
+      "path": "/haircare/ingredients/acetyl-tetrapeptide-3/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/the-ordinary-multi-peptide-ha-vs-copper/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/niod-cais3-vs-the-ordinary/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/the-ordinary-matrixyl-vs-multi-peptide-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/the-ordinary-argireline-vs-multi-peptide-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/geek-gorgeous-power-peptides-vs-the-ordinary-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/naturium-multi-peptide-vs-the-ordinary-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/timeless-synthe6-vs-the-ordinary-matrixyl/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/medik8-liquid-peptides-vs-the-ordinary-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/cosrx-six-peptide-vs-the-ordinary-copper/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/compare/skinceuticals-ptiox-vs-the-ordinary-ha/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/skincare/guides/matrixyl-3000-vs-synthe6/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/skincare/guides/peptide-percentages-explained/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/library/peptide-categories/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/library/retatrutide/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/library/bpc-157/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/haircare/products/the-ordinary-hair-density/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/haircare/ingredients/biotinoyl-tripeptide-1/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    },
+    {
+      "runtime": "worker",
+      "path": "/haircare/ingredients/acetyl-tetrapeptide-3/",
+      "html": 404,
+      "rsc": 200,
+      "rscNotFound": true,
+      "privateMatches": []
+    }
+  ],
+  "preserved": {
+    "peptideRecords": 23,
+    "historicContentRecords": 18
+  },
+  "tests": {
+    "unit": {
+      "passed": 143,
+      "failed": 0,
+      "skipped": 0,
+      "files": 32
+    },
+    "workerE2E": {
+      "passed": 26,
+      "failed": 0,
+      "skipped": 4,
+      "flaky": 0
+    },
+    "workerFinalPrivacyE2E": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0
+    },
+    "privatePreviewE2E": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0
+    },
+    "nextFirstFullE2E": {
+      "passed": 356,
+      "failed": 2,
+      "skipped": 11,
+      "flaky": 0,
+      "durationMs": 402326,
+      "timeouts": [
+        {
+          "project": "desktop",
+          "title": "light theme preserves pages, forms, source dialogs and navigation"
+        },
+        {
+          "project": "desktop",
+          "title": "dark theme preserves pages, forms, source dialogs and navigation"
+        }
+      ]
+    },
+    "nextFinalFullE2E": {
+      "passed": 351,
+      "failed": 7,
+      "skipped": 11,
+      "flaky": 0,
+      "durationMs": 797595,
+      "timeouts": [
+        {
+          "project": "tablet",
+          "title": "new brands preserve size, price and volume filtering"
+        },
+        {
+          "project": "tablet",
+          "title": "directory name, topic and format survive a product and ingredient round trip"
+        },
+        {
+          "project": "desktop",
+          "title": "broad discovery preserves directory filters through a sourced profile"
+        },
+        {
+          "project": "desktop",
+          "title": "search context survives evidence, a full profile and native history"
+        },
+        {
+          "project": "tablet",
+          "title": "skin topic leads to the public interactive comparison"
+        },
+        {
+          "project": "tablet",
+          "title": "topic discovery connects research, learning and the filtered directory"
+        },
+        {
+          "project": "desktop",
+          "title": "compact navigation is keyboard operable and closes after a link"
+        }
+      ]
+    },
+    "nextNavigationRerun": {
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 31479
+    },
+    "nextDesktopThemeRerun": {
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "durationMs": 50410
+    },
+    "nextFinalPrivacyE2E": {
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "partOf": "nextFinalFullE2E"
+    }
+  }
+}

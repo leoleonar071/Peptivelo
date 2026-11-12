@@ -1,0 +1,3 @@
+## The Ordinary Hair Density serum — 2026-10-20
+Local file: public/images/products/ordinary-hair-density-60ml.jpg. Exact 60 mL bottle from the official US page https://theordinary.com/en-us/multi-peptide-serum-for-hair-density-hair-scalp-treatment-100434.html. Original asset: https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwb40ccfe2/Images/products/The%20Ordinary/FY25-D41247-ORD-Web-PDP-Mlt-Pptd-Hair-1x1-EN-1.jpg?sh=800&sm=fit&sw=800. Downloaded without alteration and visually inspected. Manufacturer copyright; reuse rights remain unverified for public release.
+

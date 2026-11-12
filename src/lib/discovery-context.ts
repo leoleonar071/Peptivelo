@@ -1,3 +1,5 @@
+import { productReturnPaths } from "@/data/public-navigation.json";
+
 const returnPaths = new Set(["/search/", "/peptides/"]);
 const contextKeys = new Set([
   "q",
@@ -43,12 +45,7 @@ export function discoveryReturn(value?: string, depth = 0): string | undefined {
   }
 }
 
-const productPaths = new Set([
-  ...rawCatalog.products
-    .filter((p) => p.editorialStatus === "published")
-    .map((p) => `/skincare/products/${p.slug}/`),
-  `/haircare/products/${rawHaircare.product.slug}/`,
-]);
+const productPaths = new Set(productReturnPaths);
 export function productReturn(value?: string): string | undefined {
   if (!value || value.length > 1000 || /[\\\r\n]/.test(value)) return undefined;
   try {
@@ -83,5 +80,3 @@ export function withDiscoveryReturn(href: string, returnTo?: string) {
   url.searchParams.set("returnTo", safe);
   return url.pathname + url.search + url.hash;
 }
-import rawCatalog from "../data/catalog.json";
-import rawHaircare from "../data/haircare.json";

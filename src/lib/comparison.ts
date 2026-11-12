@@ -1,4 +1,4 @@
-import { brandName, priceFor, sourceFor, type Product } from "./data";
+import { brandName, priceFor, sourceFor, type Product } from "./public-catalog";
 import { compareLabels, money, normalize } from "./math";
 import { readingLimits } from "./reading-context";
 

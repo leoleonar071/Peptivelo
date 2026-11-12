@@ -1,7 +1,7 @@
 import type { EditorialImage as ImageRecord } from "@/lib/peptide-schema";
 
 export function EditorialImage({ image }: { image?: ImageRecord }) {
-  if (!image || image.approval !== "approved") return null;
+  if (!image?.optimizedFile || image.approval !== "approved") return null;
   return (
     <figure className="peptide-image">
       {/* A local, licensed asset only; no remote image download or placeholder. */}

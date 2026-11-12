@@ -10,6 +10,7 @@ test("premium hero at all requested widths and themes", async ({
     "One matrix covers the five explicit widths.",
   );
   test.setTimeout(150000);
+  await page.emulateMedia({ reducedMotion: "reduce" });
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   for (const width of [1440, 1280, 1024, 768, 390, 375, 320]) {
@@ -25,17 +26,7 @@ test("premium hero at all requested widths and themes", async ({
       await page
         .locator("header .brand-mark img")
         .evaluate((image: HTMLImageElement) => image.decode());
-      await page.evaluate(() =>
-        Promise.all(
-          document
-            .getAnimations()
-            .filter(
-              (animation) =>
-                animation.effect?.getTiming().iterations !== Infinity,
-            )
-            .map((animation) => animation.finished.catch(() => undefined)),
-        ),
-      );
+      await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
       expect(
         await page.evaluate(
           () => document.documentElement.scrollWidth <= innerWidth,
@@ -61,7 +52,7 @@ test("premium hero at all requested widths and themes", async ({
       expect(shape.radius).toBe("50%");
       expect(shape.text).toBe("");
       await expect(page.locator(".content-grid .discovery-card")).toHaveCount(
-        4,
+        0,
       );
       await expect(page.locator(".home-hero .knowledge-preview")).toHaveCount(
         0,

@@ -118,12 +118,42 @@ export function auditLaunch({ env, catalog, today, imageExists, haircare }) {
   );
   if (haircare) {
     const product = haircare.product;
-    const sourceIds = [product.sourceId, ...haircare.ingredients.flatMap((i) => [...i.identitySourceIds, ...i.evidenceSourceIds])];
-    add("haircare-sources", sourceIds.every((id) => catalog.sources.some((s) => s.id === id && /^https:\/\//.test(s.url))), "Haircare label and evidence references must resolve to registered HTTPS sources.");
-    add("haircare-image", product.image?.startsWith("/images/products/") && imageExists(product.image), "The exact scalp product image must exist; file presence does not establish reuse permission.");
+    const sourceIds = [
+      product.sourceId,
+      ...haircare.ingredients.flatMap((i) => [
+        ...i.identitySourceIds,
+        ...i.evidenceSourceIds,
+      ]),
+    ];
+    add(
+      "haircare-sources",
+      sourceIds.every((id) =>
+        catalog.sources.some((s) => s.id === id && /^https:\/\//.test(s.url)),
+      ),
+      "Haircare label and evidence references must resolve to registered HTTPS sources.",
+    );
+    add(
+      "haircare-image",
+      product.image?.startsWith("/images/products/") &&
+        imageExists(product.image),
+      "The exact scalp product image must exist; file presence does not establish reuse permission.",
+    );
     const age = Date.parse(today) - Date.parse(product.checkedAt);
-    add("haircare-price-date", Number.isFinite(age) && age >= 0 && age <= 30 * 86400000 && Number.isFinite(product.priceUsd) && product.priceUsd >= 0 && product.volumeMl > 0, "Recheck the haircare size-specific price after 30 days; reject invalid/future observations.");
-    add("haircare-draft", product.status === "draft", "The current haircare pilot must remain draft pending scientific review and a deliberate publication workflow.");
+    add(
+      "haircare-price-date",
+      Number.isFinite(age) &&
+        age >= 0 &&
+        age <= 30 * 86400000 &&
+        Number.isFinite(product.priceUsd) &&
+        product.priceUsd >= 0 &&
+        product.volumeMl > 0,
+      "Recheck the haircare size-specific price after 30 days; reject invalid/future observations.",
+    );
+    add(
+      "haircare-draft",
+      product.status === "draft",
+      "The current haircare pilot must remain draft pending scientific review and a deliberate publication workflow.",
+    );
   }
   return {
     checkedAt: today,
@@ -153,9 +183,16 @@ if (
   const report = auditLaunch({
     env: process.env,
     catalog,
-    haircare: JSON.parse(readFileSync(join(root, "src/data/haircare.json"), "utf8")),
+    haircare: JSON.parse(
+      readFileSync(join(root, "src/data/haircare.json"), "utf8"),
+    ),
     today,
-    imageExists: (path) => existsSync(join(root, "public", path)),
+    imageExists: (path) =>
+      existsSync(join(root, "public", path)) ||
+      (path === "/images/products/records/ordinary-hair-density.svg" &&
+        existsSync(
+          join(root, "src/data/private-assets/ordinary-hair-density.svg"),
+        )),
   });
   console.log(`Launch preparation audit — ${report.checkedAt} (America/Lima)`);
   for (const check of report.checks)

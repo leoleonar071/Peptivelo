@@ -1,0 +1,405 @@
+{
+  "checkedAt": "2026-11-09T17:25:08.802Z",
+  "scope": "11 single-page text searches, at most 10 candidates each; no binary images requested; absence in these queries does not establish absence from OBF",
+  "dataAttribution": "Open Beauty Facts contributors; database ODbL, image conditions require separate review",
+  "results": [
+    {
+      "productId": "ordinary-copper",
+      "query": "ordinary copper peptides",
+      "expectedName": "Multi-Peptide + Copper Peptides 1% Serum",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:23:56.939Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=ordinary+copper+peptides&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [
+        {
+          "code": "0769915233179",
+          "name": "The Ordinary Multi-Peptide + Copper Peptides 1% Serum",
+          "brands": "The Ordinary",
+          "quantity": "30 ml",
+          "source": "https://world.openbeautyfacts.org/product/0769915233179",
+          "productCreator": "smoothie-app",
+          "frontImageUrl": "https://images.openbeautyfacts.org/images/products/076/991/523/3179/front_tr.3.400.jpg",
+          "images": [
+            {
+              "key": "1",
+              "uploader": "smoothie-app",
+              "uploadedAt": 1771959968,
+              "selectedImageId": null,
+              "sizes": {
+                "100": {
+                  "h": 100,
+                  "w": 75
+                },
+                "400": {
+                  "h": 400,
+                  "w": 300
+                },
+                "full": {
+                  "h": 4624,
+                  "w": 3468
+                }
+              }
+            },
+            {
+              "key": "front_tr",
+              "uploader": null,
+              "uploadedAt": null,
+              "selectedImageId": 1,
+              "sizes": {
+                "100": {
+                  "h": 100,
+                  "w": 75
+                },
+                "200": {
+                  "h": 200,
+                  "w": 150
+                },
+                "400": {
+                  "h": 400,
+                  "w": 300
+                },
+                "full": {
+                  "h": 4624,
+                  "w": 3468
+                }
+              }
+            }
+          ],
+          "rawImageMetadata": {
+            "1": {
+              "sizes": {
+                "100": {
+                  "h": 100,
+                  "w": 75
+                },
+                "400": {
+                  "h": 400,
+                  "w": 300
+                },
+                "full": {
+                  "h": 4624,
+                  "w": 3468
+                }
+              },
+              "uploaded_t": 1771959968,
+              "uploader": "smoothie-app"
+            },
+            "front_tr": {
+              "imgid": 1,
+              "rev": 3,
+              "sizes": {
+                "100": {
+                  "h": 100,
+                  "w": 75
+                },
+                "200": {
+                  "h": 200,
+                  "w": 150
+                },
+                "400": {
+                  "h": 400,
+                  "w": 300
+                },
+                "full": {
+                  "h": 4624,
+                  "w": 3468
+                }
+              }
+            }
+          },
+          "selectedImages": {
+            "front": {
+              "display": {
+                "tr": "https://images.openbeautyfacts.org/images/products/076/991/523/3179/front_tr.3.400.jpg"
+              },
+              "small": {
+                "tr": "https://images.openbeautyfacts.org/images/products/076/991/523/3179/front_tr.3.200.jpg"
+              },
+              "thumb": {
+                "tr": "https://images.openbeautyfacts.org/images/products/076/991/523/3179/front_tr.3.100.jpg"
+              }
+            }
+          },
+          "license": {
+            "declaredImagePolicy": "CC BY-SA (project-wide policy; per-image conditions not verified)",
+            "policySource": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+            "exactVersion": null,
+            "authorVerified": false,
+            "reuseApproved": false
+          },
+          "optimizedFile": null,
+          "aiChanges": [],
+          "approval": "pending",
+          "exactMatchVerified": false
+        }
+      ],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 1,
+      "outcome": "candidates-needing-review"
+    },
+    {
+      "productId": "niod-cais3",
+      "query": "niod cais",
+      "expectedName": "Copper Amino Isolate Serum 3 1:1 (CAIS3)",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:24:04.273Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=niod+cais&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    },
+    {
+      "productId": "ordinary-ha",
+      "query": "ordinary multi peptide ha",
+      "expectedName": "Multi-Peptide + HA Serum",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:24:11.363Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=ordinary+multi+peptide+ha&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    },
+    {
+      "productId": "ordinary-matrixyl",
+      "query": "ordinary matrixyl",
+      "expectedName": "Matrixyl 10% + HA",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:24:18.466Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=ordinary+matrixyl&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    },
+    {
+      "productId": "ordinary-argireline",
+      "query": "ordinary argireline",
+      "expectedName": "Argireline Solution 10%",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:24:25.571Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=ordinary+argireline&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    },
+    {
+      "productId": "geek-power-peptides",
+      "query": "geek gorgeous power peptides",
+      "expectedName": "Power Peptides",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:24:32.670Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=geek+gorgeous+power+peptides&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    },
+    {
+      "productId": "naturium-multi-peptide",
+      "query": "naturium multi peptide",
+      "expectedName": "Multi-Peptide Advanced Serum",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:24:39.786Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=naturium+multi+peptide&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    },
+    {
+      "productId": "timeless-synthe6",
+      "query": "timeless synthe",
+      "expectedName": "Matrixyl Synthe’6 Serum",
+      "expectedQuantity": "1 oz",
+      "requestedAt": "2026-11-09T17:24:46.915Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=timeless+synthe&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    },
+    {
+      "productId": "medik8-liquid-peptides",
+      "query": "medik8 liquid peptides",
+      "expectedName": "Liquid Peptides",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:24:54.004Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=medik8+liquid+peptides&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    },
+    {
+      "productId": "cosrx-six-mini",
+      "query": "cosrx peptide",
+      "expectedName": "The 6 Peptide Skin Booster Serum Mini",
+      "expectedQuantity": "50 ml",
+      "requestedAt": "2026-11-09T17:25:01.103Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=cosrx+peptide&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [
+        {
+          "code": "8809598455658",
+          "name": "Cosrx The 6 Peptide Skin Booster Serum",
+          "brands": "Cosrx",
+          "quantity": "150ml",
+          "source": "https://world.openbeautyfacts.org/product/8809598455658",
+          "productCreator": "jaksel",
+          "frontImageUrl": "https://images.openbeautyfacts.org/images/products/880/959/845/5658/front_nl.3.400.jpg",
+          "images": [
+            {
+              "key": "1",
+              "uploader": "jaksel",
+              "uploadedAt": 1777507018,
+              "selectedImageId": null,
+              "sizes": {
+                "100": {
+                  "h": 100,
+                  "w": 100
+                },
+                "400": {
+                  "h": 400,
+                  "w": 400
+                },
+                "full": {
+                  "h": 600,
+                  "w": 600
+                }
+              }
+            },
+            {
+              "key": "front_nl",
+              "uploader": null,
+              "uploadedAt": null,
+              "selectedImageId": 1,
+              "sizes": {
+                "100": {
+                  "h": 100,
+                  "w": 26
+                },
+                "200": {
+                  "h": 200,
+                  "w": 53
+                },
+                "400": {
+                  "h": 400,
+                  "w": 105
+                },
+                "full": {
+                  "h": 584,
+                  "w": 154
+                }
+              }
+            }
+          ],
+          "rawImageMetadata": {
+            "1": {
+              "sizes": {
+                "100": {
+                  "h": 100,
+                  "w": 100
+                },
+                "400": {
+                  "h": 400,
+                  "w": 400
+                },
+                "full": {
+                  "h": 600,
+                  "w": 600
+                }
+              },
+              "uploaded_t": 1777507018,
+              "uploader": "jaksel"
+            },
+            "front_nl": {
+              "imgid": 1,
+              "rev": 3,
+              "sizes": {
+                "100": {
+                  "h": 100,
+                  "w": 26
+                },
+                "200": {
+                  "h": 200,
+                  "w": 53
+                },
+                "400": {
+                  "h": 400,
+                  "w": 105
+                },
+                "full": {
+                  "h": 584,
+                  "w": 154
+                }
+              }
+            }
+          },
+          "selectedImages": {
+            "front": {
+              "display": {
+                "nl": "https://images.openbeautyfacts.org/images/products/880/959/845/5658/front_nl.3.400.jpg"
+              },
+              "small": {
+                "nl": "https://images.openbeautyfacts.org/images/products/880/959/845/5658/front_nl.3.200.jpg"
+              },
+              "thumb": {
+                "nl": "https://images.openbeautyfacts.org/images/products/880/959/845/5658/front_nl.3.100.jpg"
+              }
+            }
+          },
+          "license": {
+            "declaredImagePolicy": "CC BY-SA (project-wide policy; per-image conditions not verified)",
+            "policySource": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+            "exactVersion": null,
+            "authorVerified": false,
+            "reuseApproved": false
+          },
+          "optimizedFile": null,
+          "aiChanges": [],
+          "approval": "pending",
+          "exactMatchVerified": false
+        }
+      ],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 1,
+      "outcome": "candidates-needing-review"
+    },
+    {
+      "productId": "skinceuticals-ptiox",
+      "query": "skinceuticals ptiox",
+      "expectedName": "P-TIOX Anti-Wrinkle Serum",
+      "expectedQuantity": "30 ml",
+      "requestedAt": "2026-11-09T17:25:08.221Z",
+      "endpoint": "https://world.openbeautyfacts.org/cgi/search.pl?search_terms=skinceuticals+ptiox&search_simple=1&action=process&json=1&page_size=10&fields=code%2Cproduct_name%2Cbrands%2Cquantity%2Curl%2Cimages%2Cimage_front_url%2Cselected_images%2Ccreator%2Clast_modified_t",
+      "candidates": [],
+      "approval": "pending",
+      "exactMatchVerified": false,
+      "httpStatus": 200,
+      "totalSearchResults": 0,
+      "outcome": "no-candidates-for-query"
+    }
+  ]
+}

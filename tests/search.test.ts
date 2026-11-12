@@ -1,3 +1,4 @@
+import { publicSourceIds } from "../src/lib/publication-registry";
 import { expect, it } from "vitest";
 import { isVisiblePath } from "../src/lib/publication-registry";
 import { catalog } from "../src/lib/data";
@@ -165,7 +166,8 @@ for (const [query, href] of corpus)
 
 it("links every source result to an existing unique source anchor", () => {
   const sources = searchIndex.filter((entry) => entry.category === "Sources");
-  expect(sources).toHaveLength(catalog.sources.length);
+  expect(sources).toHaveLength(catalog.sources.filter((source) => publicSourceIds.has(source.id)).length);
+  expect(sources.some((entry) => entry.href.includes("bpc-human-pilot"))).toBe(false);
   for (const entry of sources)
     expect(
       catalog.sources.some(

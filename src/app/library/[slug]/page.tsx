@@ -6,7 +6,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { libraryArticles, libraryCitations } from "@/lib/library";
 import { Citations, References, SourceOverview } from "@/components/citations";
-import { ResearchDocumentation } from "@/components/research-documentation";
 import { LibraryDisclosures } from "@/components/library-disclosures";
 type Props = {
   params: Promise<{ slug: string }>;
@@ -85,7 +84,6 @@ export default async function LibraryArticle({ params, searchParams }: Props) {
           ))}
         </section>
         <p className="library-takeaway">{a.takeaway}</p>
-        <ResearchDocumentation documentId={`library:${a.slug}`} />
         <SourceOverview set={citations} />
         <details className="reader-disclosure" id="library-references">
           <summary>

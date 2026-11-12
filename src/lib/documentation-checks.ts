@@ -1,3 +1,4 @@
+import "server-only";
 import { z } from "zod";
 import raw from "../data/documentation-checks.json";
 import type { PublicationDocument } from "./publication-policy";

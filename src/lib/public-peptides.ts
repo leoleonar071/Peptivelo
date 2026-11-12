@@ -1,3 +1,4 @@
+import "server-only";
 import raw from "../data/public-peptides.json";
 import { peptideSchema } from "./peptide-schema";
 // Generated public allowlist. Never import editorial records from client code.

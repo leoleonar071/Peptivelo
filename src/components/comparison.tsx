@@ -1,5 +1,4 @@
 "use client";
-import { comparisonPath } from "@/lib/config";
 
 import Link from "next/link";
 import {
@@ -29,13 +28,12 @@ import {
   Copy,
   FlaskConical,
 } from "lucide-react";
-import { catalog, brandName, sourceFor, type Product } from "@/lib/data";
+import { brandName, sourceFor, type Product } from "@/lib/public-catalog";
 import { comparisonFacts, volumeLabel } from "@/lib/comparison";
 import { money } from "@/lib/math";
 import { productPath } from "@/lib/config";
 import { track } from "@/lib/analytics";
-import { isVisiblePath } from "@/lib/publication-registry";
-import { Bottle, VerifiedDate, SourceList } from "./ui";
+import { Bottle, VerifiedDate } from "./ui";
 
 import { ComparisonGrid } from "./comparison-grid";
 import { IngredientHelp } from "./ingredient-help";
@@ -434,12 +432,12 @@ export function ComparisonTable({
   a,
   b,
   controls,
-  showGuide = true,
+  sources,
 }: {
   a: Product;
   b: Product;
   controls?: [React.ReactNode, React.ReactNode];
-  showGuide?: boolean;
+  sources?: React.ReactNode;
 }) {
   useEffect(() => {
     // Follow a link into a specific disclosure, including links above a closed <details>.
@@ -452,12 +450,6 @@ export function ComparisonTable({
     return () => window.removeEventListener("hashchange", reveal);
   }, []);
   const facts = comparisonFacts(a, b);
-  const guide = catalog.comparisons.find(
-    (comparison) =>
-      isVisiblePath(comparisonPath(comparison.slug)) &&
-      comparison.comparedProductIds.includes(a.id) &&
-      comparison.comparedProductIds.includes(b.id),
-  );
   const { labels, cost } = facts;
   const lower = cost.kind === "different" ? (cost.lower === "a" ? a : b) : null;
   return (
@@ -477,14 +469,6 @@ export function ComparisonTable({
         </span>
       </div>
       <ComparisonGrid a={a} b={b} controls={controls} />
-      {showGuide && guide && (
-        <p className="section-intro">
-          <Link className="text-link" href={comparisonPath(guide.slug)}>
-            Understand this buying decision · Editorial draft{" "}
-            <ArrowRight size={16} />
-          </Link>
-        </p>
-      )}
       <section
         className="comparison-meaning"
         aria-labelledby="comparison-meaning-title"
@@ -760,7 +744,7 @@ export function ComparisonTable({
                 </li>
               )}
             </ul>
-            <SourceList ids={[a.sourceId, b.sourceId]} />
+            {sources}
             <Link className="text-link" href="/methodology/">
               Read our comparison methodology <ArrowRight size={14} />
             </Link>

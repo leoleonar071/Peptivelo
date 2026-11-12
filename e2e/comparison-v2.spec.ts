@@ -226,15 +226,10 @@ test("details are progressive, filter preserves limits, hash links reveal rows a
   await expect(
     page.getByRole("checkbox", { name: "Show differences only", exact: true }),
   ).not.toBeChecked();
-  await page
-    .locator(".v2-evidence > details")
-    .last()
-    .locator(":scope > summary")
-    .click();
-  await expect(page.locator(".v2-cited-passage").first()).toBeVisible();
-  await expect(
-    page.locator(".v2-cited-passage .v2-source-links a").first(),
-  ).toHaveAttribute("href", /^https:/);
+  await expect(page.locator(".v2-cited-passage")).toHaveCount(0);
+  const ingredientEvidence = page.locator(".v2-evidence > details").nth(1);
+  await ingredientEvidence.locator(":scope > summary").click();
+  await expect(ingredientEvidence.locator(".v2-source-links a").first()).toHaveAttribute("href", /^https:/);
   await page.goto(`${path}?a=ordinary-copper&b=cosrx-six-mini`);
   await expect(page.locator(".v2-glance")).toContainText("Price unavailable");
   await expect(page.locator(".v2-observations")).toContainText(

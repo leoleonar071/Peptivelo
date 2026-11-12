@@ -52,12 +52,10 @@ it("missing size prices remain unknown and never become a zero-cost winner", () 
     expect(row.values[1].text).not.toContain("$0");
   }
 });
-it("editorial evidence remains tied to its exact pair and every passage source is resolvable", () => {
+it("interactive comparisons exclude draft evidence and retain public ingredient sources", () => {
   const data = comparisonEvidenceData();
   expect(data.market).toBe("US");
-  const pair = data.pairs[[a.id, b.id].sort().join("|")];
-  expect(pair.href).toBe("/compare/niod-cais3-vs-the-ordinary/");
-  expect(pair.paragraphs.length).toBeGreaterThan(0);
+  expect(data.pairs[[a.id, b.id].sort().join("|")]).toBeUndefined();
   for (const p of Object.values(data.pairs).flatMap((p) => p.paragraphs))
     for (const id of p.sourceIds) expect(data.sources[id], id).toBeDefined();
   for (const i of Object.values(data.ingredients))

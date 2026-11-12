@@ -5,7 +5,8 @@ import { BrandIdentity } from "@/components/brand-identity";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { site } from "@/lib/config";
 import { Navigation } from "@/components/navigation";
-import { footerGroups } from "@/lib/site-navigation";
+import { isVisiblePath } from "@/lib/publication-registry";
+import { footerGroups, topics } from "@/lib/site-navigation";
 import { SectionNavigation } from "@/components/section-navigation";
 import { ReferenceEvents } from "@/components/discovery-events";
 import "./globals.css";
@@ -67,10 +68,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <span className="beta">BETA</span>
           </Link>
           <ThemeToggle />
-          <Navigation />
+          <Navigation topics={topics.map(({ id, href, title, description }) => ({ id, href, title, description }))} />
         </header>
         <main id="main">
-          <SectionNavigation />
+          <SectionNavigation topics={topics.map(({ id, href, title, description }) => ({ id, href, title, description }))} showBasics={isVisiblePath("/library/peptide-categories/")} />
           {children}
         </main>
         <footer>

@@ -3,6 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 
 for (const theme of ["light", "dark"]) {
   test(`universal hero works in ${theme}`, async ({ page }, info) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.goto("/");
@@ -17,7 +18,7 @@ for (const theme of ["light", "dark"]) {
         .locator(".discovery-section")
         .first()
         .getByRole("heading", { level: 3 }),
-    ).toHaveCount(3);
+    ).toHaveCount(1);
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,
@@ -27,13 +28,7 @@ for (const theme of ["light", "dark"]) {
     await page
       .locator("header .brand-mark img")
       .evaluate((image: HTMLImageElement) => image.decode());
-    await page.evaluate(() =>
-      Promise.all(
-        document
-          .getAnimations()
-          .map((animation) => animation.finished.catch(() => undefined)),
-      ),
-    );
+    await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
     await page.screenshot({
       path: info.outputPath(`search-hero-${theme}.png`),
       fullPage: false,

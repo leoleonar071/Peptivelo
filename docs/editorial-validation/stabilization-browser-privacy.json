@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-11T21:33:48.448Z",
+  "scope": "Local production build static browser JavaScript. Marker text remains in original content files.",
+  "matches": [
+    {
+      "filename": "0kl9by77l828k.js",
+      "marker": "library-draft-overview"
+    },
+    {
+      "filename": "0kl9by77l828k.js",
+      "marker": "library-draft-body"
+    },
+    {
+      "filename": "2w_9nn2yhyk2r.js",
+      "marker": "scalp-draft-title"
+    }
+  ],
+  "passed": false,
+  "productionHome": {
+    "checkedAt": "2026-11-11T21:36:59.741Z",
+    "status": 200,
+    "results": [
+      {
+        "url": "https://peptivelo.com/_next/static/chunks/rolldown-runtime-XKyaHtl9.js",
+        "status": 200,
+        "markerIndexes": []
+      },
+      {
+        "url": "https://peptivelo.com/_next/static/chunks/framework-ChI052Ff.js",
+        "status": 200,
+        "markerIndexes": []
+      },
+      {
+        "url": "https://peptivelo.com/_next/static/chunks/vinext-CsX0w2Zh.js",
+        "status": 200,
+        "markerIndexes": []
+      },
+      {
+        "url": "https://peptivelo.com/_next/static/chunks/index-DAccYiNB.js",
+        "status": 200,
+        "markerIndexes": []
+      }
+    ]
+  }
+}

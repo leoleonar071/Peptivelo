@@ -19,12 +19,7 @@ test("one search opens an ingredient and separates exact labels from editorial a
   await expect(page.locator(".explore-product-grid")).toContainText(
     "Price unavailable",
   );
-  await page.getByLabel("Other formulas", { exact: false }).check();
-  await expect(page.locator(".explore-product-grid")).toContainText("NIOD");
-  await expect(page.locator(".explore-product-grid")).toContainText(
-    "editorial draft",
-  );
-  await page.getByLabel("Same peptide", { exact: false }).check();
+  await expect(page.getByLabel("Other formulas", { exact: false })).toHaveCount(0);
   const buttons = page.locator(".explore-product button");
   await buttons.first().click();
   await buttons.last().click();
@@ -81,7 +76,7 @@ test("product search locks its reference, sorts prices and paginates four altern
   ).toHaveCount(0);
 });
 
-test("research and single scalp products expose evidence without a commercial comparator", async ({
+test("withdrawn research and scalp records do not appear in exploration", async ({
   page,
 }) => {
   for (const q of ["BPC-157", "Retatrutide", "Biotinoyl Tripeptide-1"]) {
@@ -89,16 +84,8 @@ test("research and single scalp products expose evidence without a commercial co
     await expect(
       page.getByRole("tab", { name: "Compare", exact: true }),
     ).toHaveCount(0);
-    await page.getByRole("tab", { name: "Evidence", exact: true }).click();
-    await expect(
-      page.locator(".explore-evidence > details").first(),
-    ).not.toHaveAttribute("open");
-    await page.locator(".explore-evidence > details > summary").first().click();
-    await expect(
-      page.getByRole("heading", { name: "Limits", exact: true }).first(),
-    ).toBeVisible();
-    await page.locator(".explore-sources > summary").first().click();
-    await expect(page.locator(".explore-sources a").first()).toBeVisible();
+    await expect(page.getByRole("tab", { name: "Evidence", exact: true })).toHaveCount(0);
+    await expect(page.locator('.search-document[href*="/library/"], .search-document[href*="/haircare/"]')).toHaveCount(0);
   }
 });
 
@@ -125,9 +112,7 @@ test("ambiguous queries use compact results and invalid states recover", async (
     "Choose a result to explore.",
   );
   await page.goto("/search/?q=BPC-157&tab=compare&page=999999");
-  await expect(
-    page.getByRole("tab", { name: "Overview", exact: true }),
-  ).toHaveAttribute("aria-selected", "true");
+  await expect(page.getByRole("tab", { name: "Overview", exact: true })).toHaveCount(0);
   await page.goto("/search/?q=zzz-nothing-available");
   await expect(
     page.getByRole("heading", { name: "No matching documents yet." }),
@@ -138,6 +123,7 @@ test("exploration supports keyboard tabs, mobile layout and both themes", async 
   page,
 }, info) => {
   test.skip(info.project.name !== "desktop", "One explicit viewport matrix.");
+  await page.emulateMedia({ reducedMotion: "reduce" });
   for (const width of [320, 768, 1440]) {
     await page.setViewportSize({ width, height: 960 });
     await page.goto("/search/?q=GHK-Cu");
@@ -157,17 +143,7 @@ test("exploration supports keyboard tabs, mobile layout and both themes", async 
         await page
           .getByRole("button", { name: `Switch to ${theme} theme` })
           .click();
-      await page.evaluate(() =>
-        Promise.all(
-          document
-            .getAnimations()
-            .filter(
-              (animation) =>
-                animation.effect?.getTiming().iterations !== Infinity,
-            )
-            .map((animation) => animation.finished.catch(() => undefined)),
-        ),
-      );
+      await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
       expect(
         await page.evaluate(
           () => document.documentElement.scrollWidth <= innerWidth,

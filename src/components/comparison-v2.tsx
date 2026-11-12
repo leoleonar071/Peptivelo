@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { brandName, type Product } from "@/lib/data";
+import { brandName, type Product } from "@/lib/public-catalog";
 import { comparisonFacts, volumeLabel } from "@/lib/comparison";
 import { money, normalize } from "@/lib/math";
 import type { ComparisonEvidenceData } from "@/lib/comparison-evidence";

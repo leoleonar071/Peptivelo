@@ -11,7 +11,7 @@ import {
   type QueryParams,
 } from "@/lib/exploration";
 import "../../styles/search-exploration.css";
-import { activeTopics } from "@/lib/topic-registry";
+import { topics as activeTopics } from "@/lib/site-navigation";
 import { SearchOutcome } from "@/components/discovery-events";
 export const metadata = {
   title: "Search Peptivelo",

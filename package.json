@@ -27,7 +27,11 @@
     "prebuild": "npm run editorial:prepare",
     "prebuild:vinext": "npm run editorial:prepare",
     "pretypecheck": "npm run editorial:prepare",
-    "pretest": "npm run editorial:prepare"
+    "pretest": "npm run editorial:prepare",
+    "editorial:preview": "node scripts/editorial-preview.mjs",
+    "audit:beauty": "node scripts/audit-open-beauty.mjs",
+    "postbuild": "node scripts/audit-editorial-privacy.mjs next",
+    "postbuild:vinext": "node scripts/audit-editorial-privacy.mjs worker"
   },
   "license": "ISC",
   "type": "module",

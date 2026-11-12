@@ -15,9 +15,7 @@ test("a compact ingredient alias connects documented products, comparisons and s
     "Recorded label lists Copper Tripeptide-1",
   );
   await expect(products).not.toContainText("NIOD");
-  await page.getByLabel("Other formulas", { exact: false }).check();
-  await expect(products).toContainText("NIOD");
-  await expect(products).toContainText("not established as equivalent");
+  await expect(page.getByLabel("Other formulas", { exact: false })).toHaveCount(0);
   expect(
     (
       await new AxeBuilder({ page })

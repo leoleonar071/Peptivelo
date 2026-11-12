@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { brandName, type Product } from "@/lib/data";
+import { brandName, type Product } from "@/lib/public-catalog";
 import { volumeLabel } from "@/lib/comparison";
 export function ComparisonProductImage({ product: p }: { product: Product }) {
   const [failed, setFailed] = useState(false);

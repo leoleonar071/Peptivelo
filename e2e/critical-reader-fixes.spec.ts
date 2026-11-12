@@ -1,38 +1,10 @@
+import { expectPrivateDrafts } from "./draft-route-assertions";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-test("a citation followed before hydration retains its keyboard return target", async ({
-  page,
-}) => {
-  let releaseScripts!: () => void;
-  const scriptsReady = new Promise<void>((resolve) => {
-    releaseScripts = resolve;
+test("a direct reference deep link keeps the draft comparison private", async ({ request }) => {
+    await expectPrivateDrafts(request, ["/compare/niod-cais3-vs-the-ordinary/?reference=1"]);
   });
-  await page.route(/\.js(?:\?|$)/, async (route) => {
-    await scriptsReady;
-    await route.continue();
-  });
-  try {
-    await page.goto("/compare/niod-cais3-vs-the-ordinary/", {
-      waitUntil: "commit",
-    });
-    const citation = page
-      .locator(
-        '.reader-takeaways a[href="#comparison-reference-argireline-trial"]',
-      )
-      .first();
-    await citation.click();
-    await expect(page).toHaveURL(/#comparison-reference-argireline-trial$/);
-    releaseScripts();
-    await expect(
-      page.getByRole("dialog", { name: "About this reference" }),
-    ).toBeVisible();
-    await page.keyboard.press("Escape");
-    await expect(citation).toBeFocused();
-  } finally {
-    releaseScripts();
-  }
-});
 
 test("a beginner reaches a sourced introduction without knowing a compound name", async ({
   page,
@@ -74,13 +46,12 @@ test("directory name, topic and format survive a product and ingredient round tr
     .locator("#product-ingredients .tags a")
     .filter({ hasText: "Tripeptide-29" })
     .click();
-  await expect(
-    page.getByRole("link", { name: "Back to product", exact: false }),
-  ).toBeVisible();
+  await expect(page).toHaveURL(/\/skincare\/ingredients\/tripeptide-29\/\?/);
+  const backToProduct = page.getByRole("link", { name: "← Back to product", exact: true });
+  await expect(backToProduct).toHaveAttribute("href", /\/skincare\/products\/niod-cais3\/\?returnTo=/);
   await page.reload();
-  await page
-    .getByRole("link", { name: "Back to product", exact: false })
-    .click();
+  await backToProduct.click();
+  await expect(page).toHaveURL(/\/skincare\/products\/niod-cais3\/\?returnTo=/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("NIOD");
   await page
     .getByRole("link", { name: "Back to your directory", exact: false })
@@ -103,18 +74,7 @@ test("related labels never imply that NIOD lists Acetyl Hexapeptide-8", async ({
   await expect(related).toContainText(
     "Recorded selected label lists Acetyl Hexapeptide-8",
   );
-  await page
-    .getByText("How this evidence was selected", { exact: true })
-    .click();
-  await expect(page.locator(".research-documentation")).toContainText(
-    "historical selection process was not recorded",
-  );
-  await page
-    .getByText("Study extraction · Wang Y et al., 2013", { exact: true })
-    .click();
-  await expect(page.locator(".study-extraction")).toContainText(
-    "Confidence intervals",
-  );
+  await expect(page.locator(".research-documentation")).toHaveCount(0);
   await expect(page.locator(".ingredient-guide")).not.toContainText(
     "this serum",
   );
@@ -174,6 +134,7 @@ test("name search works without JavaScript and narrow layouts remain accessible"
     "Copper Tripeptide-1",
   );
   await context.close();
+  await page.emulateMedia({ reducedMotion: "reduce" });
   await page.setViewportSize({
     width: info.project.name === "mobile" ? 320 : 1280,
     height: 900,

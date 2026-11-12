@@ -1,6 +1,6 @@
 import { z } from "zod";
-import rawOffers from "@/data/offers.json";
-import { catalog, type Product } from "./data";
+import rawOffers from "@/data/public-offers.json";
+import { catalog, type Product } from "./public-catalog";
 import { normalize } from "./math";
 
 export const markets = {

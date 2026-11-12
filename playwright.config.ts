@@ -1,6 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 export default defineConfig({
   testDir: "./e2e",
+  testIgnore: "editorial-private-preview.spec.ts",
   outputDir: "test-results/next",
   fullyParallel: true,
   use: { baseURL: "http://localhost:3100" },

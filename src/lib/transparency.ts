@@ -1,3 +1,4 @@
+import "server-only";
 import { checkForField } from "./documentation-checks";
 import { catalog, priceFor } from "./data";
 import { documentForPath, policyForPath } from "./publication-registry";

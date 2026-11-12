@@ -46,18 +46,64 @@ export const editorialImageSchema = z
     credit: id,
     license: id,
     originalUrl: url,
-    optimizedFile: z.string().regex(/^\/images\/(?!.*\.\.)[a-zA-Z0-9/_.-]+$/),
+    optimizedFile: z
+      .string()
+      .regex(/^\/images\/(?!.*\.\.)[a-zA-Z0-9/_.-]+$/)
+      .optional(),
     alt: id,
     aiChanges: z.string(),
     attributionRequired: z.boolean(),
     attribution: z.string(),
     approval: z.enum(["pending", "approved", "rejected"]),
+    provenance: z
+      .object({
+        provider: z.enum([
+          "open-beauty-facts",
+          "brand",
+          "affiliate-feed",
+          "user-submission",
+          "owned-card",
+        ]),
+        author: id.optional(),
+        commercialUse: z.enum(["allowed", "prohibited", "unknown"]),
+        permissionEvidence: id.optional(),
+        productMatch: z
+          .object({
+            catalogProductId: id,
+            exactVariantEvidence: id,
+          })
+          .optional(),
+      })
+      .strict()
+      .optional(),
   })
   .strict()
   .refine(
     (image) => !image.attributionRequired || !!image.attribution.trim(),
     "Required attribution missing",
-  );
+  )
+  .superRefine((image, ctx) => {
+    if (image.approval !== "approved") return;
+    const source = image.provenance;
+    if (
+      !source?.author ||
+      source.commercialUse !== "allowed" ||
+      !source.permissionEvidence ||
+      !image.optimizedFile
+    ) {
+      ctx.addIssue({
+        code: "custom",
+        message:
+          "Approval requires author, commercial-use evidence and a local asset",
+      });
+    }
+    if (source?.provider === "open-beauty-facts" && !source.productMatch) {
+      ctx.addIssue({
+        code: "custom",
+        message: "Open Beauty Facts approval requires exact variant evidence",
+      });
+    }
+  });
 export const peptideSchema = z
   .object({
     id,

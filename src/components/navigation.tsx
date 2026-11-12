@@ -3,15 +3,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
-import { globalLinks, topics, topicForPath } from "@/lib/site-navigation";
+import { globalLinks, topicForPath, type NavigationTopic } from "@/lib/navigation-links";
 import { useClientReady } from "@/lib/use-client-ready";
 
-export function Navigation() {
+export function Navigation({ topics }: { topics: NavigationTopic[] }) {
   const pathname = usePathname();
   const ready = useClientReady();
   const previousPathname = useRef(pathname);
   const root = useRef<HTMLElement>(null);
-  const topic = topicForPath(pathname);
+  const topic = topicForPath(pathname, topics);
   useEffect(() => {
     // Native details may already have been opened while scripts load. Close
     // them only on an actual route change, not during the initial hydration.

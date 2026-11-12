@@ -1,4 +1,5 @@
-import { comparisonPath } from "@/lib/config";
+import { isVisiblePath } from "@/lib/publication-registry";
+import { comparisonUrl, comparisonPath } from "@/lib/config";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { catalog } from "@/lib/data";
@@ -50,6 +51,8 @@ export default function ChoosePage() {
       <div className="choose-paths">
         {paths.map((path) => {
           const guide = catalog.comparisons.find((item) => item.id === path.guideId)!;
+          const editorialHref = comparisonPath(guide.slug);
+          const editorialVisible = isVisiblePath(editorialHref);
           return (
             <details name="buying-question" className="choose-path" key={path.guideId}>
               <summary><span><strong>{path.title}</strong><span>{path.intro}</span></span><span className="choose-plus" aria-hidden="true">+</span></summary>
@@ -58,8 +61,12 @@ export default function ChoosePage() {
                 <p>{path.reason}</p>
                 <div className="choose-limit"><strong>What this cannot tell you</strong><p>{path.limit}</p></div>
                 <p><strong>Keep this question in mind:</strong> {path.question}</p>
-                <Link className="button" href={comparisonPath(guide.slug)}>Explore this comparison <ArrowRight size={16} /></Link>
-                <p className="choose-source-note">Label facts, research citations and their limits are inside the comparison.</p>
+                <Link className="button" href={editorialVisible ? editorialHref : comparisonUrl(...guide.comparedProductIds)}>Explore this comparison <ArrowRight size={16} /></Link>
+                <p className="choose-source-note">
+                  {editorialVisible
+                    ? "Label facts, research citations and their limits are inside the comparison."
+                    : "Compare the recorded ingredients and prices for this pair."}
+                </p>
               </div>
             </details>
           );
@@ -67,7 +74,7 @@ export default function ChoosePage() {
       </div>
       <div className="choose-other">
         <p>Already have a bottle? <Link href="/skincare/identify/">Understand your label →</Link></p>
-        <p>Looking for fuller-looking hair? <Link href="/haircare/">Explore hair & scalp →</Link></p>
+        {isVisiblePath("/haircare/") && <p>Looking for fuller-looking hair? <Link href="/haircare/">Explore hair & scalp →</Link></p>}
         <Link className="text-link" href={comparisonPath()}>Choose your own two products <ArrowRight size={16} /></Link>
       </div>
     </main>

@@ -1,3 +1,4 @@
+import "server-only";
 import { z } from "zod";
 import raw from "@/data/comparison-evaluations.json";
 import { catalog } from "./data";

@@ -1,6 +1,8 @@
+import "server-only";
 import { facialComparisonGroup } from "./comparison-groups";
 import { comparisonPath } from "@/lib/config";
 import { catalog } from "./data";
+import { isVisiblePath, publicSourceIds } from "./publication-registry";
 import { evaluations } from "./evaluations";
 import { evidence } from "./citations";
 import type { Market } from "./offers";
@@ -35,6 +37,7 @@ export type ComparisonEvidenceData = {
 export function comparisonEvidenceData(): ComparisonEvidenceData {
   const pairs: ComparisonEvidenceData["pairs"] = {};
   for (const comparison of catalog.comparisons) {
+    if (!isVisiblePath(comparisonPath(comparison.slug))) continue;
     const evaluation = evaluations.find(
       (e) => e.comparisonId === comparison.id,
     );
@@ -59,23 +62,25 @@ export function comparisonEvidenceData(): ComparisonEvidenceData {
     currency: facialComparisonGroup.presentation.currency,
     pairs,
     sources: Object.fromEntries(
-      catalog.sources.map((source) => {
-        const note = evidence.find((e) => e.sourceId === source.id);
-        return [
-          source.id,
-          {
-            id: source.id,
-            title: source.title,
-            url: source.url,
-            kind: note?.kind ?? source.sourceType,
-            supports: note?.supports ?? "Recorded source information.",
-            limits:
-              note?.limits ??
-              "Source check is not independent scientific review.",
-            checkedAt: source.accessedAt,
-          },
-        ];
-      }),
+      catalog.sources
+        .filter((source) => publicSourceIds.has(source.id))
+        .map((source) => {
+          const note = evidence.find((e) => e.sourceId === source.id);
+          return [
+            source.id,
+            {
+              id: source.id,
+              title: source.title,
+              url: source.url,
+              kind: note?.kind ?? source.sourceType,
+              supports: note?.supports ?? "Recorded source information.",
+              limits:
+                note?.limits ??
+                "Source check is not independent scientific review.",
+              checkedAt: source.accessedAt,
+            },
+          ];
+        }),
     ),
     ingredients: Object.fromEntries(
       catalog.ingredients

@@ -1,3 +1,4 @@
+import "server-only";
 import { comparisonPath } from "@/lib/config";
 import { catalog, products, brandName } from "./data";
 import { guides } from "./guides";

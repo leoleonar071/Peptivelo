@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   discoveryReturn,
   productReturn,
@@ -17,18 +16,18 @@ export function DiscoveryReturn({
   return (
     <div className="discovery-return-links">
       {product && (
-        <Link
+        <a
           className="text-link discovery-return"
           href={withDiscoveryReturn(product, href)}
         >
           ← Back to product
-        </Link>
+        </a>
       )}
       {href ? (
-        <Link className="text-link discovery-return" href={href}>
+        <a className="text-link discovery-return" href={href}>
           ← Back to your{" "}
           {href.startsWith("/peptides/") ? "directory" : "exploration"}
-        </Link>
+        </a>
       ) : null}
     </div>
   );

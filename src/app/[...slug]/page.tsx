@@ -1,8 +1,11 @@
+import { products as clientProducts } from "@/lib/public-catalog";
+import { SourceList } from "@/components/source-list";
 import { comparisonPath } from "@/lib/config";
 import {
   canIndexPath,
   isVisiblePath,
   documentForPath,
+  publicSourceIds,
 } from "@/lib/publication-registry";
 import { TransparencyProfile } from "@/components/transparency-profile";
 import { KnowledgeNextSteps } from "@/components/knowledge-next-steps";
@@ -21,7 +24,7 @@ import { parseRows } from "@/lib/calculator";
 import { pages } from "@/lib/pages";
 import { normalize, money } from "@/lib/math";
 import { volumeLabel } from "@/lib/comparison";
-import { IngredientEducation } from "@/components/ingredient-education";
+import { IngredientProfileEducation } from "@/components/ingredient-profile-education";
 import { ComparisonGuides } from "@/components/comparison-guides";
 import { LearningGuides } from "@/components/learning-guides";
 import { ReadingGuide } from "@/components/reading-guide";
@@ -37,7 +40,6 @@ import {
   Bottle,
   Breadcrumbs,
   ProductCard,
-  SourceList,
   VerifiedDate,
 } from "@/components/ui";
 import {
@@ -278,7 +280,7 @@ export default async function Page({ params, searchParams }: Props) {
   else if (path === "sources")
     body = (
       <>
-        <SourceList ids={catalog.sources.map((s) => s.id)} anchors />
+        <SourceList ids={[...publicSourceIds]} anchors />
         <div className="prose">
           <h2>What these sources establish</h2>
           <p>
@@ -378,7 +380,7 @@ export default async function Page({ params, searchParams }: Props) {
                 </>
               )}
             </div>
-            <RetailerLink product={p} />
+            <RetailerLink productId={p.id} />
             <AffiliateDisclosure />
           </div>
         </div>
@@ -475,7 +477,7 @@ export default async function Page({ params, searchParams }: Props) {
             </p>
             <small>Exact label name: {i.inciName}</small>
           </div>
-          <IngredientEducation ingredient={i} />
+          <IngredientProfileEducation ingredient={i} />
         </div>
         <h2>Sources you can check</h2>
         <SourceList ids={i.sourceIds} />
@@ -605,9 +607,9 @@ export default async function Page({ params, searchParams }: Props) {
             ))}
           </section>
           <ComparisonTable
-            a={products.find((p) => p.id === c.comparedProductIds[0])!}
-            b={products.find((p) => p.id === c.comparedProductIds[1])!}
-            showGuide={false}
+            a={clientProducts.find((p) => p.id === c.comparedProductIds[0])!}
+            b={clientProducts.find((p) => p.id === c.comparedProductIds[1])!}
+            sources={<SourceList ids={products.filter((p) => c.comparedProductIds.includes(p.id)).map((p) => p.sourceId)} />}
           />
           {citations && c.researchContext && !evaluation && (
             <section className="prose section" id="research-context">
@@ -638,7 +640,7 @@ export default async function Page({ params, searchParams }: Props) {
                     <Citations set={citations} claim={`question-${index}`} />
                   )}
                 </p>
-                {!citations && <EvidenceLinks ids={question.sourceIds} />}
+                {!citations && <EvidenceLinks ids={question.sourceIds} sources={catalog.sources} />}
               </section>
             ))}
           </section>
@@ -661,7 +663,7 @@ export default async function Page({ params, searchParams }: Props) {
             {c.comparedProductIds.map((id) => (
               <RetailerLink
                 key={id}
-                product={products.find((p) => p.id === id)!}
+                productId={id}
               />
             ))}
             <Link

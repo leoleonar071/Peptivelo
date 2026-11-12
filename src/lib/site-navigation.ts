@@ -1,14 +1,10 @@
-import { comparisonPath } from "@/lib/config";
+import "server-only";
+import { globalLinks, topicForPath as findTopic } from "./navigation-links";
+export { globalLinks, skinLinks } from "./navigation-links";
 import { activeTopics } from "./topic-registry";
 export type { TopicId } from "./topic-registry";
 import { isVisiblePath } from "./publication-registry";
 export const topics = activeTopics.filter((topic) => isVisiblePath(topic.href));
-export const globalLinks = [
-  { title: "Peptides A–Z", href: "/peptides/" },
-  { title: "Compare", href: comparisonPath() },
-  { title: "Learn", href: "/learn/" },
-  { title: "Search", href: "/search/" },
-];
 export const footerGroups = [
   {
     title: "Explore",
@@ -37,20 +33,4 @@ export const footerGroups = [
     ],
   },
 ];
-export function topicForPath(path: string) {
-  const topic = topics.find(
-    (candidate) =>
-      path === candidate.href.slice(0, -1) || path.startsWith(candidate.href),
-  );
-  if (topic) return topic;
-  if (/^\/library\/(bpc-157|retatrutide)(?:\/|$)/.test(path))
-    return topics.find((candidate) => candidate.id === "health");
-  return undefined;
-}
-export const skinLinks = [
-  { title: "Overview", href: "/skincare/" },
-  { title: "Products", href: "/skincare/products/" },
-  { title: "Comparisons", href: comparisonPath() },
-  { title: "Ingredients", href: "/skincare/ingredients/" },
-  { title: "Guides", href: "/skincare/guides/" },
-];
+export const topicForPath = (path: string) => findTopic(path, topics);

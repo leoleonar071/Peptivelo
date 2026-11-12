@@ -1,3 +1,4 @@
+import "server-only";
 import { z } from "zod";
 import rawRecords from "../data/research-records.json";
 import rawExtractions from "../data/study-extractions.json";

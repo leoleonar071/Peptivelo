@@ -240,7 +240,7 @@ export function EditorialComparison({
                           : "Price not verified"}
                       </span>
                     </div>
-                    <RetailerLink product={p} detailed />
+                    <RetailerLink productId={p.id} detailed />
                     <small>Select the {volumeLabel(p)} option on the retailer’s page. Confirm the current price before checkout.</small>
                   </div>
                 ))}

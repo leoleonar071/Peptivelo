@@ -1,3 +1,4 @@
+import "server-only";
 import type { ContentEntry } from "./content-navigation";
 import { isActiveTopic, type TopicId } from "./topic-registry";
 import { isVisiblePath } from "./publication-registry";

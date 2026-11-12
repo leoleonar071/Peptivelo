@@ -5,6 +5,7 @@ test("identifier responsive methods, search and scanner states", async ({
 }, info) => {
   test.skip(info.project.name !== "desktop", "Single explicit viewport matrix");
   test.setTimeout(180000);
+  await page.emulateMedia({ reducedMotion: "reduce" });
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   for (const width of [1440, 1280, 1024, 768, 430, 390, 375, 320]) {
@@ -15,7 +16,7 @@ test("identifier responsive methods, search and scanner states", async ({
         await page
           .getByRole("button", { name: `Switch to ${theme} theme` })
           .click();
-      await page.evaluate(() => Promise.all(document.getAnimations().filter(animation => animation.effect?.getTiming().iterations !== Infinity).map(animation => animation.finished.catch(() => undefined))));
+      await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
       await page.evaluate(() => document.fonts.ready);
       await expect(page.getByRole("heading", { level: 1 })).toContainText(
         "Find your serum.",

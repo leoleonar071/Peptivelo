@@ -1,4 +1,5 @@
 import "@/styles/product-identifier.css";
+import { isVisiblePath } from "@/lib/publication-registry";
 import { ProductIdentify } from "@/components/product-identify";
 
 export const metadata = {
@@ -10,5 +11,5 @@ export const metadata = {
 };
 
 export default function IdentifyPage() {
-  return <ProductIdentify />;
+  return <ProductIdentify showHaircare={isVisiblePath("/haircare/")} />;
 }

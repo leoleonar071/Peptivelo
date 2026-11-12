@@ -1,3 +1,4 @@
+import "server-only";
 import { z } from "zod";
 import { catalog } from "./data";
 import { haircare, hairIngredientPath, hairProductPath } from "./haircare";
@@ -28,8 +29,7 @@ const reviews = z
       documentId: z.string().min(1),
       revision: z.string().min(1),
       kind: z.enum(["editorial", "scientific"]),
-      // Non-personal IDs only. Actual identities/qualifications are held by the
-      // owner; this registry can be bundled into discovery controls.
+      // The owner keeps the identities and qualifications behind reviewer IDs.
       reviewerId: z.string().regex(/^[a-z][a-z0-9-]{2,63}$/),
       reviewedAt: z.iso.date(),
     }),
@@ -138,6 +138,7 @@ const documents: PublicationDocument[] = [
         href: `/skincare/guides/${g.slug}/`,
         topic: "skin",
         status: g.status,
+        requireApprovalForVisibility: true,
         sourceIds: g.sourceIds,
         checkedAt: g.updatedAt,
         requiresScientificReview: true,
@@ -158,6 +159,7 @@ const documents: PublicationDocument[] = [
         href: comparisonPath(c.slug),
         topic: "skin",
         status: c.publicationStatus,
+        requireApprovalForVisibility: true,
         sourceIds: c.sourceIds,
         checkedAt: c.updatedAt,
         requiresScientificReview: true,
@@ -189,6 +191,7 @@ const documents: PublicationDocument[] = [
         href: `/library/${a.slug}/`,
         topic: a.category === "Start here" ? null : "health",
         status: a.status,
+        requireApprovalForVisibility: true,
         sourceIds: [
           ...new Set([
             ...a.answerSources,
@@ -206,6 +209,7 @@ const documents: PublicationDocument[] = [
       href: hairProductPath,
       topic: "hair",
       status: haircare.product.status,
+      requireApprovalForVisibility: true,
       sourceIds: [
         haircare.product.sourceId,
         ...haircare.ingredients.flatMap((i) => i.evidenceSourceIds),
@@ -222,6 +226,7 @@ const documents: PublicationDocument[] = [
         href: hairIngredientPath(i.slug),
         topic: "hair",
         status: i.status,
+        requireApprovalForVisibility: true,
         sourceIds: [
           ...new Set([...i.identitySourceIds, ...i.evidenceSourceIds]),
         ],
@@ -263,7 +268,7 @@ const structuralDocuments = structuralPages.map((page) =>
           (document) =>
             document.topic ===
               activeTopics.find((topic) => topic.href === page.href)?.id &&
-            document.status === "published",
+            publicationDecision(document, reviews, legacyPublicPaths).visible,
         )
           ? "draft"
           : "published",
@@ -318,3 +323,12 @@ export const isVisiblePath = (href: string) =>
   policyForPath(href)?.visible ?? false;
 export const canIndexPath = (href: string) =>
   !href.includes("?") && (policyForPath(href)?.indexable ?? false);
+
+// The source directory contains references used by visible documents.
+export const publicSourceIds = new Set([
+  "fda-cosmetic-reactions",
+  ...learningBasics.sourceIds,
+  ...publicationDocuments
+    .filter((document) => isVisiblePath(document.href))
+    .flatMap((document) => document.sourceIds),
+]);

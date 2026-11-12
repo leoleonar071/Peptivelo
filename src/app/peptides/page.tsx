@@ -1,4 +1,5 @@
 import { PeptideDirectory } from "@/components/peptide-directory";
+import { topics } from "@/lib/site-navigation";
 import { contentNavigation } from "@/lib/content-navigation";
 import { canIndexPath } from "@/lib/publication-registry";
 export const metadata = {
@@ -27,6 +28,7 @@ export default async function PeptidesPage({
       </p>
       <PeptideDirectory
         entries={entries}
+        topics={topics.map(({ id, href, title, description }) => ({ id, href, title, description }))}
         topic={typeof params.topic === "string" ? params.topic : "all"}
         format={typeof params.format === "string" ? params.format : "all"}
         qname={
